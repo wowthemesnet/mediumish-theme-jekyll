@@ -6,8 +6,8 @@ markdown: kramdown
 highlighter: pygments
 logo: 'assets/images/logo.png'
 paginate: 15
-baseurl: /
-domain_name: 'https://wowthemesnet.github.io/mediumish-theme-jekyll/'
+baseurl: /mediumish-theme-jekyll/
+domain_name: 'https://wowthemesnet.github.io/'
 google_analytics: 'UA-XXXXXXXX-X'
 plugins: 
   - jekyll-paginate
