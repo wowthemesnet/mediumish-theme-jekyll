@@ -71,7 +71,7 @@ post_class: post-template
 			</div>
 
 			<!-- Post Featured Image -->
-			{% if page.image %}<img class="featured-image img-fluid" src="{{site.url}}/{{ page.image }}" alt="{{ page.title }}">{% endif %}
+			{% if page.image %}<img class="featured-image img-fluid" src="{{ site.baseurl }}/{{ page.image }}" alt="{{ page.title }}">{% endif %}
 			<!-- End Featured Image -->
 
 			<!-- Post Content -->
@@ -95,7 +95,7 @@ post_class: post-template
                     {% assign sortedCategories = page.categories | sort %}
                     {% for category in sortedCategories %}
                     <li>
-                            <a href="{{site.url}}/category/{{ category | slugify }}/">{{ category }}</a>
+                            <a href="{{ site.baseurl }}/category/{{ category | slugify }}/">{{ category }}</a>
                     </li>
                     {% endfor %}
 				</ul>

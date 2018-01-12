@@ -35,7 +35,7 @@ There are two types of code elements which can be inserted in Markdown, the firs
 If you want to get really fancy, you can even add syntax highlighting using [Prism.js](http://prismjs.com/).
 
 
-![walking]({{site.url}}/assets/images/8.jpg)
+![walking]({{ site.baseurl }}/assets/images/8.jpg)
 
 ## Reference lists
 
