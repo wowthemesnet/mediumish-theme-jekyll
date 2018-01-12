@@ -14,7 +14,7 @@ plugins:
   - jekyll-archives
 
 # Details for the RSS feed generator
-url:            'https://wowthemesnet.github.io/mediumish-theme-jekyll/'
+url: 'https://wowthemesnet.github.io'
 
 # Authors
 authors:
