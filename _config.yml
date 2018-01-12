@@ -1,0 +1,46 @@
+name: Mediumish
+description: Jekyll Template for Blogging
+meta_description: "Jekyll template, Medium styled, free for bloggers."
+
+markdown: kramdown
+highlighter: pygments
+logo: 'assets/images/logo.png'
+paginate: 15
+baseurl: /
+domain_name: 'http://yourblog-domain.com'
+google_analytics: 'UA-XXXXXXXX-X'
+plugins: 
+  - jekyll-paginate
+  - jekyll-archives
+
+# Details for the RSS feed generator
+url:            'blog url'
+
+# Authors
+authors:
+  sal:
+    name: Sal
+    display_name: Sal
+    gravatar: e56154546cf4be74e393c62d1ae9f9d4
+    email: wowthemesnet@gmail.com
+    web: https://www.wowthemes.net
+    twitter: wowthemesnet
+    github: wowthemesnet
+    description: "Author of Mediumish, a Bootstrap Medium styled template available for WordPress, HTML, Ghost and Jekyll. You are currently previewing Jekyll template demo."
+  john:
+    name: John
+    display_name: John
+    gravatar: b1cc14991db7a456fcd761680bbc8f81
+    email: johnfakename@company.com
+    web: http://company.com
+    twitter: wowthemesnet
+    github: wowthemesnet
+    
+# Archives
+
+jekyll-archives:
+  enabled:
+    - categories
+  layout: archive
+  permalinks:
+    category: '/category/:name/'
