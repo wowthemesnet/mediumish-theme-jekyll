@@ -75,7 +75,7 @@ Copyright (C) 2018 WowThemes.net.
 
 **Mediumish for Jekyll** is designed and developed by WowThemes.net and it is *free* for personal use.
 
-For commercial use, please, purchase a license ($10).
+For commercial use, please, [purchase a license ($10)](https://gum.co/mediumish-jekyll-template).
 
 -----------------
 
