@@ -3,7 +3,7 @@ description: Jekyll Template for Blogging
 meta_description: "Jekyll template, Medium styled, free for bloggers."
 
 markdown: kramdown
-highlighter: pygments
+highlighter: rouge
 logo: 'assets/images/logo.png'
 paginate: 15
 baseurl: /mediumish-theme-jekyll
@@ -32,7 +32,7 @@ authors:
     display_name: John
     gravatar: b1cc14991db7a456fcd761680bbc8f81
     email: johnfakename@company.com
-    web: http://company.com
+    web: https://www.wowthemes.net
     twitter: wowthemesnet
     github: wowthemesnet
     
