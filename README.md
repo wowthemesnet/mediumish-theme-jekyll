@@ -13,7 +13,7 @@
 - Post Share
 - Post Categories
 - Prev/Next Link
-- Category Archives
+- Category Archives (this is not yet compatible with github pages though)
 - Jumbotron Categories
 - Integrations:
     - Disqus Comments
