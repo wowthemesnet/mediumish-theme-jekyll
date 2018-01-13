@@ -1,8 +1,8 @@
 # Jekyll Template - Mediumish by WowThemes.net
 
-[Live Demo](https://wowthemesnet.github.io/mediumish-theme-jekyll/) &nbsp; &nbsp; [Download](https://gum.co/mediumish-jekyll-template)
+[Live Demo](https://wowthemesnet.github.io/mediumish-theme-jekyll/) &nbsp; | &nbsp; [Download](https://gum.co/mediumish-jekyll-template)
 
-![enter image description here](assets/images/mediumish-jekyll-template.png)
+![mediumish](assets/images/mediumish-jekyll-template.png)
 
 ### Features
 
@@ -29,14 +29,9 @@
     - Page
     - Archive
     
-### How to Use
-
-If you aren't familiar with Jekyll yet, you should know that it is a static site generator. It will transform your plain text into static websites and blogs. No more databases, slow loading websites, risk of being hacked...just your content. And not only that, with Jekyll you get free hosting with GitHub Pages! This page itself is free hosted on Github with the help of Jekyll and Mediumish template that you're currently previewing. If you are a beginner we recommend you start with [Jekyll's Docs](https://jekyllrb.com/docs/installation/). Now if you know how to use Jekyll, let's move on to using Mediumish template in Jekyll:
-
 ### Using Mediumish
 
-Download or Fork *Mediumish for Jekyll*. 
-- In your local project, open <code>_config.yml</code>. If your site is in root, for <code>baseurl</code>, make sure this is set to <code>baseurl: /</code>. Also, change your Google Analytics code, disqus username, authors, Mailchimp list etc.
+- Open <code>_config.yml</code>. If your site is in root, for <code>baseurl</code>, make sure this is set to <code>baseurl: /</code>. Also, change your Google Analytics code, disqus username, authors, Mailchimp list etc.
 - Mediumish requires 2 plugins: 
     - <code>$ gem install jekyll-paginate</code>
     - <code>$ gem install jekyll-archives</code>.
@@ -79,8 +74,4 @@ For commercial use, please, [purchase a license ($10)](https://gum.co/mediumish-
 
 -----------------
 
-## Contribute
-
-- Clone the repo.
-- Create a branch off of master and give it a meaningful name (e.g. my-new-mediumish-feature).
-- Open a pull request on GitHub and describe the feature or fix.
+[Live Demo](https://wowthemesnet.github.io/mediumish-theme-jekyll/) &nbsp; | &nbsp; [Download](https://gum.co/mediumish-jekyll-template)
