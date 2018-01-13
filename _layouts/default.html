@@ -6,11 +6,11 @@
 <link rel="icon" href="assets/img/favicon.ico">    
 <title>{{ site.name }} - {{ site.description }}</title>
 <meta name="description" content="{{ site.meta_description }}" />    
-<link href="{{ site.url }}/assets/css/bootstrap.min.css" rel="stylesheet">
+<link href="{{ site.url | absolute_url }}/assets/css/bootstrap.min.css" rel="stylesheet">
 <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
 <link href="https://fonts.googleapis.com/css?family=Righteous%7CMerriweather:300,300i,400,400i,700,700i" rel="stylesheet">
-<link href="{{ site.url }}/assets/css/screen.css" rel="stylesheet">
-<link href="{{ site.url }}/assets/css/main.css" rel="stylesheet">
+<link href="{{ site.url | absolute_url  }}/assets/css/screen.css" rel="stylesheet">
+<link href="{{ site.url | absolute_url }}/assets/css/main.css" rel="stylesheet">
 
 </head>
 <body class="{% if page.post_class %}{{page.post_class}}{% else %}home-template{% endif %}">
@@ -99,9 +99,9 @@
 <!-- Bootstrap core JavaScript
 ================================================== -->
 <!-- Placed at the end of the document so the pages load faster -->
-<script src="{{ site.url }}/assets/js/jquery.min.js"></script>
+<script src="{{ site.url | absolute_url }}/assets/js/jquery.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
-<script src="{{ site.url }}/assets/js/bootstrap.min.js"></script>
-<script src="{{ site.url }}/assets/js/ie10-viewport-bug-workaround.js"></script>
+<script src="{{ site.url | absolute_url }}/assets/js/bootstrap.min.js"></script>
+<script src="{{ site.url | absolute_url }}/assets/js/ie10-viewport-bug-workaround.js"></script>
 </body>
 </html>
