@@ -7,14 +7,14 @@ highlighter: pygments
 logo: 'assets/images/logo.png'
 paginate: 15
 baseurl: /mediumish-theme-jekyll
-domain_name: 'https://wowthemesnet.github.io'
+
 google_analytics: 'UA-XXXXXXXX-X'
 plugins: 
   - jekyll-paginate
   - jekyll-archives
 
 # Details for the RSS feed generator
-url: 'https://wowthemesnet.github.io'
+
 
 # Authors
 authors:
