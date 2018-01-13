@@ -1,6 +1,6 @@
 # Jekyll Template - Mediumish by WowThemes.net
 
-[Live Demo](https://jekyllrb.com/docs/installation/) &nbsp; &nbsp; &nbsp: [Download](https://github.com/wowthemesnet/mediumish-theme-jekyll/archive/master.zip)
+[Live Demo](https://wowthemesnet.github.io/mediumish-theme-jekyll/) &nbsp; &nbsp; &nbsp; [Download](https://wowthemesnet.github.io/mediumish-theme-jekyll/)
 
 ![enter image description here](assets/images/mediumish-jekyll-template.png)
 
