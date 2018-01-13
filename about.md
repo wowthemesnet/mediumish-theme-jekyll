@@ -12,6 +12,9 @@ This website is built with Jekyll and Mediumish template for Jekyll. It is meant
 
 For commercial use, please, purchase a license ($10).
 
+<script src="https://gumroad.com/js/gumroad.js"></script>
+<a class="gumroad-button" href="https://gum.co/mediumish-jekyll-template" target="_blank">Download Mediumish - Jekyll</a>
+
 ![jekyll template mediumish]({{site.baseurl}}/assets/images/mediumish-jekyll-template.png){: .shadow}
 
 ### Features
