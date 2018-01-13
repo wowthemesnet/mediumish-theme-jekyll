@@ -5,12 +5,11 @@ Version:1.0.1
 License: Attribution-NonCommercial 4.0 International 
          Free for personal use. For commercial use, please read: https://www.wowthemes.net/freebies-license/
 */
-body {
-	padding-top:5rem;
-}
+
 .mainheading {
 	padding:1rem 0rem;
 }
+
 a {
 	color:#00ab6b;
 }
@@ -34,12 +33,24 @@ pre {
 .mediumnavigation {
 	background:rgba(255,255,255,.97);
 	box-shadow:0 2px 2px -2px rgba(0,0,0,.15);
+        transition: top 0.5s ease-in-out;
+}
+.main-content {min-height:300px;}
+
+.site-content {
+    min-height: 60vh;
+    padding-top: 1.5rem;
+    margin-top: 57px;
+    transition: all 0.4s;
 }
 section {
 	margin-bottom:20px;
 }
+section.recent-posts {
+    margin-bottom:0;
+}
 .section-title h2 {
-	border-bottom:1px solid rgba(0,0,0,.15);
+	border-bottom:1px solid rgba(0,0,0,.125);
 	margin-bottom:25px;
 	font-weight:700;
 	font-size:1.4rem;
@@ -50,6 +61,11 @@ section {
 	display:inline-block;
 	padding-bottom:20px;
 	margin-bottom:-1px;
+}
+.article-post ol, .article-post ul { margin-bottom:1.5rem;}
+.article-post ol ol, .article-post ul ul {   
+    list-style: disc;
+    margin-bottom:0rem;
 }
 @media (min-width:576px) {
 	.card-columns.listfeaturedtag {
@@ -254,7 +270,6 @@ blockquote {
 }
 .share {
 	text-align:center;
-	margin-top:20px;
 }
 .share p {
 	margin-bottom:10px;
@@ -265,12 +280,13 @@ blockquote {
 }
 .share ul li {
 	display:inline-block;
-	margin-bottom:5px;
+	margin-bottom:9px;
 }
 .share ul {
 	padding-left:0;
 	margin-left:0;
 }
+.share ul li i.fa {border:1px solid #ddd; width:30px; height:30px; line-height:30px;text-align:center;border-radius:50%;}
 .svgIcon {
 	vertical-align:middle;
 }
@@ -399,6 +415,35 @@ ul.tags li a:hover {
 	width:100%;
 	padding:14px 0;
 	z-index:1;
+    display: none;
+}
+.alertbar form {display: inline-block;}
+.alertbar input[type="email"] {
+	font-size:0.85rem;
+	padding:3px 5px 3px 10px;
+	border-top-left-radius:3px;
+	border-bottom-left-radius:3px;
+	border:1px solid #ddd;
+	border-right:0;
+	margin-right:-10px;
+	height:34px;
+	letter-spacing:0.5px;
+	margin-left:5px;
+}
+.alertbar input[type="submit"] {
+	background-color:#1C9963;
+	border:1px solid #1C9963;
+	color:rgba(255,255,255,1);
+	fill:rgba(255,255,255,1);
+	font-size:0.85rem;
+	border-radius:0;
+	padding:4px 10px;
+	border-top-right-radius:3px;
+	border-bottom-right-radius:3px;
+	font-weight:600;
+	height:34px;
+	letter-spacing:0.5px;
+    cursor: pointer;
 }
 .form-control::-webkit-input-placeholder {
 	color: rgba(0,0,0,.5);
@@ -469,14 +514,18 @@ ul.tags li a:hover {
     font-weight: 700;
     margin-bottom: 1.5rem;
 }
+.article-post img.shadow {
+    -webkit-box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.30);
+    -moz-box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.30);
+    box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.30);
+}
 img {max-width:100%;}
 .bottompagination span.navigation {
 	display:block;
 	font-size:0.93rem;
-	padding:15px 0;
+	padding:15px 0 0 0;
 	text-align:center;
-	margin-bottom:0;
-	margin-top:20px;
+	margin-bottom:0rem;
 	color:#292929;
 	border-top:1px solid #ddd;
 }
@@ -484,7 +533,7 @@ img {max-width:100%;}
 	color:#999;
 }
 .pointerup {
-	margin-bottom:-36px;
+	margin-bottom:-16px;
 	margin-left:49%;
 	font-size:30px;
 }
@@ -501,3 +550,39 @@ span.navigation {
     text-align:center;
 }
 .pagination {display:block;}
+iframe {max-width:100%;}
+@media (min-width:768px) {
+	.jumbotron.fortags {
+        margin-bottom:-50px;
+        margin-top: 3rem;
+        padding:0;
+        height:350px;
+        border-radius:0;
+        background-image: url(../images/jumbotron.jpg);
+        background-size:cover;
+	}
+	.jumbotron.fortags .col-md-4 {
+			background:rgba(0,0,0,0.75);
+			color:#fff;
+			height:350px;
+			margin-left:0;
+			padding-left:0;
+			padding-top:13%;
+	}
+	.jumbotron.fortags .col-md-4 h2 {
+			font-weight:300;
+	}
+	.jumbotron.fortags .row {
+			margin:0;
+	}
+}
+.jumbotron.fortags a {
+    padding: 5px 10px 7px;
+    background: #222;
+    border-radius: 30px;
+    color: #fff;
+    font-weight: 600;
+    text-transform: lowercase;
+    font-size: 0.9rem;
+}
+.layout-page .jumbotron.fortags {display:none;}

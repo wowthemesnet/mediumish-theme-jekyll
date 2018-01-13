@@ -1,20 +1,14 @@
+# Site
 name: Mediumish
 description: Jekyll Template for Blogging
 meta_description: "Jekyll template, Medium styled, free for bloggers."
-
-markdown: kramdown
-highlighter: rouge
 logo: 'assets/images/logo.png'
+favicon: 'assets/images/logo.png'
 paginate: 15
 baseurl: /mediumish-theme-jekyll
-
 google_analytics: 'UA-XXXXXXXX-X'
-plugins: 
-  - jekyll-paginate
-  - jekyll-archives
-
-# Details for the RSS feed generator
-
+disqus: 'demowebsite'
+mailchimp-list: 'https://wowthemes.us11.list-manage.com/subscribe/post?u=8aeb20a530e124561927d3bd8&amp;id=8c3d2d214b'
 
 # Authors
 authors:
@@ -24,23 +18,30 @@ authors:
     gravatar: e56154546cf4be74e393c62d1ae9f9d4
     email: wowthemesnet@gmail.com
     web: https://www.wowthemes.net
-    twitter: wowthemesnet
-    github: wowthemesnet
+    twitter: https://twitter.com/wowthemesnet
     description: "Author of Mediumish, a Bootstrap Medium styled template available for WordPress, HTML, Ghost and Jekyll. You are currently previewing Jekyll template demo."
   john:
     name: John
     display_name: John
     gravatar: b1cc14991db7a456fcd761680bbc8f81
-    email: johnfakename@company.com
+    email: wowthemesnet@gmail.com
     web: https://www.wowthemes.net
-    twitter: wowthemesnet
-    github: wowthemesnet
+    twitter: https://twitter.com/wowthemesnet
+    description: "This is the author box. Write a short description of the author here. You are currently previewing Mediumish demo, a Jekyll template compatible with Github pages."
+
+# Plugins
+plugins: 
+  - jekyll-paginate
+  - jekyll-archives
     
 # Archives
-
 jekyll-archives:
   enabled:
     - categories
   layout: archive
   permalinks:
     category: '/category/:name/'
+    
+# Other
+markdown: kramdown
+highlighter: rouge

@@ -1,7 +1,7 @@
 <!-- begin post -->
 {% assign author = site.authors[post.author] %}
 
-<div class="col-md-4">
+<div class="col-md-4 grid-item">
 <div class="card">
     <a href="{{ post.url | absolute_url }}">
         {% if post.image %} <img class="img-fluid" src="{{ site.baseurl }}/{{ post.image }}" alt="{{ post.title }}"> {% endif %}
@@ -13,10 +13,10 @@
             <div class="wrapfooter">
                 {% if post.author %}
                 <span class="meta-footer-thumb">
-                <a href="{{ author.web }}"><img class="author-thumb" src="https://www.gravatar.com/avatar/{{ author.gravatar }}?s=250&d=mm&r=x" alt="{{ author.display_name }}"></a>
+                <img class="author-thumb" src="https://www.gravatar.com/avatar/{{ author.gravatar }}?s=250&d=mm&r=x" alt="{{ author.display_name }}">
                 </span>                
                 <span class="author-meta">
-                <span class="post-name"><a href="{{ author.web }}">{{ author.display_name }}</a></span><br/>
+                <span class="post-name"><a target="_blank" href="{{ author.web }}">{{ author.display_name }}</a></span><br/>
                 {% endif %}
                 <span class="post-date">{{ post.date | date_to_string }}</span>
                 </span>

@@ -3,20 +3,20 @@ layout: default
 title: Archive
 ---
 
-	<!-- Begin List Posts
-	================================================== -->
-	<section class="recent-posts">
-	<div class="section-title">
-		<h2>Archive of posts with <span>{{ page.type }} '{{ page.title }}'</span></h2>
-	</div>
-	<div class="row listrecent">
-        
-    {% for post in page.posts %}
+<!-- Begin List Posts
+================================================== -->
+<section class="recent-posts">
+<div class="section-title">
+    <h2>Archive of posts with <span>{{ page.type }} '{{ page.title }}'</span></h2>
+</div>
+<div class="masonrygrid row listrecent">
 
-        {% include postbox.html %}
+{% for post in page.posts %}
 
-    {% endfor %}
+    {% include postbox.html %}
 
-	</div>
-	</section>
+{% endfor %}
+
+</div>
+</section>
 
