@@ -5,7 +5,7 @@
     <div class="row">
         <div class="col-md-5 wrapthumbnail">
             <a href="{{ post.url | absolute_url }}">
-            <div class="thumbnail" style="background-image:url({{ site.baseurl }}/{{ post.image }});">
+            <div class="thumbnail" style="background-image:url({% if post.image contains "://" %}{{ post.image }}{% else %}{{ post.image | absolute_url }}{% endif %});">
             </div>
             </a>
         </div>
