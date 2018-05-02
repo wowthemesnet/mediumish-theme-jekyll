@@ -4,7 +4,7 @@
 <div class="col-md-4 grid-item">
 <div class="card">
     <a href="{{ post.url | absolute_url }}">
-        {% if post.image %} <img class="img-fluid" src="{{ site.baseurl }}/{{ post.image }}" alt="{{ post.title }}"> {% endif %}
+        {% if post.image %} <img class="img-fluid" src="{% if post.image contains "://" %}{{ post.image }}{% else %}{{ post.image | absolute_url }}{% endif %}" alt="{{ post.title }}"> {% endif %}
     </a>
     <div class="card-block">
         <h2 class="card-title"><a href="{{ post.url | absolute_url }}">{{ post.title }}</a></h2>
