@@ -303,15 +303,28 @@ License: https://www.wowthemes.net/freebies-license/
          margin-bottom:20px;
          margin-top:20px;
          box-shadow:none !Important;
+         padding-right: 14px !Important;
     }
+     #comments {
+         margin-right: 15px;
+     }
      .jumbotron.fortags {
         margin-bottom:0 !Important;
     }
      .alertbar form {
         margin-top:20px;
     }
+     .alertbar span, .alertbar form {
+         display: block;
+     }
+     .alertbar input[type="submit"] {
+         border-radius:3px !Important;
+     }
      .alertbar input[type="email"] {
-        margin-right:-3px !Important;
+        margin-right:0px !Important;
+        display:block;
+        border-right:1px solid #ddd !Important;
+        margin-bottom:10px;
     }
      .jumbotron {
         margin-bottom:0;
