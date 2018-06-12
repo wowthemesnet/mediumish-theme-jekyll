@@ -20,7 +20,7 @@
     - Google Analaytics
     - Mailchimp Integration
 - Design Features:
-    - Bootstrap v4.0.0-alpha.6
+    - Bootstrap v4.1
     - Font Awesome
     - Masonry
 - Layouts:
@@ -38,8 +38,9 @@
 - Edit the menu and footer copyrights in <code>default.html</code>
 - Start by adding your .md files in <code>_posts</code>. Mediumish already has a few as an example. 
 - YAML front matter
-    - post featured - <code>featured:true</code>
-    - post featured image - <code>image: assets/images/mypic.jpg</code>
+    - featured post - <code>featured:true</code>
+    - exclude featured post from "All stories" loop to avoid duplicated posts - <code>hidden:true</code>
+    - post image - <code>image: assets/images/mypic.jpg</code>
     - page comments - <code>comments:true</code>
     - meta description (optional) - <code>description: "this is my meta description"</code>
     
@@ -68,9 +69,9 @@ comments: true
 
 Copyright (C) 2018 WowThemes.net.
 
-**Mediumish for Jekyll** is designed and developed by [Sal](https://www.wowthemes.net) and it is *free* under MIT license. If this project helps you reduce time to develop or you want to remove the attribution, you can give me a cup of coffee :)
+**Mediumish for Jekyll** is designed and developed by [Sal](https://www.wowthemes.net) and it is *free* under MIT license. 
 
-[![paypal](https://www.paypalobjects.com/en_US/i/btn/btn_donateCC_LG.gif)](https://www.paypal.me/wowthemes/5)
+<a href="https://www.buymeacoffee.com/sal" target="_blank"><img src="https://www.buymeacoffee.com/assets/img/custom_images/orange_img.png" alt="Buy Me A Coffee" style="height: auto !important;width: auto !important;" ></a>
 
 
 -----------------

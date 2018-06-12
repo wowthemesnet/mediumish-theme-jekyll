@@ -1,9 +1,8 @@
 /*
-Template Name:Mediumish
-Copyright:WowThemes.net,https://www.wowthemes.net
-Version:1.0.1
-License: Attribution-NonCommercial 4.0 International 
-         Free for personal use. For commercial use, please read: https://www.wowthemes.net/freebies-license/
+Template Name: Mediumish
+Copyright: WowThemes.net,https://www.wowthemes.net
+Version: 1.0.2
+License: https://www.wowthemes.net/freebies-license/
 */
 
 .mainheading {
@@ -12,9 +11,11 @@ License: Attribution-NonCommercial 4.0 International
 
 a {
 	color:#00ab6b;
+    transition:all 0.2s;
 }
-a,a:hover {
-	transition:all 0.2s;
+a:hover {
+    color: #038252;
+    text-decoration:none;
 }
 pre {
     -moz-box-sizing: border-box;
@@ -33,7 +34,7 @@ pre {
 .mediumnavigation {
 	background:rgba(255,255,255,.97);
 	box-shadow:0 2px 2px -2px rgba(0,0,0,.15);
-        transition: top 0.5s ease-in-out;
+        transition: top 0.2s ease-in-out;
 }
 .main-content {min-height:300px;}
 
@@ -75,24 +76,25 @@ section.recent-posts {
 	}
 }
 @media (min-width:992px) {
-	.navbar-toggleable-md .navbar-nav .nav-link {
-		padding-right:.7rem;
-		padding-left:.7rem;
+	.navbar-expand-lg .navbar-nav .nav-link {
+		padding-right:0.8rem;
+		padding-left:0.8rem;
 	}
 }
-.card-columns .card {
-	margin-bottom:20px;
+.listfeaturedtag {
+    border:1px solid rgba(0,0,0,.125);
+    border-radius: .25rem;
+    transition: all 0.3s cubic-bezier(.25,.8,.25,1);
 }
 .listfeaturedtag .wrapthumbnail {
-	height:258px;
+	min-height:290px;
 	flex:0 0 auto;
+    height: 100%;
 }
-.listfeaturedtag .card {
-	border:1px solid rgba(0,0,0,.1);
-	border-radius:2px;
-	height:260px;
-	padding-left:0;
-	margin-bottom:15px;
+.listfeaturedtag .card, .card-footer  {
+    border: 0;
+}
+.listfeaturedtag:hover {
 }
 .listfeaturedtag .thumbnail {
 	background-size:cover;
@@ -100,7 +102,8 @@ section.recent-posts {
 	display:block;
 	background-position:38% 22% !important;
 	background-origin:border-box!important;
-	border-top-left-radius:2px;
+    border-top-left-radius: .25rem;
+    border-bottom-left-radius: .25rem;
 }
 .listfeaturedtag .card-block {
 	padding-left:0;
@@ -110,29 +113,14 @@ section.recent-posts {
 	font-weight:700;
 	line-height: 1.25;
 }
-.listfeaturedtag h2.card-title a,.listrecent h2.card-title a {
-	color:rgba(0,0,0,.8);
-}
-.listfeaturedtag h2.card-title a:hover,.listrecent h2.card-title a:hover {
-	color:rgba(0,0,0,.6);
-	text-decoration:none;
-}
 .listfeaturedtag h4.card-text,.listrecent h4.card-text {
 	color:rgba(0,0,0,.44);
 	font-size:0.95rem;
 	line-height:1.4;
 	font-weight:400;
 }
-.listfeaturedtag .wrapfooter {
-	position:absolute;
-	bottom:20px;
+.wrapfooter {
 	font-size:12px;
-	display:block;
-	width:85%;
-}
-.listrecent .wrapfooter {
-	font-size:12px;
-	margin-top:30px;
 }
 .author-thumb {
 	width:40px;
@@ -265,7 +253,6 @@ blockquote {
 }
 .featured-image {
 	display:block;
-	margin:0px auto;
 	margin-bottom:1.5rem;
 }
 .share {
@@ -274,9 +261,6 @@ blockquote {
 .share p {
 	margin-bottom:10px;
 	font-size:0.95rem;
-}
-.share {
-	display:none;
 }
 .share ul li {
 	display:inline-block;
@@ -345,14 +329,7 @@ blockquote {
 	box-shadow:0 1px 7px rgba(0,0,0,.05);
 	border:0;
 }
-.card {
-	border-radius:4px;
-    margin-bottom: 30px;
-}
-.card .img-thumb {
-	border-top-right-radius:4px;
-	border-top-left-radius:4px;
-}
+
 ul.tags {
 	list-style:none;
 	padding-left:0;
@@ -526,11 +503,11 @@ img {max-width:100%;}
 	padding:15px 0 0 0;
 	text-align:center;
 	margin-bottom:0rem;
-	color:#292929;
+	color:#999;
 	border-top:1px solid #ddd;
 }
 .bottompagination span.navigation a {
-	color:#999;
+	
 }
 .pointerup {
 	margin-bottom:-16px;
@@ -586,3 +563,31 @@ iframe {max-width:100%;}
     font-size: 0.9rem;
 }
 .layout-page .jumbotron.fortags {display:none;}
+.mb-30px {margin-bottom:30px;}
+
+ .flex-first {
+    -webkit-box-ordinal-group: 0;
+    -webkit-order: -1;
+    -ms-flex-order: -1;
+    order: -1;
+   }
+
+@media (min-width: 768px) {
+    .flex-md-unordered {
+        -webkit-box-ordinal-group: 1;
+        -webkit-order: 1;
+        -ms-flex-order: 1;
+        order: 1;
+    }
+    .flex-first {
+    -webkit-box-ordinal-group: 0;
+    -webkit-order: 1;
+    -ms-flex-order: 1;
+    order: 1;
+   }
+   
+}
+@media (max-width: 768px) {
+    .share {margin-top:30px;}
+}
+.card .img-fluid {width:100%;}

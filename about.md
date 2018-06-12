@@ -6,15 +6,6 @@ comments: true
 
 This website is built with Jekyll and Mediumish template for Jekyll. It is meant for demonstration purposes, no real content can be found. Mediumish template for Jekyll is compatible with Github pages, in fact even this demo is created with Github Pages and hosted with Github. This page in example shows a page layout.
 
-### License & Download
-
-**Mediumish for Jekyll** is designed and developed by WowThemes.net and it is *free* for personal use.
-
-For commercial use, please, purchase a license ($10).
-
-<script src="https://gumroad.com/js/gumroad.js"></script>
-<a class="gumroad-button" href="https://gum.co/mediumish-jekyll-template" target="_blank">Download Mediumish - Jekyll</a>
-
 ![jekyll template mediumish]({{site.baseurl}}/assets/images/mediumish-jekyll-template.png){: .shadow}
 
 ### Features
@@ -56,8 +47,9 @@ Download or Fork *Mediumish for Jekyll*.
 - Edit the menu and footer copyrights in <code>default.html</code>
 - Start by adding your .md files in <code>_posts</code>. Mediumish already has a few as an example. 
 - YAML front matter
-    - post featured - <code>featured:true</code>
-    - post featured image - <code>image: assets/images/mypic.jpg</code>
+    - featured post - <code>featured:true</code>
+    - exclude featured post from "All stories" loop to avoid duplicated posts - <code>hidden:true</code>
+    - post image - <code>image: assets/images/mypic.jpg</code>
     - page comments - <code>comments:true</code>
     - meta description (optional) - <code>description: "this is my meta description"</code>
     
@@ -87,3 +79,6 @@ comments: true
 - Clone the repo.
 - Create a branch off of master and give it a meaningful name (e.g. my-new-mediumish-feature).
 - Open a pull request on GitHub and describe the feature or fix.
+
+
+<a href="https://www.buymeacoffee.com/sal" target="_blank"><img src="https://www.buymeacoffee.com/assets/img/custom_images/orange_img.png" alt="Buy Me A Coffee" style="height: auto !important;width: auto !important;" ></a>
