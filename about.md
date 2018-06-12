@@ -76,7 +76,7 @@ comments: true
 
 #### Contribute
 
-- Clone the repo.
+- [Clone the repo](https://github.com/wowthemesnet/mediumish-theme-jekyll).
 - Create a branch off of master and give it a meaningful name (e.g. my-new-mediumish-feature).
 - Open a pull request on GitHub and describe the feature or fix.
 
