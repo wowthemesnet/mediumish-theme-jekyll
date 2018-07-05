@@ -3,8 +3,7 @@ name: "Mediumish"
 description: "Jekyll Template for Blogging"
 meta_description: "Jekyll template, Medium styled, free for bloggers."
 logo: 'assets/images/logo.png'
-favicon: 'assets/images/logo.png'
-url: 'https://braidwoodinn.github.io'
+favicon: 'assets/images/logo.png'\
 baseurl: 
 google_analytics: 'UA-46278016-1'
 disqus: 'demowebsite'
