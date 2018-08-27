@@ -99,8 +99,6 @@ License: https://www.wowthemes.net/freebies-license/
  .listfeaturedtag .card, .card-footer {
      border: 0;
 }
- .listfeaturedtag:hover {
-}
  .listfeaturedtag .thumbnail {
      background-size:cover;
      height:100%;
@@ -595,10 +593,6 @@ License: https://www.wowthemes.net/freebies-license/
      .jumbotron.fortags .col-md-4 {
          background:rgba(0,0,0,0.75);
          color:#fff;
-         height:350px;
-         margin-left:0;
-         padding-left:0;
-         padding-top:13%;
     }
      .jumbotron.fortags .col-md-4 h2 {
          font-weight:300;
