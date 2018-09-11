@@ -56,7 +56,9 @@ featured: true
 ---
 </pre>
 
-YAML Page Example
+Use <code>comments: false</code> to disable comments in posts!
+
+YAML Page Example:
 <pre>
 ---
 layout: page
@@ -78,6 +80,8 @@ Copyright (C) 2018 WowThemes.net.
 - [Clone the repo](https://github.com/wowthemesnet/mediumish-theme-jekyll).
 - Create a branch off of master and give it a meaningful name (e.g. my-new-mediumish-feature).
 - Open a pull request on GitHub and describe the feature or fix.
+
+Thank you so much for your contribution!
 
 -----------------
 
