@@ -1,5 +1,10 @@
 # Mediumish Jekyll Theme - Change Log
 
+## 2018-11-07
+
+### Added
+- external image support
+
 ## 2018-09-12
 
 ### Added

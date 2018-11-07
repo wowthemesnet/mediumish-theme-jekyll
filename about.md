@@ -50,6 +50,7 @@ Download or Fork *Mediumish for Jekyll*.
     - featured post - <code>featured:true</code>
     - exclude featured post from "All stories" loop to avoid duplicated posts - <code>hidden:true</code>
     - post image - <code>image: assets/images/mypic.jpg</code>
+    - external post image - <code>image: "https://externalwebsite.com/image4.jpg" </code>
     - page comments - <code>comments:true</code>
     - meta description (optional) - <code>description: "this is my meta description"</code>
     
