@@ -1,6 +1,6 @@
 # Jekyll Template - Mediumish by WowThemes.net
 
-[Live Demo](https://wowthemesnet.github.io/mediumish-theme-jekyll/) &nbsp; | &nbsp; [Download](https://github.com/wowthemesnet/mediumish-theme-jekyll/archive/master.zip)
+[Live Demo](https://wowthemesnet.github.io/mediumish-theme-jekyll/) &nbsp; | &nbsp; [Download](https://github.com/wowthemesnet/mediumish-theme-jekyll/archive/master.zip) &nbsp; | &nbsp; [Buy me a coffe](https://www.buymeacoffee.com/sal)
 
 ![mediumish](assets/images/mediumish-jekyll-template.png)
 
@@ -31,7 +31,8 @@
     
 ### Using Mediumish
 
-- Open `_config.yml`. If your site is in root, for `baseurl`, make sure this is set to `baseurl: ''`. Also, change your Google Analytics code, disqus username, authors, Mailchimp list etc.
+- Open `_config.yml`. If your site is in root, for `baseurl`, make sure this is set to `baseurl: ''`
+Also, change your Google Analytics code, disqus username, authors, Mailchimp list etc.
 - Mediumish requires 2 plugins: 
     - `$ gem install jekyll-paginate`
     - `$ gem install jekyll-archives`.
@@ -44,7 +45,7 @@
     - page comments - `comments:true`
     - meta description (optional) - `description: "this is my meta description"`
     
-YAML Post Example:
+**YAML Post Example**:
 
 ```
 ---
@@ -57,10 +58,11 @@ featured: true
 ---
 ```
 
-Use `comments: false` to disable comments in posts!
-Use `image: "https://www.myexternal.com/image.jpg"`  for external featured image
+`comments: false` - disable comments in posts
+
+`image: "https://www.myexternal.com/image.jpg"`  - set external featured image
     
-YAML Page Example:
+**YAML Page Example**:
 
 ```
 ---
