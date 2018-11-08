@@ -1,5 +1,10 @@
 # Mediumish Jekyll Theme - Change Log
 
+## 2018-11-08
+
+### Fixed
+- reponsive footer jumbotron for tags
+
 ## 2018-11-07
 
 ### Added

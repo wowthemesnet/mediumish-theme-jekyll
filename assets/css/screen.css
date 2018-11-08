@@ -580,6 +580,10 @@ License: https://www.wowthemes.net/freebies-license/
  iframe {
     max-width:100%;
 }
+.transpdark {    
+    background: rgba(0,0,0,0.75);
+    color: #fff;
+}
  @media (min-width:768px) {
      .jumbotron.fortags {
          margin-bottom:-50px;
@@ -594,12 +598,16 @@ License: https://www.wowthemes.net/freebies-license/
          background:rgba(0,0,0,0.75);
          color:#fff;
     }
-     .jumbotron.fortags .col-md-4 h2 {
-         font-weight:300;
-    }
      .jumbotron.fortags .row {
          margin:0;
     }
+}
+.jumbotron.fortags { 
+         margin-top: 3rem;
+         padding:0;
+         border-radius:0;
+         background-image: url(../images/jumbotron.jpg);
+         background-size:cover;
 }
  .jumbotron.fortags a {
      padding: 5px 10px 7px;

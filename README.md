@@ -31,21 +31,22 @@
     
 ### Using Mediumish
 
-- Open <code>_config.yml</code>. If your site is in root, for <code>baseurl</code>, make sure this is set to <code>baseurl: /</code>. Also, change your Google Analytics code, disqus username, authors, Mailchimp list etc.
+- Open `_config.yml`. If your site is in root, for `baseurl`, make sure this is set to `baseurl: ''`. Also, change your Google Analytics code, disqus username, authors, Mailchimp list etc.
 - Mediumish requires 2 plugins: 
-    - <code>$ gem install jekyll-paginate</code>
-    - <code>$ gem install jekyll-archives</code>.
-- Edit the menu and footer copyrights in <code>default.html</code>
-- Start by adding your .md files in <code>_posts</code>. Mediumish already has a few as an example. 
+    - `$ gem install jekyll-paginate`
+    - `$ gem install jekyll-archives`.
+- Edit the menu and footer copyrights in `default.html`
+- Start by adding your .md files in `_posts`. Mediumish already has a few as an example. 
 - YAML front matter
-    - featured post - <code>featured:true</code>
-    - exclude featured post from "All stories" loop to avoid duplicated posts - <code>hidden:true</code>
-    - post image - <code>image: assets/images/mypic.jpg</code>
-    - page comments - <code>comments:true</code>
-    - meta description (optional) - <code>description: "this is my meta description"</code>
+    - featured post - `featured:true`
+    - exclude featured post from "All stories" loop to avoid duplicated posts - `hidden:true`
+    - post image - `image: assets/images/mypic.jpg`
+    - page comments - `comments:true`
+    - meta description (optional) - `description: "this is my meta description"`
     
 YAML Post Example:
-<pre>
+
+```
 ---
 layout: post
 title:  "We all wait for summer"
@@ -54,18 +55,20 @@ categories: [ Jekyll, tutorial ]
 image: assets/images/5.jpg
 featured: true
 ---
-</pre>
+```
 
-Use <code>comments: false</code> to disable comments in posts!
-
+Use `comments: false` to disable comments in posts!
+Use `image: "https://www.myexternal.com/image.jpg"`  for external featured image
+    
 YAML Page Example:
-<pre>
+
+```
 ---
 layout: page
 title: Mediumish Template for Jekyll
 comments: true
 ---
-</pre>
+```
 
 ### Copyright
 
