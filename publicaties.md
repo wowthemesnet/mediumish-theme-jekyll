@@ -1,9 +1,8 @@
-
 ---
 layout: page
-title: Over muchass
+title: Bekijk mijn publicaties
 comments: true
 ---
 
 
-Publicaties
+https://biblio.ugent.be/person/002004496411
