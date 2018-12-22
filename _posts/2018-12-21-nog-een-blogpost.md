@@ -2,7 +2,7 @@
 layout: post
 title:  "Nog een blogpost"
 author: Mathias
-categories: [ Jekyll, tutorial ]
+categories: [egov]
 image: assets/images/1.jpg
 ---
 ## What is Lorem Ipsum?
