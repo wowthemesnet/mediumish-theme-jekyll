@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Blogpost over markdown"
-author: john
+author: Mathias
 categories: [ Jekyll, tutorial ]
 image: assets/images/3.jpg
 ---
