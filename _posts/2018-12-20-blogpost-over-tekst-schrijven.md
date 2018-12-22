@@ -2,7 +2,7 @@
 layout: post
 title:  "Blogpost over tekst schrijven"
 author: Mathias
-categories: [ Jekyll, tutorial ]
+categories: [data,imec]
 image: assets/images/3.jpg
 ---
 There are lots of powerful things you can do with the Markdown editor
