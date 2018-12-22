@@ -76,25 +76,21 @@
                 {% endif %}
                 <a class="nav-link" href="{{ site.baseurl }}/about">About</a>
                 </li>
-                
+		    
+		{% if page.url == "/contact.html" %}
+                <li class="nav-item active">
+                {% else %}
                 <li class="nav-item">
-                <a class="nav-link" href="https://github.com/wowthemesnet/mediumish-theme-jekyll/archive/master.zip"><i class="fas fa-download"></i> Download</a>
+                {% endif %}
+                <a class="nav-link" href="{{ site.baseurl }}/about">Contact</a>
+                </li>
+               
+                <li class="nav-item">
+                <a target="_blank" class="nav-link" href="https://biblio.ugent.be/person/002004496411"><i class="fab fa-facebook-f"></i></a>
                 </li>
                 
                 <li class="nav-item">
-                <a target="_blank" class="nav-link" href="https://www.wowthemes.net/themes/mediumish-wordpress/"><i class="fab fa-wordpress-simple"></i> WP Version</a>
-                </li>
-                
-                <li class="nav-item">
-                <a target="_blank" class="nav-link" href="https://www.wowthemes.net/themes/mediumish-ghost/"><i class="fab fa-snapchat-ghost"></i> Ghost Version</a>
-                </li>
-
-                <li class="nav-item">
-                <a target="_blank" class="nav-link" href="https://www.facebook.com/wowthemesnet/"><i class="fab fa-facebook-f"></i></a>
-                </li>
-                
-                <li class="nav-item">
-                <a target="_blank"  class="nav-link" href="https://twitter.com/wowthemesnet"><i class="fab fa-twitter"></i></a>
+                <a target="_blank"  class="nav-link" href="https://twitter.com/mvcomper"><i class="fab fa-twitter"></i></a>
                 </li>
                 
             </ul>		
