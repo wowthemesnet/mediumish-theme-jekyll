@@ -1,7 +1,7 @@
 # Site
 name: "Mathias Van Compernolle"
-description: "Jekyll Template for Blogging"
-meta_description: "Jekyll template, Medium styled, free for bloggers."
+description: "Blog met heel veel content"
+meta_description: "Meta beschrijving."
 logo: 'assets/images/logo.png'
 favicon: 'assets/images/logo.png'
 baseurl: /test
@@ -12,12 +12,12 @@ mailchimp-list: 'https://wowthemes.us11.list-manage.com/subscribe/post?u=8aeb20a
 # Authors
 authors:
   sal:
-    name: Sal
-    display_name: Sal
+    name: Mathias 
+    display_name: Mathias
     gravatar: e56154546cf4be74e393c62d1ae9f9d4
-    email: wowthemesnet@gmail.com
+    email: mathias.vancompernolle@ugent.be
     web: https://www.wowthemes.net
-    twitter: https://twitter.com/wowthemesnet
+    twitter: https://twitter.com/mvcomper
     description: "Author of Mediumish, a Bootstrap Medium styled template available for WordPress, HTML, Ghost and Jekyll. You are currently previewing Jekyll template demo."
   john:
     name: John
