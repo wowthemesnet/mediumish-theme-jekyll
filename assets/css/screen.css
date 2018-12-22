@@ -26,9 +26,41 @@ License: https://www.wowthemes.net/freebies-license/
      font-size: 14px;
      white-space: pre;
      overflow: auto;
-     background: #F7FAFB;
+     background: #FDFEFE;
      border-radius: 3px;
 }
+
+/*Form styles*/
+
+
+
+
+
+#contact input[type='email'], #contact input[type='text'], #contact textarea{
+ border: #ddd 1px solid;
+ padding: 10px 20px;
+ display: block;
+ width: 100%;
+}
+
+
+@media (max-width: 500px){
+  #contact{
+ width: 90%;
+ margin: 30px auto;
+}
+}
+@media (min-width: 500px){
+#contact{
+ width: 50%;
+ margin: 30px auto;
+}
+}
+    
+
+
+
+
  .mediumnavigation {
      background:rgba(255,255,255,.97);
      box-shadow:0 2px 2px -2px rgba(0,0,0,.15);
