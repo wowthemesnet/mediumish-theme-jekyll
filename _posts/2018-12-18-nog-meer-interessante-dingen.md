@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Nog meer interessante dingen"
-author: sal
+author: Mathias
 categories: [data]
 image: assets/images/2.jpg
 ---
