@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Blogpost over markdown"
+title:  "Blogpost over tekst schrijven"
 author: Mathias
 categories: [ Jekyll, tutorial ]
 image: assets/images/3.jpg
