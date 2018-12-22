@@ -11,7 +11,7 @@ mailchimp-list: 'https://wowthemes.us11.list-manage.com/subscribe/post?u=8aeb20a
 
 # Authors
 authors:
-  sal:
+  Mathias:
     name: Mathias 
     display_name: Mathias
     gravatar: e56154546cf4be74e393c62d1ae9f9d4
@@ -19,9 +19,9 @@ authors:
     web: https://www.wowthemes.net
     twitter: https://twitter.com/mvcomper
     description: "Author of Mediumish, a Bootstrap Medium styled template available for WordPress, HTML, Ghost and Jekyll. You are currently previewing Jekyll template demo."
-  john:
-    name: John
-    display_name: John
+  gastautuer:
+    name: gastauteur
+    display_name: Gast auteur
     gravatar: b1cc14991db7a456fcd761680bbc8f81
     email: wowthemesnet@gmail.com
     web: https://www.wowthemes.net
