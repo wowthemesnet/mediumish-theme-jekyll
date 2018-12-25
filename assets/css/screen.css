@@ -88,7 +88,7 @@ License: https://www.wowthemes.net/freebies-license/
      transition: all 0.3s cubic-bezier(.25,.8,.25,1);
 }
  .listfeaturedtag .wrapthumbnail {
-     min-height:290px;
+     height:290px;
      flex:0 0 auto;
      height: 100%;
 }
