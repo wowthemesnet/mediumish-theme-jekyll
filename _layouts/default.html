@@ -7,8 +7,8 @@
 <link rel="icon" href="{{ site.baseurl }}/assets/images/logo.png">
     
 <title>{{ page.title }} | {{site.name}}</title>
-    
-{% if page.description %}<meta name="description" content="{{ page.description }}">{% endif %} 
+        
+{% seo %}
     
 <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
     
@@ -20,22 +20,24 @@
     
 <link href="{{ site.baseurl }}/assets/css/main.css" rel="stylesheet">
     
+<script src="{{ site.baseurl }}/assets/js/jquery.min.js"></script>
+    
 </head>
     
-{% if jekyll.environment == 'production' %}
+{% if jekyll.environment == 'production' %}    
+<!-- change your GA id in _config.yml -->
 <script>
-  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
-
-  ga('create', '{{site.google_analytics}}', 'auto');
-  ga('send', 'pageview');
+(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+ga('create', '{{site.google_analytics}}', 'auto');
+ga('send', 'pageview');
 </script>
 {% endif %}
     
 {% capture layout %}{% if page.layout %}layout-{{ page.layout }}{% endif %}{% endcapture %}
-<body class="{{ layout }}">
+<body class="{{layout}}">
 
     
 <!-- Begin Menu Navigation
@@ -88,16 +90,12 @@
                 <li class="nav-item">
                 <a target="_blank" class="nav-link" href="https://www.wowthemes.net/themes/mediumish-ghost/"><i class="fab fa-snapchat-ghost"></i> Ghost Version</a>
                 </li>
-
-                <li class="nav-item">
-                <a target="_blank" class="nav-link" href="https://www.facebook.com/wowthemesnet/"><i class="fab fa-facebook-f"></i></a>
-                </li>
                 
-                <li class="nav-item">
-                <a target="_blank"  class="nav-link" href="https://twitter.com/wowthemesnet"><i class="fab fa-twitter"></i></a>
-                </li>
+                {% include search-lunr.html %}
                 
             </ul>		
+        
+        
   
         <!-- End Menu -->
 
@@ -109,6 +107,7 @@
 ================================================== -->
     
 <div class="site-content">   
+    
 <div class="container">
     
 <!-- Site Title
@@ -155,19 +154,18 @@
                 <h2 class="d-md-block align-self-center py-1 font-weight-light">Explore <span class="d-none d-md-inline">→</span></h2>
             </div>
 		</div>
-		<div class="col-md-8 p-5 align-self-center text-center">
-          {% assign tags_list = site.categories %}  
-          {% if tags_list.first[0] == null %}
-            {% for tag in tags_list %} 
-              <a href="{{ site.baseurl }}/category/{{ tag }}">{{ tag | capitalize }} {{ site.tags[tag].size }}</a>
+		<div class="col-md-8 p-5 align-self-center text-center">      
+            {% assign categories_list = site.categories %}
+            {% if categories_list.first[0] == null %}
+            {% for category in categories_list %}
+            <a href="{{site.baseurl}}/categories#{{ category | downcase | downcase | url_escape | strip | replace: ' ', '-' }}">{{ category | camelcase }} ({{ site.tags[category].size }})</a>
             {% endfor %}
-          {% else %}
-            {% for tag in tags_list %} 
-              <a href="{{ site.baseurl }}/category/{{ tag[0] }}">{{ tag[0] | capitalize }} ({{ tag[1].size }})</a>
+            {% else %}
+            {% for category in categories_list %}
+            <a href="{{site.baseurl}}/categories#{{ category[0] | downcase | url_escape | strip | replace: ' ', '-' }}">{{ category[0] | camelcase }} ({{ category[1].size }})</a>
             {% endfor %}
-          {% endif %}
-        {% assign tags_list = nil %}
-
+            {% endif %}
+            {% assign categories_list = nil %}
 		</div>
 	</div>
 </div>
@@ -194,20 +192,18 @@
    
 </div> <!-- /.site-content>
 
-<!-- Bootstrap core JavaScript
+<!-- Scripts
 ================================================== -->
-<!-- Placed at the end of the document so the pages load faster -->
-    
-<script src="{{ site.baseurl }}/assets/js/jquery.min.js"></script>
-    
-<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
-    
-<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
-    
-<script src="{{ site.baseurl }}/assets/js/ie10-viewport-bug-workaround.js"></script>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous"></script>
+
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>
     
 <script src="{{ site.baseurl }}/assets/js/mediumish.js"></script>
+
+<script src="{{ site.baseurl }}/assets/js/ie10-viewport-bug-workaround.js"></script> 
     
 <script id="dsq-count-scr" src="//{{site.disqus}}.disqus.com/count.js"></script>
+    
 </body>
 </html>
