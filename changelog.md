@@ -1,5 +1,10 @@
 # Mediumish Jekyll Theme - Change Log
 
+## 2019-02-10
+
+### Fixed
+- CSS Jumbotron categories
+
 ## 2019-02-09
 
 ### Fixed

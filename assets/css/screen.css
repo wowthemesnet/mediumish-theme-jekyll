@@ -625,6 +625,7 @@ License: https://www.wowthemes.net/freebies-license/
      font-weight: 500;
      text-transform: lowercase;
      font-size: 0.8rem;
+     display: inline-block;
 }
  .layout-page .jumbotron.fortags {
     display:none;
