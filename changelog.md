@@ -1,5 +1,14 @@
 # Mediumish Jekyll Theme - Change Log
 
+## 2019-02-14
+
+### Fixed
+- Feed site title not showing
+
+### Added
+- 404 page
+
+
 ## 2019-02-10
 
 ### Fixed
