@@ -68,7 +68,7 @@ ga('send', 'pageview');
           <li class="nav-item">
         {% endif %}
         <a {% if nav_link.target %}target="_blank" {% endif %} class="nav-link" {% if first_char=="/" %} href="{{ site.baseurl }}{{ nav_link.url }}" {% else %}href="{{ nav_link.url }}"{% endif %}>
-          <i class="{{ nav_link.icon }}"></i>
+          {% if nav_link.icon %}<i class="{{ nav_link.icon }}"></i>{% endif %}
           {{ nav_link.text }}
         </a>
         </li>
