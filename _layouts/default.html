@@ -58,47 +58,23 @@ ga('send', 'pageview');
     
     
     <div class="collapse navbar-collapse" id="navbarMediumish">
-       
-        <!-- Begin Menu -->
-        
-            <ul class="navbar-nav ml-auto">
-                
-                {% if page.url == "/" %}
-                <li class="nav-item active">
-                {% else %}
-                <li class="nav-item">
-                {% endif %}
-                <a class="nav-link" href="{{ site.baseurl }}/index.html">Blog</a>
-                </li>
-                
-                {% if page.url == "/about.html" %}
-                <li class="nav-item active">
-                {% else %}
-                <li class="nav-item">
-                {% endif %}
-                <a class="nav-link" href="{{ site.baseurl }}/about">About</a>
-                </li>
-                
-                <li class="nav-item">
-                <a class="nav-link" href="https://github.com/wowthemesnet/mediumish-theme-jekyll/archive/master.zip"><i class="fas fa-download"></i> Download</a>
-                </li>
-                
-                <li class="nav-item">
-                <a target="_blank" class="nav-link" href="https://www.wowthemes.net/themes/mediumish-wordpress/"><i class="fab fa-wordpress-simple"></i> WP Version</a>
-                </li>
-                
-                <li class="nav-item">
-                <a target="_blank" class="nav-link" href="https://www.wowthemes.net/themes/mediumish-ghost/"><i class="fab fa-snapchat-ghost"></i> Ghost Version</a>
-                </li>
-                
-                {% include search-lunr.html %}
-                
-            </ul>		
-        
-        
-  
-        <!-- End Menu -->
-
+      <!-- Begin Menu -->
+      <ul class="navbar-nav ml-auto">
+        {% for nav_link in site.navigation %}
+        {% assign first_char = nav_link.url | slice: 0 %}
+        {% if page.url == nav_link.url %}
+          <li class="nav-item active">
+        {% else %}
+          <li class="nav-item">
+        {% endif %}
+        <a {% if nav_link.target %}target="_blank" {% endif %} class="nav-link" {% if first_char=="/" %} href="{{ site.baseurl }}{{ nav_link.url }}" {% else %}href="{{ nav_link.url }}"{% endif %}>
+          <i class="{{ nav_link.icon }}"></i>
+          {{ nav_link.text }}
+        </a>
+        </li>
+          {% endfor %} {% include search-lunr.html %}
+      </ul>
+      <!-- End Menu -->
     </div>
         
     </div>
