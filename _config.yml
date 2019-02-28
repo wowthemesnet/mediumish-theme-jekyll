@@ -62,9 +62,11 @@ plugins:
 jekyll-archives:
   enabled:
     - categories
+    - tags
   layout: archive
   permalinks:
     category: '/category/:name/'
+    tags: '/tag/:name'
     
 # Pagination 
 paginate: 6
