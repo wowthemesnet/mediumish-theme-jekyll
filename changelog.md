@@ -1,55 +1,32 @@
 # Mediumish Jekyll Theme - Change Log
 
+## 2019-03-01, v1.0.28
+- Added blurred text on spoilers
+- Added half stars for ratings
+
 ## 2019-03-01, v1.0.27
-
-### Added
 - Reveal hidden spoilers on click
-
-## 2019-03-01, v1.0.26
-
-### Added
 - Syntax line numbers
 - Post rating stars
-
-### Fixed
-- Category links with more than 1 word
+- Fixed category links with more than 1 word
 
 ## 2019-02-14
-
-### Fixed
-- Feed site title not showing
-### Added
-- 404 page
+- Fixed Feed site title not showing
+- Added 404 page
 
 ## 2019-02-10
-
-### Fixed
-- CSS Jumbotron categories
+- Fixed CSS Jumbotron categories
 
 ## 2019-02-09
-
-### Fixed
-- Category links are now compatible with Github pages. Archive still available for non Github pages.
-
-### Added
-- Search
-- SEO
+- Fixed Category links are now compatible with Github pages. Archive still available for non Github pages.
+- Added Search
+- Added SEO
 
 ## 2018-11-08
-
-### Fixed
-- fixed reponsive footer jumbotron for tags
+- Fixed reponsive footer jumbotron for tags
 
 ## 2018-11-07
-
-### Added
-- external image support
+- Added external image support
 
 ## 2018-09-12
-
-### Added
-- disable comments in a specific post with `comments: false` in YAML front matter
-
-### Updated
-- Bootstrap v4.1.3
-- jQuery v3.3.1
+- Added option to disable comments in a specific post with `comments: false` in YAML front matter
