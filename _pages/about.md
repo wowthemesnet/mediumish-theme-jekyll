@@ -39,6 +39,10 @@ comments: true
 
 <li>Jumbotron Categories</li>
 
+<li>Post Reviews with Stars</li>
+
+<li>Blurred Spoilers</li>
+
 <li>Integrations:
 
 
@@ -122,7 +126,8 @@ title:  "We all wait for summer"
 author: john
 categories: [ Jekyll, tutorial ]
 image: assets/images/5.jpg
-featured: true
+description: "Something about this post here"
+rating: 4.5
 ---
 </code></pre>
 
