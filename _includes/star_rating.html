@@ -1,19 +1,9 @@
-{% if page.rating == 5 %}
-  <span class="star-rating text-warning"> &#9733;&#9733;&#9733;&#9733;&#9733;</span>
-{% endif %}
-
-{% if page.rating == 4 %}
-  <span class="star-rating text-warning"> &#9733;&#9733;&#9733;&#9733;&#9734;</span>
-{% endif %}
-
-{% if page.rating == 3 %}
-  <span class="star-rating text-warning"> &#9733;&#9733;&#9733;&#9734;&#9734;</span>
-{% endif %}
-
-{% if page.rating == 2 %}
-  <span class="star-rating text-warning"> &#9733;&#9733;&#9734;&#9734;&#9734;</span>
-{% endif %}
-
-{% if page.rating == 1 %}
-  <span class="star-rating text-warning"> &#9733;&#9734;&#9734;&#9734;&#9734;</span>
-{% endif %}
+<div class="rating-holder">
+<div class="c-rating c-rating--regular" data-rating-value="{{page.rating}}">
+  <button>1</button>
+  <button>2</button>
+  <button>3</button>
+  <button>4</button>
+  <button>5</button>
+</div>
+</div>

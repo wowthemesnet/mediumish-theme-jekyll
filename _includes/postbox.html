@@ -12,7 +12,7 @@
             <h2 class="card-title">
                 <a class="text-dark" href="{{ post.url | absolute_url }}">{{ post.title }}</a>
                 {% if post.rating %}
-                <div class="mb-2 mt-1 font-weight-normal">
+                <div class="mb-2 mt-2 font-weight-normal">
                 {% include star_rating_postbox.html %}
                 </div>
                 {% endif %}

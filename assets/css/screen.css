@@ -665,18 +665,3 @@ License: https://www.wowthemes.net/freebies-license/
 .sticky-top-80 {
     top:80px;
 }
-.star-rating {
-    font-size:20px;
-}
-
-a.reveal {
-	font-size: 65%;
-    padding: 4px;
-    border-radius:2px;
-    line-height:1;
-	background: #333;
-	color: #fff !important;
-	font-style: italic;
-	cursor: pointer;
-    display:inline-block;
-}
