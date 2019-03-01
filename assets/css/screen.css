@@ -1,7 +1,6 @@
 /* 
 Template Name: Mediumish 
 Copyright: Sal, WowThemes.net, https://www.wowthemes.net 
-Version: 1.0.24
 License: https://www.wowthemes.net/freebies-license/ 
 */
  .mainheading {
@@ -16,18 +15,20 @@ License: https://www.wowthemes.net/freebies-license/
      text-decoration:none;
 }
  pre {
-     -moz-box-sizing: border-box;
-     box-sizing: border-box;
-     margin: 0 0 1.75em 0;
-     border: #E3EDF3 1px solid;
-     width: 100%;
-     padding: 10px;
-     font-family: monospace, sans-serif;
-     font-size: 14px;
-     white-space: pre;
-     overflow: auto;
-     background: #F7FAFB;
-     border-radius: 3px;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    margin: 0 0 1.75em 0;
+    border: #E3EDF3 1px solid;
+    width: 100%;
+    padding: 10px;
+    font-family: monospace, sans-serif;
+    font-size: 14px;
+    white-space: pre;
+    overflow: auto;
+    background: #F7FAFB;
+    border-radius: 3px;
+    line-height: 1.6;
+    color:#333;
 }
  .mediumnavigation {
      background:rgba(255,255,255,.97);
@@ -663,4 +664,7 @@ License: https://www.wowthemes.net/freebies-license/
 }
 .sticky-top-80 {
     top:80px;
+}
+.star-rating {
+    font-size:20px;
 }

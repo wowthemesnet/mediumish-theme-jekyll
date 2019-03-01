@@ -1,13 +1,19 @@
 # Mediumish Jekyll Theme - Change Log
 
+## 2019-03-01, v1.0.26
+
+### Added
+- Syntax line numbers
+
+### Fixed
+- Category links with more than 1 word
+
 ## 2019-02-14
 
 ### Fixed
 - Feed site title not showing
-
 ### Added
 - 404 page
-
 
 ## 2019-02-10
 

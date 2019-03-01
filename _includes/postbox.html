@@ -9,7 +9,14 @@
             </a>
         </div>
         <div class="card-body">
-            <h2 class="card-title"><a class="text-dark" href="{{ post.url | absolute_url }}">{{ post.title }}</a></h2>
+            <h2 class="card-title">
+                <a class="text-dark" href="{{ post.url | absolute_url }}">{{ post.title }}</a>
+                {% if post.rating %}
+                <div class="mb-2 mt-1 font-weight-normal">
+                {% include star_rating_postbox.html %}
+                </div>
+                {% endif %}
+            </h2>
             <h4 class="card-text">{{ post.excerpt | strip_html | truncatewords:30 }}</h4>            
         </div>
         <div class="card-footer bg-white">

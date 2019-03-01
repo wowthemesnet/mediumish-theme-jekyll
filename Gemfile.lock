@@ -9,9 +9,7 @@ GEM
       eventmachine (>= 0.12.9)
       http_parser.rb (~> 0.6.0)
     eventmachine (1.2.7-x64-mingw32)
-    eventmachine (1.2.7-x86-mingw32)
     ffi (1.10.0-x64-mingw32)
-    ffi (1.10.0-x86-mingw32)
     forwardable-extended (2.6.0)
     http_parser.rb (0.6.0)
     i18n (0.9.5)
@@ -57,7 +55,7 @@ GEM
       ffi (~> 1.0)
     rouge (3.3.0)
     ruby_dep (1.5.0)
-    safe_yaml (1.0.4)
+    safe_yaml (1.0.5)
     sass (3.7.3)
       sass-listen (~> 4.0.0)
     sass-listen (4.0.0)
@@ -67,7 +65,6 @@ GEM
 
 PLATFORMS
   x64-mingw32
-  x86-mingw32
 
 DEPENDENCIES
   jekyll-archives
@@ -75,10 +72,9 @@ DEPENDENCIES
   jekyll-paginate
   jekyll-seo-tag
   jekyll-sitemap
+  kramdown
+  rouge
   wdm (>= 0.1.0)
 
-RUBY VERSION
-   ruby 2.6.1p33
-
 BUNDLED WITH
-   1.17.2
+   1.16.4

@@ -17,7 +17,15 @@
                 <div class="h-100 card-group">
                     <div class="card">
                         <div class="card-body">
-                            <h2 class="card-title"><a class="text-dark" href="{{ post.url | absolute_url }}">{{ post.title }}</a></h2>
+                            <h2 class="card-title">
+                                <a class="text-dark" href="{{ post.url | absolute_url }}">{{ post.title }}</a>
+                                {% if post.rating %}
+                                <div class="mb-2 mt-1 font-weight-normal">
+                                {% include star_rating_postbox.html %}
+                                </div>
+                                {% endif %}
+                            </h2>
+                            
                             <h4 class="card-text">{{ post.excerpt | strip_html | truncatewords:25 }}</h4>
                         </div>
                         <div class="card-footer b-0 bg-white mt-auto">

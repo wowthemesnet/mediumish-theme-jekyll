@@ -1,6 +1,6 @@
 
 .highlight {
-	background: #ffffff;
+	background: #F7FAFB;
 	.c { color: #999988; font-style: italic } /* Comment */
 	.err { color: #a61717; background-color: #e3d2d2 } /* Error */
 	.k { font-weight: bold } /* Keyword */
@@ -62,3 +62,5 @@
 	.il { color: #009999 } /* Literal.Number.Integer.Long */
 }
 
+td.rouge-code { width: 100%;}
+pre.lineno { color: #9999;}

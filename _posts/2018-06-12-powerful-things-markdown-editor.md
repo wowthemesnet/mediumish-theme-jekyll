@@ -29,7 +29,64 @@ There are two types of code elements which can be inserted in Markdown, the firs
 }
 ```
 
-If you want to get really fancy, you can even add syntax highlighting using Rouge.
+#### HTML
+
+```html
+<li class="ml-1 mr-1">
+    <a target="_blank" href="#">
+    <i class="fab fa-twitter"></i>
+    </a>
+</li>
+```
+
+#### CSS
+
+```css
+.highlight .c {
+    color: #999988;
+    font-style: italic; 
+}
+.highlight .err {
+    color: #a61717;
+    background-color: #e3d2d2; 
+}
+```
+
+#### JS
+
+```js
+// alertbar later
+$(document).scroll(function () {
+    var y = $(this).scrollTop();
+    if (y > 280) {
+        $('.alertbar').fadeIn();
+    } else {
+        $('.alertbar').fadeOut();
+    }
+});
+```
+
+#### Python
+
+```python
+print("Hello World")
+```
+
+#### Ruby
+
+```ruby
+require 'redcarpet'
+markdown = Redcarpet.new("Hello World!")
+puts markdown.to_html
+```
+
+#### C
+
+```c
+printf("Hello World");
+```
+
+
 
 
 ![walking]({{ site.baseurl }}/assets/images/8.jpg)

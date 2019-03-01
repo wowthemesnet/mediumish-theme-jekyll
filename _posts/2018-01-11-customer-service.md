@@ -1,21 +1,29 @@
 ---
 layout: post
-title:  "What is Jekyll"
+title:  "Inception Movie"
 author: john
 categories: [ Jekyll, tutorial ]
 image: assets/images/11.jpg
+description: "My review of Inception movie. Acting, plot and something else in this short description."
 featured: true
 hidden: true
+rating: 5
 ---
 
-No more databases, comment moderation, or pesky updates to install-just your content. Markdown, Liquid, HTML & CSS go in. Static sites come out ready for deployment. Permalinks, categories, pages, posts, and custom layouts are all first-class citizens here.
+Review products, books, movies, restaurant and anything you like on your Jekyll blog with Mediumish! JSON-LD ready for review property.
 
-Sick of dealing with hosting companies? GitHub Pages are powered by Jekyll, so you can easily deploy your site using GitHub for free-custom domain name and all.
+#### How to use?
 
-## What is Jekyll?
+It's actually really simple! Add the rating in your YAML front matter:
 
-Jekyll is a simple, blog-aware, static site generator.
-
-You create your content as text files (Markdown), and organize them into folders. Then, you build the shell of your site using Liquid-enhanced HTML templates. Jekyll automatically stitches the content and templates together, generating a website made entirely of static assets, suitable for uploading to any server.
-
-Jekyll happens to be the engine behind GitHub Pages, so you can host your project’s Jekyll page/blog/website on GitHub’s servers for free.
+```html
+---
+layout: post
+title:  "Inception Movie"
+author: john
+categories: [ Jekyll, tutorial ]
+image: assets/images/11.jpg
+description: "My review of Inception movie. Actors, directing and more."
+rating: 5
+---
+```
