@@ -665,3 +665,10 @@ License: https://www.wowthemes.net/freebies-license/
 .sticky-top-80 {
     top:80px;
 }
+
+.spoiler {
+    color: transparent;
+    text-shadow:0 0 6px rgba(0,0,0,0.2);
+    transition: all .4s;
+    cursor:pointer;
+}
