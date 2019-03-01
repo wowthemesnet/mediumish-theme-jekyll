@@ -17,18 +17,18 @@ License: https://www.wowthemes.net/freebies-license/
  pre {
     -moz-box-sizing: border-box;
     box-sizing: border-box;
-    margin: 0 0 1.75em 0;
     border: #E3EDF3 1px solid;
     width: 100%;
-    padding: 10px;
+    padding: 7px;
     font-family: monospace, sans-serif;
     font-size: 14px;
     white-space: pre;
     overflow: auto;
-    background: #F7FAFB;
-    border-radius: 3px;
+    background: #fff;
+    border-radius: 0px;
     line-height: 1.6;
     color:#333;
+     margin-bottom:-rem;
 }
  .mediumnavigation {
      background:rgba(255,255,255,.97);
@@ -667,4 +667,16 @@ License: https://www.wowthemes.net/freebies-license/
 }
 .star-rating {
     font-size:20px;
+}
+
+a.reveal {
+	font-size: 65%;
+    padding: 4px;
+    border-radius:2px;
+    line-height:1;
+	background: #333;
+	color: #fff !important;
+	font-style: italic;
+	cursor: pointer;
+    display:inline-block;
 }

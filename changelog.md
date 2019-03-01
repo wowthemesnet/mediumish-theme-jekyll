@@ -1,9 +1,15 @@
 # Mediumish Jekyll Theme - Change Log
 
+## 2019-03-01, v1.0.27
+
+### Added
+- Reveal hidden spoilers on click
+
 ## 2019-03-01, v1.0.26
 
 ### Added
 - Syntax line numbers
+- Post rating stars
 
 ### Fixed
 - Category links with more than 1 word

@@ -87,4 +87,12 @@ jQuery(document).ready(function($){
         
     $('.site-content').css('margin-top', $('header').outerHeight() + 'px');  
     
+    // spoilers
+    $("span.spoiler").hide();	
+    $('<a class="reveal">Reveal Spoiler &gt;&gt;</a> ').insertBefore('.spoiler');
+	$("a.reveal").click(function(){
+		$(this).parents("p").children("span.spoiler").fadeIn(1500);
+		$(this).parents("p").children("a.reveal").fadeOut(0);
+	});
+    
  });   
