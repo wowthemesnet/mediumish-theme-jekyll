@@ -1,14 +1,14 @@
 # Site
-name: "Mediumish"
-title: "Mediumish"
-description: "Jekyll Template for Blogging"
-meta_description: "Jekyll template, Medium styled, free for bloggers."
+name: "loda-kun"
+title: "loda-kun"
+description: "Blog của loda"
+meta_description: "Blog hướng dẫn java và tất cả hệ sinh thái quanh java"
 logo: 'assets/images/logo.png'
 favicon: 'assets/images/logo.png'
 baseurl: ''
-google_analytics: 'UA-46278016-1'
-disqus: 'demowebsite'
-mailchimp-list: 'https://wowthemes.us11.list-manage.com/subscribe/post?u=8aeb20a530e124561927d3bd8&amp;id=8c3d2d214b'
+# google_analytics: 'UA-46278016-1'
+# disqus: 'demowebsite'
+# mailchimp-list: 'https://wowthemes.us11.list-manage.com/subscribe/post?u=8aeb20a530e124561927d3bd8&amp;id=8c3d2d214b'
 include: ["_pages"]
 permalink: /:title/
 
@@ -21,7 +21,7 @@ authors:
     email: loda.namnh@gmail.com
     web: https://www.loda-kun.github.io
     facebook: https://www.facebook.com/nam.tehee
-    description: "Author of Mediumish, a Bootstrap Medium styled template available for WordPress, HTML, Ghost and Jekyll. You are currently previewing Jekyll template demo."
+    description: "Là chàng coder nội tâm :'("
 # Plugins
 plugins: 
   - jekyll-paginate
@@ -40,7 +40,7 @@ jekyll-archives:
     
 # Pagination 
 paginate: 6
-paginate_path: /page:num/
+paginate_path: /page/:num/
     
 # Other
 markdown: kramdown
