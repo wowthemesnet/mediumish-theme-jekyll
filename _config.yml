@@ -14,14 +14,14 @@ permalink: /:title/
 
 # Authors
 authors:
-  sal:
+  loda:
     name: loda
     display_name: loda
     gravatar: e56154546cf4be74e393c62d1ae9f9d4
     email: loda.namnh@gmail.com
     web: https://www.loda-kun.github.io
     facebook: https://www.facebook.com/nam.tehee
-    description: "Là chàng coder nội tâm :'("
+    description: "Là chàng coder :'( yêu màu tím , thích màu hồng, sống nội tâm, hay khóc thầm, ghét sự giả dối... Mong muốn chia sẻ cho cộng đồng các kiến thức mới về lâp trình nói chung và đời sống nói riêng."
 # Plugins
 plugins: 
   - jekyll-paginate
