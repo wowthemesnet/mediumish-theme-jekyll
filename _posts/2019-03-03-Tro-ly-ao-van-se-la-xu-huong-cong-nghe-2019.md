@@ -1,4 +1,5 @@
 ---
+id: loda1551586738
 layout: post
 title:  "Trợ lý ảo vẫn sẽ là xu hướng công nghệ 2019"
 author: loda
