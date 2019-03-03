@@ -8,6 +8,11 @@
 	display:inline;
 }
 
+/* make embeded youtube video fit to post*/
+.youtube-iframe {
+    width: 100vw; 
+    height: 56.25vw;
+}
 // Import partials from `sass_dir` (defaults to `_sass`)
 @import
 	"syntax",
