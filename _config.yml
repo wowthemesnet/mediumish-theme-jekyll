@@ -2,7 +2,7 @@
 name: "loda-kun"
 title: "loda-kun"
 description: "Blog của loda"
-meta_description: "Blog hướng dẫn java và tất cả hệ sinh thái quanh java"
+meta_description: "Blog chia sẻ, hướng dẫn lập trình bằng tiếng việt, chi tiết nhất. Java, Python, Machine Learning, Deep learning, AI, .."
 logo: 'assets/images/logo.png'
 favicon: 'assets/images/logo.png'
 baseurl: ''
