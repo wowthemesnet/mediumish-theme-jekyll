@@ -1,21 +1,22 @@
 ---
 layout: post
-title:  "Inception Movie"
-author: john
-categories: [ Jekyll, tutorial ]
-image: assets/images/11.jpg
-description: "My review of Inception movie. Acting, plot and something else in this short description."
-featured: true
-hidden: true
-rating: 4.5
----
-<!-- ---
-layout: post
 title:  "Trợ lý ảo vẫn sẽ là xu hướng công nghệ 2019"
 author: loda
 categories: [ Virtual Assistant, Machine Learning, AI ]
 image: assets/images/loda1551586738/1.jpg
 description: "Trợ lý ảo (Virtual Assistant) - một cụm từ “hot” được nhắc tới rất nhiều trong khoảng 3 năm trở lại đây. Nó đang tạo ra một cuộc đua ngầm trong thế giới công nghệ."
+featured: true
+hidden: true
+rating: 4.5
+---
+
+<!-- ---
+layout: post
+title:  "Inception Movie"
+author: john
+categories: [ Jekyll, tutorial ]
+image: assets/images/11.jpg
+description: "My review of Inception movie. Acting, plot and something else in this short description."
 featured: true
 hidden: true
 rating: 4.5
