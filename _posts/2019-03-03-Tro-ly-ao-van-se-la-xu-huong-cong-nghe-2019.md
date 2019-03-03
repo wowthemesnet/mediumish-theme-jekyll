@@ -1,6 +1,17 @@
 
 ---
 layout: post
+title:  "Inception Movie"
+author: john
+categories: [ Jekyll, tutorial ]
+image: assets/images/11.jpg
+description: "My review of Inception movie. Acting, plot and something else in this short description."
+featured: true
+hidden: true
+rating: 4.5
+---
+<!-- ---
+layout: post
 title:  "Trợ lý ảo vẫn sẽ là xu hướng công nghệ 2019"
 author: loda
 categories: [ Virtual Assistant, Machine Learning, AI ]
@@ -9,7 +20,7 @@ description: "Trợ lý ảo (Virtual Assistant) - một cụm từ “hot” đ
 featured: true
 hidden: true
 rating: 4.5
----
+--- -->
 
 Những năm gần đây, Trợ lý ảo đã dần trở thành xu hướng công nghệ được đón đầu. Các “ông lớn” làng công nghệ thế giới đã cho ra đời các trợ lý ảo, được nhiều người biết đến như: Apple Siri, Google Assistant, Amazon Alexa, Microsoft Cortana.
 
@@ -60,7 +71,7 @@ Hằng ngày team mình sẽ tối ưu Trợ lý ảo bằng các công nghệ:
 
 **_Đây là sản phẩm Trợ lý ảo do team mình đang xây dựng:_**
 
-<iframe class="ql-video" frameborder="0" allowfullscreen="true" src="https://www.youtube.com/embed/r8i3kQDufjk?showinfo=0" x-frame-options="SAMEORIGIN"></iframe>
+<iframe style="width:100%;" height="315" src="https://www.youtube.com/embed/r8i3kQDufjk" frameborder="0" allow="accelerometer; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 Công việc của một lập trình viên làm Trợ lý ảo với mình rất thú vị. Tuy nhiên mình cũng nhận được nhiều câu hỏi rằng Trợ lý ảo rất phát triển và là xu hướng Công nghệ mới nhưng là ở nước rất phát triển, không phải ở Việt Nam. Vậy theo mọi người, **Cơ hội và thách thức cho các nhà phát triển, kỹ sư lập trình Trợ lý ảo tại Việt Nam là gì? Đây có thực sự là cơ hội mới cho các lập trình viên?**
 
