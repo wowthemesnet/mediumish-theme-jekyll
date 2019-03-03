@@ -1,11 +1,11 @@
 ---
 id: loda1551603987
 layout: post
-title:  "Trợ lý ảo vẫn sẽ là xu hướng công nghệ 2019"
+title:  "Mình đã làm xe tự lái như thế nào?"
 author: loda
-categories: [ Virtual Assistant, Machine Learning, AI ]
+categories: [ Image Processing, Machine Learning, AI ]
 image: assets/images/loda1551603987/1.png
-description: "Trợ lý ảo (Virtual Assistant) - một cụm từ “hot” được nhắc tới rất nhiều trong khoảng 3 năm trở lại đây. Nó đang tạo ra một cuộc đua ngầm trong thế giới công nghệ."
+description: "Cùng mình làm xe tự lái nào. Em xe này có tốc độ chạy tối đa 25 km/h"
 featured: true
 hidden: true
 rating: 4.5
