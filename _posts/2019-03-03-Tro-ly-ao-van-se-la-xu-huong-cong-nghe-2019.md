@@ -74,7 +74,7 @@ Hằng ngày team mình sẽ tối ưu Trợ lý ảo bằng các công nghệ:
 
 <div class="video-wrap">
     <div class="video-container">
-        <iframe src="https://www.youtube.com/embed/r8i3kQDufjk" frameborder="0" allowfullscreen></iframe>
+        <iframe style="width: 100%; height: 100%;" src="https://www.youtube.com/embed/r8i3kQDufjk" frameborder="0" allowfullscreen></iframe>
     </div>
 </div>
 
