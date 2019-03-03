@@ -71,7 +71,9 @@ Hằng ngày team mình sẽ tối ưu Trợ lý ảo bằng các công nghệ:
 
 **_Đây là sản phẩm Trợ lý ảo do team mình đang xây dựng:_**
 
-<p><iframe style="width:100%;" height="315" src="https://www.youtube.com/embed/r8i3kQDufjk" frameborder="0" allowfullscreen></iframe></p>
+<div class="youtube-container">
+<iframe  src="https://www.youtube.com/embed/r8i3kQDufjk" frameborder="0" allowfullscreen class ="youtube-video"></iframe>
+</div>
 
 Công việc của một lập trình viên làm Trợ lý ảo với mình rất thú vị. Tuy nhiên mình cũng nhận được nhiều câu hỏi rằng Trợ lý ảo rất phát triển và là xu hướng Công nghệ mới nhưng là ở nước rất phát triển, không phải ở Việt Nam. Vậy theo mọi người, **Cơ hội và thách thức cho các nhà phát triển, kỹ sư lập trình Trợ lý ảo tại Việt Nam là gì? Đây có thực sự là cơ hội mới cho các lập trình viên?**
 
