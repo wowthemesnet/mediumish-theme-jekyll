@@ -1,14 +1,14 @@
 ---
 id: loda1551603987
 layout: post
-title:  "Trợ lý ảo vẫn sẽ là xu hướng công nghệ 2019"
+title:  "Mình đã làm xe tự lái như thế nào?"
 author: loda
-categories: [ Virtual Assistant, Machine Learning, AI ]
+categories: [ Image Processing, Machine Learning, AI ]
 image: assets/images/loda1551603987/1.png
-description: "Trợ lý ảo (Virtual Assistant) - một cụm từ “hot” được nhắc tới rất nhiều trong khoảng 3 năm trở lại đây. Nó đang tạo ra một cuộc đua ngầm trong thế giới công nghệ."
+description: "Cùng mình làm xe tự lái nào. Em xe này có tốc độ chạy tối đa 25 km/h"
 featured: true
 hidden: true
-rating: 4.5
+rating: 5
 ---
 
 ## Đôi nét về Xe tự hành
@@ -26,7 +26,9 @@ Nếu xe tự hành được nghiên cứu và áp dụng thành công t
 
 Em xe này có tốc độ chạy tối đa 25 km/h, có thể leo trèo bãi đất, bãi cát, leo dốc 45 độ, lội nước sâu tầm 10 cm, lội tuyết, sình lầy (cũng khá ngầu phải không :P)
 
+<div class="wrapper-center">
 ![walking]({{ site.baseurl }}/assets/images/loda1551603987/2.jpg)
+</div>
 
 Chi tiết hơn thì chiếc xe gồm có:
 
@@ -45,7 +47,9 @@ Sau đây, mình sẽ chia sẻ qua một chút về quá trình team mình lậ
 
 Ngoài ra, xe chỉ cần xác định đoạn đường trước nó không xa, nên mình cắt 1 nửa ảnh, lấy đoạn đường phía dưới để xử lý. Mình đã sử dụng lọc màu trên kênh HSV để làm nổi bật các đường màu trắng, sau đó sử dụng `thuật toán Canny` để cho ra biên ảnh. Từ Canny mình có thể xác định được các đường thẳng trong ảnh => chính là các làn đường trong ảnh.
 
+<div class="wrapper-center">
 ![walking]({{ site.baseurl }}/assets/images/loda1551603987/3.png)
+</div>
 
 Tham khảo thuật toán Canny [tại đây.](https://docs.opencv.org/3.1.0/da/d22/tutorial_py_canny.html)
 
@@ -78,7 +82,9 @@ Trong phần xác định biển báo rẽ trái hoặc rẽ phải. Mình sẽ 
 
 Khi đã biết được biển báo ở đâu, mình sẽ sử dụng thuật toán trích đặc trưng của biển báo là HOG và đưa vào một bộ nhận dạng đã được huấn luyện từ trước là SVM để xác định xem biển báo là gì => Lúc này sẽ biết được biển báo đó là rẽ trái hay rẽ phải và điều khiển xe theo hướng đó
 
+<div class="wrapper-center">
 ![walking]({{ site.baseurl }}/assets/images/loda1551603987/4.jpg)
+</div>
 
 Trên đây là toàn bộ những chia sẻ của mình về việc mình đã được tham gia lập trình một chiếc Xe tự hành ở level “đơn giản” như thế nào. Hy vọng là trong tương lai sẽ không còn là dạng “mô hình” hay “level đơn giản” nữa :D
 
