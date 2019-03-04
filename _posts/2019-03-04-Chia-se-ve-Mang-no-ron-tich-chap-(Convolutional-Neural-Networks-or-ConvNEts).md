@@ -8,5 +8,5 @@ image: assets/images/loda1551717776514/1.png
 description:  Mạng nơ-ron tích chập trở nên phổ biến và đóng vai trò quan trọng trong sự phát triển của trí tuệ nhân tạo nói chung và xử lý ảnh nói riêng.
 featured: true
 hidden: true
-rating: 5.0
+rating: 5
 ---
