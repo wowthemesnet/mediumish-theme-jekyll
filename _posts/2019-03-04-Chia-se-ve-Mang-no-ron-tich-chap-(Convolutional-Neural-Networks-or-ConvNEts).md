@@ -24,7 +24,7 @@ Bài viết này sẽ trình bày một cách ngắn gọn về cấu tạo củ
 ConvNet có 02 phần chính: `Lớp trích lọc đặc trưng của ảnh (Conv, Relu và Pool)` và `Lớp phân loại (FC và softmax)`.
 
 <div class="wrapper-center">
-![walking]({{ site.baseurl }}/assets/images/loda1551717776514/2.jpg)
+    <img src="/assets/images/loda1551717776514/2.jpg" alt="Convolutional Neural Networks"/>
 </div>
 
 #### Đầu vào (dữ liệu training):
@@ -35,7 +35,7 @@ ConvNet có 02 phần chính: `Lớp trích lọc đặc trưng của ảnh (Con
 * `D`: Là độ sâu, hay dễ hiểu là số lớp màu của ảnh. Ví dụ ảnh RBG sẽ là 3 lớp ảnh Red, Green, Blue
 
 <div class="wrapper-center">
-![walking]({{ site.baseurl }}/assets/images/loda1551717776514/3.jpg)
+    <img src="/assets/images/loda1551717776514/3.jpg" alt="Convolutional Neural Networks"/>
 </div>
 
 _Ví dụ về khái niệm channel (kênh màu) của ảnh RBG và ảnh xám_
@@ -45,7 +45,7 @@ _Ví dụ về khái niệm channel (kênh màu) của ảnh RBG và ảnh xám_
 Trước khi nói vào lớp conv layer, chúng ta cần biết phép tích chập là cái gì đã :v. Rất dễ thôi, bạn nhìn ảnh này:
 
 <div class="wrapper-center">
-![walking]({{ site.baseurl }}/assets/images/loda1551717776514/5.jpg)
+    <img src="/assets/images/loda1551717776514/5.jpg" alt="Convolutional Neural Networks"/>
 </div>
 
 Chúng ta có một ma trận là `Kernel`, khi chiếu nó lên 1 vùng của bức ảnh. Mấy từng phần tử tương ứng của ảnh, nhân nó với phần tử tương ứng của `Kernel`. Sau đó lấy tổng. Ta-daaaa.
@@ -53,7 +53,7 @@ Chúng ta có một ma trận là `Kernel`, khi chiếu nó lên 1 vùng của b
 Mục tiêu của các lớp tích chập là trích chọn các đặc trưng của ảnh đầu vào.
 
 <div class="wrapper-center">
-![walking]({{ site.baseurl }}/assets/images/loda1551717776514/4.gif)
+    <img src="/assets/images/loda1551717776514/4.gif" alt="Convolutional Neural Networks"/>
 </div>
 
 _Ví dụ của Conv layer. (Nguồn : CS231n notes.)_
@@ -125,7 +125,7 @@ Mục đích của lớp ReLu là đưa ảnh một mức ngưỡng, ở đây l
 Ví dụ: `Max pooling` với bộ lọc `2x2` và `stride = 2`. Bộ lọc sẽ chạy dọc ảnh. Và với mỗi vùng ảnh được chọn, sẽ chọn ra 1 giá trị lớn nhất và giữ lại.
 
 <div class="wrapper-center">
-![walking]({{ site.baseurl }}/assets/images/loda1551717776514/6.png)
+    <img src="/assets/images/loda1551717776514/6.png" alt="Convolutional Neural Networks"/>
 </div>
 
 Max pooling kernel 2x2, stride = 2. Nguồn: Wikipedia

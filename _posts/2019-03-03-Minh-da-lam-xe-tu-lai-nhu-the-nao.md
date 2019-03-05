@@ -48,7 +48,7 @@ Sau đây, mình sẽ chia sẻ qua một chút về quá trình team mình lậ
 Ngoài ra, xe chỉ cần xác định đoạn đường trước nó không xa, nên mình cắt 1 nửa ảnh, lấy đoạn đường phía dưới để xử lý. Mình đã sử dụng lọc màu trên kênh HSV để làm nổi bật các đường màu trắng, sau đó sử dụng `thuật toán Canny` để cho ra biên ảnh. Từ Canny mình có thể xác định được các đường thẳng trong ảnh => chính là các làn đường trong ảnh.
 
 <div class="wrapper-center">
-![walking]({{ site.baseurl }}/assets/images/loda1551603987/3.png)
+    <img src="/assets/images/loda1551603987/3.png" alt="Xe tự lái"/>
 </div>
 
 Tham khảo thuật toán Canny [tại đây.](https://docs.opencv.org/3.1.0/da/d22/tutorial_py_canny.html)
@@ -83,7 +83,7 @@ Trong phần xác định biển báo rẽ trái hoặc rẽ phải. Mình sẽ 
 Khi đã biết được biển báo ở đâu, mình sẽ sử dụng thuật toán trích đặc trưng của biển báo là HOG và đưa vào một bộ nhận dạng đã được huấn luyện từ trước là SVM để xác định xem biển báo là gì => Lúc này sẽ biết được biển báo đó là rẽ trái hay rẽ phải và điều khiển xe theo hướng đó
 
 <div class="wrapper-center">
-![walking]({{ site.baseurl }}/assets/images/loda1551603987/4.jpg)
+    <img src="/assets/images/loda1551603987/4.jpg" alt="Xe tự lái"/>
 </div>
 
 Trên đây là toàn bộ những chia sẻ của mình về việc mình đã được tham gia lập trình một chiếc Xe tự hành ở level “đơn giản” như thế nào. Hy vọng là trong tương lai sẽ không còn là dạng “mô hình” hay “level đơn giản” nữa :D
