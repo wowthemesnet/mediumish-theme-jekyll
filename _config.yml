@@ -1,44 +1,44 @@
 # Site
-name: "Mediumish"
-title: "Mediumish"
-description: "Jekyll Template for Blogging"
-meta_description: "Jekyll template, Medium styled, free for bloggers."
+name: "MapleSage"
+title: "MapleSage"
+description: "Discover a smarter approach to business growth"
+meta_description: "Inbound Marketing Agency"
 logo: 'assets/images/logo.png'
 favicon: 'assets/images/logo.png'
-baseurl: /mediumish-theme-jekyll
-google_analytics: 'UA-46278016-1'
-disqus: 'demowebsite'
-mailchimp-list: 'https://wowthemes.us11.list-manage.com/subscribe/post?u=8aeb20a530e124561927d3bd8&amp;id=8c3d2d214b'
+baseurl: /blog.maplesage.co/
+google_analytics: ''
+disqus: ''
+mailchimp-list: ''
 include: ["_pages"]
 permalink: /:title/
 
 # Authors
 authors:
   sal:
-    name: Sal
-    display_name: Sal
-    gravatar: e56154546cf4be74e393c62d1ae9f9d4
-    email: wowthemesnet@gmail.com
-    web: https://www.wowthemes.net
-    twitter: https://twitter.com/wowthemesnet
-    description: "Author of Mediumish, a Bootstrap Medium styled template available for WordPress, HTML, Ghost and Jekyll. You are currently previewing Jekyll template demo."
+    name: Parvind
+    display_name: Parvind
+    gravatar: e9c1d461b32263d2a14627a894fea88b
+    email: parvind@maplesage.com
+    web: https://maplesage.com
+    twitter: https://twitter.com/Maple_Sage
+    description: "MapleSage is a full-service, integrated software solution, services, inbound marketing and communications agency based out of Gurgaon, Haryana - India. We specialize in providing platform services, consulting services, marketing & advertising services, to SME's. A new kind of agency – one that combines enterprise-level technology implementation, and value-added marketing and analytics services."
   john:
-    name: John
-    display_name: John
-    gravatar: b1cc14991db7a456fcd761680bbc8f81
-    email: wowthemesnet@gmail.com
-    web: https://www.wowthemes.net
-    twitter: https://twitter.com/wowthemesnet
-    description: "This is the author box. Write a short description of the author here. You are currently previewing Mediumish demo, a Jekyll template compatible with Github pages."
+    name: parvind
+    display_name: Parvind
+    gravatar: e9c1d461b32263d2a14627a894fea88b
+    email: parvind@maplesage.com
+    web: https://maplesage.com
+    twitter: https://twitter.com/Maple_Sage
+    description: "MapleSage is a full-service, integrated software solution, services, inbound marketing and communications agency based out of Gurgaon, Haryana - India. We specialize in providing platform services, consulting services, marketing & advertising services, to SME's. A new kind of agency – one that combines enterprise-level technology implementation, and value-added marketing and analytics services."
 
 # Plugins
-plugins: 
+plugins:
   - jekyll-paginate
   - jekyll-sitemap
   - jekyll-feed
   - jekyll-seo-tag
   - jekyll-archives
-    
+
 # Archives
 jekyll-archives:
   enabled:
@@ -46,11 +46,11 @@ jekyll-archives:
   layout: archive
   permalinks:
     category: '/category/:name/'
-    
-# Pagination 
+
+# Pagination
 paginate: 6
 paginate_path: /page:num/
-    
+
 # Other
 markdown: kramdown
 
