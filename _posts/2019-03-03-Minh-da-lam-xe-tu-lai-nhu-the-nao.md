@@ -26,11 +26,9 @@ Nếu xe tự hành được nghiên cứu và áp dụng thành công t
 
 Em xe này có tốc độ chạy tối đa 25 km/h, có thể leo trèo bãi đất, bãi cát, leo dốc 45 độ, lội nước sâu tầm 10 cm, lội tuyết, sình lầy (cũng khá ngầu phải không :P)
 
-<p>
 <div class="wrapper-center">
-![walking]({{ site.baseurl }}/assets/images/loda1551603987/2.jpg)
+    <img src="/assets/images/loda1551603987/2.jpg" alt="Xe tự lái"/>
 </div>
-</p>
 
 Chi tiết hơn thì chiếc xe gồm có:
 
