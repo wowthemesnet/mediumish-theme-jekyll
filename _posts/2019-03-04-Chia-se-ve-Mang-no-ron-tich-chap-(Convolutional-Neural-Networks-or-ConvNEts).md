@@ -4,7 +4,7 @@ layout: post
 title: Chia sẻ về Mạng nơ-ron tích chập (Convolutional Neural Networks or ConvNEts)
 author: loda
 categories: [ Machine Learning, image processing, deep learning, neural network, CNN, Convolutional ]
-image: assets/images/loda1551717776514/1.jpg
+image: assets/images/loda1551717776514/7.jpg
 description:  Mạng nơ-ron tích chập trở nên phổ biến và đóng vai trò quan trọng trong sự phát triển của trí tuệ nhân tạo nói chung và xử lý ảnh nói riêng.
 featured: true
 hidden: true
@@ -35,7 +35,7 @@ ConvNet có 02 phần chính: `Lớp trích lọc đặc trưng của ảnh (Con
 * `D`: Là độ sâu, hay dễ hiểu là số lớp màu của ảnh. Ví dụ ảnh RBG sẽ là 3 lớp ảnh Red, Green, Blue
 
 <div class="wrapper-center">
-    <img src="/assets/images/loda1551717776514/3.jpg" alt="Convolutional Neural Networks"/>
+    <img src="/assets/images/loda1551717776514/3.png" alt="Convolutional Neural Networks"/>
 </div>
 
 _Ví dụ về khái niệm channel (kênh màu) của ảnh RBG và ảnh xám_
@@ -46,7 +46,7 @@ Trước khi nói vào lớp conv layer, chúng ta cần biết phép tích ch�
 
 <div class="wrapper-center">
     <img src="/assets/images/loda1551717776514/5.jpg" alt="Convolutional Neural Networks"/>
-</div>
+</div><br>
 
 Chúng ta có một ma trận là `Kernel`, khi chiếu nó lên 1 vùng của bức ảnh. Mấy từng phần tử tương ứng của ảnh, nhân nó với phần tử tương ứng của `Kernel`. Sau đó lấy tổng. Ta-daaaa.
 
