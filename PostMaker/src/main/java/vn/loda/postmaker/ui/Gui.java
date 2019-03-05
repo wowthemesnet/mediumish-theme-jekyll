@@ -331,7 +331,7 @@ public class Gui extends javax.swing.JFrame {
                     .featured(cbFeatured.isSelected())
                     .hidden(cbHidden.isSelected());
 
-            String image = PostHelper.normalizeImagePath(downloadImage(tvImage.getText().trim(), 1));
+            String image = PostHelper.normalizeImagePath(downloadImage(tvImage.getText().trim(), maker.id(), 1));
             maker.image(image);
 
             FileUtils.writeStringToFile(
@@ -372,7 +372,7 @@ public class Gui extends javax.swing.JFrame {
                     }
                 }
             }
-        }else{
+        } else {
             JOptionPane.showMessageDialog(this, "thư mục không tồn tại");
             throw new RuntimeException("java.lang.NullPointerException");
         }
@@ -388,7 +388,7 @@ public class Gui extends javax.swing.JFrame {
         }
         for (String line : textArea.getText().split("\n")) {
             if (line != null && !line.isEmpty()) {
-                downloadImage(line, getAvailableNumber(tvFolderId.getText()));
+                downloadImage(line, tvFolderId.getText(), getAvailableNumber(tvFolderId.getText()));
             }
         }
         JOptionPane.showMessageDialog(this, "Done");
@@ -400,18 +400,16 @@ public class Gui extends javax.swing.JFrame {
         // TODO add your handling code here:
     }//GEN-LAST:event_tvFolderIdActionPerformed
 
-    private String downloadImage(String url, int number) {
+    private String downloadImage(String url, String folderId, int number) {
         try {
             String image = tv_Images.getText()
-                    + maker.id() + "/"
+                    + folderId + "/"
                     + number + "."
                     + FilenameUtils.getExtension(url);
-            lbCurrentInstance.setText("Current Instance: " + maker.id());
             FileUtils.copyURLToFile(new URL(url), new File(image));
             return image;
         } catch (Exception e) {
-            lbCurrentInstance.setText("Current Instance: " + maker.id());
-            JOptionPane.showMessageDialog(this, "Image link có vấn đề");
+            JOptionPane.showMessageDialog(this, "Image link có vấn đề" + e.getMessage());
             throw new RuntimeException("Image link có vấn đề");
         }
     }
