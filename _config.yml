@@ -5,7 +5,7 @@ description: "Discover a smarter approach to business growth"
 meta_description: "Inbound Marketing Agency"
 logo: 'assets/images/logo.png'
 favicon: 'assets/images/logo.png'
-baseurl: /blog.maplesage.co/
+baseurl: /maplesage.co/
 google_analytics: ''
 disqus: ''
 mailchimp-list: ''
@@ -27,7 +27,7 @@ authors:
     display_name: Parvind
     gravatar: e9c1d461b32263d2a14627a894fea88b
     email: parvind@maplesage.com
-    web: https://maplesage.com
+    web: https://maplesage.co
     twitter: https://twitter.com/Maple_Sage
     description: "MapleSage is a full-service, integrated software solution, services, inbound marketing and communications agency based out of Gurgaon, Haryana - India. We specialize in providing platform services, consulting services, marketing & advertising services, to SME's. A new kind of agency – one that combines enterprise-level technology implementation, and value-added marketing and analytics services."
 
