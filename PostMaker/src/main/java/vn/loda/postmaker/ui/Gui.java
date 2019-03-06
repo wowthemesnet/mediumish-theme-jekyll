@@ -5,6 +5,8 @@
  */
 package vn.loda.postmaker.ui;
 
+import com.mashape.unirest.http.Unirest;
+import com.mashape.unirest.http.exceptions.UnirestException;
 import java.awt.Component;
 import java.io.File;
 import java.io.FileWriter;
@@ -13,6 +15,7 @@ import java.lang.reflect.Field;
 import java.net.MalformedURLException;
 import java.net.URL;
 import java.util.ArrayList;
+import java.util.Calendar;
 import java.util.logging.Level;
 import java.util.logging.Logger;
 import java.util.regex.Matcher;
@@ -31,9 +34,9 @@ import vn.loda.postmaker.util.PostHelper;
  * @author namhn
  */
 public class Gui extends javax.swing.JFrame {
-
+    
     private final String APP_NAME = "Post Maker";
-
+    
     PostMaker maker;
 
     /**
@@ -41,11 +44,11 @@ public class Gui extends javax.swing.JFrame {
      */
     public Gui() {
         this.setTitle(APP_NAME);
-
+        
         initComponents();
         initData();
     }
-
+    
     public void initData() {
         clearAll();
         maker = new PostMaker("loda");
@@ -53,6 +56,7 @@ public class Gui extends javax.swing.JFrame {
         tv_Post.setText("./_posts/");
         tv_Images.setText("./assets/images/");
         lbCurrentInstance.setText("Current Instance: " + maker.id());
+        textAreaOutput.setEditable(false);
     }
 
     /**
@@ -66,8 +70,10 @@ public class Gui extends javax.swing.JFrame {
         tvTitle.setText("");
         tvRating.setText("0.0");
         textArea.setText("");
+        textAreaOutput.setText("");
+        
     }
-
+    
     private boolean isValid = true;
 
     /**
@@ -121,6 +127,10 @@ public class Gui extends javax.swing.JFrame {
         btnDownload = new javax.swing.JButton();
         jLabel10 = new javax.swing.JLabel();
         tvFolderId = new javax.swing.JTextField();
+        jScrollPane2 = new javax.swing.JScrollPane();
+        textAreaOutput = new javax.swing.JTextArea();
+        btnCheckStatus = new javax.swing.JButton();
+        lbStatus = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
@@ -194,6 +204,19 @@ public class Gui extends javax.swing.JFrame {
             }
         });
 
+        textAreaOutput.setColumns(20);
+        textAreaOutput.setRows(5);
+        jScrollPane2.setViewportView(textAreaOutput);
+
+        btnCheckStatus.setText("Check Server Status");
+        btnCheckStatus.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnCheckStatusActionPerformed(evt);
+            }
+        });
+
+        lbStatus.setText("built");
+
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
@@ -201,7 +224,6 @@ public class Gui extends javax.swing.JFrame {
             .addGroup(layout.createSequentialGroup()
                 .addContainerGap()
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(jScrollPane1)
                     .addGroup(layout.createSequentialGroup()
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                             .addComponent(jLabel1)
@@ -228,7 +250,7 @@ public class Gui extends javax.swing.JFrame {
                                 .addComponent(tvRating, javax.swing.GroupLayout.PREFERRED_SIZE, 45, javax.swing.GroupLayout.PREFERRED_SIZE)
                                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                                 .addComponent(jLabel7)
-                                .addGap(0, 64, Short.MAX_VALUE))
+                                .addGap(0, 0, Short.MAX_VALUE))
                             .addComponent(tv_Post)))
                     .addGroup(layout.createSequentialGroup()
                         .addComponent(jLabel8)
@@ -243,7 +265,16 @@ public class Gui extends javax.swing.JFrame {
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                         .addComponent(btnGenerate)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(btnNew, javax.swing.GroupLayout.PREFERRED_SIZE, 109, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                        .addComponent(btnNew, javax.swing.GroupLayout.PREFERRED_SIZE, 109, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
+                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                            .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 299, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addGroup(javax.swing.GroupLayout.Alignment.LEADING, layout.createSequentialGroup()
+                                .addComponent(btnCheckStatus)
+                                .addGap(16, 16, 16)
+                                .addComponent(lbStatus)))
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addComponent(jScrollPane2, javax.swing.GroupLayout.PREFERRED_SIZE, 300, javax.swing.GroupLayout.PREFERRED_SIZE)))
                 .addContainerGap())
         );
         layout.setVerticalGroup(
@@ -296,7 +327,14 @@ public class Gui extends javax.swing.JFrame {
                     .addComponent(jLabel10)
                     .addComponent(tvFolderId, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                .addComponent(jScrollPane1, javax.swing.GroupLayout.DEFAULT_SIZE, 179, Short.MAX_VALUE)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(jScrollPane2)
+                    .addGroup(layout.createSequentialGroup()
+                        .addComponent(jScrollPane1, javax.swing.GroupLayout.DEFAULT_SIZE, 206, Short.MAX_VALUE)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                            .addComponent(btnCheckStatus)
+                            .addComponent(lbStatus))))
                 .addContainerGap())
         );
 
@@ -307,18 +345,18 @@ public class Gui extends javax.swing.JFrame {
       java.awt.event.ActionEvent evt) {//GEN-FIRST:event_tvDescriptionActionPerformed
         // TODO add your handling code here:
   }//GEN-LAST:event_tvDescriptionActionPerformed
-
+    
     private void cbFeaturedActionPerformed(
       java.awt.event.ActionEvent evt) {//GEN-FIRST:event_cbFeaturedActionPerformed
         // TODO add your handling code here:
   }//GEN-LAST:event_cbFeaturedActionPerformed
-
+    
     private void btnNewActionPerformed(
       java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnNewActionPerformed
         initData();
         // TODO add your handling code here:
   }//GEN-LAST:event_btnNewActionPerformed
-
+    
     private void btnGenerateActionPerformed(
       java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnGenerateActionPerformed
         // TODO add your handling code here:
@@ -330,18 +368,18 @@ public class Gui extends javax.swing.JFrame {
                     .categories(tvCategories.getText().split(","))
                     .featured(cbFeatured.isSelected())
                     .hidden(cbHidden.isSelected());
-
+            
             String image = PostHelper.normalizeImagePath(downloadImage(tvImage.getText().trim(), maker.id(), 1));
             maker.image(image);
-
+            
             FileUtils.writeStringToFile(
                     new File(tv_Post.getText() + maker.getFileName()),
                     maker.getHeader(),
                     "UTF-8"
             );
-
+            
             tvFolderId.setText(maker.id());
-
+            
             JOptionPane.showMessageDialog(this, "Done!");
         } catch (MalformedURLException ex) {
             Logger.getLogger(Gui.class.getName()).log(Level.SEVERE, null, ex);
@@ -349,11 +387,11 @@ public class Gui extends javax.swing.JFrame {
             Logger.getLogger(Gui.class.getName()).log(Level.SEVERE, null, ex);
         }
   }//GEN-LAST:event_btnGenerateActionPerformed
-
+    
     private int getAvailableNumber(String folderId) {
         File folder = new File(tv_Images.getText() + folderId);
         File[] listOfFiles = folder.listFiles();
-
+        
         int max = 0;
         if (listOfFiles != null) {
             for (int i = 0; i < listOfFiles.length; i++) {
@@ -378,7 +416,7 @@ public class Gui extends javax.swing.JFrame {
         }
         return max + 1;
     }
-
+    
     private void btnDownloadActionPerformed(
       java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnDownloadActionPerformed
         // TODO add your handling code here:
@@ -386,9 +424,14 @@ public class Gui extends javax.swing.JFrame {
             JOptionPane.showMessageDialog(this, "Chưa nhập Folder Id");
             throw new RuntimeException("Chưa nhập Folder Id");
         }
+        textAreaOutput.setText("");
         for (String line : textArea.getText().split("\n")) {
             if (line != null && !line.isEmpty()) {
-                downloadImage(line, tvFolderId.getText(), getAvailableNumber(tvFolderId.getText()));
+                String filename = downloadImage(line, tvFolderId.getText(), getAvailableNumber(tvFolderId.getText()));
+                textAreaOutput.append("<div class=\"wrapper-center\">\n"
+                        + "    <img src=\"" + PostHelper.normalizeImagePath(filename) + "\" alt=\"Convolutional Neural Networks\"/>\n"
+                        + "</div><br>");
+                textAreaOutput.append("\n\n");
             }
         }
         JOptionPane.showMessageDialog(this, "Done");
@@ -400,6 +443,26 @@ public class Gui extends javax.swing.JFrame {
         // TODO add your handling code here:
     }//GEN-LAST:event_tvFolderIdActionPerformed
 
+    private void btnCheckStatusActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnCheckStatusActionPerformed
+        // TODO add your handling code here:
+        String url = "https://api.github.com/repos/loda-kun/loda-kun.github.io/pages/builds/latest";
+        String status;
+        try {
+            status = Unirest.get(url)
+                    .header("Accept", "application/vnd.github.mister-fantastic-preview+json")
+                    .header("Authorization", "token 74b1bab68fa68e92203f1258063c57f259f0dedd")
+                    .asJson()
+                    .getBody()
+                    .getObject()
+                    .getString("status");
+            lbStatus.setText(status + " - "+Calendar.getInstance().getTimeInMillis());
+            
+        } catch (UnirestException ex) {
+            JOptionPane.showMessageDialog(this, ex);
+            lbStatus.setText("exception");
+        }
+    }//GEN-LAST:event_btnCheckStatusActionPerformed
+    
     private String downloadImage(String url, String folderId, int number) {
         try {
             String image = tv_Images.getText()
@@ -425,7 +488,7 @@ public class Gui extends javax.swing.JFrame {
          */
         try {
             UIManager.setLookAndFeel(UIManager.getSystemLookAndFeelClassName());
-
+            
         } catch (ClassNotFoundException ex) {
             java.util.logging.Logger.getLogger(Gui.class.getName())
                     .log(java.util.logging.Level.SEVERE, null, ex);
@@ -451,6 +514,7 @@ public class Gui extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
+    private javax.swing.JButton btnCheckStatus;
     private javax.swing.JButton btnDownload;
     private javax.swing.JButton btnGenerate;
     private javax.swing.JButton btnNew;
@@ -467,8 +531,11 @@ public class Gui extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel8;
     private javax.swing.JLabel jLabel9;
     private javax.swing.JScrollPane jScrollPane1;
+    private javax.swing.JScrollPane jScrollPane2;
     private javax.swing.JLabel lbCurrentInstance;
+    private javax.swing.JLabel lbStatus;
     private javax.swing.JTextArea textArea;
+    private javax.swing.JTextArea textAreaOutput;
     private javax.swing.JTextField tvAuthor;
     private javax.swing.JTextField tvCategories;
     private javax.swing.JTextField tvDescription;
