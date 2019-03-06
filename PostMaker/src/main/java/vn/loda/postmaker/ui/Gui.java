@@ -450,7 +450,7 @@ public class Gui extends javax.swing.JFrame {
         try {
             status = Unirest.get(url)
                     .header("Accept", "application/vnd.github.mister-fantastic-preview+json")
-                    .header("Authorization", "token 74b1bab68fa68e92203f1258063c57f259f0dedd")
+                    .header("Authorization", "token 5224089631531d0e9ce25dffd3a919b963faf3d2")
                     .asJson()
                     .getBody()
                     .getObject()
