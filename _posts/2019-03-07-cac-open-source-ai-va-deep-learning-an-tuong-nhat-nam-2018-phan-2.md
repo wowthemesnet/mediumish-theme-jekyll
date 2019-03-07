@@ -92,4 +92,3 @@ Sản phẩm này cũng ấn tượng không kém, khi model có khả năng ph�
 Các mạng học sâu đang ngày càng thể hiện sức mạnh của mình trong rất nhiều lĩnh vực mà cách đây nhiều năm chưa ai nghĩ một chiếc máy tính có khả năng tư duy được như thế.
 
 Đặc biệt, qua các project mình đã giới thiệu, có thể thấy đa phần các công nghệ mới này 3/4 là đến từ các ông lớn công nghệ như `Google`, `Facebook`, v.v.. => Cho thấy học máy đang là một lĩnh vực lớn được chú trọng quan tâm nhất thời điểm hiện tại.
-

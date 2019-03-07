@@ -11,7 +11,13 @@ hidden: true
 rating: 0
 ---
 
+// Add image
 <div class="wrapper-center">
     <img src=""
     alt=""/>
+</div>
+
+// Embed youtube
+<div class="youtube-container">
+    <iframe src="https://www.youtube.com/embed/BaAmaIyCp2Y" frameborder="0" allowfullscreen></iframe>
 </div>
