@@ -173,18 +173,16 @@
                         <h2 class="d-md-block align-self-center py-1 font-weight-light">Explore <span class="d-none d-md-inline">→</span></h2>
                     </div>
                 </div>
-                <div class="col-md-8 p-5 align-self-center text-center">
+                <div class="col-md-8 p-5 align-self-center text-center">      
                     {% assign categories_list = site.categories %}
                     {% if categories_list.first[0] == null %}
-                    {% for category in categories_list %}
-                    <a href="{{site.baseurl}}/categories#{{ category | downcase | downcase | url_escape | strip | replace: ' ', '-' }}">{{
-                        category | camelcase }} ({{ site.tags[category].size }})</a>
-                    {% endfor %}
+                        {% for category in categories_list %}
+                            <a href="{{site.baseurl}}/categories#{{ category | url_escape | strip | replace: ' ', '-' }}">{{ category | camelcase }} ({{ site.tags[category].size }})</a>
+                        {% endfor %}
                     {% else %}
-                    {% for category in categories_list %}
-                    <a href="{{site.baseurl}}/categories#{{ category[0] | downcase | url_escape | strip | replace: ' ', '-' }}">{{
-                        category[0] | camelcase }} ({{ category[1].size }})</a>
-                    {% endfor %}
+                        {% for category in categories_list %}                        
+                            <a href="{{site.baseurl}}/categories#{{ category[0] | url_escape | strip | replace: ' ', '-' }}">{{ category[0] | camelcase }} ({{ category[1].size }})</a>
+                        {% endfor %}
                     {% endif %}
                     {% assign categories_list = nil %}
                 </div>
