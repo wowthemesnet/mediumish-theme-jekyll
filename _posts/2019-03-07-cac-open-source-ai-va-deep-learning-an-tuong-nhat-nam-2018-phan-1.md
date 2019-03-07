@@ -13,10 +13,6 @@ rating: 4
 
 Trong năm vừa qua, `Mybridge AI` đã thống kê và so sánh trên 8,800 open source về Machine Learning để chọn ra các projects xuất sắc nhất (0.3%)
 
-<div class="wrapper-center">
-    <img src="https://cdn.ereka.vn/2018/06/15/c36599450abfa7403e91f9068b7609ef.jpg" alt="Machine learning, learning to learn, transfer learning"/>
-</div>
-
 Đây là một danh sách phải đánh giá là có tính cạnh tranh cực cao, và được cân nhắc kỹ lưỡng bởi các chuyên gia. Nó bao gồm các thư viện, datasets và apps được ra mắt trong năm vừa qua.
 
 Thước đo của các project được đánh giá qua chỉ số phổ biến trong cộng đồng, mức độ tương tác, lần truy cập gần đây và ý tưởng chất, **mức Star trung bình của các project trên Github là 3,558.**
@@ -34,7 +30,7 @@ Thư viện cho text representation và classification. [11786 stars - Github] b
 <div class="wrapper-center">
     <img src="https://cdn.ereka.vn/2018/06/13/ab6d0856fcc80dda7a2a8e13f9b96191.png?w=600"
     alt="machine learning, deep learning, neurol network, dữ liệu học máy, deep learning"/>
-</div>
+</div><br>
 
 #### #2 Deep-photo-styletransfer
 
@@ -54,7 +50,7 @@ API nhận diện khuôn mặt đơn giản nhất thế giới, chạy bởi Py
 <div class="wrapper-center">
     <img src="https://cdn.ereka.vn/2018/06/13/ca25e1904ae86861b709c7ffdb220d1c.png?w=600"
     alt="machine learning, deep learning, neurol network, dữ liệu học máy, deep learning"/>
-</div>
+</div><br>
 
 #### #4 Magenta
 
@@ -63,7 +59,7 @@ Sáng tác nhạc và ảnh nghệ thuật tự động dựa trên Trí thông 
 <div class="wrapper-center">
     <img src="https://cdn.ereka.vn/2018/06/13/d9f41f72607f1b910c21fb147d1174a8.png?w=600"
     alt="machine learning, deep learning, neurol network, dữ liệu học máy, deep learning"/>
-</div>
+</div><br>
 
 #### #5 Sonnet
 
@@ -72,7 +68,7 @@ Thư viện mã nguồn mở xây dựng trên nền tensorflow, phục vụ xâ
 <div class="wrapper-center">
     <img src="https://cdn.ereka.vn/2018/06/13/c4e023e3fb689ecb73f530b3bc754779.png?w=600"
     alt="machine learning, deep learning, neurol network, dữ liệu học máy, deep learning"/>
-</div>
+</div><br>
 
 #### #6 deeplearn.js
 
@@ -81,7 +77,7 @@ Thư viện machine learning và deep learning trên nền tảng web. [5462 sta
 <div class="wrapper-center">
     <img src="https://cdn.ereka.vn/2018/06/13/8f506087e98f4cfd444f0b06772cd450.png?w=600"
     alt="machine learning, deep learning, neurol network, dữ liệu học máy, deep learning"/>
-</div>
+</div><br>
 
 #### #7 Fast Style Transfer
 
@@ -92,7 +88,7 @@ Cho phéo sinh ra một bức ảnh là kết hợp style từ 2 bức ảnh đ�
 <div class="wrapper-center">
     <img src="https://cdn.ereka.vn/2018/06/13/ea60d54ef571f02404a55b05c8b4ecfb.png?w=600"
     alt="machine learning, deep learning, neurol network, dữ liệu học máy, deep learning"/>
-</div>
+</div><br>
 
 #### #8 Pysc2
 
@@ -103,7 +99,7 @@ Một thư viện môi trường để ở đó trí tuệ nhân tạo chơi gam
 <div class="wrapper-center">
     <img src="https://cdn.ereka.vn/2018/06/13/27f5b5b2441f37f81b2df3c8394cfd0f.png?w=600"
     alt="machine learning, deep learning, neurol network, dữ liệu học máy, deep learning"/>
-</div>
+</div><br>
 
 #### #9 AirSim
 
@@ -112,7 +108,7 @@ Open source mô phỏng thế giới thực dựa trên Unreal Engine dành cho 
 <div class="wrapper-center">
     <img src="https://cdn.ereka.vn/2018/06/13/cce68e8e75178d828a2e0ce5bd45617c.png?w=600"
     alt="machine learning, deep learning, neurol network, dữ liệu học máy, deep learning"/>
-</div>
+</div><br>
 
 #### #10 Facets
 
@@ -124,6 +120,4 @@ Công cụ Visualizations dành cho dữ liệu học máy [3371 stars - Github]
 </div>
 
 Phần 2:
-[Các Open Source AI và Deep Learning ấn tượng nhất năm 2018 (Phần 2)](https://ereka.vn/post/cac-open-source-ai-va-deep-learning-an-tuong-nhat-nam-2018-phan-2-52982775722993245?rel=97249675912513823)
-
-
+[Các Open Source AI và Deep Learning ấn tượng nhất năm 2018 (Phần 2)](https://loda.me/cac-open-source-ai-va-deep-learning-an-tuong-nhat-nam-2018-phan-2/)

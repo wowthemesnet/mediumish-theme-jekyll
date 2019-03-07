@@ -13,7 +13,7 @@ rating: 4
 
 Chúng ta tiếp tục đi tìm hiểu xem, ở ngoài kia, trên thế giới, họ đang sử dụng `Machine learning` vào những sản phẩm tuyệt vời gì nhé. Nếu ai chưa xem phần 1 có thể xem tại:
 
-[Các Open Source AI và Deep Learning ấn tượng nhất năm 2018 (Phần 2)](https://ereka.vn/post/cac-open-source-ai-va-deep-learning-an-tuong-nhat-nam-2018-phan-2-52982775722993245?rel=97249675912513823)
+[Các Open Source AI và Deep Learning ấn tượng nhất năm 2018 (Phần 1)](https://loda.me/cac-open-source-ai-va-deep-learning-an-tuong-nhat-nam-2018-phan-1/)
 
 #### #11 Style2Paints
 
@@ -22,7 +22,7 @@ Trí tuệ nhân tạo có khả năng nhìn ảnh vẽ và tô màu cho nó [33
 <div class="wrapper-center">
     <img src="https://cdn.ereka.vn/2018/06/14/0e1b0b8d5dbf9b6f5b8792e435ba308a.png"
     alt="machine learning, deep learning, neurol network, dữ liệu học máy, deep learning"/>
-</div>
+</div><br>
 
 #### #12 Tensor2Tensor
 
@@ -42,7 +42,7 @@ Mô hình chuyển đổi xuôi và ngược từ ảnh thật sang ảnh vẽ, 
 <div class="wrapper-center">
     <img src="https://cdn.ereka.vn/2018/06/14/e2bb0d057aa8a0e1cf26cc90625d3c1d.jpg"
     alt="machine learning, deep learning, neurol network, dữ liệu học máy, deep learning"/>
-</div>
+</div><br>
 
 #### #14 Faiss
 
@@ -51,7 +51,7 @@ Một thư viện mạnh mẽ cho việc tìm kiếm dữ liệu liên quan và 
 <div class="wrapper-center">
     <img src="https://cdn.ereka.vn/2018/06/14/d53fdeef9d869591974653ea6e6df19e.png?w=600"
     alt="machine learning, deep learning, neurol network, dữ liệu học máy, deep learning"/>
-</div>
+</div><br>
 
 #### #15 Fashion-mnist
 
@@ -60,7 +60,7 @@ Một bộ dữ liệu giống MNIST nhưng nó bao gồm các sản phẩm th�
 <div class="wrapper-center">
     <img src="https://cdn.ereka.vn/2018/06/14/b876dffb39c93293baa2fea76f9699d9.jpg?w=600"
     alt="machine learning, deep learning, neurol network, dữ liệu học máy, deep learning"/>
-</div>
+</div><br>
 
 #### #16 Parl
 
@@ -69,7 +69,7 @@ Một framework cho việc training và evaluating AI model trên một tổ h�
 <div class="wrapper-center">
     <img src="https://cdn.ereka.vn/2018/06/14/be1c1be6fd735f2fc4c32c10ab993710.png"
     alt="machine learning, deep learning, neurol network, dữ liệu học máy, deep learning"/>
-</div>
+</div><br>
 
 #### #17 iGAN
 
@@ -78,7 +78,7 @@ Model có khả năng sinh ra ảnh vẽ chỉ từ vài mô tả của người
 <div class="wrapper-center">
     <img src="https://cdn.ereka.vn/2018/06/14/be0b0cfcddbc66ec94f03641a2069555.png"
     alt="machine learning, deep learning, neurol network, dữ liệu học máy, deep learning"/>
-</div>
+</div><br>
 
 #### #18 Deep-image-prior
 
