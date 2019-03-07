@@ -1,7 +1,7 @@
 ---
 id: loda1551933570178
 layout: post
-title: Bạn đã biết về "Learning to Learn" - Lĩnh vực rất mới của Trí tuệ nhân tạo?
+title: Bạn đã biết về 'Learning to Learn' - Lĩnh vực rất mới của Trí tuệ nhân tạo?
 author: loda
 categories: [ Machine Learning, deep learning, neural network ]
 image: https://cdn.ereka.vn/2018/04/09/c2958b20690f5b747b1fab63d9a488df.png
