@@ -11,9 +11,9 @@ hidden: true
 rating: 5
 ---
 
-### Sơ lược
-
 Với sự phát triển phần cứng mạnh mẽ cho phép tính toán song song hàng tỉ phép tính, tạo tiền đề cho Mạng nơ-ron tích chập trở nên phổ biến và đóng vai trò quan trọng trong sự phát triển của trí tuệ nhân tạo nói chung và xử lý ảnh nói riêng.
+
+#### Sơ lược
 
 Một trong các ứng dụng quan trọng của mạng nơ-ron tích chập đó là cho phép các máy tính có khả năng “nhìn” và “phân tích”. Nó được lấy cảm hứng từ vỏ não thị giác. Nôm na là Convnets (Convolutional Neural Networks) được sử dụng để nhận dạng hình ảnh bằng cách đưa nó qua mạng nơ-ron với nhiều layer, mỗi layer là các bộ lọc tích chập. Sau khi đi qua các layer này chúng ta có được đặc trưng và dùng nó nhận dạng ra đối tượng.
 

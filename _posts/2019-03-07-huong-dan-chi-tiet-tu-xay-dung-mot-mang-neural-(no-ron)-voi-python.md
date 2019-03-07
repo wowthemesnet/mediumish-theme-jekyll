@@ -36,7 +36,7 @@ Giờ thì chúng ta sẽ bắt đầu xây dựng kiến trúc trên với Pyth
 <div class="wrapper-center">
     <img src="https://cdn.ereka.vn/2018/06/24/e5ea3a08be22cc40f7d3ebc7b1536ec9.jpg"
     alt="Neurol network, mạng nơ ron"/>
-</div>
+</div><br>
 
 #### Huấn luyện mạng neural
 
@@ -115,7 +115,7 @@ Code hàm Backpropagate:
 
 <div class="youtube-container">
     <iframe src="https://www.youtube.com/embed/tIeHLnjs5U8" frameborder="0" allowfullscreen></iframe>
-</div>
+</div><br>
 
 #### Tổng hợp lại
 

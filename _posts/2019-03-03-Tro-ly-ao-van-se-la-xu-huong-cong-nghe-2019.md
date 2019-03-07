@@ -11,18 +11,6 @@ hidden: true
 rating: 4.5
 ---
 
-<!-- ---
-layout: post
-title:  "Inception Movie"
-author: john
-categories: [ Jekyll, tutorial ]
-image: assets/images/11.jpg
-description: "My review of Inception movie. Acting, plot and something else in this short description."
-featured: true
-hidden: true
-rating: 4.5
---- -->
-
 Những năm gần đây, Trợ lý ảo đã dần trở thành xu hướng công nghệ được đón đầu. Các “ông lớn” làng công nghệ thế giới đã cho ra đời các trợ lý ảo, được nhiều người biết đến như: Apple Siri, Google Assistant, Amazon Alexa, Microsoft Cortana.
 
 Và đương nhiên vẫn còn nhiều trợ lý ảo khác được phát triển bởi các công ty công nghệ trên thế giới, có cả Việt Nam. Trong đó có cả Viettel, nơi mình và team đang phát triển 1 trợ lý ảo.
@@ -57,7 +45,7 @@ Trợ lý ảo hoàn toàn có thể thu thập dữ liệu từ các thói quen
 
 ### Mô hình khái quát về việc lập trình Trợ lý ảo mà team mình đang phát triển:
 
-Hệ thống sẽ nhận đầu vào là giọng nói hoặc văn bản. Lúc này hệ thống sẽ tiền xử lý dữ liệu, nếu là giọng nói sẽ chuyển thành văn bản để xử lý bằng công nghệ speech2text (Model này là của công ty mình tự huấn luyện). Sau đó văn bản sẽ được xử lý và trích xuất thông tin thông qua tầng xử lý ngôn ngữ. 
+Hệ thống sẽ nhận đầu vào là giọng nói hoặc văn bản. Lúc này hệ thống sẽ tiền xử lý dữ liệu, nếu là giọng nói sẽ chuyển thành văn bản để xử lý bằng công nghệ speech2text (Model này là của công ty mình tự huấn luyện). Sau đó văn bản sẽ được xử lý và trích xuất thông tin thông qua tầng xử lý ngôn ngữ.
 
 Lúc này các thông tin được trích xuất bao gồm Intent (dự định, ý định) của người dùng, Object (Đối tượng) trong câu nói đó, ngoài ra còn nhiều thông tin bổ sung khác như Location, Name, v.v.. Các thông tin này sẽ được bọn mình xử lý trên các model hoặc AIML training sẵn. Từ đó trả dữ liệu về cho người dùng.
 
