@@ -120,7 +120,7 @@ License: https://www.wowthemes.net/freebies-license/
  .listfeaturedtag h4.card-text,.listrecent h4.card-text {
      color:rgba(0,0,0,.44);
      font-size:0.95rem;
-     line-height:1.4;
+     line-height:1.6;
      font-weight:400;
 }
  .wrapfooter {
@@ -668,7 +668,7 @@ License: https://www.wowthemes.net/freebies-license/
 
 .spoiler {
     color: transparent;
-    text-shadow:0 0 6px rgba(0,0,0,0.2);
+    text-shadow:0 0 10px rgba(0,0,0,0.2);
     transition: all .4s;
     cursor:pointer;
     position:relative;
