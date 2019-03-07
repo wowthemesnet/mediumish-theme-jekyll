@@ -11,9 +11,9 @@ hidden: false
 rating: 0
 ---
 
-Trong những năm qua, lĩnh vực *Trí tuệ Nhân tạo* nói chung và *Machine Learning* nói riêng đã đạt được rất nhiều thành công nổi bật, đặc biệt là khi có sự xuất hiện của *Deep Learning*. Tuy vậy, vẫn tồn tại một vấn đề rất lớn mà các nhà nghiên cứu trong lĩnh vực Trí tuệ Nhân tạo phải đối mặt, đó là các thuật toán Machine Learning đòi hỏi một lượng dữ liệu dán nhãn cực lớn, Deep Learning còn đòi hỏi một lượng dữ liệu lớn hơn nhiều lần. Dữ liệu dán nhãn không luôn luôn có sẵn đối với mọi tác vụ, và chi phí để có thể thu thập một lượng dữ liệu dán nhãn đủ để có thể training các thuật toán một cách tốt nhất là rất đắt đỏ.
+Trong những năm qua, lĩnh vực `Trí tuệ Nhân tạo` nói chung và `Machine Learning` nói riêng đã đạt được rất nhiều thành công nổi bật, đặc biệt là khi có sự xuất hiện của *Deep Learning*. Tuy vậy, vẫn tồn tại một vấn đề rất lớn mà các nhà nghiên cứu trong lĩnh vực Trí tuệ Nhân tạo phải đối mặt, đó là các thuật toán Machine Learning đòi hỏi một lượng dữ liệu dán nhãn cực lớn, Deep Learning còn đòi hỏi một lượng dữ liệu lớn hơn nhiều lần. Dữ liệu dán nhãn không luôn luôn có sẵn đối với mọi tác vụ, và chi phí để có thể thu thập một lượng dữ liệu dán nhãn đủ để có thể training các thuật toán một cách tốt nhất là rất đắt đỏ.
 
-Vì thế mà đã có nhiều nghiên cứu được thực hiện và một số phương pháp được đề xuất để phần nào đó giải quyết vấn đề nan giải này. Những phương pháp này thường được gọi là *“Learning to Learn”*:
+Vì thế mà đã có nhiều nghiên cứu được thực hiện và một số phương pháp được đề xuất để phần nào đó giải quyết vấn đề nan giải này. Những phương pháp này thường được gọi là “`Learning to Learn`”:
 
 #### Transfer Learning
 
@@ -27,13 +27,13 @@ Khái niệm Transfer Learning được nhắc đến lần đầu tiên tại w
 
 #### Multitask Learning
 
-*Multitask Learning* được phân chia như là một nhóm nhỏ trong Transfer Learning. Tuy vậy, không phải nhà khoa học nào cũng đồng ý với sự phân biệt này, một số coi Multitask Learning và Transfer Learning là những khái niệm tương đồng.
+`Multitask Learning` được phân chia như là một nhóm nhỏ trong Transfer Learning. Tuy vậy, không phải nhà khoa học nào cũng đồng ý với sự phân biệt này, một số coi Multitask Learning và Transfer Learning là những khái niệm tương đồng.
 
 Sự khác biệt lớn nhất ở đây là trong Transfer Learning, có sự phân biệt giữa tác vụ/domain gốc và tác vụ/domain mục tiêu. Mà trong đó, tác vụ/domain mục tiêu có vai trò quan trọng hơn. Trong Multitask Learning, các tác vụ/domain có vai trò bình đẳng hơn.
 
 #### Meta Learning
 
-*Meta Learning* là một thuật ngữ xuất phát từ lĩnh vực Tâm lý Xã hội với định nghĩa gốc là _“the process by which learners become aware of and increasingly in control of habits of perception, inquiry, learning, and growth that they have internalized”._
+`Meta Learning` là một thuật ngữ xuất phát từ lĩnh vực Tâm lý Xã hội với định nghĩa gốc là _“the process by which learners become aware of and increasingly in control of habits of perception, inquiry, learning, and growth that they have internalized”._
 
 Nói một cách ngắn gọn, Meta Learning được dùng để chỉ việc con người nhận thức và làm chủ được quá trình tiếp thu kiến thức của mình.
 
