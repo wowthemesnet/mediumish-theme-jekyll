@@ -1,8 +1,8 @@
 # Site
-name: "loda-kun"
-title: "loda-kun"
-description: "Blog của loda"
-meta_description: "Blog chia sẻ, hướng dẫn lập trình bằng tiếng việt, chi tiết nhất. Java, Python, Machine Learning, Deep learning, AI, .."
+name: "loda"
+title: "loda"
+description: "Nơi chia sẻ kiến thức về lập trình và trí tuệ nhân tạo"
+meta_description: "Chia sẻ, hướng dẫn lập trình ngôn ngữ và trí tuệ nhân tạo, chi tiết nhất. Java, Python, Machine Learning, Deep learning, AI, .."
 logo: 'assets/images/logo.png'
 favicon: 'assets/images/logo.png'
 baseurl: ''
@@ -23,6 +23,15 @@ authors:
     web: https://www.loda-kun.github.io
     facebook: https://www.facebook.com/nam.tehee
     description: "Là chàng coder :'( yêu màu tím , thích màu hồng, sống nội tâm, hay khóc thầm, ghét sự giả dối... Mong muốn chia sẻ cho cộng đồng các kiến thức mới về lâp trình nói chung và đời sống nói riêng."
+  tct:
+    name: tct
+    display_name: tct
+    gravatar: 12ee17b3fe90f0f025cfe3b8201c06dd
+    email:
+    web:
+    facebook:
+    description: "Updating..."
+# Plugins
 # Plugins
 plugins: 
   - jekyll-paginate
