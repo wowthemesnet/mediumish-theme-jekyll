@@ -1,14 +1,14 @@
 ---
-id: loda1551933570178
+id: loda1551933570178  // id = timestamp (millisecond) tại thời điểm bắt đầu viết bài
 layout: post
-title: Các Open Source AI và Deep Learning ấn tượng nhất năm 2018 (Phần 1)
-author: loda
-categories: [ Machine Learning, deep learning, neural network ]
-image: https://cdn.ereka.vn/2018/06/15/c36599450abfa7403e91f9068b7609ef.jpg
+title: Các Open Source AI và Deep Learning ấn tượng nhất năm 2018 (Phần 1)  // Tiêu đề bài viết
+author: loda  // nickname đã khai báo trong file _config.yml
+categories: [ Machine Learning, deep learning, neural network ] // gắn tag cho bài viết này
+image: assets/images/loda1551586738/1.jpg  // Hình đại điện bài viết, khuyến khích download ảnh về và bỏ vào thư mục asset
 description: Dưới đây là danh sách Top các ứng dụng Deep Learning/AI được dự đoán sẽ góp phần thay đổi thế giới trong tương lai.
-featured: true
-hidden: true
-rating: 0
+featured: true // Để true, bài viết sẽ hiện lên trang chủ, phần featured
+hidden: true // Để true, bài viết sẽ chỉ hiện ở featured, còn phần "All Stories" ở phía dưới trang chủ sẽ k hiện lại bài viết này nữa, tránh trùng lặp
+rating: 0 // Số sao cho bài viết này. nếu là số nguyên thì viết 4 không viết là 4.0 (biên dịch lỗi, chưa hiểu lắm) còn trường hợp khác như 4.5 thì không sao.
 ---
 
 // Add image

@@ -33,6 +33,8 @@ Thư viện sinh mô hình sequence to sequence trên tensorflow - Google Resear
     alt="machine learning, deep learning, neurol network, dữ liệu học máy, deep learning"/>
 </div>
 
+![image-title-here](https://cdn.ereka.vn/2018/06/14/896f58eb0878039f84e627889dca685b.jpg?w=600){:class="wrapper-center"}
+
 Paper này ra đời đã tạo một làn sóng trong giới khoa học, khi cho phép biến 1 bức ảnh bình thường trở thành tuyệt đẹp nhờ copy style của 1 bức ảnh khác.
 
 #### #13 Image-to-image
