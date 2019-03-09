@@ -35,9 +35,9 @@ import vn.loda.postmaker.util.PostHelper;
  * @author namhn
  */
 public class Gui extends javax.swing.JFrame {
-    
+
     private final String APP_NAME = "Post Maker";
-    
+
     PostMaker maker;
 
     /**
@@ -45,14 +45,14 @@ public class Gui extends javax.swing.JFrame {
      */
     public Gui() {
         this.setTitle(APP_NAME);
-        
+
         initComponents();
         initData();
     }
-    
+
     public void initData() {
         clearAll();
-        maker = new PostMaker("loda");
+        maker = new PostMaker();
         tvAuthor.setText("loda");
         tv_Post.setText("./_posts/");
         tv_Images.setText("./assets/images/");
@@ -72,9 +72,9 @@ public class Gui extends javax.swing.JFrame {
         tvRating.setText("0.0");
         textArea.setText("");
         textAreaOutput.setText("");
-        
+
     }
-    
+
     private boolean isValid = true;
 
     /**
@@ -130,6 +130,8 @@ public class Gui extends javax.swing.JFrame {
         tvFolderId = new javax.swing.JTextField();
         jScrollPane2 = new javax.swing.JScrollPane();
         textAreaOutput = new javax.swing.JTextArea();
+        jLabel12 = new javax.swing.JLabel();
+        jLabel11 = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
@@ -207,14 +209,40 @@ public class Gui extends javax.swing.JFrame {
         textAreaOutput.setRows(5);
         jScrollPane2.setViewportView(textAreaOutput);
 
+        jLabel12.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
+        jLabel12.setText("Tool Download Images");
+
+        jLabel11.setText("<html>Xem hướng dẫn chi tiết tại: <a href=\"https://app.clickup.com/t/k3cak\">https://app.clickup.com/t/k3cak</a></html>");
+
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(layout.createSequentialGroup()
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
                 .addContainerGap()
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
                     .addGroup(layout.createSequentialGroup()
+                        .addComponent(jScrollPane1)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addComponent(jScrollPane2, javax.swing.GroupLayout.PREFERRED_SIZE, 300, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addGroup(javax.swing.GroupLayout.Alignment.LEADING, layout.createSequentialGroup()
+                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(lbCurrentInstance)
+                            .addGroup(layout.createSequentialGroup()
+                                .addComponent(jLabel8)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                                .addComponent(btnDownload)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                .addComponent(jLabel10)))
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addGroup(layout.createSequentialGroup()
+                                .addGap(0, 0, Short.MAX_VALUE)
+                                .addComponent(btnGenerate)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                .addComponent(btnNew, javax.swing.GroupLayout.PREFERRED_SIZE, 109, javax.swing.GroupLayout.PREFERRED_SIZE))
+                            .addComponent(tvFolderId)))
+                    .addGroup(javax.swing.GroupLayout.Alignment.LEADING, layout.createSequentialGroup()
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                             .addComponent(jLabel1)
                             .addComponent(jLabel2)
@@ -232,51 +260,34 @@ public class Gui extends javax.swing.JFrame {
                             .addComponent(tvDescription, javax.swing.GroupLayout.Alignment.TRAILING)
                             .addGroup(layout.createSequentialGroup()
                                 .addComponent(tvAuthor, javax.swing.GroupLayout.PREFERRED_SIZE, 163, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                .addGap(18, 18, 18)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                                 .addComponent(cbFeatured)
                                 .addGap(18, 18, 18)
                                 .addComponent(cbHidden)
-                                .addGap(44, 44, 44)
+                                .addGap(18, 18, 18)
                                 .addComponent(tvRating, javax.swing.GroupLayout.PREFERRED_SIZE, 45, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                .addComponent(jLabel7)
-                                .addGap(0, 0, Short.MAX_VALUE))
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                                .addComponent(jLabel7, javax.swing.GroupLayout.DEFAULT_SIZE, 151, Short.MAX_VALUE))
                             .addComponent(tv_Post)))
                     .addGroup(layout.createSequentialGroup()
-                        .addComponent(jLabel8)
+                        .addComponent(jLabel12, javax.swing.GroupLayout.PREFERRED_SIZE, 179, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                        .addComponent(btnDownload)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(jLabel10)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(tvFolderId))
-                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
-                        .addComponent(lbCurrentInstance)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                        .addComponent(btnGenerate)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(btnNew, javax.swing.GroupLayout.PREFERRED_SIZE, 109, javax.swing.GroupLayout.PREFERRED_SIZE))
-                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
-                        .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 299, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(jScrollPane2, javax.swing.GroupLayout.PREFERRED_SIZE, 300, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                        .addComponent(jLabel11)))
                 .addContainerGap())
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
-                .addContainerGap()
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                .addGap(19, 19, 19)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                        .addComponent(jLabel1)
-                        .addComponent(tvAuthor, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                    .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                        .addComponent(tvAuthor, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addComponent(cbFeatured)
-                        .addComponent(cbHidden))
-                    .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                        .addComponent(cbHidden)
                         .addComponent(tvRating, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addComponent(jLabel7)))
-                .addGap(18, 18, 18)
+                        .addComponent(jLabel7))
+                    .addComponent(jLabel1, javax.swing.GroupLayout.Alignment.TRAILING))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jLabel2)
                     .addComponent(tvTitle, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
@@ -305,7 +316,11 @@ public class Gui extends javax.swing.JFrame {
                     .addComponent(btnGenerate)
                     .addComponent(btnNew)
                     .addComponent(lbCurrentInstance))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(jLabel12, javax.swing.GroupLayout.PREFERRED_SIZE, 26, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jLabel11, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jLabel8)
                     .addComponent(btnDownload)
@@ -313,7 +328,7 @@ public class Gui extends javax.swing.JFrame {
                     .addComponent(tvFolderId, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(jScrollPane2, javax.swing.GroupLayout.DEFAULT_SIZE, 238, Short.MAX_VALUE)
+                    .addComponent(jScrollPane2, javax.swing.GroupLayout.DEFAULT_SIZE, 207, Short.MAX_VALUE)
                     .addComponent(jScrollPane1))
                 .addContainerGap())
         );
@@ -325,18 +340,18 @@ public class Gui extends javax.swing.JFrame {
       java.awt.event.ActionEvent evt) {//GEN-FIRST:event_tvDescriptionActionPerformed
         // TODO add your handling code here:
   }//GEN-LAST:event_tvDescriptionActionPerformed
-    
+
     private void cbFeaturedActionPerformed(
       java.awt.event.ActionEvent evt) {//GEN-FIRST:event_cbFeaturedActionPerformed
         // TODO add your handling code here:
   }//GEN-LAST:event_cbFeaturedActionPerformed
-    
+
     private void btnNewActionPerformed(
       java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnNewActionPerformed
         initData();
         // TODO add your handling code here:
   }//GEN-LAST:event_btnNewActionPerformed
-    
+
     private void btnGenerateActionPerformed(
       java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnGenerateActionPerformed
         // TODO add your handling code here:
@@ -344,34 +359,44 @@ public class Gui extends javax.swing.JFrame {
         try {
             // set attribute to maker
             maker.title(PostHelper.normalize(tvTitle.getText()))
+                    .author(tvAuthor.getText())
                     .description(tvDescription.getText())
                     .categories(tvCategories.getText().split(","))
                     .featured(cbFeatured.isSelected())
                     .hidden(cbHidden.isSelected());
-            
+
+            // download image and set it to the post
             String image = PostHelper.normalizeImagePath(downloadImage(tvImage.getText().trim(), maker.id(), 1));
             maker.image(image);
             
+            // create folder and post template
+            String folder = tv_Post.getText() + maker.getFileName();
             FileUtils.writeStringToFile(
-                    new File(tv_Post.getText() + maker.getFileName()),
+                    new File(folder),
                     maker.getHeader(),
                     "UTF-8"
             );
-            
+
+            // update folderId for download tool in case necessary
             tvFolderId.setText(maker.id());
-            
-            JOptionPane.showMessageDialog(this, "Done!");
+
+            JOptionPane.showMessageDialog(this, "Successful create post in folder: " + folder);
         } catch (MalformedURLException ex) {
             Logger.getLogger(Gui.class.getName()).log(Level.SEVERE, null, ex);
         } catch (IOException ex) {
             Logger.getLogger(Gui.class.getName()).log(Level.SEVERE, null, ex);
         }
   }//GEN-LAST:event_btnGenerateActionPerformed
-    
+
+    /**
+     * get available number for image name 
+     * @param folderId
+     * @return 
+     */
     private int getAvailableNumber(String folderId) {
         File folder = new File(tv_Images.getText() + folderId);
         File[] listOfFiles = folder.listFiles();
-        
+
         int max = 0;
         if (listOfFiles != null) {
             for (int i = 0; i < listOfFiles.length; i++) {
@@ -396,7 +421,7 @@ public class Gui extends javax.swing.JFrame {
         }
         return max + 1;
     }
-    
+
     private void btnDownloadActionPerformed(
       java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnDownloadActionPerformed
         // TODO add your handling code here:
@@ -414,7 +439,7 @@ public class Gui extends javax.swing.JFrame {
                 textAreaOutput.append("\n\n");
             }
         }
-        JOptionPane.showMessageDialog(this, "Done");
+        JOptionPane.showMessageDialog(this, "Successful download all images to folder: "+tvFolderId.getText());
         textArea.setText("");
 
   }//GEN-LAST:event_btnDownloadActionPerformed
@@ -422,7 +447,7 @@ public class Gui extends javax.swing.JFrame {
     private void tvFolderIdActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_tvFolderIdActionPerformed
         // TODO add your handling code here:
     }//GEN-LAST:event_tvFolderIdActionPerformed
-    
+
     private String downloadImage(String url, String folderId, int number) {
         try {
             String image = tv_Images.getText()
@@ -448,7 +473,7 @@ public class Gui extends javax.swing.JFrame {
          */
         try {
             UIManager.setLookAndFeel(UIManager.getSystemLookAndFeelClassName());
-            
+
         } catch (ClassNotFoundException ex) {
             java.util.logging.Logger.getLogger(Gui.class.getName())
                     .log(java.util.logging.Level.SEVERE, null, ex);
@@ -481,6 +506,8 @@ public class Gui extends javax.swing.JFrame {
     private javax.swing.JCheckBox cbHidden;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel10;
+    private javax.swing.JLabel jLabel11;
+    private javax.swing.JLabel jLabel12;
     private javax.swing.JLabel jLabel2;
     private javax.swing.JLabel jLabel3;
     private javax.swing.JLabel jLabel4;

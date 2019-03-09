@@ -22,7 +22,6 @@ import vn.loda.postmaker.util.PostHelper;
  */
 @Data
 @Builder
-@NoArgsConstructor
 @AllArgsConstructor
 @Accessors(chain = true, fluent = true)
 public class PostMaker implements Serializable {
@@ -37,9 +36,8 @@ public class PostMaker implements Serializable {
   private boolean hidden;
   private float rating;
 
-  public PostMaker(String author) {
-    this.author = author;
-    this.id = author + System.currentTimeMillis();
+  public PostMaker() {
+    this.id = "loda" + System.currentTimeMillis();
   }
 
   private static final String NEW_LINE = "\n";

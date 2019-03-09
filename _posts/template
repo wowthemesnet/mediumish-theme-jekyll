@@ -18,7 +18,7 @@ rating: 0 // Số sao cho bài viết này. nếu là số nguyên thì viết 4
 </div>
 
 //or
-![image-title-here](/path/to/image.jpg){:class="wrapper-center"}
+![image-title-here](/path/to/image.jpg){:class="center-image"}
 
 
 // Embed youtube
