@@ -433,9 +433,7 @@ public class Gui extends javax.swing.JFrame {
         for (String line : textArea.getText().split("\n")) {
             if (line != null && !line.isEmpty()) {
                 String filename = downloadImage(line, tvFolderId.getText(), getAvailableNumber(tvFolderId.getText()));
-                textAreaOutput.append("<div class=\"wrapper-center\">\n"
-                        + "    <img src=\"" + PostHelper.normalizeImagePath(filename) + "\" alt=\"Convolutional Neural Networks\"/>\n"
-                        + "</div><br>");
+                textAreaOutput.append("![image-title-here]("+PostHelper.normalizeImagePath(filename)+"){:class=\"center-image\"}");
                 textAreaOutput.append("\n\n");
             }
         }
