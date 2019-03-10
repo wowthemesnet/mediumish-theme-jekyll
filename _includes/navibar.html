@@ -1,0 +1,47 @@
+<div class="collapse navbar-collapse" id="navbarMediumish">
+  <!-- Begin Menu -->
+
+  <!-- Blog -->
+  <ul class="navbar-nav ml-auto">
+    {% if page.url == "/" %}
+    <li class="nav-item active">
+      {% else %}
+    </li>
+
+    <li class="nav-item">
+      {% endif %}
+      <a class="nav-link" href="{{ site.baseurl }}/index.html">Blog</a>
+    </li>
+    <!-- End Blog -->
+
+    <!-- About -->
+    {% if page.url == "/about.html" %}
+    <li class="nav-item active">
+      {% else %}
+    </li>
+
+    <li class="nav-item">
+      {% endif %}
+      <a class="nav-link" href="{{ site.baseurl }}/about">About</a>
+    </li>
+    <!-- End About -->
+
+    <!-- JetBrains -->
+    {% if page.url == "/jetbrains.html" %}
+    <li class="nav-item active">
+      {% else %}
+    </li>
+
+    <li class="nav-item">
+      {% endif %}
+      <a class="btn btn-info" href="{{ site.baseurl }}/jetbrains">JetBrains Key</a>
+    </li>
+
+    <!-- End JetBrains -->
+
+    <!-- Search bar -->
+    {% include search-lunr.html %}
+  </ul>
+
+  <!-- End Menu -->
+</div>
