@@ -1,5 +1,9 @@
 # Mediumish Jekyll Theme - Change Log
 
+## 2019-03-20, v1.0.31
+- Added adsense support (activate via _config.yml)
+- Fixed share for large headers
+
 ## 2019-03-20, v1.0.30
 - Added Tags support
 - Removed Google + sharing, no longer needed
