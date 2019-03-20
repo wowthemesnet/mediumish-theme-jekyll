@@ -60,3 +60,8 @@ kramdown:
   syntax_highlighter_opts:
     block:
       line_numbers: true
+
+# Adsense
+adsense: "enabled"
+adsense-data-ad-client: "ca-pub-3412143450191416"
+adsense-data-ad-slot: "1363087678"
