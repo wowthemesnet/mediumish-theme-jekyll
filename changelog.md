@@ -5,6 +5,8 @@
 - Centered avatar image on smaller devices
 - Removed .html endings in cats/tags
 - Added Linkedin share 
+- Added Table of Contents
+- other minor changes
 
 ## 2019-03-20, v1.0.31
 - Added adsense support (activate via _config.yml)
