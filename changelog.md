@@ -1,5 +1,12 @@
 # Mediumish Jekyll Theme - Change Log
 
+## 2019-03-20, v1.0.30
+- Added Tags support
+- Removed Google + sharing, no longer needed
+
+## 2019-03-01, v1.0.29
+- Fixed Jumbotron categories link
+
 ## 2019-03-01, v1.0.28
 - Added blurred text on spoilers
 - Added half stars for ratings
