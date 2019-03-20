@@ -1,5 +1,10 @@
 # Mediumish Jekyll Theme - Change Log
 
+
+## 2019-03-20, v1.0.32
+- Centered avatar image on smaller devices
+- Removed .html endings in cats/tags
+
 ## 2019-03-20, v1.0.31
 - Added adsense support (activate via _config.yml)
 - Fixed share for large headers
