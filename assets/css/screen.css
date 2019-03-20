@@ -155,6 +155,10 @@ License: https://www.wowthemes.net/freebies-license/
      margin-top:5px;
      font-size:0.95rem;
 }
+.toc ul {
+    list-style: decimal;
+    font-weight: 400;
+}
  .author-meta {
      flex:1 1 auto;
      white-space:nowrap!important;
