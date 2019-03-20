@@ -125,11 +125,13 @@ License: https://www.wowthemes.net/freebies-license/
 }
  .wrapfooter {
      font-size:12px;
+     display: flex;
+     align-items: center;
+     margin-bottom: 15px;
 }
  .author-thumb {
      width:40px;
      height:40px;
-     float:left;
      margin-right:13px;
      border-radius:100%;
 }
