@@ -46,9 +46,9 @@ post_class: post-template
             {% endif %}
             <!-- End Adsense -->
 
-			<!-- Post Featured Image -->
-			{% if page.image %}<img class="featured-image img-fluid" src="{% if page.image contains "://" %}{{ page.image }}{% else %}{{ page.image | absolute_url }}{% endif %}" alt="{{ page.title }}">{% endif %}
-            <!-- End Featured Image -->
+	<!-- Post Featured Image -->
+	{% if page.image %}<div align="center"><img class="featured-image img-fluid" src="{% if page.image contains "://" %}{{ page.image }}{% else %}{{ page.image | absolute_url }}{% endif %}" alt="{{ page.title }}">{% endif %}</div>
+	<!-- End Featured Image -->
             
             <!-- Toc if any -->
             {% if page.toc %}
