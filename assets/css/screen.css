@@ -700,3 +700,22 @@ License: https://www.wowthemes.net/freebies-license/
 .spoiler:hover:after {
     opacity:1;
 }
+
+/** Lazy img **/
+.lazyimg {
+    display: block;
+    border: 0 none;
+    opacity: 1;
+    transition: opacity .25s;
+    background: #f2f2f2;
+    outline: 0 none;
+}
+.lazyimg[data-src],
+.lazyimg[data-srcset] {
+  opacity: 0;
+  transition: opacity .25s;
+}
+
+
+
+      

@@ -206,6 +206,11 @@ ga('send', 'pageview');
     
 <script src="{{ site.baseurl }}/assets/js/mediumish.js"></script>
 
+{% if site.lazyimages == "enabled" %}
+<script src="https://cdnjs.cloudflare.com/ajax/libs/picturefill/3.0.3/picturefill.min.js"></script>
+<script src="{{ site.baseurl }}/assets/js/lazyload.js"></script>
+{% endif %}
+
 <script src="{{ site.baseurl }}/assets/js/ie10-viewport-bug-workaround.js"></script> 
     
 <script id="dsq-count-scr" src="//{{site.disqus}}.disqus.com/count.js"></script>
