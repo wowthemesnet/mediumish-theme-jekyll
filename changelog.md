@@ -1,5 +1,9 @@
 # Mediumish Jekyll Theme - Change Log
 
+## 2019-03-22, v1.0.33
+- Added image lazy load (config.yml - lazyimages: "enabled/disabled")
+- Added object cover images instead of background images for home featured cards
+- Removed disqus count from homepage for better performance
 
 ## 2019-03-20, v1.0.32
 - Centered avatar image on smaller devices
