@@ -123,6 +123,23 @@ License: https://www.wowthemes.net/freebies-license/
      line-height:1.6;
      font-weight:400;
 }
+.featured-box-img-cover {
+    object-fit: cover;
+    width: 221px;
+    height: 290px;
+    max-height:100%;
+}
+@media (max-width: 1199px) {    
+    .featured-box-img-cover {
+        height: 333px;
+    }
+}
+@media (max-width:991px) {
+    .featured-box-img-cover {
+        height: auto;
+        width:100%;
+    }
+}
  .wrapfooter {
      font-size:12px;
      display: flex;
@@ -297,12 +314,17 @@ License: https://www.wowthemes.net/freebies-license/
 .sticky-top-offset {
     top:100px;
 }
+
  @media (min-width:1024px) {    
      .share ul li {
          display:block;
     }
 }
+
  @media (max-width:999px) {
+    .featured-box-img-cover {
+        height: 359px;
+    }
      .alertbar {
          position:relative !Important;
          margin-bottom:20px;
@@ -334,19 +356,8 @@ License: https://www.wowthemes.net/freebies-license/
      .jumbotron {
         margin-bottom:0;
          border-radius: 0;
-    }
-     .listfeaturedtag .wrapthumbnail, .listfeaturedtag .col-md-7 {
-         width:100%;
-         max-width:100%;
-         -webkit-box-flex: 0;
-         -webkit-flex: 100%;
-         -ms-flex: 100%;
-         flex: 100%;
-    }
-     .listfeaturedtag .wrapthumbnail {
-         height:250px;
-    }
-     .listfeaturedtag .card {
+    }    
+    .listfeaturedtag .card {
          height:auto;
     }
      .listfeaturedtag .wrapfooter {
@@ -716,6 +727,3 @@ License: https://www.wowthemes.net/freebies-license/
   transition: opacity .25s;
 }
 
-
-
-      
