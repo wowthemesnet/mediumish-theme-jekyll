@@ -50,17 +50,21 @@ post_class: post-template
 			{% if page.image %}<img class="featured-image img-fluid" src="{% if page.image contains "://" %}{{ page.image }}{% else %}{{ page.image | absolute_url }}{% endif %}" alt="{{ page.title }}">{% endif %}
             <!-- End Featured Image -->
             
-            <!-- Toc if any -->
-            {% if page.toc %}
-             <div class="toc mt-5 mb-5 lead">
-             <h3 class="font-weight-bold">Summary</h3>
-             {% include toc.html html=content %}
-             </div>
-            {% endif %}
-            <!-- End Toc -->
+            
 
 			<!-- Post Content -->
 			<div class="article-post">
+                <!-- Toc if any -->            
+                {% if page.toc %}
+                    {% if page.beforetoc %}
+                        <p><em>{{page.beforetoc}}</em></p>
+                    {% endif %}
+                    <div class="toc mt-4 mb-4 lead">
+                        <h3 class="font-weight-bold">Summary</h3>
+                        {% include toc.html html=content %}
+                    </div>
+                {% endif %}
+                <!-- End Toc -->
 				{{content}}
 			</div>
             
