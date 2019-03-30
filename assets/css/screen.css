@@ -12,7 +12,7 @@ License: https://www.wowthemes.net/freebies-license/
 }
  a:hover {
      color: #000000;
-     text-decoration:none;
+     transition:all 0.2s;
 }
  pre {
     -moz-box-sizing: border-box;
@@ -223,7 +223,8 @@ License: https://www.wowthemes.net/freebies-license/
      margin-right:5px;
 }
  .mainheading h1.sitetitle {
-     font-family:Righteous;
+     font-family:Montserrat;
+     font-weight:600;
 }
  .mainheading h1.posttitle {
      font-weight:700;
@@ -254,6 +255,7 @@ License: https://www.wowthemes.net/freebies-license/
      padding:0 20px;
      font-style:italic;
      color:rgba(0,0,0,.5);
+     font-family:Montserrat;
 }
  .article-post p,.article-post blockquote {
      margin:0 0 1.5rem 0;
@@ -536,11 +538,12 @@ License: https://www.wowthemes.net/freebies-license/
      margin-bottom: 1.5rem;
 }
  .h1, .h2, .h3, .h4, .h5, .h6, h1, h2, h3, h4, h5, h6 {
-     font-family: -apple-system,system-ui,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif;
+     font-family: Montserrat,-apple-system,system-ui,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif;
 }
  .article-post .h1, .article-post .h2, .article-post .h3, .article-post .h4, .article-post .h5, .article-post .h6, .article-post h1, .article-post h2, .article-post h3, .article-post h4, .article-post h5, .article-post h6 {
      font-weight: 700;
-     margin-bottom: 1.5rem;
+     margin-bottom: 1rem;
+     margin-top:2.5rem;
 }
  .article-post img.shadow {
      -webkit-box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.30);
@@ -668,7 +671,7 @@ License: https://www.wowthemes.net/freebies-license/
 
 .spoiler {
     color: transparent;
-    text-shadow:0 0 10px rgba(0,0,0,0.2);
+    text-shadow:0 0 12px rgba(0,0,0,0.2);
     transition: all .4s;
     cursor:pointer;
     position:relative;
@@ -677,21 +680,29 @@ License: https://www.wowthemes.net/freebies-license/
     position:absolute;
     opacity:0;
     content:'Click to reveal spoiler';
-    top:45%;
-    left:calc(50% - 100px);
+    top:0;
+    left:0;
     text-shadow:none;
-    background:#222;
+    background:rgba(0,0,0,0.7);
     color:#fff;
     display:inline-block;
     font-size:13px;
     line-height:1;
-    padding:2px 3px;
-    width:150px;
-    font-family:Arial;
+    padding:4px 8px;
+    width:154px;
+    font-family:Montserrat;
     text-align:center;
-    border-radius:3px;
+    border-radius:4px;
     transition: all .4s;
 }
 .spoiler:hover:after {
     opacity:1;
+}
+
+body{
+    font-family: Montserrat;
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    -moz-font-feature-settings: "liga" on;
 }
