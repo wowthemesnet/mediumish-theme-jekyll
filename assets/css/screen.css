@@ -130,15 +130,17 @@ License: https://www.wowthemes.net/freebies-license/
      width:40px;
      height:40px;
      float:left;
-     margin-right:13px;
+     margin-right:12px;
      border-radius:100%;
 }
  .post-top-meta {
      margin-bottom:2rem;
 }
  .post-top-meta .author-thumb {
-     width:72px;
-     height:72px;
+     width:56px;
+     height:56px;
+     margin-right:16px;
+     margin-left:15px;
 }
  .post-top-meta.authorpage .author-thumb {
      margin-top:40px;
@@ -159,12 +161,17 @@ License: https://www.wowthemes.net/freebies-license/
      text-overflow:ellipsis!important;
      overflow:hidden!important;
 }
- span.post-name,span.post-date,span.author-meta {
+ span.post-name,span.author-meta {
      display:inline-block;
 }
  span.post-date,span.post-read {
      color:rgba(0,0,0,.44);
 }
+ div.post-date {
+    margin-top: 4px;
+    color:rgba(0,0,0,.54);
+    font-size:0.875rem;
+ }
  span.post-read-more {
      align-items:center;
      display:inline-block;
@@ -252,10 +259,13 @@ License: https://www.wowthemes.net/freebies-license/
 }
  blockquote {
      border-left:4px solid #000000;
-     padding:0 20px;
+     padding:0 24px;
      font-style:italic;
-     color:rgba(0,0,0,.5);
+     color:rgba(0,0,0,.54);
      font-family:Montserrat;
+     font-weight: 300;
+     font-size:1.25rem;
+     line-height: 1.84;
 }
  .article-post p,.article-post blockquote {
      margin:0 0 1.5rem 0;
@@ -348,7 +358,6 @@ License: https://www.wowthemes.net/freebies-license/
     }
      .listfeaturedtag .wrapfooter {
          position:relative;
-         margin-top:30px;
     }
      .listfeaturedtag .card-block {
          padding:20px;
@@ -699,10 +708,15 @@ License: https://www.wowthemes.net/freebies-license/
     opacity:1;
 }
 
-body{
+body {
     font-family: Montserrat;
     text-rendering: optimizeLegibility;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
     -moz-font-feature-settings: "liga" on;
+}
+
+.card-footer {
+    padding:1.25rem;
+    padding-top:0rem;
 }
