@@ -65,6 +65,7 @@ License: https://www.wowthemes.net/freebies-license/
      background:rgba(255,255,255,.97);
      box-shadow:0 2px 2px -2px rgba(0,0,0,.15);
      transition: top 0.2s ease-in-out;
+  font-size: 1.3rem;
 }
  .main-content {
     min-height:300px;
