@@ -255,7 +255,7 @@ License: https://www.wowthemes.net/freebies-license/
 }
  .mainheading h1.sitetitle {
      font-family:Righteous;
- $ text-align: center; 
+     text-align: center  !important; 
 }
  .mainheading h1.posttitle {
      font-weight:700;
