@@ -11,15 +11,23 @@ mailchimp-list: 'https://wowthemes.us11.list-manage.com/subscribe/post?u=8aeb20a
 
 # Authors
 authors:
+  Eveline:
+    name: Eveline 
+    display_name: Eveline
+    gravatar: fdb570aed748bfa98f2191cd28f9718e
+    email: eveline.vlassenroot@ugent.be
+    web: https://biblio.ugent.be/person/000110474714
+    twitter: https://twitter.com/evelinevlas
+    description: "Onderzoeker bij imec-mict-UGent."
   Mathias:
     name: Mathias 
     display_name: Mathias
-    gravatar: fdb570aed748bfa98f2191cd28f9718e
+    gravatar: 
     email: mathias.vancompernolle@ugent.be
     web: https://biblio.ugent.be/person/002004496411
     twitter: https://twitter.com/mvcomper
     description: "Onderzoeker bij imec-mict-UGent."
-  gastautuer:
+  gastauteur:
     name: Gastauteur
     display_name: Gastauteur
     gravatar: b1cc14991db7a456fcd761680bbc8f81
