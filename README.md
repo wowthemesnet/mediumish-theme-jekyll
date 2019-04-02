@@ -1,4 +1,4 @@
-# Mathias Van Compernolle's blog.
+# WebGov blog.
 
 Powered by Jekyll Template by Mediumish theme
 
