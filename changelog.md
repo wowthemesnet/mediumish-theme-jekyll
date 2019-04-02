@@ -1,5 +1,9 @@
 # Mediumish Jekyll Theme - Change Log
 
+## 2019-04-02, v1.0.35
+- Fixed Github pages issue with ratings under 1
+- Added support for local avatars
+
 ## 2019-03-22, v1.0.34
 - Deferred font awesome and google fonts
 
