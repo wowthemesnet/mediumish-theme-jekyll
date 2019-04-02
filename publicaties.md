@@ -1,8 +1,10 @@
 ---
 layout: page
-title: Bekijk mijn publicaties
+title: Bekijk onze publicaties
 comments: true
 ---
 
 
-[Klik klik klik](https://biblio.ugent.be/person/002004496411)
+[Biblio Mathias](https://biblio.ugent.be/person/002004496411)
+[Biblio Eveline](https://biblio.ugent.be/person/802002676529)
+
