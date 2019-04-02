@@ -1,7 +1,7 @@
 # Mediumish Jekyll Theme - Change Log
 
 ## 2019-03-22, v1.0.34
-- Deffered font awesome and google fonts
+- Deferred font awesome and google fonts
 
 ## 2019-03-22, v1.0.33
 - Added image lazy load (config.yml - lazyimages: "enabled/disabled")
