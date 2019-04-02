@@ -1,6 +1,6 @@
 # Site
 name: "WebGov"
-description: "Web elements, government and more .."
+description: "Web elements, government, .."
 meta_description: "Meta beschrijving."
 logo: 'assets/images/mathias_foto.jpg'
 favicon: 'assets/images/mathias_foto.jpg'
@@ -22,7 +22,6 @@ authors:
   Mathias:
     name: Mathias 
     display_name: Mathias
-    gravatar: 
     email: mathias.vancompernolle@ugent.be
     web: https://biblio.ugent.be/person/002004496411
     twitter: https://twitter.com/mvcomper
