@@ -88,6 +88,7 @@ License: https://www.wowthemes.net/freebies-license/
      font-weight:700;
      font-size:1.4rem;
      margin-bottom:27px;
+     text-align: left !important;
 }
  .section-title span {
      border-bottom:1px solid rgba(0,0,0,.44);
