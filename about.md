@@ -1,9 +1,9 @@
 ---
 layout: page
-title: Over 
-comments: true
+title: About
+comments: false
 ---
 
-Projecten
+Projecten enzo
 
 
