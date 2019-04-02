@@ -21,7 +21,7 @@ $rating-icons-paths: (
 );
 
 /// Creates a dynamic list of values that increment each .25 from 0 to 5
-/// @return {list} 
+/// @return {list}
 @function rating-values() {
   $rating-values: ();
 
@@ -78,7 +78,7 @@ $rating-icons-paths: (
 
   }
   
- @each $rating-value in rating-values() {
+@each $rating-value in rating-values() {
     // Get the next higher integer.
     $rating-value-ceil: ceil($rating-value);
 
