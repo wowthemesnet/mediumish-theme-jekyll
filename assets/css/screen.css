@@ -7,12 +7,12 @@ License: https://www.wowthemes.net/freebies-license/
      padding:1rem 0rem;
 }
  a {
-     color:#00ab6b;
+     color:#000000;
      transition:all 0.2s;
 }
  a:hover {
-     color: #038252;
-     text-decoration:none;
+     color: #000000;
+     transition:all 0.2s;
 }
  pre {
     -moz-box-sizing: border-box;
@@ -130,15 +130,17 @@ License: https://www.wowthemes.net/freebies-license/
      width:40px;
      height:40px;
      float:left;
-     margin-right:13px;
+     margin-right:12px;
      border-radius:100%;
 }
  .post-top-meta {
      margin-bottom:2rem;
 }
  .post-top-meta .author-thumb {
-     width:72px;
-     height:72px;
+     width:56px;
+     height:56px;
+     margin-right:16px;
+     margin-left:15px;
 }
  .post-top-meta.authorpage .author-thumb {
      margin-top:40px;
@@ -159,12 +161,17 @@ License: https://www.wowthemes.net/freebies-license/
      text-overflow:ellipsis!important;
      overflow:hidden!important;
 }
- span.post-name,span.post-date,span.author-meta {
+ span.post-name,span.author-meta {
      display:inline-block;
 }
  span.post-date,span.post-read {
      color:rgba(0,0,0,.44);
 }
+ div.post-date {
+    margin-top: 4px;
+    color:rgba(0,0,0,.54);
+    font-size:0.875rem;
+ }
  span.post-read-more {
      align-items:center;
      display:inline-block;
@@ -223,7 +230,8 @@ License: https://www.wowthemes.net/freebies-license/
      margin-right:5px;
 }
  .mainheading h1.sitetitle {
-     font-family:Righteous;
+     font-family:Montserrat;
+     font-weight:600;
 }
  .mainheading h1.posttitle {
      font-weight:700;
@@ -250,10 +258,14 @@ License: https://www.wowthemes.net/freebies-license/
      color:rgba(0,0,0,.8);
 }
  blockquote {
-     border-left:4px solid #00ab6b;
-     padding:0 20px;
+     border-left:4px solid #000000;
+     padding:0 24px;
      font-style:italic;
-     color:rgba(0,0,0,.5);
+     color:rgba(0,0,0,.54);
+     font-family:Montserrat;
+     font-weight: 300;
+     font-size:1.25rem;
+     line-height: 1.84;
 }
  .article-post p,.article-post blockquote {
      margin:0 0 1.5rem 0;
@@ -346,7 +358,6 @@ License: https://www.wowthemes.net/freebies-license/
     }
      .listfeaturedtag .wrapfooter {
          position:relative;
-         margin-top:30px;
     }
      .listfeaturedtag .card-block {
          padding:20px;
@@ -409,8 +420,8 @@ License: https://www.wowthemes.net/freebies-license/
      margin-bottom:1.2rem;
 }
  .btn.follow {
-     border-color:#02B875;
-     color:#1C9963;
+     border-color:#000000;
+     color:#000000;
      padding:3px 10px;
      text-align:center;
      border-radius:999em;
@@ -418,8 +429,8 @@ License: https://www.wowthemes.net/freebies-license/
      display:inline-block;
 }
  .btn.subscribe {
-     background-color:#1C9963;
-     border-color:#1C9963;
+     background-color:#000000;
+     border-color:#000000;
      color:rgba(255,255,255,1);
      fill:rgba(255,255,255,1);
      border-radius:30px;
@@ -459,8 +470,8 @@ License: https://www.wowthemes.net/freebies-license/
      margin-left:5px;
 }
  .alertbar input[type="submit"] {
-     background-color:#1C9963;
-     border:1px solid #1C9963;
+     background-color:#000000;
+     border:1px solid #000000;
      color:rgba(255,255,255,1);
      fill:rgba(255,255,255,1);
      font-size:0.85rem;
@@ -536,11 +547,12 @@ License: https://www.wowthemes.net/freebies-license/
      margin-bottom: 1.5rem;
 }
  .h1, .h2, .h3, .h4, .h5, .h6, h1, h2, h3, h4, h5, h6 {
-     font-family: -apple-system,system-ui,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif;
+     font-family: Montserrat,-apple-system,system-ui,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif;
 }
  .article-post .h1, .article-post .h2, .article-post .h3, .article-post .h4, .article-post .h5, .article-post .h6, .article-post h1, .article-post h2, .article-post h3, .article-post h4, .article-post h5, .article-post h6 {
      font-weight: 700;
-     margin-bottom: 1.5rem;
+     margin-bottom: 1rem;
+     margin-top:2.5rem;
 }
  .article-post img.shadow {
      -webkit-box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.30);
@@ -668,7 +680,7 @@ License: https://www.wowthemes.net/freebies-license/
 
 .spoiler {
     color: transparent;
-    text-shadow:0 0 10px rgba(0,0,0,0.2);
+    text-shadow:0 0 12px rgba(0,0,0,0.2);
     transition: all .4s;
     cursor:pointer;
     position:relative;
@@ -677,21 +689,34 @@ License: https://www.wowthemes.net/freebies-license/
     position:absolute;
     opacity:0;
     content:'Click to reveal spoiler';
-    top:45%;
-    left:calc(50% - 100px);
+    top:0;
+    left:0;
     text-shadow:none;
-    background:#222;
+    background:rgba(0,0,0,0.7);
     color:#fff;
     display:inline-block;
     font-size:13px;
     line-height:1;
-    padding:2px 3px;
-    width:150px;
-    font-family:Arial;
+    padding:4px 8px;
+    width:154px;
+    font-family:Montserrat;
     text-align:center;
-    border-radius:3px;
+    border-radius:4px;
     transition: all .4s;
 }
 .spoiler:hover:after {
     opacity:1;
+}
+
+body {
+    font-family: Montserrat;
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    -moz-font-feature-settings: "liga" on;
+}
+
+.card-footer {
+    padding:1.25rem;
+    padding-top:0rem;
 }

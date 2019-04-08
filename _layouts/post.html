@@ -25,12 +25,17 @@ post_class: post-template
                 <!-- Author Box -->
                 {% if page.author %}				
 				<div class="row post-top-meta">
-					<div class="col-md-2">
+					<div class="">
 						<img class="author-thumb" src="https://www.gravatar.com/avatar/{{ author.gravatar }}?s=250&d=mm&r=x" alt="{{ author.display_name }}">
 					</div>
-					<div class="col-md-10">
+					<div class="mt-1">
 						<a target="_blank" class="link-dark" href="{{ author.web }}">{{ author.display_name }}</a><a target="_blank" href="{{ author.twitter }}" class="btn follow">Follow</a>
-						<span class="author-description">{{ author.description }}</span>						
+                        <!-- Post Date -->
+                            <div class="post-date"><time class="post-date" datetime="{{ page.date | date:"%Y-%m-%d" }}">{{ page.date | date_to_string }}</time></div>           
+                            {% if page.last_modified_at %}
+                            (Updated: <time datetime="{{ page.last_modified_at | date_to_xmlschema }}" itemprop="dateModified">{{ page.last_modified_at | date: "%b %-d, %Y" }}</time>)
+                            {% endif %}
+						<!-- <span class="author-description">{{ author.description }}</span> -->						
 					</div>
 				</div>				
                 {% endif %}
@@ -56,15 +61,6 @@ post_class: post-template
             </div>
             {% endif %}
             
-            <!-- Post Date -->
-            <p>
-            <small>
-                <span class="post-date"><time class="post-date" datetime="{{ page.date | date:"%Y-%m-%d" }}">{{ page.date | date_to_string }}</time></span>           
-                {% if page.last_modified_at %}
-                (Updated: <time datetime="{{ page.last_modified_at | date_to_xmlschema }}" itemprop="dateModified">{{ page.last_modified_at | date: "%b %-d, %Y" }}</time>)
-                {% endif %}
-                </small>
-            </p>
             
 			<!-- Post Categories -->
 			<div class="after-post-tags">
