@@ -724,15 +724,17 @@ body {
 table {
     border-collapse: collapse;
     border-spacing: 2;
-    border:2px solid #000000;
+    border: 1px solid #000000;
 }
 
 th {
-    border:2px solid #000000;
+    border: 2px solid #000000;
     padding-left: 5px;
+    padding-right: 5px;
 }
 
 td {
-    border:1px solid #000000;
+    border: 1px solid #000000;
     padding-left: 5px;
+    padding-right: 5px;
 }
