@@ -29,7 +29,7 @@ post_class: post-template
 						<img class="author-thumb" src="https://www.gravatar.com/avatar/{{ author.gravatar }}?s=250&d=mm&r=x" alt="{{ author.display_name }}">
 					</div>
 					<div class="mt-1">
-						<a target="_blank" class="link-dark" href="{{ author.web }}">{{ author.display_name }}</a><a target="_blank" href="{{ author.twitter }}" class="btn follow">Follow</a>
+                        <a target="_blank" class="link-dark" href="{{ author.web }}">{{ author.display_name }}</a>{% if author.twitter %}<a target="_blank" href="{{ author.twitter }}" class="btn follow">Follow</a>{% endif %}
                         <!-- Post Date -->
                             <div class="post-date"><time class="post-date" datetime="{{ page.date | date:"%Y-%m-%d" }}">{{ page.date | date_to_string }}</time></div>           
                             {% if page.last_modified_at %}
