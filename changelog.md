@@ -1,5 +1,9 @@
 # Mediumish Jekyll Theme - Change Log
 
+## 2019-05-16, v1.0.36
+- docker-composer.yml
+- better responsiveness for 1920x1080 resolution
+
 ## 2019-04-02, v1.0.35
 - Fixed Github pages issue with ratings under 1
 - Added support for local avatars
