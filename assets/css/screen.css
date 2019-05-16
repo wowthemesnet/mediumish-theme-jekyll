@@ -723,18 +723,31 @@ body {
 
 table {
     border-collapse: collapse;
-    border-spacing: 2;
-    border: 1px solid #000000;
+    border: 1px solid #dfe2e5;
+    font-size: 16px;
+    margin-bottom: 1.5rem;
 }
 
 th {
-    border: 1px solid #000000;
-    padding-left: 5px;
-    padding-right: 5px;
+    border: 1px solid #dfe2e5;
+    padding: 8px 12px;
 }
 
 td {
-    border: 1px solid #000000;
-    padding-left: 5px;
-    padding-right: 5px;
+    border: 1px solid #dfe2e5;
+    padding: 8px 12px;
+}
+
+table.rouge-table {
+    border: none;
+}
+
+td.rouge-code {
+    border: none;
+    padding: 0;
+}
+
+td.rouge-gutter {
+    border: none;
+    padding: 0;
 }
