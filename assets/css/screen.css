@@ -524,6 +524,10 @@ ul.tags li a:hover {
     margin-bottom: 1.2rem;
 }
 
+.catlist .sep:last-child {
+	display:none;
+}
+
 .btn.follow {
     border-color: #02B875;
     color: #1C9963;
@@ -898,4 +902,24 @@ iframe {
 .lazyimg[data-srcset] {
     opacity: 0;
     transition: opacity .25s;
+}
+
+ol.list-featured {
+	counter-reset:my-awesome-counter;
+	list-style:none;
+	padding-left:0;
+}
+ol.list-featured li {
+	counter-increment:my-awesome-counter;
+	display:flex;
+	font-size:0.8rem;
+}
+ol.list-featured li:before {
+    content: "0" counter(my-awesome-counter);
+    font-weight: bold;
+    font-size: 2rem;
+    margin-right: 0.5rem;
+    font-family: Arial;
+    line-height: 1;
+    opacity: .1;
 }

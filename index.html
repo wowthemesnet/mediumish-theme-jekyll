@@ -2,60 +2,49 @@
 layout: default
 title: Home
 ---
+<div class="container">
+    
+    {% if page.url == "/" %}
+        
+    
+    {% endif %} <!--endif page url is / -->
+        
+    
+    
+    <!-- Now the rest of the posts with the usual loop but with an offset:4 on the first page so we can skeep the first 4 posts displayed above -->
+        
+    <div class="row mt-3">
+       
+        <div class="col-md-8 main-loop">
+            
+            <div class="section-title">
 
-{% if page.url == "/" %}
-
-<!-- Featured
-================================================== -->
-<section class="featured-posts">
-    <div class="section-title">
-        <h2><span>Featured</span></h2>
-    </div>
-    <div class="row">
-
-    {% for post in site.posts %}
-
-        {% if post.featured == true %}
-
-            {% include featuredbox.html %}
-
-        {% endif %}
-
-    {% endfor %}
-
-    </div>
-</section>
-
-{% endif %}
-
-<!-- Posts Index
-================================================== -->
-<section class="recent-posts">
-
-    <div class="section-title">
-
-        <h2><span>All Stories</span></h2>
-
-    </div>
-
-    <div class="row listrecent">
-
-        {% for post in paginator.posts %}
-
-        {% include postbox.html %}
-
-        {% endfor %}
-
-    </div>
-
-</section>
-
-<!-- Pagination
-================================================== -->
+                <h2><span>All Stories</span></h2>
+        
+            </div>
+            
+    
+            {% for post in paginator.posts %}
+            
+                {% include main-loop-card.html %}
+            
+            {% endfor %}
+            
 <div class="bottompagination">
-<div class="pointerup"><i class="fa fa-caret-up"></i></div>
-<span class="navigation" role="navigation">
-    {% include pagination.html %}
-</span>
-</div>
-
+    <div class="pointerup"><i class="fa fa-caret-up"></i></div>
+    <span class="navigation" role="navigation">
+        {% include pagination.html %}
+    </span>
+    </div>
+            
+        </div>
+        
+        <div class="col-md-4">
+            {% include sidebar-featured.html %}    
+        </div>
+        
+    </div>
+    
+    
+    
+    </div>

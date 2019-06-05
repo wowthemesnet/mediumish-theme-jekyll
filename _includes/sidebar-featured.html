@@ -1,0 +1,16 @@
+<div class="sticky-top sticky-top-offset">
+    <div class="section-title">
+        <h2><span>Featured</span></h2>
+    </div>  
+    <ol class="list-featured">				
+        {% for post in site.tags.featured %}                
+            <li class="mb-4">
+            <span>
+                <h6 class="font-weight-bold">
+                    <a href="{{site.baseurl}}{{ post.url }}" class="text-dark">{{ post.title }}</a>
+                </h6>
+            </span>
+            </li>                
+        {% endfor %}   
+    </ol>
+</div> 
