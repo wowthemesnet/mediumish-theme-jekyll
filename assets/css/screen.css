@@ -911,6 +911,10 @@ thead {
     border-bottom: 2px solid rgba(0, 0, 0, .44);
 }
 
+td, th{
+    padding-left:8px;
+}
+
 tr:nth-of-type(2n){
     background-color: rgba(0,0,0, 0.03);
 }

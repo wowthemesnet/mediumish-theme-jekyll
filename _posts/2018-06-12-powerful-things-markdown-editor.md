@@ -20,7 +20,7 @@ As well as bold and italics, you can also use some other special formatting in M
 
 ## Tables
 
-|house    |leader            |seat         |
+|House    |Leader            |Seat         |
 |---------|------------------|-------------|
 |Stark    |Jon Snow          |Winterfell   |
 |Lannister|Cersei Lannister  |Kings Landing|
