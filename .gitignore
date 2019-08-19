@@ -3,3 +3,6 @@ _site
 *.swp
 .sass-cache
 *~
+.idea/
+.sass-cache/
+_site/
