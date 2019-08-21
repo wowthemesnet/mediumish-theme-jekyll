@@ -49,7 +49,6 @@
 {% capture layout %}{% if page.layout %}layout-{{ page.layout }}{% endif %}{% endcapture %}
 <body class="{{layout}}">
 
-
 <!-- Begin Menu Navigation
 ================================================== -->
 <nav class="navbar navbar-expand-lg navbar-light bg-white fixed-top mediumnavigation nav-down">
@@ -82,16 +81,21 @@
                     <a class="nav-link" href="{{ site.baseurl }}/index.html">Blog</a>
                 </li>
 
-                <li class="nav-item">
-                    <a class="nav-link" href="http://www.qubecinema.com/" target="_blank">About</a>
-                </li>
-
                 {% if page.url == "/people" %}
                 <li class="nav-item active">
                     {% else %}
                 <li class="nav-item">
                     {% endif %}
                     <a class="nav-link" href="{{ site.baseurl }}/people">People</a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link" href="https://www.qubecinema.com/careers/careers-at-qube?job_division=281"
+                       target="_blank">Careers</a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link" href="http://www.qubecinema.com/" target="_blank">About</a>
                 </li>
 
                 {% include search-lunr.html %}
