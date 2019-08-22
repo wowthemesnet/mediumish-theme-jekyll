@@ -1,23 +1,23 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-<link rel="icon" href="{{ site.baseurl }}/assets/images/logo.png">
+    <link rel="icon" href="{{ site.baseurl }}/assets/images/logo.png">
 
-<title>{{ page.title }} | {{site.name}}</title>
+    <title>{{ page.title }} | {{site.name}}</title>
 
-{% seo %}
+    {% seo %}
 
-<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
-      integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+          integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
 
-<link href="{{ site.baseurl }}/assets/css/screen.css" rel="stylesheet">
+    <link href="{{ site.baseurl }}/assets/css/screen.css" rel="stylesheet">
 
-<link href="{{ site.baseurl }}/assets/css/main.css" rel="stylesheet">
+    <link href="{{ site.baseurl }}/assets/css/main.css" rel="stylesheet">
 
-<script src="{{ site.baseurl }}/assets/js/jquery.min.js"></script>
+    <script src="{{ site.baseurl }}/assets/js/jquery.min.js"></script>
 
 </head>
 
@@ -40,13 +40,15 @@
 </script>
 {% endif %}
 
-{% capture layout %}{% if page.layout %}layout-{{ page.layout }}{% endif %}{% endcapture %}
+{% capture layout %}{% if page.flayout %}layout-{{ page.layout }}{% endif %}{% endcapture %}
 <body class="{{layout}}">
-	<!-- defer loading of font and font awesome -->
-	<noscript id="deferred-styles">
-		<link href="https://fonts.googleapis.com/css?family=Righteous%7CMerriweather:300,300i,400,400i,700,700i" rel="stylesheet">
-		<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
-	</noscript>
+<!-- defer loading of font and font awesome -->
+<noscript id="deferred-styles">
+    <link href="https://fonts.googleapis.com/css?family=Righteous%7CMerriweather:300,300i,400,400i,700,700i"
+          rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css"
+          integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
+</noscript>
 
 
 <!-- Begin Menu Navigation
@@ -96,9 +98,7 @@
                 <li class="nav-item">
                     <a class="nav-link" href="http://www.qubecinema.com/" target="_blank">About</a>
                 </li>
-<li class="nav-item">
-                <a target="_blank" class="nav-link" href="https://github.com/wowthemesnet/mediumish-theme-jekyll"><i class="fab fa-github"></i> Fork on Github</a>
-                </li>
+
                 {% include search-lunr.html %}
 
             </ul>
@@ -214,7 +214,8 @@
 
 {% if site.lazyimages == "enabled" %}
 <script src="{{ site.baseurl }}/assets/js/lazyload.js"></script>
-{% endif %}<script src="{{ site.baseurl }}/assets/js/ie10-viewport-bug-workaround.js"></script>
+{% endif %}
+<script src="{{ site.baseurl }}/assets/js/ie10-viewport-bug-workaround.js"></script>
 {% if page.layout == 'post' %}
 <script id="dsq-count-scr" src="//{{site.disqus}}.disqus.com/count.js"></script>
 {% endif %}
