@@ -86,6 +86,9 @@ models:
               - type: string
                 name: display_name
                 label: Display Name
+              - type: image
+                name: avatar
+                label: Avatar
               - type: string
                 name: gravatar
                 label: Gravatar
@@ -184,20 +187,6 @@ models:
       - type: string
         name: title
         label: Title
-  404page:
-    type: page
-    label: 404
-    file: 404.html
-    fields: 
-      - type: string
-        name: layout
-        label: Layout
-      - type: string
-        name: title
-        label: Title
-      - type: string
-        name: permalink
-        label: Permalink
   basicpage:
     type: page
     label: Basic Page
@@ -251,7 +240,7 @@ models:
       - type: boolean
         name: hidden
         label: Hidden
-      - type: string
+      - type: number
         name: rating
         label: Rating
       - type: string
