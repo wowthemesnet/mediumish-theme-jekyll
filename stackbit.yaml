@@ -172,10 +172,11 @@ models:
         name: lazyimages
         label: Lazyimages
         options: ['disabled', 'enabled']
-      - type: enum
+      - type: list
         name: exclude
         label: Exclude
-        options: [changelog.md, LICENSE.txt, README.md, Gemfile, Gemfile.lock]
+        items:
+          type: string
   home:
     type: page
     label: Home
@@ -241,6 +242,7 @@ models:
         name: hidden
         label: Hidden
       - type: number
+        subtype: float
         name: rating
         label: Rating
       - type: string
