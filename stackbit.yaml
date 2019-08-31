@@ -1,9 +1,9 @@
 stackbitVersion: ~0.2.0
 ssgName: custom
-publishDir: ./_site
+publishDir: _site
 buildCommand: bundle install && bundle exec jekyll build
 uploadDir: images
-staticDir: ./assets
+staticDir: assets
 pagesDir: ./
 dataDir: ./
 models:
@@ -180,7 +180,7 @@ models:
   home:
     type: page
     label: Home
-    file: index.html
+    file: index.md
     fields:
       - type: string
         name: layout
