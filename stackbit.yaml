@@ -181,6 +181,7 @@ models:
     type: page
     label: Home
     file: index.md
+    singleInstance: true
     fields:
       - type: string
         name: layout
