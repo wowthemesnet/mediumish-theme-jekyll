@@ -1,5 +1,40 @@
 # Mediumish Jekyll Theme - Change Log
 
+## 2019-05-16, v1.0.36
+- docker-composer.yml
+- better responsiveness for 1920x1080 resolution
+
+## 2019-04-02, v1.0.35
+- Fixed Github pages issue with ratings under 1
+- Added support for local avatars
+
+## 2019-03-22, v1.0.34
+- Deferred font awesome and google fonts
+
+## 2019-03-22, v1.0.33
+- Added image lazy load (config.yml - lazyimages: "enabled/disabled")
+- Added object cover images instead of background images for home featured cards
+- Removed disqus count from homepage for better performance
+
+## 2019-03-20, v1.0.32
+- Centered avatar image on smaller devices
+- Removed .html endings in cats/tags
+- Added Linkedin share 
+- Added Table of Contents (toc:true)
+- Added Paragraph before TOC (beforetoc: "My short description here")
+
+
+## 2019-03-20, v1.0.31
+- Added adsense support (activate via _config.yml)
+- Fixed share for large headers
+
+## 2019-03-20, v1.0.30
+- Added Tags support
+- Removed Google + sharing, no longer needed
+
+## 2019-03-01, v1.0.29
+- Fixed Jumbotron categories link
+
 ## 2019-03-01, v1.0.28
 - Added blurred text on spoilers
 - Added half stars for ratings
