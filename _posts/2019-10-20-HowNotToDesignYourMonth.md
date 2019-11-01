@@ -91,7 +91,7 @@ So the solution was to start the day with this tracker and keep filling it up an
 
 Now I will share what are the flaws of this design.
 
-### **Wh Design Prototype failed**? 
+### **Why Design Prototype failed**? 
 
 Simple reason - Design is too complex and I ended up spending lot of time tracking.  I tried to discipline my mind but it never happened. Applying principles of Agile IE. filling remaining hours was not worth. In first five days I stopped filling monthly goal tracker remaining hours.
 
