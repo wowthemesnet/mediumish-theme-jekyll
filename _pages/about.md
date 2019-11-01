@@ -29,6 +29,9 @@ comments: true
 </ol>
 
 <p>I realized Instead of self doubting its better to face fears as is.  The person who benefits the most out of this writing is myself.  My writing may help others but its a way to organize my thoughts and self introspection.</p>
+
+If you have any feedback for this blog or you would like me to blog about any other topic, please leave comment here or email me on sumit4palz@gmail.com
+
 <p>Thanks.</p>
 
 
