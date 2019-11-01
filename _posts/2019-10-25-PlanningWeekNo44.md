@@ -3,7 +3,7 @@ layout: post
 title:  "Planning week no 44"
 date:   2019-10-25 17:15:00 +0530
 categories: [journey]
-image : assets/images/avatar.jpeg
+image : assets/images/week44planning.jpg
 ---
 
 So here is the plan for this week:

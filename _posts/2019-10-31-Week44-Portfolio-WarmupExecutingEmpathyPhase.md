@@ -1,8 +1,9 @@
 ---
-title:  "Portfolio - Warmup : Executing Empathy Phase"
+layout: post
+title:  "Its time for Case Study - Beginning of Empathy phase  Week 44"
 date:   2019-10-30 07:30:00 +0530
 categories: [journey]
-image: assets/images/avatar.jpeg
+image: assets/images/beginningempathy.jpg
 ---
 
 How is the week going?
@@ -11,7 +12,8 @@ Goals are clear and working towards them.
 
 I rewrote the goals for this week so that I have enough clarity.
 
-![Revised Week 44]({site.baseurl}/assets/images/week44redited.jpg)
+<img src="../assets/images/week44reedited.jpg" style="zoom:20%;" />
+
 
 At this point I have enough clarity about Redesign and Blogging goals but executing empathy phase doesn't look easy.  Here are the blockers:
 

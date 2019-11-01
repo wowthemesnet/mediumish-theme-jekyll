@@ -3,7 +3,7 @@ layout: post
 title:  "Time to Run?"
 date:   2019-10-17 11:14:40 +0530
 categories: [journey]
-image : assets/images/avatar.jpeg
+image : assets/images/timetorun.jpg
 
 ---
 
