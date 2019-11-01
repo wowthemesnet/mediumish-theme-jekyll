@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Mediumish Template for Jekyll
+title: About Me
 permalink: /about
 comments: true
 ---
@@ -8,28 +8,31 @@ comments: true
 <div class="row justify-content-between">
 <div class="col-md-8 pr-5">
 
-<p>This website is built with Jekyll and Mediumish template for Jekyll. It's for demonstration purposes, no real content can be found. Mediumish template for Jekyll is compatible with Github pages, in fact even this demo is created with Github Pages and hosted with Github.</p>
 
-<p class="mb-5"><img class="shadow-lg" src="{{site.baseurl}}/assets/images/mediumish-jekyll-template.png" alt="jekyll template mediumish" /></p>
-<h4>Documentation</h4>
+<img src="assets/images/avatar2.jpg" alt="avatar2" style="zoom:5%;" />
 
-<p>Please, read the docs <a href="https://bootstrapstarter.com/bootstrap-templates/template-mediumish-bootstrap-jekyll/">here</a>.</p>
 
-<h4>Questions or bug reports?</h4>
+<p>
+    <br/>
+    I am Sumit, currently learning UX design to become a freelance UX Designer.  While I am on the way to learn UX design I thought to document my whole journey starting from who I was, why UX design, my present and future to come by.</p>
+<p>Prior to this I was a Software Consultant developing full stack solutions. For me this blog page is my journey to second life.</p>
+<p>Its my personal journey, as a human being I had my own fears, apprehensions and excitement.  I am not here to share the bright or low side of journey but to share things as they are. An un-distorted version</p>
+<p>There were several thoughts that were against myself to not to write like:</p>
+<ol>
+  <li>What if I fail in becoming a UX Designer.</li>
+  <li>Is this more of a stunt to gain pride?</li>
+  <li>What will others think about me?</li>
+  <li>Why to share a personal side of myself?</li>
+  <li>I have not failed or achieve some level of success, whats the point?</li>
+  <li>Will my writing help anyone?</li>
+  <li>Why waste time unless you have reached the goal.</li>
+</ol>
 
-<p>Head over to our <a href="https://github.com/wowthemesnet/mediumish-theme-jekyll">Github repository</a>!</p>
+<p>I realized Instead of self doubting its better to face fears as is.  The person who benefits the most out of this writing is myself.  My writing may help others but its a way to organize my thoughts and self introspection.</p>
+<p>Thanks.</p>
 
-</div>
 
-<div class="col-md-4">
 
-<div class="sticky-top sticky-top-80">
-<h5>Buy me a coffee</h5>
 
-<p>Thank you for your support! Your donation helps me to maintain and improve <a target="_blank" href="https://github.com/wowthemesnet/mediumish-theme-jekyll">Mediumish <i class="fab fa-github"></i></a>.</p>
 
-<a target="_blank" href="https://www.wowthemes.net/donate/" class="btn btn-danger">Buy me a coffee</a> <a target="_blank" href="https://bootstrapstarter.com/bootstrap-templates/template-mediumish-bootstrap-jekyll/" class="btn btn-warning">Documentation</a>
 
-</div>
-</div>
-</div>
