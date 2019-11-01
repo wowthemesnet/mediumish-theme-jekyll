@@ -61,11 +61,11 @@ That comes to : 960/30 = ***32*** pomodoros per day.  As per pomodoro technique 
 
 So how should I plan a spread of 30 pomos? 
 
-I listed down all my daily, weekly activities on a sheet of paper and wrote down how many pomodoros will take to accomplish it.  This is where I listed down every detail of my life. Things like: Waking up, Morning stretches (which I am not regular at), Shower, Breakfast prep, PowerNap in afternoon, Daily Chores, Body grooming, MealPlanning, Buying grocery, Checking emails, Reddit, Gym/Sports etc.
+I listed down all my daily, weekly activities on a sheet of paper and wrote down how many pomodoros will take to accomplish it.  This is where I listed down every detail of my life. Things like: Waking up, Morning stretches (which I am not regular at), Shower, Breakfast prep, Power Nap in afternoon, Daily Chores, Body grooming, Meal Planning, Buying grocery, Checking emails, Reddit, Gym/Sports etc.
 
 **Whats the number?** - If I divide weekly activities by 7 and add time for daily pomodoros it comes down to 20 pomodoros. **Which leaves me with 10 pomodoros per day.**  
 
-This number gave me jitters, because thats all the time I have for myself. In which I have to learn, be productive also.  
+This number gave me jitters, because that's all the time I have for myself. In which I have to learn, be productive also.  
 
 If 10 is all I have than how should I plan to accomplish my goals.
 
@@ -95,7 +95,7 @@ Now I will share what are the flaws of this design.
 
 ### **Wh Design Prototype failed**? 
 
-Simple reason - Design is too complex and I ended up spending lot of time tracking.  I tried to discipline my mind but it never happened. Applying principles of Agile i.e. filling remaining hours was not worth. In first five days I stopped filling monthly goal tracker remaining hours.
+Simple reason - Design is too complex and I ended up spending lot of time tracking.  I tried to discipline my mind but it never happened. Applying principles of Agile IE. filling remaining hours was not worth. In first five days I stopped filling monthly goal tracker remaining hours.
 
 ### **Is this a complete failure ?**
 
