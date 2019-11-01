@@ -1,10 +1,10 @@
 ---
-One voice says things are going great, keep doing what you are doinglayout: post
+layout: post
 title:  "Time to Run?"
 date:   2019-10-17 11:14:40 +0530
 categories: dailylog
 tags : dailylog
-image : assets/images/default.jpg
+image : assets/images/avatar.jpeg
 ---
 
 If you have followed my previous post for weekly log than you would have realised that I am feeling the urgency to go out and find work.  One of the blockers was not knowing what is definition of ready.  I was trying to search for a mentor but haven't been successful yet.  No one has replied to my paid mentor gig on Upwork.  
