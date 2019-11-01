@@ -6,7 +6,7 @@ categories: [journey]
 tags : [journey]
 ---
 
-![BeginnerQuestions]({{site.baseurl}}/assets/images/beginnerquestions.jpg)
+![BeginnerQuestions]({{site.baseurl}}/assets/img/beginnerquestions.jpg)
 
 Since this is going to be my first portfolio, as a beginner I had following questions. Most of the answers are from training available on interaction-design.org and some of them are from questions asked on UXDesign Community on reddit. I can not guarantee correctness of these answers but this is something I came into agreement with. Does your answer differ?*
 

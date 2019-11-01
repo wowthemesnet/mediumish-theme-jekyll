@@ -6,7 +6,7 @@ categories: [journey]
 tags : [journey]
 ---
 
-![TimeLine Page One]({{site.baseurl}}/assets/images/planofplans.jpg)
+![TimeLine Page One]({{site.baseurl}}/assets/img/planofplans.jpg)
 
 I got sick in week # 43, so I thought to completely revise the learning plan that I am pursuing.
 
@@ -18,11 +18,11 @@ I did a self Introspection exercise on reviewing everything that I have been doi
 
  
 
-![TimeLine Page One]({{site.baseurl}}/assets/images/timelinepageone.png)
+![TimeLine Page One]({{site.baseurl}}/assets/img/timelinepageone.png)
 
 In order to answer my own burning question I did a planning exercise yesterday, and as a result of it here is the learning plan I have created.
 
-![TimeLine Page Two]({{site.baseurl}}/assets/images/timelinepagetwo.png)
+![TimeLine Page Two]({{site.baseurl}}/assets/img/timelinepagetwo.png)
 
 One of the areas that needs lot of time learning is Interaction design.  I was advised to take it but It's not making much sense now. So I thought to check with experts.  
 

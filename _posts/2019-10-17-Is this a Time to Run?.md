@@ -26,7 +26,7 @@ The advice I got from him was to build Portfolio and work on real projects.  Som
 
 I felt it was a great discussion, because he understood where I am coming from and advice based on that.  I believe its time to revise the plan. Here is what I could think of plan going to be.
 
-![Revised Plan]({{site.baseurl}}/assets/images/plan-17Oct19.jpg)
+![Revised Plan]({{site.baseurl}}/assets/img/plan-17Oct19.jpg)
 
 This looks great to me, but the question is why I am doing this in middle of the month.  I already created a monthly plan and due to some reasons I want to abandon my monthly plan and pursue this.  Well this is not the direction I want to head.  So when I created this post I titled it as time to run?  Clearly not, this is not the time to run.  I just noticed that my mind played a trick creating another picture, which was definitely linked with my fears. 
 

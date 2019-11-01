@@ -6,7 +6,7 @@ categories: [productivity]
 tags : [productivity]
 ---
 
-![SeinfeldQuote: Why must there always be a problem?]({{site.baseurl}}/assets/images/seinfeld_why_problem.png)
+![SeinfeldQuote: Why must there always be a problem?]({{site.baseurl}}/assets/img/seinfeld_why_problem.png)
 
 
 
@@ -84,7 +84,7 @@ allowfullscreen></iframe>
 
 My advice would be to only invest if you have achieved goals and if you thinks its going to work for you. Most of these timers are available on Amazon. 
 
-![Revised Plan]({{site.baseurl}}/assets/images/timers.jpg)
+![Revised Plan]({{site.baseurl}}/assets/img/timers.jpg)
 
 The latest version of MiBand has timer too. As per my [research](https://www.reddit.com/r/pomodoro/comments/d328ig/need_recommendation_for_wrist_watch_with_timer/) Apple Watch has a timer app too.  I use Ubuntu and [pomodoro app](https://gnomepomodoro.org/) is awesome. It automatically regulate breaks for you. Kudos to people behind the Pomodoro app on Ubuntu.
 
