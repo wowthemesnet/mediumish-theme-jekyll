@@ -4,6 +4,7 @@ title:  "How NOT to design your month"
 date:   2019-10-20 11:14:40 +0530
 categories: [productivity]
 tags : [designthinking]
+image: assets/images/monthlygoals.jpg
 ---
 
 ![MonthlyGoals]({{site.baseurl}}/assets/img/monthlygoals.jpg)

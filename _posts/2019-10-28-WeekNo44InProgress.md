@@ -4,6 +4,7 @@ title:  "Uncomplicate - Week no 44 in progress"
 date:   2019-10-28 07:30:00 +0530
 categories: [journey]
 tags : [journey]
+image : assets/images/avatar.jpeg
 ---
 
 There is a jungle out there and I am trying to find the shortest path to get out of it.   Fun is not in the end result, the fun is in discovering how to get out of it. 

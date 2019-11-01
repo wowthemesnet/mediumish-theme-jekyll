@@ -4,6 +4,7 @@ title:  "Planning week no 44"
 date:   2019-10-25 17:15:00 +0530
 categories: [journey]
 tags : []
+image : aassets/images/avatar.jpeg
 ---
 
 So here is the plan for this week:

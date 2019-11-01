@@ -4,6 +4,7 @@ title:  "It starts from Body - End of Week # 42 and 43"
 date:   2019-10-22 19:00:00 +0530
 categories: [logs,weeklylogs]
 tags : [weeklylog]
+image : assets/images/startfrombody.jpg
 ---
 
 ![StartFromBody]({{site.baseurl}}/assets/img/startfrombody.jpg)
