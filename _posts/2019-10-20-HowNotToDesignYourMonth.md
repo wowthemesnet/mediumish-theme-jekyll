@@ -2,7 +2,7 @@
 layout: post
 title:  "How NOT to design your month"
 date:   2019-10-20 11:14:40 +0530
-categories: [productivity]
+categories: [productivity, journey]
 image: assets/images/monthlygoals.jpg
 featured: true
 ---

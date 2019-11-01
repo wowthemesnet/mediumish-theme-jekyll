@@ -2,9 +2,8 @@
 layout: post
 title:  "It starts from Body - End of Week # 42 and 43"
 date:   2019-10-22 19:00:00 +0530
-categories: [logs,weeklylogs]
+categories: [journey]
 image : assets/images/startfrombody.jpg
-featured: true
 
 ---
 
