@@ -6,8 +6,6 @@ categories: [journey]
 image : assets/images/beginnerquestions.jpg
 ---
 
-![BeginnerQuestions]({{site.baseurl}}/assets/img/beginnerquestions.jpg)
-
 Since this is going to be my first portfolio, as a beginner I had following questions. Most of the answers are from training available on interaction-design.org and some of them are from questions asked on UXDesign Community on reddit. I can not guarantee correctness of these answers but this is something I came into agreement with. Does your answer differ?*
 
 ## <u>FAQ</u>
@@ -67,7 +65,7 @@ Read more about: UX Generalist or Specialist [here](https://www.uxmatters.com/mt
 
 No.
 
-#### 10. While pursuing education in UX, I am doing case studies as part of it. How can I make it part of portfolio?s
+#### 10. While pursuing education in UX, I am doing case studies as part of it. How can I make it part of portfolio?
 
-TODO : Still looking for an answer for this.
+Still looking for an answer for this.
 

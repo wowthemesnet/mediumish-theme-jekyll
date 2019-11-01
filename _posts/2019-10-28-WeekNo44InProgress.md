@@ -36,7 +36,7 @@ For me this is a call to action, step out of house.  Interview people and focus 
 
 Lastly here is short update on #2 i.e. Redesign blog.  I found a theme to redesign this blog, its call [mediumish](https://github.com/wowthemesnet/mediumish-theme-jekyll).  I did a test run of it this weekend and it looks great.  Its bundled with lot of features (GoogleAnalytics, Disqus comments, Hero Images and lot more) I wanted.   At this time it's not highest in priority so I spent one pomodoro in prioritising whats the most important using [Moscow](https://en.wikipedia.org/wiki/MoSCoW_method) method.
 
-![GoalsBlogRedesign]({{site.baseurl}}/assets/img/mysecondlifemoscow.jpg)
+![GoalsBlogRedesign]({{site.baseurl}}/assets/images/mysecondlifemoscow.jpg)
 
 Am really excited about how blog is coming up, its surely a way to reflect on myself.
 

@@ -7,7 +7,6 @@ image : assets/images/startfrombody.jpg
 
 ---
 
-![StartFromBody]({{site.baseurl}}/assets/img/startfrombody.jpg)
 
 So I didn't write down weekly post for 42. As I mentioned in weekly post for week # 41  I ended up completing chapter of design thinking i.e. Empathy phase from interaction-design.org.
 
@@ -19,7 +18,7 @@ One of the areas that I have never talked about in my blog is focussing on Body.
 
 Definetely this is the time to beat the devil. I have become a fan of putting up measurable goals and working towards it.  For this month I have achieved 50% of my goal and I feel thats the max I can achieve. I started reading this book.
 
-![FourHourBody Book-TimFerris]({{site.baseurl}}/assets/img/fourhourbody.png)
+![FourHourBody Book-TimFerris]({{site.baseurl}}/assets/images/fourhourbody.png)
 
 There were mistakes I made this month however I kept following the plan.  Some of doubts around carbohydrates and cholesterol management got cleared. 
 

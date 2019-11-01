@@ -7,8 +7,6 @@ image: assets/images/monthlygoals.jpg
 featured: true
 ---
 
-![MonthlyGoals]({{site.baseurl}}/assets/img/monthlygoals.jpg)
-
 One of my favourite areas that I have spent lot of time learning is personal productivity. I have lived my life trying different techniques using different kind of apps but none of the methods I tried gave me fulfilment.  If you look at dictionary meaning of productivity : "how effective you are in achieving goals".  I believe that's a fair definition however I need to expand it to meet my personal purpose.  Personal productivity should give a feeling of relaxation not something that always running on your head.  My personal belief is this can not happen unless you invent a system on your own. If anyone wants to prove me wrong, than I am up for conversation. 
 
 All my frustrations of visualising my ideal life and not living living it has led me to create a solve this. Since I am a learning [Design Thinking](https://www.interaction-design.org/literature/topics/design-thinking) I am inclined to apply some of the principles learnt..
@@ -53,7 +51,7 @@ If you are interested in why I took these design decisions than read the para be
 
 Couple of months I adopted Pomodoro technique.  I became a big fan of it. It was recommended to me by close friend around six years back.  Those days I didn't listen and ignored it.  On my journey to Freelance UX designer, I also wanted to solved the problem of focus/deep work.  Stop multitasking and do only one thing.  I loved this technique so much that I ended up buying timers.  The photo below is collection of timer I have. Even at this moment I am using a timer to write this post.
 
-![Timers]({{site.baseurl}}/assets/img/timers.jpg)
+![Timers]({{site.baseurl}}/assets/images/timers.jpg)
 
 With the help of pomodoro timers I was able to pomodorize my life.  I used to log how much time it takes to a particular activity.  The goal is to find out how many pomodoros I can allocate to accomplish my goals.  For e.g if I sleep for 7 hours than I am awake for 17 hours.   Which is 1020 minutes.  In these 1020 minutes I wanted to subtract one hour before sleep. Because I don't want to track that. It leaves me with 960 minutes per day. 
 

@@ -68,5 +68,5 @@ There is more to it:
 
 I feel it can be too much for a person to take this much information. The purpose I have is "I need help" and this is what you can do for me.  Does that sound humble?
 
-Sunday seems to be the best day to call people and go forward.  Until then I can prepare my probe kit. 
+Sunday seems to be the best day to call people and go forward.  Until then I can prepare my probe kit.
 

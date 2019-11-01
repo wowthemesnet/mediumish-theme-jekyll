@@ -7,8 +7,6 @@ image : assets/images/seinfeld_why_problem.png
 featured : true
 ---
 
-![SeinfeldQuote: Why must there always be a problem?]({{site.baseurl}}/assets/img/seinfeld_why_problem.png)
-
 
 
 Here are my conditions to read this blog post:

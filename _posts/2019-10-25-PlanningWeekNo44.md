@@ -62,4 +62,4 @@ In priority order UX Portfolio is highest priority. Lets reserve two days for it
 
 Ok I am set with plan and order to tackle as well. Let's keep going.
 
-![Week44]({{site.baseurl}}/assets/img/week44.jpg)
+![Week44]({{site.baseurl}}/assets/images/week44.jpg)
