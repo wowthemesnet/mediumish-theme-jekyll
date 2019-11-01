@@ -3,7 +3,6 @@ layout: post
 title:  "Creating contracts for your Mind : Timers (Pomodoro Technique)"
 date:   2019-10-22 14:00:40 +0530
 categories: [productivity]
-tags : [productivity]
 image : assets/images/seinfeld_why_problem.png
 ---
 

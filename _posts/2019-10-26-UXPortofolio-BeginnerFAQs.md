@@ -3,7 +3,6 @@ layout: post
 title:  "FAQ - UX Portfolio for Beginners"
 date:   2019-10-26 10:2:00 +0530
 categories: [journey]
-tags : [journey]
 image : assets/images/beginnerquestions.jpg
 ---
 

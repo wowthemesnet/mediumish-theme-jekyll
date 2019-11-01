@@ -3,7 +3,6 @@ layout: post
 title:  "Plan of Plans - Getting ready to go out of Building"
 date:   2019-10-25 17:00:00 +0530
 categories: [journey]
-tags : [journey]
 image : assets/images/planofplans.jpg
 ---
 

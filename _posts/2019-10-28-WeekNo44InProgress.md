@@ -3,7 +3,6 @@ layout: post
 title:  "Uncomplicate - Week no 44 in progress"
 date:   2019-10-28 07:30:00 +0530
 categories: [journey]
-tags : [journey]
 image : assets/images/avatar.jpeg
 ---
 

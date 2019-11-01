@@ -2,7 +2,6 @@
 title:  "Portfolio - Warmup : Executing Empathy Phase"
 date:   2019-10-30 07:30:00 +0530
 categories: [journey]
-tags : [journey]
 image: assets/images/avatar.jpeg
 ---
 

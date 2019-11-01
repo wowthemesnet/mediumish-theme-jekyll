@@ -3,8 +3,8 @@ layout: post
 title:  "How NOT to design your month"
 date:   2019-10-20 11:14:40 +0530
 categories: [productivity]
-tags : [designthinking]
 image: assets/images/monthlygoals.jpg
+featured: true
 ---
 
 ![MonthlyGoals]({{site.baseurl}}/assets/img/monthlygoals.jpg)
@@ -117,12 +117,6 @@ All these things made me realise that my time is limited, whatever I can not ach
 
 So whats the solution of this? Granularity in decomposing Goals is definitely needed.  Because that sets the direction however tracking granularity everyday can be a daunting task.  There might be ways to make this easier for e.g. a mobile app asks you everyday how many pomodoros are remaining for this task.  Since at this time I want to stay away from mobile apps and its my personal choice to use pen paper based approach I am afraid to go in that direction.  That's like a design constraint.  I feel the solution of this problem is not by adding new things to design instead taking things out from design.  I want to give another round of Ideation to make this better. Stay tuned for another post as I do my monthly planning for November at end of this month.
 
-While finishing up, my mind came up with following questions : 
 
-1. Is planning our life a [wicked problem?](https://en.wikipedia.org/wiki/Wicked_problem)
-
-2. When did this became a problem?  
-
-3. Are all our problems in life rooted to this, because our life is not in order?
 
    
