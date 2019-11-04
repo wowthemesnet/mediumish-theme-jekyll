@@ -1,152 +1,57 @@
 ---
 layout: post
-title:  "Why UX Design"
+title:  "How to be customer focused company from day one"
 date:   2019-11-02 06:07:00 +0530
 categories: [journey, UX]
 tags : [journey]
-image : assets/images/*.jpg
+image : assets/images/business.jpg
 ---
 
-#  
+
+
+If I have to explain UX Design to a business owner and how it can help to achieve business goal than this is the picture that can sum up any business.
+
+ ![image-20191104184501902](../assets/images/business.jpg)
 
 
 
-# Start with Whyhere's just one mistake that kills startups: not making something users want. If you make something users want, you'll probably be fine, whatever else you do or don't do. And if you don't make something users want, then you're dead, whatever else you do or don't do.
+The sport is sweet spot which every business is trying to achieve.  Lets break this down:
 
-I woke up researching on what could be the best ways to explain UX design to a beginner.  Its mostly my preparation about how can I drive conversation when I meet business owners or how I can educate anyone about UX Design.  
+1. Desirability - Wished for being useful.
 
-When I tried to put this in a blog, I thought of drawing mind maps, process diagrams, whiteboard diagrams but none of this content  couldn't find my need.  Blogging doesn't mean I have to fit every content in textual format, I feel doing a video will do justice to this.
+2. Viability - Ability to work successfully
 
-Also when I researched on youtube there were lot of videos about UX design but none of them was short and concise enough and target a business.  This really drives me to create a video.  I have not done videos before so it could be a good opportunity to break the comfort zone. 
+3. Feasibility - The state of being easily or conveniently done
 
-Instead of one video I can split it up to multiple, so that viewers can have a choice. Here is what I can think of three videos 
+   **Desirability** is the human aspect of business, are we creating a product solution that anyone needs or meets an unfulfilled need? **Viability** is the business model behind the product which helps to sustain and **Feasibility** is tech behind it.dont
 
-#1. Why UX Design - (Can I rename to get attention from business owners?)
+   To put it simple words one may have a desire to travel to Europe for vacation.  In order to fulfil this desire we need Money and Carrier (aeroplane/ship).  Money answers the feasibility aspect, only if we have money than we can plan the trip.  The trip will be viable only if air tickets are available to travel to Europe. 
 
-#2. What is UX Design Process
+   ![image-20191104190026115](../assets/images/tripplanning.png)
 
-#3. UX Deliverables
 
-Let's start with Why and what of UX Design.
 
-## Why and What of UX Design - A short guide for Business Owners
-
-If I have to start explaining someone what is UX Design I will start from failures.  Why do most of startups fail?
-
-The goal of every company is to be profitable as soon as possible.  Profit comes from value.  Creating value requires problem solving skills. Is the problem you are trying to solve that something user wants?  
-
-Its obvious that we can not ask customer what there problem is, as a company you should be smart enough to figure that out.  As a company its our job to create solution and surprise the users with our solution that they feel surprised that someone was able to solve a problem. 
-
-According to Paul Graham, founder of YCombinator an accelerator which has funded one of the most successful startups in silicon valley : Like Airbnb, Stripe , DropBox. 
+Why do the most of startups fail?  I am certainly not an expert in this area but if we listen to experts like Paul Graham, founder of YCombinator which is an incubator and resulted in startups like : Airbnb, Stripe, Dropbox and lot more. 
 
 > "There's just one mistake that kills startups: not making something users want. If you make something users want, you'll probably be fine, whatever else you do or don't do. And if you don't make something users want, then you're dead, whatever else you do or don't do."
 
+This leads to the question how can startups make something that user desires.  If we have to answer this question than I would think more about the problem than the solution.  
+
+**What are obstructions that is preventing to create a solution that customer wants.**  
+
+Its a known devil and a friend : Technology.  Technology is both a friend and foe.  I will focus why its a foe because out society has been conditioned to invest in engineering.  In engineering what gets taught is technology i.e. Microprocessors, RAM.  With such a technology oriented mindset when engineers join businesses they start from technology and go all the way up to creating product or solution.  
+
+A tech company is  conditioned to think from perspective of what technology can offer not what user wants.  Steve Jobs has clearly reasoned success behind Apple:
+
+> **'You've got to start with the customer experience and work backwards to the technology. You can't start with the technology and try to figure out where can I sell it.' Steve Jobs**
+
+There are lot more obstructions but this is the root cause of the problem.  Personally I have worked in tech and I strongly advocate to not to start a company by hiring engineers.  Start with people who care about needs, people who are deeply interested in knowing about customers.  
+
+If we have to start from customer experience than how can we do that?  For a person who is starting a business he will not be impressed by this idea because it creates a chicken :chicken: and egg :egg: problem.  We want to build a product but we  haven't shipped anything. Where to start from? What will I show to my customer?
+
+I will cover this in my next post.
 
 
-A successful business is sweet spot of Desirability, Viability and Feasibility.  Desirability is building something that customer wants.  Product should not only satisfy needs of user but be easy to implement and have a commercial model as well. 
-
-TODO : Add picture
-
-How can one avoid failures in product design? How can we ensure that our product is market fit before it reaches in hands of our customers?  
-
-## How UX Design can save your money?
-
-How can UX Design address the question that you are building a business that is successful?  How can you build a 
-
-https://www.interaction-design.org/literature/article/from-prototype-to-product-ensuring-your-solution-is-feasible-and-viable
-
-
-
-**Character** :  Founders, Startups creating new product and the world out there.
-
-**Plot** :   Founders working hard to build a product.
-
-**Dialogue** : Most of the startups are failing, even those who had initial success are failing as rivals.
-
-Theme : 
-
-**Melody :**  There is a an entrepreneur who has an idea which can make life of people better and he is working hard to make it happen
-
-**Spectacle :** 
-
-
-
-
-
-
-
-How can I explain UX Design to business owner that I am going to meet.  The business owner could be a founder of a startup or employee of a company who is leading product development.  The goal is to be prepared and handle the situation so well that it can result in sales opportunity or making the person so impressed that he wants to speak with me.  
-
-Lets assume I meet Mr Anand.  Anand is in his 20's and currently building  a startup to solve a problem that exists in real world.  Lets assume Anand doesnt know about UX Design and has some vague idea about it.  What should be my approach to explain UX Design to Anand.
-
-1. Start from failures - Why do startup fails, how many of them have failed, Can UX Design Promise Success? Is failure inevitable?
-2. Why I am doing UX Design
-3. Do products fail even after pursuing UX design?
-4. People dont buy product they buy experiences. How can we create a meaningful experience that customers will love it and they would be ready to spend money on it. 
-5. Suppose you create a product and 
-6. How do you know that product you are creating is ahead of competitors
-7. Introduce UX as Disruptor
-8. Use Storytelling
-9. Challenges of our industry - Driven by technologists, going other way around. 
-10. **Business Success - Feasability (Tech), Desirability (Need) and Viability (Business Model)** 
-11. Start with the end - What are the blockers.  
-12. Explain about Characters - They are busy, its an attention game?  No one will remember you.  Attention economy, app stores , software they are already 
-13. You have only few seconds where someone sees your landing page
-14. Users are trying to accomplish task
-15. How can we make it easy for them - By studying there habits
-16. Are your competitors ahead in game?  How can you do better than your competitors? Not by spending money on marketing campaigns. 
-17. Can we look at competitor products, learn from them and use there knowledge.  There design which is available is due to millions of dollars they have spent on it.  **Cost cutting** 
-18. Every opportunity needs competitive tainable. Let us now look at the best ways you can make sure that your design solution is feasible and viable, on top of being desirable to your useranalysis.
-19. Most of the startups focus on building the products not customers
-20. **How to make something customer actually wants**
-21. Paul Graham : Perhaps there's a rule here: perhaps you create wealth in proportion to how well you understand the problem you're solving, and the problems you understand best are your own
-22. In a sense there's just one mistake that kills startups: not making something users want. If you make something users want, you'll probably be fine, whatever else you do or don't do. And if you don't make something users want, then you're dead, whatever else you do or don't do. So really this is a list of 18 things that cause - http://paulgraham.com/startupmistakes.html
-
-Profitsbility, ROI
-
-Case Studies
-
-### END WITH QUESTIONS
-
-Do you still want to take risk and build a product based on your assumption?
-
-If not than watch part two
-
-## WHATS WRONG WITH OUR INDUSTRY
-
-Technology people drive solutions and it has to be other way around.  As Steve Jobs said, start with UX and work backward on technology
-
-
-
-# LONG MEETING
-
-How does UX Design works
-
-1. Explain the process of UX Design
-2. UX Deliverables
-3. 
-
-# UX REVIEW FOR EXISTING PRODUCT
-
-
-
-# WHAT IS UX DESIGN PROCESS
-
-Design Thinking - Obvious things are hard - Give the example of truck stuck in 
-
-POWER OF EMPATHY - See the world through eyes of your customer, understand there feelings
-
-
-
-
-
-# WHAT ARE UX DELIVERABLE
-
-
-
-# WHY I AM DOING UX DESIGN 
-
-I have a deep interest in knowing about users, study about them and research about them. It all started from myself where 
 
 
 
