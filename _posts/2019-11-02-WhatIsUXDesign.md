@@ -9,13 +9,9 @@ image : assets/images/business.jpg
 
 
 
-If I have to explain UX Design to a business owner and how it can help to achieve business goal than this is the picture that can sum up any business.
-
- ![image-20191104184501902](../assets/images/business.jpg)
 
 
-
-This is a sweet spot which every business is trying to achieve.  Lets break this down:
+Picture above some up a business and sweet spot of success.  Lets break this down:
 
 1. Desirability - Wished for being useful.
 
@@ -45,14 +41,9 @@ A tech company is  conditioned to think from perspective of what technology can 
 
 > **'You've got to start with the customer experience and work backwards to the technology. You can't start with the technology and try to figure out where can I sell it.' Steve Jobs**
 
-There are lot more obstructions but this is the root cause of the problem.  Personally I have worked in tech and I strongly advocate to not to start a company by hiring engineers.  Start with people who care about needs, people who are deeply interested in knowing about customers.  
+There are lot more obstructions but this is the root cause of the problem.   I have worked in tech for more than a decade
+ and I strongly advocate to not to start a company by hiring engineers.  Start with people who care about needs, people who are deeply interested in knowing about customers.  
 
 If we have to start from customer experience than how can we do that?  For a person who is starting a business he will not be impressed by this idea because it creates a chicken :chicken: and egg :egg: problem.  We want to build a product but we  haven't shipped anything. Where to start from? What will I show to my customer?
 
 I will cover this in my next post.
-
-
-
-
-
-# 
