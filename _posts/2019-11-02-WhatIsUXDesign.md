@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "How to be customer focused company from day one"
+title:  "UX Design for business"
 date:   2019-11-02 06:07:00 +0530
 categories: [journey, UX]
 tags : [journey]
@@ -15,7 +15,7 @@ If I have to explain UX Design to a business owner and how it can help to achiev
 
 
 
-The sport is sweet spot which every business is trying to achieve.  Lets break this down:
+This is a sweet spot which every business is trying to achieve.  Lets break this down:
 
 1. Desirability - Wished for being useful.
 
