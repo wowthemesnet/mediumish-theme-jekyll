@@ -7,21 +7,21 @@ tags : [journey]
 image : assets/images/*.jpg
 ---
 
-This week is a beginning of case study, where I will interview people and also give them a probing kit.  Lets start with the basics.
+This week is the beginning of the case study, where I will interview people and also give them a probing kit.  Let's start with the basics.
 
 What is Empathy?
 
-In order to do justice in explaining this I created a audio only story to share my understanding. 
+To do justice in explaining this I created an audio-only story to share my understanding. 
 
 [empathyvssympathy.m4a](../assets/audio/empathyvssympathy.m4a) 
 
-Last week I listed down people I will be interviewing and I called them up yesterday and fixed time with them.
+Last week I listed down people I will be interviewing and I called them up yesterday and fixed a time with them.
 
-The Primary goal for this week is interview 5 people and document the interview as well. In case you have missed my previous post this activity is done as a part of case study.  Case study is part of IDF design thinking curriculum.  
+The primary goal for this week is to interview 5 people and document the interview as well. In case you have missed my previous post this activity is done as a part of the case study.  The case study is part of the IDF design thinking curriculum.  
 
-**Case Study Topic :**  **Create a smartphone app which will help people improve their fitness.**
+**Case Study Topic:**  **Create a smartphone app which will help people improve their fitness.**
 
-**Target Group :** Your target group is people who *want* to exercise more, but who—for various reasons—don’t get around to it.
+**Target Group:** Your target group is people who *want* to exercise more, but who—for various reasons—don’t get around to it.
 
 Here is the guidance I received from IDF to conduct the interview:
 
@@ -29,7 +29,7 @@ Here is the guidance I received from IDF to conduct the interview:
 2. **What** concretely happens when they **do** manage to exercise;
 3. **What** concretely happens when something **prevents** them from exercising.
 
-**User Interview's purpose :**
+**User Interview's purpose:**
 
 1. To find out about participants habit and motivation.
 
@@ -39,7 +39,7 @@ Here is the guidance I received from IDF to conduct the interview:
 2. Whats happens when they don't exercise.
 3. Why they want to exercise more
 
-I also came up with following questions:
+I also came up with the following questions:
 
 1. Ask candidates about there family members, who are they what they do
 2. What kind of work you do.
@@ -51,6 +51,6 @@ I also came up with following questions:
 PROBES
 ------
 
-Timeline of typical day
+Timeline of a typical day
 
 Take pictures of something that helps in exercise.
