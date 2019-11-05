@@ -9,53 +9,44 @@ image : assets/images/*.jpg
 
 This week is a beginning of case study, where I will interview people and also give them a probing kit.  Lets start with the basics.
 
-What is Empathy.  Its 
+What is Empathy?
 
+In order to do justice in explaining this I created a audio only story to share my understanding. 
 
+[empathyvssympathy.m4a](../assets/audio/empathyvssympathy.m4a) 
 
-
-
-
-
-  Last week I listed down people I will be interviewing and I called them up yesterday and fixed time with them.
+Last week I listed down people I will be interviewing and I called them up yesterday and fixed time with them.
 
 The Primary goal for this week is interview 5 people and document the interview as well. In case you have missed my previous post this activity is done as a part of case study.  Case study is part of IDF design thinking curriculum.  
 
-Currently I have three of my contacts who have agreed for the interview and understand what I am trying to accomplish.  
+**Case Study Topic :**  **Create a smartphone app which will help people improve their fitness.**
 
-I have one interview scheduled for today, let's do some interview preparation:
+**Target Group :** Your target group is people who *want* to exercise more, but who—for various reasons—don’t get around to it.
 
-Case Study Topic :  **Create a smartphone app which will help people improve their fitness.**
-
-Target Group : Your target group is people who *want* to exercise more, but who—for various reasons—don’t get around to it.
-
-Find out:
+Here is the guidance I received from IDF to conduct the interview:
 
 1. **Why** your participants **want to** exercise;
 2. **What** concretely happens when they **do** manage to exercise;
 3. **What** concretely happens when something **prevents** them from exercising.
 
-User Interview's purpose :
+**User Interview's purpose :**
 
 1. To find out about participants habit and motivation.
 
-Suggested Questions:
+**Suggested Questions**
 
 1. How and where they exercise.
 2. Whats happens when they don't exercise.
 3. Why they want to exercise more
 
-Make an audio recording. 
+I also came up with following questions:
 
-Good Interview Questions
-
-1. Family around
-2. Do they have any diesease?
-3. What is your favorite activity for exercising
+1. Ask candidates about there family members, who are they what they do
+2. What kind of work you do.
+3. Do you suffer from any Illness?
 4. Do you follow any diet?
-5. How do you feel after exercise?
-6. Do you exercise alone or in group?
-7. Do you use any fitness app or tracekr
+5. What is there favourite activity for exercising
+6. Do they use any fitness app or activity tracker?
 
 PROBES
 ------
