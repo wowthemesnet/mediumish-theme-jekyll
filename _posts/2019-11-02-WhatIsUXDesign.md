@@ -23,7 +23,7 @@ Picture above some up a business and sweet spot of success.  Lets break this dow
 
    To put it simple words one may have a desire to travel to Europe for vacation.  In order to fulfil this desire we need Money and Carrier (aeroplane/ship).  Money answers the feasibility aspect, only if we have money than we can plan the trip.  The trip will be viable only if air tickets are available to travel to Europe. 
 
-   ![image-20191104190026115](../assets/images/tripplanning.png)
+   ![TripPlanning](../assets/images/tripplanning.png)
 
 
 

@@ -9,6 +9,8 @@ image : assets/images/redesignblog.jpg
 
 > **Everything's** a **copy** of a **copy** of a **copy**.- Fight Club
 
+*Caution :  I am advocating copying not plagiarising content. Here the context is theme which is provided for free with MIT license.* 
+
 Lets start with where I stand in terms of this blog.  Currently this blog runs on default theme of Jekyll which is minimalist. Being a visual person I want to change the user experience of this blog.  If I am the consumer of my own design than I should see all my posts in an order.  This order will help me in visualising my journey.
 
 If you are starting fresh in blogging and have selected Jekyll than my recommendation is to use an existing theme, I didn't spend time thinking about it.  That's the reason why I need to spend time migrating my posts.
