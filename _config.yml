@@ -1,10 +1,10 @@
 # Site
-name: "Mediumish"
-title: "Mediumish"
-description: "Jekyll template, Medium styled, free for bloggers."
-logo: 'assets/images/logo.png'
-favicon: 'assets/images/logo.png'
-baseurl: /mediumish-theme-jekyll
+name: "APEXPATH"
+title: "APEXPATH"
+description: "Trying to start my own blog"
+logo: 'assets/images/logo.jpg'
+favicon: 'assets/images/logo.jpg'
+baseurl: /blog
 google_analytics: 'UA-46278016-1'
 disqus: 'demowebsite'
 mailchimp-list: 'https://wowthemes.us11.list-manage.com/subscribe/post?u=8aeb20a530e124561927d3bd8&amp;id=8c3d2d214b'
@@ -30,6 +30,15 @@ authors:
     web: https://www.wowthemes.net
     twitter: https://twitter.com/wowthemesnet
     description: "This is the author box. Write a short description of the author here. You are currently previewing Mediumish demo, a Jekyll template compatible with Github pages."
+    munna:
+      name: Munna Bhakta
+      display_name: Munna Bhakta    
+      avatar: 'assets/images/avatar.png'
+      gravatar: 36324185a1649b4ac39cd3554bedbf40
+      email: wowthemesnet@gmail.com
+      web: http://munnabhakta.com
+      twitter: https://twitter.com/munnabhakta
+      description: "Full Stack Developer"
 
 # Plugins
 plugins:
