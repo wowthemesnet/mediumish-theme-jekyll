@@ -1,13 +1,14 @@
 # Site
 name: "APEXPATH"
-title: "APEXPATH"
-description: "Trying to start my own blog"
-logo: 'assets/images/logo.jpg'
-favicon: 'assets/images/logo.jpg'
-baseurl: /
-google_analytics: 'UA-46278016-1'
+title: "APEXPATH ! Always Provide Excellence Path"
+description: "Programmer Blog. I don't know how to write blog but trying my best"
+logo: 'assets/images/small_logo.png'
+favicon: 'assets/images/logo.png'
+large_logo: 'assets/images/logo.png'
+baseurl: ""
+google_analytics: 'UA-106748707-1'
 disqus: 'demowebsite'
-mailchimp-list: 'https://wowthemes.us11.list-manage.com/subscribe/post?u=8aeb20a530e124561927d3bd8&amp;id=8c3d2d214b'
+mailchimp-list: ''
 include: ["_pages"]
 permalink: /:title/
 
@@ -30,15 +31,15 @@ authors:
     web: https://www.wowthemes.net
     twitter: https://twitter.com/wowthemesnet
     description: "This is the author box. Write a short description of the author here. You are currently previewing Mediumish demo, a Jekyll template compatible with Github pages."
-    munna:
-      name: Munna Bhakta
-      display_name: Munna Bhakta    
-      avatar: 'assets/images/avatar.png'
-      gravatar: 36324185a1649b4ac39cd3554bedbf40
-      email: wowthemesnet@gmail.com
-      web: http://munnabhakta.com
-      twitter: https://twitter.com/munnabhakta
-      description: "Full Stack Developer"
+  munna:
+    name: Munna Bhakta
+    display_name: Munna Bhakta    
+    #avatar: 'assets/images/avatar.png'
+    gravatar: 36324185a1649b4ac39cd3554bedbf40
+    email: wowthemesnet@gmail.com
+    web: http://munnabhakta.com
+    twitter: https://twitter.com/munnabhakta
+    description: "Having more than 10 years of experiance in Web Development, GIS Development, Desktop Development"
 
 # Plugins
 plugins:
@@ -76,6 +77,6 @@ adsense-data-ad-client: "ca-pub-3412143450191416"
 adsense-data-ad-slot: "1363087678"
 
 # Lazy Images ("enabled" or "disabled")
-lazyimages: "disabled"
+lazyimages: "enabled"
 
 exclude: [changelog.md, LICENSE.txt, README.md, Gemfile, Gemfile.lock]
