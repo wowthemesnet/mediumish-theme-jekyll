@@ -4,7 +4,7 @@ title:  "NodeJS+Cloud PostgreSQL+"
 author: munna
 categories: [ tutorial, Deployment]
 tags: [GAE, NodeJS, PostgreSQL]
-image: assets/images/git-branch-model.png
+image: assets/images/google-app-engine-deployment.png
 description: "Deploy NodeJS application on Google App Engine with Google Cloud PostgreSQL"
 featured: true
 hidden: true
@@ -25,6 +25,10 @@ Googe Cloud App Engine (GAE) is a deployment platform which suppot PAAS (Platfor
 
 ## Create SQL instance in Google cloud console
 I am going to create SQL server instance first as will have to use this host, database name etc in my NodeJS Application while configure it in App Engine.
+
+1. Follow [Quick Start for Cloud SQL](https://cloud.google.com/sql/docs/postgres/quickstart)
+2. Enable TCP connection to your computer so that you can easily import your data. Follow [Enabling public IP](https://cloud.google.com/sql/docs/postgres/configure-ip#add)
+3. Connect to pgAdmin and import database.
 
 ## Setup a new Google App Engine (GAE)
 
