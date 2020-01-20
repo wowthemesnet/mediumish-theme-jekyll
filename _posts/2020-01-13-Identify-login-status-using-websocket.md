@@ -6,7 +6,7 @@ categories: [ github, tutorial ]
 tags: [github, development]
 image: assets/images/git-branch-model.png
 description: "Git branch development model which helps to manage your code reviewable, trackable, managable."
-featured: true
+featured: false
 hidden: true
 # rating: 4.5
 ---

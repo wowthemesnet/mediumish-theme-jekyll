@@ -1,17 +1,17 @@
 ---
 layout: post
-title:  "NodeJS+Cloud PostgreSQL+"
+title:  "Import Shapefile to PostgreSQL using QGIS."
 author: munna
 categories: [ tutorial, Deployment]
 tags: [GAE, NodeJS, PostgreSQL]
 image: assets/images/google-app-engine-deployment.png
 description: "QGiS is best tools to perform any types of GIS task. Can be also use QGIS for import data into QGIS from excel/csv/shapefiles etc."
-featured: true
+featured: false
 hidden: true
 # rating: 4.5
 ---
 
-QGIS is best opensource desktop tools to perform any types of GIS operation. Here i will show you how to import shape files to postgres.
+QGIS is best OpenSource desktop tools to perform any types of GIS task. Here i will show you how to import shape files to postgres using QGIS.
 
 
 ## Setup a PostgreSQL connection in QGIS.

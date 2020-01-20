@@ -1,13 +1,13 @@
 # Site
-name: "APEXPATH"
+name: "APEXPATH -> A=Always P=Provide Ex=Excellence Path"
 title: "APEXPATH ! Always Provide Excellence Path"
-description: "Programmer Blog. I don't know how to write blog but trying my best"
+description: "In this ever changing world of technology, we are in the midst of a very exciting phase and probably never experienced before.I felt writing this blog would be an excellent way for me to share my experiences with all young and talented programmers out there, specifically ones which excite me."
 logo: 'assets/images/small_logo.png'
 favicon: 'assets/images/logo.png'
 large_logo: 'assets/images/logo.png'
 baseurl: ""
 google_analytics: 'UA-106748707-1'
-disqus: 'demowebsite'
+disqus: 'apexpath'
 mailchimp-list: ''
 include: ["_pages"]
 permalink: /blog/post/:title/
