@@ -8,6 +8,7 @@ image: assets/images/git-branch-model.png
 description: "Git branch development model which helps to manage your code reviewable, trackable, managable."
 featured: false
 hidden: true
+toc: true
 # rating: 4.5
 ---
 

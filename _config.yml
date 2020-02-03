@@ -1,16 +1,17 @@
 # Site
-name: "APEXPATH -> A=Always P=Provide Ex=Excellence Path"
+name: "APEXPATH"
 title: "APEXPATH ! Always Provide Excellence Path"
+homeTitle: "APEXPATH -> A(Always) P(Provide) EX(Excellent) Path"
 description: "In this ever changing world of technology, we are in the midst of a very exciting phase and probably never experienced before.I felt writing this blog would be an excellent way for me to share my experiences with all young and talented programmers out there, specifically ones which excite me."
 logo: 'assets/images/small_logo.png'
 favicon: 'assets/images/logo.png'
 large_logo: 'assets/images/logo.png'
 baseurl: ""
-google_analytics: 'UA-106748707-1'
+google_analyticEs: 'UA-106748707-1'
 disqus: 'apexpath'
 mailchimp-list: ''
 include: ["_pages"]
-permalink: /blog/post/:title/
+permalink: blog/post/:title/
 
 # Authors
 authors:
@@ -36,7 +37,7 @@ authors:
     display_name: Munna Bhakta    
     #avatar: 'assets/images/avatar.png'
     gravatar: 36324185a1649b4ac39cd3554bedbf40
-    email: wowthemesnet@gmail.com
+    email: munna.bhakta1001@gmail.com
     web: http://munnabhakta.com
     twitter: https://twitter.com/munnabhakta
     description: "Having more than 10 years of experiance in Web Development, GIS Development, Desktop Development"
