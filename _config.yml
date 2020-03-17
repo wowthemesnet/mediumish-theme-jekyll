@@ -4,7 +4,7 @@ title: "Mother Tongues Blog"
 description: "Smashing the lore of language technology!"
 logo: 'assets/images/logo_no_text.png'
 favicon: 'assets/images/favicon.ico'
-baseurl: '/mothertongues-blog'
+baseurl: ''
 google_analytics: 'UA-100872710-18'
 disqus: 'mothertongues'
 mailchimp-list: 'https://mailchi.mp/b87b1fbde236/mothertongues'
