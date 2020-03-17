@@ -6,6 +6,7 @@ branches:
 script:
   - JEKYLL_ENV=production bundle install
   - JEKYLL_ENV=production bundle exec jekyll build --destination docs
+  - echo "blog.mothertongues.org" >> docs/CNAME
 deploy:
   provider: pages
   local_dir: ./docs
