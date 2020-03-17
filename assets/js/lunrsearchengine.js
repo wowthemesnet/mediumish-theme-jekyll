@@ -1,35 +1,25 @@
+---
+layout: null
+sitemap: false
+---
 
-var documents = [{
-    "id": 0,
-    "url": "/mothertongues-blog/404.html",
-    "title": "404",
-    "body": "404 Page does not exist!Please use the search bar at the top or visit our homepage! "
-    }, {
-    "id": 1,
-    "url": "/mothertongues-blog/about",
-    "title": "",
-    "body": "Welome to the Mother Tongues Blog. "
-    }, {
-    "id": 2,
-    "url": "/mothertongues-blog/categories",
-    "title": "Categories",
-    "body": ""
-    }, {
-    "id": 3,
-    "url": "/mothertongues-blog/",
-    "title": "Home",
-    "body": "      Featured:                                                                                               Welcome                              :               Welcome to the Mother Tongues official blog!:                                                                                                                                                                       Aidan                                17 Mar 2020                                                                                                                      All Stories:             "
-    }, {
-    "id": 4,
-    "url": "/mothertongues-blog/robots.txt",
-    "title": "",
-    "body": "      Sitemap: {{ “sitemap. xml”   absolute_url }}   "
-    }, {
-    "id": 5,
-    "url": "/mothertongues-blog/welcome/",
-    "title": "Welcome",
-    "body": "2020/03/17 - Welcome to the Mother Tongues official blog! Mother Tongues is an organization whose focus is to provide powerful tools for language revitalization. Here you’ll find small tips and tricks for developing language technology with a focus on Indigenous languages. Be sure to sign up to our mailing list to keep track of new blog posts and any events. "
-    }];
+{% assign counter = 0 %}
+var documents = [{% for page in site.pages %}{% if page.url contains '.xml' or page.url contains 'assets' or page.url contains 'category' or page.url contains 'tag' %}{% else %}{
+    "id": {{ counter }},
+    "url": "{{ site.url }}{{site.baseurl}}{{ page.url }}",
+    "title": "{{ page.title }}",
+    "body": "{{ page.content | markdownify | replace: '.', '. ' | replace: '</h2>', ': ' | replace: '</h3>', ': ' | replace: '</h4>', ': ' | replace: '</p>', ' ' | strip_html | strip_newlines | replace: '  ', ' ' | replace: '"', ' ' }}"{% assign counter = counter | plus: 1 %}
+    }, {% endif %}{% endfor %}{% for page in site.without-plugin %}{
+    "id": {{ counter }},
+    "url": "{{ site.url }}{{site.baseurl}}{{ page.url }}",
+    "title": "{{ page.title }}",
+    "body": "{{ page.content | markdownify | replace: '.', '. ' | replace: '</h2>', ': ' | replace: '</h3>', ': ' | replace: '</h4>', ': ' | replace: '</p>', ' ' | strip_html | strip_newlines | replace: '  ', ' ' | replace: '"', ' ' }}"{% assign counter = counter | plus: 1 %}
+    }, {% endfor %}{% for page in site.posts %}{
+    "id": {{ counter }},
+    "url": "{{ site.url }}{{site.baseurl}}{{ page.url }}",
+    "title": "{{ page.title }}",
+    "body": "{{ page.date | date: "%Y/%m/%d" }} - {{ page.content | markdownify | replace: '.', '. ' | replace: '</h2>', ': ' | replace: '</h3>', ': ' | replace: '</h4>', ': ' | replace: '</p>', ' ' | strip_html | strip_newlines | replace: '  ', ' ' | replace: '"', ' ' }}"{% assign counter = counter | plus: 1 %}
+    }{% if forloop.last %}{% else %}, {% endif %}{% endfor %}];
 
 var idx = lunr(function () {
     this.ref('id')

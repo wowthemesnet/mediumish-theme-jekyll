@@ -1,0 +1,5 @@
+---
+BUNDLE_RETRY: "3"
+BUNDLE_FROZEN: "true"
+BUNDLE_PATH: "vendor/bundle"
+BUNDLE_JOBS: "3"

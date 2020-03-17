@@ -1,0 +1,63 @@
+# Site
+name: "Mother Tongues Blog"
+title: "Mother Tongues Blog"
+description: "Smashing the lore of language technology!"
+logo: 'assets/images/logo_no_text.png'
+favicon: 'assets/images/favicon.ico'
+baseurl: '/mothertongues-blog'
+google_analytics: 'UA-100872710-18'
+disqus: 'mothertongues'
+mailchimp-list: 'https://mailchi.mp/b87b1fbde236/mothertongues'
+include: ["_pages"]
+permalink: /:title/
+
+# Authors
+authors:
+  aidan:
+    name: Aidan
+    display_name: Aidan
+    gravatar: 7623fd3eeb0acbe1084fecc20c3093ae
+    email: hello@aidanpine.ca
+    web: https://aidanpine.ca
+    twitter: https://twitter.com/aidanpine
+    description: "Lead developer of Mother Tongues."
+
+# Plugins
+plugins:
+  - jekyll-paginate
+  - jekyll-sitemap
+  - jekyll-feed
+  - jekyll-seo-tag
+  - jekyll-archives
+    
+# Archives
+jekyll-archives:
+  enabled:
+    - categories
+  layout: archive
+  permalinks:
+    category: '/category/:name/'
+    
+# Pagination 
+paginate: 6
+paginate_path: /page:num/
+    
+# Other
+markdown: kramdown
+
+kramdown:
+  input: GFM
+  syntax_highlighter: rouge
+  syntax_highlighter_opts:
+    block:
+      line_numbers: true
+
+# Adsense (change to "enabled" to activate, also your client id and ad slot. Create a new ad unit from your Adsense account to get the slot.)
+adsense: "disabled"
+# adsense-data-ad-client: "ca-pub-3412143450191416"
+# adsense-data-ad-slot: "1363087678"
+
+# Lazy Images ("enabled" or "disabled")
+lazyimages: "disabled"
+
+exclude: [changelog.md, LICENSE.txt, README.md, Gemfile, Gemfile.lock, vendor]

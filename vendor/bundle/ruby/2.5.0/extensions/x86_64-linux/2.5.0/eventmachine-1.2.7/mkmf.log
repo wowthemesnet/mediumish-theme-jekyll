@@ -1,0 +1,11 @@
+"gcc -o conftest -I/home/travis/.rvm/rubies/ruby-2.5.3/include/ruby-2.5.0/x86_64-linux -I/home/travis/.rvm/rubies/ruby-2.5.3/include/ruby-2.5.0/ruby/backward -I/home/travis/.rvm/rubies/ruby-2.5.3/include/ruby-2.5.0 -I.    -O3 -ggdb3 -Wall -Wextra -Wno-unused-parameter -Wno-parentheses -Wno-long-long -Wno-missing-field-initializers -Wno-tautological-compare -Wno-parentheses-equality -Wno-constant-logical-operand -Wno-self-assign -Wunused-variable -Wimplicit-int -Wpointer-arith -Wwrite-strings -Wdeclaration-after-statement -Wimplicit-function-declaration -Wdeprecated-declarations -Wno-packed-bitfield-compat -Wsuggest-attribute=noreturn -Wsuggest-attribute=format -Wno-maybe-uninitialized  -fPIC conftest.c  -L. -L/home/travis/.rvm/rubies/ruby-2.5.3/lib -Wl,-rpath,/home/travis/.rvm/rubies/ruby-2.5.3/lib -L. -fstack-protector -rdynamic -Wl,-export-dynamic     -Wl,-rpath,'/../lib' -Wl,-rpath,'/../lib' -lruby  -lpthread -ldl -lcrypt -lm   -lc"
+checked program was:
+/* begin */
+1: #include "ruby.h"
+2: 
+3: int main(int argc, char **argv)
+4: {
+5:   return 0;
+6: }
+/* end */
+

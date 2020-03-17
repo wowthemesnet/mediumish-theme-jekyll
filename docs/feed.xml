@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Mother Tongues Blog</title>
+    <description>Smashing the lore of language technology!</description>
+    <link>/mothertongues-blog/</link>
+    <atom:link href="/mothertongues-blog/feed.xml" rel="self" type="application/rss+xml"/>
+    <pubDate>Tue, 17 Mar 2020 21:34:54 +0000</pubDate>
+    <lastBuildDate>Tue, 17 Mar 2020 21:34:54 +0000</lastBuildDate>
+    <generator>Jekyll v3.8.5</generator>
+    
+      <item>
+        <title>Welcome</title>
+        <description>&lt;p&gt;Welcome to the Mother Tongues official blog!&lt;/p&gt;
+
+&lt;p&gt;Mother Tongues is an organization whose focus is to provide powerful tools for language revitalization.&lt;/p&gt;
+
+&lt;p&gt;Here you’ll find small tips and tricks for developing language technology with a focus on Indigenous languages.&lt;/p&gt;
+
+&lt;p&gt;Be sure to &lt;a href=&quot;https://mailchi.mp/b87b1fbde236/mothertongues&quot;&gt;sign up&lt;/a&gt; to our mailing list to keep track of new blog posts and any events.&lt;/p&gt;
+</description>
+        <pubDate>Tue, 17 Mar 2020 00:00:00 +0000</pubDate>
+        <link>/mothertongues-blog/welcome/</link>
+        <guid isPermaLink="true">/mothertongues-blog/welcome/</guid>
+        
+        
+      </item>
+    
+  </channel>
+</rss>
