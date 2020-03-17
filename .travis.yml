@@ -8,7 +8,6 @@ script:
   - JEKYLL_ENV=production bundle exec jekyll build --destination docs
 deploy:
   provider: pages
-  local-dir: ./docs
   target-branch: master
   email: deploy@travis-ci.org
   name: Deployment Bot
