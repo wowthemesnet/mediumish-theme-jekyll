@@ -5,6 +5,7 @@ Welcome to the Mother Tongues Blog repository.
 ### Copyright
 
 Copyright Theme (C) 2019 Sal, https://www.wowthemes.net
+
 Copyright Blog (C) 2020 Aidan, https://aidanpine.ca
 
 Posts are copyrighted by authors!
