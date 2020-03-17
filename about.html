@@ -4,36 +4,47 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-<link rel="icon" href="{{ site.baseurl }}/assets/images/logo.png">
+<link rel="icon" href="/mothertongues-blog/assets/images/logo.png">
 
-<title>{{ page.title }} | {{site.name}}</title>
+<title> | Mother Tongues Blog</title>
 
-{% seo %}
+<!-- Begin Jekyll SEO tag v2.5.0 -->
+<title>Mother Tongues Blog | Smashing the lore of language technology!</title>
+<meta name="generator" content="Jekyll v3.8.5" />
+<meta property="og:title" content="Mother Tongues Blog" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="Smashing the lore of language technology!" />
+<meta property="og:description" content="Smashing the lore of language technology!" />
+<meta property="og:site_name" content="Mother Tongues Blog" />
+<script type="application/ld+json">
+{"description":"Smashing the lore of language technology!","publisher":{"@type":"Organization","logo":{"@type":"ImageObject","url":"/mothertongues-blog/assets/images/logo_no_text.png"}},"@type":"WebPage","headline":"Mother Tongues Blog","url":"/mothertongues-blog/about","@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
 
 <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
     
-<link href="{{ site.baseurl }}/assets/css/screen.css" rel="stylesheet">
+<link href="/mothertongues-blog/assets/css/screen.css" rel="stylesheet">
 
-<link href="{{ site.baseurl }}/assets/css/main.css" rel="stylesheet">
+<link href="/mothertongues-blog/assets/css/main.css" rel="stylesheet">
 
-<script src="{{ site.baseurl }}/assets/js/jquery.min.js"></script>
+<script src="/mothertongues-blog/assets/js/jquery.min.js"></script>
 
 </head>
 
-{% if jekyll.environment == 'production' %}
+
 <!-- change your GA id in _config.yml -->
 <script>
 (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
 (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
 m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
 })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
-ga('create', '{{site.google_analytics}}', 'auto');
+ga('create', 'UA-100872710-18', 'auto');
 ga('send', 'pageview');
 </script>
-{% endif %}
 
-{% capture layout %}{% if page.layout %}layout-{{ page.layout }}{% endif %}{% endcapture %}
-<body class="{{layout}}">
+
+
+<body class="layout-page">
 	<!-- defer loading of font and font awesome -->
 	<noscript id="deferred-styles">
 		<link href="https://fonts.googleapis.com/css?family=Amatic+SC%7CRighteous%7CMerriweather:300,300i,400,400i,700,700i" rel="stylesheet">
@@ -48,8 +59,8 @@ ga('send', 'pageview');
     <div class="container pr-0">
 
     <!-- Begin Logo -->
-    <a class="navbar-brand" href="{{ site.baseurl }}/">
-    <img src="{{ site.baseurl }}/{{ site.logo }}" alt="{{ site.name }}"> Mother Tongues
+    <a class="navbar-brand" href="/mothertongues-blog/">
+    <img src="/mothertongues-blog/assets/images/logo_no_text.png" alt="Mother Tongues Blog"> Mother Tongues
     </a>
     <!-- End Logo -->
 
@@ -63,19 +74,37 @@ ga('send', 'pageview');
 
             <ul class="navbar-nav ml-auto">
 
-                {% if page.url == "/" %}
-                <li class="nav-item active">
-                {% else %}
+                
                 <li class="nav-item">
-                {% endif %}
-                <a class="nav-link" href="{{ site.baseurl }}/index.html">Blog</a>
+                
+                <a class="nav-link" href="/mothertongues-blog/index.html">Blog</a>
                 </li>
 
                 <li class="nav-item">
-                <a class="nav-link" href="{{ site.baseurl }}/about">About</a>
+                <a class="nav-link" href="/mothertongues-blog/about">About</a>
                 </li>
 
-                {% include search-lunr.html %}
+                <script src="/mothertongues-blog/assets/js/lunr.js"></script>
+
+
+<style>
+    .lunrsearchresult .title {color: #d9230f;}
+    .lunrsearchresult .url {color: silver;}
+    .lunrsearchresult a {display: block; color: #777;}
+    .lunrsearchresult a:hover, .lunrsearchresult a:focus {text-decoration: none;}
+    .lunrsearchresult a:hover .title {text-decoration: underline;}
+</style>
+
+
+<form class="bd-search" onSubmit="return lunr_search(document.getElementById('lunrsearch').value);">
+    <input type="text" class="form-control text-small launch-modal-search" id="lunrsearch" name="q" maxlength="255" value="" placeholder="Type and enter..."/>
+</form>
+
+<div id="lunrsearchresults">
+    <ul></ul>
+</div>
+
+<script src="/mothertongues-blog/assets/js/lunrsearchengine.js"></script>
 
             </ul>
 
@@ -95,25 +124,64 @@ ga('send', 'pageview');
 <!-- Site Title
 ================================================== -->
 <div class="mainheading">
-    <h1 class="sitetitle">{{ site.name }}</h1>
+    <h1 class="sitetitle">Mother Tongues Blog</h1>
     <p class="lead">
-        {{ site.description }}
+        Smashing the lore of language technology!
     </p>
 </div>
 
 <!-- Content
 ================================================== -->
 <div class="main-content">
-    {{ content }}
+    <section>
+    <div class="section-title">
+        <h2><span></span></h2>
+    </div>
+
+    <div class="article-post">
+    <div class="row justify-content-between">
+<div class="col-md-8 pr-5">
+
+<p>Welome to the Mother Tongues Blog.</p>
+
+</div>
 </div>
 
-{% if site.mailchimp-list %}
+    </div>
+
+    
+
+    <div id="comments" class="row mb-5">
+        <div class="col-md-8">
+            <section class="disqus">
+    <div id="disqus_thread"></div>
+    <script type="text/javascript">
+        var disqus_shortname = 'mothertongues'; 
+        var disqus_developer = 0;
+        (function() {
+            var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+            dsq.src = window.location.protocol + '//' + disqus_shortname + '.disqus.com/embed.js';
+            (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+        })();
+    </script>
+    <noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+    <a href="http://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+</section>
+
+        </div>
+    </div>
+
+    
+</section>
+</div>
+
+
 <!-- Bottom Alert Bar
 ================================================== -->
 <div class="alertbar">
 	<div class="container text-center">
-		<span><img src="{{ site.baseurl }}/{{ site.logo }}" alt="{{site.title}}"> &nbsp; Never miss a <b>story</b> from us, subscribe to our newsletter</span>
-        <form action="{{site.mailchimp-list}}" method="post" name="mc-embedded-subscribe-form" class="wj-contact-form validate" target="_blank" novalidate>
+		<span><img src="/mothertongues-blog/assets/images/logo_no_text.png" alt="Mother Tongues Blog"> &nbsp; Never miss a <b>story</b> from us, subscribe to our newsletter</span>
+        <form action="https://mailchi.mp/b87b1fbde236/mothertongues" method="post" name="mc-embedded-subscribe-form" class="wj-contact-form validate" target="_blank" novalidate>
             <div class="mc-field-group">
             <input type="email" placeholder="Email" name="EMAIL" class="required email" id="mce-EMAIL" autocomplete="on" required>
             <input type="submit" value="Subscribe" name="subscribe" class="heart">
@@ -121,7 +189,7 @@ ga('send', 'pageview');
         </form>
 	</div>
 </div>
-{% endif %}
+
     
 </div>
 
@@ -135,17 +203,11 @@ ga('send', 'pageview');
             </div>
 		</div>
 		<div class="col-md-8 p-5 align-self-center text-center">
-            {% assign categories_list = site.categories %}
-            {% if categories_list.first[0] == null %}
-                {% for category in categories_list %}
-                    <a class="mt-1 mb-1" href="{{site.baseurl}}/categories#{{ category | url_escape | strip | replace: ' ', '-' }}">{{ category | camelcase }} ({{ site.tags[category].size }})</a>
-                {% endfor %}
-            {% else %}
-                {% for category in categories_list %}
-                    <a class="mt-1 mb-1" href="{{site.baseurl}}/categories#{{ category[0] | url_escape | strip | replace: ' ', '-' }}">{{ category[0] | camelcase }} ({{ category[1].size }})</a>
-                {% endfor %}
-            {% endif %}
-            {% assign categories_list = nil %}
+            
+            
+                
+            
+            
 		</div>
 	</div>
 </div>
@@ -156,7 +218,7 @@ ga('send', 'pageview');
     <div class="container">
         <div class="row">
             <div class="col-md-6 col-sm-6 text-center text-lg-left">
-                Copyright © {{ site.time | date: "%Y" }} {{ site.name }} 
+                Copyright © 2020 Mother Tongues Blog 
             </div>
             <div class="col-md-6 col-sm-6 text-center text-lg-right">    
                 <a target="_blank" href="https://www.wowthemes.net/mediumish-free-jekyll-template/">Mediumish Jekyll Theme</a> by WowThemes.net
@@ -176,17 +238,13 @@ ga('send', 'pageview');
 
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>
 
-<script src="{{ site.baseurl }}/assets/js/mediumish.js"></script>
+<script src="/mothertongues-blog/assets/js/mediumish.js"></script>
 
-{% if site.lazyimages == "enabled" %}
-<script src="{{ site.baseurl }}/assets/js/lazyload.js"></script>
-{% endif %}
 
-<script src="{{ site.baseurl }}/assets/js/ie10-viewport-bug-workaround.js"></script> 
 
-{% if page.layout == 'post' %}
-<script id="dsq-count-scr" src="//{{site.disqus}}.disqus.com/count.js"></script>
-{% endif %}
+<script src="/mothertongues-blog/assets/js/ie10-viewport-bug-workaround.js"></script> 
+
+
 
 </body>
 </html>
