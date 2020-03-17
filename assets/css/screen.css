@@ -280,6 +280,7 @@ span.post-read-more a:hover {
 
 .mediumnavigation .navbar-brand {
     font-weight: 500;
+    font-family: Amatic SC;
 }
 
 .mediumnavigation .dropdown-menu {
@@ -305,7 +306,7 @@ span.post-read-more a:hover {
 }
 
 .mainheading h1.sitetitle {
-    font-family: Righteous;
+    font-family: inherit;
 }
 
 .mainheading h1.posttitle {
