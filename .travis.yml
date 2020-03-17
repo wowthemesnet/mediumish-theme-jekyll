@@ -2,17 +2,17 @@ language: ruby
 cache: bundler
 branches:
   only:
-  - release
+  - master
 script:
   - JEKYLL_ENV=production bundle install
   - JEKYLL_ENV=production bundle exec jekyll build --destination docs
 deploy:
   provider: pages
-  target-branch: master
+  target-branch: gh-pages
   email: deploy@travis-ci.org
   name: Deployment Bot
   skip-cleanup: true
   github-token: $GITHUB_TOKEN
   keep-history: true
   on:
-    branch: release
+    branch: master
