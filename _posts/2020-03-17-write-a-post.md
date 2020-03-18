@@ -10,7 +10,7 @@ featured: false
 hidden: false
 ---
 
-Here's a short tutorial on how to write your first blog post on the official Mother Tongues Blog. This tutorial assumes you've already signed up to [become an author]({{site.baseurl}}/become-an-author).
+Here's a short tutorial on how to write your first blog post on the official Mother Tongues Blog. This tutorial assumes you've already signed up to [become an author]({{ "become-an-author" | absolute_url }}).
 
 Posts on the Mother Tongues Blog are written in [Markdown](https://en.wikipedia.org/wiki/Markdown).
 

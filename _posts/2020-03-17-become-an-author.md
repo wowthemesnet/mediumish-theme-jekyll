@@ -40,7 +40,7 @@ Then, follow these steps:
     ```
 4. Submit a [pull request](https://github.com/roedoejet/mothertongues-blog/pull/new/dev.author)
 
-That's it! Start [writing your posts]({{site.baseurl}}/write-a-post).
+That's it! Start [writing your posts]({{ "write-a-post" | absolute_url }}).
 
 <br> 
 <br> 
