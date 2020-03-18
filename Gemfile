@@ -17,4 +17,6 @@ group :jekyll_plugins do
     gem 'jekyll-archives'
     gem 'kramdown'
     gem 'rouge'
+    gem 'rake'
+    gem 'html-proofer'
 end
