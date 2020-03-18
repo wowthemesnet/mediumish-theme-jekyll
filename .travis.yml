@@ -9,9 +9,6 @@ script:
   - JEKYLL_ENV=production bundle exec jekyll build --destination docs
   - echo "blog.mothertongues.org" >> docs/CNAME
   - bundle exec rake test
-cache:
-  directories:
-  - $TRAVIS_BUILD_DIR/tmp/.htmlproofer
 env:
   global:
   - NOKOGIRI_USE_SYSTEM_LIBRARIES=true # speeds up installation of html-proofer
