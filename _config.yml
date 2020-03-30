@@ -7,7 +7,7 @@ favicon: 'assets/images/logo.png'
 baseurl: ''
 google_analytics: 'UA-117326683-2'
 disqus: 'ruters-blog'
-mailchimp-list: ''
+mailchimp-list: 
 include: ["_pages"]
 permalink: /:title/
 
