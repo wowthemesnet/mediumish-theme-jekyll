@@ -1,7 +1,7 @@
 # Site
 name: "Ruter's Blog"
 title: "Ruter's Blog"
-description: "Ruter's blog, things about Python, Odoo, and other technogy."
+description: "Share everything with you."
 logo: 'assets/images/logo.png'
 favicon: 'assets/images/logo.png'
 baseurl: ''
@@ -13,10 +13,10 @@ permalink: /:title/
 
 # Authors
 authors:
-  Ruter:
+  ruter:
     name: Ruter
-    display_name: Ruter
-    gravatar: e56154546cf4be74e393c62d1ae9f9d4
+    display_name: "Ruter Lü"
+    gravatar: 35760f50e53b982ffc5f6e4aafc0f58b
     email: i@ruterly.com
     web: https://ruterly.com
     twitter: https://twitter.com/ruterlv
