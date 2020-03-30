@@ -4,7 +4,7 @@ title: "Ruter's Blog"
 description: "Ruter's blog, things about Python, Odoo, and other technogy."
 logo: 'assets/images/logo.png'
 favicon: 'assets/images/logo.png'
-baseurl: /
+baseurl: ''
 google_analytics: 'UA-117326683-2'
 disqus: 'ruters-blog'
 mailchimp-list: ''
