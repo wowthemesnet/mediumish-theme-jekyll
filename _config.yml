@@ -13,7 +13,7 @@ authors:
   sal:
     name: Sal
     display_name: Sal
-    gravatar: e56154546cf4be74e393c62d1ae9f9d4
+    avatar: 'assets/images/avatar.png'
     email: wowthemesnet@gmail.com
     web: https://www.wowthemes.net
     twitter: https://twitter.com/wowthemesnet
@@ -22,7 +22,6 @@ authors:
     name: John
     display_name: John    
     avatar: 'assets/images/avatar.png'
-    gravatar: b1cc14991db7a456fcd761680bbc8f81
     email: wowthemesnet@gmail.com
     web: https://www.wowthemes.net
     twitter: https://twitter.com/wowthemesnet
@@ -34,15 +33,6 @@ plugins:
   - jekyll-sitemap
   - jekyll-feed
   - jekyll-seo-tag
-#  - jekyll-archives
-    
-# Archives
-# jekyll-archives:
-#  enabled:
-#    - categories
-#  layout: archive
-#  permalinks:
-#    category: '/category/:name/'
     
 # Pagination 
 paginate: 6
