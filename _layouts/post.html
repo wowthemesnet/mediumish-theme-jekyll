@@ -1,7 +1,5 @@
 ---
 layout: default
-disqus: false
-archive: false
 post_class: post-template
 ---
 
@@ -27,12 +25,16 @@ post_class: post-template
                     <div class="col-xs-12 col-md-3 col-lg-2 text-center text-md-left mb-4 mb-md-0">
                         {% if author.avatar %}
                         <img class="author-thumb" src="{{site.baseurl}}/{{ author.avatar }}" alt="{{ author.display_name }}">
-                        {% else %}
-                        <img class="author-thumb" src="https://www.gravatar.com/avatar/{{ author.gravatar }}?s=250&d=mm&r=x" alt="{{ author.display_name }}">
                         {% endif %}
                     </div>
                     <div class="col-xs-12 col-md-9 col-lg-10 text-center text-md-left">
-                        <a target="_blank" class="link-dark" href="{{ author.web }}">{{ author.display_name }}</a><a target="_blank" href="{{ author.twitter }}" class="btn follow">Follow</a>
+                        <a target="_blank" class="link-dark" href="{{ author.web }}">{{ author.display_name }}</a>
+                        {% if author.twitter %}
+                        <a target="_blank" href="{{ author.twitter }}" class="btn follow">Follow</a>
+                        {% endif %}
+                        {% if author.email %}
+                        <a target="_blank" href="mailto:{{ author.email}}" class="btn follow">E-mail</a>
+                        {% endif %}
                         <span class="author-description">{{ author.description }}</span>
                     </div>
                 </div>
@@ -42,12 +44,6 @@ post_class: post-template
                 <h1 class="posttitle">{{ page.title }}</h1>
 
             </div>
-
-            <!-- Adsense if enabled from _config.yml (change your pub id and slot) -->
-            {% if site.adsense == "enabled" %}
-                {% include adsense-under-header.html %}
-            {% endif %}
-            <!-- End Adsense -->
 
             <!-- Post Featured Image -->
             {% if page.image %}
@@ -63,26 +59,8 @@ post_class: post-template
 
             <!-- Post Content -->
             <div class="article-post">
-                <!-- Toc if any -->
-                {% if page.toc %}
-                    {% if page.beforetoc %}
-                        <p><em>{{page.beforetoc}}</em></p>
-                    {% endif %}
-                    <div class="toc mt-4 mb-4 lead">
-                        <h3 class="font-weight-bold">Summary</h3>
-                        {% include toc.html html=content %}
-                    </div>
-                {% endif %}
-                <!-- End Toc -->
                 {{content}}
             </div>
-
-            <!-- Rating -->
-            {% if page.rating %}
-            <div class="rating mb-4 d-flex align-items-center">
-                <strong class="mr-1">Rating:</strong> {% include star_rating.html %}
-            </div>
-            {% endif %}
 
             <!-- Post Date -->
             <p>
@@ -140,42 +118,3 @@ post_class: post-template
 <!-- End Article
 ================================================== -->
 
-<!-- Begin Comments
-================================================== -->
-{% if page.comments != false %}
-    <div class="container">
-        <div id="comments" class="row justify-content-center mb-5">
-            <div class="col-md-8">
-                {% include disqus.html %}
-            </div>
-        </div>
-    </div>
-{% endif %}
-<!--End Comments
-================================================== -->
-
-<!-- Review with LD-JSON, adapt it for your needs if you like, but make sure you test the generated HTML source code first: 
-https://search.google.com/structured-data/testing-tool/u/0/
-================================================== -->
-{% if page.rating %}
-<script type="application/ld+json">
-{
-  "@context": "http://schema.org/",
-  "@type": "Review",
-  "itemReviewed": {
-    "@type": "Thing",
-    "name": "{{ page.title }}"
-  },
-  "author": {
-    "@type": "Person",
-    "name": "{{ author.display_name }}"
-  },
-  "datePublished": "{{ page.date | date:"%Y-%m-%d" }}",
-  "reviewRating": {
-    "@type": "Rating",
-    "ratingValue": "{{ page.rating }}",
-    "bestRating": "5"
-  }
-}
-</script>
-{% endif %}

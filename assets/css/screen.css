@@ -208,10 +208,6 @@ section.recent-posts {
     font-size: 0.95rem;
 }
 
-.toc ul {
-    list-style: decimal;
-    font-weight: 400;
-}
 
 .author-meta {
     flex: 1 1 auto;

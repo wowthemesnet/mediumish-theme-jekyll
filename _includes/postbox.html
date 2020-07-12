@@ -19,11 +19,6 @@
         <div class="card-body">
             <h2 class="card-title">
                 <a class="text-dark" href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a>
-                {% if post.rating %}
-                <div class="mb-2 mt-2 font-weight-normal">
-                {% include star_rating_postbox.html %}
-                </div>
-                {% endif %}
             </h2>
             <h4 class="card-text">{{ post.excerpt | strip_html | truncatewords:30 }}</h4>
         </div>
@@ -33,8 +28,6 @@
                 <span class="meta-footer-thumb">
                 {% if author.avatar %}
                 <img class="author-thumb" src="{{site.baseurl}}/{{ author.avatar }}" alt="{{ author.display_name }}">
-                {% else %}
-                <img class="author-thumb" src="https://www.gravatar.com/avatar/{{ author.gravatar }}?s=250&d=mm&r=x" alt="{{ author.display_name }}">
                 {% endif %}
                 </span>
                 <span class="author-meta">
