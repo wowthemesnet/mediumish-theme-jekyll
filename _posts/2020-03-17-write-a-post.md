@@ -31,7 +31,7 @@ In order to write a new post, follow the following steps.
    hidden: false
    ---
 ```
-3. Write the content of your post in Markdown.
+3. Write the content of your post in Markdown. Please have a look at the [template]({{ "post-template" | absolute_url }}) for writing accessible posts!
 4. When you're happy with it, Submit a [pull request](https://github.com/roedoejet/mothertongues-blog/pull/new/dev.author)
 
 
