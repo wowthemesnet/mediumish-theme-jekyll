@@ -28,6 +28,14 @@ authors:
     web: https://aidanpine.ca
     twitter: https://twitter.com/aidanpine
     description: "Lead developer of Mother Tongues."
+  eddie:
+    name: Eddie
+    display_name: Eddie
+    gravatar: 7183e460abfb84d668e408c32631abd4
+    email: easantos+mothertongues@ualberta.ca
+    web: https://eddieantonio.ca/
+    twitter: https://twitter.com/_eddieantonio
+    description: "Software developer and Unicode nerd"
 
 # Plugins
 plugins:
