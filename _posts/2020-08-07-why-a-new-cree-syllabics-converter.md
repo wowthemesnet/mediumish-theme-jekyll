@@ -15,6 +15,22 @@ The Western Cree languages—**Plains Cree**, **Woods Cree**, and **Swampy Cree*
 [syllabics.app]: https://syllabics.app/
 
 
+Required Technical Knowledge
+----------------------------
+
+For the latter part of this blog post, where I discuss using the
+converter in your own project, I assume you know how to use:
+
+ - [npm][] for installing JavaScript packages; or
+ - [pip][] for installing Python packages
+
+If you don't care about embedding my converter in your coding project,
+then there's no prior technical knowledge needed!
+
+[npm]: https://docs.npmjs.com/downloading-and-installing-packages-locally
+[pip]: https://packaging.python.org/tutorials/installing-packages/#use-pip-for-installing
+
+
 What are the freely available transliterators?
 ----------------------------------------------
 
