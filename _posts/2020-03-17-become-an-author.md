@@ -24,7 +24,7 @@ Then, follow these steps:
     aidan:
        name: Aidan
        display_name: Aidan
-       gravatar: 7623fd3eeb0acbe1084fecc20c3093ae
+       gravatar: 7623fd3eeb0acbe1084fecc20c3093ae 
        email: hello@aidanpine.ca
        web: https://aidanpine.ca
        twitter: https://twitter.com/aidanpine
@@ -33,7 +33,7 @@ Then, follow these steps:
         name: YourName*
         display_name: YourName*
         email: your@email.com*
-        gravatar: YourGravatarID
+        gravatar: YourGravatarID # this is an md5 hash of your email that you used to sign up for https://en.gravatar.com/ you can either calculate this on the command line, or use an online generator like https://www.md5hashgenerator.com/ 
         web: yoursite.com
         twitter: https://twitter.com/yourhandle
         description: "Guest Author. YourDescriptionHere"
