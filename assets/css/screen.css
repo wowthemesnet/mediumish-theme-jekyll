@@ -900,3 +900,16 @@ iframe {
     opacity: 0;
     transition: opacity .25s;
 }
+
+figcaption {
+    margin: 0.5rem;
+    font-size: smaller;
+}
+figcaption > cite::before {
+    content: "\A";
+    white-space: pre-line;
+}
+
+.footnotes {
+    font-size: smaller;
+}
