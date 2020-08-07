@@ -36,6 +36,14 @@ authors:
     web: https://eddieantonio.ca/
     twitter: https://twitter.com/_eddieantonio
     description: "Software developer and Unicode nerd"
+  delaney:
+    name: Delaney
+    display_name: Delaney
+    gravatar: 61082587e1c6a9ad625bb21be29142d5
+    email: dlothian@ualberta.ca
+    web: 
+    twitter: 
+    description: "âpihtawikosisâniskwew and ILT Developer"
 
 # Plugins
 plugins:
