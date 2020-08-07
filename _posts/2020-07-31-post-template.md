@@ -18,7 +18,7 @@ This blog post describes what a basic template for a post on this blog should lo
 
 This is a template of a blog post to follow when writing other blog posts - how meta!
 
-# Technical Assumptions
+# What you need to know to understand this post
 
 *Your post should have a list of technical skills that you think are needed to understand the blog post. This will help the reader know if they'll be able to benefit from reading it or whether they should study up on something first.*
 
@@ -28,7 +28,7 @@ This is a template of a blog post to follow when writing other blog posts - how 
 
 *Beyond the author's information which will be part of this post, there should be a list of everybody involved with the technology discussed in the post, if applicable. The list of contacts should be clear*
 
-- Author/Blog Maintainer: [Aidan Pine](mailto:hello@aidanpine.ca)
+- Author/Blog Maintainer: [Aidan Pine](aidanpine.ca)
 
 # What is needed to replicate the content in the post?
 
