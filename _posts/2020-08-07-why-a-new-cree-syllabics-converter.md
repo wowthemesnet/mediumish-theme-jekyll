@@ -15,8 +15,8 @@ The Western Cree languages—**Plains Cree**, **Woods Cree**, and **Swampy Cree*
 [syllabics.app]: https://syllabics.app/
 
 
-Required Technical Knowledge
-----------------------------
+What you need to know to understand this post
+---------------------------------------------
 
 For the latter part of this blog post, where I discuss using the
 converter in your own project, I assume you know how to use:
