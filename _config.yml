@@ -44,6 +44,14 @@ authors:
     web: 
     twitter: 
     description: "âpihtawikosisâniskwew and ILT Developer"
+  fineen:
+    name: Fineen
+    display_name: Fineen
+    gravatar: 
+    email: fineen.davis@gmail.com
+    web: 
+    twitter: 
+    description: "Computational linguist"
 
 # Plugins
 plugins:
