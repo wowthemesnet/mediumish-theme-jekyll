@@ -20,6 +20,10 @@ assets:
 
 # Authors
 authors:
+  # Note: jekyll-seo-tag expects these keys to be your Twitter handle.
+  # If you want your posts to be associated with your Twitter handle,
+  # make sure your short name here to match your @: 
+  # See: https://github.com/jekyll/jekyll-seo-tag/blob/master/docs/advanced-usage.md#author-information
   aidan:
     name: Aidan
     display_name: Aidan
@@ -28,7 +32,7 @@ authors:
     web: https://aidanpine.ca
     twitter: https://twitter.com/aidanpine
     description: "Lead developer of Mother Tongues."
-  eddie:
+  _eddieantonio:
     name: Eddie
     display_name: Eddie
     gravatar: 7183e460abfb84d668e408c32631abd4
@@ -64,7 +68,13 @@ jekyll-archives:
 # Pagination 
 paginate: 6
 paginate_path: /page:num/
-    
+
+# SEO
+twitter:
+  # the "site's" username
+  username: AidanPine
+  card: summary_large_image
+
 # Other
 markdown: kramdown
 
