@@ -9,19 +9,6 @@ To contribute to the site, please have a read through the purpose of the Git bra
 - master: Changes made here will build and push to `gh-pages`.
 - gh-pages: This branch is auto generated from the `master` branch. Do **not** edit this directly, as edits will be overwritten.
 - dev.author: Create and continue to work on new posts here. You can spin off extra branches like `dev.author-aidan` for example, but you must merge them into `dev.author` before merging to `master` and pushing a new release.
-- dev.site: Make changes to the website here. Changes can be merged with `master` branch.
-
-### Copyright
-
-To contribute to the site, please have a read through the purpose of the Git branches:
-
-`master`: Changes made here will build and push to `gh-pages`.
-
-`gh-pages`: This branch is auto generated from the `master` branch. Do **not** edit this directly, as edits will be overwritten.
-
-`dev.author`: Create and continue to work on new posts here. You can spin off extra branches like `dev.author-aidan` for example, but you must merge them into `dev.author` before merging to `master` and pushing a new release.
-
-`dev.site`: Make changes to the website here. Changes can be merged with `master` branch.
 
 ### Copyright
 
