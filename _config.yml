@@ -20,6 +20,10 @@ assets:
 
 # Authors
 authors:
+  # Note: jekyll-seo-tag expects these keys to be your Twitter handle.
+  # If you want your posts to be associated with your Twitter handle,
+  # make sure your short name here to match your @: 
+  # See: https://github.com/jekyll/jekyll-seo-tag/blob/master/docs/advanced-usage.md#author-information
   aidan:
     name: Aidan
     display_name: Aidan
