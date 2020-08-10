@@ -10,7 +10,8 @@ featured: false
 hidden: false
 ---
 
-The Western Cree languages—**Plains Cree**, **Woods Cree**, and **Swampy Cree**—are written using two systems: one with letters borrowed from the English, in a system known as the **standard Roman orthography** (**SRO**), and **ᓀᐦᐃᔭᐏ ᒐᐦᑭᐯᐦᐃᑲᓇ** (Cree syllabics). SRO is relatively easy to type on a modern computer, but syllabics are more difficult, because of the lack of a well-established syllabics input layout. It's easier to just use a **converter** which, given Cree text in SRO, produces Cree text in syllabics. In this post, I describe my criticisms of the converters that existed prior to July 2018, and introduce [syllabics.app][]—a syllabics converter that I developed in reaction to the former converters.
+The Western Cree languages—**Plains Cree**, **Woods Cree**, and **Swampy Cree**—are written using two systems: one with letters borrowed from the
+English alphabet, in a system known as the **standard Roman orthography** (**SRO**), and **ᓀᐦᐃᔭᐏ ᒐᐦᑭᐯᐦᐃᑲᓇ** (Cree syllabics). SRO is relatively easy to type on a modern computer, but syllabics are more difficult, because of the lack of a well-established syllabics input layout. It's easier to just use a **converter** which, given Cree text in SRO, produces Cree text in syllabics. In this post, I describe my criticisms of the converters that existed prior to July 2018, and introduce [syllabics.app][]—a syllabics converter that I developed in reaction to the former converters.
 
 [syllabics.app]: https://syllabics.app/
 
