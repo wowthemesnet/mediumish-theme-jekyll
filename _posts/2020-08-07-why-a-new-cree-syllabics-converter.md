@@ -5,7 +5,7 @@ author: _eddieantonio
 categories: [ Blog ]
 tags: [ basic ]
 image: assets/images/why-cree-syllabics--header.png
-description: "How do existing converters fall short, and how have I decided to fix it?"
+description: "How existing converters fall short, and how I have addressed these shortcomings."
 featured: false
 hidden: false
 ---
