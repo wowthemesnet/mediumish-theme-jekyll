@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  Why I made yet another Cree syllabics converter
-author: eddie
+author: _eddieantonio
 categories: [ Blog ]
 tags: [ basic ]
 image: assets/images/why-cree-syllabics--header.png
