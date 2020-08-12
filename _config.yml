@@ -1,9 +1,9 @@
 # Site
-name: "Greenage"
-title: "Greenage"
-description: "Community Webpage of Greenage"
-logo: 'assets/images/greenagelogo.png'
-favicon: 'assets/images/greenagelogo.png'
+name: "Mediumish"
+title: "Mediumish"
+description: "Our Webpage"
+logo: 'assets/images/logo.png'
+favicon: 'assets/images/logo.png'
 baseurl: ''
 google_analytics: 'UA-46278016-1'
 disqus: 'demowebsite'
