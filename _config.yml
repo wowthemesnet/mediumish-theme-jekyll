@@ -1,7 +1,7 @@
 # Site
 name: "GREENAGE"
 title: "GREENAGE"
-description: "Public Webpage for Greenage Community"
+description: "Public Webpage of Greenage Community"
 logo: 'assets/images/logo.png'
 favicon: 'assets/images/logo.png'
 baseurl: ''
