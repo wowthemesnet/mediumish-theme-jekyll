@@ -6,6 +6,7 @@ categories: [Info]
 image: assets/images/12.jpg
 featured: true
 hidden: true
+comments: false
 ---
 
 We will be glad to have you here in our community ! This is a short note to help you get off to a smooth start. 
