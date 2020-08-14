@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Are you moving in to Greenage?"
-author: sal
+author: Admin
 categories: [Info]
 image: assets/images/12.jpg
 featured: true
