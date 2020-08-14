@@ -3,7 +3,7 @@ layout: post
 title:  "Are you moving in to Greenage?"
 author: Admin
 categories: [Info]
-image: assets/images/12.jpg
+image: assets/images/greenagepic1.png
 featured: true
 hidden: true
 comments: false
