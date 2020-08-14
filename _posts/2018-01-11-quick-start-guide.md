@@ -1,8 +1,8 @@
 ---
 layout: post
-title:  "Let's test spoilers"
+title:  "About Greenage"
 author: sal
-categories: [ Jekyll, tutorial ]
+categories: [Info]
 image: assets/images/12.jpg
 featured: true
 hidden: true
