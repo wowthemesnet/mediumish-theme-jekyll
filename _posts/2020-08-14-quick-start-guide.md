@@ -8,7 +8,7 @@ featured: true
 hidden: true
 ---
 
-We will be glad to have you here in our community ! 
+We will be glad to have you here in our community ! This is a short note to help you get off to a smooth start. 
 
 #### Complete the Move-in process
 You must complete the move-in process at least one day before you plan to move-in to Greenage
