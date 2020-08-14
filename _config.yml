@@ -4,7 +4,7 @@ title: "GREENAGE"
 description: "Greenage Community Portal"
 logo: 'assets/images/logo.png'
 favicon: 'assets/images/logo.png'
-baseurl: ''
+baseurl: 'https://greenageinfo.github.io/'
 google_analytics: 'UA-46278016-1'
 disqus: ''
 mailchimp-list: ''
