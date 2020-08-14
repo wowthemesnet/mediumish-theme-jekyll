@@ -31,7 +31,7 @@ There are 2BHK, 3BHK and 4BHK (Bedroom, Hall, Kitchen) flats with varying sizes 
 
 <p>Salarpuria Greenage, Hosur Main Road, Bommanahalli, Bengaluru - 560068</p>
 
-<a target="_blank" href="https://www.wowthemes.net/donate/" class="btn btn-danger">Buy me a coffee</a> <a target="_blank" href="https://bootstrapstarter.com/bootstrap-templates/template-mediumish-bootstrap-jekyll/" class="btn btn-warning">Documentation</a>
+<a target="_blank" href="https://www.wowthemes.net/donate/" class="btn btn-danger">Find us on Google Maps</a> 
 
 </div>
 </div>
