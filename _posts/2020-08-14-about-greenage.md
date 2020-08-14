@@ -3,7 +3,7 @@ layout: post
 title:  "About Greenage"
 author: Admin
 categories: [Info]
-image: assets/images/greenagepic2.png
+image: assets/images/greenagepic2.jpg
 featured: true
 hidden: true
 comments: false
