@@ -7,7 +7,7 @@ favicon: 'assets/images/logo.png'
 baseurl: ''
 google_analytics: 'UA-46278016-1'
 disqus: ''
-mailchimp-list: "disabled"
+mailchimp-list: ''
 include: ["_pages"]
 permalink: /:title/
 
