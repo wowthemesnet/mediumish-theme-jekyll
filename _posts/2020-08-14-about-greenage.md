@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Are you moving in to Greenage?"
+title:  "About Greenage"
 author: Admin
 categories: [Info]
 image: assets/images/11.jpg
