@@ -25,7 +25,7 @@ There are 2BHK, 3BHK and 4BHK (Bedroom, Hall, Kitchen) flats with varying sizes 
  
 <h5>Location</h5>
 
-<p>Salarpuria Greenage
+<p>Salarpuria Greenage,
 7 Hosur Main Road, Next to Oxford College,
 Bommanahalli, Bengaluru - 560068</p>
 
