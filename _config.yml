@@ -2,8 +2,8 @@
 name: "GREENAGE"
 title: "GREENAGE"
 description: "Greenage Community Portal"
-logo: 'assets/images/greenagelogo.png'
-favicon: 'assets/images/greenagelogo.png'
+logo: 'assets/images/greenage-logo.png'
+favicon: 'assets/images/greenage-logo.png'
 baseurl: ''
 google_analytics: 'UA-46278016-1'
 disqus: 'demowebsite'
