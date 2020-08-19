@@ -9,39 +9,33 @@ datatable: true
 <div class="col-md-8 pr-5">
 
 <p> This page containts the contact numbers of helpdesk,facilities, security etc. for quick reference. Few numbers are not added here on public web page due to data security requirements. You can find them in myGate app under the list of documents. </p>
-<table id="sampleTable" class="display">
+<table id="contacts-table" class="display">
    <thead>
       <tr>
-         <th>Parameter</th>
-         <th>Description</th>
-         <th>Type</th>
-         <th>Default Value</th>
+         <th>Unit/th>
+         <th>Intercom</th>
+         <th>Contact #1</th>
+         <th>Contact #2</th>
       </tr>
    </thead>
    <tbody>
       <tr>
-         <td>Parameter 1</td>
-         <td>Sample description</td>
-         <td>Sample type</td>
-         <td>Sample default value</td>
-      </tr>
-      <tr>
-         <td>Parameter 2</td>
-         <td>Sample description</td>
-         <td>Sample type</td>
-         <td>Sample default value</td>
+         <td>Help Desk</td>
+         <td>22225</td>
+         <td>9620218358</td>
+         <td></td>
       </tr>
     <tr>
-       <td>Parameter 3</td>
-       <td>Sample description</td>
-       <td>Sample type</td>
-       <td>Sample default value</td>
+       <td>Main Gate Security</td>
+       <td>9</td>
+       <td>9108014226</td>
+       <td></td>
     </tr>
       <tr>
-         <td>Parameter 4</td>
-         <td>Sample description</td>
-         <td>Sample type</td>
-         <td>Sample default value</td>
+         <td>GOA Office</td>
+         <td>111120</td>
+         <td>080-40984649</td>
+         <td></td>
       </tr>
    </tbody>
 </table>
