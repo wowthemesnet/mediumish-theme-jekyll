@@ -20,7 +20,6 @@ GOA Office		       | 111120       | 080-40984649   |
 
 
 <div class="datatable-end"></div>
-
  
 </div>
 
