@@ -3,7 +3,7 @@ layout: page
 title: Contacts
 permalink: /contacts
 comments: false
-datatable:true
+datatable: true
 ---
 <div class="row justify-content-between">
 <div class="col-md-8 pr-5">
@@ -36,4 +36,3 @@ GOA Office		       | 111120       | 080-40984649   |
 </div>
 </div>
 </div>
-
