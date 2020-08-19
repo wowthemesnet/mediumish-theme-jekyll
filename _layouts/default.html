@@ -182,6 +182,18 @@ ga('send', 'pageview');
 
 <script src="{{ site.baseurl }}/assets/js/mediumish.js"></script>
 
+<script>
+$(document).ready(function(){
+
+    $('table.display').DataTable( {
+        paging: true,
+        stateSave: true,
+        searching: true
+    }
+        );
+});
+</script>
+
 {% if site.lazyimages == "enabled" %}
 <script src="{{ site.baseurl }}/assets/js/lazyload.js"></script>
 {% endif %}
