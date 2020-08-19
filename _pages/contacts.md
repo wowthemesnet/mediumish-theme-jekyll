@@ -9,16 +9,46 @@ datatable: true
 <div class="col-md-8 pr-5">
 
 <p> This page containts the contact numbers of helpdesk,facilities, security etc. for quick reference. Few numbers are not added here on public web page due to data security requirements. You can find them in myGate app under the list of documents. </p>
-
-<div class="datatable-begin"></div>
-
-Unit                 | Intercom     | Contact#1      | Contact#2     
--------------------- | ------------ | -------------- | --------------
-Helpdesk             | 222225       | 9620218358     | 			
-Main Gate Security   | 9            | 9108014226     | 
-GOA Office		         | 111120       | 080-40984649   | 
-
-<div class="datatable-end"></div>
+<table id="sampleTable" class="display">
+   <thead>
+      <tr>
+         <th>Parameter</th>
+         <th>Description</th>
+         <th>Type</th>
+         <th>Default Value</th>
+      </tr>
+   </thead>
+   <tbody>
+      <tr>
+         <td>Parameter 1</td>
+         <td>Sample description
+         </td>
+         <td>Sample type</td>
+         <td>Sample default value</td>
+      </tr>
+      <tr>
+         <td>Parameter 2</td>
+         <td>Sample description
+         </td>
+         <td>Sample type</td>
+         <td>Sample default value</td>
+      </tr>
+    <tr>
+       <td>Parameter 3</td>
+       <td>Sample description
+       </td>
+       <td>Sample type</td>
+       <td>Sample default value</td>
+    </tr>
+      <tr>
+         <td>Parameter 4</td>
+         <td>Sample description
+         </td>
+         <td>Sample type</td>
+         <td>Sample default value</td>
+      </tr>
+   </tbody>
+</table>
  
 </div>
 
