@@ -10,7 +10,7 @@ datatable: true
 
 <p> This page containts the contact numbers of helpdesk,facilities, security etc. for quick reference. Few numbers are not added here on public web page due to data security requirements. You can find them in myGate app under the list of documents. </p>
 
-<table id="contacts-table" class="display"style="width: 100%">
+<table id="contacts-table" class="display" style="width:100%">
    <thead>
       <tr>
          <th>Unit</th>
