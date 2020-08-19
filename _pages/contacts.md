@@ -12,7 +12,7 @@ datatable: true
 <table id="contacts-table" class="display">
    <thead>
       <tr>
-         <th>Unit/th>
+         <th>Unit</th>
          <th>Intercom</th>
          <th>Contact #1</th>
          <th>Contact #2</th>
