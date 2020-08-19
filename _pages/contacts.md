@@ -12,12 +12,11 @@ datatable: true
 
 <div class="datatable-begin"></div>
 
-                     | Intercom     | Contact#1      | Contact#2     
+Unit                 | Intercom     | Contact#1      | Contact#2     
 -------------------- | ------------ | -------------- | --------------
 Helpdesk             | 222225       | 9620218358     | 			
 Main Gate Security   | 9            | 9108014226     | 
 GOA Office		       | 111120       | 080-40984649   | 
-
 
 <div class="datatable-end"></div>
  
