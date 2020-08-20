@@ -22,10 +22,10 @@ datatable: true
    <tbody>
       {% for name in site.data.contacts %}
       <tr>
-         <td>name.Unit</td>
-         <td>name.Intercom</td>
-         <td>name.Contact1</td>
-         <td>name.Contact2</td>
+         <td>{{ name.Unit }}</td>
+         <td>{{ name.Intercom }}</td>
+         <td>{{ name.Contact1 }}</td>
+         <td>{{ name.Contact2 }}</td>
       </tr>
       {% endfor %}
    </tbody>
