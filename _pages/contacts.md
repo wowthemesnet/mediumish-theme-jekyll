@@ -20,24 +20,14 @@ datatable: true
       </tr>
    </thead>
    <tbody>
+      {% for name in site.data.contacts %}
       <tr>
-         <td>Help Desk</td>
-         <td>22225</td>
-         <td>9620218358</td>
-         <td></td>
+         <td>name.Unit</td>
+         <td>name.Intercom</td>
+         <td>name.Contact1</td>
+         <td>name.Contact2</td>
       </tr>
-    <tr>
-       <td>Main Gate Security</td>
-       <td>9</td>
-       <td>9108014226</td>
-       <td></td>
-    </tr>
-      <tr>
-         <td>GOA Office</td>
-         <td>111120</td>
-         <td>080-40984649</td>
-         <td></td>
-      </tr>
+      {% endfor %}
    </tbody>
 </table>
  
