@@ -10,7 +10,7 @@ datatable: true
 
 <p> This page containts the contact numbers of helpdesk,facilities, security etc. for quick reference. Few numbers are not added here on public web page due to data security requirements. You can find them in myGate app under the list of documents. </p>
 
-<table id="contacts-table" class="display" style="width:100%">
+<table id="example" class="table table-striped table-bordered display" style="width:100%; font-size:0.8em">
    <thead>
       <tr>
          <th>Unit</th>
@@ -20,24 +20,14 @@ datatable: true
       </tr>
    </thead>
    <tbody>
+      {% for contact in site.data.contacts %}
       <tr>
-         <td>Help Desk</td>
-         <td>22225</td>
-         <td>9620218358</td>
-         <td></td>
+         <td>{{ contact.Unit }}</td>
+         <td>{{ contact.Intercom }}</td>
+         <td>{{ contact.Contact1 }}</td>
+         <td>{{ contact.Contact2 }}</td>
       </tr>
-    <tr>
-       <td>Main Gate Security</td>
-       <td>9</td>
-       <td>9108014226</td>
-       <td></td>
-    </tr>
-      <tr>
-         <td>GOA Office</td>
-         <td>111120</td>
-         <td>080-40984649</td>
-         <td></td>
-      </tr>
+      {% endfor %}
    </tbody>
 </table>
  
