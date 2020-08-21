@@ -15,8 +15,8 @@ datatable: true
       <tr>
          <th>Unit</th>
          <th>Intercom</th>
-         <th>Contact #1</th>
-         <th>Contact #2</th>
+         <th>Contact#1</th>
+         <th>Contact#2</th>
       </tr>
    </thead>
    <tbody>
