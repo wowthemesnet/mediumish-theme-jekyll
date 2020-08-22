@@ -9,7 +9,7 @@ hidden: true
 comments: false
 ---
 
-We will be glad to have you here in our community ! This is a short note to help you get off to a smooth start. 
+<p>We will be glad to have you here in our community ! This is a short note to help you get off to a smooth start. You can access all the key documents needed for your move-in and to settle in Greenage <a target="_blank" href="https://bit.ly/greenage-info">here</a>.</p>
 
 #### Complete the Move-in process
 You must complete the move-in process at least one day before you plan to move-in to Greenage
@@ -29,6 +29,6 @@ Piped gas connection will be available when you move-in, If not, contact GOA off
 #### Join the Community Forums 
 Join our forums to make your integration into the community easier. Head to the community forum on Apnacomplex to take part in the lively discussions and get the important updates. All the blocks have Whatsapp/Telegram groups. Join them to get to know your neighbours better.
 
-<p>Please, access key information about Greenage <a target="_blank" href="https://bit.ly/greenage-info">here</a>.</p>
+
 
 ```

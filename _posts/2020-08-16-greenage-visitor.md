@@ -22,6 +22,8 @@ comments: false
 <p>The speed limit across Greenage is 20Km per hour. Please ensure you drive within the speed limits.</p>
 
 <p>There are designated visitor parking areas on the ground level where you can park your vehicle.  All the other areas, not specified as parking areas, are designated as no-parking zones. Vehicles parked in no-parking zones will be clamped and penalty will be levied.</p>
+
+<p class="mb-5"><img class="shadow-lg" src="{{site.baseurl}}/assets/images/greenage-parking.jpg" alt="Greenage Visitor Parking" /></p>
  
 <p>All visitor vehicles are expected to leave on same day. If you are staying in Greenage beyond a day, please ask your host to contact association office.</p>
 
