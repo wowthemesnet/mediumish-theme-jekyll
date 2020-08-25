@@ -280,6 +280,7 @@ span.post-read-more a:hover {
 
 .mediumnavigation .navbar-brand {
     font-weight: 500;
+    font-family: Amatic SC;
 }
 
 .mediumnavigation .dropdown-menu {
@@ -305,7 +306,7 @@ span.post-read-more a:hover {
 }
 
 .mainheading h1.sitetitle {
-    font-family: Righteous;
+    font-family: inherit;
 }
 
 .mainheading h1.posttitle {
@@ -898,4 +899,17 @@ iframe {
 .lazyimg[data-srcset] {
     opacity: 0;
     transition: opacity .25s;
+}
+
+figcaption {
+    margin: 0.5rem;
+    font-size: smaller;
+}
+figcaption > cite::before {
+    content: "\A";
+    white-space: pre-line;
+}
+
+.footnotes {
+    font-size: smaller;
 }

@@ -8,6 +8,10 @@
 	display:inline;
 }
 
+.card-title {
+	margin-top: 15px;
+}
+
 // Import partials from `sass_dir` (defaults to `_sass`)
 @import
 	"syntax",

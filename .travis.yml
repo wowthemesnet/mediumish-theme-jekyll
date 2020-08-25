@@ -1,0 +1,31 @@
+language: ruby
+cache: bundler
+sudo: false
+before_install:
+  - gem install bundler -v 2.1.2
+branches:
+  only:
+  - master
+script:
+  - JEKYLL_ENV=production bundle install
+  - JEKYLL_ENV=production bundle exec jekyll build --destination docs
+  - echo "blog.mothertongues.org" >> docs/CNAME
+  - bundle exec rake test
+env:
+  global:
+  - NOKOGIRI_USE_SYSTEM_LIBRARIES=true # speeds up installation of html-proofer
+addons:
+  apt:
+    packages:
+    - libcurl4-openssl-dev # required to avoid SSL errors
+deploy:
+  provider: pages
+  local_dir: ./docs
+  target-branch: gh-pages
+  email: deploy@travis-ci.org
+  name: Deployment Bot
+  skip-cleanup: true
+  github-token: $GITHUB_TOKEN
+  keep-history: true
+  on:
+    branch: master

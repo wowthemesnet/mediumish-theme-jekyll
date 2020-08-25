@@ -1,35 +1,61 @@
 # Site
-name: "Mediumish"
-title: "Mediumish"
-description: "Jekyll template, Medium styled, free for bloggers."
-logo: 'assets/images/logo.png'
-favicon: 'assets/images/logo.png'
-baseurl: /mediumish-theme-jekyll
-google_analytics: 'UA-46278016-1'
-disqus: 'demowebsite'
-mailchimp-list: 'https://wowthemes.us11.list-manage.com/subscribe/post?u=8aeb20a530e124561927d3bd8&amp;id=8c3d2d214b'
+name: "Mother Tongues Blog"
+title: "Mother Tongues Blog"
+description: "Smashing the lore of language technology!"
+logo: 'assets/images/logo_no_text.png'
+favicon: 'assets/images/favicon.ico'
+url: https://blog.mothertongues.org
+baseurl: ''
+google_analytics: 'UA-100872710-18'
+disqus: 'mothertongues'
+mailchimp-list: 'https://mailchi.mp/b87b1fbde236/mothertongues'
 include: ["_pages"]
 permalink: /:title/
 
+# Assets
+assets:
+  defaults:
+    integrity:
+      css: true
+
 # Authors
 authors:
-  sal:
-    name: Sal
-    display_name: Sal
-    gravatar: e56154546cf4be74e393c62d1ae9f9d4
-    email: wowthemesnet@gmail.com
-    web: https://www.wowthemes.net
-    twitter: https://twitter.com/wowthemesnet
-    description: "Author of Mediumish, a Bootstrap Medium styled template available for WordPress, HTML, Ghost and Jekyll. You are currently previewing Jekyll template demo."
-  john:
-    name: John
-    display_name: John    
-    avatar: 'assets/images/avatar.png'
-    gravatar: b1cc14991db7a456fcd761680bbc8f81
-    email: wowthemesnet@gmail.com
-    web: https://www.wowthemes.net
-    twitter: https://twitter.com/wowthemesnet
-    description: "This is the author box. Write a short description of the author here. You are currently previewing Mediumish demo, a Jekyll template compatible with Github pages."
+  # Note: jekyll-seo-tag expects these keys to be your Twitter handle.
+  # If you want your posts to be associated with your Twitter handle,
+  # make sure your short name here to match your @: 
+  # See: https://github.com/jekyll/jekyll-seo-tag/blob/master/docs/advanced-usage.md#author-information
+  aidan:
+    name: Aidan
+    display_name: Aidan
+    gravatar: 7623fd3eeb0acbe1084fecc20c3093ae
+    email: hello@aidanpine.ca
+    web: https://aidanpine.ca
+    twitter: https://twitter.com/aidanpine
+    description: "Lead developer of Mother Tongues."
+  _eddieantonio:
+    name: Eddie
+    display_name: Eddie
+    gravatar: 7183e460abfb84d668e408c32631abd4
+    email: easantos+mothertongues@ualberta.ca
+    web: https://eddieantonio.ca/
+    twitter: https://twitter.com/_eddieantonio
+    description: "Software developer and Unicode nerd"
+  delaney:
+    name: Delaney
+    display_name: Delaney
+    gravatar: 61082587e1c6a9ad625bb21be29142d5
+    email: dlothian@ualberta.ca
+    web: 
+    twitter: 
+    description: "âpihtawikosisâniskwew and ILT Developer"
+  fineen:
+    name: Fineen
+    display_name: Fineen
+    gravatar: 1a0dea18a388e55c10684cf8055d1607
+    email: fineen.davis@gmail.com
+    web: 
+    twitter: 
+    description: "Computational linguist"
 
 # Plugins
 plugins:
@@ -50,7 +76,13 @@ jekyll-archives:
 # Pagination 
 paginate: 6
 paginate_path: /page:num/
-    
+
+# SEO
+twitter:
+  # the "site's" username
+  username: AidanPine
+  card: summary_large_image
+
 # Other
 markdown: kramdown
 
@@ -63,10 +95,10 @@ kramdown:
 
 # Adsense (change to "enabled" to activate, also your client id and ad slot. Create a new ad unit from your Adsense account to get the slot.)
 adsense: "disabled"
-adsense-data-ad-client: "ca-pub-3412143450191416"
-adsense-data-ad-slot: "1363087678"
+# adsense-data-ad-client: "ca-pub-3412143450191416"
+# adsense-data-ad-slot: "1363087678"
 
 # Lazy Images ("enabled" or "disabled")
 lazyimages: "disabled"
 
-exclude: [changelog.md, LICENSE.txt, README.md, Gemfile, Gemfile.lock]
+exclude: [changelog.md, LICENSE.txt, README.md, Gemfile, Gemfile.lock, vendor]
