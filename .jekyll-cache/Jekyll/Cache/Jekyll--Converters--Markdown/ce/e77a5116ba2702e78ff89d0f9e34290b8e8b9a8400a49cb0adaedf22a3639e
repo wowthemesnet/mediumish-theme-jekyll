@@ -1,0 +1,279 @@
+I"à<div class="row justify-content-between">
+<div class="col-md-8 pr-5">
+
+<p> This page containts the contact numbers of helpdesk,facilities, security etc. for quick reference. Few numbers are not added here on public web page due to data security requirements. You can find them in myGate app under the list of documents. </p>
+
+<table id="example" class="table table-striped table-bordered display" style="width:100%; font-size:0.8em">
+   <thead>
+      <tr>
+         <th>Unit</th>
+         <th>Intercom</th>
+         <th>Contact#1</th>
+         <th>Contact#2</th>
+      </tr>
+   </thead>
+   <tbody>
+      
+      <tr>
+         <td>Help Desk</td>
+         <td>222225</td>
+         <td>9620218358</td>
+         <td></td>
+      </tr>
+      
+      <tr>
+         <td>Main Gate Security</td>
+         <td>9</td>
+         <td>9108014226</td>
+         <td></td>
+      </tr>
+      
+      <tr>
+         <td>GOA Office</td>
+         <td>111120</td>
+         <td>080-40984649</td>
+         <td></td>
+      </tr>
+      
+      <tr>
+         <td>Alpine Block Security</td>
+         <td>111113</td>
+         <td></td>
+         <td></td>
+      </tr>
+      
+      <tr>
+         <td>Birch Block Secuirty</td>
+         <td>222223</td>
+         <td></td>
+         <td></td>
+      </tr>
+      
+      <tr>
+         <td>Cedar Block Security</td>
+         <td>500001</td>
+         <td></td>
+         <td></td>
+      </tr>
+      
+      <tr>
+         <td>Deodar Block Security</td>
+         <td>600001</td>
+         <td></td>
+         <td></td>
+      </tr>
+      
+      <tr>
+         <td>Ebony Block Security</td>
+         <td>711111</td>
+         <td></td>
+         <td></td>
+      </tr>
+      
+      <tr>
+         <td>Ginger Block Security</td>
+         <td>715555</td>
+         <td></td>
+         <td></td>
+      </tr>
+      
+      <tr>
+         <td>Hibiscus Block A Wing Security</td>
+         <td>713333</td>
+         <td></td>
+         <td></td>
+      </tr>
+      
+      <tr>
+         <td>Hibiscus Block B Wing Security</td>
+         <td>714444</td>
+         <td></td>
+         <td></td>
+      </tr>
+      
+      <tr>
+         <td>Juniper Block A Wing Security</td>
+         <td>333331</td>
+         <td></td>
+         <td></td>
+      </tr>
+      
+      <tr>
+         <td>Juniper Block B Wing Security</td>
+         <td>333332</td>
+         <td></td>
+         <td></td>
+      </tr>
+      
+      <tr>
+         <td>Juniper Block C Wing Security</td>
+         <td>333333</td>
+         <td></td>
+         <td></td>
+      </tr>
+      
+      <tr>
+         <td>Oak Block A Wing Security</td>
+         <td>444443</td>
+         <td></td>
+         <td></td>
+      </tr>
+      
+      <tr>
+         <td>Oak Block B Wing Security</td>
+         <td>444444</td>
+         <td></td>
+         <td></td>
+      </tr>
+      
+      <tr>
+         <td>Oak Block C Wing Security</td>
+         <td>444445</td>
+         <td></td>
+         <td></td>
+      </tr>
+      
+      <tr>
+         <td>BESCOM (Kudlu Gate)</td>
+         <td></td>
+         <td>1912</td>
+         <td></td>
+      </tr>
+      
+      <tr>
+         <td>TATA SKY DTH &amp; Broad Band</td>
+         <td></td>
+         <td>9148669999</td>
+         <td></td>
+      </tr>
+      
+      <tr>
+         <td>ACT Broad Band</td>
+         <td></td>
+         <td>8884718210</td>
+         <td></td>
+      </tr>
+      
+      <tr>
+         <td>BSNL Broad Band</td>
+         <td></td>
+         <td>080-22727272</td>
+         <td></td>
+      </tr>
+      
+      <tr>
+         <td>AIRTEL Broad Band</td>
+         <td></td>
+         <td>9632983382</td>
+         <td></td>
+      </tr>
+      
+      <tr>
+         <td>VIDEOCON DTH</td>
+         <td></td>
+         <td>9115691156</td>
+         <td></td>
+      </tr>
+      
+      <tr>
+         <td>FIRE/POLICE/AMBULANCE</td>
+         <td></td>
+         <td>112</td>
+         <td></td>
+      </tr>
+      
+      <tr>
+         <td>Police Station (Bommanahalli)</td>
+         <td></td>
+         <td>080-22942269</td>
+         <td></td>
+      </tr>
+      
+      <tr>
+         <td>Traffic Police Station (Madiwala)</td>
+         <td></td>
+         <td>080-22943116</td>
+         <td></td>
+      </tr>
+      
+      <tr>
+         <td>Fire Brigade (Electronic city)</td>
+         <td></td>
+         <td>080-22971577</td>
+         <td></td>
+      </tr>
+      
+      <tr>
+         <td>Fire Brigade (Jayanagar)</td>
+         <td></td>
+         <td>080-22971538</td>
+         <td></td>
+      </tr>
+      
+      <tr>
+         <td>Prashant Hospital (Bommanahalli)</td>
+         <td></td>
+         <td>080-33055402</td>
+         <td></td>
+      </tr>
+      
+      <tr>
+         <td>Apollo Clinic (HSR)</td>
+         <td></td>
+         <td>080-25724235</td>
+         <td></td>
+      </tr>
+      
+      <tr>
+         <td>Narayana Multispeciality Hospital (HSR Layout)</td>
+         <td></td>
+         <td>080-71112300</td>
+         <td></td>
+      </tr>
+      
+      <tr>
+         <td>St. Johns Hospital (Sarjapur Road)</td>
+         <td></td>
+         <td>080-22065008</td>
+         <td></td>
+      </tr>
+      
+      <tr>
+         <td>Apollo Hospital (Bannergatta Road)</td>
+         <td></td>
+         <td>080-41463151</td>
+         <td></td>
+      </tr>
+      
+      <tr>
+         <td>Fortis Hospital (Bannergatta Road)</td>
+         <td></td>
+         <td>080-66214444</td>
+         <td></td>
+      </tr>
+      
+      <tr>
+         <td>Manipal Hospital (Jayanagar)</td>
+         <td></td>
+         <td>080-33081526</td>
+         <td></td>
+      </tr>
+      
+   </tbody>
+</table>
+ 
+</div>
+<p></p>
+<div class="col-md-4">
+
+<div class="sticky-top sticky-top-80">
+<h5>Greenage Address</h5>
+
+<p>Salarpuria Greenage, 7 Hosur Main Road, Next to Oxford College, Bommanahalli, Bengaluru - 560068</p>
+
+<a target="_blank" href="https://goo.gl/maps/DJB7JAjHRAXRLe3W8" class="btn btn-danger">Find us on Google Maps</a> 
+
+</div>
+</div>
+</div>
+:ET

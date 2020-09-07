@@ -4,7 +4,7 @@ title: "GREENAGE"
 description: "Greenage Community Portal"
 logo: 'assets/images/logo.png'
 favicon: 'assets/images/logo.png'
-baseurl: 'https://greenageinfo.github.io'
+baseurl: ''
 google_analytics: 'UA-46278016-1'
 disqus: ''
 mailchimp-list: ''
@@ -40,7 +40,7 @@ jekyll-archives:
     category: '/category/:name/'
     
 # Pagination 
-paginate: 6
+paginate: 12
 paginate_path: /page:num/
     
 # Other
