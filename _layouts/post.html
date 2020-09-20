@@ -10,15 +10,10 @@ post_class: post-template
 <div class="container">
     <div class="row">
 
-        <!-- Post Share -->
-        <div class="col-md-2 pl-0">
-            {% include share.html %}
-        </div>
-
         <!-- Post -->
-        {% assign author = site.authors[page.author] %}
-
-        <div class="col-md-9 flex-first flex-md-unordered">
+        {% assign author_key = page.author | downcase %}
+        {% assign author = site.data.authors[author_key] %}
+        <div class="col-md-12 flex-first flex-md-unordered">
             <div class="mainheading">
 
                 <!-- Author Box -->
@@ -69,13 +64,20 @@ post_class: post-template
                         <p><em>{{page.beforetoc}}</em></p>
                     {% endif %}
                     <div class="toc mt-4 mb-4 lead">
-                        <h3 class="font-weight-bold">Summary</h3>
+                        <!-- <h3 class="font-weight-bold">Summary</h3> -->
                         {% include toc.html html=content %}
                     </div>
                 {% endif %}
                 <!-- End Toc -->
                 {{content}}
             </div>
+
+            <!-- Post Share -->
+            <div class="col-md-2 pl-0">
+                {% include share.html %}
+            </div>
+
+
 
             <!-- Rating -->
             {% if page.rating %}
@@ -143,6 +145,7 @@ post_class: post-template
 <!-- Begin Comments
 ================================================== -->
 {% if page.comments != false %}
+{% if site.disqus %}
     <div class="container">
         <div id="comments" class="row justify-content-center mb-5">
             <div class="col-md-8">
@@ -150,6 +153,7 @@ post_class: post-template
             </div>
         </div>
     </div>
+{% endif %}
 {% endif %}
 <!--End Comments
 ================================================== -->
