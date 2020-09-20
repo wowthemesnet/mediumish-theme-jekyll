@@ -12,6 +12,10 @@ toc: true
 beforetoc: "Make 'processed' cheese, just like the 'big cheese' factories do. It's still cheese, just in a much more fun form"
 ---
 
+Can be cooked on a gas hob, or open fire embers
+
+4 serves
+
 ## Ingredients
 
 * 100 g grated or crumbled cheese (~1 cup)
