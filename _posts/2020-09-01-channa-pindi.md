@@ -5,10 +5,14 @@ author: kaukapakapa
 categories: [ gf, vegan, vegetarian ]
 tags: [ chickpeas, tomatoes ]
 image: assets/images/2020/2020-09-01-channa-pindi-1.jpg
-featured: true
+featured: false
 hidden: false
 rating: 5
 ---
+
+Can be cooked on a gas hob, or open fire embers
+
+6 serves
 
 ## Ingredients
 
