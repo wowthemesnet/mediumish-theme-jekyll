@@ -54,7 +54,4 @@ kramdown:
     block:
       line_numbers: true
 
-# Lazy Images ("enabled" or "disabled")
-lazyimages: "enabled"
-
 exclude: [ docker-compose.yml, Gemfile, Gemfile.lock, licenses/*,]
