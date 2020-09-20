@@ -56,24 +56,24 @@ Making your own Sodium Citrate is simple chemistry. By molecular weight we mix t
 ### The components
 
 Sodium Bicarbonate is normally called Baking Soda, and is commonly used in cooking. Baking Powder consists of about 50% Baking Soda
-![Sodium Bicarbonate](assets/images/2020/2020-09-01-molecular-cheese-sauce-2.jpg){: style="float: right"}
+![Sodium Bicarbonate](/assets/images/2020/2020-09-01-molecular-cheese-sauce-2.jpg){: style="float: right"}
 
 The chemical formula is NaHCO3. This means one atom of Sodium (Na), one atom of Hydrogen (H), one atom of Carbon (C), and three atoms of Oxygen (O) combined. Sodium is a soft silvery metal, what is violently reactive in it pure form. You normally consume about 5 g per day of it in the form of common table salt, chemically named Sodium Chloride (NaCl)
 
 Citric Acid is the main ingredient in Citrus fruits. Lemons have the most, Limes not far behind. Citric Acid is the sour taste you get when eating or drinking a lemon
-![Citric Acid](assets/images/2020/2020-09-01-molecular-cheese-sauce-3.jpg){: style="float: right"}
+![Citric Acid](/assets/images/2020/2020-09-01-molecular-cheese-sauce-3.jpg){: style="float: right"}
 
 Its chemical formula is C6H8O7. This means six atoms of Carbon (C), eight atoms of Hydrogen (H), and seven atoms of Oxygen (O). Carbon, Hydrogen, and Oxygen are the main components for the human body. H2O is the water you drink, and sugar or carbohydrate is a form of C6H12O6 or C8H10O5
 
 ### The Formula
 
 When we mix three parts of Sodium Bicarbonate, with one part of Citric Acid, we get one part of Sodium Citrate (Na3C6H5O7), three parts of water (H2O), and three parts of Carbon Dioxide (CO2) gas, the same gas in your favourite fizzy drinks
-![Sodium Citrate](assets/images/2020/2020-09-01-molecular-cheese-sauce-4.jpg){: style="float: right"}
+![Sodium Citrate](/assets/images/2020/2020-09-01-molecular-cheese-sauce-4.jpg){: style="float: right"}
 
 
 We can check the balance of the chemical reaction with this table
 
-![balance of the chemical reaction](assets/images/2020/2020-09-01-molecular-cheese-sauce-5.jpg)
+![balance of the chemical reaction](/assets/images/2020/2020-09-01-molecular-cheese-sauce-5.jpg)
 
 The left and right hand sides are equal for each component, so it’s a valid reaction. E.g. for Oxygen; Sodium Bicarbonate x 3 + Citric Acid has 16 atoms. Sodium Citrate + Water x 3 + Carbon Dioxide x 3 = 16 atoms. This is balanced, and matter is not created or destroyed, just re-mixed
 
@@ -90,7 +90,7 @@ What is the atomic weight? It’s the average count the atoms internal parts (pr
 
 We then multiply that out by the molecules, we get
 
-![multiply that out by the molecules](assets/images/2020/2020-09-01-molecular-cheese-sauce-6.jpg)
+![multiply that out by the molecules](/assets/images/2020/2020-09-01-molecular-cheese-sauce-6.jpg)
  
 We balance by adding up the left and right hand side, and check if they are equal
 
