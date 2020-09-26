@@ -6,8 +6,7 @@ baseurl:
 include: ["_pages"]
 permalink: /:title/
 
-logo: 'assets/images/logo.png'
-favicon: 'assets/images/logo.png'
+logo: 'assets/images/dsclogo.png'
 google_analytics: 'UA-46278016-1'
 disqus: 'demowebsite'
 
