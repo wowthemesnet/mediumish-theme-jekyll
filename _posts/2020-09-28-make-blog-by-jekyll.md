@@ -80,6 +80,11 @@ Repository 오른쪽 위의 Star을 한번 클릭해주고 Fork 해옵니다. (~
 Fork 해온 repository의 setting으로 들어가 이름을 username.github.io로 변경해줍니다.
 
 아래의 사진의 mediumish-theme-jekyll 을 `username`.github.io로 변경하고 Rename 버튼을 누릅니다.
+
+(`username`.github.io 형식으로 repository를 생성하면 github이 이를 웹사이트로 인식하여
+
+https://`username`.github.io 로 url 접속 시 index.html 또는 index.md를 웹 페이지로 출력해줍니다.)
+
 ![Capture](../assets/images/capture-change-repo-name.png)
 
 이제 해당 repository를 clone 해오면 기본 준비가 끝납니다!
@@ -144,4 +149,15 @@ jekyll serve
 위의 주석에서 Server address 로 접속해보시면 잘 나오는 것을 알 수 있습니다!
 ![Capture](../assets/images/capture-jekyll-success.png)
 
-**잘 보시면 url path도 그렇고 바꿔야할게 많은데요, 다음 포스팅에서는 블로그를 Customizing 하는 방법을 다루겠습니다!**
+이제 한번 자신의 웹사이트에 접속해 봅시다. `username`.github.io 로 접속해보시면 됩니다. (저의 경우 https://enoch-kim.github.io)
+
+그럼 다음과 같이 결과가?!
+![Capture](../assets/images/capture-jekyll-fail.png)
+
+이렇게 되는 이유는 _config.yml 파일에서 base_url이 /mediumish-jekyll-themes로 되어있기 때문입니다.
+
+repository의 root 디렉토리가 index.html과 동일한 위치이고, /assets 파일은 root 디렉토리에 있으나
+
+/mediumish-jekyll-themes/assets 으로 파일 경로를 불러와서 이렇게 되는 것입니다.
+
+**바꿔야할게 많은데요, 다음 포스팅에서는 이를 수정하면서 블로그를 Customizing 하는 방법을 다루겠습니다!**
