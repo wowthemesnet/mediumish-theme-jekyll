@@ -4,7 +4,7 @@
     "name": "Campfire Recipes",
     "orientation": "portrait",
     "scope": ".",
-    "short_name": "Campfire Recipes",
+    "short_name": "campfire",
     "start_url": "./",
     "theme_color": "#4E008E",  
     "icons": [

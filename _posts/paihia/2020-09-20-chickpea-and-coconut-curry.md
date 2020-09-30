@@ -2,9 +2,9 @@
 layout: post
 title:  "Chickpea and Coconut Curry"
 author: paihia 
-categories: [ gf, coconut, vegan, vegetarian ]
-tags: [ chickpeas, tomatoes ]
-image: assets/images/2020/2020-09-20-chickpea-and-coconut-curry-1.jpg
+categories: [ recipes ]
+tags: [ chickpea, coconut, gf, tomato, vegan, vegetarian ]
+image: assets/images/paihia/chickpea-and-coconut-curry-1.jpg
 featured: false
 hidden: false
 rating: 5
