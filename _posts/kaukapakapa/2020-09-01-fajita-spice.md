@@ -2,9 +2,9 @@
 layout: post
 title:  "Fajita Spice"
 author: kaukapakapa
-categories: [ gf, spice ]
-tags: [ cheese ]
-image: assets/images/2020/2020-09-01-fajita-spice-1.jpg
+categories: [ recipes ]
+tags: [ beef-steak, chicken, gf, spice ]
+image: assets/images/kaukapakapa/fajita-spice-1.jpg
 featured: false
 hidden: false
 rating: 5

@@ -18,6 +18,10 @@ plugins:
   - jekyll-archives
   - jekyll-pwa-plugin
 
+collections:
+  r2020:
+    output: true
+
 pwa:
   enabled: false
   sw_src_filepath: service-worker.js # Optional
@@ -36,9 +40,13 @@ pwa:
 jekyll-archives:
   enabled:
     - categories
+    - tags
+    - year
   layout: archive
   permalinks:
     category: '/category/:name/'
+    tag: '/tag/:name/'
+    year: '/year/:year/'
     
 # Pagination 
 paginate: 6
