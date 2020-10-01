@@ -1,6 +1,6 @@
 ---
 layout: categoryfilter
 title: Techniques
-filter: technique
+filter: techniques
 permalink: /techniques
 ---
