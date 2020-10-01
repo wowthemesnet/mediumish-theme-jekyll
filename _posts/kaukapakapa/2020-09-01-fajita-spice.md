@@ -4,7 +4,7 @@ title:  "Fajita Spice"
 author: kaukapakapa
 categories: [ recipes ]
 tags: [ beef-steak, chicken, gf, spice ]
-image: assets/images/kaukapakapa/fajita-spice-1.jpg
+image: assets/images/kaukapakapa/fajita-spice-1.webp
 featured: false
 hidden: false
 rating: 5

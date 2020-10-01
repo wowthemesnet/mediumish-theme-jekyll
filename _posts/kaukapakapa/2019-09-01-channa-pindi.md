@@ -4,7 +4,7 @@ title:  "Channa Pindi (Chickpea Surprise)"
 author: kaukapakapa
 categories: [ recipes ]
 tags: [ chickpea, gf, tomato, vegan, vegetarian ]
-image: assets/images/kaukapakapa/channa-pindi-1.jpg
+image: assets/images/kaukapakapa/channa-pindi-1.webp
 featured: false
 hidden: false
 rating: 5

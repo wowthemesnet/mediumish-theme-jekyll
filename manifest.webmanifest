@@ -9,26 +9,26 @@
   "theme_color": "#4E008E",  
   "icons": [
     {
-      "src": "/assets/images/icon48.png",
-      "type": "image/png",
+      "src": "/assets/images/icon48.webp",
+      "type": "image/webp",
       "purpose": "any maskable",
       "sizes": "48x48"
     },
     {
-      "src": "/assets/images/icon96.png",
-      "type": "image/png",
+      "src": "/assets/images/icon96.webp",
+      "type": "image/webp",
       "purpose": "any maskable",
       "sizes": "96x96"
     },
     {
-      "src": "/assets/images/icon192.png",
-      "type": "image/png",
+      "src": "/assets/images/icon192.webp",
+      "type": "image/webp",
       "purpose": "any maskable",
       "sizes": "192x192"
     },
     {
-      "src": "/assets/images/icon.png",
-      "type": "image/png",
+      "src": "/assets/images/icon.webp",
+      "type": "image/webp",
       "purpose": "any maskable",
       "sizes": "512x512"
     }

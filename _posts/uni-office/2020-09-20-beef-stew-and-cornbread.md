@@ -4,7 +4,7 @@ title:  "Beef Stew and Cornbread"
 author: uni-office
 categories: [ recipes ]
 tags: [ beef, cornbread, slow-cook ]
-image: assets/images/uni-office/beef-stew-and-cornbread-1.jpg
+image: assets/images/uni-office/beef-stew-and-cornbread-1.webp
 featured: false
 hidden: false
 rating: 5

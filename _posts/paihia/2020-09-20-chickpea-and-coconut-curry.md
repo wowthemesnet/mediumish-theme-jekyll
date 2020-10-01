@@ -4,7 +4,7 @@ title:  "Chickpea and Coconut Curry"
 author: paihia 
 categories: [ recipes ]
 tags: [ chickpea, coconut, gf, tomato, vegan, vegetarian ]
-image: assets/images/paihia/chickpea-and-coconut-curry-1.jpg
+image: assets/images/paihia/chickpea-and-coconut-curry-1.webp
 featured: false
 hidden: false
 rating: 5
