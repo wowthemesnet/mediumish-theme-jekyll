@@ -4,7 +4,7 @@ title:  "Pineapple Upside Down Dump Cake"
 author: mairangi-bay
 categories: [ recipes ]
 tags: [ cake, pineapple, dutch-oven ]
-image: assets/images/mairangi-bay/pineapple-upside-down-dump-cake-1.jpg
+image: assets/images/mairangi-bay/pineapple-upside-down-dump-cake-1.webp
 featured: false
 hidden: false
 rating: 5

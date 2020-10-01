@@ -4,7 +4,7 @@ title:  "Menu Planning Sheet"
 author: uni-office
 categories: [ planning ]
 tags: [ menu, budget ]
-image: assets/images/uni-office/menu-planning-sheet-1.jpg
+image: assets/images/uni-office/menu-planning-sheet-1.webp
 featured: false
 hidden: false
 rating: 5

@@ -1,13 +1,12 @@
 name: "Campfire"
 title: "Campfire recipe box"
 description: "All the best burnt offerings from the Scouts of Aotearoa"
-logo: 'assets/images/logo.png'
-favicon: 'assets/images/logo.png'
-#baseurl: /campfire
-google_analytics: 'UA-16040666-10'
 #disqus: 'demowebsite'
-#mailchimp-list: 'https://wowthemes.us11.list-manage.com/subscribe/post?u=xxxxxxxxxxxxxxxxxxx&amp;id=xxxxxxxxx'
+favicon: 'assets/images/logo.webp'
+google_analytics: 'UA-16040666-10'
 include: ["_pages"]
+logo: 'assets/images/logo.webp'
+#mailchimp-list: 'https://wowthemes.us11.list-manage.com/subscribe/post?u=xxxxxxxxxxxxxxxxxxx&amp;id=xxxxxxxxx'
 permalink: /:title/
 
 plugins:
