@@ -15,25 +15,25 @@ plugins:
   - jekyll-feed
   - jekyll-seo-tag
   - jekyll-archives
-  - jekyll-pwa-plugin
+#  - jekyll-pwa-plugin
 
 collections:
   r2020:
     output: true
 
-pwa:
-  enabled: false
-  sw_src_filepath: service-worker.js # Optional
-  sw_dest_filename: service-worker.js # Optional
-  dest_js_directory: assets/js # Required
-  precache_recent_posts_num: 5 # Optional
-  precache_glob_directory: / # Optional
-  precache_glob_patterns: # Optional
-    - "{js,css,fonts}/**/*.{js,css,eot,svg,ttf,woff}"
-    - index.html
-  precache_glob_ignores: # Optional
-    - sw-register.js
-    - "fonts/**/*"
+# pwa:
+#   enabled: false
+#   sw_src_filepath: service-worker.js # Optional
+#   sw_dest_filename: service-worker.js # Optional
+#   dest_js_directory: assets/js # Required
+#   precache_recent_posts_num: 5 # Optional
+#   precache_glob_directory: / # Optional
+#   precache_glob_patterns: # Optional
+#     - "{js,css,fonts}/**/*.{js,css,eot,svg,ttf,woff}"
+#     - index.html
+#   precache_glob_ignores: # Optional
+#     - xxxxx sw-register.js
+#     - "fonts/**/*"
 
 # Archives
 jekyll-archives:

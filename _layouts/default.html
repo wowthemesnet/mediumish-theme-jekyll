@@ -1,20 +1,22 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-<link rel="icon" href="{{ site.baseurl }}/assets/images/logo.webp">
-<title>{{ page.title }} | {{site.name}}</title>
-<link rel="manifest" href="/manifest.webmanifest">
-<link rel="apple-touch-icon" href="/assets/images/icon192.webp">
-<meta name="theme-color" content="#4E008E"/>
-
-{% seo %}
-
-<link href="{{ site.baseurl }}/assets/css/screen.css" rel="stylesheet">
-<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
-<link href="{{ site.baseurl }}/assets/css/main.css" rel="stylesheet">
-<script src="{{ site.baseurl }}/assets/js/jquery.min.js"></script>
+<title>{% if page.title != 'Home' %}{{ page.title }} | {% endif %}{{site.name}}</title>
+<link rel="apple-touch-icon" href="{{ site.baseurl }}/assets/images/icon192.webp" />
+<link rel="canonical" href="{{ site.url }}{{ site.baseurl }}{{ page.permalink }}" />
+<link rel="icon" href="{{ site.baseurl }}/assets/images/logo.webp" />
+<link rel="manifest" href="{{ site.baseurl }}/manifest.webmanifest" />
+<link rel="stylesheet" href="{{ site.baseurl }}/assets/css/screen.css" />
+<link rel="stylesheet" href="{{ site.baseurl }}/assets/css/bootstrap.min.css" />
+<link rel="stylesheet" href="{{ site.baseurl }}/assets/css/main.css" />
+<meta charset="utf-8" />
+<meta name="description" content="{{ site.description }}" />
+<meta name="theme-color" content="#4E008E" />
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+<meta property="og:description" content="{{ site.description }}" />
+<meta property="og:locale" content="en_US" />
+<meta property="og:site_name" content="{{ site.title }}" />
+<meta property="og:url" content="{{ site.url }}{{ site.baseurl }}{{ page.permalink }}" />
 </head>
 
 {% if jekyll.environment == 'production' and site.google_analytics %}
@@ -29,85 +31,85 @@
 
 {% capture layout %}{% if page.layout %}layout-{{ page.layout }}{% endif %}{% endcapture %}
 <body class="{{layout}}">
-	<!-- defer loading of font and font awesome -->
+	{% comment %} Defer loading of font and font awesome {% endcomment %}
 	<noscript id="deferred-styles">
+		<link rel="stylesheet" href="{{ site.baseurl }}/assets/css/Righteouserriweather.css" />
+        {% comment %} 
 		<link href="https://fonts.googleapis.com/css?family=Righteous%7CMerriweather:300,300i,400,400i,700,700i" rel="stylesheet">
-		<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
+        {% endcomment %}
 	</noscript>
 
 
-<!-- Begin Menu Navigation
-================================================== -->
+{% comment %} Begin Menu Navigation {% endcomment %}
 <nav class="navbar navbar-expand-lg navbar-light bg-white fixed-top mediumnavigation nav-down">
-
     <div class="container pr-0">
 
-    <!-- Begin Logo -->
+    {% comment %} Begin Logo {% endcomment %}
     <a class="navbar-brand" href="{{ site.baseurl }}/">
-    <img src="{{ site.baseurl }}/{{ site.logo }}" alt="{{ site.name }}">
+        <img src="{{ site.baseurl }}/{{ site.logo }}" alt="{{ site.name }}">
     </a>
-    <!-- End Logo -->
+    {% comment %} End Logo {% endcomment %}
 
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarMediumish" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-    <span class="navbar-toggler-icon"></span>
+        <span class="navbar-toggler-icon"></span>
     </button>
+        {% comment %} Begin Menu {% endcomment %}
+        <div class="collapse navbar-collapse" id="navbarMediumish">
+        <ul class="navbar-nav ml-auto">
 
-    <div class="collapse navbar-collapse" id="navbarMediumish">
+            {% if page.url == "/categories#recipe" %}
+            <li class="nav-item active">
+            {% else %}
+            <li class="nav-item">
+            {% endif %}
+                <a class="nav-link" href="{{ site.baseurl }}/recipes">Recipes</a>
+            </li>
 
-        <!-- Begin Menu -->
+            {% if page.url == "/categories#planning" %}
+            <li class="nav-item active">
+            {% else %}
+            <li class="nav-item">
+            {% endif %}
+                <a class="nav-link" href="{{ site.baseurl }}/planning">Planning</a>
+            </li>
 
-            <ul class="navbar-nav ml-auto">
+            {% if page.url == "/categories#technique" %}
+            <li class="nav-item active">
+            {% else %}
+            <li class="nav-item">
+            {% endif %}
+                <a class="nav-link" href="{{ site.baseurl }}/techniques">Techniques</a>
+            </li>
+            
+            <li class="nav-item">
+                <a class="nav-link" href="{{ site.baseurl }}/about">About</a>
+            </li>
 
-                {% if page.url == "/categories#recipe" %}
-                <li class="nav-item active">
-                {% else %}
-                <li class="nav-item">
-                {% endif %}
-                    <a class="nav-link" href="{{ site.baseurl }}/recipes">Recipes</a>
-                </li>
+            <li class="nav-item">
+                <a class="nav-link" href="{{ site.baseurl }}/docs">Docs</a>
+            </li>
 
-                {% if page.url == "/categories#planning" %}
-                <li class="nav-item active">
-                {% else %}
-                <li class="nav-item">
-                {% endif %}
-                    <a class="nav-link" href="{{ site.baseurl }}/planning">Planning</a>
-                </li>
+            <li>
+                <form class="bd-search" onSubmit="return lunr_search(document.getElementById('lunrsearch').value);">
+                    <input type="text" class="form-control text-small launch-modal-search" id="lunrsearch" name="q" maxlength="255" value="" placeholder="Type and press enter..."/>
+                </form>
+                <div id="lunrsearchresults">
+                    <ul></ul>
+                </div>
+            </li>
 
-                {% if page.url == "/categories#technique" %}
-                <li class="nav-item active">
-                {% else %}
-                <li class="nav-item">
-                {% endif %}
-                    <a class="nav-link" href="{{ site.baseurl }}/techniques">Techniques</a>
-                </li>
-                
-                <li class="nav-item">
-                    <a class="nav-link" href="{{ site.baseurl }}/about">About</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="{{ site.baseurl }}/docs">Docs</a>
-                </li>
-
-                {% include search-lunr.html %}
-
-            </ul>
-
-        <!-- End Menu -->
-
-    </div>
-
+        </ul>
+        </div>
+        {% comment %} End Menu {% endcomment %}
     </div>
 </nav>
-<!-- End Navigation
-================================================== -->
+{% comment %} End Navigation {% endcomment %}
 
 <div class="site-content">
 
 <div class="container">
 
-<!-- Site Title
-================================================== -->
 <div class="mainheading">
     <h1 class="sitetitle">{{ site.name }}</h1>
     <p class="lead">
@@ -115,15 +117,12 @@
     </p>
 </div>
 
-<!-- Content
-================================================== -->
 <div class="main-content">
     {{ content }}
 </div>
 
 {% if site.mailchimp-list %}
-<!-- Bottom Alert Bar
-================================================== -->
+{% comment %} Bottom Alert Bar {% endcomment %}
 <div class="alertbar">
 	<div class="container text-center">
 		<span><img src="{{ site.baseurl }}/{{ site.logo }}" alt="{{site.title}}"> &nbsp; Never miss a <b>story</b> from us, subscribe to our newsletter</span>
@@ -139,8 +138,7 @@
     
 </div>
 
-<!-- Categories Jumbotron
-================================================== -->
+{% comment %} Categories Jumbotron {% endcomment %}
 <div class="jumbotron fortags">
 	<div class="d-md-flex h-100">
 		<div class="col-md-4 transpdark align-self-center text-center h-100">
@@ -178,8 +176,7 @@
 	</div>
 </div>
 
-<!-- Begin Footer
-================================================== -->
+{% comment %} Begin Footer {% endcomment %}
 <footer class="footer">
     <div class="container">
         <div class="row">
@@ -192,21 +189,20 @@
         </div>
     </div>
 </footer>
-<!-- End Footer
-================================================== -->
+{% comment %} End Footer {% endcomment %}
 
-</div> <!-- /.site-content -->
+</div> {% comment %} /.site-content {% endcomment %}
 
-<!-- Scripts
-================================================== -->
+{% comment %} Scripts {% endcomment %}
+<script src="{{ site.baseurl }}/assets/js/jquery.min.js"></script>
 
-<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous"></script>
+<script src="{{ site.baseurl }}/assets/js/lunr.js"></script>
 
-<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>
+<script src="{{ site.baseurl }}/assets/js/lunrsearchengine.js"></script>
+
+<script src="{{ site.baseurl }}/assets/js/bootstrap.min.js"></script>
 
 <script src="{{ site.baseurl }}/assets/js/mediumish.js"></script>
-
-<script src="{{ site.baseurl }}/assets/js/ie10-viewport-bug-workaround.js"></script> 
 
 {% if page.layout == 'post' %}
     {% if site.disqus %}
@@ -216,12 +212,15 @@
 
 <script>
     window.onload = function () {
-        var script = document.createElement('script');
-        var firstScript = document.getElementsByTagName('script')[0];
-        script.type = 'text/javascript';
-        script.async = true;
-        script.src = '/swr.js?v=' + Date.now();
-        firstScript.parentNode.insertBefore(script, firstScript);
+        if ('serviceWorker' in navigator) {
+            navigator.serviceWorker.register('/service-worker.js')
+                .then(function(registration) {
+                    console.log('Registration successful');
+            })
+            .catch(function(error) {
+                console.log('Service worker registration failed, error:', error);
+            });
+        }
     };
 </script>
 
