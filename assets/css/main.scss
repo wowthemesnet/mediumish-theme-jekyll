@@ -8,6 +8,22 @@
 	display:inline;
 }
 
+.lunrsearchresult .title {
+	color: #d9230f;
+}
+.lunrsearchresult .url {
+	color: silver;
+}
+.lunrsearchresult a {
+	display: block; color: #777;
+}
+.lunrsearchresult a:hover, .lunrsearchresult a:focus {
+	text-decoration: none;
+}
+.lunrsearchresult a:hover .title {
+	text-decoration: underline;
+}
+
 // Import partials from `sass_dir` (defaults to `_sass`)
 @import
 	"syntax",

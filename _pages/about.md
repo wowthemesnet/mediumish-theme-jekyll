@@ -10,3 +10,19 @@ This site is a collection of tested Scout Camp recipes. Each recipe has been use
 Please use the Docs page to follow the procedure to submit your own successful recipes
 
 A big thanks to all the Scout groups that have submitted these excellent recipes
+
+<script>
+    async function addToCache(urls) {
+        const cache = await window.caches.open('campfire-v1');
+        await cache.addAll(urls);
+    }
+
+    async function removeFromCache(url) {
+        const cache = await window.caches.open('campfire-v1');
+        await cache.delete(url);
+    }
+
+window.addEventListener('load', () => {
+        addToCache([ '/techniques' ]);
+    });
+</script>

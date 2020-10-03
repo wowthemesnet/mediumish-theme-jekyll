@@ -6,7 +6,9 @@
   "scope": ".",
   "short_name": "campfire",
   "start_url": "./",
-  "theme_color": "#4E008E",  
+  "theme_color": "#4E008E",
+  "url": "https://campfire.waitoru.org/",
+  "lang": "",
   "icons": [
     {
       "src": "/assets/images/icon48.webp",
@@ -31,6 +33,18 @@
       "type": "image/webp",
       "purpose": "any maskable",
       "sizes": "512x512"
+    }
+  ],
+  "screenshots": [
+    {
+        "src": "/assets/images/screen-desktop.webp",
+        "sizes": "1280x800",
+        "type": "image/webp"
+    },
+    {
+        "src": "/assets/images/screen-mobile.webp",
+        "sizes": "750x1334",
+        "type": "image/webp"
     }
   ]
 }

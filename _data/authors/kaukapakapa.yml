@@ -1,10 +1,10 @@
 name: kaukapakapa
 display_name: Kaukapakapa Scout Group
 avatar: assets/images/avatars/kaukapakapa.webp
-#gravatar: e56154546cf4be74e393c62d1ae9f9d4
 email: webmaster@kaukapakapa.waitoru.org
-web: https://kaukapakapa.waitoru.org
+#gravatar: e56154546cf4be74e393c62d1ae9f9d4
 #twitter: https://twitter.com/wowthemesnet
+web: https://kaukapakapa.waitoru.org
 description: "Kaukapakapa Scout Group Leaders"
 members:
   - name: webmaster
