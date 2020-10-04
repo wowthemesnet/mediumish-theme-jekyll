@@ -5,18 +5,15 @@ archive: false
 post_class: post-template
 ---
 
-<!-- Begin Article
-================================================== -->
+{% comment %} Begin Article {% endcomment %} 
 <div class="container">
     <div class="row">
-
-        <!-- Post -->
+        {% comment %} Post {% endcomment %} 
         {% assign author_key = page.author | downcase %}
         {% assign author = site.data.authors[author_key] %}
         <div class="col-md-12 flex-first flex-md-unordered">
             <div class="mainheading">
-
-                <!-- Author Box -->
+                {% comment %} Author Box {% endcomment %}
                 {% if page.author %}
                 <div class="row post-top-meta">
                     <div class="col-xs-12 col-md-3 col-lg-2 text-center text-md-left mb-4 mb-md-0">
@@ -27,70 +24,66 @@ post_class: post-template
                         {% endif %}
                     </div>
                     <div class="col-xs-12 col-md-9 col-lg-10 text-center text-md-left">
-                        <a target="_blank" class="link-dark" href="{{ author.web }}">{{ author.display_name }}</a><a target="_blank" href="{{ author.twitter }}" class="btn follow">Follow</a>
+                        <a class="link-dark" href="{{ author.web }}" target="_blank">{{ author.display_name }}</a><a target="_blank" href="{{ author.twitter }}" class="btn follow">Follow</a>
                         <span class="author-description">{{ author.description }}</span>
                     </div>
                 </div>
                 {% endif %}
-
-                <!-- Post Title -->
                 <h1 class="posttitle">{{ page.title }}</h1>
-
             </div>
 
-            <!-- Adsense if enabled from _config.yml (change your pub id and slot) -->
+            {% comment %} Adsense if enabled from _config.yml (change your pub id and slot) {% endcomment %}
             {% if site.adsense == "enabled" %}
                 {% include adsense-under-header.html %}
             {% endif %}
-            <!-- End Adsense -->
+            {% comment %} End Adsense {% endcomment %}
 
-            <!-- Post Featured Image -->
+            {% comment %} Post Featured Image {% endcomment %}
             {% if page.image %}
             <img class="featured-image img-fluid" loading="lazy" src="{% if page.image contains "://" %}{{ page.image }}{% else %}{{ site.baseurl }}/{{ page.image }}{% endif %}" alt="{{ page.title }}">
             {% endif %}
-            <!-- End Featured Image -->
+            {% comment %} End Featured Image {% endcomment %}
 
-            <!-- Post Content -->
+            {% comment %} Post Content {% endcomment %}
             <div class="article-post">
-                <!-- Toc if any -->
+                {% comment %} TOC, if {% endcomment %}
                 {% if page.toc %}
                     {% if page.beforetoc %}
                         <p><em>{{page.beforetoc}}</em></p>
                     {% endif %}
                     <div class="toc mt-4 mb-4 lead">
-                        <!-- <h3 class="font-weight-bold">Summary</h3> -->
+                        {% comment %} removed <h3 class="font-weight-bold">Summary</h3> {% endcomment %}
                         {% include toc.html html=content %}
                     </div>
                 {% endif %}
-                <!-- End Toc -->
+                {% comment %} End TOC {% endcomment %}
                 {{content}}
             </div>
 
-            <!-- Post Share -->
+            {% comment %} Post Share 
             <div class="col-md-2 pl-0">
                 {% include share.html %}
             </div>
-
-
-
-            <!-- Rating -->
+            {% endcomment %}
+            
+            {% comment %} Rating {% endcomment %}
             {% if page.rating %}
             <div class="rating mb-4 d-flex align-items-center">
                 <strong class="mr-1">Rating:</strong> {% include star_rating.html %}
             </div>
             {% endif %}
 
-            <!-- Post Date -->
+            {% comment %} Post Date {% endcomment %}
             <p>
             <small>
-                <span class="post-date"><time class="post-date" datetime="{{ page.date | date:"%Y-%m-%d" }}">{{ page.date | date_to_string }}</time></span>           
+                Published <span class="post-date"><time class="post-date" datetime="{{ page.date | date:"%Y-%m-%d" }}">{{ page.date | date:"%Y-%m-%d" }}</time></span>           
                 {% if page.last_modified_at %}
                 (Updated: <time datetime="{{ page.last_modified_at | date_to_xmlschema }}" itemprop="dateModified">{{ page.last_modified_at | date: "%b %-d, %Y" }}</time>)
                 {% endif %}
                 </small>
             </p>
 
-            <!-- Post Categories -->
+            {% comment %} Post Categories {% endcomment %}
             <div class="after-post-cats">
                 <ul class="tags mb-4">
                     {% assign sortedCategories = page.categories | sort %}
@@ -101,9 +94,9 @@ post_class: post-template
                     {% endfor %}
                 </ul>
             </div>
-            <!-- End Categories -->
+            {% comment %} End Categories {% endcomment %}
 
-            <!-- Post Tags -->
+            {% comment %} Post Tags {% endcomment %}
             <div class="after-post-tags">
                 <ul class="tags">
                     {% assign sortedTags = page.tags | sort %}
@@ -114,9 +107,9 @@ post_class: post-template
                     {% endfor %}
                 </ul>
             </div>
-            <!-- End Tags -->
+            {% comment %} End Tags {% endcomment %}
 
-            <!-- Prev/Next -->
+            {% comment %} Prev/Next {% endcomment %}
             <div class="row PageNavigation d-flex justify-content-between font-weight-bold">
             {% if page.previous.url %}
             <a class="prev d-block col-md-6" href="{{ site.baseurl }}{{page.previous.url}}"> &laquo; {{page.previous.title}}</a>
@@ -126,18 +119,16 @@ post_class: post-template
             {% endif %}
             <div class="clearfix"></div>
             </div>
-            <!-- End Categories -->
+            {% comment %} End Prev/Next {% endcomment %}
 
         </div>
-        <!-- End Post -->
+        {% comment %} End Content {% endcomment %}
 
     </div>
 </div>
-<!-- End Article
-================================================== -->
+{% comment %} End Article {% endcomment %}
 
-<!-- Begin Comments
-================================================== -->
+{% comment %} Begin Comments {% endcomment %}
 {% if page.comments != false %}
 {% if site.disqus %}
     <div class="container">
@@ -149,12 +140,13 @@ post_class: post-template
     </div>
 {% endif %}
 {% endif %}
-<!--End Comments
-================================================== -->
+{% comment %} End Comments {% endcomment %}
 
-<!-- Review with LD-JSON, adapt it for your needs if you like, but make sure you test the generated HTML source code first: 
+{% comment %} 
+Review with LD-JSON, adapt it for your needs if you like, but make sure you test the generated HTML source code first: 
 https://search.google.com/structured-data/testing-tool/u/0/
-================================================== -->
+{% endcomment %}
+
 {% if page.rating %}
 <script type="application/ld+json">
 {

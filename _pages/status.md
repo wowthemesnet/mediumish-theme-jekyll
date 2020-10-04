@@ -12,5 +12,3 @@ Site Name: {{site.name}}
 Site Title: {{site.title}}
 
 Site Description: {{site.description}}
-
-Site PWA: {{site.pwa.enabled}}
