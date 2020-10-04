@@ -111,9 +111,6 @@
     <h1 class="sitetitle">{{ site.name }}</h1>
     <p class="lead">
         {{ site.description }} 
-        {% if page.cache != "always" %}
-        <button class="btn save"  onclick="addToCache( [ '{{ site.baseurl }}{{ page.permalink }}' ])" title="Save to my Cookbook"> </button>
-        {% endif %}
     </p>
 </div>
 
