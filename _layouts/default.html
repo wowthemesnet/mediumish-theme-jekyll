@@ -7,7 +7,7 @@
 <link rel="icon" href="{{ site.baseurl }}/assets/images/logo.webp" />
 <link rel="manifest" href="{{ site.baseurl }}/manifest.webmanifest" />
 <link rel="stylesheet" href="{{ site.baseurl }}/assets/css/screen.css" />
-<link rel="stylesheet" href="{{ site.baseurl }}/assets/css/bootstrap.min.css" />
+<link rel="stylesheet" href="{{ site.baseurl }}/assets/css/bootstrap.css" />
 <link rel="stylesheet" href="{{ site.baseurl }}/assets/css/main.css" />
 <meta charset="utf-8" />
 <meta name="description" content="{{ site.description }}" />
@@ -33,7 +33,7 @@
 <body class="{{layout}}">
 	{% comment %} Defer loading of font and font awesome {% endcomment %}
 	<noscript id="deferred-styles">
-		<link rel="stylesheet" href="{{ site.baseurl }}/assets/css/Righteouserriweather.css" />
+		<link rel="stylesheet" href="{{ site.baseurl }}/assets/css/fonts.css" />
         {% comment %} 
 		<link href="https://fonts.googleapis.com/css?family=Righteous%7CMerriweather:300,300i,400,400i,700,700i" rel="stylesheet">
         <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
@@ -45,15 +45,16 @@
 <nav class="navbar navbar-expand-lg navbar-light bg-white fixed-top mediumnavigation nav-down">
     <div class="container pr-0">
 
-    {% comment %} Begin Logo {% endcomment %}
-    <a class="navbar-brand" href="{{ site.baseurl }}/">
-        <img src="{{ site.baseurl }}/{{ site.logo }}" alt="{{ site.name }}">
-    </a>
-    {% comment %} End Logo {% endcomment %}
+        {% comment %} Begin Logo {% endcomment %}
+        <a class="navbar-brand" href="{{ site.baseurl }}/">
+            <img src="{{ site.baseurl }}/{{ site.logo }}" alt="{{ site.name }}">
+        </a>
+        {% comment %} End Logo {% endcomment %}
 
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarMediumish" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-    </button>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarMediumish" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
         {% comment %} Begin Menu {% endcomment %}
         <div class="collapse navbar-collapse" id="navbarMediumish">
         <ul class="navbar-nav ml-auto">
@@ -83,16 +84,12 @@
             </li>
             
             <li class="nav-item">
-                <a class="nav-link" href="{{ site.baseurl }}/about">About</a>
-            </li>
-
-            <li class="nav-item">
-                <a class="nav-link" href="{{ site.baseurl }}/docs">Docs</a>
+                <a class="nav-link" href="{{ site.baseurl }}/cookbook">Cookbook <sup><span id="cookbookCounter" class="badge badge-primary">1</span></sup></a>
             </li>
 
             <li>
                 <form class="bd-search" onSubmit="return lunr_search(document.getElementById('lunrsearch').value);">
-                    <input type="text" class="form-control text-small launch-modal-search" id="lunrsearch" name="q" maxlength="255" value="" placeholder="Type and press enter..."/>
+                    <input type="text" class="form-control text-small launch-modal-search" id="lunrsearch" name="q" maxlength="255" value="" placeholder="Search..."/>
                 </form>
                 <div id="lunrsearchresults">
                     <ul></ul>
@@ -113,7 +110,10 @@
 <div class="mainheading">
     <h1 class="sitetitle">{{ site.name }}</h1>
     <p class="lead">
-        {{ site.description }}
+        {{ site.description }} 
+        {% if page.cache != "always" %}
+        <button class="btn save"  onclick="addToCache( [ '{{ site.baseurl }}{{ page.permalink }}' ])" title="Save to my Cookbook"> </button>
+        {% endif %}
     </p>
 </div>
 
@@ -183,8 +183,18 @@
             <div class="col-md-6 col-sm-6 text-center text-lg-left">
                 Copyright © 1908 - {{ site.time | date: "%Y" }} Scouts New Zealand.
             </div>
-            <div class="col-md-6 col-sm-6 text-center text-lg-right">    
-                <a target="_blank" class="nav-link" href="https://github.com/Kaukapakapa-Scout-Group/campfire"><i class="fab fa-github"></i> Fork {{ site.name }} on Github</a>
+            <div class="col-md-6 col-sm-6 text-center text-lg-right">
+                <ul class="navbar-nav ml-auto">
+                    <li>
+                        <a class="nav-link" href="{{ site.baseurl }}/about">About</a>
+                    </li>
+                    <li>
+                        <a class="nav-link" href="{{ site.baseurl }}/docs">Docs</a>        
+                    </li>
+                    <li>
+                        <a target="_blank" class="nav-link" href="https://github.com/Kaukapakapa-Scout-Group/campfire"><i class="fab fa-github"></i> Fork {{ site.name }} on Github</a>        
+                    </li>
+                </ul>
             </div>
         </div>
     </div>
@@ -194,35 +204,18 @@
 </div> {% comment %} /.site-content {% endcomment %}
 
 {% comment %} Scripts {% endcomment %}
-<script src="{{ site.baseurl }}/assets/js/jquery.min.js"></script>
-
-<script src="{{ site.baseurl }}/assets/js/lunr.js"></script>
-
-<script src="{{ site.baseurl }}/assets/js/lunrsearchengine.js"></script>
-
-<script src="{{ site.baseurl }}/assets/js/bootstrap.min.js"></script>
-
+<script src="{{ site.baseurl }}/assets/js/jquery.js"></script>
+<script src="{{ site.baseurl }}/assets/js/bootstrap.js"></script>
 <script src="{{ site.baseurl }}/assets/js/mediumish.js"></script>
+<script src="{{ site.baseurl }}/assets/js/main.js"></script>
+<script src="{{ site.baseurl }}/assets/js/lunr.js"></script>
+<script src="{{ site.baseurl }}/assets/js/lunrsearchengine.js"></script>
 
 {% if page.layout == 'post' %}
     {% if site.disqus %}
     <script id="dsq-count-scr" src="//{{site.disqus}}.disqus.com/count.js"></script>
     {% endif %}
 {% endif %}
-
-<script>
-    window.onload = function () {
-        if ('serviceWorker' in navigator) {
-            navigator.serviceWorker.register('/service-worker.js')
-                .then(function(registration) {
-                    console.log('Registration successful');
-            })
-            .catch(function(error) {
-                console.log('Service worker registration failed, error:', error);
-            });
-        }
-    };
-</script>
 
 </body>
 </html>

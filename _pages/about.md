@@ -3,6 +3,7 @@ layout: page
 title: How to use this site
 permalink: /about
 comments: false
+cache: always
 ---
 
 This site is a collection of tested Scout Camp recipes. Each recipe has been used at Scout Camps, and proved to be cookable by Scouts, edible by Scouts, and acceptable to the Leaders and Parents of that Scout group
@@ -10,19 +11,3 @@ This site is a collection of tested Scout Camp recipes. Each recipe has been use
 Please use the Docs page to follow the procedure to submit your own successful recipes
 
 A big thanks to all the Scout groups that have submitted these excellent recipes
-
-<script>
-    async function addToCache(urls) {
-        const cache = await window.caches.open('campfire-v1');
-        await cache.addAll(urls);
-    }
-
-    async function removeFromCache(url) {
-        const cache = await window.caches.open('campfire-v1');
-        await cache.delete(url);
-    }
-
-window.addEventListener('load', () => {
-        addToCache([ '/techniques' ]);
-    });
-</script>
