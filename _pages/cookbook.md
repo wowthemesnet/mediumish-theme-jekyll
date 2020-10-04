@@ -62,7 +62,7 @@ These pages are available even when you have no data connection, or have no sign
             list.innerHTML = results
                 .sort((a, b) => a.title > b.title ? 1 : -1)
                 .map(res => {
-                    let html = `<li><a href="${res.url}">${res.title}</a> <span><small> published by ${res.author} on ${res.published}, last visited ${res.visited.toISOString().substring(0, 10)}</small></span> <button class="btn trash" onclick="removeFromCache('${res.url}'); renderCurrentKeys();"> </button></li>`;
+                    let html = `<li><a href="${res.url}">${res.title}</a> <span><small> published by ${res.author} on ${res.published}, last visited ${res.visited.toISOString().substring(0, 10)}</small></span> <button class="btn btn-lg trash" onclick="removeFromCache('${res.url}'); renderCurrentKeys();"> </button></li>`;
                     return html;
                 })
                 .join('\n');

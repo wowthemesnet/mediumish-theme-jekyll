@@ -29,7 +29,11 @@ post_class: post-template
                     </div>
                 </div>
                 {% endif %}
-                <h1 class="posttitle">{{ page.title }}</h1>
+                <h1 class="posttitle">{{ page.title }}
+                    {% if page.cache != "always" %}
+                    <button class="btn btn-lg save"  onclick="addToCache( [ '{{ site.baseurl }}{{ page.url }}' ])" title="Save to my Cookbook"> </button>
+                    {% endif %}
+                </h1>
             </div>
 
             {% comment %} Adsense if enabled from _config.yml (change your pub id and slot) {% endcomment %}
