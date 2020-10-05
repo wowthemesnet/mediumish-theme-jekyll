@@ -27,7 +27,6 @@ var recentToCache = [
     {% for post in site.posts limit:6 %}
     '{{ post.url }}',
     {% endfor %}
-    ''
 ];
 
 self.addEventListener(
