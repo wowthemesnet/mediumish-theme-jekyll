@@ -8,6 +8,9 @@ var prevCacheName = 'campfire-v1';
 var baseToCache = [
     {% for page in site.pages %} {% if page.cache == "always" %}
     '{{ page.url }}',
+    {% if page.image %}
+    '{{ site.baseurl }}/{{ page.image }}',
+    {% endif %}
     {% endif %} {% endfor %}
 
     '/assets/css/bootstrap.css',
@@ -20,12 +23,16 @@ var baseToCache = [
     '/assets/js/main.js',
     '/assets/js/mediumish.js',
 
+    '/assets/images/jumbotron.webp',
     '/assets/images/logo.webp'
 ];
 
 var recentToCache = [
     {% for post in site.posts limit:6 %}
     '{{ post.url }}',
+    {% if post.image %}
+    '{{ site.baseurl }}/{{ post.image }}',
+    {% endif %}
     {% endfor %}
 ];
 
@@ -66,6 +73,7 @@ self.addEventListener(
     }
 );
 
+
 self.addEventListener(
     'fetch',
     (e) => {
@@ -76,7 +84,7 @@ self.addEventListener(
                     if (response) {
                         return response;
                     }
-                    return fetch(e.request);
+                    return fetch(e.request)
                     // .then((response) => {
                     //     //if in patterns to cache
                     //     return caches.open(cacheName)
@@ -85,9 +93,9 @@ self.addEventListener(
                     //             //cache.put(e.request, response.clone());
                     //         });
                     // })
-                    // .catch((response) => {
-                    //     return caches.match('/offline.html');
-                    // });
+                    .catch((response) => {
+                        return caches.match('/offline');
+                    });
                 })
 
         );
