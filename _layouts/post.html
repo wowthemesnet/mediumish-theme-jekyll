@@ -31,7 +31,7 @@ post_class: post-template
                 {% endif %}
                 <h1 class="posttitle">{{ page.title }}
                     {% if page.cache != "always" %}
-                    <button class="btn btn-lg save" onclick="addToCache( [ '{{ site.baseurl }}{{ page.url }}' ]); this.hidden=true;" title="Save to my Cookbook"> </button>
+                    <button class="btn btn-lg save" onclick="addToCache( [ '{{ site.baseurl }}{{ page.url }}', '{{ site.baseurl }}{{ page.image }}' ]); this.hidden=true;" title="Save to my Cookbook"> </button>
                     {% endif %}
                 </h1>
             </div>

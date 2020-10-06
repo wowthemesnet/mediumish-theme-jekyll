@@ -1,11 +1,6 @@
 ---
 ---
-var baseCacheName = 'campfire-base-v2';
-var cacheName = 'campfire-v2';
-var prevBaseCacheName = 'campfire-base-v1';
-var prevCacheName = 'campfire-v1';
-
-var baseToCache = [
+const baseToCache = [
     {% for page in site.pages %} {% if page.cache == "always" %}
     '{{ page.url }}',
     {% if page.image %}
@@ -27,9 +22,14 @@ var baseToCache = [
     '/assets/images/logo.webp'
 ];
 
-var recentToCache = [
+const recentPagesToCache = [
     {% for post in site.posts limit:6 %}
     '{{ post.url }}',
+    {% endfor %}
+];
+
+const recentResourceToCache = [
+    {% for post in site.posts limit:6 %}
     {% if post.image %}
     '{{ site.baseurl }}/{{ post.image }}',
     {% endif %}
@@ -39,37 +39,55 @@ var recentToCache = [
 self.addEventListener(
     'install',
     (e) => {
-        console.log('Service Worker installed');
+        console.log('Service Worker, installed');
         e.waitUntil(
-            caches.open(baseCacheName)
+            caches.open('base-{{ site.pwa.cacheName }}{{ site.pwa.cacheVersion }}')
                 .then((cache) => {
                     console.log('Service Worker, base cached');
-                    return cache.addAll(baseToCache);
+                    cache.addAll(baseToCache);
                 })
         );
         e.waitUntil(
-            caches.open(cacheName)
+            caches.open('{{ site.pwa.cacheName }}{{ site.pwa.cacheVersion }}')
                 .then((cache) => {
                     console.log('Service Worker, recent cached');
-                    return cache.addAll(recentToCache);
+                    cache.addAll(recentPagesToCache);
                 })
         );
         e.waitUntil(
-            caches.open(prevBaseCacheName)
-                .then(() => {
-                    caches.delete(prevBaseCacheName).then(() => {
-                        console.log('Service Worker, previous base cache deleted');
-                    })
+            caches.open('resource-{{ site.pwa.cacheName }}{{ site.pwa.cacheVersion }}')
+                .then((cache) => {
+                    console.log('Service Worker, recent resource cached');
+                    cache.addAll(recentResourceToCache);
                 })
         );
-        e.waitUntil(
-            caches.open(prevCacheName)
-                .then(() => {
-                    caches.delete(prevCacheName).then(() => {
-                        console.log('Service Worker, previous cache deleted');
+        for (var v = 1; v < {{ site.pwa.cacheVersion }}; v ++) {
+            const cacheName = `{{ site.pwa.cacheName }}${v}`;
+            e.waitUntil(
+                caches.open(`base-${cacheName}`)
+                    .then(() => {
+                        caches.delete(`base-${cacheName}`).then(() => {
+                            console.log(`Service Worker, base-${cacheName} deleted`);
+                        })
                     })
-                })
-        );
+            );
+            e.waitUntil(
+                caches.open(cacheName)
+                    .then(() => {
+                        caches.delete(cacheName).then(() => {
+                            console.log(`Service Worker, ${cacheName} deleted`);
+                        })
+                    })
+            );
+            e.waitUntil(
+                caches.open(`resource-${cacheName}`)
+                    .then(() => {
+                        caches.delete(`resource-${cacheName}`).then(() => {
+                            console.log(`Service Worker, resource-${cacheName} deleted`);
+                        })
+                    })
+            );
+        }
     }
 );
 
@@ -87,7 +105,7 @@ self.addEventListener(
                     return fetch(e.request)
                     // .then((response) => {
                     //     //if in patterns to cache
-                    //     return caches.open(cacheName)
+                    //     return caches.open(`campfire-v${'{{ site.pwa.cacheName }}{{ site.pwa.cacheVersion }}'}`)
                     //         .then((cache) => {
                     //             console.log('Service Worker Caching new resource: ' + e.request.url);
                     //             //cache.put(e.request, response.clone());

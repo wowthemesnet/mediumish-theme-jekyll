@@ -33,7 +33,7 @@ These pages are available
         }
 
         const results = [];
-        const cache = await caches.open(cacheName);
+        const cache = await caches.open('{{ site.pwa.cacheName }}{{ site.pwa.cacheVersion }}');
         for (const request of await cache.keys()) {
             const match = request.url.match(/\/\/(.*?)\/(.*)/);
             if (match) {

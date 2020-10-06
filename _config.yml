@@ -9,6 +9,10 @@ logo: 'assets/images/logo.webp'
 #mailchimp-list: 'https://wowthemes.us11.list-manage.com/subscribe/post?u=xxxxxxxxxxxxxxxxxxx&amp;id=xxxxxxxxx'
 permalink: /:title/
 
+pwa:
+  cacheName: "campfire-v"
+  cacheVersion: 2
+
 plugins:
   - jekyll-archives
   - jekyll-feed
