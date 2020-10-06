@@ -8,8 +8,20 @@ async function addToCache(urls) {
   await updateCookbookCount();
 }
 
+async function addToResourceCache(urls) {
+  const cache = await window.caches.open('resource-{{ site.pwa.cacheName }}{{ site.pwa.cacheVersion }}');
+  await cache.addAll(urls);
+  await updateCookbookCount();
+}
+
 async function removeFromCache(url) {
   const cache = await window.caches.open('{{ site.pwa.cacheName }}{{ site.pwa.cacheVersion }}');
+  await cache.delete(url);
+  await updateCookbookCount();
+}
+
+async function removeResourceFromCache(url) {
+  const cache = await window.caches.open('resource-{{ site.pwa.cacheName }}{{ site.pwa.cacheVersion }}');
   await cache.delete(url);
   await updateCookbookCount();
 }
