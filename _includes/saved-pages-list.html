@@ -1,0 +1,60 @@
+<div>
+    <div class="section-title col-md-12 mt-4">
+        <h2 id="techniques"><span class="text-capitalize">Saved Pages</span></h2>
+    </div>
+    <ol id="cache-list">
+    </ol>
+</div>
+
+<script>
+    async function renderCurrentKeys() {
+        let list = document.querySelector('#cache-list');
+
+        while (list.firstChild) {
+            list.removeChild(list.firstChild);
+        }
+
+        const results = [];
+        const cache = await caches.open('{{ site.pwa.cacheName }}{{ site.pwa.cacheVersion }}');
+        for (const request of await cache.keys()) {
+            const match = request.url.match(/\/\/(.*?)\/(.*)/);
+            if (match) {
+                const path = match[2];
+            
+                const response = await cache.match(request);
+                const body = await response.text();
+                const titleMatch = body.match(/<title>(.*)\|(.*?)<\/title>/);
+                const title = (titleMatch != null) ? titleMatch[1] : request.url;
+                const authorMatch = body.match(/<a class="link-dark" href=(.*?)>(.*?)<\/a>/);
+                const author = (authorMatch != null) ? authorMatch[2] : 'none';
+                const publishedMatch = body.match(/<span class="post-date">(.*)<\/span>/);
+                const published = (publishedMatch != null) ? publishedMatch[1] : '';
+                results.push({
+                    path,
+                    title,
+                    url: request.url,
+                    author,
+                    published,
+                    visited: new Date(response.headers.get('date'))
+                });
+            }
+        }
+        if (results.length) {
+            list.innerHTML = results
+                .sort((a, b) => a.title > b.title ? 1 : -1)
+                .map(res => {
+                    let html = `<li>
+                        <a href="${res.url}">${res.title}</a> 
+                        <span><small> published by ${res.author} on ${res.published}, last visited ${res.visited.toISOString().substring(0, 10)}</small></span> 
+                        <button class="btn trash" onclick="removeFromCache('${res.url}'); renderCurrentKeys();" title="Remove this page from your cookbook"> </button>
+                        </li>`;
+                    return html;
+                })
+                .join('\n');
+        }
+    }
+
+    window.addEventListener('load', () => {
+        renderCurrentKeys();
+    });
+</script>
