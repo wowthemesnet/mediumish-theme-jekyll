@@ -1,35 +1,37 @@
 ---
 layout: page
-title: Mediumish Template for Jekyll
+title: About Salarpuria Greenage
 permalink: /about
-comments: true
+comments: false
 ---
-
 <div class="row justify-content-between">
 <div class="col-md-8 pr-5">
 
-<p>This website is built with Jekyll and Mediumish template for Jekyll. It's for demonstration purposes, no real content can be found. Mediumish template for Jekyll is compatible with Github pages, in fact even this demo is created with Github Pages and hosted with Github.</p>
+<p> Salarpuria Greenage is a residential complex on Hosur Road in Bengaluru. We are a short distance away from Koramangala and HSR Layout. The complex is located next to Oxford College and also an upcoming metro station on RV Road - Bommasandra 'Yellow line'.</p> 
+  
+<p> We are a community of 1676 flats, grouped into 10 Towers/Blocks. About 70% of the total area is open spaces with a lot of walking paths, sitting areas and green cover. 
 
-<p class="mb-5"><img class="shadow-lg" src="{{site.baseurl}}/assets/images/mediumish-jekyll-template.png" alt="jekyll template mediumish" /></p>
-<h4>Documentation</h4>
+There are 2BHK, 3BHK and 4BHK (Bedroom, Hall, Kitchen) flats with varying sizes and layouts, thus offering something that fits everyone's needs.</p>
 
-<p>Please, read the docs <a href="https://bootstrapstarter.com/bootstrap-templates/template-mediumish-bootstrap-jekyll/">here</a>.</p>
-
-<h4>Questions or bug reports?</h4>
-
-<p>Head over to our <a href="https://github.com/wowthemesnet/mediumish-theme-jekyll">Github repository</a>!</p>
+<p class="mb-5"><img class="shadow-lg" src="{{site.baseurl}}/assets/images/greenage-layout.png" alt="Greenage Layout" /></p>
 
 </div>
 
 <div class="col-md-4">
 
 <div class="sticky-top sticky-top-80">
-<h5>Buy me a coffee</h5>
+<h5>Location</h5>
 
-<p>Thank you for your support! Your donation helps me to maintain and improve <a target="_blank" href="https://github.com/wowthemesnet/mediumish-theme-jekyll">Mediumish <i class="fab fa-github"></i></a>.</p>
+<p>Salarpuria Greenage, 7 Hosur Main Road, Next to Oxford College, Bommanahalli, Bengaluru - 560068</p>
 
-<a target="_blank" href="https://www.wowthemes.net/donate/" class="btn btn-danger">Buy me a coffee</a> <a target="_blank" href="https://bootstrapstarter.com/bootstrap-templates/template-mediumish-bootstrap-jekyll/" class="btn btn-warning">Documentation</a>
+<a target="_blank" href="https://goo.gl/maps/DJB7JAjHRAXRLe3W8" class="btn btn-danger">Find us on Google Maps</a>  
+<p></p>
+<h5>Key Information</h5>
+
+<p>You can download forms and other useful documents here.</p>  
+<a target="_blank" href="https://bit.ly/greenage-info" class="btn btn-warning">Document Repository</a> 
 
 </div>
 </div>
 </div>
+
