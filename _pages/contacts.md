@@ -8,7 +8,7 @@ datatable: true
 <div class="row justify-content-between">
 <div class="col-md-8 pr-5">
 
-<p> This page containts the contact numbers of helpdesk,facilities, security etc. for quick reference. Few numbers are not added here on public web page due to data security requirements. You can find them in myGate app under the list of documents. </p>
+<p> You will find here the contact numbers of helpdesk,facilities, security etc. To maintain data privacy, not all contacts are added here. You can find them in myGate app under community > documents. </p>
 
 <table id="example" class="table table-striped table-bordered display" style="width:100%; font-size:0.8em">
    <thead>
