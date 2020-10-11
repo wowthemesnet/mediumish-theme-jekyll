@@ -1,11 +1,3 @@
-# sal & john은 post들 삭제할때 지워주세요
-sal:
-  name: 살
-  display_name: 살
-john:
-  name: 존
-  display_name: 존
-
 # DSC CORE MEMBER
 jeongukjae:
   name: 정욱재
