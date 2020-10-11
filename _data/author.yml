@@ -1,17 +1,45 @@
+# sal & john은 post들 삭제할때 지워주세요
 sal:
-  name: Sal
-  display_name: Sal
-  gravatar: e56154546cf4be74e393c62d1ae9f9d4
-  email: wowthemesnet@gmail.com
-  web: https://www.wowthemes.net
-  twitter: https://twitter.com/wowthemesnet
-  description: "Author of Mediumish, a Bootstrap Medium styled template available for WordPress, HTML, Ghost and Jekyll. You are currently previewing Jekyll template demo."
+  name: 살
+  display_name: 살
 john:
-  name: John
-  display_name: John
-  avatar: 'assets/images/avatar.png'
-  gravatar: b1cc14991db7a456fcd761680bbc8f81
-  email: wowthemesnet@gmail.com
-  web: https://www.wowthemes.net
-  twitter: https://twitter.com/wowthemesnet
-  description: "This is the author box. Write a short description of the author here. You are currently previewing Mediumish demo, a Jekyll template compatible with Github pages."
+  name: 존
+  display_name: 존
+
+# DSC CORE MEMBER
+jeongukjae:
+  name: 정욱재
+  display_name: 욱재
+  email: 
+  web: https://github.com/jeongukjae
+Enoch-Kim:
+  name: 김유현
+  display_name: 유현
+  email: 
+  web: https://githun.com/Enoch-Kim
+MOBUMIN:
+  name: 김수빈
+  display_name: 수빈
+  email: kiju2642@gmail.com
+  web: https://github.com/MOBUMIN
+r4k0nb4k0n:
+  name: 최형진
+  display_name: 형진
+  email: chj6097@gmail.com
+  web: https://github.com/r4k0nb4k0n
+beeetea:
+  name: 이호준
+  display_name: 호준
+  email:
+  web: https://github.com/beeetea
+gusrb3164:
+  name: 김현규
+  display_name: 현규
+  email:
+  web: https://github.com/gusrb3164
+min6choi:
+  name: 최민식
+  display_name: 민식
+  email:
+  web: https://github.com/min6choi
+
