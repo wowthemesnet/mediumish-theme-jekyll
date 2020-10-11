@@ -182,6 +182,11 @@ section.recent-posts {
     margin-bottom: 15px;
 }
 
+.author-info{
+    display:block;
+    margin-bottom: 10px;
+}
+
 .author-thumb {
     width: 40px;
     height: 40px;
@@ -194,8 +199,9 @@ section.recent-posts {
 }
 
 .post-top-meta .author-thumb {
-    width: 72px;
-    height: 72px;
+    width: 24px;
+    height: 24px;
+    margin: 0;
 }
 
 .post-top-meta.authorpage .author-thumb {
@@ -203,9 +209,13 @@ section.recent-posts {
 }
 
 .post-top-meta span {
-    font-size: 0.9rem;
+    font-size: 1rem;
     color: rgba(0, 0, 0, .44);
     display: inline-block;
+    padding: 0 4px;
+}
+.post-top-meta span.top-author-name{
+    color: black;
 }
 
 .post-top-meta .author-description {
@@ -316,7 +326,6 @@ span.post-read-more a:hover {
 
 .mainheading h1.posttitle {
     font-weight: 700;
-    margin-bottom: 1rem;
 }
 
 .footer {
