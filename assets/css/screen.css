@@ -186,7 +186,13 @@ section.recent-posts {
     display: flex;
     flex-flow: column wrap;
     width: 100%;
-    max-height: 150px;
+    max-height: 250px;
+}
+
+@media(max-width:991px){
+    .author-box{
+        max-height: 100%;
+    }
 }
 
 .author-info{
@@ -206,8 +212,8 @@ section.recent-posts {
 }
 
 .post-top-meta .author-thumb {
-    width: 24px;
-    height: 24px;
+    width: 35px;
+    height: 35px;
     margin: 0;
 }
 
@@ -216,13 +222,13 @@ section.recent-posts {
 }
 
 .post-top-meta span {
-    font-size: 1rem;
+    font-size: 1.1rem;
     color: rgba(0, 0, 0, .44);
     display: inline-block;
     padding: 0 4px;
 }
 .post-top-meta span.top-author-name{
-    color: black;
+    color: rgba(0, 0, 0, .8);
 }
 
 .toc ul {
