@@ -22,7 +22,7 @@ post_class: post-template
                 <!-- Author Box -->
                 {% if page.authors %}
                 <div class="row post-top-meta" style="margin:0">
-                    <div>
+                    <div class="author-box">
                         {% for author_name in page.authors %}
                         {% assign author = site.data.author[author_name] %}
                         <p class="author-info">
