@@ -18,7 +18,10 @@ post_class: post-template
         <!-- Post -->
 
         <div class="col-md-9 flex-first flex-md-unordered">
-            <div class="mainheading">
+            <div class="mainheading post-mainhead">
+                <!-- Post Title -->
+                <h1 class="posttitle">{{ page.title }}</h1>
+
                 <!-- Author Box -->
                 {% if page.authors %}
                 <div class="row post-top-meta" style="margin:0">
@@ -38,8 +41,6 @@ post_class: post-template
                     </div>
                     {% endif %}
                 </div>
-                <!-- Post Title -->
-                <h1 class="posttitle">{{ page.title }}</h1>
             </div>
             <!-- Adsense if enabled from _config.yml (change your pub id and slot) -->
             {% if site.adsense == "enabled" %}
