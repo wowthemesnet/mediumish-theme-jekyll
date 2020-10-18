@@ -1,9 +1,10 @@
 # Site
-name: "Mediumish"
-title: "Mediumish"
-description: "Jekyll template, Medium styled, free for bloggers."
-logo: 'assets/images/logo.png'
-favicon: 'assets/images/logo.png'
+
+name: "The Silent Sexism Project"
+description: "Let’s Fight Sexism Together by sharing our experiences and addressing the silent threat. Because no matter how small the instance, your voice matters!"
+logo: 'assets/images/favicon.png'
+favicon: 'assets/images/favicon.png'
+hero: 'assets/images/jumbotron.jpg'
 baseurl: /mediumish-theme-jekyll
 google_analytics: 'UA-46278016-1'
 disqus: 'demowebsite'
@@ -70,3 +71,5 @@ adsense-data-ad-slot: "1363087678"
 lazyimages: "disabled"
 
 exclude: [changelog.md, LICENSE.txt, README.md, Gemfile, Gemfile.lock]
+
+

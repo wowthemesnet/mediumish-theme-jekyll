@@ -1,35 +1,27 @@
 ---
 layout: page
-title: Mediumish Template for Jekyll
+title: About Us
 permalink: /about
-comments: true
+comments: false
+
 ---
 
+![](assets/images/icon.png)
+
+<div class="sitetitle">
 <div class="row justify-content-between">
 <div class="col-md-8 pr-5">
 
-<p>This website is built with Jekyll and Mediumish template for Jekyll. It's for demonstration purposes, no real content can be found. Mediumish template for Jekyll is compatible with Github pages, in fact even this demo is created with Github Pages and hosted with Github.</p>
 
-<p class="mb-5"><img class="shadow-lg" src="{{site.baseurl}}/assets/images/mediumish-jekyll-template.png" alt="jekyll template mediumish" /></p>
-<h4>Documentation</h4>
 
-<p>Please, read the docs <a href="https://bootstrapstarter.com/bootstrap-templates/template-mediumish-bootstrap-jekyll/">here</a>.</p>
+ <p><i>The Silent Sexism Project exists to catalogue instances of sexism experienced on a day to day basis. They might be serious or minor, outrageously offensive or so niggling and normalized that you don’t even feel the reason to protest. Say as much or as little as you like, use your real name or a pseudonym – it’s up to you. By sharing your story you’re showing the world that sexism does exist, it is faced by women and men every day and it is a valid problem to discuss.</i></p><br>
+
+</div>
+</div>
+</div>
+
 
 <h4>Questions or bug reports?</h4>
 
 <p>Head over to our <a href="https://github.com/wowthemesnet/mediumish-theme-jekyll">Github repository</a>!</p>
 
-</div>
-
-<div class="col-md-4">
-
-<div class="sticky-top sticky-top-80">
-<h5>Buy me a coffee</h5>
-
-<p>Thank you for your support! Your donation helps me to maintain and improve <a target="_blank" href="https://github.com/wowthemesnet/mediumish-theme-jekyll">Mediumish <i class="fab fa-github"></i></a>.</p>
-
-<a target="_blank" href="https://www.wowthemes.net/donate/" class="btn btn-danger">Buy me a coffee</a> <a target="_blank" href="https://bootstrapstarter.com/bootstrap-templates/template-mediumish-bootstrap-jekyll/" class="btn btn-warning">Documentation</a>
-
-</div>
-</div>
-</div>
