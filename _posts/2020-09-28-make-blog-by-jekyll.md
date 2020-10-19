@@ -159,8 +159,7 @@ Configuration file: /Users/enoc/github.com/Enoch-Kim/enoch-kim.github.io/_config
 
 ![Capture](../assets/images/capture-jekyll-success.png)
 
-이제 한번 자신의 웹사이트에 접속해 봅시다. `{username}.github.io` 로 접속해보시면 됩니다. (저의 경우 `https://enoch-kim.github.io`)
-<!-- TODO : 실제 주소로 링크 -->
+이제 한번 자신의 웹사이트에 접속해 봅시다. `{username}.github.io` 로 접속해보시면 됩니다. (저의 경우 [enoch-kim.github.io](https://enoch-kim.github.io) 입니다.)
 
 그럼 다음과 같이 결과가?!
 
@@ -170,5 +169,68 @@ Configuration file: /Users/enoc/github.com/Enoch-Kim/enoch-kim.github.io/_config
 repository의 `root` 디렉토리가 `index.html`과 동일한 위치이고, `/assets` 파일은 `root` 디렉토리에 있으나
 `/mediumish-jekyll-themes/assets` 으로 파일 경로를 불러와서 이렇게 되는 것입니다.
 
-**바꿔야할게 많은데요, 다음 포스팅에서는 이를 수정하면서 블로그를 Customizing 하는 방법을 다루겠습니다!**
-<!-- TODO : 위의 내용 지우고 다음 포스트 내용 첨부 -->
+`_config.yml` 파일의 `base_url`을 `/` 로 바꿔 `root` 디렉토리로 연결해줍시다.
+이제 다시 push 후 자신의 웹사이트로 접속해보면 정상적으로 작동할 것 입니다.
+
+다들 눈치채셨겠지만, 사실 author도 그렇고 로고도 그렇고 바꿔야할 부분이 많습니다.
+지금까지 해온 방식대로 하나하나 제거해 나가면 됩니다.
+
+저는 이보다 다른 부분들을 다룰 생각인데요, google-analytics와 disqus를 연결해줍시다!
+
+***
+
+### Google Analytics
+
+Google Analytics는 저희가 만든 블로그의 접속 등을 분석하기 위한 구글에서 제공하는 분석 툴입니다.
+추적 ID를 설정함으로써 간단하게 이 분석 툴을 활용할 수 있어요!! 이 추적 ID를 설정하는 법을 다루겠습니다!
+
+우선 [Google Analytics](https://analytics.google.com/analytics/web/provision/#/provision) 에 들어가서 계정 만들기를 클릭합니다.
+
+1. 첫 단계인 계정 설정에서 계정 이름을 입력하고 다음을 누릅니다.
+
+2. 측정하려는 대상을 웹으로 선택하고 다음을 누릅니다.
+
+3. 웹 사이트 이름은 그냥 url(`{username}.github.io`)과 동일하게 설정해주세요. (관리가 편합니다)
+또한, 웹사이트 URL 부분에서 http를 https로 변경후 동일하게 `{username}.github.io` 로 적어주신 후 시간을 한국으로 변경하여 만들어주세요.
+
+위의 방법대로 계정을 생성하면 다음과 같이 UA로 시작하는 추적 ID가 생성됐을 거예요.
+
+![Capture](../assets/images/capture-google-analytics.png)
+
+해당 추적 ID를 복사하여 `_config.yml` 파일의 `google_analytics`의 값에 넣어줍니다.
+이제 Push 후 `{username}.github.io`에 들어가보면 Google Analytics 콘솔에 기록이 남을 거예요! (~~추가적인 부분은 구글링 합시다.~~)
+
+***
+
+### Disqus
+
+Disqus는 여러 블로그에서 사용하고 있는 댓글 플랫폼입니다.
+다음과 같은 댓글을 보셨다면 모두 Disqus를 사용하고 있는 겁니다!
+
+![Capture](../assets/images/capture-disqus.png)
+
+Disqus는 단순히 한 블로그에만 국한되지 않고, 다른 블로그들에서도 계정이 연동되어 활동할 수 있습니다.
+만약 댓글을 달고 댓글에 다른 사람들이 답글을 달면, 메일로 알려주는 기능 등의 서비스도 제공합니다.
+
+[Disqus](https://disqus.com/)에 접속해 계정을 생성하고 아무 블로그에 가서 댓글을 달아보세요!
+그 후 Disqus 홈페이지에서 자신의 프로필 페이지에 접속하면 댓글을 단 기록을 볼 수 있습니다!
+
+이제 블로그와 연동해볼까요??
+
+1. [Disqus](https://disqus.com/) 홈페이지에서 Get Started를 클릭합니다.
+
+2. I want to install Disqus on my site를 클릭합니다.
+
+3. 간단한 이름을 적습니다. 저는 enoch-kim으로 작성했어요.
+카테고리는 Tech로, 언어는 English로 선택합니다. (한국어가 없네요...ㅠㅠ)
+
+4. Basic Plan을 선택한다. (스크롤을 아래로 내리면 보입니다.)
+다음으로는 Platform 선택 화면에서 Jekyll을 선택합니다.
+
+5. General Setting에서 `Website URL` 부분에 `{username}.github.io`를 입력합니다.
+
+6. 이제 위에 적혀있는 Short Name을 `_config.yml` 파일의 `disqus`의 값에 넣어줍니다.
+
+Push 후에 댓글을 달아봅시다!!
+
+**바꿔야할게 많은데요, Author, favicon 등은 개인 취향에 따라 변경해주면 될 것 같습니다!!**
