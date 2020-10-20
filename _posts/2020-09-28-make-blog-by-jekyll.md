@@ -175,14 +175,14 @@ repository의 `root` 디렉토리가 `index.html`과 동일한 위치이고, `/a
 다들 눈치채셨겠지만, 사실 author도 그렇고 로고도 그렇고 바꿔야할 부분이 많습니다.
 지금까지 해온 방식대로 하나하나 제거해 나가면 됩니다.
 
-저는 이보다 다른 부분들을 다룰 생각인데요, google-analytics와 disqus를 연결해줍시다!
+저는 이보다 다른 부분들을 다룰 생각인데요, google-analytics와 disqus를 연결해줍시다 !
 
 ***
 
 ### Google Analytics
 
 Google Analytics는 저희가 만든 블로그의 접속 등을 분석하기 위한 구글에서 제공하는 분석 툴입니다.
-추적 ID를 설정함으로써 간단하게 이 분석 툴을 활용할 수 있어요!! 이 추적 ID를 설정하는 법을 다루겠습니다!
+추적 ID를 설정함으로써 간단하게 이 분석 툴을 활용할 수 있습니다. 이 추적 ID를 설정하는 법을 다루겠습니다.
 
 우선 [Google Analytics](https://analytics.google.com/analytics/web/provision/#/provision) 에 들어가서 계정 만들기를 클릭합니다.
 
@@ -198,22 +198,22 @@ Google Analytics는 저희가 만든 블로그의 접속 등을 분석하기 위
 ![Capture](../assets/images/capture-google-analytics.png)
 
 해당 추적 ID를 복사하여 `_config.yml` 파일의 `google_analytics`의 값에 넣어줍니다.
-이제 Push 후 `{username}.github.io`에 들어가보면 Google Analytics 콘솔에 기록이 남을 거예요! (~~추가적인 부분은 구글링 합시다.~~)
+이제 Push 후 `{username}.github.io`에 들어가보면 Google Analytics 콘솔에 기록이 남을 겁니다.(~~추가적인 부분은 구글링 합시다.~~)
 
 ***
 
 ### Disqus
 
 Disqus는 여러 블로그에서 사용하고 있는 댓글 플랫폼입니다.
-다음과 같은 댓글을 보셨다면 모두 Disqus를 사용하고 있는 겁니다!
+다음과 같은 댓글을 보셨다면 모두 Disqus를 사용하고 있는 겁니다 !
 
 ![Capture](../assets/images/capture-disqus.png)
 
 Disqus는 단순히 한 블로그에만 국한되지 않고, 다른 블로그들에서도 계정이 연동되어 활동할 수 있습니다.
 만약 댓글을 달고 댓글에 다른 사람들이 답글을 달면, 메일로 알려주는 기능 등의 서비스도 제공합니다.
 
-[Disqus](https://disqus.com/)에 접속해 계정을 생성하고 아무 블로그에 가서 댓글을 달아보세요!
-그 후 Disqus 홈페이지에서 자신의 프로필 페이지에 접속하면 댓글을 단 기록을 볼 수 있습니다!
+[Disqus](https://disqus.com/)에 접속해 계정을 생성하고 아무 블로그에 가서 댓글을 달아보세요.
+그 후 Disqus 홈페이지에서 자신의 프로필 페이지에 접속하면 댓글을 단 기록을 볼 수 있습니다.
 
 이제 블로그와 연동해볼까요??
 
@@ -221,8 +221,11 @@ Disqus는 단순히 한 블로그에만 국한되지 않고, 다른 블로그들
 
 2. I want to install Disqus on my site를 클릭합니다.
 
-3. 간단한 이름을 적습니다. 저는 enoch-kim으로 작성했어요.
-카테고리는 Tech로, 언어는 English로 선택합니다. (한국어가 없네요...ㅠㅠ)
+3. 간단한 이름을 적습니다. 저는 enoch-kim으로 작성했습니다.
+카테고리와 언어를 선택해줍니다. 보시면 한국어가 언어 리스트에 없습니다.
+~~만약 한국어 설정을 하고 싶으시면 [이 곳](https://dololak.tistory.com/663)을 참고해주세요.~~
+Disqus가 React로 코드를 옮기면서 정해진 언어만 사용하도록 고정해서 위의 방법이 안됩니다.
+어쩔 수 없이 영어로 사용해야할 것 같아요...
 
 4. Basic Plan을 선택한다. (스크롤을 아래로 내리면 보입니다.)
 다음으로는 Platform 선택 화면에서 Jekyll을 선택합니다.
