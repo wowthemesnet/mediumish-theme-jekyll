@@ -1,9 +1,8 @@
 ---
 layout: post
 title:  "Jekyll을 사용한 나만의 블로그 만들기"
-author: Enoch-Kim
-categories: [ Jekyll, tutorial ]
-tags: ["Blog", "Jekyll"]
+authors: [Enoch-Kim]
+tags: ["Web"]
 image: assets/images/jekyll-logo.png
 description: "DSC 블로그를 만들며 정리한 내용."
 featured: true
