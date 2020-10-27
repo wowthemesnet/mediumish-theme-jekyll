@@ -184,7 +184,8 @@ section.recent-posts {
 
 .author-box{
     display: flex;
-    flex-flow: column wrap;
+    flex-flow: row wrap;
+    justify-content: space-between;
     width: 100%;
     max-height: 250px;
 }
@@ -198,6 +199,7 @@ section.recent-posts {
 .author-info{
     display: block;
     margin-bottom: 1rem;
+    flex: 1 1 40%;
 }
 
 .author-thumb {
