@@ -187,7 +187,6 @@ section.recent-posts {
     flex-flow: row wrap;
     justify-content: space-between;
     width: 100%;
-    max-height: 250px;
 }
 
 @media(max-width:991px){
