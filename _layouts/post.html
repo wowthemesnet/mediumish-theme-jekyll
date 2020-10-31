@@ -16,28 +16,32 @@ post_class: post-template
         </div>
 
         <!-- Post -->
-        {% assign author = site.data.author[page.author] %}
 
         <div class="col-md-9 flex-first flex-md-unordered">
-            <div class="mainheading">
-
-                <!-- Author Box -->
-                {% if page.author %}
-                <div class="row post-top-meta">
-                    <div class="col-xs-12 col-md-3 col-lg-2 text-center text-md-left mb-4 mb-md-0">
-                        <img class="author-thumb" src="https://github.com/{{ page.author }}.png" alt="{{ author.display_name }}">
-                    </div>
-                    <div class="col-xs-12 col-md-9 col-lg-10 text-center text-md-left">
-                        <a target="_blank" class="link-dark" href="{{ author.web }}">{{ author.display_name }}</a>
-                    </div>
-                </div>
-                {% endif %}
-
+            <div class="mainheading post-mainhead">
                 <!-- Post Title -->
                 <h1 class="posttitle">{{ page.title }}</h1>
 
+                <!-- Author Box -->
+                {% if page.authors %}
+                <div class="row post-top-meta" style="margin:0">
+                    <div class="author-box">
+                        {% for author_name in page.authors %}
+                        {% assign author = site.data.author[author_name] %}
+                        <p class="author-info">
+                            <img class="author-thumb" src="https://github.com/{{ author_name }}.png" alt="{{ author.display_name }}">
+                            <span class="top-author-name">{{ author.display_name }}</span>
+                            <span><a class="link-dark" href="mailto:{{ author.email }}"><i class="far fa-envelope"></i></a></span>
+                            <span><a class="link-dark" href="https://github.com/{{ author_name }}"><i class="fab fa-github"></i></a></span>
+                            {% if author.web %}
+                            <span><a class="link-dark" href="{{ author.web }}"><i class="fas fa-blog"></i></a></span>
+                            {% endif %}
+                        </p>
+                        {% endfor %}
+                    </div>
+                    {% endif %}
+                </div>
             </div>
-
             <!-- Adsense if enabled from _config.yml (change your pub id and slot) -->
             {% if site.adsense == "enabled" %}
                 {% include adsense-under-header.html %}

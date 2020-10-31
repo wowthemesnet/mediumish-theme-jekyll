@@ -35,8 +35,7 @@
     <noscript id="deferred-styles">
         <link href="https://fonts.googleapis.com/css?family=Righteous%7CMerriweather:300,300i,400,400i,700,700i"
             rel="stylesheet">
-        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css"
-            integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.0/css/all.css">
     </noscript>
 
 
@@ -92,10 +91,11 @@
 
             <!-- Site Title
 ================================================== -->
+            {% if page.layout != "post" %}
             <div class="mainheading">
                 <img class="full_logo" src="{{ site.baseurl }}/{{ site.full_logo }}" alt="{{ site.name }}">
-            </div>
-
+            </div> 
+            {% endif %}
             <!-- Content
 ================================================== -->
             <div class="main-content">

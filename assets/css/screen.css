@@ -182,6 +182,25 @@ section.recent-posts {
     margin-bottom: 15px;
 }
 
+.author-box{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    width: 100%;
+}
+
+@media(max-width:991px){
+    .author-box{
+        max-height: 100%;
+    }
+}
+
+.author-info{
+    display: block;
+    margin-bottom: 1rem;
+    flex: 1 1 40%;
+}
+
 .author-thumb {
     width: 40px;
     height: 40px;
@@ -194,8 +213,9 @@ section.recent-posts {
 }
 
 .post-top-meta .author-thumb {
-    width: 72px;
-    height: 72px;
+    width: 35px;
+    height: 35px;
+    margin: 0;
 }
 
 .post-top-meta.authorpage .author-thumb {
@@ -203,15 +223,13 @@ section.recent-posts {
 }
 
 .post-top-meta span {
-    font-size: 0.9rem;
+    font-size: 1.1rem;
     color: rgba(0, 0, 0, .44);
     display: inline-block;
+    padding: 0 4px;
 }
-
-.post-top-meta .author-description {
-    margin-bottom: 5px;
-    margin-top: 5px;
-    font-size: 0.95rem;
+.post-top-meta span.top-author-name{
+    color: rgba(0, 0, 0, .8);
 }
 
 .toc ul {
@@ -310,13 +328,16 @@ span.post-read-more a:hover {
     margin-right: 5px;
 }
 
+.mainheading.post-mainhead{
+    padding: 1rem 0 0 0;
+}
 .mainheading h1.sitetitle {
     font-family: Righteous;
 }
 
 .mainheading h1.posttitle {
     font-weight: 700;
-    margin-bottom: 1rem;
+    margin-bottom:1rem;
 }
 
 .footer {

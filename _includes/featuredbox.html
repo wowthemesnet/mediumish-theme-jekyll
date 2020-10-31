@@ -1,5 +1,5 @@
 <!-- begin post -->
-{% assign author = site.data.author[post.author] %}
+{% assign author = site.data.author[post.authors.first] %}
 <div class="col-md-6 mb-30px">
     <div class="listfeaturedtag h-100">
         <div class="row h-100">
@@ -28,9 +28,9 @@
                         </div>
                         <div class="card-footer b-0 bg-white mt-auto">
                             <div class="wrapfooter">
-                                {% if post.author %}
+                                {% if post.authors %}
                                 <span class="meta-footer-thumb">
-                                <img class="author-thumb" src="https://github.com/{{ post.author }}.png" alt="{{ author.display_name }}">
+                                <img class="author-thumb" src="https://github.com/{{ post.authors.first }}.png" alt="{{ author.display_name }}">
                                 </span>
                                 <span class="author-meta">
                                 <span class="post-name"><a target="_blank" href="{{ author.web }}">{{ author.display_name }}</a></span><br/>
