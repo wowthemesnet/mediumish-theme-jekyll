@@ -46,7 +46,7 @@ Repository Name은 원하시는 이름으로 설정하면 됩니다. Description
 
 ![Capture](../assets/images/post-how-to-use-git/04.branch.png)
 
-branch는 master에서 떨어져 나오는 아이입니다. master에서 잠깐 떼어내서 작업하고 다시 master랑 합칠 거에요!(merge) 2번에서 아주 약간 더 설명해드릴테니 일단 넘어가시죠..!
+기본 브랜치 이름은 master 혹은 main이 될 수 있습니다. 요 브랜치 관련 내용은 2번에서 아주 약간 더 설명해드릴테니 일단 넘어가시죠..!
 
 ## 2) 이미 만들어진 공간에 들어가서 협업하면 되는 경우
 
@@ -62,11 +62,13 @@ repository의 클론 폴더를 제 컴퓨터에 만들어줄거에요! 아래 �
 
 이 상태로 그대로 이제 다 같이 master branch에서 작업해서 commit 해볼까요?
 
-commit은 Git에 업로드한다는 느낌으로 이해하면 편합니다. 이전까지 작업은 Git에는 적용되지 않고, Local 환경에서만 바뀌었기 때문에 업로드를 해야 적용이 되겠죠?
+commit은 Git에 업로드하기 전에 제 컴퓨터에만 저장한다는 느낌으로 이해하면 편합니다.
 
 그런데. **그렇게 하지 마세요!!!!** 다른 사람들과 다른 파일을 작업하면 괜찮을지 몰라도, 같은 파일을 작업할 경우 다른 사람이 Commit한 내역이 저에게 없으니 필연적으로 충돌이 일어납니다.
 
 그래서 branch를 따로 만들 거에요. 현재의 master branch에서 잠깐 다른 줄기로 이동해서 작업을 하고, 다시 master branch와 합칠 거에요. 작업하는 사람들이 아닌 다른 사람들은 master branch의 모습만 보게 됩니다!
+
+[조금 더 자세한 설명이 필요하시다면 클릭해주세요.](https://backlog.com/git-tutorial/kr/stepup/stepup1_1.html){: target="_blank"}
 
 그럼 branch를 만들어 볼까요? Github Desktop에서 아래와 같이 해주세요.
 
@@ -76,7 +78,7 @@ commit은 Git에 업로드한다는 느낌으로 이해하면 편합니다. 이�
 
 branch 이름은 양식이 따로 있다면 그 양식을 따라 주시고, 없다면 다른 branch 이름 보고 눈치껏 지어줍시다.
 
-혹시 모르고 master branch에서 이미 작업한 내역이 있나요? 그렇다면 아래 빨간 박스로 되어 있는 부분을 눌러서 변경 내역을 가져와주세요!
+혹시 모르고 master branch에서 이미 작업한 내역이 있나요? 그렇다면 아래 빨간 박스로 되어 있는 부분을 눌러서 변경 내역을 가져와주세요! 변경 내역이 있을 때에만 뜨는 창입니다.
 
 ![Capture](../assets/images/post-how-to-use-git/07.bring-change.png)
 
@@ -84,9 +86,9 @@ branch 이름은 양식이 따로 있다면 그 양식을 따라 주시고, 없�
 
 ![Capture](../assets/images/post-how-to-use-git/08.commit.png)
 
-과거의 저는, summary를 입력하지 않으면 commit을 못한다는 것을 몰랐습니다. 그래서 한 파일씩 commit 했던 기억이 나네요. 여러분들은 그러지 마세요...
+Github Desktop 쓰시는 분들은 제가 채워둔 것처럼 commit to issue12 버튼 위의 내용을 채우셔야 버튼이 활성화 됩니다!
 
-이제 해당 commit을 원격 repository로 push 해줄거에요. commit은 제 local에서만 저장하는 거라면, push는 조금 더 멀리 보내는 느낌입니다.
+이제 해당 commit을 원격 repository로 push 해줄거에요. commit은 제 local에서만 저장하는 거라면, push는 이제 Git에 업로드하는 느낌이에요.
 
 push까지 하고 나면, Github Desktop에 아래 그림처럼 버튼이 생길 거에요. 눌러줍시다.
 
@@ -100,4 +102,8 @@ push까지 하고 나면, Github Desktop에 아래 그림처럼 버튼이 생길
 
 ### markdown 포스팅을 위한 약간의 팁
 
+![Capture](../assets/images/post-how-to-use-git/11.lint.png)
+
 VScode를 사용하신다면, EXTENSIONS에서 markdownlint을 설치해주세요. 그러면 형식이 틀렸을 경우 노란 줄로 표시해줍니다!
+
+포스트가 도움이 되었다면 좋겠습니다.
