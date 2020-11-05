@@ -14,7 +14,7 @@ featured: true
 
 https://www.estsecurity.com/
 
-![](../assets/images/mission1_ex.PNG)
+![Mission Image](../assets/images/mission1_ex.PNG)
 
 바로 이사이트의 UI부분을 클론코딩 하는것인데 직접 살펴보면 배경화면으로 영상이 실행되고 있고 상단 로고, 중앙 슬로건이 있네요.
 
