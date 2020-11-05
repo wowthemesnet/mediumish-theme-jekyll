@@ -38,7 +38,7 @@ https://www.estsecurity.com/
 
 우선 배경영상은 제공받은 아래의 영상을 이용하여 꾸며야 합니다.
 
-![](../assets/images/mission1_video.gif)
+![Background Video](../assets/images/mission1_video.gif)
 
 아무래도 영상을 그냥 삽입한다면 화면 비율에 따라 여백이 생기거나 짤리는 현상이 생깁니다.. 그래서 보이는 화면의 비율에 알맞게 꽉 채우기 위해 position을 fixed로 두고, 비율에 맞게 크기를 조절해주는 object-fit 을 cover로 설정해 줍시다!
 
