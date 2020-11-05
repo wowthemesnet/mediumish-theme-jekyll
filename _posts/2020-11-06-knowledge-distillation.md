@@ -9,6 +9,7 @@ featured: true
 ---
 # Distilling the Knowledge in a Neural Network
 이승현
+
 [![N|Solid](https://cldup.com/dTxpPi9lDf.thumb.png)](https://tobigs.gitbook.io/knowledge-distilation/)
 
 Knowledge Distillation(지식전이)는 미리 잘 학습된 큰 네트워크의 지식을 실제로 사용하고자 하는 작은 네트워크에게 전달합니다.
@@ -55,8 +56,11 @@ soft하면 결과값이 천천히 증가한다는 뜻입니다. 하지만 T가 �
 T가 logit, z에 비하여 커지면 아래와 같이 Approximate할 수 있습니다. 
 
 ![](https://gblobscdn.gitbook.com/assets%2F-M3RVHjB3jxZ_gczx5nQ%2F-M3RY_HPLzeqjNTWopMn%2F-M3RatUQE3GPBKhCxkPb%2Fimage.png?alt=media&token=f3c51018-2074-4775-b297-6711412f5b1f)
+
 만약 전 layer의 output값인 z, v zero-centered하다면z/T는 0이 됩니다. 
+
 ![](https://gblobscdn.gitbook.com/assets%2F-M3RVHjB3jxZ_gczx5nQ%2F-M3RY_HPLzeqjNTWopMn%2F-M3RbNuimp2fLnony8mY%2Fimage.png?alt=media&token=a807ab9f-e351-42bb-8f9e-70b5ceab5a0b)
+
 여기서 알 수 있는 것은 T가 클 때는 Gradient가 작아지므로 좀 더 천천히 soft하게 학습하고, T가 작을 때는 Gradient가 커져서 좀 더 급격하게 학습합니다.
 
 ## Result
