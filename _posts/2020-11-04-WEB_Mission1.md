@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "WEB Mission1 - HTML, CSS 만을 이용한 웹사이트 제작하기"
-authors: [HyunGyu-Kim]
+authors: [gusrb3164]
 tags: ["Web"]
 image: assets/images/mission1_main.png
 description: "web팀의 첫번째 미션 일지"
