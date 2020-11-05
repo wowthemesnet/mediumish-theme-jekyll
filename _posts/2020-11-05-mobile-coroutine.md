@@ -1,3 +1,10 @@
+---
+title:  "[ Kotlin ] Coroutine 기본 정리 및 Android에서의 사용 방법"
+authors: [sheele41]
+tags: ["Mobile"]
+image: https://oasisfores.com/wp-content/uploads/2020/11/post_main.png
+---
+
 ![post\_main](https://oasisfores.com/wp-content/uploads/2020/11/post_main.png)
 
 # 시작하기 전에...
