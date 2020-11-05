@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Jekyll을 사용한 나만의 블로그 만들기"
+title:  "Knowledge Distillation"
 authors: [easter]
 tags: ["Knowledge Distillation"]
 image: assets/images/jekyll-logo.png
