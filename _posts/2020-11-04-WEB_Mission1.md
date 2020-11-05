@@ -157,6 +157,6 @@ HTML,CSS 만으로도 이렇게 멋진 사이트를 만들 수 있다는게 놀�
 
 결과물로서 수빈님의 작품 링크와 형진님이 미션을 만들기 위해 작성한 미션 요구사항 사이트를 따로 첨부해드릴테니 참고해보시기 바랍니다!
 
-https://mobumin.github.io/DSC-web/missionpage/mission1.html
-
-https://www.notion.so/1-Mission-Clone-from-scratch-1e0106275ca1460683bbc444dc7417d6
+> <https://mobumin.github.io/DSC-web/missionpage/mission1.html>
+>
+> <https://www.notion.so/1-Mission-Clone-from-scratch-1e0106275ca1460683bbc444dc7417d6>
