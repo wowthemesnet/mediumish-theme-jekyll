@@ -5,8 +5,6 @@ tags: ["Mobile"]
 image: https://oasisfores.com/wp-content/uploads/2020/11/post_main.png
 ---
 
-![post\_main](https://oasisfores.com/wp-content/uploads/2020/11/post_main.png)
-
 # 시작하기 전에...
 ![coroutine\_gif](https://oasisfores.com/wp-content/uploads/2020/11/1_OEX52nKgM1SHGO4l1mvV1A.gif)  
 
