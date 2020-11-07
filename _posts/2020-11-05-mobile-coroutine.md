@@ -155,10 +155,10 @@ CoroutineScope에 대한 자세한 사용 방법은 아래에서 실제 예시�
 ### 세 번째, CoroutineBuilder
 
 대망의 마지막, **CoroutineBuilder**입니다.  
-**CoroutineBuilder의 본질**은 결국 **설정해준 Context와 Scope를 통해 Coroutine을 실행시켜주는 '함수'**입니다.  
+**CoroutineBuilder의 본질**은 결국 **설정해준 Context와 Scope를 통해 Coroutine을 실행시켜주는 '함수'** 입니다.  
 미사일을 쏠 때 launch 버튼을 누르는 것과 같이 **launch(혹은 async)로 시작된 Coroutine은 내 손을 떠나 제 갈길을 가게 되죠.**  
 
-**CoroutineBuilder의 종류**로는 **launch{}, async{}**이 있으며 CoroutineScope의 확장함수로써 **{} 내부의 코드를 Coroutine으로 실행시켜주는 역할**을 합니다.
+**CoroutineBuilder의 종류**로는 **launch{}, async{}** 이 있으며 CoroutineScope의 확장함수로써 **{} 내부의 코드를 Coroutine으로 실행시켜주는 역할**을 합니다.
 
 **{} 내부의 Coroutine들이 모두 완료될 때까지 현재 Thread를 Blocking하는 runBlocking{}도 있지만 Coroutine의 장점인 '일시 중단'을 못 쓰게 되어버리므로 사용이 권장되지 않습니다.**  
 **특히 UI 작업을 관장하는 Main Thread에서 runBlocking을 사용하여 Thread를 장시간 점유하고 있을 경우 ANR (Application Not Responding)이 발생할 수 있습니다.**
