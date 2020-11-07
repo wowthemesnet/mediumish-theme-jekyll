@@ -42,7 +42,7 @@ featured: true
 
 참고로 width와 height의 % 단위는 부모요소에 대해서 차지하는 비율이니까 backvid를 감싸고 있는 부모요소를 화면에 꽉 채우는것 명심하세요!
 
-```sh
+```css
 #backvid{
     position: fixed;
     width:100%;
