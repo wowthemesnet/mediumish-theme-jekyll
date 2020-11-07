@@ -70,7 +70,7 @@ Coroutine이라는 단어가 너무 많네요. 위 코드를 기준으로 바꿔
 Coroutine 구성 요소 그 첫 번째, **CoroutineContext**입니다.  
 말 그대로 Coroutine이 실행될 **Context**, '맥락'을 지정해주는 것인데요.  
 간단한 예로 **올림픽 경기**를 생각해볼 수 있습니다.  
-'Coroutine 얘기 하다 말고 갑자기 웬 올림픽이냐' 라고 하실 수도 있겠지만 일단 그냥 생각해보자구요. \^\^  
+'Coroutine 얘기 하다 말고 갑자기 웬 올림픽이냐' 라고 하실 수도 있겠지만 일단 그냥 생각해보자구요. ^^  
 
 올림픽 경기에는 수영, 달리기, 양궁, 등과 같이 여러가지 종목이 있습니다.  
 여러가지 종목이 있는 만큼 경기장 또한 여러 개 존재하겠죠?  
@@ -79,7 +79,7 @@ Coroutine 또한 이와 같습니다. 무슨 소리냐구요?
 우리가 만들어줄 **Coroutine을 선수, CoroutineContext를 경기장**으로 생각하시면 됩니다.  
 
 결국 CoroutineContext를 설정해준다는 것은 **Coroutine의 실행 목적에 맞게 실행될 특정 Thread Pool을 지정**해주는 것이라고 할 수 있습니다.  
-(수영 선수가 육상 경기장에 가있으면 안되겠죠? \^\^)  
+(수영 선수가 육상 경기장에 가있으면 안되겠죠? ^^)  
 
 ![basic\_coroutine](https://oasisfores.com/wp-content/uploads/2020/11/basic_coroutine.png)  
 
@@ -377,7 +377,7 @@ suspend fun myCoroutine() {
 앞부분에서 대부분의 내용을 다 설명해버렸기 때문에 간단한 예시만 보여드리고 글을 마치려고 합니다.
 
 Android 환경에서는 Coroutine을 사용할 때 **Activity에 CoroutineScope를 상속받아 Coroutine을 Activity Life-Cycle에 맞추는 것을 권장**하고 있습니다.  
-이제 이 정도는 무슨 내용인지 다 이해할 수 있으시죠? \^\^
+이제 이 정도는 무슨 내용인지 다 이해할 수 있으시죠? ^^
 
 위 내용을 MainActivity에 적용한 코드는 아래와 같습니다.
 
@@ -413,7 +413,7 @@ Activity는 따로 제공되는 Coroutine 모듈이 없지만 ViewModel이나 Ro
 ## 마치며
 
 이렇게 길고도 긴 **'Android에서 Kotlin Coroutine 사용하기'** 가 끝났습니다.  
-정신차려보니 Android는 온데간데 없고 Kotlin Coroutine만 남아있네요 \^\^;
+정신차려보니 Android는 온데간데 없고 Kotlin Coroutine만 남아있네요 ^^;
 
 글을 마치기 전에 제가 설명하지 않았던 부분을 마지막으로 정리해드리려고 합니다.  
 글의 길이가 너무 길어질 것 같아서 뺐던 내용들인데, 중요하지 않은 내용인 것은 아니니 따로 찾아서 공부하시면 반드시 도움이 될 것입니다.
@@ -423,4 +423,4 @@ Activity는 따로 제공되는 Coroutine 모듈이 없지만 ViewModel이나 Ro
 **3. 예외 처리 및 디버깅**  
 **4. Dispatchers의 다른 필드**  
 
-이상으로 글을 마치겠습니다. 감사합니다. \^\^
+이상으로 글을 마치겠습니다. 감사합니다. ^^
