@@ -43,11 +43,11 @@ featured: true
 참고로 width와 height의 % 단위는 부모요소에 대해서 차지하는 비율이니까 backvid를 감싸고 있는 부모요소를 화면에 꽉 채우는것 명심하세요!
 
 ```css
-#backvid{
-    position: fixed;
-    width:100%;
-    height:100%;
-    object-fit: cover;
+#backvid {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
 ```
 
@@ -57,7 +57,7 @@ featured: true
 
 그리고 버튼에 커서를 가져다대면 반응하는 hover 를 css에 추가해봅시다.
 
-```sh
+```css
 .container {
   z-index: 1;
   display: grid;
@@ -94,7 +94,7 @@ featured: true
 
 그리고 상단 로고는 가운데 column 내에서 absolute 로 배치를 상위요소를 기준으로 정해줍니다.
 
-```sh
+```css
 #top {
   width: 100%;
   margin-top: 3%;
@@ -110,7 +110,7 @@ featured: true
 
 아래 코드를 살펴보면 슬로건 텍스트가 들어간 main-slogan에 animation을 설정해주고, @keyframes 함수를 통해 몇초마다 얼마만큼의 길이를 보여줄 것인지, 깜박이는 커서의 색상과 간격의 시간을 설정한 것을 볼 수 있습니다.
 
-```sh
+```css
 #main-slogan {
   position: absolute;
   display: inline-block;
