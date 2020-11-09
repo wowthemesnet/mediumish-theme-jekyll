@@ -102,7 +102,7 @@ push까지 하고 나면, Github Desktop에 아래 그림처럼 버튼이 생길
 
 ### markdown 포스팅을 위한 약간의 팁
 
-![Capture](../assets/images/post-how-to-use-git/11.lint.png)
+![Capture](../assets/images/post-how-to-use-git/11.lint.PNG)
 
 VScode를 사용하신다면, EXTENSIONS에서 markdownlint을 설치해주세요. 그러면 형식이 틀렸을 경우 노란 줄로 표시해줍니다!
 
