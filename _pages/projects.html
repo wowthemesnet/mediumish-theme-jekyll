@@ -1,0 +1,14 @@
+---
+title: Projects
+layout: page
+permalink: /projects/
+---
+
+{% include collection_include.html collection=site.projects %}
+
+<ul>
+   {% for proj in site.projects %}
+      <li><a href="{{ proj.url }}">{{ proj.title }}</a></li>
+      {{ proj.description }}
+   {% endfor %}
+</ul>

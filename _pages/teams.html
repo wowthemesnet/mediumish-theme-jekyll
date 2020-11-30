@@ -1,0 +1,14 @@
+---
+title: Teams
+layout: page
+permalink: /teams/
+---
+
+{% include collection_include.html collection=site.teams %}
+
+<ul>
+   {% for team in site.teams %}
+      <li><a href="{{ team.url }}">{{ team.title }}</a></li>
+      {{ team.description }}
+   {% endfor %}
+</ul>

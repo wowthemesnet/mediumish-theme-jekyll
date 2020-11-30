@@ -1,0 +1,32 @@
+---
+layout: default
+group: team
+---
+{{content}}
+​
+<!-- Get all projects for THIS team... -->
+{% assign projs = site.projects | where:layout.group, page.title %}
+​
+<!-- Gather unique list of members from projects -->
+​
+<!-- create empty array... -->
+{% assign members = '' | split: '' %}
+{% for p in projs %}
+​
+	<!-- concatenate members lists for all projects into 1-->
+	{% assign members = members | concat: p.people %}
+​
+{% endfor %}
+<!-- create unique member list -->
+{% assign unique_members = members | uniq %}
+​
+
+
+<!--   TEAM PAGE Layout -- OUTPUT HERE     -->
+
+<!-- List members -->
+​{% include members_include.html members_array=unique_members %}
+
+​
+<!-- List projects --- and description + linkage -->
+{% include projects_include.html projects_array=projs %}

@@ -1,0 +1,22 @@
+---
+layout: default
+group: member
+---
+{{ content }}
+
+
+{% include products.html tag=page.title type=layout.group %}
+
+<!-- create project_post array for member's projects -->
+{% assign projs = '' | split: '' %}
+{% for p in site.projects %}
+	<!-- if tag in product people array-->
+	{% if p.people contains page.title %}
+
+		{% assign projs = projs | push: p %}
+
+	{% endif %}
+{% endfor %}
+
+<!-- List projects --- and description + linkage -->
+{% include projects_include.html projects_array=projs %}

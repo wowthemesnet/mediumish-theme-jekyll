@@ -1,0 +1,30 @@
+<!--
+A group includes members (team || project)
+
+Include for listing members of group
+
+required input:
+
+- members_array: Array of member-names to output 
+------ FIRST:: must find all Member-posts from members_names array
+-->
+
+{% if include.members_array %}
+
+<!-- SLOW + UGLY -- Get-the-job-done way (N^2) -->
+
+<!-- Get all member_posts and output them-->
+	<h2>Members</h2>
+	<ul>
+	   {% for member in include.members_array %}
+
+	   		<!-- SLOW + UGLY -- Get-the-job-done way O(N * M) [N = total_member_posts, M = total_members_to_display -> sizeof(members_array)] -->
+			{% assign member_post = site.members | where: "title", member | first %}
+
+			<!--Formatting-->
+	      	<li><a href="{{ member_post.url }}">{{ member_post.title }}</a></li>
+	   
+	   {% endfor %}
+	</ul>
+
+{% endif %}

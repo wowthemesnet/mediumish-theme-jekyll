@@ -1,0 +1,14 @@
+---
+title: Members
+layout: page
+permalink: /members/
+---
+
+{% include collection_include.html collection=site.members %}
+
+<ul>
+   {% for member in site.members %}
+      <li><a href="{{ member.url }}">{{ member.title }}</a></li>
+      {{ member.description }}
+   {% endfor %}
+</ul>

@@ -1,0 +1,18 @@
+---
+layout: default
+group: project
+---
+
+
+{{content}}
+​
+<!--
+MEMBERS INCLUDE 
+
+members_include.html array=page.people 
+
+-->
+{% include members_include.html members_array=page.people %}
+
+
+{% include products.html tag=page.title type=layout.group %}

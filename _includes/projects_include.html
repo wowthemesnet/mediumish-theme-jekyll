@@ -1,0 +1,19 @@
+<!--
+Include for listing projects
+
+required input:
+
+- projects_array: Array of projects to output 
+-->
+
+<h3>Projects:</h3>
+{% if include.projects_array %}
+
+	{% for p in projs %}
+​
+		{{ p.title }}
+		
+​
+	{% endfor %}
+
+{% endif %}

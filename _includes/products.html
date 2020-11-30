@@ -1,0 +1,74 @@
+<!--
+
+A include (page) listing all product collections
+
+--- Publications
+--- Softwares
+
+INCLUDE PARAMETERS::
+--Tag --- given a search tag (member || project) name
+--type --- where product include request is coming from ("project", "member", team?, others??? )
+
+-->
+
+{% if include.tag %}
+{% if include.type %}
+
+{% if include.type == "member" %}
+
+	<!-- create empty arrays for member's publications -->
+	{% assign pubs = '' | split: '' %}
+	{% for pub in site.publications %}
+		<!-- if tag in product people array-->
+		{% if pub.people contains include.tag %}
+
+			{% assign pubs = pubs | push: pub %}
+
+		{% endif %}
+	{% endfor %}
+
+	<!-- create empty arrays for member's softwares -->
+	{% assign softs = '' | split: '' %}
+	{% for soft in site.software %}
+		<!-- if tag in product people array-->
+		{% if soft.people contains include.tag %}
+		
+			{% assign softs = softs | push: soft %}
+
+		{% endif %}
+	{% endfor %}
+
+
+
+<!-- NOT A MEMBER group -- (Team || Project) -->
+{% else %}
+	<!-- Get (assign) all publications (products) associated to "tag" of "type" -->	
+	{% assign pubs = site.publications | where:include.type, include.tag %}
+
+
+	{% assign softs = site.software | where:include.type, include.tag %}
+
+
+{% endif %}
+
+
+<!-- iterate all product collections -- output info: name + description + linkage -->
+
+<!--formaTTING -->
+
+<h2>Publications:</h2>
+{% assign pub_titles = pubs | map: "title" %}
+{{ pub_titles | join: ',' }}
+
+
+<h2>Software:</h2>
+{% for s in softs%}
+
+{{ s.title }}
+
+{% endfor %}
+
+
+
+{% endif %}	
+{% endif %}

@@ -1,0 +1,65 @@
+
+<!-- Begin Menu Navigation
+================================================== -->
+
+
+<nav class="navbar navbar-expand-lg navbar-light bg-white fixed-top mediumnavigation nav-down">
+
+    <div class="container pr-0">
+
+    <!-- Begin Logo -->
+    <a class="navbar-brand" href="{{ site.baseurl }}/">
+    <img src="{{ site.baseurl }}/{{ site.logo }}" alt="{{ site.name }}">
+    </a>
+    <!-- End Logo -->
+
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarMediumish" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarMediumish">
+
+        <!-- Begin Menu -->
+
+            <ul class="navbar-nav ml-auto">
+
+<!-- site.url must be set... (else: does not work...) -->
+{% if site.url %}
+  {% assign base_path = site.url | append: site.baseurl %}
+{% else %}
+  {% assign base_path = site.github.url %}
+{% endif %}
+
+                {% for item in site.data.navigation["main"] %}
+
+                    {% if nav.url %}
+                    {% comment %}internal/external URL check{% endcomment %}
+                        {% if nav.url contains "://" %}
+                            {% assign domain = "" %}
+                        {% else %}
+                            {% assign domain = base_path %}
+                        {% endif %}
+                    {% endif %}
+
+                    {% if page.url == item.url %}
+                        <li class="nav-item active">
+                    {% else %}
+                        <li class="nav-item">
+                    {% endif %}
+                        <a class="nav-link" href="{{ domain }}{{item.url}}"> {{item.title}} </a>
+                    </li>
+                {% endfor %}
+
+                {% include search-lunr.html %}
+
+            </ul>
+
+        <!-- End Menu -->
+
+    </div>
+
+    </div>
+</nav>
+
+<!-- End Navigation
+================================================== -->

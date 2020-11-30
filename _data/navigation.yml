@@ -1,0 +1,25 @@
+# main links links
+main:
+  - title: "Home"
+    url: /
+  
+  - title: "Teams"
+    url: /teams/
+
+  - title: "Projects"
+    url: /projects/
+
+  - title: "Contributors"
+    url: /members/
+
+  - title: "Publications"
+    url: /publications/
+
+  - title: "Software"
+    url: /software/
+
+  - title: "About"
+    url: /about/
+
+  - title: "Docs"
+    url: https://bootstrapstarter.com/bootstrap-templates/template-mediumish-bootstrap-jekyll/
