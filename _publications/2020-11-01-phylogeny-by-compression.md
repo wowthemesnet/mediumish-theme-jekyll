@@ -1,14 +1,14 @@
 ---
-title: pub3
+title: Phylogeny by Compression
 team: CoBaAB
-project: SARS-project
+project: forest-project
 people: 
-- "Thiru Ramaraj"
 - "DeAngelo Wilson"
-
+- "John Rogers"
 
 layout: default
 ---
+Testing
 
 Proin massa augue, eleifend non ultricies eget, feugiat ut nisl. Fusce at
 aliquet justo, id elementum lacus. Praesent eleifend tempus molestie. Nunc
@@ -35,11 +35,3 @@ ante et quam viverra pharetra interdum id ligula. Vestibulum lobortis ipsum ac
 risus sagittis, non dapibus metus finibus. Quisque efficitur felis sed felis
 luctus, non egestas ex dapibus. Sed pharetra gravida augue, id posuere nunc
 fringilla eget.
-
-
-<h2>Members</h2>
-<ul>
-   {% for member in site.members %}
-      <li><a href="{{ member.url }}">{{ member.title }}</a></li>
-   {% endfor %}
-</ul>
