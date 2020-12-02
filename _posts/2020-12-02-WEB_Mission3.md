@@ -21,6 +21,7 @@ Web Team의 Mission3는 REST API 웹 서버를 구현하는 것입니다! 부족
 세부적인 요구사항은 아래와 같습니다.
 
 - Resource Model `todo`
+
   ```json
   {
     "id": 0,
@@ -28,11 +29,15 @@ Web Team의 Mission3는 REST API 웹 서버를 구현하는 것입니다! 부족
     "completed": false
   }
   ```
+
 - `GET /todos`
+
   - request
     - no parameters required.
   - response
+
     - `db.json`에 들어있는 `todos` 리스트를 리턴합니다.
+
       ```json
       {
         "todos": [
@@ -42,16 +47,23 @@ Web Team의 Mission3는 REST API 웹 서버를 구현하는 것입니다! 부족
         ]
       }
       ```
+
 - `POST /todos`
+
   - request
+
     - parameter type - `body`
+
       ```json
       {
         "content": "종강하기"
       }
       ```
+
   - response
+
     - `db.json`에 들어있는 `todos` 리스트에 `body`로 담겨져서 들어온 `content`를 내용으로 하는 새로운 `todo`를 추가하는 작업을 하고, 리턴합니다.
+
       ```json
       {
         "success": true,
@@ -62,19 +74,26 @@ Web Team의 Mission3는 REST API 웹 서버를 구현하는 것입니다! 부족
         }
       }
       ```
+
 - `PATCH /todos/{todo_id}`
+
   - request
+
     - parameter type - `path`
       - `todo_id`
     - parameter type - `body`
+
       ```json
       {
         "content": "제발 종강하기",
         "completed": true
       }
       ```
+
   - response
+
     - `db.json`에 들어있는 `todos` 리스트에 `path`로 담겨져서 들어온 `todo_id`를 가지는 `todo`를 `body`로 담겨져서 들어온 내용으로 수정을 하는 작업을 하고, 이를 리턴합니다.
+
       ```json
       {
         "success": true,
@@ -85,12 +104,16 @@ Web Team의 Mission3는 REST API 웹 서버를 구현하는 것입니다! 부족
         }
       }
       ```
+
 - `DELETE /todos/{todo_id}`
+
   - request
     - parameter type - `path`
       - `todo_id`
   - response
+
     - `db.json`에 들어있는 `todos` 리스트에 `path`로 담겨져서 들어온 `todo_id`를 가지는 `todo`를 삭제하는 작업을 하고, 이를 리턴합니다.
+
       ```json
       {
         "success": true
