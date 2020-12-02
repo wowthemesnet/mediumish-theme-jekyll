@@ -1,0 +1,6 @@
+<!-- site.url must be set... (else: does not work...) -->
+{% if site.url %}
+  {% assign base_path = site.url | append: site.baseurl %}
+{% else %}
+  {% assign base_path = site.github.url %}
+{% endif %}

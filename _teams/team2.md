@@ -12,7 +12,7 @@ people:
   - Peter-Gandy
   - DeAngelo-Wilson
 
-layout: default
+layout: team
 ---
 
 Proin massa augue, eleifend non ultricies eget, feugiat ut nisl. Fusce at

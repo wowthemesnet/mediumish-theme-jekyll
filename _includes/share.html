@@ -1,25 +1,41 @@
+<!-- IF ANY OF THE EXTERNAL LINKS ARE SET... -->
+{% if page.external_link or page.twitter_link or page.facebook_link or page.linkedin_link %}
 <div class="share sticky-top sticky-top-offset">
     <p>
-        Share
+        External Links
     </p>
     <ul>
+        {% if page.external_link %}
         <li class="ml-1 mr-1">
-            <a target="_blank" href="https://twitter.com/intent/tweet?text={{ page.title }}&url={{ page.url | absolute_url }}" onclick="window.open(this.href, 'twitter-share', 'width=550,height=235');return false;">
+            <a target="_blank" href={{ page.external_link }}>
+                <i class="fa fa-user" aria-hidden="true"></i>
+            </a>
+        </li>
+        {% endif %}
+
+        {% if page.twitter_link %}
+        <li class="ml-1 mr-1">
+            <a target="_blank" href={{ page.twitter_link }}>
                 <i class="fab fa-twitter"></i>
             </a>
         </li>
+        {% endif %}
 
+        {% if page.facebook_link %}
         <li class="ml-1 mr-1">
             <a target="_blank" href="https://facebook.com/sharer.php?u={{ page.url | absolute_url }}" onclick="window.open(this.href, 'facebook-share', 'width=550,height=435');return false;">
                 <i class="fab fa-facebook-f"></i>
             </a>
         </li>
+        {% endif %}
 
+        {% if page.linkedin_link %}
         <li class="ml-1 mr-1">
             <a target="_blank" href="https://www.linkedin.com/shareArticle?mini=true&url={{ page.url | absolute_url }}" onclick="window.open(this.href, 'width=550,height=435');return false;">
                 <i class="fab fa-linkedin-in"></i>
             </a>
         </li>
+        {% endif %}
 
     </ul>
     {% if page.comments != false %}
@@ -32,3 +48,4 @@
     </ul>
     {% endif %}
 </div>
+{% endif %}

@@ -23,12 +23,9 @@
 
             <ul class="navbar-nav ml-auto">
 
-<!-- site.url must be set... (else: does not work...) -->
-{% if site.url %}
-  {% assign base_path = site.url | append: site.baseurl %}
-{% else %}
-  {% assign base_path = site.github.url %}
-{% endif %}
+{% include basepath.html %}
+<!-- defines base_path variable -->
+
 
                 {% for item in site.data.navigation["main"] %}
 

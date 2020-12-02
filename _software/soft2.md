@@ -7,7 +7,7 @@ people:
 - "Thiru Ramaraj"
 - "DeAngelo Wilson"
 
-layout: default
+layout: product
 ---
 
 Proin massa augue, eleifend non ultricies eget, feugiat ut nisl. Fusce at

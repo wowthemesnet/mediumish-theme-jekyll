@@ -6,9 +6,10 @@ people:
 - "DeAngelo Wilson"
 - "John Rogers"
 
-layout: default
+layout: product
 ---
 Testing
+
 
 Proin massa augue, eleifend non ultricies eget, feugiat ut nisl. Fusce at
 aliquet justo, id elementum lacus. Praesent eleifend tempus molestie. Nunc
