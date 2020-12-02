@@ -3,7 +3,7 @@ layout: post
 title: "Web Mission3 - Something behind, REST API 웹 서버 구현하기"
 authors: [r4k0nb4k0n]
 tags: ["Web"]
-image: assets/images/post-WEB-Mission3/01.clone.png
+image: assets/images/post-WEB-Mission3/01.intro.png
 description: "Something behind..."
 featured: false
 ---
