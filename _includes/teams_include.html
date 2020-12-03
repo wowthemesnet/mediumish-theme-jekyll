@@ -9,22 +9,22 @@ required input:
 ------ FIRST:: must find all Member-posts from members_names array
 -->
 
-{% if include.members_array %}
+{% if include.teams_array and include.teams_array.size > 0 %}
 
 <!-- SLOW + UGLY -- Get-the-job-done way (N^2)
 		==> could change to a .yaml file of authors...
  -->
 
 <!-- Get all member_posts and output them-->
-	<h2>Members</h2>
+	<h2>Teams</h2>
 	<ul>
-	   {% for member in include.members_array %}
+	   {% for team in include.teams_array %}
 
 	   		<!-- SLOW + UGLY -- Get-the-job-done way O(N * M) [N = total_member_posts, M = total_members_to_display -> sizeof(members_array)] -->
-			{% assign member_post = site.members | where: "title", member | first %}
+			{% assign team_post = site.teams | where: "title", team | first %}
 
 			<!--Formatting-->
-	      	<li><a href="{{ member_post.url }}">{{ member_post.title }}</a></li>
+	      	<li><a href="{{ team_post.url }}">{{ team_post.title }}</a></li>
 	   
 	   {% endfor %}
 	</ul>

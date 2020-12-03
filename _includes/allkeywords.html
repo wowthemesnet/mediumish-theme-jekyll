@@ -1,0 +1,8 @@
+{% assign all_keywords= "" | split: "" %}
+{% for post in site.projects %}
+    {% if post.keywords %}
+        {% assign all_keywords=all_keywords | concat: post.keywords %}  
+    {% endif %}
+{% endfor %}
+
+{% assign all_keywords=all_keywords | uniq %}

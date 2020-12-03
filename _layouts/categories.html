@@ -6,21 +6,29 @@ permalink: "/categories.html"
 
 {{content}}
 
+<!-- BAD -- calculating "all_keywords" twice on this page...
+		- NEED way to compute all_keywords at run time and assign as layout variable in "default.html"
+-->
+{% include allkeywords.html %} <!-- defines 'all_keywords' var -->
+
 
 <div class="row listrecent">
-{% for category in site.categories %}
+{% for category in all_keywords %}
 <div class="section-title col-md-12 mt-4">
-<h2 id="{{ category[0] | replace: " ","-" }}">Category <span class="text-capitalize">{{ category[0] }}</span></h2>
+<h2 id="{{ category | replace: " ","-" }}">Category <span class="text-capitalize">{{ category }}</span></h2>
 </div>
-{% assign pages_list = category[1] %}
-{% for post in pages_list %}
-{% if post.title != null %}
-{% if group == null or group == post.group %}
-{% include postbox.html %}
-{% endif %}
-{% endif %}
+
+{% for post in site.projects %}
+    {% if post.keywords contains category %}
+
+    	<!-- include postbox.html-->
+		{% if post.title != null %}
+		{% if group == null or group == post.group %}
+		{% include postbox.html %}
+		{% endif %}
+		{% endif %}
+    {% endif %}
 {% endfor %}
-{% assign pages_list = nil %}
 {% assign group = nil %}
 {% endfor %}
 </div>

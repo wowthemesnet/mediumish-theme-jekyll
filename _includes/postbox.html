@@ -1,5 +1,5 @@
 <!-- begin post -->
-{% assign author = site.authors[post.author] %}
+{% assign author = site.members | where: "author", page.author | first %}
 
 <div class="col-lg-4 col-md-6 mb-30px card-group">
     <div class="card h-100">

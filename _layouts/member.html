@@ -4,9 +4,6 @@ group: member
 ---
 {{ content }}
 
-
-{% include products.html tag=page.title type=layout.group %}
-
 <!-- create project_post array for member's projects -->
 {% assign projs = '' | split: '' %}
 {% for p in site.projects %}
@@ -18,5 +15,29 @@ group: member
 	{% endif %}
 {% endfor %}
 
+
+<!-- create empty array for all member's teams from set of projects... -->
+{% assign teams = '' | split: '' %}
+{% for proj in projs %}
+​
+	{% if proj.team %}
+		<!-- concatenate members lists for all projects into 1-->
+		{% assign teams = teams | push: proj.team %}
+	​{% endif %}
+
+{% endfor %}
+<!-- create unique member list -->
+{% assign unique_teams = teams | uniq %}
+​<!-- List projects --- and description + linkage -->
+{% include teams_include.html teams_array=unique_teams %}
+
+{% include products_include.html tag=page.title type=layout.group %}
+
+
+
+
+
 <!-- List projects --- and description + linkage -->
 {% include projects_include.html projects_array=projs %}
+
+

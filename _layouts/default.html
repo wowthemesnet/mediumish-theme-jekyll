@@ -1,3 +1,8 @@
+---
+
+---
+
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -92,6 +97,7 @@ ga('send', 'pageview');
     
 </div>
 
+
 <!-- Categories Jumbotron
 ================================================== -->
 <div class="jumbotron fortags">
@@ -102,17 +108,22 @@ ga('send', 'pageview');
             </div>
 		</div>
 		<div class="col-md-8 p-5 align-self-center text-center">
-            {% assign categories_list = site.categories %}
-            {% if categories_list.first[0] == null %}
-                {% for category in categories_list %}
-                    <a class="mt-1 mb-1" href="{{site.baseurl}}/categories#{{ category | url_escape | strip | replace: ' ', '-' }}">{{ category | camelcase }} ({{ site.tags[category].size }})</a>
+
+{% include allkeywords.html %} <!-- defines 'all_keywords' var -->
+
+
+            {% for category in all_keywords %}
+                {% assign count = 0 %}
+                <!-- Count number of posts in each category -->
+                {% for post in site.projects %}
+                    {% if post.keywords contains category %}
+                        {% assign count = count | plus: 1 %}
+                    {% endif %}
                 {% endfor %}
-            {% else %}
-                {% for category in categories_list %}
-                    <a class="mt-1 mb-1" href="{{site.baseurl}}/categories#{{ category[0] | url_escape | strip | replace: ' ', '-' }}">{{ category[0] | camelcase }} ({{ category[1].size }})</a>
-                {% endfor %}
-            {% endif %}
-            {% assign categories_list = nil %}
+                <a class="mt-1 mb-1" href="{{site.baseurl}}/categories#{{ category | url_escape | strip | replace: ' ', '-' }}">{{ category | camelcase }} ({{ count }})</a>
+                
+            {% endfor %}
+            {% assign all_keywords = nil %}
 		</div>
 	</div>
 </div>

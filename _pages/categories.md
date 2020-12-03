@@ -4,6 +4,13 @@ title: Categories
 permalink: /categories
 ---
 
+<!-- BAD -- calculating "all_keywords" twice on this page...
+		- NEED way to compute all_keywords at run time and assign as layout variable in "default.html"
+-->
+{% include allkeywords.html %} <!-- defines 'all_keywords' var -->
+
+
+
 <!-- Create Table of Contents (toc) -->
 <div class="toc mt-4 mb-4 lead">
     <h3 class="font-weight-bold">Categories</h3>
@@ -13,8 +20,8 @@ permalink: /categories
 	- When more categories, may need to change to real table - decrease height of toc...
 -->
 	    <ul>
-		{% for category in site.categories %}
-			<li><a href="#{{ category[0] | replace: " ","-" }}"><span class="text-capitalize">{{ category[0] }}</span></a></li>
+		{% for category in all_keywords %}
+			<li><a href="#{{ category | replace: " ","-" }}"><span class="text-capitalize">{{ category }}</span></a></li>
 		{% endfor %}
 		</ul>
 

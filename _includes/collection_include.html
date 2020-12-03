@@ -20,7 +20,7 @@
 
         {% for post in include.collection %}
 
-        {% include postbox.html %}
+        {% include postbox.html author_post=page.author %}
 
         {% endfor %}
 

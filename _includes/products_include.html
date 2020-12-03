@@ -11,8 +11,7 @@ INCLUDE PARAMETERS::
 
 -->
 
-{% if include.tag %}
-{% if include.type %}
+{% if include.tag and include.type %}
 
 {% if include.type == "member" %}
 
@@ -55,20 +54,32 @@ INCLUDE PARAMETERS::
 <!-- iterate all product collections -- output info: name + description + linkage -->
 
 <!--formaTTING -->
+{% if pubs.size > 0 %}
 
-<h2>Publications:</h2>
-{% assign pub_titles = pubs | map: "title" %}
-{{ pub_titles | join: ',' }}
+<h2>Publications</h2>
+	<ul>
+		{% for pubs in softs%}
+
+		<!--Formatting-->
+		<li><a href="{{ pubs.url }}">{{ pubs.title }}</a></li>
+
+		{% endfor %}
+	</ul>
+{% endif %}
 
 
-<h2>Software:</h2>
-{% for s in softs%}
 
-{{ s.title }}
+{% if softs.size > 0 %}
+<h2>Software</h2>
+	<ul>
+		{% for s in softs%}
 
-{% endfor %}
+		<!--Formatting-->
+		<li><a href="{{ s.url }}">{{ s.title }}</a></li>
 
+		{% endfor %}
+	</ul>
+{% endif %}
 
 
 {% endif %}	
-{% endif %}

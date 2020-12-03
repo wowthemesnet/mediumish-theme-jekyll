@@ -1,12 +1,14 @@
 ---
 title: forest-project
+layout: project
+
+author: "John Rogers"
 team: CoBaAB
 people: 
 - "DeAngelo Wilson"
 - "John Rogers"
 
 description: Hello this is the Forest Project!
-layout: project
 ---
 
 Proin massa augue, eleifend non ultricies eget, feugiat ut nisl. Fusce at
