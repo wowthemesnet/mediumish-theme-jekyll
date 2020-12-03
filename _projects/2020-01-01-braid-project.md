@@ -7,6 +7,7 @@ people:
 keywords: ["Biofilms"]
 #NOTE:: images should have the aspect ratio ==> 3 : 2?
 image: "assets/images/BRaID-CoBaAB-IMG1.png"
+featured_image: "assets/images/BRaID-CoBaAB-IMG2.png"
 layout: project
 ---
 

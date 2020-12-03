@@ -6,8 +6,10 @@ required input:
 - projects_array: Array of projects to output 
 -->
 
-{% if include.projects_array and include.projects_array.size > 0 %}
-<h3>Projects</h3>
+{% if include.projects_array and include.projects_array.size > 0 and include.section %}
+<div class="section-title col-md-12 mt-4">
+<h2 id="{{include.section}}"><span class="text-capitalize">{{include.section}}</span></h2>
+</div>
 
 	<ul>
 	{% for p in projs %}

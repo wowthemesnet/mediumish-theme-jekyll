@@ -8,6 +8,9 @@ people:
 - "DeAngelo Wilson"
 - "John Rogers"
 
+featured: true
+hidden: true
+
 description: Hello this is the Forest Project!
 ---
 

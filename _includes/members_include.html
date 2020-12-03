@@ -9,14 +9,16 @@ required input:
 ------ FIRST:: must find all Member-posts from members_names array
 -->
 
-{% if include.members_array %}
+{% if include.members_array and include.section %}
 
 <!-- SLOW + UGLY -- Get-the-job-done way (N^2)
 		==> could change to a .yaml file of authors...
  -->
 
 <!-- Get all member_posts and output them-->
-	<h2>Members</h2>
+<div class="section-title col-md-12 mt-4">
+<h2 id="{{include.section}}"><span class="text-capitalize">{{include.section}}</span></h2>
+</div>
 	<ul>
 	   {% for member in include.members_array %}
 

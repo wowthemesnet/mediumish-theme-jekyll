@@ -11,7 +11,7 @@ INCLUDE PARAMETERS::
 
 -->
 
-{% if include.tag and include.type %}
+{% if include.tag and include.type and include.section %}
 
 {% if include.type == "member" %}
 
@@ -26,27 +26,11 @@ INCLUDE PARAMETERS::
 		{% endif %}
 	{% endfor %}
 
-	<!-- create empty arrays for member's softwares -->
-	{% assign softs = '' | split: '' %}
-	{% for soft in site.software %}
-		<!-- if tag in product people array-->
-		{% if soft.people contains include.tag %}
-		
-			{% assign softs = softs | push: soft %}
-
-		{% endif %}
-	{% endfor %}
-
-
 
 <!-- NOT A MEMBER group -- (Team || Project) -->
 {% else %}
 	<!-- Get (assign) all publications (products) associated to "tag" of "type" -->	
 	{% assign pubs = site.publications | where:include.type, include.tag %}
-
-
-	{% assign softs = site.software | where:include.type, include.tag %}
-
 
 {% endif %}
 
@@ -55,27 +39,14 @@ INCLUDE PARAMETERS::
 
 <!--formaTTING -->
 {% if pubs.size > 0 %}
-
-<h2>Publications</h2>
+<div class="section-title col-md-12 mt-4">
+<h2 id="{{include.section}}"><span class="text-capitalize">{{include.section}}</span></h2>
+</div>
 	<ul>
-		{% for pubs in softs%}
+		{% for pub in pubs%}
 
 		<!--Formatting-->
-		<li><a href="{{ pubs.url }}">{{ pubs.title }}</a></li>
-
-		{% endfor %}
-	</ul>
-{% endif %}
-
-
-
-{% if softs.size > 0 %}
-<h2>Software</h2>
-	<ul>
-		{% for s in softs%}
-
-		<!--Formatting-->
-		<li><a href="{{ s.url }}">{{ s.title }}</a></li>
+		<li><a href="{{ pub.url }}">{{ pub.title }}</a></li>
 
 		{% endfor %}
 	</ul>
