@@ -1,7 +1,7 @@
 # Site
 name: "DePaul Bioinformatics"
 title: "DePaul Bioinformatics"
-description: "A repository for DePaul University bioinformatics contributions."
+description: "An online portal for DePaul University Bioinformatics Research Contributions"
 logo: 'assets/images/logo.png'
 favicon: 'assets/images/logo.png'
 baseurl: ''
@@ -31,7 +31,7 @@ collections:
     permalink: /:collection/:path/
 
 all_sections: ["Projects", "Publications", "Software", "Teams", "Members", Status", "Funding Agency"]
-member_types: ["Principal Investigators", "Co-Principal Investigators", "PHD Students", "Master's Students", "Undergraduate Students", "Alumni", "Members" ]
+member_types: ["Faculty", "PHD Students", "Master's Students", "Undergraduate Students", "Alumni", "External Collaborators" ]
 
 # Defaults
 defaults:

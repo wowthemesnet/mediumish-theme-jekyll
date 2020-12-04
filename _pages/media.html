@@ -1,8 +1,10 @@
+---
+layout: page
+title: Media
+permalink: /media/
+toc: false
+---
 
-{% if include.collection %}
-
-<!-- Posts Index
-================================================== -->
 <section class="recent-posts">
 
 {% if include.title %}
@@ -20,14 +22,10 @@
 
     <div class="row listrecent">
 
-        {% for post in include.collection %}
-
-        	   {% include postbox.html %}
-               
-        {% endfor %}
+	{% for post in site.data.media["main"] %}
+		{% include mediabox.html %}
+	{% endfor %}
 
     </div>
 
 </section>
-
-{% endif %}

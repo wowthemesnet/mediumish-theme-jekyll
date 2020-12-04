@@ -22,8 +22,10 @@ toc: true
 
 {% endfor %}
 
+{% if pubs.size > 0 %}
+	{% include collection_include.html collection=pubs title=page.title %}
+{% endif %}
 
-{% include collection_include.html collection=pubs title=page.title %}
-
-
-{% include collection_include.html collection=other_pubs title="Past Publications" %}
+{% if other_pubs.size > 0 %}
+	{% include collection_include.html collection=other_pubs title="Past Publications" %}
+{% endif %}

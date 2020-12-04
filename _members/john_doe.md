@@ -1,12 +1,12 @@
 ---
-title: John Rogers
+title: John Doe
 layout: member
 
-type_group: "Faculty"
+type_group: "Alumni"
 
-author: "John Rogers"
-name: John Rogers
-display_name: John    
+author: "John Doe"
+name: Jane Doe
+display_name: Jane Doe    
 avatar: 'assets/images/avatar.png'
 gravatar: b1cc14991db7a456fcd761680bbc8f81
 email: wowthemesnet@gmail.com

@@ -9,6 +9,7 @@ funding: "National Science Foundation (NSF), DBI - ADVANCES IN BIOINFORMATICS"
 end_date: "July 31st 2021"
 status: "Estimated end date"
 
+# key words MUST all be lowercase (or allows duplicates)
 keywords: ["Biofilms"]
 
 #NOTE:: images should have the aspect ratio ==> 3 : 2?

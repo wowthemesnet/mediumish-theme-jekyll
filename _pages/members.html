@@ -6,38 +6,34 @@ toc: true
 ---
 
 <!--horrible design... hardcoding in different member types -->
-{% assign pis= "" | split: "" %}
-{% assign copis= "" | split: "" %}
+{% assign faculty= "" | split: "" %}
 {% assign phds= "" | split: "" %}
 {% assign masters= "" | split: "" %}
 {% assign students= "" | split: "" %}
 {% assign alumni= "" | split: "" %}
-{% assign members= "" | split: "" %}
+{% assign collabs= "" | split: "" %}
 
 <!-- Add post to approriate post type array ==> display in seperate groups -->
 {% for post in site.members %}
 
 	{% case post.type_group %}
 		{% when site.member_types[0] %}
-			{% assign pis=pis | push: post %}
-		
-		{% when site.member_types[1] %}
-			{% assign copis=copis | push: post %}
+			{% assign faculty=faculty | push: post %}
 
-		{% when site.member_types[2] %}
+		{% when site.member_types[1] %}
 			{% assign phds=phds | push: post %}
 		
-		{% when site.member_types[3] %}
+		{% when site.member_types[2] %}
 			{% assign masters=masters | push: post %}
 			
-		{% when site.member_types[4] %}
+		{% when site.member_types[3] %}
 			{% assign students=students | push: post %}
 				
-		{% when site.member_types[5] %}
+		{% when site.member_types[4] %}
 			{% assign alumni=alumni | push: post %}
 			
-		{% when site.member_types[6] %}
-			{% assign members=members | push: post %}
+		{% when site.member_types[5] %}
+			{% assign collabs=collabs | push: post %}
 	{% endcase %}
 
 {% endfor %}
@@ -45,23 +41,32 @@ toc: true
 <!-- 
 	**ALL HARD CODED** -- changing 'member_types' changes collection output... 
 -->
-{% assign t=site.member_types[0] %}
-{% include collection_include.html collection=pis title=t %}
+{% if faculty.size > 0 %}
+	{% assign t=site.member_types[0] %}
+	{% include collection_include.html collection=faculty title=t %}
+{% endif %}
 
-{% assign t=site.member_types[1] %}
-{% include collection_include.html collection=copis title=t %}
+{% if phds.size > 0 %}
+	{% assign t=site.member_types[1] %}
+	{% include collection_include.html collection=phds title=t %}
+{% endif %}
 
-{% assign t=site.member_types[2] %}
-{% include collection_include.html collection=phds title=t %}
+{% if masters.size > 0 %}
+	{% assign t=site.member_types[2] %}
+	{% include collection_include.html collection=masters title=t %}
+{% endif %}
 
-{% assign t=site.member_types[3] %}
-{% include collection_include.html collection=masters title=t %}
+{% if students.size > 0 %}
+	{% assign t=site.member_types[3] %}
+	{% include collection_include.html collection=students title=t %}
+{% endif %}
 
-{% assign t=site.member_types[4] %}
-{% include collection_include.html collection=students title=t %}
+{% if alumni.size > 0 %}
+	{% assign t=site.member_types[4] %}
+	{% include collection_include.html collection=alumni title=t %}
+{% endif %}
 
-{% assign t=site.member_types[5] %}
-{% include collection_include.html collection=alumni title=t %}
-
-{% assign t=site.member_types[6] %}
-{% include collection_include.html collection=members title=t %}
+{% if collabs.size > 0 %}
+	{% assign t=site.member_types[5] %}
+	{% include collection_include.html collection=collabs title=t %}
+{% endif %}

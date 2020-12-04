@@ -1,6 +1,10 @@
 ---
 title: SARS-project
 team: CoBaAB
+
+# key words MUST all be lowercase (or allows duplicates)
+keywords: ["covid-19", "Pie"]
+
 people: 
 - "Thiru Ramaraj"
 - "DeAngelo Wilson"

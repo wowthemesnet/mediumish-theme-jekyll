@@ -1,0 +1,12 @@
+# main links links
+main:
+  - title: "Bioinformatics Lab"
+    image: assets/images/5.jpg
+    description: "A lab outing from DePaul's CoBaAB team."
+    date: "2020-01-01"
+
+  - title: "Colloqium presentation 2021"
+    image: assets/images/12.jpg
+    description: "A bioinformatics presentation at DePaul's spring colloqium."
+
+

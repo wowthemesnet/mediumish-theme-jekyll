@@ -1,6 +1,8 @@
 {% assign all_keywords= "" | split: "" %}
 
 
+<!-- NOTE:: ALL CATEGORIES MUST BE IN SAME CASING... (when writing collection_posts downcase all keywords...) -->
+
 {% for post in site.projects %}
     {% if post.keywords %}
         {% assign all_keywords=all_keywords | concat: post.keywords %}  

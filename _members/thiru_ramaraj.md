@@ -3,7 +3,7 @@ title: Thiru Ramaraj
 layout: member
 author: "Thiru Ramaraj"
 
-type_group: "Principal Investigators"
+type_group: "Faculty"
 
 name: Sal
 display_name: Sal

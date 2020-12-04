@@ -18,6 +18,7 @@ permalink: "/categories.html"
 <h2 id="{{ category | replace: " ","-" }}">Category <span class="text-capitalize">{{ category }}</span></h2>
 </div>
 
+<!-- NOTE:: SHOULD MOVE THIS TO AN INCLUDE file... -->
 
 {% for post in site.projects %}
     {% if post.keywords contains category %}

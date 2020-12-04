@@ -1,12 +1,14 @@
 ---
-title: John Rogers
+title: Jane Doe
 layout: member
 
-type_group: "Faculty"
+type_group: "External Collaborators"
 
-author: "John Rogers"
-name: John Rogers
-display_name: John    
+keywords: ["genetics", "cake"]
+
+author: "Jane Doe"
+name: Jane Doe
+display_name: Jane Doe    
 avatar: 'assets/images/avatar.png'
 gravatar: b1cc14991db7a456fcd761680bbc8f81
 email: wowthemesnet@gmail.com
