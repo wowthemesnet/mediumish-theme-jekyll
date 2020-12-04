@@ -1,5 +1,5 @@
 ---
-
+page_top_id: top
 ---
 
 
@@ -67,7 +67,7 @@ ga('send', 'pageview');
 <!-- Site Title
 ================================================== -->
 <div class="mainheading">
-    <h1 class="sitetitle">{{ site.name }}</h1>
+    <h1 id="top" class="sitetitle">{{ site.name }}</h1>
     <p class="lead">
         {{ site.description }}
     </p>
@@ -98,6 +98,7 @@ ga('send', 'pageview');
 </div>
 
 
+<!-- BUG:: does not show on pages... (projects, about, publications, teams, etc.-->
 <!-- Categories Jumbotron
 ================================================== -->
 <div class="jumbotron fortags">

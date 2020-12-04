@@ -2,6 +2,7 @@
 title: "Categories"
 layout: default
 permalink: "/categories.html"
+#NOTE:: "top" --> DePaul Bioinformatics title id (could not dynamically set --> disables smooth scroll)
 ---
 {% include allkeywords.html %} <!-- defines 'all_keywords' var -->
 
@@ -81,5 +82,10 @@ permalink: "/categories.html"
 {% endfor %}
 
 {% assign group = nil %}
+
+<div class="section-return col-md-12 mt-4">
+	<h6><a href="#top"><span class="text-capitalize">back to top</span></a></h6>
+</div>
+
 {% endfor %}
 </div>

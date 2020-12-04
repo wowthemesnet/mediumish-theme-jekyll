@@ -13,6 +13,7 @@ permalink: /categories
 
 <!-- Create Table of Contents (toc) -->
 <div class="toc mt-4 mb-4 lead">
+
     <h3 class="font-weight-bold">Categories</h3>
 
 <!--

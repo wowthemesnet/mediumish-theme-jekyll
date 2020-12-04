@@ -78,6 +78,14 @@ section.recent-posts {
     margin-bottom: -1px;
 }
 
+.section-return span {
+    border-bottom: 1px groove rgba(0, 0, 0, .44);
+    display: inline-block;
+    padding-bottom: 5px;
+    margin-bottom: -1px;
+}
+
+
 .article-post ol,
 .article-post ul {
     margin-bottom: 1.5rem;
