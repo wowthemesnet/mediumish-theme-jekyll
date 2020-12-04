@@ -33,12 +33,3 @@ ante et quam viverra pharetra interdum id ligula. Vestibulum lobortis ipsum ac
 risus sagittis, non dapibus metus finibus. Quisque efficitur felis sed felis
 luctus, non egestas ex dapibus. Sed pharetra gravida augue, id posuere nunc
 fringilla eget.
-
-<!--
-<h2>Members</h2>
-<ul>
-   {% for member in site.members %}
-      <li><a href="{{ member.url }}">{{ member.title }}</a></li>
-   {% endfor %}
-</ul>
--->

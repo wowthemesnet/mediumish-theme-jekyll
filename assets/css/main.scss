@@ -3,6 +3,8 @@
 # Change this file for any custom CSS.
 ---
 
+ .tab { margin-left: 40px; }
+
 /* We need to add display:inline in order to align the '>>' of the 'read more' link */
 .post-excerpt p {
 	display:inline;

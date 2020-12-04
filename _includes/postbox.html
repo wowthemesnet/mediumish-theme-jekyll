@@ -1,6 +1,5 @@
 <!-- begin post -->
-{% assign author = site.members | where: "author", page.author | first %}
-
+{% assign author = site.members | where: "author", post.author | first %}
 <div class="col-lg-4 col-md-6 mb-30px card-group">
     <div class="card h-100">
         <div class="maxthumb">
@@ -17,14 +16,15 @@
             </a>
         </div>
         <div class="card-body">
-            <h2 class="card-title">
+            <!-- Change from: /h2 => /h4, enables table of contents to work properly... -->
+            <h4 class="card-title">
                 <a class="text-dark" href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a>
                 {% if post.rating %}
                 <div class="mb-2 mt-2 font-weight-normal">
                 {% include star_rating_postbox.html %}
                 </div>
                 {% endif %}
-            </h2>
+            </h4>
             <h4 class="card-text">{{ post.excerpt | strip_html | truncatewords:30 }}</h4>
         </div>
         <div class="card-footer bg-white">
@@ -32,13 +32,13 @@
                 {% if post.author %}
                 <span class="meta-footer-thumb">
                 {% if author.avatar %}
-                <img class="author-thumb" src="{{site.baseurl}}/{{ author.avatar }}" alt="{{ author.display_name }}">
+                <img class="author-thumb" src="{{site.baseurl}}/{{ author.avatar }}" alt="{{ author.name }}">
                 {% else %}
-                <img class="author-thumb" src="https://www.gravatar.com/avatar/{{ author.gravatar }}?s=250&d=mm&r=x" alt="{{ author.display_name }}">
+                <img class="author-thumb" src="https://www.gravatar.com/avatar/{{ author.gravatar }}?s=250&d=mm&r=x" alt="{{ author.name }}">
                 {% endif %}
                 </span>
                 <span class="author-meta">
-                <span class="post-name"><a target="_blank" href="{{ author.web }}">{{ author.display_name }}</a></span><br/>
+                <span class="post-name"><a target="_blank" href="{{ author.web }}">{{ author.name }}</a></span><br/>
                 </span>
                 {% endif %}
 

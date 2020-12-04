@@ -26,13 +26,15 @@ post_class: post-template
                 <div class="row post-top-meta">
                     <div class="col-xs-12 col-md-3 col-lg-2 text-center text-md-left mb-4 mb-md-0">
                         {% if author_post.avatar %}
-                        <img class="author-thumb" src="{{site.baseurl}}/{{ author_post.avatar }}" alt="{{ author_post.display_name }}">
+                        <img class="author-thumb" src="{{site.baseurl}}/{{ author_post.avatar }}" alt="{{ author_post.name }}">
                         {% else %}
-                        <img class="author-thumb" src="https://www.gravatar.com/avatar/{{ author_post.gravatar }}?s=250&d=mm&r=x" alt="{{ author_post.display_name }}">
+                        <img class="author-thumb" src="https://www.gravatar.com/avatar/{{ author_post.gravatar }}?s=250&d=mm&r=x" alt="{{ author_post.name }}">
                         {% endif %}
                     </div>
                     <div class="col-xs-12 col-md-9 col-lg-10 text-center text-md-left">
-                        <a target="_blank" class="link-dark" href="{{ author_post.web }}">{{ author_post.display_name }}</a><a target="_blank" href="{{ author_post.twitter }}" class="btn follow">Follow</a><br>
+                        <a target="_blank" class="link-dark" href="{{ author_post.web }}">{% if layout.group != "member" %}PI: {% endif %}{{ author_post.name }}</a>
+                        <!--<a target="_blank" href="{{ author_post.twitter }}" class="btn follow">Follow</a>-->
+                        <br>
                         <span class="author-description">{{ author_post.description }}</span>
                     </div>
                 </div>
@@ -52,11 +54,16 @@ post_class: post-template
 
             <!-- Post Featured Image -->
             {% if page.image %}
-
             {% if site.lazyimages == "enabled" %}
-            <img class="featured-image img-fluid lazyimg" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAMAAAACCAQAAAA3fa6RAAAADklEQVR42mNkAANGCAUAACMAA2w/AMgAAAAASUVORK5CYII=" data-src="{% if page.featured_image contains "://" %}{{ page.featured_image }}{% else %}{{ site.baseurl }}/{{ page.featured_image }}{% endif %}" alt="{{ page.title }}">
-            {% else %}
-            <img class="featured-image img-fluid" src="{% if page.featured_image contains "://" %}{{ page.featured_image }}{% else %}{{ site.baseurl }}/{{ page.featured_image }}{% endif %}" alt="{{ page.title }}">
+
+                {% assign image=page.image %}
+
+                <!-- determine which pic to use as post picture-->
+                {% if page.featured_image %}{% assign image=page.featured_image %}{% endif %}
+
+                <img class="featured-image img-fluid lazyimg" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAMAAAACCAQAAAA3fa6RAAAADklEQVR42mNkAANGCAUAACMAA2w/AMgAAAAASUVORK5CYII=" data-src="{% if image contains "://" %}{{ image }}{% else %}{{ site.baseurl }}/{{ image }}{% endif %}" alt="{{ page.title }}">
+                {% else %}
+                <img class="featured-image img-fluid" src="{% if image contains "://" %}{{ image }}{% else %}{{ site.baseurl }}/{{ image }}{% endif %}" alt="{{ page.title }}">
             {% endif %}
 
             {% endif %}
@@ -127,10 +134,10 @@ post_class: post-template
             <!-- Prev/Next -->
             <div class="row PageNavigation d-flex justify-content-between font-weight-bold">
             {% if page.previous.url %}
-            <a class="prev d-block col-md-6" href="{{ base_path }}{{page.previous.url}}"> &laquo; {{page.previous.title}}</a>
+            <a class="prev d-block col-md-6" href="{{ base_path }}{{page.previous.url}}"> &laquo; {% if page.previous.short_title %}{{page.previous.short_title}} {% else %} {{page.previous.title}} {% endif %}</a>
             {% endif %}
             {% if page.next.url %}
-            <a class="next d-block col-md-6 text-lg-right" href="{{ base_path }}{{page.next.url}}">{{page.next.title}} &raquo; </a>
+            <a class="next d-block col-md-6 text-lg-right" href="{{ base_path }}{{page.next.url}}"> {% if page.next.short_title %}{{page.next.short_title}}{% else %}{{page.next.title}}{% endif %} &raquo; </a>
             {% endif %}
             <div class="clearfix"></div>
             </div>
@@ -144,8 +151,9 @@ post_class: post-template
 <!-- End Article
 ================================================== -->
 
+{% comment %}
 <!-- Begin Comments
-================================================== -->
+==================================================
 {% if page.comments != false %}
     <div class="container">
         <div id="comments" class="row justify-content-center mb-5">
@@ -155,8 +163,9 @@ post_class: post-template
         </div>
     </div>
 {% endif %}
-<!--End Comments
+End Comments
 ================================================== -->
+{% endcomment %}
 
 <!-- Review with LD-JSON, adapt it for your needs if you like, but make sure you test the generated HTML source code first: 
 https://search.google.com/structured-data/testing-tool/u/0/

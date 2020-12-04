@@ -1,0 +1,44 @@
+
+
+<!-- Creates the pubs and softs array (if any publications -->
+{% if include.tag and include.type %}
+
+	{% if include.type == "member" %}
+
+		<!-- create empty arrays for member's publications -->
+		{% assign pubs = '' | split: '' %}
+		{% for pub in site.publications %}
+			<!-- if tag in product people array-->
+			{% if pub.people contains include.tag %}
+
+				{% assign pubs = pubs | push: pub %}
+
+			{% endif %}
+		{% endfor %}
+
+		<!-- create empty arrays for member's softwares -->
+		{% assign softs = '' | split: '' %}
+		{% for soft in site.software %}
+			<!-- if tag in product people array-->
+			{% if soft.people contains include.tag %}
+			
+				{% assign softs = softs | push: soft %}
+
+			{% endif %}
+		{% endfor %}
+
+
+
+	<!-- NOT A MEMBER group -- (Team || Project) -->
+	{% else %}
+		<!-- Get (assign) all publications (products) associated to "tag" of "type" -->	
+
+		{% assign pubs = site.publications | where:include.type, include.tag %}
+			<!-- Get (assign) all sowtware (products) associated to "tag" of "type" -->	
+		{% assign softs = site.software | where:include.type, include.tag %}
+
+
+	{% endif %}
+
+{% endif %}
+

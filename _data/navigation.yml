@@ -2,7 +2,10 @@
 main:
   - title: "Home"
     url: /
-  
+
+  - title: "About"
+    url: /about/
+
   - title: "Teams"
     url: /teams/
 
@@ -17,9 +20,6 @@ main:
 
   - title: "Software"
     url: /software/
-
-  - title: "About"
-    url: /about/
-
+ 
   - title: "Explore"
     url: /categories

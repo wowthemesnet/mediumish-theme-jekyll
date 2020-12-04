@@ -30,6 +30,43 @@ collections:
     output: true
     permalink: /:collection/:path/
 
+all_sections: ["Projects", "Publications", "Software", "Teams", "Members", Status", "Funding Agency"]
+member_types: ["Principal Investigators", "Co-Principal Investigators", "PHD Students", "Master's Students", "Undergraduate Students", "Alumni", "Members" ]
+
+# Defaults
+defaults:
+  # _teams
+  - scope:
+      path: ""
+      type: teams
+    values:
+      post_toc: true
+  # _projects
+  - scope:
+      path: ""
+      type: projects
+    values:
+      post_toc: true
+  # _members
+  - scope:
+      path: ""
+      type: members
+    values:
+      post_toc: true
+  # _software
+  - scope:
+      path: ""
+      type: software
+    values:
+      post_toc: true
+  # _publications
+  - scope:
+      path: ""
+      type: publications
+    values:
+      post_toc: true
+
+
 # Plugins
 plugins:
   - jekyll-paginate

@@ -2,6 +2,66 @@
 title: Members
 layout: page
 permalink: /members/
+toc: true
 ---
 
-{% include collection_include.html collection=site.members %}
+<!--horrible design... hardcoding in different member types -->
+{% assign pis= "" | split: "" %}
+{% assign copis= "" | split: "" %}
+{% assign phds= "" | split: "" %}
+{% assign masters= "" | split: "" %}
+{% assign students= "" | split: "" %}
+{% assign alumni= "" | split: "" %}
+{% assign members= "" | split: "" %}
+
+<!-- Add post to approriate post type array ==> display in seperate groups -->
+{% for post in site.members %}
+
+	{% case post.type_group %}
+		{% when site.member_types[0] %}
+			{% assign pis=pis | push: post %}
+		
+		{% when site.member_types[1] %}
+			{% assign copis=copis | push: post %}
+
+		{% when site.member_types[2] %}
+			{% assign phds=phds | push: post %}
+		
+		{% when site.member_types[3] %}
+			{% assign masters=masters | push: post %}
+			
+		{% when site.member_types[4] %}
+			{% assign students=students | push: post %}
+				
+		{% when site.member_types[5] %}
+			{% assign alumni=alumni | push: post %}
+			
+		{% when site.member_types[6] %}
+			{% assign members=members | push: post %}
+	{% endcase %}
+
+{% endfor %}
+
+<!-- 
+	**ALL HARD CODED** -- changing 'member_types' changes collection output... 
+-->
+{% assign t=site.member_types[0] %}
+{% include collection_include.html collection=pis title=t %}
+
+{% assign t=site.member_types[1] %}
+{% include collection_include.html collection=copis title=t %}
+
+{% assign t=site.member_types[2] %}
+{% include collection_include.html collection=phds title=t %}
+
+{% assign t=site.member_types[3] %}
+{% include collection_include.html collection=masters title=t %}
+
+{% assign t=site.member_types[4] %}
+{% include collection_include.html collection=students title=t %}
+
+{% assign t=site.member_types[5] %}
+{% include collection_include.html collection=alumni title=t %}
+
+{% assign t=site.member_types[6] %}
+{% include collection_include.html collection=members title=t %}

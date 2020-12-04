@@ -1,0 +1,34 @@
+<!--
+
+A include (page) listing all product collections
+
+--- Publications
+--- Softwares
+
+INCLUDE PARAMETERS::
+--Tag --- given a search tag (member || project) name
+--type --- where product include request is coming from ("project", "member", team?, others??? )
+
+-->
+
+{% if include.publications and include.section %}
+
+<!-- iterate all product collections -- output info: name + description + linkage -->
+
+<!--formaTTING -->
+{% if include.publications.size > 0 %}
+<div class="section-title col-md-12 mt-4">
+<h2 id="{{include.section | replace: " ","-"}}"><span class="text-capitalize">{{include.section}}</span></h2>
+</div>
+	<ul>
+		{% for pub in include.publications %}
+
+		<!--Formatting-->
+		<li><a href="{{ pub.url }}">{{ pub.title }}</a></li>
+
+		{% endfor %}
+	</ul>
+{% endif %}
+
+
+{% endif %}	

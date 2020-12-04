@@ -9,8 +9,10 @@
 
     <div class="section-title">
 
-        <h2><span>{{include.title}}</span></h2>
-
+    	<!-- Used for 'page' Table of contents if page.toc enabled -->
+    	{% if page.toc==true %}
+        	<h2 id="{{ include.title | replace: " ","-" }}"><span class="text-capitalize">{{include.title}}</span></h2>
+	    {% endif %}
     </div>
     
 {% endif %}
@@ -20,7 +22,7 @@
 
         {% for post in include.collection %}
 
-        {% include postbox.html author_post=page.author %}
+        	{% include postbox.html %}
 
         {% endfor %}
 

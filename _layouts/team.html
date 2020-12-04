@@ -4,25 +4,6 @@ group: team
 sections: ["Members", "Projects"]
 ---
 
-<!-- Create Table of Contents (toc) -->
-<div class="toc mt-4 mb-4 lead">
-    <h3 class="font-weight-bold">Summary</h3>
-
-<!--
-	- ul ==> NOT AN UNORDERED LIST... 
-	- When more categories, may need to change to real table - decrease height of toc...
--->
-	    <ul>
-		{% for section in layout.sections %}
-			<li><a href="#{{ section | replace: " ","-" }}"><span class="text-capitalize">{{ section }}</span></a></li>
-		{% endfor %}
-		</ul>
-
-</div>
-
-
-{{content}}
-​
 <!-- Get all projects for THIS team... -->
 {% assign projs = site.projects | where:layout.group, page.title %}
 ​
@@ -41,11 +22,19 @@ sections: ["Members", "Projects"]
 ​
 
 
+
+<!-- Create Table of Contents (toc) -->
+{% include post_toc.html members=unique_members projects=projs %}
+
+
+{{content}}
+
+
 <!--   TEAM PAGE Layout -- OUTPUT HERE     -->
 {% assign s=layout.sections[0] %}
 <!-- List members -->
-​{% include members_include.html members_array=unique_members section=s %}
+​{% include SectionIncludes/members_include.html members_array=unique_members section=s %}
 
 ​{% assign s=layout.sections[1] %}
 <!-- List projects --- and description + linkage -->
-{% include projects_include.html projects_array=projs section=s %}
+{% include SectionIncludes/projects_include.html projects_array=projs section=s %}

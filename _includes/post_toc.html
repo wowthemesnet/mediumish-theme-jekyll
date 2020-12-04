@@ -1,0 +1,90 @@
+
+<!-- 
+	NOTE:: DOES NOT PREVENT TOC header: "Summary" from displaying if no sections... TODO::
+
+	"include.members"  ==> members post array must be passed in to write section head
+	"include.projects" ==> projects post array must be passed in to write section head
+
+-->
+
+{% if page.post_toc==true %}
+
+{% if page.beforetoc %}
+    <p><em>{{page.beforetoc}}</em></p>
+{% endif %}
+
+<!-- Create Table of Contents (toc) -->
+<div class="toc mt-4 mb-4 lead">
+    <h3 class="font-weight-bold">Summary</h3>
+	
+
+<!--
+	- ul ==> NOT AN UNORDERED LIST... 
+	- When more categories, may need to change to real table - decrease height of toc...
+-->
+	    <ul>
+		{% for ts in layout.sections %}
+			{% assign write=false %}
+			{% case ts %}
+				{% when site.all_sections[0] %}
+					{% if include.projects %}
+						{% if include.projects.size > 0 %}
+							{% assign write=true %}
+						{% endif %}		
+					{% endif %}
+
+
+				{% when site.all_sections[1] %}
+					{% if pubs %}
+						{% if pubs.size > 0 %}
+							{% assign write=true %}
+						{% endif %}		
+					{% endif %}
+
+
+				{% when site.all_sections[2] %}
+					{% if softs %}
+						{% if softs.size > 0 %}
+							{% assign write=true %}
+						{% endif %}		
+					{% endif %}
+				
+
+				{% when site.all_sections[3] %}
+					{% if unique_teams %}
+						{% if unique_teams.size > 0 %}
+							{% assign write=true %}
+						{% endif %}		
+					{% endif %}
+					
+
+				{% when site.all_sections[4] %}
+					{% if include.members %}
+						{% if include.members.size > 0 %}
+							{% assign write=true %}
+						{% endif %}		
+					{% endif %}
+
+				{% when site.all_sections[5] %}
+					<!-- Modes: Ongoing, Complete, Halted? -->
+					{% if page.status %}
+							{% assign write=true %}
+					{% endif %}
+
+				{% when site.all_sections[6] %}
+					{% if page.funding %}
+							{% assign write=true %}
+					{% endif %}
+
+			{% endcase %}
+
+			{% if write==true %}
+				<li><a href="#{{ ts | replace: " ","-" }}"><span class="text-capitalize">{{ ts }}</span></a></li>
+			{% endif %}
+		
+		{% endfor %}
+		</ul>
+
+</div>
+
+{% endif %}

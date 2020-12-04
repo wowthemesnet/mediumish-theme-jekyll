@@ -1,0 +1,22 @@
+
+{% if include.section %}
+	{% assign write=false %}
+
+<!-- If there is a END_DATE ==> Display section as well -->
+	{% if page.status %}
+		{% case page.status %}
+
+			{% when layout.statuses[0] %}<!-- Completed -->
+				{% assign write=true %}
+			{% when layout.statuses[2] %}<!-- Ongoing with end date-->
+				{% assign write=true %}
+		{% endcase %}
+	{% endif %}
+	{% if write==true and page.end_date %}
+		<div class="section-title col-md-12 mt-4">
+		<h2 id="{{include.section | replace: " ","-"}}"><span class="text-capitalize">{{include.section}}</span></h2>
+		</div>
+ 		<p style="margin-left: 40px">{{page.status}}: {{page.end_date}}</p>
+	{% endif %}
+
+{% endif %}

@@ -3,7 +3,7 @@ title: "ABR-PG: Sequence Resources for Cotton, A Model System for Allopolyploid 
 team: CoBaAB
 people: 
 - "Thiru Ramaraj"
-keywords: ["Genetics", "Omics"]
+keywords: ["Genetics", "Pie"]
 layout: project
 ---
 

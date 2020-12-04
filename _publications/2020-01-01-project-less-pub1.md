@@ -1,17 +1,12 @@
 ---
-title: pub3
-team: CoBaAB
-project: SARS-project
+title: project-less-pub1
 people: 
-- "Thiru Ramaraj"
-- "DeAngelo Wilson"
+- "Peter Gandy"
 
+image: "assets/images/13.jpg"
 
 layout: product
 ---
-
-A future post -- inaccessible until 2021
-
 Proin massa augue, eleifend non ultricies eget, feugiat ut nisl. Fusce at
 aliquet justo, id elementum lacus. Praesent eleifend tempus molestie. Nunc
 vulputate sed tortor a ultrices. Nullam blandit hendrerit nisi, at suscipit

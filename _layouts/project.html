@@ -1,39 +1,43 @@
 ---
 layout: post
 group: project
-sections: ["Members", "Publications", "Software"]
+sections: ["Funding Agency", "Status", "Members", "Publications", "Software"]
+
+#Status types for 'page.status' variable
+# Enum would be mighty nice here...
+statuses: ["Completed", Ongoing", "Estimated end date", "Halted"] # Statuses ==> 0: "Complete", 1: "Ongoing", 2: "Ongoing with end date", 3: "Halted" (used by "project_extra_sections.html")
 ---
 
-<!-- Create Table of Contents (toc) -->
-<div class="toc mt-4 mb-4 lead">
-    <h3 class="font-weight-bold">Summary</h3>
 
-<!--
-	- ul ==> NOT AN UNORDERED LIST... 
-	- When more categories, may need to change to real table - decrease height of toc...
+<!-- 
+Creates the 'pubs' and 'softs' array (if any publications/softwares)
+	NOTE:: depended on by post_toc.html 
 -->
-	    <ul>
-		{% for ts in layout.sections %}
-			<li><a href="#{{ ts | replace: " ","-" }}"><span class="text-capitalize">{{ ts }}</span></a></li>
-		{% endfor %}
-		</ul>
+{% include products_array.html tag=page.title type=layout.group %}
 
-</div>
+
+<!-- Create Table of Contents (toc) -->
+{% include post_toc.html members=page.people %}
+
 
 {{content}}
 ​
 <!--
-MEMBERS INCLUDE 
-
-members_include.html array=page.people 
-
+Sections -- extra (funding + status) + collection includes 
 -->
 {% assign s=layout.sections[0] %}
-{% include members_include.html members_array=page.people section=s %}
+{% include SectionIncludes/funding_include.html section=s  %}
+
+{% assign s=layout.sections[1] %}
+{% include SectionIncludes/status_include.html section=s  %}
+
+
+{% assign s=layout.sections[2] %}
+{% include SectionIncludes/members_include.html members_array=page.people section=s %}
 
 <!-- List publications and softwares-->
-{% assign s=layout.sections[1] %}
-{% include publications_include.html tag=page.title type=layout.group section=s %}
+{% assign s=layout.sections[3] %}
+{% include SectionIncludes/publications_include.html publications=pubs section=s %}
 <!-- List publications and softwares-->
-{% assign s=layout.sections[2] %}
-{% include software_include.html tag=page.title type=layout.group section=s %}
+{% assign s=layout.sections[4] %}
+{% include SectionIncludes/software_include.html software=softs section=s %}

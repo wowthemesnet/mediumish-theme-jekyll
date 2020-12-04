@@ -5,10 +5,22 @@ layout: default
 
 <section>
     <div class="section-title">
-        <h2><span>{{ page.title }}</span></h2>
+        {% if page.toc==false %}
+            <h2><span>{{ page.title }}</span></h2>
+        {% endif %}
     </div>
 
     <div class="article-post">
+    <!-- Toc if any -->
+    {% if page.toc %}
+        {% if page.beforetoc %}
+            <p><em>{{page.beforetoc}}</em></p>
+        {% endif %}
+        <div class="toc mt-4 mb-4 lead">
+            <h3 class="font-weight-bold">Table of Contents</h3>
+            {% include toc.html html=content sanitize=true class="inline_toc" id="my_toc" h_min=2 h_max=2 ordered=false %}
+        </div>
+    {% endif %}
     {{content}}
     </div>
 

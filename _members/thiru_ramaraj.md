@@ -3,6 +3,8 @@ title: Thiru Ramaraj
 layout: member
 author: "Thiru Ramaraj"
 
+type_group: "Principal Investigators"
+
 name: Sal
 display_name: Sal
 gravatar: e56154546cf4be74e393c62d1ae9f9d4
