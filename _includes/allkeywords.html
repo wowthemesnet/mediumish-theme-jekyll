@@ -1,5 +1,31 @@
 {% assign all_keywords= "" | split: "" %}
+
+
 {% for post in site.projects %}
+    {% if post.keywords %}
+        {% assign all_keywords=all_keywords | concat: post.keywords %}  
+    {% endif %}
+{% endfor %}
+
+{% for post in site.teams %}
+    {% if post.keywords %}
+        {% assign all_keywords=all_keywords | concat: post.keywords %}  
+    {% endif %}
+{% endfor %}
+
+{% for post in site.members %}
+    {% if post.keywords %}
+        {% assign all_keywords=all_keywords | concat: post.keywords %}  
+    {% endif %}
+{% endfor %}
+
+{% for post in site.publications %}
+    {% if post.keywords %}
+        {% assign all_keywords=all_keywords | concat: post.keywords %}  
+    {% endif %}
+{% endfor %}
+
+{% for post in site.software %}
     {% if post.keywords %}
         {% assign all_keywords=all_keywords | concat: post.keywords %}  
     {% endif %}

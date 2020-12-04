@@ -3,13 +3,13 @@ title: "Categories"
 layout: default
 permalink: "/categories.html"
 ---
+{% include allkeywords.html %} <!-- defines 'all_keywords' var -->
 
 {{content}}
 
 <!-- BAD -- calculating "all_keywords" twice on this page...
 		- NEED way to compute all_keywords at run time and assign as layout variable in "default.html"
 -->
-{% include allkeywords.html %} <!-- defines 'all_keywords' var -->
 
 
 <div class="row listrecent">
@@ -17,6 +17,7 @@ permalink: "/categories.html"
 <div class="section-title col-md-12 mt-4">
 <h2 id="{{ category | replace: " ","-" }}">Category <span class="text-capitalize">{{ category }}</span></h2>
 </div>
+
 
 {% for post in site.projects %}
     {% if post.keywords contains category %}
@@ -29,6 +30,55 @@ permalink: "/categories.html"
 		{% endif %}
     {% endif %}
 {% endfor %}
+
+{% for post in site.teams %}
+    {% if post.keywords contains category %}
+
+    	<!-- include postbox.html-->
+		{% if post.title != null %}
+		{% if group == null or group == post.group %}
+		{% include postbox.html %}
+		{% endif %}
+		{% endif %}
+    {% endif %}
+{% endfor %}
+
+{% for post in site.members %}
+    {% if post.keywords contains category %}
+
+    	<!-- include postbox.html-->
+		{% if post.title != null %}
+		{% if group == null or group == post.group %}
+		{% include postbox.html %}
+		{% endif %}
+		{% endif %}
+    {% endif %}
+{% endfor %}
+
+{% for post in site.publications %}
+    {% if post.keywords contains category %}
+
+    	<!-- include postbox.html-->
+		{% if post.title != null %}
+		{% if group == null or group == post.group %}
+		{% include postbox.html %}
+		{% endif %}
+		{% endif %}
+    {% endif %}
+{% endfor %}
+
+{% for post in site.software %}
+    {% if post.keywords contains category %}
+
+    	<!-- include postbox.html-->
+		{% if post.title != null %}
+		{% if group == null or group == post.group %}
+		{% include postbox.html %}
+		{% endif %}
+		{% endif %}
+    {% endif %}
+{% endfor %}
+
 {% assign group = nil %}
 {% endfor %}
 </div>

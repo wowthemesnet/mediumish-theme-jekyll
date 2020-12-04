@@ -5,7 +5,7 @@ permalink: /categories
 ---
 
 <!-- BAD -- calculating "all_keywords" twice on this page...
-		- NEED way to compute all_keywords at run time and assign as layout variable in "default.html"
+		- NEED way to compute all_keywords at run time and assign as layout front_matter variable in "default.html"
 -->
 {% include allkeywords.html %} <!-- defines 'all_keywords' var -->
 
