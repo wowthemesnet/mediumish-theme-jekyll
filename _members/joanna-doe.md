@@ -1,12 +1,12 @@
 ---
-title: John Doe
+title: Joanna Doe
 layout: member
 
-type_group: "Alumni"
+type_group: "Postdoctoral Researchers"
 
-author: "John Doe"
-name: John Doe
-display_name: John Doe    
+author: "Joanna Doe"
+name: Joanna Doe
+display_name: Joanna Doe    
 avatar: 'assets/images/avatar.png'
 gravatar: b1cc14991db7a456fcd761680bbc8f81
 email: wowthemesnet@gmail.com

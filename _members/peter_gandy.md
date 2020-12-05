@@ -1,7 +1,7 @@
 ---
 title: Peter Gandy
 
-type_group: "PHD Students"
+type_group: "PhD Researchers"
 
 layout: member
 description: Lorem ipsum dolor sit amet, consectetur adipiscing elit.

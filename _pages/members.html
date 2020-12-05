@@ -7,11 +7,12 @@ toc: true
 
 <!--horrible design... hardcoding in different member types -->
 {% assign faculty= "" | split: "" %}
+{% assign postdocs= "" | split: "" %}
 {% assign phds= "" | split: "" %}
 {% assign masters= "" | split: "" %}
 {% assign students= "" | split: "" %}
-{% assign alumni= "" | split: "" %}
 {% assign collabs= "" | split: "" %}
+{% assign alumni= "" | split: "" %}
 
 <!-- Add post to approriate post type array ==> display in seperate groups -->
 {% for post in site.members %}
@@ -21,19 +22,22 @@ toc: true
 			{% assign faculty=faculty | push: post %}
 
 		{% when site.member_types[1] %}
+			{% assign postdocs=postdocs | push: post %}
+
+		{% when site.member_types[2] %}
 			{% assign phds=phds | push: post %}
 		
-		{% when site.member_types[2] %}
+		{% when site.member_types[3] %}
 			{% assign masters=masters | push: post %}
 			
-		{% when site.member_types[3] %}
+		{% when site.member_types[4] %}
 			{% assign students=students | push: post %}
 				
-		{% when site.member_types[4] %}
-			{% assign alumni=alumni | push: post %}
-			
 		{% when site.member_types[5] %}
 			{% assign collabs=collabs | push: post %}
+			
+		{% when site.member_types[6] %}
+			{% assign alumni=alumni | push: post %}
 	{% endcase %}
 
 {% endfor %}
@@ -46,27 +50,33 @@ toc: true
 	{% include collection_include.html collection=faculty title=t %}
 {% endif %}
 
-{% if phds.size > 0 %}
+{% if postdocs.size > 0 %}
 	{% assign t=site.member_types[1] %}
+	{% include collection_include.html collection=postdocs title=t %}
+{% endif %}
+
+{% if phds.size > 0 %}
+	{% assign t=site.member_types[2] %}
 	{% include collection_include.html collection=phds title=t %}
 {% endif %}
 
 {% if masters.size > 0 %}
-	{% assign t=site.member_types[2] %}
+	{% assign t=site.member_types[3] %}
 	{% include collection_include.html collection=masters title=t %}
 {% endif %}
 
 {% if students.size > 0 %}
-	{% assign t=site.member_types[3] %}
-	{% include collection_include.html collection=students title=t %}
-{% endif %}
-
-{% if alumni.size > 0 %}
 	{% assign t=site.member_types[4] %}
-	{% include collection_include.html collection=alumni title=t %}
+	{% include collection_include.html collection=students title=t %}
 {% endif %}
 
 {% if collabs.size > 0 %}
 	{% assign t=site.member_types[5] %}
 	{% include collection_include.html collection=collabs title=t %}
 {% endif %}
+
+{% if alumni.size > 0 %}
+	{% assign t=site.member_types[6] %}
+	{% include collection_include.html collection=alumni title=t %}
+{% endif %}
+

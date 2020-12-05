@@ -31,7 +31,7 @@ collections:
     permalink: /:collection/:path/
 
 all_sections: ["Projects", "Publications", "Software", "Teams", "Members", Status", "Funding Agency"]
-member_types: ["Faculty", "PHD Students", "Master's Students", "Undergraduate Students", "Alumni", "External Collaborators" ]
+member_types: ["Faculty", "Postdoctoral Researchers", "PhD Researchers", "Master's Students", "Undergraduate Students", "External Collaborators", "Alumni"]
 
 # Defaults
 defaults:
