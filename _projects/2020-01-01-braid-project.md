@@ -5,6 +5,7 @@ author: "Thiru Ramaraj"
 people: 
 - "Thiru Ramaraj"
 
+opportunities: "HELP WANTED"
 funding: "National Science Foundation (NSF), DBI - ADVANCES IN BIOINFORMATICS"
 end_date: "July 31st 2021"
 status: "Estimated end date"

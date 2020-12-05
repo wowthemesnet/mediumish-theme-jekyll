@@ -13,77 +13,120 @@
     <p><em>{{page.beforetoc}}</em></p>
 {% endif %}
 
-<!-- Create Table of Contents (toc) -->
-<div class="toc mt-4 mb-4 lead">
-    <h3 class="font-weight-bold">Summary</h3>
-	
-
-<!--
-	- ul ==> NOT AN UNORDERED LIST... 
-	- When more categories, may need to change to real table - decrease height of toc...
--->
-	    <ul>
-		{% for ts in layout.sections %}
-			{% assign write=false %}
-			{% case ts %}
-				{% when site.all_sections[0] %}
-					{% if include.projects %}
-						{% if include.projects.size > 0 %}
-							{% assign write=true %}
-						{% endif %}		
-					{% endif %}
 
 
-				{% when site.all_sections[1] %}
-					{% if pubs %}
-						{% if pubs.size > 0 %}
-							{% assign write=true %}
-						{% endif %}		
-					{% endif %}
 
 
-				{% when site.all_sections[2] %}
-					{% if softs %}
-						{% if softs.size > 0 %}
-							{% assign write=true %}
-						{% endif %}		
-					{% endif %}
-				
 
-				{% when site.all_sections[3] %}
-					{% if unique_teams %}
-						{% if unique_teams.size > 0 %}
-							{% assign write=true %}
-						{% endif %}		
-					{% endif %}
+
+<div class="row text-center">
+        <div class="col mt-1 mb-1">
+            <a target="_blank" href={{ page.external_link }}>
+                <i class="fa fa-user" aria-hidden="true"></i>
+            </a>
+        </div>
+
+        <div class="col mt-1 mb-1">
+            <a target="_blank" href={{ page.twitter_link }}>
+                <i class="fab fa-twitter"></i>
+            </a>
+        </div>
+
+        <div class="col mt-1 mb-1">
+            <a target="_blank" href="https://facebook.com/sharer.php?u={{ page.url | absolute_url }}" onclick="window.open(this.href, 'facebook-share', 'width=550,height=435');return false;">
+                <i class="fab fa-facebook-f"></i>
+            </a>
+        </div>
+
+        <div class="col mt-1 mb-1">
+            <a target="_blank" href="https://www.linkedin.com/shareArticle?mini=true&url={{ page.url | absolute_url }}" onclick="window.open(this.href, 'width=550,height=435');return false;">
+                <i class="fab fa-linkedin-in"></i>
+            </a>
+        </div>
+
+
+
+</div>
+
+
+
+<div class="row text-center">
+	<!-- Create Table of Contents (toc) -->
+		
+
+	<!--
+		- ul ==> NOT AN UNORDERED LIST... 
+		- When more categories, may need to change to real table - decrease height of toc...
+	-->
+
+			{% for ts in layout.sections %}
+				{% case ts %}
+					{% when site.all_sections[0] %}
+						{% if include.projects %}
+							{% if include.projects.size > 0 %}
+								<div class="col mt-1 mb-1"><a href="#{{ ts | replace: " ","-" }}"><span class="text-capitalize">{{ ts }}</span></a></div>
+							{% endif %}		
+						{% endif %}
+
+
+					{% when site.all_sections[1] %}
+						{% if pubs %}
+							{% if pubs.size > 0 %}
+								<div class="col mt-1 mb-1"><a href="#{{ ts | replace: " ","-" }}"><span class="text-capitalize">{{ ts }}</span></a></div>
+							{% endif %}		
+						{% endif %}
+
+
+					{% when site.all_sections[2] %}
+						{% if softs %}
+							{% if softs.size > 0 %}
+								<div class="col mt-1 mb-1"><a href="#{{ ts | replace: " ","-" }}"><span class="text-capitalize">{{ ts }}</span></a></div>
+							{% endif %}		
+						{% endif %}
 					
 
-				{% when site.all_sections[4] %}
-					{% if include.members %}
-						{% if include.members.size > 0 %}
-							{% assign write=true %}
-						{% endif %}		
-					{% endif %}
+					{% when site.all_sections[3] %}
+						{% if unique_teams %}
+							{% if unique_teams.size > 0 %}
+								<div class="col mt-1 mb-1"><a href="#{{ ts | replace: " ","-" }}"><span class="text-capitalize">{{ ts }}</span></a></div>
+							{% endif %}		
+						{% endif %}
+						
 
-				{% when site.all_sections[5] %}
-					<!-- Modes: Ongoing, Complete, Halted? -->
-					{% if page.status %}
-							{% assign write=true %}
-					{% endif %}
+					{% when site.all_sections[4] %}
+						{% if include.members %}
+							{% if include.members.size > 0 %}
+								<div class="col mt-1 mb-1"><a href="#{{ ts | replace: " ","-" }}"><span class="text-capitalize">{{ ts }}</span></a></div>
+							{% endif %}		
+						{% endif %}
 
-				{% when site.all_sections[6] %}
-					{% if page.funding %}
-							{% assign write=true %}
-					{% endif %}
+					{% when site.all_sections[5] %}
+						<!-- Modes: Ongoing, Complete, Halted? -->
+						{% if page.status %}
+					        <div class="col mt-1 mb-1"><a href="#{{ ts | replace: " ","-" }}"><span class="text-capitalize">{{ ts }}</span></a></div>
+						{% endif %}
 
-			{% endcase %}
+					{% when site.all_sections[6] %}
+						{% if page.funding %}
+							<div class="col mt-1 mb-1"><a href="#{{ ts | replace: " ","-" }}"><span class="text-capitalize">{{ ts }}</span></a></div>
+						{% endif %}
 
-			{% if write==true %}
-				<li><a href="#{{ ts | replace: " ","-" }}"><span class="text-capitalize">{{ ts }}</span></a></li>
-			{% endif %}
-		
-		{% endfor %}
-		</ul>
+					{% when site.all_sections[7] %}
+						{% if page.opportunities %}
+							<div class="col mt-1 mb-1"><a href="#{{ ts | replace: " ","-" }}"><span class="text-capitalize">{{ ts }}</span></a></div>
+						{% endif %}
+
+				{% endcase %}
+
+
+			
+			{% endfor %}
+
+<!-- End of TOC section listing   	<div class="toc my-4 mb-4 lead">
+<div class="col mt-1 mb-1">
+									<i class="fa fa-tachometer" aria-hidden="true"></i>
+							</div>-->
+
 
 </div>
 

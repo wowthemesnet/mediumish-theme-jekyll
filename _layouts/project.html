@@ -1,7 +1,7 @@
 ---
 layout: post
 group: project
-sections: ["Funding Agency", "Status", "Members", "Publications", "Software"]
+sections: ["Funding Agency", "Status", "Opportunities", "Members", "Publications", "Software"]
 
 #Status types for 'page.status' variable
 # Enum would be mighty nice here...
@@ -31,13 +31,17 @@ Sections -- extra (funding + status) + collection includes
 {% assign s=layout.sections[1] %}
 {% include SectionIncludes/status_include.html section=s  %}
 
-
+{% comment %}
 {% assign s=layout.sections[2] %}
+{% include SectionIncludes/opportunities_include.html section=s %}
+{% endcomment %}
+
+{% assign s=layout.sections[3] %}
 {% include SectionIncludes/members_include.html members_array=page.people section=s %}
 
 <!-- List publications and softwares-->
-{% assign s=layout.sections[3] %}
+{% assign s=layout.sections[4] %}
 {% include SectionIncludes/publications_include.html publications=pubs section=s %}
 <!-- List publications and softwares-->
-{% assign s=layout.sections[4] %}
+{% assign s=layout.sections[5] %}
 {% include SectionIncludes/software_include.html software=softs section=s %}

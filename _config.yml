@@ -30,7 +30,7 @@ collections:
     output: true
     permalink: /:collection/:path/
 
-all_sections: ["Projects", "Publications", "Software", "Teams", "Members", Status", "Funding Agency"]
+all_sections: ["Projects", "Publications", "Software", "Teams", "Members", "Status", "Funding Agency", "Opportunities"]
 member_types: ["Faculty", "Postdoctoral Researchers", "PhD Researchers", "Master's Students", "Undergraduate Students", "External Collaborators", "Alumni"]
 
 # Defaults
