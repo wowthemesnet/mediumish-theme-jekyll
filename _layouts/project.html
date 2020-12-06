@@ -1,7 +1,8 @@
 ---
 layout: post
 group: project
-sections: ["Funding Agency", "Status", "Opportunities", "Members", "Publications", "Software"]
+sections: ["Fundings", "Status", "Opportunities", "Members", "Publications", "Software"]
+headers: ["Starting Date", "Ending Date", "Status", "Keywords", "Publications", "Software", "Members"]
 
 #Status types for 'page.status' variable
 # Enum would be mighty nice here...
@@ -18,7 +19,9 @@ Creates the 'pubs' and 'softs' array (if any publications/softwares)
 
 <!-- Create Table of Contents (toc) -->
 {% include post_toc.html members=page.people %}
-
+<div class="section-title col-md-12 mt-4">
+<h2>About</h2>
+</div>
 
 {{content}}
 ​

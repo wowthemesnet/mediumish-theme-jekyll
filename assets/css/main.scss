@@ -3,7 +3,81 @@
 # Change this file for any custom CSS.
 ---
 
- .tab { margin-left: 40px; }
+.tab { margin-left: 40px; }
+
+.toc-background {background-color: #D3D3D3;   border-radius: 15px;}
+
+
+/* Container needed to position the overlay. Adjust the width as needed */
+#header-item {
+  position: relative;
+  cursor: pointer;
+
+}
+
+/* Make the image to responsive */
+.hover-item {
+  display: block;
+
+}
+
+/* The overlay effect - lays on top of the container and over the image */
+.appear-label {
+  position: relative;
+  bottom: 10px;
+  background: rgb(0, 0, 0);
+  background: rgba(0, 0, 0, 0.5); /* Black see-through */
+  color: #f1f1f1;
+  border-radius: 15px;
+  transition-timing-function: ease-in-out;
+  transition-duration: .5s;
+  transition-delay: 0s;
+  opacity:0;
+  color: white;
+  font-size: 15px;
+  text-align: center;
+}
+
+/* When you mouse over the container, fade in the overlay title */
+#header-item:hover .appear-label {
+  opacity: 1;
+}
+
+.status-block
+{
+	padding: 15px;
+}
+
+.squ-block {
+	display: inline-block;
+	position: relative;
+	cursor: pointer;
+	padding: 5px;
+	text-align: center;
+	width: 90px;
+	height: 80px;
+	margin: 12px;
+}
+
+.b-text {
+    font-size: 35px;
+    font-weight: 700;
+    margin-top: -10px;
+    color: #00ab6b;
+}
+
+.s-text {
+    font-size: 13px;
+    font-weight: 300;
+    margin-top: -10px;
+    text-transform: capitalize;
+    white-space: nowrap;
+    color: #00ab6b;
+}
+
+
+
+
 
 /* We need to add display:inline in order to align the '>>' of the 'read more' link */
 .post-excerpt p {
