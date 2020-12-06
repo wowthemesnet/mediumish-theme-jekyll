@@ -1,7 +1,7 @@
 ---
 layout: post
 group: team
-sections: ["Members", "Projects"]
+sections: ["Members", "Projects", "Opportunities"]
 ---
 
 <!-- Get all projects for THIS team... -->
@@ -38,3 +38,6 @@ sections: ["Members", "Projects"]
 ​{% assign s=layout.sections[1] %}
 <!-- List projects --- and description + linkage -->
 {% include SectionIncludes/projects_include.html projects_array=projs section=s %}
+
+{% assign s=layout.sections[2] %}
+{% include SectionIncludes/jobs_include.html section=s type=layout.group %}

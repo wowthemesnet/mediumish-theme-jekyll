@@ -5,6 +5,9 @@ team: CoBaAB
 # key words MUST all be lowercase (or allows duplicates)
 keywords: ["covid-19", "Pie"]
 
+# if a job corresponds to a particular job, enable display on project by setting...
+opportunities: true
+
 people: 
 - "Thiru Ramaraj"
 - "DeAngelo Wilson"

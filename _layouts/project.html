@@ -29,12 +29,10 @@ Sections -- extra (funding + status) + collection includes
 {% include SectionIncludes/funding_include.html section=s  %}
 
 {% assign s=layout.sections[1] %}
-{% include SectionIncludes/status_include.html section=s  %}
+{% include SectionIncludes/status_include.html section=s %}
 
-{% comment %}
 {% assign s=layout.sections[2] %}
-{% include SectionIncludes/opportunities_include.html section=s %}
-{% endcomment %}
+{% include SectionIncludes/jobs_include.html section=s type=layout.group %}
 
 {% assign s=layout.sections[3] %}
 {% include SectionIncludes/members_include.html members_array=page.people section=s %}

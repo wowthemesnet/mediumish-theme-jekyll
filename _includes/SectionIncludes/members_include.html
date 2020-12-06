@@ -11,18 +11,21 @@ required input:
 
 {% if include.members_array and include.section %}
 
-<!-- SLOW + UGLY -- Get-the-job-done way (N^2)
-		==> could change to a .yaml file of authors...
- -->
+	<!-- SLOW + UGLY -- Get-the-job-done way (N^2)
+			==> could change to a .yaml file of authors...
+	 -->
 
-<!-- Get all member_posts and output them-->
-<div class="section-title col-md-12 mt-4">
-<h2 id="{{include.section | replace: " ","-"}}"><span class="text-capitalize">{{include.section}}</span></h2>
-</div>
+	<!-- Get all member_posts and output them-->
+	<div class="section-title col-md-12 mt-4">
+	<h2 id="{{include.section | replace: " ","-"}}"><span class="text-capitalize">{{include.section}}</span></h2>
+	</div>
+
 	<ul>
 	   {% for member in include.members_array %}
 
-	   		<!-- SLOW + UGLY -- Get-the-job-done way O(N * M) [N = total_member_posts, M = total_members_to_display -> sizeof(members_array)] -->
+	   		<!-- SLOW + UGLY -- Get-the-job-done way O(N * M) [N = total_member_posts, M = total_members_to_display -> sizeof(members_array)] 
+				- Gets the member post associated with the name 'member'
+	   		-->
 			{% assign member_post = site.members | where: "title", member | first %}
 
 			<!--Formatting-->
