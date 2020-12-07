@@ -86,7 +86,21 @@
 		{% for ts in layout.headers %}
 			{% case ts %}
 
-
+				{% when site.all_headers[0] %}
+					<!-- Modes: Ongoing, Complete, Halted? -->
+					{% if page.start_date %}
+				        <div id="header-item" class="col-2 mt-1 mb-1">
+				        	<div class="hover-item squ-block">
+	        		            <div class="b-text"> {{page.start_date | date: "%-d" }}</div>
+	        		            <div class="s-text"> {{page.start_date | date: "%B %Y" }}</div>
+	        		        </div>
+	            			<div class="row h-10">
+		            			<div class="col">
+		            				<div class="appear-label text-capitalize">{{ ts }}</div>
+		            			</div>
+		            		</div>
+						</div>
+					{% endif %}
 
 				{% when site.all_headers[1] %}
 					<!-- Modes: Ongoing, Complete, Halted? -->
@@ -97,7 +111,7 @@
 	        		            <div class="s-text"> {{page.end_date | date: "%B %Y" }}</div>
 	        		        </div>
 	            			<div class="row h-10">
-		            			<div class="col">
+		            			<div class="col offset">
 		            				<div class="appear-label text-capitalize">{{ ts }}</div>
 		            			</div>
 		            		</div>
@@ -120,61 +134,114 @@
 		            		</div>
 						</div>
 					{% endif %}
-				{% comment %}
+{% comment %}
 				{% when site.all_headers[3] %}
 					<!-- Modes: Ongoing, Complete, Halted? -->
 					{% if page.keywords %}
-				        <div id="header-item" class="col mt-1 mb-1">
-        		            <a target="_blank" href="#{{ ts | replace: " ","-" }}">
-	                			<i class="hover-item fa fa-tachometer-alt fa-2x"></i>
-	            			</a>
+				        <div id="header-item" class="col-2 mt-1 mb-1">
+				        	<div class="hover-item squ-block">
+	        		            <a target="_blank" href="#{{ ts | replace: " ","-" }}">
+		                			<i class="status-block fa fa-database fa-2x"></i>
+		            			</a>
+	            			</div>
 	            			<div class="row h-10">
-		            			<div class="col mt-1 mb-1">
+		            			<div class="col">
 		            				<div class="appear-label text-capitalize">{{ ts }}</div>
 		            			</div>
 		            		</div>
 						</div>
 					{% endif %}
 
+
 				{% when site.all_headers[4] %}
-					{% if include.projects %}
-						{% if include.projects.size > 0 %}
-							<div class="col mt-1 mb-1"><a href="#{{ ts | replace: " ","-" }}"><span class="text-capitalize">{{ ts }}</span></a></div>
-						{% endif %}		
-					{% endif %}
-
-
-				{% when site.all_headers[5] %}
-					{% if pubs %}
-						{% if pubs.size > 0 %}
-							<div class="col mt-1 mb-1"><a href="#{{ ts | replace: " ","-" }}"><span class="text-capitalize">{{ ts }}</span></a></div>
-						{% endif %}		
-					{% endif %}
-
-
-				{% when site.all_headers[6] %}
-					{% if softs %}
-						{% if softs.size > 0 %}
-							<div class="col mt-1 mb-1"><a href="#{{ ts | replace: " ","-" }}"><span class="text-capitalize">{{ ts }}</span></a></div>
-						{% endif %}		
-					{% endif %}
-				
-
-				{% when site.all_headers[7] %}
 					{% if unique_teams %}
 						{% if unique_teams.size > 0 %}
-							<div class="col mt-1 mb-1"><a href="#{{ ts | replace: " ","-" }}"><span class="text-capitalize">{{ ts }}</span></a></div>
+							<div id="header-item" class="col-2 mt-1 mb-1">
+					        	<div class="hover-item squ-block">
+		        		            <a target="_blank" href="#{{ ts | replace: " ","-" }}">
+			                			<i class="status-block fas fa-people-carry fa-2x"></i>
+			            			</a>
+		            			</div>
+		            			<div class="row h-10">
+			            			<div class="col">
+			            				<div class="appear-label text-capitalize">{{ ts }}</div>
+			            			</div>
+			            		</div>
+							</div>
 						{% endif %}		
 					{% endif %}
-					
 
-				{% when site.all_headers[8] %}
+				{% when site.all_headers[5] %}
 					{% if include.members %}
 						{% if include.members.size > 0 %}
-							<div class="col mt-1 mb-1"><a href="#{{ ts | replace: " ","-" }}"><span class="text-capitalize">{{ ts }}</span></a></div>
+							<div id="header-item" class="col-2 mt-1 mb-1">
+					        	<div class="hover-item squ-block">
+		        		            <a target="_blank" href="#{{ ts | replace: " ","-" }}">
+			                			<i class="status-block fas fa-user-alt fa-2x"></i>
+			            			</a>
+		            			</div>
+		            			<div class="row h-10">
+			            			<div class="col">
+			            				<div class="appear-label text-capitalize">{{ ts }}</div>
+			            			</div>
+			            		</div>
+							</div>
 						{% endif %}		
 					{% endif %}
-				{% endcomment %}
+
+				{% when site.all_headers[6] %}
+					{% if include.projects %}
+						{% if include.projects.size > 0 %}
+				        	<div class="hover-item squ-block">
+	        		            <a target="_blank" href="#{{ ts | replace: " ","-" }}">
+		                			<i class="status-block fa fa-user-friends fa-2x"></i>
+		            			</a>
+	            			</div>
+	            			<div class="row h-10">
+		            			<div class="col">
+		            				<div class="appear-label text-capitalize">{{ ts }}</div>
+		            			</div>
+		            		</div>
+						</div>
+						{% endif %}		
+					{% endif %}
+
+				{% when site.all_headers[7] %}
+					{% if softs %}
+						{% if softs.size > 0 %}
+							<div id="header-item" class="col-2 mt-1 mb-1">
+					        	<div class="hover-item squ-block">
+		        		            <a target="_blank" href="#{{ ts | replace: " ","-" }}">
+			                			<i class="status-block fas fa-desktop fa-2x"></i>
+			            			</a>
+		            			</div>
+		            			<div class="row h-10">
+			            			<div class="col">
+			            				<div class="appear-label text-capitalize">{{ ts }}</div>
+			            			</div>
+			            		</div>
+							</div>
+						{% endif %}		
+					{% endif %}
+
+				{% when site.all_headers[8] %}
+					{% if pubs %}
+						{% if pubs.size > 0 %}
+							<div id="header-item" class="col-2 mt-1 mb-1">
+					        	<div class="hover-item squ-block">
+		        		            <a target="_blank" href="#{{ ts | replace: " ","-" }}">
+			                			<i class="status-block fas fa-book fa-2x"></i>
+			            			</a>
+		            			</div>
+		            			<div class="row h-10">
+			            			<div class="col">
+			            				<div class="appear-label text-capitalize">{{ ts }}</div>
+			            			</div>
+			            		</div>
+							</div>
+						{% endif %}		
+					{% endif %}
+{% endcomment %}
 			{% endcase %}
 		
 		{% endfor %}
