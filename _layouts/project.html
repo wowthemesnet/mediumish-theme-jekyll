@@ -1,12 +1,12 @@
 ---
 layout: post
 group: project
-sections: ["Fundings", "Status", "Opportunities", "Members", "Publications", "Software"]
-headers: ["Starting Date", "Ending Date", "Status", "Keywords", "Publications", "Software", "Members"]
+sections: ["Fundings", "Opportunities", "Members", "Publications", "Software"]
+headers: ["Starting Date", "Ending Date", "Status", "Keyword", "Member", "Software", "Publication"]
 
 #Status types for 'page.status' variable
 # Enum would be mighty nice here...
-statuses: ["Completed", Ongoing", "Estimated end date", "Halted"] # Statuses ==> 0: "Complete", 1: "Ongoing", 2: "Ongoing with end date", 3: "Halted" (used by "project_extra_sections.html")
+statuses: ["Completed", Ongoing", "Halted"] # Statuses ==> 0: "Complete", 1: "Ongoing", 2: "Ongoing with end date", 3: "Halted" (used by "project_extra_sections.html")
 ---
 
 
@@ -32,17 +32,14 @@ Sections -- extra (funding + status) + collection includes
 {% include SectionIncludes/funding_include.html section=s  %}
 
 {% assign s=layout.sections[1] %}
-{% include SectionIncludes/status_include.html section=s %}
-
-{% assign s=layout.sections[2] %}
 {% include SectionIncludes/jobs_include.html section=s type=layout.group %}
 
-{% assign s=layout.sections[3] %}
+{% assign s=layout.sections[2] %}
 {% include SectionIncludes/members_include.html members_array=page.people section=s %}
 
 <!-- List publications and softwares-->
-{% assign s=layout.sections[4] %}
+{% assign s=layout.sections[3] %}
 {% include SectionIncludes/publications_include.html publications=pubs section=s %}
 <!-- List publications and softwares-->
-{% assign s=layout.sections[5] %}
+{% assign s=layout.sections[4] %}
 {% include SectionIncludes/software_include.html software=softs section=s %}

@@ -33,8 +33,8 @@ collections:
     output: true
     permalink: /:collection/:path/
 
-all_sections: ["Projects", "Publications", "Software", "Teams", "Members", "Status", "Fundings", "Opportunities"]
-all_headers: ["Starting Date", "Ending Date", "Status", "Keywords", "Teams", "Members", "Projects", "Software", "Publications"]
+all_sections: ["Projects", "Publications", "Software", "Teams", "Members", "Fundings", "Opportunities"]
+all_headers: ["Starting Date", "Ending Date", "Status", "Keyword", "Team", "Member", "Project", "Software", "Publication"]
 
 member_types: ["Faculty", "Postdoctoral Researchers", "PhD Researchers", "Master's Students", "Undergraduate Students", "External Collaborators", "Alumni"]
 

@@ -23,7 +23,7 @@ funding: "National Science Foundation (NSF), DBI - ADVANCES IN BIOINFORMATICS"
 # the end date/estimated end date of a project, depending on status
 start_date: "May 1st 2020"
 end_date: "July 31st 2021"
-status: "Estimated end date"
+status: "Ongoing"
 
 
 # key words MUST all be lowercase (or allows duplicates)

@@ -5,8 +5,12 @@
 
 .tab { margin-left: 40px; }
 
-.toc-background {background-color: #D3D3D3;   border-radius: 15px;}
+.toc-background {background-color: #DCDCDC;   border-radius: 15px;}
 
+#header-text{
+	font-size: 15px;
+
+}
 
 /* Container needed to position the overlay. Adjust the width as needed */
 #header-item {
@@ -25,6 +29,7 @@
 .appear-label {
   position: relative;
   bottom: 10px;
+  left: 15px;
   background: rgb(0, 0, 0);
   background: rgba(0, 0, 0, 0.5); /* Black see-through */
   color: #f1f1f1;
@@ -34,7 +39,7 @@
   transition-delay: 0s;
   opacity:0;
   color: white;
-  font-size: 15px;
+  font-size: 13px;
   text-align: center;
 }
 
@@ -43,9 +48,9 @@
   opacity: 1;
 }
 
-.status-block
+.icon-block
 {
-	padding: 15px;
+	padding: 10px;
 }
 
 .squ-block {

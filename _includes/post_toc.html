@@ -59,17 +59,11 @@
 					{% endif %}
 
 				{% when site.all_sections[5] %}
-					<!-- Modes: Ongoing, Complete, Halted? -->
-					{% if page.status %}
-				        <div class="col mt-1 mb-1"><a href="#{{ ts | replace: " ","-" }}"><span class="text-capitalize">{{ ts }}</span></a></div>
-					{% endif %}
-
-				{% when site.all_sections[6] %}
 					{% if page.funding %}
 						<div class="col mt-1 mb-1"><a href="#{{ ts | replace: " ","-" }}"><span class="text-capitalize">{{ ts }}</span></a></div>
 					{% endif %}
 
-				{% when site.all_sections[7] %}
+				{% when site.all_sections[6] %}
 					{% if page.opportunities %}
 						<div class="col mt-1 mb-1"><a href="#{{ ts | replace: " ","-" }}"><span class="text-capitalize">{{ ts }}</span></a></div>
 					{% endif %}
@@ -91,8 +85,8 @@
 					{% if page.start_date %}
 				        <div id="header-item" class="col-2 mt-1 mb-1">
 				        	<div class="hover-item squ-block">
-	        		            <div class="b-text"> {{page.start_date | date: "%-d" }}</div>
-	        		            <div class="s-text"> {{page.start_date | date: "%B %Y" }}</div>
+	        		            <div class="b-text">{{page.start_date | date: "%-d" }}</div>
+	        		            <div class="s-text">{{page.start_date | date: "%B %Y" }}</div>
 	        		        </div>
 	            			<div class="row h-10">
 		            			<div class="col">
@@ -107,11 +101,11 @@
 					{% if page.end_date %}
 				        <div id="header-item" class="col-2 mt-1 mb-1">
 				        	<div class="hover-item squ-block">
-	        		            <div class="b-text"> {{page.end_date | date: "%-d" }}</div>
-	        		            <div class="s-text"> {{page.end_date | date: "%B %Y" }}</div>
+	        		            <div class="b-text">{{page.end_date | date: "%-d" }}</div>
+	        		            <div class="s-text">{{page.end_date | date: "%B %Y" }}</div>
 	        		        </div>
 	            			<div class="row h-10">
-		            			<div class="col offset">
+		            			<div class="col">
 		            				<div class="appear-label text-capitalize">{{ ts }}</div>
 		            			</div>
 		            		</div>
@@ -123,9 +117,11 @@
 					{% if page.status %}
 				        <div id="header-item" class="col-2 mt-1 mb-1">
 				        	<div class="hover-item squ-block">
-	        		            <a target="_blank" href="#{{ ts | replace: " ","-" }}">
-		                			<i class="status-block fa fa-tachometer-alt fa-2x"></i>
+	        		            <a href="#{{ ts | replace: " ","-" }}">
+		                			<i class="icon-block fa fa-tachometer-alt fa-2x"></i>
 		            			</a>
+	        		            <div class="s-text">{{page.status}}</div>
+
 	            			</div>
 	            			<div class="row h-10">
 		            			<div class="col">
@@ -134,19 +130,20 @@
 		            		</div>
 						</div>
 					{% endif %}
-{% comment %}
+
 				{% when site.all_headers[3] %}
 					<!-- Modes: Ongoing, Complete, Halted? -->
 					{% if page.keywords %}
 				        <div id="header-item" class="col-2 mt-1 mb-1">
 				        	<div class="hover-item squ-block">
-	        		            <a target="_blank" href="#{{ ts | replace: " ","-" }}">
-		                			<i class="status-block fa fa-database fa-2x"></i>
+	        		            <a href="#{{ ts | replace: " ","-" }}">
+		                			<i class="icon-block fa fa-database fa-2x"></i>
 		            			</a>
+		            			<div class="s-text">{{page.keywords.size}} {{ts}}{%if page.keywords.size>1%}s{% endif %}</div>
 	            			</div>
 	            			<div class="row h-10">
 		            			<div class="col">
-		            				<div class="appear-label text-capitalize">{{ ts }}</div>
+		            				<div class="appear-label text-capitalize">{{ ts }}{%if page.keywords.size>1%}s{% endif %}</div>
 		            			</div>
 		            		</div>
 						</div>
@@ -158,13 +155,14 @@
 						{% if unique_teams.size > 0 %}
 							<div id="header-item" class="col-2 mt-1 mb-1">
 					        	<div class="hover-item squ-block">
-		        		            <a target="_blank" href="#{{ ts | replace: " ","-" }}">
-			                			<i class="status-block fas fa-people-carry fa-2x"></i>
+		        		            <a href="#{{ site.all_sections[3] | replace: " ","-" }}">
+			                			<i class="icon-block fas fa-people-carry fa-2x"></i>
 			            			</a>
+			            			<div class="s-text">{{unique_teams.size}} {{ts}}{%if unique_teams.size>1%}s{% endif %}</div>
 		            			</div>
 		            			<div class="row h-10">
 			            			<div class="col">
-			            				<div class="appear-label text-capitalize">{{ ts }}</div>
+			            				<div class="appear-label text-capitalize">{{ ts }}{%if unique_teams.size>1%}s{% endif %}</div>
 			            			</div>
 			            		</div>
 							</div>
@@ -176,13 +174,14 @@
 						{% if include.members.size > 0 %}
 							<div id="header-item" class="col-2 mt-1 mb-1">
 					        	<div class="hover-item squ-block">
-		        		            <a target="_blank" href="#{{ ts | replace: " ","-" }}">
-			                			<i class="status-block fas fa-user-alt fa-2x"></i>
+		        		            <a href="#{{ site.all_sections[4] | replace: " ","-" }}">
+			                			<i class="icon-block fas fa-user-alt fa-2x"></i>
 			            			</a>
+		            				<div class="s-text">{{include.members.size}} {{ts}}{%if include.members.size>1%}s{% endif %}</div>
 		            			</div>
 		            			<div class="row h-10">
 			            			<div class="col">
-			            				<div class="appear-label text-capitalize">{{ ts }}</div>
+			            				<div class="appear-label text-capitalize">{{ ts }}{%if include.members.size>1%}s{% endif %}</div>
 			            			</div>
 			            		</div>
 							</div>
@@ -193,13 +192,14 @@
 					{% if include.projects %}
 						{% if include.projects.size > 0 %}
 				        	<div class="hover-item squ-block">
-	        		            <a target="_blank" href="#{{ ts | replace: " ","-" }}">
-		                			<i class="status-block fa fa-user-friends fa-2x"></i>
+	        		            <a href="#{{ site.all_sections[0] | replace: " ","-" }}">
+		                			<i class="icon-block fa fa-user-friends fa-2x"></i>
 		            			</a>
+		            		<div class="s-text">{{page.projects.size}} {{ts}}{%if include.projects.size>1%}s{% endif %}</div>
 	            			</div>
 	            			<div class="row h-10">
 		            			<div class="col">
-		            				<div class="appear-label text-capitalize">{{ ts }}</div>
+		            				<div class="appear-label text-capitalize">{{ ts }}{%if include.projects.size>1%}s{% endif %}</div>
 		            			</div>
 		            		</div>
 						</div>
@@ -211,13 +211,14 @@
 						{% if softs.size > 0 %}
 							<div id="header-item" class="col-2 mt-1 mb-1">
 					        	<div class="hover-item squ-block">
-		        		            <a target="_blank" href="#{{ ts | replace: " ","-" }}">
-			                			<i class="status-block fas fa-desktop fa-2x"></i>
+		        		            <a href="#{{ site.all_sections[2] | replace: " ","-" }}">
+			                			<i class="icon-block fas fa-desktop fa-2x"></i>
 			            			</a>
+		            			<div class="s-text">{{softs.size}} {{ts}}{%if softs.size>1%}s{% endif %}</div>
 		            			</div>
 		            			<div class="row h-10">
 			            			<div class="col">
-			            				<div class="appear-label text-capitalize">{{ ts }}</div>
+			            				<div class="appear-label text-capitalize">{{ ts }}{%if softs.size>1%}s{% endif %}</div>
 			            			</div>
 			            		</div>
 							</div>
@@ -229,28 +230,32 @@
 						{% if pubs.size > 0 %}
 							<div id="header-item" class="col-2 mt-1 mb-1">
 					        	<div class="hover-item squ-block">
-		        		            <a target="_blank" href="#{{ ts | replace: " ","-" }}">
-			                			<i class="status-block fas fa-book fa-2x"></i>
+					        		<!-- 
+					        			NOTE:: site.all_section order dependency
+
+"Projects", "Publications", "Software", "Teams", "Members", "Fundings", "Opportunities"
+					        			
+					        			 -->
+		        		            <a href="#{{ site.all_sections[1] | replace: " ","-" }}"> 
+			                			<i class="icon-block fas fa-book fa-2x"></i>
 			            			</a>
+			   		            <div class="s-text">{{pubs.size}} {{ts}}{%if pubs.size>1%}s{% endif %}</div>
 		            			</div>
 		            			<div class="row h-10">
 			            			<div class="col">
-			            				<div class="appear-label text-capitalize">{{ ts }}</div>
+			            				<div class="appear-label text-capitalize">{{ ts }}{%if pubs.size>1%}s{% endif %}</div>
 			            			</div>
 			            		</div>
 							</div>
 						{% endif %}		
 					{% endif %}
-{% endcomment %}
+
 			{% endcase %}
 		
 		{% endfor %}
 	</div>
 
-<!-- End of TOC section listing   	<div class="toc my-4 mb-4 lead">
-<div class="col mt-1 mb-1">
-									<i class="fa fa-tachometer" aria-hidden="true"></i>
-							</div>-->
+<!-- End of TOC section listing -->
 
 
 
