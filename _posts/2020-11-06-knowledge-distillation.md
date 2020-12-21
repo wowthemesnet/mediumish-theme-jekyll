@@ -3,14 +3,12 @@ layout: post
 title:  "Knowledge Distillation"
 authors: [easter]
 tags: ["Knowledge Distillation"]
-image: assets/images/jekyll-logo.png
+image: assets/images/kd.png
 description: "Knowledge Distillation"
 featured: true
 ---
 # Distilling the Knowledge in a Neural Network
 이승현
-
-[![N|Solid](https://cldup.com/dTxpPi9lDf.thumb.png)](https://tobigs.gitbook.io/knowledge-distilation/)
 
 Knowledge Distillation(지식전이)는 미리 잘 학습된 큰 네트워크의 지식을 실제로 사용하고자 하는 작은 네트워크에게 전달합니다.
 
