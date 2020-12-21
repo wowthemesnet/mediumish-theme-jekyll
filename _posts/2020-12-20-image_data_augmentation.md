@@ -7,7 +7,6 @@ image: assets/images/post-image-data-augmentation/title.png
 description: "keras image data generator"
 featured: true
 ---
-## image data augmentation
 
 ## intro
 
