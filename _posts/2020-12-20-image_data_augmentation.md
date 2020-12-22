@@ -132,4 +132,4 @@ for e in range(epochs):
 
 ## 결론
 
-위에서 제시한 것 처럼 프레임워크에서 대부분 data generator를 구현한 함수를 제공하지만, 상황에 따라서는 image data generator 함수를 직접 구현해야 하는 경우도 있습니다. 여러분들도 직접 augementation 코드를 구현해야 할 때, 이런 점을 고려해서 더 좋은 방법으로 구현하셨으면 좋겠습니다.
+위에서 제시한 것 처럼 프레임워크에서 대부분 data generator를 구현한 함수를 제공하지만, 상황에 따라서는 image data generator 함수를 직접 구현해야 하는 경우도 있습니다. 여러분들도 직접 augmentation 코드를 구현해야 할 때, 이런 점을 고려해서 더 좋은 방법으로 구현하셨으면 좋겠습니다.
