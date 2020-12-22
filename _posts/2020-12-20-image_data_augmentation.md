@@ -12,7 +12,8 @@ featured: true
 
 data augmentation 이란 학습 시에 overfitting이 염려될 때, 좌우반전된 이미지나 노이즈가 추가된 이미지를 학습시켜 overfitting을 방지하는 기법입니다. 단순히 데이터를 불려서 overfitting을 방지하는 기법이라고 많이 알고 계실 텐데, 관련된 자료를 찾아보던 중 data augmentation을 적용할 때 고려해야 할 점이 몇 가지 있는 것을 알게 되었습니다. 이에 대해 제가 이해한 내용을 포스팅하도록 하겠습니다.
 
-### 1. data augmentation을 하는 이유
+## 1. data augmentation을 하는 이유
+
 ![Capture](../assets/images/post-image-data-augmentation/aug.png)
 
 만약 사람을 구분하는 딥러닝 모델이 있다면, 각도가 다른 두 개의 사진 모두 같은 사람으로 인식해야 합니다. 하지만 모든 각도에서 사람을 촬영할 수는 없기에, 모델을 잘 학습시키기 위해서 이러한 데이터를 직접 만들어야 합니다. 일반적으로 data augmentation을 하는 방법은 몇 가지 방법은 다음과 같습니다.
