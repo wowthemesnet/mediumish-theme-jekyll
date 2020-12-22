@@ -34,7 +34,7 @@ data augmentation 이란 학습 시에 overfitting이 염려될 때, 좌우반�
 첫 번째 방법은 다음과 같습니다.
 
 1. Input 이미지를 로드한다.
-2. Dataset Generator에서 data augementation 기법을 이용하여 학습 데이터 셋에 변형된 데이터를 추가한다.
+2. Dataset Generator에서 data augmentation 기법을 이용하여 학습 데이터 셋에 변형된 데이터를 추가한다.
 3. 추가된 이미지와 원본 이미지를 함께 학습시킨다.
 
 아마 가장 일반적으로 생각하는 방법일 텐데요, 이 방법에는 문제점이 있습니다.
