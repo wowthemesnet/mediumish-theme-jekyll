@@ -3,7 +3,7 @@ layout: post
 title: "위키 API, 구글번역API와 약간의 크롤링"
 authors: [howtolivelikehuman]
 tags: ["CV-image_classification"]
-image: assets/images/api_crawling.png
+image: assets/images/post-image_classification/api_crawling.png
 description: "아기도 할 수 있는 api 사용과 크롤링"
 featured: true
 ---
