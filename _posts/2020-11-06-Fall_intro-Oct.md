@@ -1,10 +1,12 @@
-title: Fall-intro team Oct
-
-authors: Subin Kim
-
-tag: [파이썬, 초보자, 인트로]
-
-image: https://www.python.org/static/community_logos/python-logo.png
+---
+layout: post
+title: "Fall intro team 10월 파이썬 과제"
+authors: [Subin Kim]
+tags: ["Fall intro"]
+image: https://www.bloter.net/wp-content/uploads/2016/09/navercast_python_01logo.png
+description: "과제 1, 2, 3"
+featured: false
+---
 
 # #Fall-intro team October 
 
