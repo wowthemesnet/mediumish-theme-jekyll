@@ -49,5 +49,5 @@ Learning rate는 최적값을 찾아가는 속도로 보통 0.01로 맞춰 놓�
 모델을 쉽게 만들 수 있는 만큼 섬세한 모델의 구현이 어려운 점은 있습니다. 저도 Teachable Machine을 이용해 가위, 바위, 보 인식 모델을 만들려고 했지만 손 모양의 구별은 어려웠습니다. 장단점이 존재하지만 이 글을 통해 다른 분들이 Teachable Machine을 접하고 머신 러닝에 관심을 가져보시면 좋을 것 같습니다.
 
 
-<a name="footnote_1">1</a>: https://teachablemachine.withgoogle.com/faq  
-<a name="footnote_2">2</a>: https://github.com/tensorflow/tfjs-models/tree/master/speech-commands
+> <a name="footnote_1">1</a>: https://teachablemachine.withgoogle.com/faq  
+> <a name="footnote_2">2</a>: https://github.com/tensorflow/tfjs-models/tree/master/speech-commands
