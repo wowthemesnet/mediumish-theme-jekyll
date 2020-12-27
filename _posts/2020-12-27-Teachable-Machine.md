@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "ML 맛보기 - Teachable Machine"
-authors: [Yubeen Son]
+authors: [YubeenSon]
 tags: ["TeachableMachine"]
 image: assets/images/post-Teachable-Machine/teachable_machine.jpeg
 description: "Teachable Machine"
