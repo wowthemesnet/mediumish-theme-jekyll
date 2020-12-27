@@ -17,7 +17,7 @@ Teachable Mchine은 구글에서 제공하는 웹기반의 머신러닝 툴입�
 
 Teachable Machine은 input받은 데이터를 미리 만들어진 신경망으로 전이학습을 시키는 것이기 때문에 복잡한 과정 없이 새로운 모델을 만들 수 있습니다. 다음은 teachable machine FAQ에 나오는 문장입니다.
 
-“There’s a pretrained neural network, and when you create your own classes, you can sort of picture that your classes are becoming the last layer or step of the neural net.” <sup>[1](#footnote_1)</sup>
+>There’s a pretrained neural network, and when you create your own classes, you can sort of picture that your classes are becoming the last layer or step of the neural net.” <sup>[1](#footnote_1)</sup>
 
 (전이학습 : 사전에 훈련된 모델의 가중치를 가지고 와서 새로운 case에 재보정해서 사용하는 것)
 
