@@ -1,4 +1,19 @@
+---
+layout: post
+title: "Image Translation paper review"
+authors: [lsh110600]
+tags: ["computer vision","deep learning"]
+image: assets/images/post-image-data-augmentation/title2.png
+description: "Image Translation paper review vol.1"
+featured: true
+---
+
+
 # Image Translation 논문 리뷰(상)
+
+Wang, Xinrui, and Jinze Yu. "Learning to Cartoonize Using White-Box Cartoon Representations." Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition. 2020.
+https://github.com/SystemErrorWang/White-box-Cartoonization
+에 대해서 리뷰합니다. 
 
 1. **Introduction & Related Work** 
 
