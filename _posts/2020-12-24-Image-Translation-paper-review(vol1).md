@@ -3,7 +3,7 @@ layout: post
 title: "Image Translation paper review"
 authors: [lsh110600]
 tags: ["computer vision","deep learning"]
-image: assets/images/post-image-data-augmentation/title2.png
+image: assets/images/post-image-translation/title.jpg
 description: "Image Translation paper review vol.1"
 featured: true
 ---
@@ -23,13 +23,13 @@ CartoonGAN
 
     ⇒ 만화에서는 외곽선이 가장 중요한 특징이지만, 전체 이미지에서 차지하는 부분이 작기 때문에 output 이미지의 edge가 clearly 하지 않음.
 
-    ⇒ 따라서 기존의 GAN에서 사용하는 loss를 사용하기에는 적합하지 않음 .
+    ⇒ 따라서 기존의 GAN에서 사용하는 loss를 사용하기에는 적합하지 않음.
 
     ⇒ 이를 조정하기 위해 (1) Canny edge detector (2) dilate the edge regions (3) Gaussian smoothing 방법 3가지를 적용한 edge-smoothed image 생성 
 
 ![Capture](../assets/images/post-image-translation/paper0.png)
 
-- 그러나 Black-box model을 사용하여 data를 학습시키기 때문에 하학습이 중구난방이고 quality가 낮은 Output image를 생성할 가능성이 높음.
+- 그러나 Black-box model을 사용하여 data를 학습시키기 때문에 학습이 중구난방이고 quality가 낮은 Output image를 생성할 가능성이 높음.
 
 **2. This work** 
 
