@@ -12,7 +12,7 @@ CartoonGAN
 
     ⇒ 이를 조정하기 위해 (1) Canny edge detector (2) dilate the edge regions (3) Gaussian smoothing 방법 3가지를 적용한 edge-smoothed image 생성 
 
-![Capture](../assets/images/post-image-data-augmentation/paper0.png)
+![Capture](../assets/images/post-image-translation/paper0.png)
 
 - 그러나 Black-box model을 사용하여 data를 학습시키기 때문에 하학습이 중구난방이고 quality가 낮은 Output image를 생성할 가능성이 높음.
 
@@ -38,21 +38,21 @@ CartoonGAN
 - 3개의 채널을 가진 입력이미지를 1개의 채널로 변환하는 과정.
 - 색상과 밝기가 제거되고 상대적인 픽셀 강도가 보존됩니다.
 
-![Capture](../assets/images/post-image-data-augmentation/paper1.png)
+![Capture](../assets/images/post-image-translation/paper1.png)
 
 
 **3. Proposed Approach** 
 
 - 아래 그림을 보면, image 특징을 Decompose하는 3가지 방법이 어떻게 진행되는지 알 수 있음.
 
-![Capture](../assets/images/post-image-data-augmentation/paper2.png)
+![Capture](../assets/images/post-image-translation/paper2.png)
 
 
 - 이미지가 Surface Representation, Structure Representation, Texture Representation으로 분해되고 해당 Representation을 추출하기 위해 세 개의 독립 모듈을 도입함.
 - GAN framework는 Generator G와 Discriminator인 D_s, D_t로 구성됨.
 - D_s는 Surface Representation을 기준으로, 생성된 image와 만화를 구별하고 D_t는 Texture Representation 으로 생성된 image와 만화를 구별함.
 
-![Capture](../assets/images/post-image-data-augmentation/paper3.png)
+![Capture](../assets/images/post-image-translation/paper3.png)
 
 
 3-1) Learning From the Surface Representation
@@ -61,7 +61,7 @@ CartoonGAN
 - F_dgf는 이미지 I를 입력으로 받아서 texture 와 디테일한 부분을 제거한 surface를 추출함.
 - D_s는 모델이 생성해낸 이미지와 기준이되는 만화 이미지가 비슷한 surface를 갖는지 판단하고 generator G가 surface representation를 잘 추출할 수 있도록 가이드를 제공함.
 
-![Capture](../assets/images/post-image-data-augmentation/paper4.png)
+![Capture](../assets/images/post-image-translation/paper4.png)
 
 
 - I_c는 reference cartoon images를, I_p는 input photo를 의미함.
@@ -73,12 +73,12 @@ CartoonGAN
 
 **felzenszwalb algorithm**
 
-![Capture](../assets/images/post-image-data-augmentation/paper5.png)
+![Capture](../assets/images/post-image-translation/paper5.png)
 
 
 **superpixel algorithms**
 
-![Capture](../assets/images/post-image-data-augmentation/paper6.png)
+![Capture](../assets/images/post-image-translation/paper6.png)
 
 
 - 이후 Adaptive coloring algorithm을 사용하여 이미지에 대한 Haze를 줄입니다.
@@ -86,20 +86,20 @@ CartoonGAN
 
 **Adaptive coloring algorithm**
 
-![Capture](../assets/images/post-image-data-augmentation/paper7.png)
+![Capture](../assets/images/post-image-translation/paper7.png)
 
 
-![Capture](../assets/images/post-image-data-augmentation/paper8.png)
+![Capture](../assets/images/post-image-translation/paper8.png)
 
 
 **Haze 유무**
 
-![Capture](../assets/images/post-image-data-augmentation/paper9.png)
+![Capture](../assets/images/post-image-translation/paper9.png)
 
 
 - 입력 사진은 Generator에도 들어가고 VGG 네트워크에도 들어갑니다. VGG 네트워크에서는 High level  feature를 추출해냅니다.  Structure 특징을 뽑아내기 위한 loss는 아래와 같습니다.
 
-![Capture](../assets/images/post-image-data-augmentation/paper10.png)
+![Capture](../assets/images/post-image-translation/paper10.png)
 
 
 3-3) Learning From the Textural Representation
@@ -109,14 +109,14 @@ CartoonGAN
 - I_rgb는 RGB 채널을 갖는 이미지이고 I_r, I_g, I_b는 color channel을 의미한다. Y는 RGB 이미지를 grayscale한 것을 의미한다.
 - Alpha와 Beta 값은 사용자가 변경 할 수 있다. 논문에는 Alpha- 0.8, Beta = ~U(-1,1)을 사용했다.
 
-![Capture](../assets/images/post-image-data-augmentation/paper11.png)
+![Capture](../assets/images/post-image-translation/paper11.png)
 
 
 - random color shift algorithm은 밝기와 색상 정보를 제거한 상태에서 무작위 intensity maps을 생성할 수 있다.
 - Discriminator D_t는 모델 출력물과 만화에서 추출한 질감 표현을 구별하고, Generator가 질감 표현에 저장된 명확한 윤곽과 미세한 질감을 학습하도록합니다.
 - Texture 정보를 뽑아낼 수 있는 loss는 아래 식과 같습니다.
 
-![Capture](../assets/images/post-image-data-augmentation/paper12.png)
+![Capture](../assets/images/post-image-translation/paper12.png)
 
 
 ---
