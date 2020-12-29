@@ -23,11 +23,16 @@ beeetea:
 gusrb3164:
   name: 김현규
   display_name: 현규
-  email:
+  email: gusrb3164@gmail.com
+  web: https://gusrb3164.github.io
 min6choi:
   name: 최민식
   display_name: 민식
   email:
+easter:
+  name: 이승현
+  display_name: 승현
+  email: easter3163
 hye1ng:
   name: 박혜인
   display_name: 혜인
