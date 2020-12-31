@@ -19,6 +19,8 @@ Web Team의 Mission4는 React(리액트)를 공부하는 것이었습니다. 특
 
 
 
+
+
 ## 리액트를 공부하는 이유
 
 형진님의 주도하에 이루어진 리액트 미션을 진행하게 된 이유는 다음과 같습니다. 
@@ -27,10 +29,14 @@ Web Team의 Mission4는 React(리액트)를 공부하는 것이었습니다. 특
 
 
 
+
+
 ## 1장에서 공부한 내용 
 
+
 - 리액트의 특징
- - 리액트 컴포넌트 예시 
+  리액트 컴포넌트 예시 
+
 
   ```js
   import React from 'react';
@@ -57,8 +63,12 @@ Web Team의 Mission4는 React(리액트)를 공부하는 것이었습니다. 특
 
 
 
+
+
 - 리액트를 통해 동적인 부분 구현하기 
- - Counter 컴포넌트 만들기 
+  Counter 컴포넌트 만들기 
+
+
     ```js
     import React, { useState } from 'react';
 
@@ -84,12 +94,16 @@ Web Team의 Mission4는 React(리액트)를 공부하는 것이었습니다. 특
 
     export default Counter;
     ```
-[React Counter](../assets/images/post-WEB-Mission4/react-record1.mov)
+
+
+
 
 
 
 - 리액트를 통해 배열 렌더링 하기 
   리액트에서 배열을 렌더링 할 때는 **key**라는 props를 설정해야 합니다. **key**값은 각 원소들마다 가지고 있는 고유값으로 설정을 해야 합니다. 밑의 경우엔 **id**가 고유 값입니다. 
+
+
   ```js
   import React from 'react';
 
@@ -134,19 +148,20 @@ Web Team의 Mission4는 React(리액트)를 공부하는 것이었습니다. 특
 
 
 
+
+
 이외에 여러가지를 리액트의 기본적인 것에 대한 대부분을 배웠습니다. 리액트의 경우 JavaScript의 기초를 기반으로 진행되기 때문에 JavaScript의 공부가 선행되어야 하는데요. 리액트에 대해 관심이 있는 분들을 위해 제가 이 강의를 들으면서 함께 공부했던 다른 강의와 사이트들도 아래 첨부했습니다. 
 
 > [생활코딩 리액트](https://opentutorials.org/module/4058)
-
 이번 미션에서 공부했던 강의를 듣기 전에 맛보기로 공부하는 것을 추천합니다.
 
 > [리액트 홈페이지 문서](https://ko.reactjs.org/docs/getting-started.html)
-
 보다 자세하고 친절한 설명으로 리액트에 대한 이해를 도울 수 있습니다. 
 
 > [생활코딩 자바스크립트의 시작](https://www.boostcourse.org/cs124)
-
 기초 자바스크립트 강의로 리액트를 듣기 전에 미리 듣는 것을 추천합니다.
+
+
 
 
 
@@ -154,4 +169,3 @@ Web Team의 Mission4는 React(리액트)를 공부하는 것이었습니다. 특
 
 넘치는 과제와 함께 기말고사 기간임에도 불구하고 미션을 통해 처음 접해보는 리액트에 익숙해지기 위해 최선을 다한 웹멤버들 모두 수고하셨습니다! 
 
-앞으로 남은 미션을 함께 수행해나가며 최종 목표를 향해 열심히 공부해봐요 💪
