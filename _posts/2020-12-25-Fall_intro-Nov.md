@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Fall intro team 11월 파이썬 과제"
-authors: [Subin Kim]
+authors: ["maybeluna"]
 tags: ["Fall intro"]
 image: https://www.bloter.net/wp-content/uploads/2016/09/navercast_python_01logo.png
 description: "과제 4, 5 & 강의 듣기"
