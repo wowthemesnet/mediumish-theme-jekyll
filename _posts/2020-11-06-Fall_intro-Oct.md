@@ -55,7 +55,7 @@ Don't panic 이라는 신념 하에 개발을 하는 과정을 적어나가도�
 
     **error: failed to push some refs to 'origin'**이 계속 나왔고 가장 최근 원격저장소로 작업해야하는데 그렇지 않아서 발생한 문제라고 되어있었다.
 
-    권고한대로 pull 명령어를 써보았는데 **refusing to merge unrealated histories** 가 나오면서 병합자체가 되지 않았다!
+    권고한대로 pull 명령어를 써보았는데 **refusing to merge unrelated histories** 가 나오면서 병합자체가 되지 않았다!
 
     그래서 강제로 pull(git -hard HEAD)도 해보고 유튜브에 git add -A를 해보라고 해서 해보기도 했지만 결과는... 여전히 이 상태 **error failred to push some refs to 'origin'**이 뜨면서 병합 불가!
 
