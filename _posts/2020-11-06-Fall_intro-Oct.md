@@ -59,8 +59,6 @@ Don't panic 이라는 신념 하에 개발을 하는 과정을 적어나가도�
 
     그래서 강제로 pull(git -hard HEAD)도 해보고 유튜브에 git add -A를 해보라고 해서 해보기도 했지만 결과는... 여전히 이 상태 **error failred to push some refs to 'origin'**이 뜨면서 병합 불가!
 
-    ![giterror](C:\Users\com\Downloads\캡처6.PNG)
-
     결국 git clone을 새 폴더에 다시 작업하여 시작!
 
     후... ㅠ 애증의 git... !
@@ -318,7 +316,7 @@ YES
 
 마지막 메르센소수 문제가 어려웠다. 메르센 소수 자체를 구하는 코드를 너무 어렵게 짰던 탓이었다.
 
-![mersenne](C:\Users\com\Desktop\그림1.png)
+![mersenne](C:\Users\com\Desktop\DSC_UOS\dsc_project\mersenne.jpg)
 
 이러한 방식으로 진행햇는데 자연수를 판단하는 코드를 짜지 못해 막혀버렸다.
 
