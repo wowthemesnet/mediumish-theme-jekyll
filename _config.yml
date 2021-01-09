@@ -4,7 +4,7 @@ title: "Data Sharing"
 description: "Compartiendo conocimientos, códigos y más."
 logo: 'assets/images/logo.png'
 favicon: 'assets/images/logo.png'
-baseurl: '/blogs'
+#baseurl: '/blogs'
 google_analytics: 'UA-90591413-2'
 disqus: 'lezamora'
 mailchimp-list: 'https://github.us7.list-manage.com/subscribe/post?u=368fc8bf7697aece620acbec6&amp;id=35374c02a5'
