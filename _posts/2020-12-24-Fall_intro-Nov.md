@@ -13,11 +13,8 @@ featured: false
 
 1. shell vs kernel
 
-   - Hardware ⊂ Kernel  ⊂ Shell ⊂ Application
-   - Hardware: 우리가 흔히 알고 있는 기계(SSD, 메모리)
-   - Kernel: 물리적 기계를 직접 제어해주는 중심
-   - Shell: 사용자 명령 쉘에 입력하고 해석 후 커널에게 전달하는 것으로 shell 종류는 다양해 사용자 취향에 맞는 shell을 선택 가능하다.
-   - Application: 우리가 흔히 알고 있는 앱
+   - Kernel: 컴퓨터 운영체제의 핵심으로, 쉘로부터 전달받은 명령을 수행하면서 하드웨어를 직접 제어한다.
+   - Shell: 사용자가 입력한 명령을 해석하여 커널에게 전달한다.  
 
 2. 대표적인 shell 종류
 
@@ -30,7 +27,7 @@ featured: false
    - 현재 쓰는 쉘 종류를 알고 싶을 때
 
      ```shell
-     echo $ 0
+     echo $0
      ```
 
 3. shell script
@@ -71,7 +68,7 @@ featured: false
 
 ## 2. 우분투에 git을 깔아보자
 
-목적: 과제 4의 경우 두 환경(window, ubuntu)에서 진행되기 때문에 각 코드를 짜고 깃에 병합을 해야하므로 우분투에 git 환경을 구현해야한다!
+**목적: 과제 4의 경우 두 환경(window, ubuntu)에서 진행되기 때문에 각 코드를 짜고 깃에 병합을 해야하므로 우분투에 git 환경을 구현해야한다.**
 
 1. vscode에서 ex 03 ~ 05 작업 완료 후 깃 push
 2. 우분투에서 깃 clone or pull
@@ -160,7 +157,7 @@ $
 
 - 제출할 폴더 : `ex03/`
 - 제출할 파일 : `awesome_sort.py`
-- 사용 **불가능**한 코드 : `sort()`, `sorted()` 등의 내장 정렬 함수
+- 사용 **금지**된 코드 : `sort()`, `sorted()` 등의 내장 정렬 함수
 - 리스트 `my_list`를 오름차순으로 정렬하는 코드를 작성하세요.
 
 ```python
@@ -174,7 +171,7 @@ print(my_list) # [1, 2, 3, 4, 5]
 - 정렬 알고리즘
 
   - 버블 정렬: 인접한 두 원소 검사하여 크기가 순서대로 되어 있지 않으면 교환
-  - 선택 정렬: 제자리 정렬 알고리즘의 하나로, 주어진 리스트 중 최솟값을 찾고 그 값을 맨 앞에 위차한 값과 교환한다. 맨 처음 위치를 뺀 나머지 리스트도 같은 방법으로 교체
+  - 선택 정렬: 제자리 정렬 알고리즘의 하나로, 주어진 리스트 중 최솟값을 찾고 그 값을 맨 앞에 위치한 값과 교환한다. 맨 처음 위치를 뺀 나머지 리스트도 같은 방법으로 교체
   - 삽입 정렬: 자료 배열의 모든 요소를 앞에서부터 차례대로 이미 정렬된 배열 부분과 비교하여, 자신의 위치를 찾아 삽입함으로써 정렬을 완성하는 알고리즘
 
 - 나의 작업 (삽입 정렬 이용)
@@ -192,7 +189,7 @@ print(my_list) # [1, 2, 3, 4, 5]
 
   => clear 😍
 
-  "정렬 알고리즘을 이해하는 것 자체가 너무 어려웠으며 하나하나 수식을 따라가면서 이해하도록 노력했다. 이해하기 위해서 가시적인 자료가 필요했는데 아래의 동영상이 많이 도움이 되었다. "
+  "처음에는 정렬 알고리즘 자체를 이해하기 어려웠다. 수식을 하나하나 더듬어가며 과정을 따라가보았는데도 어려웠다. 제대로 이해하기 위해서 가시적인 자료가 필요했는데 정렬을 포크댄스로 표현해준 동영상이 많이 도움이 되었다."
 
 ---
 
@@ -242,7 +239,7 @@ print(my_list) # [1, 2, 3, 4, 5]
 - 제출할 폴더 : `ex05/`
 
 - 제출할 파일 : `combination.py`
-- 사용 **불가능**한 코드 : `itertools`
+- 사용 **금지**된 코드 : `itertools`
 
 다음과 같이 출력하는 코드를 작성하시오.
 
@@ -254,18 +251,18 @@ print(my_list) # [1, 2, 3, 4, 5]
 
 - 나의 작업
 
-```python
-for i in range(0,10):
-    for j in range(1,10):
-        if i < j:
+  ```python
+  for i in range(0,10):
+      for j in range(1,10):
+          if i < j:
             print(str(i)+str(j), end=" ")
-```
+  ```
 
-**문자열을 통해 i와 j가 합산이 안되게 조정
+  **문자열을 통해 i와 j가 합산이 안되게 조정
 
-=> clear 😚
+  => clear 😚
 
-"for의 개념을 서서히 이해하고 있는 것 같다. 전에는 그저 구글링을 통해 코드를 찾아봤다면 이 코드는 내 스스로 짜보았고 통과를 해서 너무 기분이 좋았다."
+  "for의 개념을 서서히 이해하고 있는 것 같다. 전에는 그저 구글링을 통해 코드를 찾아봤다면 이 코드는 내 스스로 짜보았고 통과를 해서 너무 기분이 좋았다."
 
 > *과제 4는 shell 개념이 들어오면서 멘붕에다가 넘쳐나는 팀플로 다소 소홀히 했는데 자꾸 멀어지려는 나를 붙들고 정신차리고 다시 시작했다. 그 결과 shell의 개념도 더 정확히 알게되었고 머리에 그저 뜬구름처럼 퍼져있었던 지식이 점차 범주화가 되는 것 같았다.*
 
@@ -284,19 +281,19 @@ for i in range(0,10):
 
 **Hello World!**를 출력하는 함수 `print_hello()`를 작성하세요
 
-- ```python
+  ```python
   print_hello()
   ```
 
-  - 매개변수(parameter) : 없음
-  - 반환값(return value) : 없음
+- 매개변수(parameter) : 없음
+- 반환값(return value) : 없음
 
-```python
-print_hello()
+  ```python
+  print_hello()
 
-# 출력
-Hello World!
-```
+  # 출력
+  Hello World!
+  ```
 
 - 함수를 만드는 명령어 'def'
 
@@ -323,7 +320,7 @@ Hello World!
 
   => clear 😉
 
-"이전에 'def'라는 명령어를 지나가다가 많이 보았는데 도통 어디에 사용하는 지 의문이었습다. 그러한 궁금증을 해결한 과제였습다. 다만 많은 예시가 반환값이 존재하는 경우가 많아 반환값이 없는 경우와 차이를 구별하는 것이 힘들었습다. "
+  "이전에 'def'라는 명령어를 지나가다가 많이 보았는데 도통 어디에 사용하는 지 의문이었습다. 그러한 궁금증을 해결한 과제였습다. 다만 많은 예시가 반환값이 존재하는 경우가 많아 반환값이 없는 경우와 차이를 구별하는 것이 힘들었습다. "
 
 ---
 
@@ -334,12 +331,12 @@ Hello World!
 
 두 문자열이 인자로 주어졌을 때, 이 둘을 언더바(_)를 이용해 연결한 문자열을 반환하는 함수 `insert_underbar()` 를 작성하세요
 
-- ```python
-  insert_underbar()
-  ```
+```python
+insert_underbar()
+```
 
-  - 매개변수(parameter) : 문자열 x, y
-  - 반환값(return value) : x와 y를 '_'를 기준으로 연결한 문자열
+- 매개변수(parameter) : 문자열 x, y
+- 반환값(return value) : x와 y를 '_'를 기준으로 연결한 문자열
 
 ```python
 # 예시 1
@@ -358,16 +355,16 @@ to_mok
 - 반환값을 돌려주는 명령어 'return'
 - 나의 작업 > 매개변수 및 반환값 有
 
-```python
-def insert_underbar(x, y) :
-    return str(x + '_' + y)
+  ```python
+  def insert_underbar(x, y) :
+      return str(x + '_' + y)
 
-print(insert_underbar('py', 'thon'))
-```
+  print(insert_underbar('py', 'thon'))
+  ```
 
-=> clear 😉
+  => clear 😉
 
-"반환값을 처음 써보았는데 실제로 반환값이 있는지 확인해보기 위해서 변수를 통해 확인해보았습니다."
+  "반환값을 처음 써보았는데 실제로 반환값이 있는지 확인해보기 위해서 변수를 통해 확인해보았습니다."
 
 ---
 
@@ -378,12 +375,12 @@ print(insert_underbar('py', 'thon'))
 
 섭씨 온도가 인자로 주어졌을 때, 화씨 온도를 반환하는 함수 `ctof()`를 작성하세요
 
-- ```python
-  ctof()
-  ```
+```python
+ctof()
+```
 
-  - 매개변수(parameter) : 섭씨 온도 n (n은 정수)
-  - 반환값(return value) : n을 화씨 온도로 변환한 값
+- 매개변수(parameter) : 섭씨 온도 n (n은 정수)
+- 반환값(return value) : n을 화씨 온도로 변환한 값
 
 ```python
 # 예시 1
@@ -404,16 +401,16 @@ Hint 💡 : 섭씨에서 화씨로 바꾸는 공식은... 검색해봐야겠죠?
 - 섭씨 화씨 변환 공식: (0°C × 9/5) + 32 = 32°F
 - 나의 작업 > 매개변수 및 반환값 有
 
-```python
-def ctof(n):
-    return n * 9/5 + 32
-    
-print(ctof(100))
-```
+  ```python
+  def ctof(n):
+      return n * 9/5 + 32
 
-=> clear 😉
+  print(ctof(100))
+  ```
 
-"2번 문제를 응용한 것으로 섭씨, 화씨 변환 공식만 안다면 간단 한 문제였습니다."
+  => clear 😉
+
+  "2번 문제를 응용한 것으로 섭씨, 화씨 변환 공식만 안다면 간단 한 문제였습니다."
 
 ---
 
@@ -448,18 +445,18 @@ print(fibo(10))
 - 재귀: 자기 자신을 호출하는 함수
 - 나의 작업 > 매개변수 및 반환값 有
 
-```python
-def fibo(n):
-    if n == 0:
-        result = 0
-    elif n == 1:
-        result = 1
-    elif n > 1:
-        result = fibo(n-1) + fibo(n-2)
-    return result
+  ```python
+  def fibo(n):
+      if n == 0:
+          result = 0
+      elif n == 1:
+          result = 1
+      elif n > 1:
+          result = fibo(n-1) + fibo(n-2)
+      return result
 
-print(fibo(10))
-```
+  print(fibo(10))
+  ```
 
 => clear 😉
 

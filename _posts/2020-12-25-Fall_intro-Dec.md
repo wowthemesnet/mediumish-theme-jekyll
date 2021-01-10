@@ -18,15 +18,15 @@ featured: false
 
 상대방이 바위를 냈을 때, 가위바위보를 진행하는 함수 `rock_only()`를 작성하세요.
 
-- ```python
-  rock_only()
-  ```
+```python
+rock_only()
+```
 
-  - 매개변수(parameter) : **없음**
-  - 기능
-    - 가위는 `scissors`, 바위는 `rock`, 보는 `paper` 문자열을 사용합니다.
-    - 함수를 실행하면 문자열 입력을 하나 받고, 가위바위보의 결과를 **출력**합니다.
-  - 반환값(return value) : **없음**
+- 매개변수(parameter) : **없음**
+- 기능
+  - 가위는 `scissors`, 바위는 `rock`, 보는 `paper` 문자열을 사용합니다.
+  - 함수를 실행하면 문자열 입력을 하나 받고, 가위바위보의 결과를 **출력**합니다.
+- 반환값(return value) : **없음**
 
 ```python
 # 예시 코드 1
@@ -74,14 +74,14 @@ def rock_only():
 
 두 1차원 벡터가 리스트가 주어졌을 때, 이 둘의 **내적** 결과를 반환하는 함수 `dot_product()` 를 작성하세요.
 
-- ```python
-  dot_product()
-  ```
+```python
+dot_product()
+```
 
-  - 매개변수(parameter) : 1차원 **리스트** a, b (a, b는 내적이 가능한 경우만 주어짐)
-  - 반환값(return value) : a, b의 내적 결과
-    - 내적이 가능한 경우, 내적값을 반환
-    - 내적이 불가능한 경우, 0을 반환
+- 매개변수(parameter) : 1차원 **리스트** a, b (a, b는 내적이 가능한 경우만 주어짐)
+- 반환값(return value) : a, b의 내적 결과
+  - 내적이 가능한 경우, 내적값을 반환
+  - 내적이 불가능한 경우, 0을 반환
 
 ```python
 # 예시
@@ -121,12 +121,12 @@ def dot_product(a, b):
 
 입력받은 문자열이 펠린드롬(회문)인지 확인하는 함수 `is_palindrome()` 을 작성하세요.
 
-- ```python
-  is_palindrome()
-  ```
+```python
+is_palindrome()
+```
 
-  - 매개변수(parameter) : 문자열 `s`
-  - 반환값(return value) : `s`가 펠린드롬이면 True, 아니면 False
+- 매개변수(parameter) : 문자열 `s`
+- 반환값(return value) : `s`가 펠린드롬이면 True, 아니면 False
 
 ```python
 # 예시 코드 1
@@ -168,18 +168,18 @@ def is_palindrome(s):
 - 제출할 폴더 : `ex04/`
 - 제출할 파일 : `strange_cmp`
 
-여욱은 숫자를 특이하게 비교하는 것으로 유명하다.
+여욱이라는 아이는 숫자를 특이하게 비교하는 것으로 유명하다.
 
 **각 자리수를 모두 오름차순으로 정렬해버린 다음** 그 결과를 바탕으로 두 수를 비교한다.
 
-두 숫자가 주어졌을 때, 여욱의 방법으로 결과를 반환하는 함수 `strange_cmp()` 을 작성하세요.
+두 숫자가 주어졌을 때, 여욱이의 방법으로 결과를 반환하는 함수 `strange_cmp()` 을 작성하세요.
 
-- ```phthon
-  strange_cmp()
-  ```
+```phthon
+strange_cmp()
+```
 
-  - 매개변수(parameter) : 정수(int) `x`, `y`
-  - 반환값(return value) : x가 y보다 크면 **"Left",** y가 x보다 크면 **"Right",** 같으면 **"Same"**
+- 매개변수(parameter) : 정수(int) `x`, `y`
+- 반환값(return value) : x가 y보다 크면 **"Left",** y가 x보다 크면 **"Right",** 같으면 **"Same"**
 
 ```python
 # 예시 코드 1
@@ -190,7 +190,7 @@ Same # 123 == 123
 
 # 예시 입력 2
 print(strange_compare(222, 321))
-t
+
 # 예시 출력 2
 Left # 222 > 123
 
@@ -245,7 +245,7 @@ def strange_cmp(x, y):
 
 - 제출할 폴더 : `ex05/`
 - 제출할 파일 : `combi_two.py`
-- 사용 **불가능**한 코드 : `itertools`
+- 사용 **금지**된 코드 : `itertools`
 
 숫자 $n(1<n<10)$이 주어졌을 때, 0~9까지의 숫자 중 n자리 조합을 모두 **출력**하는 코드를 작성하세요
 
