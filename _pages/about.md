@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Data Scientist | Ingeniero en Sistemas
+title: Acerca de mi
 permalink: /about
 comments: true
 ---
@@ -8,8 +8,8 @@ comments: true
 <div class="row justify-content-between">
 <div class="col-md-8 pr-5">
 
-<p>Mi nombre es Lucas, profesional del mundo de los datos. Me apasionan las nuevas tecnologías
-y la de idea de este blogs es en primer lugar aprender a escribir para luego poder compartir con ustedes tópicos que les puedan ser de utilidad de la forma más clara posible. Intentaré escribir sobre
+<p>Mi nombre es Lucas Zamora, Ingeniero en Sistemas de la Universidad Tecnológica Nacional (UTN) y profesional del mundo de los datos, más específicamente como Data Scientist. Me apasionan las nuevas tecnologías
+y la de idea de este blogs es podes acercarles a ustedes tópicos que les puedan ser de utilidad en su desarrollo profesional. Intentaré escribir sobre
 temas que no se encuentren en otros lugares o al menos que no esten disponible en español.</p>
 
 <p class="mb-5"><img class="shadow-lg" src="{{site.baseurl}}/assets/images/background.jpg" alt="jekyll template mediumish" /></p>

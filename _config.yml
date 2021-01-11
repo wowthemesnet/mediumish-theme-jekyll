@@ -1,12 +1,13 @@
 # Site
-name: "Data Sharing"
-title: "Data Sharing"
+name: "PEEP DATA"
+title: "PEEP DATA"
+owner: "Lucas Zamora"
 description: "Compartiendo conocimientos, códigos y más."
 logo: 'assets/images/logo.png'
 favicon: 'assets/images/logo.png'
 #baseurl: '/blogs'
 google_analytics: 'UA-90591413-2'
-disqus: 'lezamora'
+disqus: 'peepdata'
 mailchimp-list: 'https://github.us7.list-manage.com/subscribe/post?u=368fc8bf7697aece620acbec6&amp;id=35374c02a5'
 include: ["_pages"]
 permalink: /:title/

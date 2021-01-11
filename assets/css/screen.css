@@ -3,6 +3,15 @@ Template Name: Mediumish
 Copyright: Sal, WowThemes.net, https://www.wowthemes.net 
 License: https://www.wowthemes.net/freebies-license/ 
 */
+@font-face {
+    font-family: 'Blippoblack';
+    src: url('../fonts/blippoblack.woff2') format('woff2'),
+         url('../fonts/blippoblack.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
 @media screen and (min-width:1500px) {
     html { font-size:18px; } /* Increase the font size on higher resolutions */
     .container {max-width:80%;}
@@ -305,7 +314,7 @@ span.post-read-more a:hover {
 }
 
 .mainheading h1.sitetitle {
-    font-family: Righteous;
+    font-family: Blippoblack;
 }
 
 .mainheading h1.posttitle {
