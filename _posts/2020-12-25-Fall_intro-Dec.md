@@ -174,7 +174,7 @@ def is_palindrome(s):
 
 두 숫자가 주어졌을 때, 여욱이의 방법으로 결과를 반환하는 함수 `strange_cmp()` 을 작성하세요.
 
-```phthon
+```python
 strange_cmp()
 ```
 
