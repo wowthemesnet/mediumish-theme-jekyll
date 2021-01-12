@@ -73,11 +73,11 @@ git push -u origin master
 [JEKYLL TEMES](https://jekyll-themes.com/) 사이트에 접속하여 원하는 테마를 고릅니다.
 고른 테마의 repository로 이동합니다. (다음 화면의 REPOSITORY 버튼을 클릭)
 
-![Capture](../assets/images/capture-jekyll-themes.png)
+![Capture](../assets/images/post-make-blog-by-jekyll/capture-jekyll-themes.png)
 
 Repository 오른쪽 위의 Star을 한번 클릭해주고 Fork 해옵니다. (~~fork할 때 Star 박아주는게 국룰...~~)
 
-![Capture](../assets/images/capture-repo.png)
+![Capture](../assets/images/post-make-blog-by-jekyll/capture-repo.png)
 
 Fork 해온 repository의 setting으로 들어가 이름을 `{username}.github.io`로 변경해줍니다.
 
@@ -85,14 +85,14 @@ Fork 해온 repository의 setting으로 들어가 이름을 `{username}.github.i
 (`{username}.github.io` 형식으로 repository를 생성하면 github이 이를 웹사이트로 인식하여
 `https://{username}.github.io` 로 url 접속 시 `index.html` 또는 `index.md`를 웹 페이지로 출력해줍니다.)
 
-![Capture](../assets/images/capture-change-repo-name.png)
+![Capture](../assets/images/post-make-blog-by-jekyll/capture-change-repo-name.png)
 
 이제 해당 repository를 clone 해오면 기본 준비가 끝납니다!
 repository의 SSH를 복사한 후 clone해 줍니다.
 
 (SSH 설정을 안하셨다구요..? ~~Googling gogo~~ [Mac SSh](https://syung05.tistory.com/20) / [Window SSH](https://medium.com/beyond-the-windows-korean-edition/use-windows10-open-ssh-tips-e6e9c77de433) 참고)
 
-![Capture](../assets/images/capture-repo-clone.png)
+![Capture](../assets/images/post-make-blog-by-jekyll/capture-repo-clone.png)
 
 ```sh
 git clone git@github.com:Enoch-Kim/enoch-kim.github.io.git
@@ -117,15 +117,15 @@ jekyll serve
 
 당황하지 말고 `index.html` 혹은 `index.md`를 열고 다음의 사진에서 `jekyll-seo-tag` 와 `jekyll-archives`를 제거해주세요.
 
-![Capture](../assets/images/capture-jekyll-plugins.png)
+![Capture](../assets/images/post-make-blog-by-jekyll/capture-jekyll-plugins.png)
 
 아래쪽에 있는 `archives` 관련 코드들도 없애주세요.
 
-![Capture](../assets/images/capture-jekyll-archives.png)
+![Capture](../assets/images/post-make-blog-by-jekyll/capture-jekyll-archives.png)
 
 `/_layouts/default.html` 에 있는 `seo` 관련 코드도 삭제해주세요.
 
-![Capture](../assets/images/capture-jekyll-seo.png)
+![Capture](../assets/images/post-make-blog-by-jekyll/capture-jekyll-seo.png)
 
 여기서 `{ %seo% }` 를 제거해주시면 됩니다.
 (이 외에도 나중에 `jekyll serve` 실행 시 오류가 발생하면 관련 코드들을 제거해주어야합니다.)
@@ -156,13 +156,13 @@ Configuration file: /Users/enoc/github.com/Enoch-Kim/enoch-kim.github.io/_config
 
 위의 주석에서 Server address 로 접속해보시면 잘 나오는 것을 알 수 있습니다!
 
-![Capture](../assets/images/capture-jekyll-success.png)
+![Capture](../assets/images/post-make-blog-by-jekyll/capture-jekyll-success.png)
 
 이제 한번 자신의 웹사이트에 접속해 봅시다. `{username}.github.io` 로 접속해보시면 됩니다. (저의 경우 [enoch-kim.github.io](https://enoch-kim.github.io) 입니다.)
 
 그럼 다음과 같이 결과가?!
 
-![Capture](../assets/images/capture-jekyll-fail.png)
+![Capture](../assets/images/post-make-blog-by-jekyll/capture-jekyll-fail.png)
 
 이렇게 되는 이유는 `_config.yml` 파일에서 `base_url`이 `/mediumish-jekyll-themes`로 되어있기 때문입니다.
 repository의 `root` 디렉토리가 `index.html`과 동일한 위치이고, `/assets` 파일은 `root` 디렉토리에 있으나
@@ -194,7 +194,7 @@ Google Analytics는 저희가 만든 블로그의 접속 등을 분석하기 위
 
 위의 방법대로 계정을 생성하면 다음과 같이 UA로 시작하는 추적 ID가 생성됐을 거예요.
 
-![Capture](../assets/images/capture-google-analytics.png)
+![Capture](../assets/images/post-make-blog-by-jekyll/capture-google-analytics.png)
 
 해당 추적 ID를 복사하여 `_config.yml` 파일의 `google_analytics`의 값에 넣어줍니다.
 이제 Push 후 `{username}.github.io`에 들어가보면 Google Analytics 콘솔에 기록이 남을 겁니다.(~~추가적인 부분은 구글링 합시다.~~)
@@ -206,7 +206,7 @@ Google Analytics는 저희가 만든 블로그의 접속 등을 분석하기 위
 Disqus는 여러 블로그에서 사용하고 있는 댓글 플랫폼입니다.
 다음과 같은 댓글을 보셨다면 모두 Disqus를 사용하고 있는 겁니다 !
 
-![Capture](../assets/images/capture-disqus.png)
+![Capture](../assets/images/post-make-blog-by-jekyll/capture-disqus.png)
 
 Disqus는 단순히 한 블로그에만 국한되지 않고, 다른 블로그들에서도 계정이 연동되어 활동할 수 있습니다.
 만약 댓글을 달고 댓글에 다른 사람들이 답글을 달면, 메일로 알려주는 기능 등의 서비스도 제공합니다.

@@ -3,7 +3,7 @@ layout: post
 title: "WEB Mission1 - HTML, CSS 만을 이용한 웹사이트 제작하기"
 authors: [gusrb3164]
 tags: ["Web"]
-image: assets/images/mission1_logo.PNG
+image: assets/images/post-WEB_Mission1/mission1_logo.PNG
 description: "web팀의 첫번째 미션 일지"
 featured: true
 ---
@@ -14,7 +14,7 @@ featured: true
 
 > <https://www.estsecurity.com/>
 
-![Mission Image](../assets/images/mission1_ex.PNG)
+![Mission Image](../assets/images/post-WEB_Mission1/mission1_ex.PNG)
 
 바로 이사이트의 UI부분을 클론코딩 하는것인데 직접 살펴보면 배경화면으로 영상이 실행되고 있고 상단 로고, 중앙 슬로건이 있네요.
 
@@ -36,7 +36,7 @@ featured: true
 
 우선 배경영상은 제공받은 아래의 영상을 이용하여 꾸며야 합니다.
 
-![Background Video](../assets/images/mission1_video.gif)
+![Background Video](../assets/images/post-WEB_Mission1/mission1_video.gif)
 
 아무래도 영상을 그냥 삽입한다면 화면 비율에 따라 여백이 생기거나 짤리는 현상이 생깁니다.. 그래서 보이는 화면의 비율에 알맞게 꽉 채우기 위해 position을 fixed로 두고, 비율에 맞게 크기를 조절해주는 object-fit 을 cover로 설정해 줍시다!
 
@@ -150,7 +150,7 @@ featured: true
 이러한 과정을 통해 만들어진 저희 WEB 멤버분들중 수빈님 작품을 보면
 타이핑 효과와 버튼의 transition 효과까지 디자인도 아주 잘 적용된 것을 볼수 있습니다👍👍👏
 
-![Result](../assets/images/mission1_final.PNG)
+![Result](../assets/images/post-WEB_Mission1/mission1_final.PNG)
 
 HTML,CSS 만으로도 이렇게 멋진 사이트를 만들 수 있다는게 놀라울 따름이네요! JS까지 적용한다면 멤버 분들께서 더욱 멋진 사이트를 만들 것으로 기대됩니다😎
 
