@@ -59,7 +59,7 @@ Don't panic 이라는 신념 하에 개발을 하는 과정을 적어나가도�
 
     그래서 강제로 pull(git -hard HEAD)도 해보고 유튜브에서 git add -A를 해보라고 해서 해보기도 했지만 결과는.. 여전히 이 상태 **error failred to push some refs to 'origin'**이 뜨면서 병합 불가!
 
-    ![git_push_error](..\assets\images\git_push_error.PNG)
+    ![git_push_error](../assets/images/post-INTRO-Oct/git_push_error.PNG)
 
     결국 git clone을 새 폴더에 다시 작업하여 시작!
 
