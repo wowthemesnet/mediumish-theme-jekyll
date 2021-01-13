@@ -21,7 +21,7 @@ CartoonGAN
 
 - 기존에 사용하던 CartoonGAN은 일반적인 GAN에서 사용하는 Adversarial loss를 사용하지 않음
 
-    ⇒ 만화에서는 외곽선이 가장 중요한 특징이지만, 전체 이미지에서 차지하는 부분이 작기 때문에 output 이미지의 edge가 clearly 하지 않음.
+    ⇒ 만화에서는 외곽선이 가장 중요한 특징이지만, 전체 이미지에서 차지하는 부분이 작기 때문에 output 이미지의 edge가 clear 하지 않음.
 
     ⇒ 따라서 기존의 GAN에서 사용하는 loss를 사용하기에는 적합하지 않음.
 
