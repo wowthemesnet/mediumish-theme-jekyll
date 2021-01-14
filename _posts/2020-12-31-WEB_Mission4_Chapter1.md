@@ -40,7 +40,7 @@ Web Team의 Mission4는 React(리액트)를 공부하는 것이었습니다. 특
 
   리액트 컴포넌트를 만들 때 앞에
 
-```js
+   ```js
   import React from 'react';
   ```
 
@@ -55,7 +55,7 @@ Web Team의 Mission4는 React(리액트)를 공부하는 것이었습니다. 특
   와 같이 Hello 라는 컴포넌트를 내보내겠다는 문장을 작성해야 합니다.
 
 - 리액트를 통해 동적인 부분 구현하기
-  - Counter 컴포넌트 만들기
+  - Counter 컴포넌트 만들기로 버튼을 누르면 숫자가 바뀌는 컴포넌트 입니다. 이 강의에서는 화살표 함수를 이용해 **onIncrease**와 **onDecrease**를 구현했고, **onClick**으로 각 함수를 연결해주었습니다. 그리고 동적인 값을 구현하기 위해 리액트의 **useState** 함수를 사용하였습니다.
 
     ```js
     import React, { useState } from 'react';
@@ -141,6 +141,10 @@ Web Team의 Mission4는 React(리액트)를 공부하는 것이었습니다. 특
 > [생활코딩 자바스크립트의 시작](https://www.boostcourse.org/cs124)
 
 기초 자바스크립트 강의로 리액트를 듣기 전에 미리 듣는 것을 추천합니다.
+
+> [웹 프로그래민 튜토리얼](https://poiemaweb.com/)
+
+웹 프로그래밍에 대한 전반적인 이해를 도울 수 있습니다.
 
 ## 마치며
 
