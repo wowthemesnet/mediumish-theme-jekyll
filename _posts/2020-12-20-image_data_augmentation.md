@@ -3,7 +3,7 @@ layout: post
 title: "Image Data Augmentation"
 authors: [hoyeon94]
 tags: ["computer vision","deep learning"]
-image: assets/images/post-image-data-augmentation/title.PNG
+image: assets/images/post-image-data-augmentation/title-image.png
 description: "keras image data generator"
 featured: true
 ---
