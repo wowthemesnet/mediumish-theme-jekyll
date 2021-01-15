@@ -28,7 +28,7 @@ Web Team의 Mission4는 React(리액트)를 공부하는 것이었습니다. 특
 - 리액트의 특징
   - 리액트 컴포넌트 예시
 
-  ```js
+  ```jsx
   import React from 'react';
 
   function Hello() {
@@ -40,7 +40,7 @@ Web Team의 Mission4는 React(리액트)를 공부하는 것이었습니다. 특
 
   리액트 컴포넌트를 만들 때 앞에
 
-  ```js
+  ```jsx
   import React from 'react';
   ```
 
@@ -48,7 +48,7 @@ Web Team의 Mission4는 React(리액트)를 공부하는 것이었습니다. 특
 
   그리고 문서의 마지막에는
 
-  ```js
+  ```jsx
   export default Hello;
   ```
 
@@ -57,7 +57,7 @@ Web Team의 Mission4는 React(리액트)를 공부하는 것이었습니다. 특
 - 리액트를 통해 동적인 부분 구현하기
   - Counter 컴포넌트 :  간단하게 +와 -버튼을 누르면 숫자가 바뀌는 컴포넌트 입니다. 이 강의에서는 화살표 함수를 이용해 **onIncrease**와 **onDecrease**를 구현했고, **onClick**으로 각 함수를 연결해주었습니다. 그리고 동적인 값을 구현하기 위해 리액트의 **useState** 함수를 사용하였습니다.
 
-    ```js
+    ```jsx
     import React, { useState } from 'react';
 
     function Counter() {
@@ -86,7 +86,7 @@ Web Team의 Mission4는 React(리액트)를 공부하는 것이었습니다. 특
 - 리액트를 통해 배열 렌더링 하기
   - 리액트에서 배열을 렌더링 할 때는 **key**라는 props를 설정해야 합니다. **key**값은 각 원소들마다 가지고 있는 고유값으로 설정을 해야 합니다. 밑의 경우엔 **id**가 고유 값입니다.
 
-  ```js
+  ```jsx
   import React from 'react';
 
   function User({ user }) {
