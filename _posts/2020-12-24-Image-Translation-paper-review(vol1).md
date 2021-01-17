@@ -78,7 +78,7 @@ CartoonGAN
 
 - 화가들이 붓으로 초안을 그리는 스타일을 모방하여 만화와 유사한, 매끄러운 표면을 가진 화풍을 생성하고자 합니다.
 
-    ![Capture](../assets/images/post-image-translation/paper2-1.png)
+    ![Capture](../assets/images/post-image-translation/paper2_1.png)
 
 - F_dgf는 이미지 I를 입력으로 받아서 texture와 디테일한 부분을 제거한 surface를 추출합니다.
 - D_s는 모델이 생성해낸 이미지와 기준이되는 만화 이미지가 비슷한 surface를 갖는지 판단하고 generator G가 surface representation를 잘 추출할 수 있도록 가이드를 제공합니다.
@@ -92,7 +92,7 @@ CartoonGAN
 - felzenszwalb algorithm를 사용해서 이미지를 여러 개의 지역으로 segmentation 합니다.
 - superpixel algorithms을 사용하여 픽셀들의 색 등 low level 정보를 바탕으로 비슷한 픽셀끼리 묶어서 '커다란 픽셀'을 만듭니다.
 
-    ![Capture](../assets/images/post-image-translation/paper2-2.png)
+    ![Capture](../assets/images/post-image-translation/paper2_2.png)
 
 ***Ex 1: felzenszwalb algorithm***
 
@@ -119,6 +119,7 @@ CartoonGAN
 #### Haze 유무
 
 - 입력 사진은 Generator에도 들어가고 VGG 네트워크에도 들어갑니다. VGG 네트워크에서는 High level feature를 추출해냅니다. Structure 특징을 뽑아내기 위한 loss는 아래와 같습니다.
+
 ![Capture](../assets/images/post-image-translation/paper9.png)
 
 ![Capture](../assets/images/post-image-translation/paper10.png)
@@ -127,7 +128,9 @@ CartoonGAN
 
 - 만화영상과 실제 사진을 구분하기 위해서는 High frequency 특징과 밝기, 색 정보를 이용해야한다. 특히 High frequency 특징 정보는 남기고 밝기와 색 정보가 주는 영향을 최소화 해야합니다.
 - 즉 real world photo와 cartoon은 color와 luminance 정보로 너무 쉽게 판별이 가능하므로, 합쳐서 흑백 이미지로 만듬 + random하게 RGB를 섞는 과정을 진행합니다.
-     ![Capture](../assets/images/post-image-translation/paper2-3.png)
+
+    ![Capture](../assets/images/post-image-translation/paper2_3.png)
+
 - F_rcs라는 random color shift algorithm을 제안했는데, 식은 아래와 같습니다.
 - I_rgb는 RGB 채널을 갖는 이미지이고 I_r, I_g, I_b는 color channel을 의미합니다. Y는 RGB 이미지를 gray scale한 것을 의미합니다.
 - Alpha와 Beta 값은 사용자가 변경할 수 있습니다. 논문에는 Alpha- 0.8, Beta = ~U(-1,1)을 사용했습니다.
