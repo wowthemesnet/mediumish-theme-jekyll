@@ -11,11 +11,9 @@ featured: true
 
 Image Translation 논문 리뷰
 
-2020 DSC-Vision team에서 Face2Cartoon 서비스를 만들 때 참고했던 논문입니다.  
+2020 DSC-Vision team에서 Face2Cartoon 서비스를 만들 때 참고했던 [Image Translation 관련 논문](https://github.com/SystemErrorWang/White-box-Cartoonization/)입니다.
 
-Wang, Xinrui, and Jinze Yu. "Learning to Cartoonize Using White-Box Cartoon Representations." Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition. 2020.
-<https://github.com/SystemErrorWang/White-box-Cartoonization/>.
-에 대해서 리뷰합니다.
+> Wang, Xinrui, and Jinze Yu. "Learning to Cartoonize Using White-Box Cartoon Representations." Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition. 2020.
 
 ## 1. Introduction & Related Work
 
