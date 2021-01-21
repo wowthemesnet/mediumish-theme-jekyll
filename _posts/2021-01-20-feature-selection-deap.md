@@ -4,9 +4,9 @@ title:  "Feature selection utilizando Algoritmos Genéticos con DEAP"
 author: lzamora
 categories: [ feature-selection, machine-learning ]
 image: assets/images/3.jpg
-beforetoc: "Normalmente, en el desarrollo de modelos de Machine Learning en consecuencia a que en la actualidad trabajamos con grandes cantidades de datos, nos encontramos ante un gran desafío que es la de la selección de características o variables. (Feature selection).
+beforetoc: "<p>Normalmente, en el desarrollo de modelos de Machine Learning en consecuencia a que en la actualidad trabajamos con grandes cantidades de datos, nos encontramos ante un gran desafío que es la de la selección de características o variables. (Feature selection).</p>
 
-Esta, no solo nos permite iterar de forma más ágil en el proceso de desarrollo y prueba. Además, en muchos casos nos permite obtener mejoras considerables en el modelo.
+<p>Esta, no solo nos permite iterar de forma más ágil en el proceso de desarrollo y prueba. Además, en muchos casos nos permite obtener mejoras considerables en el modelo.</p>
 
 El objetivo de este artículo es acercarte una de las tantas técnicas utilizadas para la selección de características como son los algoritmos genéticos. En este caso utilizando DEAP, una framework de computación evolucionaria disponible en Python."
 toc: true
