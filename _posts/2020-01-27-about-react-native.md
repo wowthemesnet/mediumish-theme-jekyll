@@ -10,7 +10,13 @@ featured: true
 
 ## Intro
 
-## React Native의 4가지 Thread
+## React Native란
+
+## 다른 앱 개발 플랫폼과 React Native의 비교
+
+## React Native의 작동원리
+
+### React Native의 4가지 Thread
 
 1. UI Thread
    - 메인 스레드
@@ -28,7 +34,7 @@ featured: true
 4. Render Thread
    - Android L(5.0)에서만 React Native의 Render Thread가 UI를 그리는데 사용된다. Render Thread는 UI를 그리는데 필요한 OpenGL명령을 생성한다.
 
-## React Native앱이 실행되는 과정
+### React Native앱이 실행되는 과정
 
 1. 앱이 시작하면서 Main Thread(UI Thread)가 실행되며 JavaScript 번들을 로드한다.
 2. JavaScript번들의 로드가 완료되면 Main Thread(UI Thread)는 JavaScript코드들을 JavaScript Thread로 보낸다.
@@ -41,7 +47,7 @@ featured: true
 >
 > 컴포넌트 내에 스테이트가 변경된 경우 React는 해당 컴포넌트를 dirty하다고 표시하고 batch에 추가한다. 그리고 virtual Dom element와 실제 Dom element를 비교 순회하면서 dirty 체크가 되어있는 엘리먼트를 처리한다. 처리하는 과정에서 속성값만 변한 경우에는 속성값만 업데이트하고 해당 엘리먼트의 태그 혹은 컴포넌트가 변경된 경우라면 해당 노드를 포함한 하위 모든 노드를 제거한 후 새로운 virtual dom으로 대체한다. 이러한 일련의 과정이 모두 마무리 한 후에 실제 Dom에 결과를 업데이트 한다.
 
-## Native Bridge
+### Native Bridge
 
 - React Native에서는 JavaScript 스레드가 Native Bridge를 통해 Native Thread와 통신한다.
   - Native Bridge가 없다면 JavaScript코드가 Native코드와 통신할 수 없다.
@@ -51,7 +57,7 @@ featured: true
   - 위와 같은 traffic jam을 피하기 위해 레이아웃을 미리 계산(pre calculating)하는 방법도 있다.
   - pre calculating을 통해 애초에 bridge를 건너는 횟수를 최소화하는 것이다.
 
-## Future Of Native Bridge
+### Future Of Native Bridge
 
 - Facebook도 native bridge를 사용하는것에 있어서의 성능하락을 인지하고 있으며 React Native를 위한 완전히 새로운 architecture를 작업하고 있으며 결국에는 bridge사용을 제거할것이다.
 - Facebook은 JavaScript Interface라는것을 구현하는 중이다.
@@ -60,6 +66,8 @@ featured: true
 - JSI의 사용으로 JavaScript side와 Native side가 통신하기 위해 더이상 JSON메시지를 보낼 필요가 없으며 Native Bridge를 사용할 필요도 없게 된다.
 - 또한 현재는 React Native앱이 실행되면서 JavaScript side에서 사용되는 모든 native모듈들은 실행과 동시에 초기화 되어야 하지만 새로운 architecture에서는 필요할때만 초기화될것이다. 따라서 앱의 실행 성능에 이점이 있을것이다.
   - bridge를 사용하지 않고 JavaScript코드들이 직접적인 reference를 갖고 있기 때문에 가능한일이다.
+
+## React Native는 어디서 오고 어디로 갈것인가
 
 ## 참고자료
 
