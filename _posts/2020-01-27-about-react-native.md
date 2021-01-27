@@ -10,13 +10,51 @@ featured: true
 
 ## Intro
 
+안녕하세요 DSC UOS 모바일팀의 권순형입니다.  
+모바일팀에서 주로 React Native를 사용한 앱 개발을 했습니다.  
+이번 포스팅에서는 React Native에 대한 간략한 소개, 다른 크로스 플랫폼 앱 개발 프레임워크(Flutter)와의 비교 그리고 React Native의 작동 원리에 대해 알아보는 시간을 갖겠습니다.
+
 ## React Native란
+
+React Native는 React를 사용해서 iOS와 Android앱을 개발할 수 있는 프레임워크이다. JavaScript를 사용해서 앱 개발을 할 수 있다는것이 큰 이점이다. 기존에 React를 사용해서 웹 개발을 했던 분들이라면 더욱 쉽게 네이티브 앱 개발을 시작할 수 있다.  
+React Native는 facebook이 주도하는 오픈소스 프레임워크이다.
+다음과 같은 앱들이 React Native로 작성되었다고 한다.
+![Capture](../assets/images/post-about-react-native/react-native-apps.png)
+React Native를 활용해서 모바일 앱 개발 뿐만 아니라 [Windows](https://github.com/microsoft/react-native-windows#readme), [macOS](https://github.com/microsoft/react-native-macos#readme) 그리고 [web](https://github.com/necolas/react-native-web#readme) 같은 다양한 플랫폼의 앱도 개발할 수 있다.
 
 ## 다른 앱 개발 플랫폼과 React Native의 비교
 
+![Capture](../assets/images/post-about-react-native/cross-platfrom-app-stat.png)
+Shanhong Liu가 2020년 7월에 발표한 전세계 개발자가 사용하는 크로스 플랫폼 모바일 프레임워크 현황이다.  
+차트를 보면 1위가 React Native이고, 그 다음으로 Flutter와 Cordova가 있다. 2019년과 2020년을 비교해보았을때 React Native의 점유율은 유지된 반면 Flutter의 점유율은 큰 상승이 있다.  
+점유율의 큰 상승이 있었던 Flutter에 대해 잠시 간단하게 알아보겠다.
+
+### Flutter
+
+Flutter는 구글이 만든 크로스 플랫폼 앱 개발 프레임워크이다. 여타 크로스 플랫폼 프레임워크와 마찬가지로 단 하나의 코드베이스를 통해 iOS, Android, Web 그리고 데스크톱의 앱을 개발할 수 있다. Flutter는 Dart라는 언어를 통해 개발할 수 있다. Dart도 Google이 만든 프로그래밍 언어이고 구글이 server side와 front-end 코드를 작성하는데 JavaScript보다 더 나은 언어를 원했기에 만들어졌다. Dart는 배우기 쉽고 친숙한 언어이고 Dart만으로 UX를 쉽게 작성할 수 있게 한다. UX를 작성하는데 markup language는 필요없다.
+
+### React Native vs Flutter
+
+#### 성능
+
+![Capture](../assets/images/post-about-react-native/react-native-flutter-benchmark.jpeg)
+React Native 앱, Flutter 앱 그리고 Native 앱들의 [벤치마크](https://medium.com/swlh/flutter-vs-react-native-vs-native-deep-performance-comparison-990b90c11433)를 보면 위와 같다. 대부분의 경우 Flutter가 React Native보다 빠르며 특히 CPU 집중 작업의 경우는 Flutter의 성능이 월등하다. 다른 [벤치마크](https://medium.com/swlh/flutter-vs-native-vs-react-native-examining-performance-31338f081980)에서도 마찬가지이다.  
+성능의 차이가 나는 근본적인 이유로 React Native는 Native bridge를 통해 JavaScript코드가 Native side와 통신을 하기 때문에 bridge에서의 병목현상이 발생하는 반면 Flutter는 bridge를 사용하지 않고 실제 native코드로 컴파일되기 때문에 앞선 병목현상이 발생하지 않기 때문이다.
+
+#### 그럼에도 React Native?
+
+크로스 플랫폼 앱 개발 프레임워크를 선택하는데에 있어서 100%정답은 없다. 결국 어떤 도구를 선택하는것은 전적으로 여러분의 생각이며 현재 상황에 맞는 가장 적합한 도구를 선택해야 한다. 그래도 필자가 처음 프레임워크를 선택하며 고민하는 과정의 생각을 쓰면 다음과 같다.  
+Flutter가 React Native에 비해 성능상의 잇점을 갖는 것은 큰 이견이 없을것이다. 하지만 필자가 개발했던 앱과 같이 복잡한 비즈니스 로직이 들어가지 않는 소규모의 앱의 경우는 많은 CPU연산을 수행하지 않기 때문에 두 프레임워크간의 성능 차이가 크지 않을 것이라고 예상했다.  
+또한 React Native는 이미 웹개발 영역에서의 큰 형님인 React를 사용하기 때문에 다양한 자료들이 이미 존재한다. Flutter의 [공식문서](https://flutter.dev/docs)를 보았을때 다양하고 친절한 문서들이 있지만 이미 형성되어있는 React개발 커뮤니티는 이를 넘는 큰 장점이다. 또한 JavaScript의 여러가지 훌륭한 라이브러리를 사용할수 있다. 이외의 차이점은 프레임워크를 선택하는데 큰 문제가 되지 않는다고 생각했다.
+결국 Flutter에 비해 React Native가 갖고 있는 React와 JavaScript의 커뮤니티로 인해 React Native를 선택했다.
+
 ## React Native의 작동원리
 
+앞서 React Native와 Flutter간 성능 차이가 나타나는 이유로 Native bridge라고 했는데 이 bridge가 무엇인지에 대해 알아보고 facebook에서 제시한 native bridge의 개선방향에 대하여 알아보겠다. 또한 React Native의 4가지 Thread의 종류에 대해, React Native앱이 실행되는 과정에 대해서도 알아보겠다.
+
 ### React Native의 4가지 Thread
+
+React Native앱이 실행되는 과정을 알아보기 이전에 React Native에서 사용하는 4가지의 Thread에 대해 알아보아야 한다.
 
 1. UI Thread
    - 메인 스레드
@@ -62,14 +100,16 @@ featured: true
 - Facebook도 native bridge를 사용하는것에 있어서의 성능하락을 인지하고 있으며 React Native를 위한 완전히 새로운 architecture를 작업하고 있으며 결국에는 bridge사용을 제거할것이다.
 - Facebook은 JavaScript Interface라는것을 구현하는 중이다.
   - JavaScript Interface(JSI)는 JavaScript코드와 JavaScript엔진 사이에 위치하는것으로, 결국은 JavaScript엔진을 제거할 것이다.
-- 추가적으로 React Native는 Debug모드에서 Chrome브라우저(V8엔진 사용)에서도 작동될 예정이다.
-- JSI의 사용으로 JavaScript side와 Native side가 통신하기 위해 더이상 JSON메시지를 보낼 필요가 없으며 Native Bridge를 사용할 필요도 없게 된다.
-- 또한 현재는 React Native앱이 실행되면서 JavaScript side에서 사용되는 모든 native모듈들은 실행과 동시에 초기화 되어야 하지만 새로운 architecture에서는 필요할때만 초기화될것이다. 따라서 앱의 실행 성능에 이점이 있을것이다.
+- 추가적으로 JSI를 사용하게 되면서 React Native는 Debug모드에서 Chrome브라우저(V8엔진 사용)에서도 작동될 예정이다.
+- JSI의 사용으로 JavaScript side와 Native side가 통신하기 위해 더이상 JSON메시지를 보낼 필요가 없으며 Native Bridge를 사용할 필요도 없다.
+- 또한 현재는 React Native앱이 실행되면서 JavaScript side에서 사용되는 모든 native모듈들은 실행과 동시에 초기화 되어야 하지만 새로운 architecture에서는 필요할때만 초기화될것이다. 따라서 앱의 초기 실행 성능에도 이점이 있을것이다.
   - bridge를 사용하지 않고 JavaScript코드들이 직접적인 reference를 갖고 있기 때문에 가능한일이다.
 
-## React Native는 어디서 오고 어디로 갈것인가
-
 ## 참고자료
+
+[React Native Documentations](https://reactnative.dev/)
+
+[Cross-platform mobile frameworks used by developers worldwide 2019 and 2020](https://www.statista.com/statistics/869224/worldwide-software-developer-working-hours/)
 
 [How React Native Works?](https://www.codementor.io/@saketkumar95/how-react-native-works-mhjo4k6f3)
 
