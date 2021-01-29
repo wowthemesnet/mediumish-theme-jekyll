@@ -114,6 +114,8 @@ React Native앱이 실행되는 과정을 알아보기 이전에 React Native에
 
 ### Future Of Native Bridge
 
+[![IMAGE ALT TEXT HERE](https://img.youtube.com/vi/UcqRXTriUVI/0.jpg)](https://www.youtube.com/watch?v=UcqRXTriUVI)
+
 - Facebook도 native bridge를 사용하는것에 있어서의 성능하락을 인지하고 있으며 React Native를 위한 완전히 새로운 architecture를 작업하고 있으며 결국에는 bridge사용을 제거할것이다.
 - Facebook은 JavaScript Interface라는것을 구현하는 중이다.
   - JavaScript Interface(JSI)는 JavaScript코드와 JavaScript엔진 사이에 위치하는것으로, 결국은 JavaScript엔진을 제거할 것이다.
