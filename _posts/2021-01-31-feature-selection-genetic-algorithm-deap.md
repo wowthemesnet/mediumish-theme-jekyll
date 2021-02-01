@@ -28,7 +28,7 @@ toc: true
 
 Ejecutar este paso manualmente, en el caso de que el número de variables sea significante sería impracticable. Es por eso existen diversas técnicas para realizarlo.
 
-En este artículo no hablaremos estas técnicas, pero te mostraré cómo utilizar Algoritmos Genéticos para efectuarlo.
+En este artículo no hablaremos de estas técnicas, pero te mostraré cómo utilizar Algoritmos Genéticos para efectuarlo.
 
 
 
@@ -341,7 +341,7 @@ print(
 
 ## Conclusiones
 
-La selección de variables es uno de los grandes desafío que enfrentamos durante la construcción de un modelo. Existe una amplia cantidad de métodos a utilizar, los cuales ofrecen sus ventajas y desventajas. Los Algoritmos Genéticos son una alternativa más a utilizar. Son fáciles de implementar y de entender.
+La selección de variables es uno de los grandes desafíos que enfrentamos durante la construcción de un modelo. Existe una amplia cantidad de métodos a utilizar, los cuales ofrecen sus ventajas y desventajas. Los Algoritmos Genéticos son una alternativa más a utilizar. Son fáciles de implementar y de entender.
 
 Definir que método deberíamos emplear es un desafío en sí mismo. Un factor clave será entender cuales son nuestras necesidades. Solo así cumpliremos con nuestros objetivos.
 
