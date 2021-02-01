@@ -10,10 +10,10 @@ comments: false
 image: assets/images/1_post_img_1.png
 beforetoc: "<p>Normalmente, debido a la considerable cantidad de datos de los cuales hoy disponemos, cuando desarrollamos modelos de Machine Learning nos encontramos ante un gran desafío que es el de la <strong>SELECCIÓN DE VARIABLES o CARACTERÍSTICAS. (FEATURE SELECTION)</strong></p>
 
-<p>El objetivo es enfocarnos en aquellas variables importantes para el modelo, descartando de esta forma aquellas que no lo son. Así, <strong>minimizaremos los tiempos de desarrollo iterando</strong> en menor tiempo y obteniendo un feedback de nuestro entrenamiento mucho más veloz.
+<p>El objetivo es enfocarnos en aquellas variables importantes para el modelo, descartando de esta forma aquellas que no lo son. Así, <strong>minimizaremos los tiempos de desarrollo iterando</strong> en menor tiempo y obtendremos un feedback de nuestro entrenamiento mucho más veloz.
 Además, en muchos casos podríamos conseguir <strong>mejoras en la performance</strong> del modelo, ya que podríamos prescindir de variables que estén generando ruido y complejidad al modelo.</p>
 
-El objetivo de este artículo es acercarte una de las tantas técnicas utilizadas para la selección de variables: <strong>ALGORITMOS GENÉTICOS</strong>. Para la implementación utilizaremos <strong>DEAP</strong>, una framework de computación evolucionaría disponible en Python."
+El objetivo de este artículo es acercarte una de las tantas técnicas utilizadas para la selección de variables: <strong>ALGORITMOS GENÉTICOS</strong>. Para la implementación utilizaremos <strong>DEAP</strong>, una framework de computación evolucionaria disponible en Python."
 toc: true
 ---
 
@@ -36,15 +36,15 @@ En este artículo no hablaremos de estas técnicas, pero te mostraré cómo util
 
 **Es un método evolutivo estocástico para la optimización de funciones basado en la teoría de la evolución expuesta por Charles Darwin.**
 
-Este opera sobre una población de **cromosomas** (individuos de la población o soluciones candidatas), los cuales típicamente son formulados como una **cadena de bits**. A estos bits se los conocen como **genes** y estan representados con valores de 0s y 1s (encoding).
+Este opera sobre una población de **cromosomas** (individuos de la población o soluciones candidatas), los cuales típicamente son formulados como una **cadena de bits**. A estos bits se los conocen como **genes** y están representados con valores de 0s y 1s (encoding).
 
 ![ga_elements alt ><]({{ site.baseurl }}/assets/images/1_post_img_2.jpg)
 
-La idea es iterar generando sucesivas **generaciones** cada vez mejores a las anteriores. Esto se produce seleccionando a los mejores individuos de la población, de acuerdo a una **función fitness**, la cual evaluará y nos dará información sobre que tan bueno es el individuo. 
+La idea es iterar generando sucesivas **generaciones** cada vez mejores a las anteriores. Esto se produce seleccionando a los mejores individuos de la población, de acuerdo a una **función fitness**, la cual evaluará y nos dará información sobre qué tan bueno es el individuo. 
 
-Luego combinaremos a estos individuos con otros, utilizando diferentes **operadores** para generar a los **descendientes (o hijos)**. Por últimos, estos descendientes podrían someterse a una mutación, y estos conformarán la nueva generación.
+Luego combinaremos a estos individuos con otros, utilizando diferentes **operadores** para generar a los **descendientes (o hijos)**. Por último, estos descendientes podrían someterse a una mutación, y estos conformarán la nueva generación.
 
-Un **Algoritmo Genético Básico** efectua el siguiente flujo:
+Un **Algoritmo Genético Básico** efectúa el siguiente flujo:
 
 ![ga_workflow alt ><]({{ site.baseurl }}/assets/images/1_post_img_3.jpg)
 
@@ -56,9 +56,9 @@ Un **Algoritmo Genético Básico** efectua el siguiente flujo:
 
     1. **Selección**: Seleccionamos un par de cromosomas de la población actual. La probabilidad de selección estará dada por la función fitness. La selección se realiza con reemplazo, es decir, un cromosoma puede ser seleccionado más de una vez.
 
-    2. **Crossover**: Con una probabilidad pc combinamos un par de cromosomas seleccionados aleatoriamente y generamos dos descendientes.
+    2. **Crossover**: Con una probabilidad $$ \boldsymbol p_c $$ combinamos un par de cromosomas seleccionados aleatoriamente y generamos dos descendientes.
 
-    3. **Mutación**: Mutamos a los dos descendientes del paso anterior en cada bit con una probabilidad pm. Estos se convertirán en miembros de la nueva población.
+    3. **Mutación**: Mutamos a los dos descendientes del paso anterior en cada bit con una probabilidad $$ \boldsymbol p_m $$. Estos se convertirán en miembros de la nueva población.
 
 4. **Reemplazamos** la actual población con la nueva población generada.
 
@@ -81,7 +81,7 @@ Un ejemplo concreto sería el siguiente, tenemos a un individuo que será repres
 
 Cuando decimos que vamos a evaluar a este individuo, estamos diciendo que entrenaremos el modelo con estas variables y como salida obtendremos un score (F1 score), que nos indicará que tan bueno fue el desempeño de este conjunto de variables en el entrenamiento. 
 
-Por último, seguiremos el flujo visto en el punto anterior e iteraremos tantas veces como nosotros definamos o esta cumplir algún criterio para dejar de iterar. Al final del proceso tendremos a los mejores individuos (o soluciones) y seleccionaremos a el mejor. En nuestro caso será aquel con mayor F1 Score.
+Por último, seguiremos el flujo visto en el punto anterior e iteramos tantas veces como nosotros definamos o hasta cumplir algún criterio para dejar de iterar. Al final del proceso tendremos a los mejores individuos (o soluciones) y seleccionaremos a el mejor. En nuestro caso será aquel con mayor F1 Score.
 
 
 
@@ -102,7 +102,7 @@ En primer lugar instalaremos las dependencias del proyecto. Utilizaremos los sig
 
 Vale la pena destacar que dentro del repositorio se encuentra el `README.md` con los pasos necesarios para poder instalar todas las dependencias requeridas para utilizar el proyecto con sus respectivas versiones.
 
-Ahora si, manos a la obra! Lo primero que haremos es importar los módulos necesarios para que el código pueda funcionar.
+¡Ahora sí, manos a la obra! Lo primero que haremos es importar los módulos necesarios para que el código pueda funcionar.
 
 ```python
 import numpy as np
@@ -309,7 +309,7 @@ for g in range(NGEN):
 
 ![ga_example alt ><]({{ site.baseurl }}/assets/images/1_post_img_6.png)
 
-Para poder simplificar un poco el reporte anterior, te dejare una visualización con la performance de cada generación.
+Para poder simplificar un poco el reporte anterior, te dejaré una visualización con la performance de cada generación.
 
 ```python
 # Ploteamos el AVG por generacion
@@ -322,7 +322,7 @@ plt.show()
 
 ![ga_example alt ><]({{ site.baseurl }}/assets/images/1_post_img_7.png)
 
-Claramente podemos notar que mientras vamos **"avanzando en la evolución"** el score promedio de todos los inviduos se va incrementando. Podemos concluir que cada generación está mejorando a la generación anterior, y en consecuencias se están generando mejores invididuos (soluciones). 
+Claramente podemos notar que mientras vamos **"avanzando en la evolución"** el score promedio de todos los individuos se va incrementando. Podemos concluir que cada generación está mejorando a la generación anterior, y en consecuencia se están generando mejores individuos (soluciones). 
 
 Cabe destacar que estamos utilizando un algoritmo simple. Pero existen mucho más. Para que no tengas que implementarlos desde 0 **DEAP** nos provee varios algoritmos ya construidos. Te recomiendo nuevamente que vayas a mi repositorio de <a href="https://github.com/PeepData/feature_selection_ga_deap" target="_blank">Github</a> donde podrás ver un ejemplo.
 
@@ -343,7 +343,7 @@ print(
 
 La selección de variables es uno de los grandes desafíos que enfrentamos durante la construcción de un modelo. Existe una amplia cantidad de métodos a utilizar, los cuales ofrecen sus ventajas y desventajas. Los Algoritmos Genéticos son una alternativa más a utilizar. Son fáciles de implementar y de entender.
 
-Definir que método deberíamos emplear es un desafío en sí mismo. Un factor clave será entender cuales son nuestras necesidades. Solo así cumpliremos con nuestros objetivos.
+Definir que método deberíamos emplear es un desafío en sí mismo. Un factor clave será entender cuáles son nuestras necesidades. Solo así cumpliremos con nuestros objetivos.
 
 
 **Referencias:**
