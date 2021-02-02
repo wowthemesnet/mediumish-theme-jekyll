@@ -8,7 +8,7 @@ comments: false
 <div class="row justify-content-between">
 <div class="col-md-8 pr-5">
 
-<p>Mi nombre es Lucas Zamora, Ingeniero en Sistemas de la Universidad Tecnológica Nacional (UTN) y profesional del mundo de los datos, más específicamente como Data Scientist. Me apasionan las nuevas tecnologías
+<p>Mi nombre es <a href="https://www.linkedin.com/in/lucas-zamora/" target="_blank">Lucas Zamora</a>, Ingeniero en Sistemas de la Universidad Tecnológica Nacional (UTN) y profesional del mundo de los datos, más específicamente como Data Scientist. Me apasionan las nuevas tecnologías
 y la de idea de este blogs es podes acercarles a ustedes tópicos que les puedan ser de utilidad en su desarrollo profesional. Intentaré escribir sobre
 temas que no se encuentren en otros lugares o al menos que no esten disponible en español.</p>
 

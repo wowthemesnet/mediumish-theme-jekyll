@@ -5,7 +5,7 @@ description: "Tutorial de selección de variables utilizando algoritmos genétic
 author: lzamora
 categories: [ feature-selection, machine-learning ]
 featured: true
-hidden: false
+hidden: true
 comments: false
 image: assets/images/1_post_img_1.png
 beforetoc: "<p>Normalmente, debido a la considerable cantidad de datos de los cuales hoy disponemos, cuando desarrollamos modelos de Machine Learning nos encontramos ante un gran desafío que es el de la <strong>SELECCIÓN DE VARIABLES o CARACTERÍSTICAS. (FEATURE SELECTION)</strong></p>
