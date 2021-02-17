@@ -21,6 +21,8 @@ Please ensure you are <a href="{{ site.baseurl }}/registration/">registered on A
 
 * Inform GOA office once the interior works are completed 
 
+All such types of works that need material movement by truck, employment of workers for drilling, disposal of discarded wooden parts/chaff & tiles etc. are regarded as interior or renovation work. 
+
 ##### Rules for Renovation/Interior works in Greenage. 
 
 1. Verified copies of Govt IDs of workers must be submitted to the security before starting the renovation/interior work. They will be on-boarded in myGate
