@@ -4,7 +4,7 @@ title: "Perceptual loss 변경을 통한 SRGAN 개선 방안"
 authors: [hoyeon94]
 tags: ["computer vision","deep learning"]
 image: ../assets/images/post-cv-fall-srgan/cv_fall_srgan_1.png
-description: "keras image data generator"
+description: "Perceptual loss 변경을 통한 SRGAN 개선 방안"
 featured: true
 ---
 
