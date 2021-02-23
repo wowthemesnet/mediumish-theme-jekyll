@@ -9,8 +9,6 @@ featured: true
 ---
 
 
-작성자 : DSC uos ML 논문 팀(황제홍, 임호연)
-
 ## 들어가며
 
 DSC CV 논문팀에서는 SRGAN과 관련하여 기존에 나와있는 모델에서 일부분을 수정하여 개선하는 것을 목표로 하고 있다. SRGAN은 Super-Resolution Generative Adversarial Network의 약어로 간단하게 말하면 이미지의 화질을 개선하는 인공지능 모델이다. 이번 포스팅은 우리 논문팀에서 base로 참고하고 있는 논문을 소개하고자 한다. 
@@ -18,6 +16,8 @@ DSC CV 논문팀에서는 SRGAN과 관련하여 기존에 나와있는 모델에
 논문 링크 : [https://arxiv.org/pdf/1609.04802.pdf](https://arxiv.org/pdf/1609.04802.pdf)
 
 참고 블로그 : [https://aigong.tistory.com/51](https://aigong.tistory.com/51)
+
+작성자 : DSC uos ML 논문 팀(황제홍, 임호연)
 
 ## Introduction
 
