@@ -1,0 +1,62 @@
+---
+layout: default
+---
+
+<section>
+    <div class="section-title">
+        <h2><span>{{ page.title }}</span></h2>
+    </div>
+
+    <div class="article-post">
+    {{content}}
+    </div>
+    
+    <!-- Lead -->
+    <div>
+        <h4><span><b>Lead</b></span></h4><br/>    
+
+        <div class="row listrecent">    
+            {% assign author = site.data.author | where: "role", "lead" | first %}
+            {% include authorbox.html %}
+        </div>
+    </div>
+
+    <!-- Core Member -->
+    <div>
+        <h4><span><b>Core Member</b></span></h4><br/>    
+        <div class="row listrecent">
+            {% assign authors = site.data.author | where: "role", "core" %}
+            {% for author in authors %}
+    
+            {% include authorbox.html %}
+    
+            {% endfor %}
+    
+        </div>
+    </div>
+
+    <!-- Member -->
+    <div>
+        <h4><span><b>Member</b></span></h4>    
+        <div class="row listrecent">
+            {% assign authors = site.data.author | where: "role", "normal" %}
+            {% for author in authors %}
+    
+            {% include authorbox.html %}
+    
+            {% endfor %}
+    
+        </div>
+    </div>
+
+
+    {% if page.comments == true %}
+
+    <div id="comments" class="row mb-5">
+        <div class="col-md-8">
+            {% include disqus.html %}
+        </div>
+    </div>
+
+    {% endif %}
+</section>

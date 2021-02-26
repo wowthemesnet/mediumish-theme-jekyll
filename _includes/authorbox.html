@@ -1,0 +1,27 @@
+<!-- begin authorbox -->
+
+<div class="col-lg-3 col-md-6 mb-30px card-group">
+    <div class="author h-100">
+        <div class="author-img">
+            {% if site.lazyimages == "enabled" %}
+                <img class="img-circle lazyimg" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAMAAAACCAQAAAA3fa6RAAAADklEQVR42mNkAANGCAUAACMAA2w/AMgAAAAASUVORK5CYII=" data-src="https://github.com/{{author.github}}.png" alt="{{ author.name }}">
+            {% else %}
+                <img class="img-circle" src="https://github.com/{{author.github}}.png" alt="{{ author.name }}">
+            {% endif %}
+        </div>
+        <div class="author-body">
+            <h2 class="author-title">
+                <span class="top-author-name">{{ author.name }}</span>
+            </h2>
+            <div class="author-icon-wrapper">
+                <span class="author-icon"><a class="link-dark" href="mailto:{{ author.email }}"><i class="far fa-envelope"></i></a></span>
+                <span class="author-icon"><a class="link-dark" href="https://github.com/{{ author_name }}"><i class="fab fa-github"></i></a></span>
+                {% if author.web %}
+                <span class="author-icon"><a class="link-dark" href="{{ author.web }}"><i class="fas fa-blog"></i></a></span>
+                {% endif %}
+            </div>
+            
+        </div>
+    </div>
+</div>
+<!-- end post -->

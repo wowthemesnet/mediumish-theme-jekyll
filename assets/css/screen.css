@@ -926,3 +926,46 @@ iframe {
     opacity: 0;
     transition: opacity .25s;
 }
+
+/** for about.html **/
+.author {
+    width: 100%;
+}
+
+.author .author-img {
+    padding: 20px 50px 20px 50px;
+    object-fit: cover;
+}
+.author .author-body {
+    padding: 0px 20px 0px 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    font-family: -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+}
+.author .img-circle {
+    width: 100%;
+    border-radius: 50%;
+    /* border: 1px solid rgba(0,0,0,.125); */
+    border: 1px solid rgba(21, 144, 63, .4);
+}
+
+.author-body .author-title {
+    text-align: center;
+}
+
+.author-body .author-icon-wrapper {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.author-icon-wrapper .author-icon {
+    margin-left: 10px;
+    font-size: 18pt;
+}
+
+.author-icon-wrapper .author-icon:first-child {
+    margin-left: 0px;
+}
