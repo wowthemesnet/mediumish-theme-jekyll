@@ -40,13 +40,9 @@ Many to One을 활용한 Encoder를 통해 문장을 학습, 처리가능한 형
 
 ![img](https://blog.kakaocdn.net/dn/tCYlX/btqVta0QDIt/PfaL57LdW4cF7qHkVVsvbK/img.png)
 
-위와 같이 가장 기본인 RNN을 Vanilla RNN이라 하고, 학습과정을 수식으로 표현하면 다음과 같다.
+위와 같이 가장 기본인 RNN을 Vanilla RNN이라 한다. (똑같은 가중치를 사용하여 계속 계산, 학습)
 
-은닉층 : $ht = tanh(W_ii_t + W_hh_(t-1) + b)$
 
-출력 : $ot = W_oh_t$
-
-이때, $W_i$,$W_o$,$W_t$의 값은 모든 시점에서 공유한다. (똑같은 가중치를 사용하여 계속 계산, 학습)
 
 #### LSTM (Long Short-Term Memory)
 
@@ -72,25 +68,15 @@ LSTM에서는 기억해야 될 요소로 은닉 상태와 함께 셀 상태를 �
 
 Input Gate는 현재 입력을 기억하기 위한 게이트이다.
 
-입력과 그에 따른 가중치, 그리고 이전의 은닉 상태와 그에 따른 가중치와 bias를 합한 값을 각각 시그모이드와 하이퍼볼릭탄젠트를 지나게 하여 i(0~1), g(-1~1) 두가지 값을 만든다.
-
-$i_t = \sigma(W_{xi}x_t + W_{hi}h_{t-1}+b_i)$
-
-$g_t = tanh(W_{xg}x_t + W_{hg}h_{t-1}+b_g)$
-
-![img](https://blog.kakaocdn.net/dn/Rej8h/btqVsxBZ46l/RK5zyEglcRKemZbV2I9Hv0/img.png)
+입력과 그에 따른 가중치, 그리고 이전의 은닉 상태와 그에 따른 가중치와 bias를 합한 값을 각각 시그모이드와 하이퍼볼릭탄젠트를 지나게 하여 i(0~1), g(-1~1) 두가지 값을 만든다.![img](https://blog.kakaocdn.net/dn/Rej8h/btqVsxBZ46l/RK5zyEglcRKemZbV2I9Hv0/img.png)
 
 Forget Gate는 이전 상태를 얼마나 기억할지에 대한 게이트이다.
 
 역시 입력과 그에 따른 가중치, 그리고 이전의 은닉 상태와 그에 따른 가중치와 bias를 합한 값을 시그모이드 함수를 지나게 해서 구한다.
 
-$f_t = \sigma(W_{xf}x_t + W_{hf}h_{t-1}+b_f)$
-
 ![img](https://blog.kakaocdn.net/dn/dgfI55/btqVkK9X2W3/EdmovO3QkBkqF6mkg7SvvK/img.png)
 
 이제 이전 셀 상태와 f의 곱, i와 g의 곱의 합을 통해 현재의 셀 상태를 구할 수 있다.
-
-$C_t = f \circ C_{t-1} + i \circ g$
 
 만약 Forget gate의 결과가 0이면, 이전 셀 상태가 전혀 반영되지 않게 된다.
 
@@ -104,11 +90,7 @@ Output Gate는 얼마나 출력할지에 대한 게이트이다.
 
 입력과 그에 따른 가중치, 그리고 이전의 은닉 상태와 그에 따른 가중치와 bias를 합한 값을 시그모이드 함수를 지나게 해서 구한다.
 
-$o_t = \sigma(W_{xo}x_t + W_{ho}h_{t-1}+b_o)$
-
 이제 Hidden State 이자, LSTM의 출력값을 다음과 같이 구할 수 있다.
-
-$h_t = o_t \circ tanh(C_{t})$
 
 #### GRU (Gated Recurrent Unit)
 
@@ -120,19 +102,11 @@ Reset Gate는 이전 값을 얼마나 기억하는지 결정해준다.
 
 시그모이드 함수를 통해 이전 게이트를 구하는 방식과 동일하게 계산한다.
 
-$r_t = \sigma(W_{xr}x_t + W_{hr}h_{t-1} + b_r)$
-
 Update Gate은 이전과 현재를 어느 정도의 비율로 업데이트하는지 결정해준다.
 
 역시 시그모이드 함수를 통해 이전 게이트를 구하는 방식과 동일하게 계산한다.
 
-$u_t = \sigma(W_{xu}x_t + W_{hu}h_{t-1} + b_u)$
-
 이후 그림과 같이 2번, 3번 과정을 진행하여 다음 은닉 상태이자 출력을 계산한다.
-
-(2) $h_t' = tanh(W_{xh'}x_t + W_{hh'}(r_t*h_{t-1})+b_g)$
-
-(3) $h_t = (1-u_t) * h {t - 1} + u_t* h_t'$
 
 LSTM과 사실상 구조상 큰 차이가 없고, 분석 결과도 크게 차이는 없는 것으로 알려져 있다. 어쩔 때는 LSTM이 좋기도, 어쩔 때는 GRU가 좋기도 하다고 한다.
 
