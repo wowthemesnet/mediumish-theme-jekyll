@@ -21,3 +21,7 @@ Copyright (C) 2019 Sal, https://www.wowthemes.net
 4. Make necessary changes, commit, push and open a pull request on GitHub.
 
 Thank you!
+
+### 설치 및 설정 방법
+
+* Ruby 2.6 버전 사용할 것
