@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "We all wait for summer"
-author: john
+author: bomber
 categories: [ Jekyll, tutorial ]
 image: assets/images/5.jpg
 rating: .5

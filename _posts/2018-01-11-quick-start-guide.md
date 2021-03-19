@@ -1,7 +1,8 @@
 ---
 layout: post
-title:  "Let's test spoilers"
-author: sal
+# title:  "Let's test spoilers"
+title:  "스포일러 기능을 활용해보자!"
+author: admin
 categories: [ Jekyll, tutorial ]
 image: assets/images/12.jpg
 featured: true

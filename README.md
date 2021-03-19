@@ -25,3 +25,10 @@ Thank you!
 ### 설치 및 설정 방법
 
 * Ruby 2.6 버전 사용할 것
+
+```
+gem install bundler:2.0.1
+bundle update --bundler
+bundle install
+bundle exec jekyll serve
+```

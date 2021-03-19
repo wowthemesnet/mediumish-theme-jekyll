@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Mediumish Template for Jekyll
+title: 프로젝트 소개
 permalink: /about
 comments: true
 ---
@@ -15,16 +15,17 @@ comments: true
 
 <p>Please, read the docs <a href="https://bootstrapstarter.com/bootstrap-templates/template-mediumish-bootstrap-jekyll/">here</a>.</p>
 
-<h4>Questions or bug reports?</h4>
+<!-- <h4>Questions or bug reports?</h4> -->
+<h4>문의 사항</h4>
 
-<p>Head over to our <a href="https://github.com/wowthemesnet/mediumish-theme-jekyll">Github repository</a>!</p>
+<p>아이디어 제안이나 문의사항은 <a href="{{site.baseurl}}/discussions">토론방</a>에 남겨주세요!</p>
 
 </div>
 
 <div class="col-md-4">
 
 <div class="sticky-top sticky-top-80">
-<h5>Buy me a coffee</h5>
+<h5>Buy me a beer</h5>
 
 <p>Thank you for your support! Your donation helps me to maintain and improve <a target="_blank" href="https://zzom.io">ZZOM <i class="fas fa-book"></i></a>.</p>
 
