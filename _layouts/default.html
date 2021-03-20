@@ -17,7 +17,9 @@
 <link href="{{ site.baseurl }}/assets/css/main.css" rel="stylesheet">
 
 <script src="{{ site.baseurl }}/assets/js/jquery.min.js"></script>
-
+{% if site.adsense == "enabled" %}
+<script data-ad-client="ca-pub-6746305336565036" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+{% endif %}
 </head>
 
 {% if jekyll.environment == 'production' %}
