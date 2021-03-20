@@ -6,7 +6,7 @@ logo: 'assets/images/zzom-logo-dark (48 x 48).png'
 favicon: 'assets/images/favicon.ico'
 baseurl: /mediumish-theme-jekyll
 google_analytics: 'G-BP2MT6VT3W'
-disqus: 'demowebsite'
+disqus: 'zzom.io'
 mailchimp-list: 'https://gmail.us2.list-manage.com/subscribe/post?u=f0c2c860abc78e38661cc5458&amp;id=fa3043bfc8'
 include: ["_pages"]
 permalink: /:title/

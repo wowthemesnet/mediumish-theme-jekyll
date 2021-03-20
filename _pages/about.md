@@ -18,7 +18,11 @@ comments: false
         <p>Please, read the docs <a href="https://bootstrapstarter.com/bootstrap-templates/template-mediumish-bootstrap-jekyll/">here</a>.</p> -->
         <!-- <h4>Questions or bug reports?</h4> -->
         <h4>제안과 질문은 여기로</h4>
-        <p>아이디어를 제안하거나 궁금한 점이 있다면 <a href="{{site.baseurl}}/discussions">여기</a>에 남겨주세요! (영문 페이지라고 쫄기 없기)</p>
+        <p>아이디어를 제안하거나 궁금한 점이 있다면 아래에 남겨주세요.</p>
+        <ul>
+            <li><a href="{{site.baseurl}}/discussions" target="_blank">프로젝트 ZZOM 토론 게시판</a></li>
+            <li><a href="mailto:project.zzom@gmail.com">project.zzom@gmail.com</a></li>
+        </ul>
     </div>
 
     <div class="col-md-4">
@@ -27,7 +31,7 @@ comments: false
             <p>
             여러분이 후원하신 커피 한 잔은 <a target="_blank" href="https://zzom.io">ZZOM</a>이 더 좋은 책을 만드는 데 도움이 됩니다. <i class="fas fa-coffee"></i>
             </p>
-            <a target="_blank" href="https://www.buymeacoffee.com/zzom" class="btn btn-danger">커피 한 잔 보내기</a> 
+            <a target="_blank" href="https://www.buymeacoffee.com/zzom" class="btn btn-danger">커피 한 잔 후원하기</a> 
             <!-- <a target="_blank" href="https://bootstrapstarter.com/bootstrap-templates/template-mediumish-bootstrap-jekyll/" class="btn btn-warning">Documentation</a> -->
         </div>
     </div>
