@@ -20,7 +20,7 @@ comments: false
         <h4>제안과 질문은 여기로</h4>
         <p>아이디어를 제안하거나 궁금한 점이 있다면 아래에 남겨주세요.</p>
         <ul>
-            <li><a href="{{site.baseurl}}/discussions" target="_blank">프로젝트 ZZOM 토론 게시판</a></li>
+            <li><a href="https://github.com/project-zzom/project-zzom.github.io/discussions" target="_blank">프로젝트 ZZOM 토론 게시판</a></li>
             <li><a href="mailto:project.zzom@gmail.com">project.zzom@gmail.com</a></li>
         </ul>
     </div>
