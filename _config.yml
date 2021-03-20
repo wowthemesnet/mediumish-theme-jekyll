@@ -4,7 +4,7 @@ title: "프로젝트 ZZOM (사이트 준비중)"
 description: "One-person Publishing Project"
 logo: 'assets/images/zzom-logo-dark (48 x 48).png'
 favicon: 'favicon.ico'
-baseurl: 
+baseurl: /
 google_analytics: 'G-BP2MT6VT3W'
 disqus: 'zzom'
 mailchimp-list: 'https://gmail.us2.list-manage.com/subscribe/post?u=f0c2c860abc78e38661cc5458&amp;id=fa3043bfc8'
