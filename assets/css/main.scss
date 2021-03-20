@@ -35,12 +35,59 @@
     font-style: normal;
 }
 
-.mainheading h1.sitetitle {
-    font-family: 'CookieRunOTF-Bold';
+@font-face {
+    font-family: 'RIDIBatang';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_twelve@1.0/RIDIBatang.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
 }
 
-h2, h3, h4, h5, h6, .hand-writing {
-    font-family: 'CookieRun-Regular';
+@font-face {
+    font-family: 'MaruBuri-Regular';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_20-10-21@1.0/MaruBuri-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+.mainheading h1.sitetitle {
+	// font-family: 'CookieRunOTF-Bold';
+	// font-family: 'RIDIBatang';
+	font-family: 'MaruBuri-Regular';
+}
+
+.mainheading h1.posttitle {
+	// font-family: 'CookieRunOTF-Bold';
+	// font-family: 'RIDIBatang';
+	font-family: 'MaruBuri-Regular';
+}
+
+div.card-body h2, div.section-title h2, div.listrecent h2,  div.fortags h2 {
+	// font-family: 'CookieRunOTF-Bold';
+	// font-family: 'RIDIBatang';
+	font-family: 'MaruBuri-Regular';
+}
+
+div.article-post h1, div.article-post h2, div.article-post h3, div.article-post h4 {
+	// font-family: 'CookieRunOTF-Bold';
+	// font-family: 'RIDIBatang';
+	font-family: 'MaruBuri-Regular';
+}
+
+div.article-post h1, div.article-post h2, div.article-post h3, div.article-post h4, div.article-post h5, div.article-post h6 {
+	// font-family: 'CookieRunOTF-Bold';
+	// font-family: 'RIDIBatang';
+	font-family: 'MaruBuri-Regular';
+	margin-top: 2em;
+}
+
+div.pagination, a.prev, a.next {
+	// font-family: 'CookieRunOTF-Bold';
+	// font-family: 'RIDIBatang';
+	font-family: 'MaruBuri-Regular';
+}
+
+* {
+	font-family: 'MaruBuri-Regular';
 }
 
 .btn.follow {
@@ -64,4 +111,11 @@ a {
 
 a:hover {
     color: dodgerblue;
+}
+
+code.highlighter-rouge {
+	font-size: 16px;
+	font-weight: bold;;
+	color: black;
+	text-decoration: solid underline aquamarine 4px;
 }

@@ -23,14 +23,11 @@ comments: false
 
     <div class="col-md-4">
         <div class="sticky-top sticky-top-80">
-            <h5>나 보기가 안쓰러워 응원할 거라면...</h5>
-
+            <h5>후원은 여기로</h5>
             <p>
-            여러분이 후원하신 커피 한 잔은 <del>제 수명과 등가교환하여</del> <a target="_blank" href="https://zzom.io">ZZOM</a>이 더 좋은 책을 만드는 데 도움이 됩니다. (츤츤)
+            여러분이 후원하신 커피 한 잔은 <a target="_blank" href="https://zzom.io">ZZOM</a>이 더 좋은 책을 만드는 데 도움이 됩니다. <i class="fas fa-coffee"></i>
             </p>
-            <p class="hand-writing"><i class="fas fa-coffee"></i> 솟아라. 카페인 파워!</p>
-
-            <a target="_blank" href="https://www.buymeacoffee.com/zzom" class="btn btn-danger">옜다 커피나 사 무거라</a> 
+            <a target="_blank" href="https://www.buymeacoffee.com/zzom" class="btn btn-danger">커피 한 잔 보내기</a> 
             <!-- <a target="_blank" href="https://bootstrapstarter.com/bootstrap-templates/template-mediumish-bootstrap-jekyll/" class="btn btn-warning">Documentation</a> -->
         </div>
     </div>
