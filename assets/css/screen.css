@@ -8,13 +8,6 @@ License: https://www.wowthemes.net/freebies-license/
     .container {max-width:80%;}
 }
 
-@font-face {
-    font-family: 'CookieRunOTF-Bold';
-    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_twelve@1.0/CookieRunOTF-Bold00.woff') format('woff');
-    font-weight: normal;
-    font-style: normal;
-}
-
 .mainheading {
     padding: 1rem 0rem;
 }
@@ -313,8 +306,7 @@ span.post-read-more a:hover {
 }
 
 .mainheading h1.sitetitle {
-    /* font-family: Righteous; */
-    font-family: 'CookieRunOTF-Bold';
+    font-family: Righteous;
 }
 
 .mainheading h1.posttitle {
@@ -340,7 +332,6 @@ span.post-read-more a:hover {
 
 .article-post {
     font-family: Merriweather;
-    /* font-family: 'CookieRunOTF-Bold'; */
     font-size: 1.1rem;
     line-height: 1.84;
     color: rgba(0, 0, 0, .8);

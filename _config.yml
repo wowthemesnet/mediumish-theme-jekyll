@@ -1,11 +1,11 @@
 # Site
-name: "1인출판 프로젝트 ZZOM"
-title: "1인출판 프로젝트 ZZOM"
+name: "프로젝트 ZZOM"
+title: "프로젝트 ZZOM"
 description: "One-person Publishing Project"
 logo: 'assets/images/zzom-logo-dark (48 x 48).png'
 favicon: 'assets/images/favicon.ico'
 baseurl: /mediumish-theme-jekyll
-google_analytics: 'UA-46278016-1'
+google_analytics: 'G-BP2MT6VT3W'
 disqus: 'demowebsite'
 mailchimp-list: 'https://gmail.us2.list-manage.com/subscribe/post?u=f0c2c860abc78e38661cc5458&amp;id=fa3043bfc8'
 include: ["_pages"]
@@ -38,10 +38,10 @@ authors:
     email: project.zzom@gmail.com
     web: https://zzom.io
     twitter: https://twitter.com/project_zzom
-    description: "최고운영관리자 / 공식적인 소식을 전달합니다"
-  bomber:
+    description: "최고운영관리자 / 공식적인 소식을 전합니다"
+  '번역하는 개발자':
     name: Shin Sang-jae
-    display_name: bomber   
+    display_name: 번역하는 개발자   
     avatar: 'assets/images/avatar-bomber.jpg'
     # gravatar: b1cc14991db7a456fcd761680bbc8f81
     email: codelabor@gmail.com

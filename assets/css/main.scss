@@ -13,3 +13,55 @@
 	"syntax",
     "starsnonscss"
 ;
+
+@font-face {
+    font-family: 'CookieRunOTF-Bold';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_twelve@1.0/CookieRunOTF-Bold00.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'CookieRun-Regular';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.1/CookieRun-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'InkLipquid';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_one@1.0/InkLipquid.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+.mainheading h1.sitetitle {
+    font-family: 'CookieRunOTF-Bold';
+}
+
+h2, h3, h4, h5, h6, .hand-writing {
+    font-family: 'CookieRun-Regular';
+}
+
+.btn.follow {
+    color: deepskyblue;
+    border-color: dodgerblue;	
+}
+
+.btn.subscribe {
+    background-color: deepskyblue;
+    border-color: dodgerblue;
+}
+
+.alertbar input[type="submit"] {
+    background-color: deepskyblue;
+    border: 1px solid dodgerblue;
+}
+
+a {
+    color: deepskyblue;
+}
+
+a:hover {
+    color: dodgerblue;
+}
