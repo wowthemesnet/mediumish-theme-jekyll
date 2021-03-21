@@ -38,7 +38,7 @@ authors:
     email: project.zzom@gmail.com
     web: https://zzom.io
     twitter: https://twitter.com/project_zzom
-    description: "최고운영관리자 / 공식적인 소식을 전합니다"
+    description: "노잼 대변인 / 공식 정보를 제공합니다"
   '번역하는 개발자':
     name: Shin Sang-jae
     display_name: 번역하는 개발자   
@@ -47,7 +47,7 @@ authors:
     email: codelabor@gmail.com
     web: https://about.me/codelabor
     twitter: https://twitter.com/codelabor
-    description: "최고잡무책임자 / 넑두리와 스포일러, 드립을 담당하고 있습니다"  
+    description: "드립 호객꾼 / 잡담과 스포를 담당합니다"  
 
 # Plugins
 plugins:
