@@ -113,9 +113,21 @@ a:hover {
     color: dodgerblue;
 }
 
+p.nav-link a {
+    color: darkgray;
+}
+
+p.nav-link a:hover {
+    color:  lightslategray;
+}
+
 code.highlighter-rouge {
 	font-size: 16px;
 	font-weight: bold;;
 	color: black;
-	text-decoration: solid underline aquamarine 4px;
+	text-decoration: solid underline deepskyblue 4px;
+}
+
+blockquote {
+    border-left: 4px solid deepskyblue;
 }

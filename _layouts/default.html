@@ -42,11 +42,9 @@ ga('send', 'pageview');
 		<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
 	</noscript>
 
-
 <!-- Begin Menu Navigation
 ================================================== -->
 <nav class="navbar navbar-expand-lg navbar-light bg-white fixed-top mediumnavigation nav-down">
-
     <div class="container pr-0">
 
     <!-- Begin Logo -->
@@ -60,11 +58,8 @@ ga('send', 'pageview');
     </button>
 
     <div class="collapse navbar-collapse" id="navbarMediumish">
-
         <!-- Begin Menu -->
-
             <ul class="navbar-nav ml-auto">
-
                 {% if page.url == "/" %}
                 <li class="nav-item active">
                 {% else %}
@@ -79,7 +74,9 @@ ga('send', 'pageview');
                 <a class="nav-link" href="{{ site.baseurl }}/about">소개</a>
                 </li>
 
-                <li class="nav-item">
+
+
+                <!-- <li class="nav-item">
                 <a target="_blank" class="nav-link" href="https://www.facebook.com/project.zzom/"><i class="fab fa-facebook-f"></i></a>
                 </li>
 
@@ -93,9 +90,7 @@ ga('send', 'pageview');
 
                 <li class="nav-item">
                 <a target="_blank" class="nav-link" href="https://www.youtube.com/channel/UCu-oIGYxwdzhRQwOYufWVrg/videos/"><i class="fab fa-youtube"></i></a>
-                </li>                
-
-                
+                </li>                 -->
 
                 <!-- <li class="nav-item">
                 <a target="_blank" class="nav-link" href="https://bootstrapstarter.com/bootstrap-templates/template-mediumish-bootstrap-jekyll/"> Docs</a>
@@ -115,19 +110,27 @@ ga('send', 'pageview');
 
                 {% include search-lunr.html %}
 
-            </ul>
+                <li class="nav-item">
+                    <p class="nav-link">
+                    <a target="_blank" href="https://www.facebook.com/project.zzom/"><i class="fab fa-facebook-f"></i></a>
+<a target="_blank" href="https://twitter.com/project_zzom/"><i class="fab fa-twitter"></i></a>
+<a target="_blank" href="https://www.instagram.com/project.zzom/"><i class="fab fa-instagram"></i></a>
+<a target="_blank" href="https://www.youtube.com/channel/UCu-oIGYxwdzhRQwOYufWVrg/videos/"><i class="fab fa-youtube"></i></a>
+</p>
+                </li>
 
+            </ul>      
         <!-- End Menu -->
 
     </div>
-
     </div>
+    
 </nav>
 <!-- End Navigation
 ================================================== -->
 
-<div class="site-content">
 
+<div class="site-content">
 <div class="container">
 
 <!-- Site Title
@@ -135,9 +138,14 @@ ga('send', 'pageview');
 <div class="mainheading">
     <h1 class="sitetitle">{{ site.name }}</h1>
     <p class="lead">
-        {{ site.description }}
+        {{ site.description }} 
+        
+
+
     </p>
-</div>
+ </div>
+
+
 
 <!-- Content
 ================================================== -->

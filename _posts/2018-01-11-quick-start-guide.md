@@ -7,6 +7,7 @@ categories: [ 작업 일지, 스크럼 ]
 image: assets/images/12.jpg
 featured: true
 hidden: true
+last_modified_at: 2021-03-21
 ---
 
 #### 소리다.
