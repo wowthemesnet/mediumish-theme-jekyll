@@ -142,6 +142,8 @@ printf("Hello World");
 
 ### 이미지 삽입 방법
 
+* 추천 이미지 폭: 1280 ~ 750px
+
 ```
 ![walking]({{ site.baseurl }}/assets/images/8.jpg)
 ```

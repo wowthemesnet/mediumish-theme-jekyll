@@ -17,8 +17,17 @@ comments: false
 <a href="https://pixabay.com/ko/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=925589">Pixabay</a>로부터 입수된 <a href="https://pixabay.com/ko/users/stocksnap-894430/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=925589">StockSnap</a>님의 이미지 입니다.</figcaption>
 </figure>
 
+
+
         청춘은 청춘의 그들에게 뜨거운지라, 것이다. 피가 투명하되 발휘하기 소담스러운 청춘의 것이다.보라, 앞이 사막이다. 청춘의 못하다 그들에게 곧 열매를 이것이다. 속에 피고 풍부하게 그들의 열락의 따뜻한 가는 되려니와, 위하여서. 맺어, 피어나는 대한 산야에 가는 불어 희망의 갑 때문이다. 거선의 이상의 우리의 수 보배를 이것은 살 그들의 희망의 교향악이다. 뜨고, 심장은 가장 이것이다. 인생의 불어 얼음이 같이, 것이다. 봄날의 미묘한 불어 대한 만물은 사람은 이 길지 것이다. 넣는 피어나기 유소년에게서 남는 철환하였는가? 청춘의 이것을 같으며, 것은 듣는다.
         </p>
+
+<figure>        
+<img class="featured-image img-fluid" src="{{site.baseurl}}/assets/images/book-1052014_1280.jpg" alt="book-girl-1" />
+<figcaption>
+        <a href="https://pixabay.com/ko/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=1052014">Pixabay</a>로부터 입수된 <a href="https://pixabay.com/ko/users/dariuszsankowski-1441456/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=1052014">Dariusz Sankowski</a>님의 이미지 입니다.
+        </figcaption>
+</figure>
 
         <!-- <h4>Documentation</h4>
         <p>Please, read the docs <a href="https://bootstrapstarter.com/bootstrap-templates/template-mediumish-bootstrap-jekyll/">here</a>.</p> -->
