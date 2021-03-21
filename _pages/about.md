@@ -31,7 +31,7 @@ comments: false
             <p>
             여러분이 후원하신 커피 한 잔은 <a target="_blank" href="https://zzom.io">ZZOM</a>이 더 좋은 책을 만드는 데 도움이 됩니다. <i class="fas fa-coffee"></i>
             </p>
-            <a target="_blank" href="https://www.buymeacoffee.com/zzom" class="btn btn-danger">커피 한 잔 후원하기</a> 
+            <a target="_blank" href="https://www.buymeacoffee.com/zzom" class="btn btn-danger buymeacofee">커피 한 잔 후원하기</a> 
             <!-- <a target="_blank" href="https://bootstrapstarter.com/bootstrap-templates/template-mediumish-bootstrap-jekyll/" class="btn btn-warning">Documentation</a> -->
         </div>
     </div>

@@ -100,6 +100,11 @@ div.pagination, a.prev, a.next {
     border-color: dodgerblue;
 }
 
+.btn.buymeacofee {
+    background-color: deepskyblue;
+    border-color: dodgerblue;
+}
+
 .alertbar input[type="submit"] {
     background-color: deepskyblue;
     border: 1px solid dodgerblue;
@@ -122,10 +127,12 @@ p.nav-link a:hover {
 }
 
 code.highlighter-rouge {
-	font-size: 16px;
+    font-family: 'MaruBuri-Regular';
+    font-size: 1em;
 	font-weight: bold;;
-	color: black;
-	text-decoration: solid underline deepskyblue 4px;
+	color: deepskyblue;
+    // background-color: deepskyblue;;
+	// text-decoration: solid underline deepskyblue 3px;
 }
 
 blockquote {
