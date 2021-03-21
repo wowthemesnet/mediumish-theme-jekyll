@@ -99,17 +99,21 @@ div.pagination, a.prev, a.next {
 
 .btn.subscribe {
     background-color: deepskyblue;
-    border-color: dodgerblue;
+    border-color: deepskyblue;
 }
 
 .btn.buymeacofee {
     background-color: deepskyblue;
-    border-color: dodgerblue;
+    border-color: deepskyblue;
 }
 
 .alertbar input[type="submit"] {
     background-color: deepskyblue;
-    border: 1px solid dodgerblue;
+    border: 1px solid deepskyblue;
+}
+
+.alertbar input[type="email"] {
+    height: 32px;
 }
 
 a {
