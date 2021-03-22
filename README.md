@@ -23,7 +23,7 @@ bundle exec jekyll serve
 ---
 layout: post
 title:  "Inception Movie"
-author: 번역하는 개발자
+author: bomber
 categories: [ Jekyll, tutorial ]
 tags: [red, yellow]
 image: assets/images/11.jpg
@@ -148,7 +148,7 @@ When you run `bundle exec jekyll serve`, `Bundler` uses the gems and versions as
 ---
 layout: post
 title:  "Education must also train one for quick, resolute and effective thinking."
-author: 번역하는 개발자
+author: bomber
 categories: [ Jekyll, tutorial ]
 image: assets/images/3.jpg
 beforetoc: "Markdown editor is a very powerful thing. In this article I'm going to show you what you can actually do with it, some tricks and tips while editing your post."
@@ -164,4 +164,24 @@ toc: true
 - To install the Jekyll site into the directory you're currently in, run `jekyll new` . If the existing directory isn't empty, you can pass the --force option with jekyll new . --force.
 - `jekyll new` automatically initiates `bundle install` to install the dependencies required. (If you don't want Bundler to install the gems, use `jekyll new myblog --skip-bundle`.)
 - By default, the Jekyll site installed by `jekyll new` uses a gem-based theme called Minima. With gem-based themes, some of the directories and files are stored in the theme-gem, hidden from your immediate view.
+```
+
+## 게시물 메타 정보
+
+```
+---
+layout: post
+title:  제목
+author: 작성자 계정
+categories: [카테고리1, 카테고리2]
+tags: [태그1], 태그2]
+image: assets/images/파일명.확장자 
+# image: "http://경로/파일명.확장자"
+description: 설명
+featured: true / false # featured 노출 여부
+hidden: true / false # featured, all stories 중복 노출 방지
+comments: true / false # page comment 사용 여부
+rating: 1~5까지 점수
+last_modified_at: YYYY-MM-DD
+---
 ```

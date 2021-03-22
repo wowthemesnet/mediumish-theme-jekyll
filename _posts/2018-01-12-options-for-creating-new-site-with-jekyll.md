@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Options for creating a new site with Jekyll"
-author: 번역하는 개발자
+author: bomber
 categories: [ Jekyll, tutorial ]
 image: assets/images/13.jpg
 ---

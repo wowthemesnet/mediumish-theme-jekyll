@@ -39,7 +39,7 @@ authors:
     web: https://zzom.io
     twitter: https://twitter.com/project_zzom
     description: "노잼 대변인 / 공식 정보를 제공하고 존댓말을 씁니다."
-  '번역하는 개발자':
+  bomber:
     name: Shin Sang-jae
     display_name: 번역하는 개발자   
     avatar: 'assets/images/avatar-bomber.jpg'

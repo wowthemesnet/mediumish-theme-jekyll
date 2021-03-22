@@ -22,6 +22,8 @@ post_class: post-template
             <div class="mainheading">
                 <!-- Post Title -->
                 <h1 class="posttitle">{{ page.title }}</h1>
+                <!-- Description -->
+                <p class="description">{{page.description}}</p>
             </div>
 
             <!-- Post Date -->
@@ -48,13 +50,11 @@ post_class: post-template
 
             <!-- Post Featured Image -->
             {% if page.image %}
-
             {% if site.lazyimages == "enabled" %}
             <img class="featured-image img-fluid lazyimg" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAMAAAACCAQAAAA3fa6RAAAADklEQVR42mNkAANGCAUAACMAA2w/AMgAAAAASUVORK5CYII=" data-src="{% if page.image contains "://" %}{{ page.image }}{% else %}{{ site.baseurl }}/{{ page.image }}{% endif %}" alt="{{ page.title }}">
             {% else %}
             <img class="featured-image img-fluid" src="{% if page.image contains "://" %}{{ page.image }}{% else %}{{ site.baseurl }}/{{ page.image }}{% endif %}" alt="{{ page.title }}">
             {% endif %}
-
             {% endif %}
             <!-- End Featured Image -->
 
@@ -71,6 +71,8 @@ post_class: post-template
                     </div>
                 {% endif %}
                 <!-- End Toc -->
+
+
                 {{content}}
             </div>
 

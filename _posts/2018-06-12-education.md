@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Education must also train one for quick, resolute and effective thinking."
-author: 번역하는 개발자
+author: bomber
 categories: [ Jekyll, tutorial ]
 image: assets/images/3.jpg
 beforetoc: "목차전에 쓸 말입니다. 인생을 아니더면, 찬미를 대고, 그들은 얼마나 것은 기쁘며, 황금시대다."

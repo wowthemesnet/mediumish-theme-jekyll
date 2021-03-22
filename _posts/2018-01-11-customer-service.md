@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "미묘한 용감하고"
-author: 번역하는 개발자
+author: bomber
 categories: [ 책 리뷰 ]
 tags: [red, yellow]
 image: assets/images/11.jpg
@@ -9,6 +9,7 @@ description: "피고 이 천고에 전인 때문이다."
 featured: true
 hidden: true
 rating: 4.5
+last_modified_at: 
 ---
 
 #### 물방아 인도하겠다는 

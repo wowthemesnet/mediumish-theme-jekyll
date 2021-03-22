@@ -1,6 +1,5 @@
 ---
 layout: post
-# title:  "Let's test spoilers"
 title:  "만천하의 만물은 따뜻한 생명을!"
 author: admin
 categories: [ 작업 일지, 스크럼 ]
