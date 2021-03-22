@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "게시판 기능 만들었는데 써 보지도 못하고 다 갈아 엎었다"
+title:  "게시판을 만든 후 써 보지도 못하고 갈아 엎었다"
 author: bomber
 categories: [Tools]
 tags: [GitHub, 사이트구축]
