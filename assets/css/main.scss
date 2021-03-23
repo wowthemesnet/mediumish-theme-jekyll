@@ -132,13 +132,8 @@ p.nav-link a:hover {
     color: lightslategray;
 }
 
-code.highlighter-rouge {
-    font-family: 'MaruBuri-Regular';
-    font-size: 1em;
-	font-weight: bold;;
-	color: deepskyblue;
-    // background-color: deepskyblue;;
-	// text-decoration: solid underline deepskyblue 3px;
+strong {
+	text-decoration: solid underline lightblue 4px;
 }
 
 blockquote {
