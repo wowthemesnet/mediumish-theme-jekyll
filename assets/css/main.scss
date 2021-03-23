@@ -153,6 +153,69 @@ sub {
     color: gray;
 }
 
-div.article-post p img, img.featured-image {
+div.article-post p img.shadow, img.featured-image {
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+div.article-post p img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+}
+
+div.article-post p img.small {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 25%;
+}
+
+// Tables
+// https://dev.to/dcodeyt/creating-beautiful-html-tables-with-css-428l
+
+table {
+    border-collapse: collapse;
+    margin: 25px 0;
+    font-size: 0.9em;
+    font-family: sans-serif;
+    min-width: 80%;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+
+    margin-left: auto;
+    margin-right: auto;
+}
+
+table thead tr {
+    background-color: black;
+    color: #ffffff;
+    text-align: left;
+}
+
+table th, table td {
+    padding: 12px 15px;
+}
+
+table tbody tr {
+    border-bottom: 1px solid #dddddd;
+}
+
+table tbody tr:nth-of-type(even) {
+    background-color: #f3f3f3;
+}
+
+table tbody tr:last-of-type {
+    border-bottom: 2px solid black;
+}
+
+table tbody tr.active-row {
+    font-weight: bold;
+    color: black;
+}
+
+.center {
+    display: block;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
 }
