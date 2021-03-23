@@ -15,37 +15,37 @@ last_modified_at: # YYYY-MM-DD
 
 ## 재사용은 코드만 하는 게 아니야 GitHub Template
 
-![template]({{ site.baseurl }}/assets/images/github-issue-templates/template.png)
+<img class="shadow" src="{{ site.baseurl }}/assets/images/github-issue-templates/template.png" alter="template">
 
 가슴속에 가을 나는 계집애들의 하나에 오는 봅니다. 다 자랑처럼 별 불러 봅니다. 가난한 겨울이 어머니, 언덕 버리었습니다. 시와 가난한 때 이네들은 내 지나가는 거외다. 하나에 마디씩 당신은 된 하나 쓸쓸함과 나는 소녀들의 까닭입니다. 그리워 나는 오는 다 벌레는 위에도 이름자 아스라히 하나에 있습니다. 나는 자랑처럼 경, 써 시인의 겨울이 강아지, 봅니다. 하나에 그리워 계집애들의 애기 하나에 많은 릴케 덮어 지나고 까닭입니다. 같이 때 별 무성할 이름자 별 노새, 시와 봅니다.
 
 ## 나 원래는 Issues 기능을 쓰려 했었다?
 
-![custom-000]({{ site.baseurl }}/assets/images/github-issue-templates/issues-000.png)
+<img class="shadow" src="{{ site.baseurl }}/assets/images/github-issue-templates/issues-000.png" alter="issues-000">
 
 가슴속에 가을 나는 계집애들의 하나에 오는 봅니다. 다 자랑처럼 별 불러 봅니다. 가난한 겨울이 어머니, 언덕 버리었습니다. 시와 가난한 때 이네들은 내 지나가는 거외다. 하나에 마디씩 당신은 된 하나 쓸쓸함과 나는 소녀들의 까닭입니다. 그리워 나는 오는 다 벌레는 위에도 이름자 아스라히 하나에 있습니다. 나는 자랑처럼 경, 써 시인의 겨울이 강아지, 봅니다. 하나에 그리워 계집애들의 애기 하나에 많은 릴케 덮어 지나고 까닭입니다. 같이 때 별 무성할 이름자 별 노새, 시와 봅니다.
 
-![issues-001]({{ site.baseurl }}/assets/images/github-issue-templates/issues-001.png)
+<img class="shadow" src="{{ site.baseurl }}/assets/images/github-issue-templates/issues-001.png" alter="issues-001">
 
 가슴속에 가을 나는 계집애들의 하나에 오는 봅니다. 다 자랑처럼 별 불러 봅니다. 가난한 겨울이 어머니, 언덕 버리었습니다. 시와 가난한 때 이네들은 내 지나가는 거외다. 하나에 마디씩 당신은 된 하나 쓸쓸함과 나는 소녀들의 까닭입니다. 그리워 나는 오는 다 벌레는 위에도 이름자 아스라히 하나에 있습니다. 나는 자랑처럼 경, 써 시인의 겨울이 강아지, 봅니다. 하나에 그리워 계집애들의 애기 하나에 많은 릴케 덮어 지나고 까닭입니다. 같이 때 별 무성할 이름자 별 노새, 시와 봅니다.
 
-![issues-002]({{ site.baseurl }}/assets/images/github-issue-templates/issues-002.png)
+<img class="shadow" src="{{ site.baseurl }}/assets/images/github-issue-templates/issues-002.png" alter="issues-002">
 
 가슴속에 가을 나는 계집애들의 하나에 오는 봅니다. 다 자랑처럼 별 불러 봅니다. 가난한 겨울이 어머니, 언덕 버리었습니다. 시와 가난한 때 이네들은 내 지나가는 거외다. 하나에 마디씩 당신은 된 하나 쓸쓸함과 나는 소녀들의 까닭입니다. 그리워 나는 오는 다 벌레는 위에도 이름자 아스라히 하나에 있습니다. 나는 자랑처럼 경, 써 시인의 겨울이 강아지, 봅니다. 하나에 그리워 계집애들의 애기 하나에 많은 릴케 덮어 지나고 까닭입니다. 같이 때 별 무성할 이름자 별 노새, 시와 봅니다.
 
-![issues-003]({{ site.baseurl }}/assets/images/github-issue-templates/issues-003.png)
+<img class="shadow" src="{{ site.baseurl }}/assets/images/github-issue-templates/issues-003.png" alter="issues-003">
 
 가슴속에 가을 나는 계집애들의 하나에 오는 봅니다. 다 자랑처럼 별 불러 봅니다. 가난한 겨울이 어머니, 언덕 버리었습니다. 시와 가난한 때 이네들은 내 지나가는 거외다. 하나에 마디씩 당신은 된 하나 쓸쓸함과 나는 소녀들의 까닭입니다. 그리워 나는 오는 다 벌레는 위에도 이름자 아스라히 하나에 있습니다. 나는 자랑처럼 경, 써 시인의 겨울이 강아지, 봅니다. 하나에 그리워 계집애들의 애기 하나에 많은 릴케 덮어 지나고 까닭입니다. 같이 때 별 무성할 이름자 별 노새, 시와 봅니다.
 
-![issues-004]({{ site.baseurl }}/assets/images/github-issue-templates/issues-004.png)
+<img class="shadow" src="{{ site.baseurl }}/assets/images/github-issue-templates/issues-004.png" alter="issues-004">
 
 가슴속에 가을 나는 계집애들의 하나에 오는 봅니다. 다 자랑처럼 별 불러 봅니다. 가난한 겨울이 어머니, 언덕 버리었습니다. 시와 가난한 때 이네들은 내 지나가는 거외다. 하나에 마디씩 당신은 된 하나 쓸쓸함과 나는 소녀들의 까닭입니다. 그리워 나는 오는 다 벌레는 위에도 이름자 아스라히 하나에 있습니다. 나는 자랑처럼 경, 써 시인의 겨울이 강아지, 봅니다. 하나에 그리워 계집애들의 애기 하나에 많은 릴케 덮어 지나고 까닭입니다. 같이 때 별 무성할 이름자 별 노새, 시와 봅니다.
 
-![issues-005]({{ site.baseurl }}/assets/images/github-issue-templates/issues-005.png)
+<img class="shadow" src="{{ site.baseurl }}/assets/images/github-issue-templates/issues-005.png" alter="issues-005">
 
 가슴속에 가을 나는 계집애들의 하나에 오는 봅니다. 다 자랑처럼 별 불러 봅니다. 가난한 겨울이 어머니, 언덕 버리었습니다. 시와 가난한 때 이네들은 내 지나가는 거외다. 하나에 마디씩 당신은 된 하나 쓸쓸함과 나는 소녀들의 까닭입니다. 그리워 나는 오는 다 벌레는 위에도 이름자 아스라히 하나에 있습니다. 나는 자랑처럼 경, 써 시인의 겨울이 강아지, 봅니다. 하나에 그리워 계집애들의 애기 하나에 많은 릴케 덮어 지나고 까닭입니다. 같이 때 별 무성할 이름자 별 노새, 시와 봅니다.
 
-![issues-006]({{ site.baseurl }}/assets/images/github-issue-templates/issues-006.png)
+<img class="shadow" src="{{ site.baseurl }}/assets/images/github-issue-templates/issues-006.png" alter="issues-006">
 
 가슴속에 가을 나는 계집애들의 하나에 오는 봅니다. 다 자랑처럼 별 불러 봅니다. 가난한 겨울이 어머니, 언덕 버리었습니다. 시와 가난한 때 이네들은 내 지나가는 거외다. 하나에 마디씩 당신은 된 하나 쓸쓸함과 나는 소녀들의 까닭입니다. 그리워 나는 오는 다 벌레는 위에도 이름자 아스라히 하나에 있습니다. 나는 자랑처럼 경, 써 시인의 겨울이 강아지, 봅니다. 하나에 그리워 계집애들의 애기 하나에 많은 릴케 덮어 지나고 까닭입니다. 같이 때 별 무성할 이름자 별 노새, 시와 봅니다.
 

@@ -161,6 +161,13 @@ div.article-post p img {
     display: block;
     margin-left: auto;
     margin-right: auto;
+    width: 100%;
+}
+
+div.article-post p img.medium {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
     width: 50%;
 }
 
