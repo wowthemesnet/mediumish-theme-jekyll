@@ -172,6 +172,7 @@ toc: true
 ---
 layout: post
 title:  제목
+subtitle: 부제목
 author: 작성자 계정
 categories: [카테고리1, 카테고리2]
 tags: [태그1], 태그2]
