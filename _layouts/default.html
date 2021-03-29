@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+{% if site.google_analytics %}
 {% if jekyll.environment == 'production' %}
 <!-- Global site tag (gtag.js) - Google Analytics -->
 <script async src="https://www.googletagmanager.com/gtag/js?id={{site.google_analytics}}"></script>
@@ -10,6 +11,7 @@
   gtag('js', new Date());
   gtag('config', '{{site.google_analytics}}');
 </script>
+{% endif %}
 {% endif %}
 
 <meta charset="utf-8">
