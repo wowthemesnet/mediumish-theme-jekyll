@@ -139,17 +139,12 @@ post_class: post-template
 
             <!-- Facebook like -->
             {% if site.facebook.enabled == true %}
-            <div class="fb-like" data-href="{{ site.url }}{{ page.url }}" data-width="100%" data-layout="standard" data-action="like" data-size="small" data-share="true"></div>
+            <div class="fb-like" data-href="{{ site.url }}{{ page.url }}" data-width="100%" data-layout="button" data-action="like" data-size="small" data-share="true"></div>
+            <div class="fb-save" data-uri="{{ site.url }}{{ page.url }}" data-size="small"></div>
             {% endif %}
             <!-- Facebook comments -->
             {% if site.facebook.enabled == true and page.comments == true %}
-            <!-- <div class="container">
-                <div id="comments" class="row justify-content-center mb-5">
-                    <div class="col-md-8"> -->
-                        <div class="fb-comments" data-href="{{ site.url }}{{ page.url }}" data-width="100%" data-numposts="5"></div>
-                    <!-- </div>
-                </div>
-            </div> -->
+            <div class="fb-comments" data-href="{{ site.url }}{{ page.url }}" data-width="100%" data-numposts="5"></div>
             {% endif %}
 
             <!-- Prev/Next -->
