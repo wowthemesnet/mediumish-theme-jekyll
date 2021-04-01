@@ -155,13 +155,24 @@ post_class: post-template
 <!-- Begin Comments
 ================================================== -->
 {% if site.disqus and page.comments == true %}
-    <div class="container">
-        <div id="comments" class="row justify-content-center mb-5">
-            <div class="col-md-8">
-                {% include disqus.html %}
-            </div>
+<div class="container">
+    <div id="comments" class="row justify-content-center mb-5">
+        <div class="col-md-8">
+            {% include disqus.html %}
         </div>
     </div>
+</div>
+{% endif %}
+
+<!-- Facebook comments -->
+{% if site.facebook.enabled == true %}
+<div class="container">
+    <div id="comments" class="row justify-content-center mb-5">
+        <div class="col-md-8">
+            <div class="fb-comments" data-href="https://zzom.io" data-width="100%" data-numposts="5"></div>
+        </div>
+    </div>
+</div>
 {% endif %}
 <!--End Comments
 ================================================== -->

@@ -84,6 +84,12 @@ adsense: "enabled"
 adsense-data-ad-client: "ca-pub-5050141342916334"
 # adsense-data-ad-slot: ""
 
+# Facebook
+facebook:
+  enabled: true
+  appId: "160845975895412"
+  nounce: "2WuYKKrb"
+
 # Lazy Images ("enabled" or "disabled")
 lazyimages: "disabled"
 

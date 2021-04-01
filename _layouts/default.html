@@ -14,6 +14,16 @@
 {% endif %}
 {% endif %}
 
+<!-- Facebook comments -->
+{% if site.facebook.enabled == true %}
+<meta property="fb:app_id" content="{{site.facebook.appId}}" />
+<meta property="fb:admins" content="{{site.facebook.appId}}" />
+<meta property="og:url" content="URL"  />
+<meta property="og:title" content="TITLE"  />
+<meta property="og:description" content="DESC"  />
+<meta property="og:image" content="IMG"  />
+{% endif %}
+
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 <link rel="icon" href="{{ site.baseurl }}/{{ site.favicon }}">
@@ -31,6 +41,12 @@
 
 {% capture layout %}{% if page.layout %}layout-{{ page.layout }}{% endif %}{% endcapture %}
 <body class="{{layout}}">
+    <!-- Facebook comments -->
+    {% if site.facebook.enabled == true %}
+    <div id="fb-root"></div>
+    <script async defer crossorigin="anonymous" src="https://connect.facebook.net/ko_KR/sdk.js#xfbml=1&version=v10.0&appId={{site.facebook.appId}}&autoLogAppEvents=1" nonce="{{site.facebook.nonce}}"></script>
+    {% endif %}
+
 	<!-- defer loading of font and font awesome -->
 	<noscript id="deferred-styles">
 		<link href="https://fonts.googleapis.com/css?family=Righteous%7CMerriweather:300,300i,400,400i,700,700i" rel="stylesheet">
