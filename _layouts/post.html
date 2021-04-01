@@ -165,7 +165,7 @@ post_class: post-template
 {% endif %}
 
 <!-- Facebook comments -->
-{% if site.facebook.enabled == true %}
+{% if site.facebook.enabled == true and page.comments == true %}
 <div class="container">
     <div id="comments" class="row justify-content-center mb-5">
         <div class="col-md-8">
