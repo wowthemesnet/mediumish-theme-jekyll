@@ -140,6 +140,7 @@ post_class: post-template
             <!-- Facebook like -->
             {% if site.facebook.enabled == true %}
             <div class="fb-like" data-href="{{ site.url }}{{ page.url }}" data-width="100%" data-layout="standard" data-action="like" data-size="small" data-share="true"></div>
+            <iframe src="https://www.facebook.com/plugins/like.php?href=https%3A%2F%2Fzzom.io&width=100%25&layout=standard&action=like&size=small&share=true&height=35&appId=160845975895412" width="100%" height="35" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowfullscreen="true" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"></iframe>
             <div class="fb-save" data-uri="{{ site.url }}{{ page.url }}" data-size="small"></div>
             {% endif %}
             <!-- Facebook comments -->
