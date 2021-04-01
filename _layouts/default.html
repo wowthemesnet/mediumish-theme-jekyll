@@ -36,7 +36,7 @@
 
 {% capture layout %}{% if page.layout %}layout-{{ page.layout }}{% endif %}{% endcapture %}
 <body class="{{layout}}">
-    <!-- Facebook comments -->
+    <!-- Facebook Root -->
     {% if site.facebook.enabled == true %}
     <div id="fb-root"></div>
     <script async defer crossorigin="anonymous" src="https://connect.facebook.net/ko_KR/sdk.js#xfbml=1&version=v10.0&appId={{site.facebook.appId}}&autoLogAppEvents=1" nonce="{{site.facebook.nonce}}"></script>

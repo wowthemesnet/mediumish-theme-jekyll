@@ -72,9 +72,14 @@ post_class: post-template
                 {% endif %}
                 <!-- End Toc -->
 
-
                 {{content}}
             </div>
+
+            <!-- Facebook like -->
+            {% if site.facebook.enabled == true %}
+            <div class="fb-like" data-href="{{ site.url }}{{ page.url }}" data-width="100%" data-layout="standard" data-action="like" data-size="small" data-share="true"></div>
+            <div class="fb-save" data-uri="{{ site.url }}{{ page.url }}" data-size="small"></div>
+            {% endif %}
 
             <!-- Rating -->
             {% if page.rating %}
