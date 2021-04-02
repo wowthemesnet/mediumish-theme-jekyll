@@ -72,7 +72,6 @@ post_class: post-template
                 <!-- End Toc -->
                 {{content}}
             </div>
-            <div class="fb-like" data-href="{{ site.url }}{{ page.url }}" data-width="" data-layout="standard" data-action="like" data-size="small" data-share="false"></div>
             <hr/>
 
             <!-- Rating -->
@@ -82,11 +81,6 @@ post_class: post-template
                 <!-- <strong class="mr-1">Rating:</strong> {% include star_rating.html %} -->
                 <strong class="mr-1">별점:</strong> {% include star_rating.html %}
             </div>
-            {% endif %}
-
-            <!-- Facebook save -->
-            {% if site.facebook.enabled == true %}
-            <div class="fb-save" data-uri="{{ site.url }}{{ page.url }}" data-size="small"></div>
             {% endif %}
 
             <!-- Author Box -->
@@ -108,6 +102,11 @@ post_class: post-template
             {% endif %}
 
             <hr/>
+
+            <!-- Facebook like -->
+            {% if site.facebook.enabled == true %}
+            <div class="fb-like" data-href="{{ site.url }}{{ page.url }}" data-width="" data-layout="standard" data-action="like" data-size="small" data-share="false"></div>
+            {% endif %}            
 
             <!-- Facebook comments -->
             {% if site.facebook.enabled == true and page.comments == true %}
