@@ -85,8 +85,6 @@ post_class: post-template
             </div>
             {% endif %}
 
-            <div class="fb-like row" data-href="{{ site.url }}{{ page.url }}" data-width="100%" data-layout="button" data-action="like" data-size="small" data-share="true"></div><br/>
-
             <!-- Author Box -->
             {% if page.author %}
             <div class="row post-top-meta">
@@ -109,7 +107,7 @@ post_class: post-template
 
             <!-- Facebook like -->
             {% if site.facebook.enabled == true %}
-
+            <div class="fb-save row" data-uri="{{ site.url }}{{ page.url }}" data-size="small"></div><br/>
             {% endif %}
             <!-- Facebook comments -->
             {% if site.facebook.enabled == true and page.comments == true %}
