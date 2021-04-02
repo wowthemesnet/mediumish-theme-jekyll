@@ -85,7 +85,7 @@ post_class: post-template
             </div>
             {% endif %}
 
-            <div class="fb-like row d-flex justify-content-between " data-href="{{ site.url }}{{ page.url }}" data-width="100%" data-layout="button" data-action="like" data-size="small" data-share="true"></div><br/>
+            <div class="fb-like row" data-href="{{ site.url }}{{ page.url }}" data-width="100%" data-layout="button" data-action="like" data-size="small" data-share="true"></div><br/>
 
             <!-- Author Box -->
             {% if page.author %}
@@ -109,9 +109,9 @@ post_class: post-template
 
             <!-- Facebook like -->
             {% if site.facebook.enabled == true %}
-            <div class="fb-like row d-flex justify-content-between " data-href="{{ site.url }}{{ page.url }}" data-width="100%" data-layout="button" data-action="like" data-size="small" data-share="true"></div><br/>
-            <div class="fb-save row d-flex justify-content-between " data-uri="{{ site.url }}{{ page.url }}" data-size="small"></div><br/>
-            <!-- <div class="fb-share-button row d-flex justify-content-between " data-href="{{ site.url }}{{ page.url }}" data-layout="button" data-size="small"><a target="_blank" href="https://www.facebook.com/sharer/sharer.php?u={{ site.url }}{{ page.url }}&amp;src=sdkpreparse" class="fb-xfbml-parse-ignore">공유하기</a></div> -->
+            <div class="fb-like row" data-href="{{ site.url }}{{ page.url }}" data-width="100%" data-layout="button" data-action="like" data-size="small" data-share="true"></div><br/>
+            <div class="fb-save row" data-uri="{{ site.url }}{{ page.url }}" data-size="small"></div><br/>
+            <!-- <div class="fb-share-button row" data-href="{{ site.url }}{{ page.url }}" data-layout="button" data-size="small"><a target="_blank" href="https://www.facebook.com/sharer/sharer.php?u={{ site.url }}{{ page.url }}&amp;src=sdkpreparse" class="fb-xfbml-parse-ignore">공유하기</a></div> -->
             {% endif %}
             <!-- Facebook comments -->
             {% if site.facebook.enabled == true and page.comments == true %}
