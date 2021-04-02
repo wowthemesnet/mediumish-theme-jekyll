@@ -85,34 +85,6 @@ post_class: post-template
             </div>
             {% endif %}
 
-
-
-            <!-- Categories -->
-            <!-- <div class="after-post-cats">
-                <h6>카테고리</h6>
-                <ul class="tags mb-4">
-                    {% assign sortedCategories = page.categories | sort %}
-                    {% for category in sortedCategories %}
-                    <li>
-                        <a class="smoothscroll" href="{{site.baseurl}}/categories#{{ category | replace: " ","-" }}">{{ category }}</a>
-                    </li>
-                    {% endfor %}
-                </ul>
-            </div> -->
-
-            <!-- Tags -->
-            <!-- <div class="after-post-tags">
-                <h6>태그</h6>
-                <ul class="tags">
-                    {% assign sortedTags = page.tags | sort %}
-                    {% for tag in sortedTags %}
-                    <li>
-                        <a class="smoothscroll" href="{{site.baseurl}}/tags#{{ tag | replace: " ","-" }}">#{{ tag }}</a>
-                    </li>
-                    {% endfor %}
-                </ul>
-            </div> -->
-
             <!-- Author Box -->
             {% if page.author %}
             <div class="row post-top-meta">

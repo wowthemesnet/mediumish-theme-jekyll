@@ -2,7 +2,7 @@
     <!-- Categories -->
     <div class="post-cats">
         <p>카테고리</p>
-        <ul class="tags mb-4">
+        <ul class="tags ml-1 mr-1">
             {% assign sortedCategories = page.categories | sort %}
             {% for category in sortedCategories %}
             <li>
@@ -17,7 +17,7 @@
     <!-- Tags -->
     <div class="post-tags">
         <p>태그</p>
-        <ul class="tags">
+        <ul class="tags ml-1 mr-1">
             {% assign sortedTags = page.tags | sort %}
             {% for tag in sortedTags %}
             <li>
