@@ -107,17 +107,17 @@ post_class: post-template
 
             <!-- Facebook like -->
             {% if site.facebook.enabled == true %}
-            <div class="fb-like row" data-href="{{ site.url }}{{ page.url }}" data-width="100%" data-layout="button" data-action="like" data-size="small" data-share="true"></div><br/>
-            <div class="fb-save row" data-uri="{{ site.url }}{{ page.url }}" data-size="small"></div><br/>
-            <!-- <div class="fb-share-button row" data-href="{{ site.url }}{{ page.url }}" data-layout="button" data-size="small"><a target="_blank" href="https://www.facebook.com/sharer/sharer.php?u={{ site.url }}{{ page.url }}&amp;src=sdkpreparse" class="fb-xfbml-parse-ignore">공유하기</a></div> -->
+            <div class="fb-like row d-flex justify-content-between " data-href="{{ site.url }}{{ page.url }}" data-width="100%" data-layout="button" data-action="like" data-size="small" data-share="true"></div><br/>
+            <div class="fb-save row d-flex justify-content-between " data-uri="{{ site.url }}{{ page.url }}" data-size="small"></div><br/>
+            <!-- <div class="fb-share-button row d-flex justify-content-between " data-href="{{ site.url }}{{ page.url }}" data-layout="button" data-size="small"><a target="_blank" href="https://www.facebook.com/sharer/sharer.php?u={{ site.url }}{{ page.url }}&amp;src=sdkpreparse" class="fb-xfbml-parse-ignore">공유하기</a></div> -->
             {% endif %}
             <!-- Facebook comments -->
             {% if site.facebook.enabled == true and page.comments == true %}
-            <div class="fb-comments" data-href="{{ site.url }}{{ page.url }}" data-width="100%" data-numposts="5"></div>
+            <div class="fb-comments row d-flex justify-content-between " data-href="{{ site.url }}{{ page.url }}" data-width="100%" data-numposts="5"></div>
             {% endif %}
 
             <!-- Prev/Next -->
-            <div class="row PageNavigation d-flex justify-content-between font-weight-bold">
+            <div class="PageNavigation row d-flex justify-content-between font-weight-bold">
             {% if page.previous.url %}
             <!-- <a class="prev d-block col-md-6" href="{{ site.baseurl }}/{{page.previous.url}}"> &laquo; {{page.previous.title}}</a> -->
             <a class="prev d-block col-md-6" href="{{page.previous.url | prepend: site.baseurl | replace: '//', '/' }}"> &laquo; 이전: {{page.previous.title}}</a>
