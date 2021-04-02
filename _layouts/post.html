@@ -105,9 +105,9 @@ post_class: post-template
 
             <hr/>
 
-            <!-- Facebook like -->
+            <!-- Facebook save -->
             {% if site.facebook.enabled == true %}
-            <div class="fb-save row" data-uri="{{ site.url }}{{ page.url }}" data-size="small"></div><br/>
+            <div class="fb-save" data-uri="{{ site.url }}{{ page.url }}" data-size="small"></div>
             {% endif %}
             <!-- Facebook comments -->
             {% if site.facebook.enabled == true and page.comments == true %}
