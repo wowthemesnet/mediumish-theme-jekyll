@@ -1,37 +1,69 @@
-<div class="share sticky-top sticky-top-offset">
-    <p>
-        <!-- Share -->
-        공유하기
-    </p>
-    <ul>
-        <li class="ml-1 mr-1">
-            <a target="_blank" href="https://twitter.com/intent/tweet?text={{ page.title }}&url={{ page.url | absolute_url }}" onclick="window.open(this.href, 'twitter-share', 'width=550,height=235');return false;">
-                <i class="fab fa-twitter"></i>
-            </a>
-        </li>
-
-        <li class="ml-1 mr-1">
-            <a target="_blank" href="https://facebook.com/sharer.php?u={{ page.url | absolute_url }}" onclick="window.open(this.href, 'facebook-share', 'width=550,height=435');return false;">
-                <i class="fab fa-facebook-f"></i>
-            </a>
-        </li>
-
-        <!-- <li class="ml-1 mr-1">
-            <a target="_blank" href="https://www.linkedin.com/shareArticle?mini=true&url={{ page.url | absolute_url }}" onclick="window.open(this.href, 'width=550,height=435');return false;">
-                <i class="fab fa-linkedin-in"></i>
-            </a>
-        </li> -->
-
-    </ul>
-
-    <!-- Facebook comments -->
-    <!-- {% if site.facebook.enabled == true and page.comments == true %}
-    <div class="sep">
+<div class="sticky-top sticky-top-offset">
+    <!-- Categories -->
+    <div class="post-cats">
+        <p>카테고리</p>
+        <ul class="tags mb-4">
+            {% assign sortedCategories = page.categories | sort %}
+            {% for category in sortedCategories %}
+            <li>
+                <a class="smoothscroll" href="{{site.baseurl}}/categories#{{ category | replace: " ","-" }}">{{ category }}</a>
+            </li>
+            {% endfor %}
+        </ul>
     </div>
-    <ul>
-        <li>
-        <span class="small smoothscroll fb-comments-count" data-href="https://example.com/"></span>
-        </li>
-    </ul>
-    {% endif %} -->
+
+    <hr/>
+
+    <!-- Tags -->
+    <div class="post-tags">
+        <p>태그</p>
+        <ul class="tags">
+            {% assign sortedTags = page.tags | sort %}
+            {% for tag in sortedTags %}
+            <li>
+                <a class="smoothscroll" href="{{site.baseurl}}/tags#{{ tag | replace: " ","-" }}">#{{ tag }}</a>
+            </li>
+            {% endfor %}
+        </ul>
+    </div>
+
+    <hr/>        
+
+    <div class="share">
+        <p>공유하기</p>
+        <ul>
+            <li class="ml-1 mr-1">
+                <a target="_blank" href="https://twitter.com/intent/tweet?text={{ page.title }}&url={{ page.url | absolute_url }}" onclick="window.open(this.href, 'twitter-share', 'width=550,height=235');return false;">
+                    <i class="fab fa-twitter"></i>
+                </a>
+            </li>
+
+            <li class="ml-1 mr-1">
+                <a target="_blank" href="https://facebook.com/sharer.php?u={{ page.url | absolute_url }}" onclick="window.open(this.href, 'facebook-share', 'width=550,height=435');return false;">
+                    <i class="fab fa-facebook-f"></i>
+                </a>
+            </li>
+
+            <!-- <li class="ml-1 mr-1">
+                <a target="_blank" href="https://www.linkedin.com/shareArticle?mini=true&url={{ page.url | absolute_url }}" onclick="window.open(this.href, 'width=550,height=435');return false;">
+                    <i class="fab fa-linkedin-in"></i>
+                </a>
+            </li> -->
+        </ul>
+
+        <!-- Facebook comments -->
+        <!-- {% if site.facebook.enabled == true and page.comments == true %}
+        <div class="sep">
+        </div>
+        <ul>
+            <li>
+            <span class="small smoothscroll fb-comments-count" data-href="https://example.com/"></span>
+            </li>
+        </ul>
+        {% endif %} -->
+    </div>
+
+
 </div>
+
+

@@ -221,3 +221,33 @@ table tbody tr.active-row {
     margin-left: auto;
     margin-right: auto;
 }
+
+.share, .post-cats, .post-tags {
+    text-align: center;
+}
+
+.share p, .post-cats p, .post-tags p {
+    color: black;
+    margin-bottom: 10px;
+    font-size: 0.95rem;
+}
+
+.shareul li, .post-cats ul li, .post-tags ul li {
+    display: inline-block;
+    margin-bottom: 9px;
+    line-height: 2.5em;
+}
+
+.share ul, .post-cats ul, .post-tags ul {
+    padding-left: 0;
+    margin-left: 0;
+}
+
+.share ul li i.fa, .post-cats ul li i.fa, .post-tags ul li i.fa {
+    border: 1px solid #ddd;
+    width: 30px;
+    height: 30px;
+    line-height: 30px;
+    text-align: center;
+    border-radius: 50%;
+}

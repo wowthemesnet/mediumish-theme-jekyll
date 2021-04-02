@@ -87,8 +87,8 @@ post_class: post-template
 
 
 
-            <!-- Post Categories -->
-            <div class="after-post-cats">
+            <!-- Categories -->
+            <!-- <div class="after-post-cats">
                 <h6>카테고리</h6>
                 <ul class="tags mb-4">
                     {% assign sortedCategories = page.categories | sort %}
@@ -98,13 +98,10 @@ post_class: post-template
                     </li>
                     {% endfor %}
                 </ul>
-            </div>
-            <!-- End Categories -->
+            </div> -->
 
-
-
-            <!-- Post Tags -->
-            <div class="after-post-tags">
+            <!-- Tags -->
+            <!-- <div class="after-post-tags">
                 <h6>태그</h6>
                 <ul class="tags">
                     {% assign sortedTags = page.tags | sort %}
@@ -114,8 +111,7 @@ post_class: post-template
                     </li>
                     {% endfor %}
                 </ul>
-            </div>
-            <!-- End Tags -->
+            </div> -->
 
             <!-- Author Box -->
             {% if page.author %}
@@ -139,9 +135,9 @@ post_class: post-template
 
             <!-- Facebook like -->
             {% if site.facebook.enabled == true %}
-            <!-- <div class="fb-like" data-href="{{ site.url }}{{ page.url }}" data-width="100%" data-layout="button" data-action="like" data-size="small" data-share="true"></div> -->
-            <div class="fb-share-button" data-href="{{ site.url }}{{ page.url }}" data-layout="button" data-size="small"><a target="_blank" href="https://www.facebook.com/sharer/sharer.php?u={{ site.url }}{{ page.url }}&amp;src=sdkpreparse" class="fb-xfbml-parse-ignore">공유하기</a></div>
-            <!-- <div class="fb-save" data-uri="{{ site.url }}{{ page.url }}" data-size="small"></div> -->
+            <div class="fb-save" data-uri="{{ site.url }}{{ page.url }}" data-size="small"></div>
+            <div class="fb-like" data-href="{{ site.url }}{{ page.url }}" data-width="100%" data-layout="button" data-action="like" data-size="small" data-share="true"></div>
+            <!-- <div class="fb-share-button" data-href="{{ site.url }}{{ page.url }}" data-layout="button" data-size="small"><a target="_blank" href="https://www.facebook.com/sharer/sharer.php?u={{ site.url }}{{ page.url }}&amp;src=sdkpreparse" class="fb-xfbml-parse-ignore">공유하기</a></div> -->
             {% endif %}
             <!-- Facebook comments -->
             {% if site.facebook.enabled == true and page.comments == true %}
