@@ -12,6 +12,6 @@
                 <figure>        
         <img class="featured-image img-fluid" src="{{site.baseurl}}/assets/images/about/sparkler-677774_1280.jpg" alt="book-glasses-clock" />
         <figcaption>
-        <a href="https://pixabay.com/photos/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=677774" target="_blank">Free-Photos</a>님의 작품입니다.
+        <a href="https://pixabay.com/photos/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=677774" target="_blank">Free-Photos</a>님의 작품
         </figcaption>
         </figure>
