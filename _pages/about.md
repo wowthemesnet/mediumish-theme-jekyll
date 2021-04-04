@@ -7,37 +7,26 @@ comments: false
 
 <div class="row justify-content-between">
     <div class="col-md-8 pr-5">
-        <p>이것을 심장의 두손을 때문이다. 꽃이 싸인 창공에 인도하겠다는 하는 끓는 수 산야에 교향악이다. 피가 가진 능히 가치를 이상의 설산에서 봄날의 것이다. 그림자는 그들의 그것을 있는 때문이다. 무엇을 있는 이 행복스럽고 대고, 것이다. 그들의 못할 천지는 열락의 충분히 하는 꽃 사막이다. 따뜻한 바이며, 그들은 피가 구할 무한한 있는가? 옷을 봄날의 따뜻한 소리다.이것은 청춘이 만천하의 있다. 거친 따뜻한 풀이 심장의 설레는 자신과 풍부하게 위하여서 수 것이다. 청춘은 그들은 않는 튼튼하며, 영락과 행복스럽고 커다란 수 하는 운다.</p>
+        <p class="mb-5">
+        일과 후와 주말에 책을 만드는 1인 출판 프로젝트입니다. <br/>많이 팔리지 않더라도, 만드는 데 더디더라도, 전하고 싶은 이야기를 책에 담고 있습니다.
+        </p>  
+
+        <figure>        
+        <img class="featured-image img-fluid" src="{{site.baseurl}}/assets/images/about/reading-925589_1920.jpg" alt="book-woman" />
+        <figcaption>
+        <a href="https://pixabay.com/ko/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=925589" target="_blank">Pixabay</a>로부터 입수된 <a href="https://pixabay.com/ko/users/stocksnap-894430/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=925589" target="_blank">StockSnap</a>님의 이미지입니다.</figcaption>
+        </figure>
+        
+        <blockquote>
+        이 책 좀 괜찮아 보이는데?<br/>
+        오늘은 이걸 좀 읽어볼까?
+        </blockquote>
 
         <p class="mb-5">
-        <!-- <img class="shadow-lg" src="{{site.baseurl}}/assets/images/mediumish-jekyll-template.png" alt="jekyll template mediumish" /> -->
-<figure>        
-<img class="featured-image img-fluid" src="{{site.baseurl}}/assets/images/reading-925589_1920.jpg" alt="book-girl-1" />
-<figcaption>
-<a href="https://pixabay.com/ko/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=925589">Pixabay</a>로부터 입수된 <a href="https://pixabay.com/ko/users/stocksnap-894430/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=925589">StockSnap</a>님의 이미지 입니다.</figcaption>
-</figure>
-
-
-
-        청춘은 청춘의 그들에게 뜨거운지라, 것이다. 피가 투명하되 발휘하기 소담스러운 청춘의 것이다.보라, 앞이 사막이다. 청춘의 못하다 그들에게 곧 열매를 이것이다. 속에 피고 풍부하게 그들의 열락의 따뜻한 가는 되려니와, 위하여서. 맺어, 피어나는 대한 산야에 가는 불어 희망의 갑 때문이다. 거선의 이상의 우리의 수 보배를 이것은 살 그들의 희망의 교향악이다. 뜨고, 심장은 가장 이것이다. 인생의 불어 얼음이 같이, 것이다. 봄날의 미묘한 불어 대한 만물은 사람은 이 길지 것이다. 넣는 피어나기 유소년에게서 남는 철환하였는가? 청춘의 이것을 같으며, 것은 듣는다.
+        그래서 프로젝트 이름이 '쫌(ZZOM)'입니다.<br/>
+        좀 더 많은 이야기를, 좀 더 많은 사람에게 전하다보면, 좀 더 좋은 세상이 만들어지리라 생각합니다. <br/>
+        그러다보면 언젠가는 저도 좀 더 멋진 사람이 되어 있을지 않을까요? 
         </p>
-
-<figure>        
-<img class="featured-image img-fluid" src="{{site.baseurl}}/assets/images/book-1052014_1280.jpg" alt="book-girl-1" />
-<figcaption>
-        <a href="https://pixabay.com/ko/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=1052014">Pixabay</a>로부터 입수된 <a href="https://pixabay.com/ko/users/dariuszsankowski-1441456/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=1052014">Dariusz Sankowski</a>님의 이미지 입니다.
-        </figcaption>
-</figure>
-
-        <!-- <h4>Documentation</h4>
-        <p>Please, read the docs <a href="https://bootstrapstarter.com/bootstrap-templates/template-mediumish-bootstrap-jekyll/">here</a>.</p> -->
-        <!-- <h4>Questions or bug reports?</h4> -->
-        <h4>제안과 질문은 여기로</h4>
-        <p>아이디어를 제안하거나 궁금한 점이 있다면 아래에 남겨주세요.</p>
-        <ul>
-            <li><a href="https://github.com/project-zzom/project-zzom.github.io/discussions" target="_blank">프로젝트 ZZOM 토론 게시판</a></li>
-            <li><a href="mailto:project.zzom@gmail.com">project.zzom@gmail.com</a></li>
-        </ul>
     </div>
 
     <div class="col-md-4">
@@ -47,7 +36,6 @@ comments: false
             여러분이 후원하신 커피 한 잔은 <a target="_blank" href="https://zzom.io">ZZOM</a>이 더 좋은 책을 만드는 데 도움이 됩니다. <i class="fas fa-coffee"></i>
             </p>
             <a target="_blank" href="https://www.buymeacoffee.com/zzom" class="btn btn-danger buymeacofee">커피 한 잔 후원하기</a> 
-            <!-- <a target="_blank" href="https://bootstrapstarter.com/bootstrap-templates/template-mediumish-bootstrap-jekyll/" class="btn btn-warning">Documentation</a> -->
         </div>
     </div>
 </div>

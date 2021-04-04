@@ -1,5 +1,6 @@
 <div class="sticky-top sticky-top-offset">
     <!-- Categories -->
+    {% if page.categories.size != 0 %}
     <div class="post-cats">
         <p>카테고리</p>
         <ul class="tags ml-1 mr-1">
@@ -11,10 +12,11 @@
             {% endfor %}
         </ul>
     </div>
-
     <hr/>
+    {% endif %}
 
     <!-- Tags -->
+    {% if page.tags.size != 0 %}
     <div class="post-tags">
         <p>태그</p>
         <ul class="tags ml-1 mr-1">
@@ -26,8 +28,8 @@
             {% endfor %}
         </ul>
     </div>
-
-    <hr/>        
+    <hr/>
+    {% endif %}
 
     <div class="share">
         <p>공유하기</p>

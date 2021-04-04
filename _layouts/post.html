@@ -49,11 +49,14 @@ post_class: post-template
 
             <!-- Post Featured Image -->
             {% if page.image %}
+            <figure>
             {% if site.lazyimages == "enabled" %}
             <img class="featured-image img-fluid lazyimg" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAMAAAACCAQAAAA3fa6RAAAADklEQVR42mNkAANGCAUAACMAA2w/AMgAAAAASUVORK5CYII=" data-src="{% if page.image contains "://" %}{{ page.image }}{% else %}{{ site.baseurl }}/{{ page.image }}{% endif %}" alt="{{ page.title }}">
             {% else %}
             <img class="featured-image img-fluid" src="{% if page.image contains "://" %}{{ page.image }}{% else %}{{ site.baseurl }}/{{ page.image }}{% endif %}" alt="{{ page.title }}">
             {% endif %}
+            <figcaption>{{page.image-caption}}</figcaption>
+            </figure>
             {% endif %}
             <!-- End Featured Image -->
 
@@ -77,7 +80,6 @@ post_class: post-template
             <!-- Rating -->
             {% if page.rating %}
             <div class="rating mb-4 d-flex align-items-center">
-                <h6>평가</h6>
                 <!-- <strong class="mr-1">Rating:</strong> {% include star_rating.html %} -->
                 <strong class="mr-1">별점:</strong> {% include star_rating.html %}
             </div>
@@ -117,11 +119,11 @@ post_class: post-template
             <div class="PageNavigation row d-flex justify-content-between font-weight-bold">
             {% if page.previous.url %}
             <!-- <a class="prev d-block col-md-6" href="{{ site.baseurl }}/{{page.previous.url}}"> &laquo; {{page.previous.title}}</a> -->
-            <a class="prev d-block col-md-6" href="{{page.previous.url | prepend: site.baseurl | replace: '//', '/' }}"> &laquo; 이전: {{page.previous.title}}</a>
+            <a class="prev d-block col-md-6" href="{{page.previous.url | prepend: site.baseurl | replace: '//', '/' }}"> &laquo;  <strong>이전 글</strong> {{page.previous.title}}</a>
             {% endif %}
             {% if page.next.url %}
             <!-- <a class="next d-block col-md-6 text-lg-right" href="{{ site.baseurl }}/{{page.next.url}}">{{page.next.title}} &raquo; </a> -->
-            <a class="next d-block col-md-6 text-lg-right" href="{{page.next.url | prepend: site.baseurl | replace: '//', '/' }}">다음: {{page.next.title}} &raquo; </a>
+            <a class="next d-block col-md-6 text-lg-right" href="{{page.next.url | prepend: site.baseurl | replace: '//', '/' }}">{{page.next.title}} <strong>다음 글</strong> &raquo; </a>
             {% endif %}
             <div class="clearfix"></div>
             </div>

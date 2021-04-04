@@ -132,7 +132,7 @@ p.nav-link a:hover {
     color: lightslategray;
 }
 
-strong {
+.article-post strong {
 	text-decoration: solid underline lightblue 4px;
 }
 
@@ -142,31 +142,33 @@ blockquote {
 
 figcaption {
     font-size: 0.8em;
+    text-align: right;
+    color: gray;
 }
 
 sub {
     color: gray;
 }
 
-div.article-post p img.shadow, img.featured-image {
+div.article-post figure img.shadow, img.featured-image {
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
-div.article-post p img {
+div.article-post figure img {
     display: block;
     margin-left: auto;
     margin-right: auto;
     width: 100%;
 }
 
-div.article-post p img.medium {
+div.article-post figure img.medium {
     display: block;
     margin-left: auto;
     margin-right: auto;
     width: 50%;
 }
 
-div.article-post p img.small {
+div.article-post figure img.small {
     display: block;
     margin-left: auto;
     margin-right: auto;
@@ -250,4 +252,12 @@ table tbody tr.active-row {
     line-height: 30px;
     text-align: center;
     border-radius: 50%;
+}
+
+.PageNavigation strong {
+    color: black;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    line-height: 1.8em;
 }
