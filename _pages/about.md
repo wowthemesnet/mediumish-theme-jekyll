@@ -8,7 +8,7 @@ comments: false
 <div class="row justify-content-between">
     <div class="col-md-8 pr-5">
         <p class="mb-5">
-        일과 후와 주말에 책을 만드는 1인 출판 프로젝트입니다. <br/>많이 팔리지 않더라도, 만드는 데 더디더라도, 전하고 싶은 이야기를 책에 담고 있습니다.
+        일과 후와 주말에 책을 만드는 1인 출판 프로젝트입니다. <br/>만드는 데 더디더라도, 전하고 싶은 이야기를 차곡차곡 책에 담아 드릴게요.
         </p>  
 
         <figure>        
@@ -24,9 +24,29 @@ comments: false
 
         <p class="mb-5">
         그래서 프로젝트 이름이 '쫌(ZZOM)'입니다.<br/>
-        좀 더 많은 이야기를, 좀 더 많은 사람에게 전하다보면, 좀 더 좋은 세상이 만들어지리라 생각합니다. <br/>
+        좀 더 많은 이야기를, 좀 더 많은 사람에게 전하다보면,<br/> 
+        좀 더 좋은 세상이 만들어지리라 생각합니다. <br/>
         그러다보면 언젠가는 저도 좀 더 멋진 사람이 되어 있을지 않을까요? 
         </p>
+
+        <h2>ZZOM 프로젝트 결과물</h2>
+        <p class="mb-5">
+        현재 작업 중인 도서는 다음과 같습니다.
+        </p>
+        <figure><a href="https://zzom.io/graphic-recording/" target="_blank">        
+        <img class="featured-image img-fluid" src="{{site.baseurl}}/assets/images/about/graphic-recording.png" alt="graphic-recording" /></a>
+        <figcaption>처음 배우는 그래픽 레코딩</figcaption>
+        </figure>
+
+
+        <h2>타 출판사와 협업한 결과물</h2>
+        <p class="mb-5">
+        ZZOM 프로젝트를 하기 전에 여러 출판사에서 작업했던 번역서는 다음과 같습니다.
+        </p>
+        <figure><a href="https://codelabor.github.io/translating-developer/" target="_blank">        
+        <img class="featured-image img-fluid" src="{{site.baseurl}}/assets/images/about/translating-developer.png" alt="translating-developer" /></a>
+        <figcaption>타 출판사와 협업한 번역서</figcaption>
+        </figure>
     </div>
 
     <div class="col-md-4">

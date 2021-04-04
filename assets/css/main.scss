@@ -88,6 +88,8 @@ div.pagination, a.prev, a.next {
 
 * {
 	font-family: 'MaruBuri-Regular';
+    word-wrap: break-word;
+    word-break: keep-all;
 }
 
 .btn.follow {
@@ -260,4 +262,16 @@ table tbody tr.active-row {
 
 h1, h2, h3, h4, h5, h6 {
     line-height: 1.8em;
+}
+
+h2  {
+    font-size: 1.4rem;
+}
+
+h3  {
+    font-size: 1.2rem;
+}
+
+h4, h5, h6  {
+    font-size: 1.0rem;
 }
