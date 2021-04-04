@@ -14,7 +14,7 @@ comments: false
         <figure>        
         <img class="featured-image img-fluid" src="{{site.baseurl}}/assets/images/about/reading-925589_1920.jpg" alt="book-woman" />
         <figcaption>
-        <a href="https://pixabay.com/ko/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=925589" target="_blank">Pixabay</a>로부터 입수된 <a href="https://pixabay.com/ko/users/stocksnap-894430/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=925589" target="_blank">StockSnap</a>님의 이미지입니다.</figcaption>
+        <a href="https://pixabay.com/ko/users/stocksnap-894430/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=925589" target="_blank">StockSnap</a>님의 작품입니다.</figcaption>
         </figure>
         
         <p class="mb-5">
@@ -30,7 +30,7 @@ comments: false
         <figure>        
         <img class="featured-image img-fluid" src="{{site.baseurl}}/assets/images/about/book-1052014_1280.jpg" alt="book-glasses-clock" />
         <figcaption>
-        <a href="https://pixabay.com/ko/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=1052014" target="_blank">Pixabay</a>로부터 입수된 <a href="https://pixabay.com/ko/users/dariuszsankowski-1441456/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=1052014" target="_blank">Dariusz Sankowski</a>님의 이미지입니다.
+        <a href="https://pixabay.com/ko/users/dariuszsankowski-1441456/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=1052014" target="_blank">Dariusz Sankowski</a>님의 작품입니다.
         </figcaption>
         </figure>
 
@@ -56,7 +56,7 @@ comments: false
         <figure>        
         <img class="featured-image img-fluid" src="{{site.baseurl}}/assets/images/about/sparkler-677774_1280.jpg" alt="book-glasses-clock" />
         <figcaption>
-        <a href="https://pixabay.com/ko/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=677774" target="_blank">Pixabay</a>로부터 입수된 <a href="https://pixabay.com/photos/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=677774" target="_blank">Free-Photos</a>님의 이미지입니다.
+        <a href="https://pixabay.com/photos/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=677774" target="_blank">Free-Photos</a>님의 작품입니다.
         </figcaption>
         </figure>
 

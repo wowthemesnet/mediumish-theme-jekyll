@@ -14,7 +14,7 @@ comments: false
         <figure>        
         <img class="featured-image img-fluid" src="{{site.baseurl}}/assets/images/support/people-2583442_1920.jpg" alt="laptop-coffee-woman" />
         <figcaption>
-        <a href="https://pixabay.com/ko/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=2583442">Pixabay</a>로부터 입수된 <a href="https://pixabay.com/ko/users/stocksnap-894430/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=2583442">StockSnap</a>님의 이미지입니다.</figcaption>
+        <a href="https://pixabay.com/ko/users/stocksnap-894430/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=2583442">StockSnap</a>님의 작품입니다.</figcaption>
         </figure>
     </div>
 
