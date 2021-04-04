@@ -51,6 +51,11 @@ comments: false
 
     <div class="col-md-4">
         <div class="sticky-top sticky-top-80">
+            <h5>책 구매는 여기로</h5>
+            <p>
+            준비 중입니다.
+            </p>
+
             <h5>후원은 여기로</h5>
             <p>
             여러분이 후원하신 커피 한 잔은 <a target="_blank" href="https://zzom.io">ZZOM</a>이 더 좋은 책을 만드는 데 도움이 됩니다. <i class="fas fa-coffee"></i>
