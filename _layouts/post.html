@@ -107,12 +107,10 @@ post_class: post-template
             <!-- Prev/Next -->
             <div class="PageNavigation row d-flex justify-content-between font-weight-bold">
             {% if page.previous.url %}
-            <!-- <a class="prev d-block col-md-6" href="{{ site.baseurl }}/{{page.previous.url}}"> &laquo; {{page.previous.title}}</a> -->
-            <a class="prev d-block col-md-6" href="{{page.previous.url | prepend: site.baseurl | replace: '//', '/' }}"> &laquo;  <strong>이전 글</strong> {{page.previous.title}}</a>
+            <a class="prev d-block col-md-6" href="{{page.previous.url | prepend: site.baseurl | replace: '//', '/' }}"> &laquo;  <strong>이전 글</strong><br/> {{page.previous.title}}</a>
             {% endif %}
             {% if page.next.url %}
-            <!-- <a class="next d-block col-md-6 text-lg-right" href="{{ site.baseurl }}/{{page.next.url}}">{{page.next.title}} &raquo; </a> -->
-            <a class="next d-block col-md-6 text-lg-right" href="{{page.next.url | prepend: site.baseurl | replace: '//', '/' }}">{{page.next.title}} <strong>다음 글</strong> &raquo; </a>
+            <a class="next d-block col-md-6 text-lg-right" href="{{page.next.url | prepend: site.baseurl | replace: '//', '/' }}"><strong>다음 글</strong> &raquo;<br/> {{page.next.title}}</a>
             {% endif %}
             <div class="clearfix"></div>
             </div>

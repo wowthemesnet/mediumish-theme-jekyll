@@ -6,7 +6,9 @@ logo: 'assets/images/zzom-logo-dark (48 x 48).png'
 favicon: 'favicon.ico'
 baseurl: 
 google_analytics: 'UA-192688751-1'
-mailchimp-list: 'https://gmail.us2.list-manage.com/subscribe/post?u=f0c2c860abc78e38661cc5458&amp;id=fa3043bfc8'
+# mail-list: 
+  # mailchimp: 'https://gmail.us2.list-manage.com/subscribe/post?u=f0c2c860abc78e38661cc5458&amp;id=fa3043bfc8'
+  # stibee: 'https://stibee.com/api/v1.0/lists/3-GRmsmbil90tLfypP8ED7r_XfRLNA==/public/subscribers'
 include: ["_pages"]
 permalink: /:title/
 
@@ -16,7 +18,6 @@ authors:
     name: admin
     display_name: ZZOM
     avatar: 'assets/images/zzom-logo-dark (200 x 200).png'
-    # gravatar: e56154546cf4be74e393c62d1ae9f9d4
     email: project.zzom@gmail.com
     web: https://zzom.io
     twitter: https://twitter.com/project_zzom
@@ -25,7 +26,6 @@ authors:
     name: Shin Sang-jae
     display_name: 번역하는 개발자   
     avatar: 'assets/images/avatar-bomber.jpg'
-    # gravatar: b1cc14991db7a456fcd761680bbc8f81
     email: codelabor@gmail.com
     web: https://about.me/codelabor
     twitter: https://twitter.com/codelabor
