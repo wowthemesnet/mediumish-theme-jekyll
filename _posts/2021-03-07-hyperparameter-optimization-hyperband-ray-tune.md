@@ -90,53 +90,55 @@ La idea detrás del algoritmo deriva directamente de su nombre:
 + Descartar la mitad menos prometedora cumplido un presupuesto determinado. 
 + Repetir hasta que quede sólo una configuración.
 
-El objeto de **SH** asignar exponencialmente más recursos a configuraciones más prometedoras. En su funcionamiento podemos observar que es similar a Random Search, pero con la diferencia de que aplica early stopping descartando aquellas configuraciones que peor desempeño estén obteniendo.
+El objetivo de **SH** es asignar exponencialmente más recursos a configuraciones más prometedoras. Podemos observar que su funcionamiento es similar a Random Search, pero con la diferencia de que aplica early stopping descartando aquellas configuraciones que peor desempeño estén obteniendo.
 
 ![ga_elements alt ><]({{ site.baseurl }}/assets/images/2_post_img_7.gif)
 
-Desafortunadamente también nos enfrentamos a un problema con este tipo de enfoque. SH requiere como entrada el número de configuraciones **n** a evaluar. Dado un presupuesto B finito (por ejemplo, una hora de tiempo de entrenamiento para elegir una configuración de hiperparámetro), los recursos B/n se asignan en promedio entre todas las configuraciones. Sin embargo, para una B fija, no está claro a priori si deberíamos: 
-+ **(a)** considerar muchas configuraciones **(n grande)** con un tiempo medio de entrenamiento pequeño; o 
-+ **(b)** considere un pequeño número de configuraciones **(n pequeña)** con tiempos de entrenamiento promedio más largos.
+Desafortunadamente también nos enfrentamos a un problema con este tipo de enfoque. **SH** requiere como entrada el número de configuraciones **n** a evaluar. Dado un presupuesto finito **B**, se asignan en promedio un presupuesto **B/n** entre todas las configuraciones. Sin embargo, para una **B** fija, no está claro a priori si deberíamos: 
++ **(a)** Considerar muchas configuraciones **(n grande)** con un tiempo promedio pequeño de entrenamiento; o
++ **(b)** Considerar un pequeño número de configuraciones **(n pequeña)** con tiempos de entrenamiento en promedio más largos.
 
 ![ga_elements alt ><]({{ site.baseurl }}/assets/images/2_post_img_8.png)
 
-Utilizaremos un ejemplo para comprender mejor este trade off. La figura 2 muestra los rendimientos obtenidos por dos configuraciones (v1 y v2) sobre un conjunto de validación en función de los recursos totales asignados.
+Utilizaremos un ejemplo para comprender mejor este balance. La figura anterior muestra los rendimientos obtenidos por dos configuraciones **(v1 y v2)** sobre un conjunto de validación en función de los presupuestos totales asignados.
 
-Inicialmente, es muy difícil diferenciar una de la otra. Es más, podríamos argumentar que v2 viene teniendo mejor desempeño sobre v1. En este caso, si hubiésemos seleccionados un **n grande**, habríamos descartado a v1 dada estas circunstancias. 
+Inicialmente, es muy difícil diferenciar una de la otra. Es más, podemos observar que **v2** se estaría desempeñando mejor que **v1**. En este caso, si hubiésemos seleccionados un **n grande**, dado que el presupuesto asignado sería pequeño, probablemente hubiesemos descartado a **v1** rápidamente.
 
-Pero luego de un tiempo determinado, cuando el desempeño de ambas configuraciones se estabilizan, observamos que v1 ha sido en realidad la que mayor rendimiento, y esto sólo se podía haber detectado tiendo un **n** relativamente limitado.
+Sin embargo, luego de un tiempo determinado, cuando el desempeño de ambas configuraciones se estabilizan, observamos que **v1** ha sido en realidad la que mayor rendimiento ha obtenido.
 
-A pesar de este obstáculo, SH agiliza considerablemente el tiempo de búsqueda de buenas configuraciones si se elige un **n** relativamente óptimo. Pero como ya observamos, es una tarea sumamente difícil, convirtiendo esta decisión en otro hiperparámetro. Además, de la misma manera que Grid Search y Random Search puede paralelizar la búsqueda reduciendo aún más los tiempos convirtiéndolo en un competidor muy veloz.
+A pesar de este obstáculo, **SH** agiliza considerablemente el tiempo de búsqueda de buenas configuraciones si es que se elige un **n** relativamente óptimo. Pero como pudimos observar, es una tarea sumamente difícil, convirtiendose esta decisión en otro hiperparámetro en cuestión.
 
 
 ## Hyperband
-Ahora sí llegó el momento de hablar sobre **Hyperband (HB)**. Al igual que su predecesor, **HB** pone el foco en acelerar el enfoque de Random Search asignando recursos de forma adaptativa, paralelizando los recursos y utilizando early stopping, poniendo así el foco en las configuraciones más prometedoras. 
+Ahora sí, llegó el momento de hablar acerca de **Hyperband (HB)**. Al igual que su predecesor, **HB** pone el foco en acelerar el enfoque Random Search asignando un presupuesto de forma adaptativa, paralelizando los recursos y utilizando early stopping, poniendo así el foco en las configuraciones más prometedoras.
 
-Esto le permite funcionar determinadamente bien en problemas con alta dimensionalidad de hiperparametros y obteniendo así un excelente balance entre velocidad y performance.
+Esto le permite desempeñarse relativamente bien en problemas con espacios de alta dimensionalidad, y obtener así, un excelente balance entre velocidad y performance. Aborda también el problema de “n versus B/n” que padece **SH** al considerar varios valores posibles de **n** para un presupuesto **B** fijamente preestablecido. En esencia, ejecuta Grid Search sobre varios posibles para **n**.
 
+**HB** se observa en el **Algoritmo 1**. Asociado con cada valor de **n** habrá un presupuesto mínimo **r** que se asignará a todas las configuraciones antes de que se descarten algunas; un valor mayor de **n** corresponde a una **r menor** y, por lo tanto, una early stopping más agresivo (se descartaran más configuraciones en menor tiempo).
 
-**HB** se observa en el algoritmo 1. Aborda el problema de “n versus B/n” que tiene **SH** al considerar varios valores posibles de **n** para un **B** fijamente preestablecido, en esencia realizando ejecutando Grid Search sobre varios posibles para **n**. 
-
-Asociado con cada valor de n habrá un presupuesto mínimo **r** que se asignará a todas las configuraciones antes de que se descarten algunas; un valor mayor de **n** corresponde a una **r menor** y, por lo tanto, una early stopping más agresivo. 
-
-Hyperband tiene dos componentes principales: 
-+ **(1)** El ciclo interno que invoca **SH**  para valores fijos de **n** y **r** (líneas 3-9)
-+ **(2)** el ciclo externo itera sobre diferentes valores de **n** y **r** (líneas 1-2).
+Hyperband tiene dos componentes principales:
++ **(1)** El loop interno que invoca  a **SH**  para valores fijos de **n** y **r** (líneas 3-9).
++ **(2)** El loop externo itera sobre diferentes valores de **n** y **r** (líneas 1-2).
 
 ![ga_elements alt ><]({{ site.baseurl }}/assets/images/2_post_img_9.png)
 
 
-Este algoritmo requiere dos entradas: 
-+ (1) **R**, la cantidad máxima de recurso que se puede asignar a una sola configuración, y 
-+ (2) **η**, una entrada que controla la proporción de configuraciones descartadas en cada ronda de **SH**.
+Este algoritmo requiere dos entradas:
++ **(1) R**, la cantidad máxima de recurso que se puede asignar a una sola configuración.
++ **(2) η**, una entrada que controla la proporción de configuraciones descartadas en cada ronda por **SH**.
 
-Tanto **R** como **η** determinarán los distintos valores para **n** que se evaluarán y el presupuesto **B** total a utilizar. **HB** comenzará considerando el valor más alto para **n** maximizando así la exploración. Luego ya le dará paso a la llamada de **SH**. 
+Tanto **R** como **η** determinarán los distintos valores para las **n** configuraciones que se evaluarán y el presupuesto **r** que se utilizará en cada una de estas. **HB** iniciará con el valor más alto para **n** maximizando así la exploración, y a continuación recorrerá los valores más pequeños, protegiendo así, a aquellas configuraciones que requieren un mayor presupuesto.
 
-En cada una de estas invocaciones se reducirá en un factor **η** la cantidad de configuraciones a seguir evaluando, hasta dejar solamente una. Una vez finalizado tanto los ciclos internos como externos se retornará a la configuración que haya obtenido un mejor papel.
+Luego, le dará paso a la llamada a **SH**, reduciendo en un factor **η** la cantidad de configuraciones a seguir evaluando hasta dejar solamente una. Esto se repetirá por cada valor de **n**, y al finalizar se selecciona la configuración que haya minimizado el error.
 
 ![ga_elements alt ><]({{ site.baseurl }}/assets/images/2_post_img_10.png)
 
-La hiperbanda puede aprovechar situaciones en las que la asignación adaptativa funciona bien, al mismo tiempo que se protege en situaciones en las que se requieren asignaciones más conservadoras.
+**HB** requiere de los siguientes métodos para su correcto funcionamiento:
++ **get_hyperparameter_configuration(n)**: una función que retorna un conjunto **n** de configuraciones muestreadas da alguna distribución previamente definida.
+
++ **run_then_return_val_loss(t, r)**: una función que toma como entrada un conjunto de configuraciones **t** y el presupuesto **r** asignado a cada una de estas. Retorna el error sobre el conjunto de validación obtenido por cada configuración.
+
++ **top_k(configs, losses, k)**: una función que toma como entrada un conjunto de configuraciones y su performance. Retorna las **k** que mejor performance hayan obtenido.
 
 
 ## Implementacion con Ray Tune
