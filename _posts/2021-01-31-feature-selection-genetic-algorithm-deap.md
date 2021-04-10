@@ -348,8 +348,8 @@ Definir que método deberíamos emplear es un desafío en sí mismo. Un factor c
 
 **Referencias:**
 
-+ <a href="https://mitpress.mit.edu/books/introduction-genetic-algorithms" target="_blank">An introduction to genetic algorithms - Mitchell Melanie</a>.
++ <a href="https://mitpress.mit.edu/books/introduction-genetic-algorithms" target="_blank">An introduction to genetic algorithms - Mitchell Melanie (Libro)</a>.
 
-+ <a href="https://github.com/kaushalshetty/FeatureSelectionGA/tree/master/feature_selection_ga" target="_blank">Feature Selection with GA</a>.
++ <a href="https://github.com/kaushalshetty/FeatureSelectionGA/tree/master/feature_selection_ga" target="_blank">Feature Selection with GA (Artículo)</a>.
 
-+ <a href="https://www.kaggle.com/marlesson/genetic-algorithm-with-deap" target="_blank">Genetic Algorithm with DEAP</a>.
++ <a href="https://www.kaggle.com/marlesson/genetic-algorithm-with-deap" target="_blank">Genetic Algorithm with DEAP (Artículo)</a>.
