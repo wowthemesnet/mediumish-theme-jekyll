@@ -924,3 +924,18 @@ img[alt$="><"] {
     margin: auto;
     float: none!important;
 }
+
+figcaption {
+    text-align: center;
+    font-size: .8rem;
+    color: light-grey;
+}
+
+figure {
+    text-align: center;
+}
+
+img {
+    max-width:100%;
+    height:auto;
+}

@@ -25,7 +25,7 @@ Conceptualmente, el ajuste de hiperparémetros se puede plantear como un problem
 Matemáticamente, podemos formularlo del modo siguiente: Dado que el rendimiento que obtiene un modelo sobre un conjunto de validación puede ser modelado como una función **f : X $$ \to $$ R** de sus hiperparámetros **x ∈ X** (f puede ser cualquier función de error, por ejemplo el RMSE en un problema de regresión o el AUC Score para un problema de clasificación). El problema que deber resolver la **HPO** es encontrar **x** tal que:
 <center>$$\mathbf {x* ∈ arg min_{x∈X} f(x)}$$</center>
 
-![ga_elements alt ><]({{ site.baseurl }}/assets/images/2_post_img_2.png)
+{% include image.html url="/assets/images/2_post_img_2.png" description="Fig.1. Se observa una representación de la función a optimizar." %}
 
 Hay varios puntos que este tipo de de optimización debe afrontar:
 + En primer lugar, la evaluación de cada configuración es sumamente costosa, ya que implica entrenar un modelo y esto puede llevar horas o días.
@@ -37,7 +37,7 @@ Hay varios puntos que este tipo de de optimización debe afrontar:
 
 Se han propuestos varios enfoques para abordar el problema de **HPO**. Este árticulo no está focalizado en profundizar a todos. Sin embargo, resumiremos brevemente los métodos más populares en efecto de tener un mayor entendimiento de cuales son las ventajas que nos proporciona **Hyperband** y cuales son las falencias que intentara suplir.
 
-![ga_elements alt ><]({{ site.baseurl }}/assets/images/2_post_img_3.png)
+{% include image.html url="/assets/images/2_post_img_3.png" description="Fig.2. Clasificación de los diferentes enfoques de HPO." %}
 
 ### Grid Search/Random Search
 <a href="https://jmlr.csail.mit.edu/papers/volume13/bergstra12a/bergstra12a.pdf" target="_blank">Grid Search</a> es uno de los enfoques más populares debido a su simplicidad al implementar. Este algoritmo actúa discretizando el espacio de búsqueda para poder generar todas las configuraciones posibles de hiperparametros. Luego, evalúa cada una de estas configuraciones, y al finalizar selecciona a la de mayor desempeño.
@@ -46,13 +46,13 @@ Este enfoque posee ciertas desventajas. Por un lado, el número de configuracion
 
 Por otra parte, supongamos que nuestro modelo solo tiene dos hiperparametros a configurar, uno es muy importante para su correcto funcionamiento y el otro no. Cada uno tendrá 3 valores posibles y por ende nuestro espacio de búsqueda estará compuesto por 9 configuraciones diferentes en total.
 
-![ga_elements alt ><]({{ site.baseurl }}/assets/images/2_post_img_4.png)
+{% include image.html url="/assets/images/2_post_img_4.png" description="Fig.3. Representación a modo de ejemplo de Grid Search." %}
 
 Como se puede observar en la figura anterior, el algoritmo no ha podido encontrar el mejor valor para el "hiperparámetro importante" luego de evaluar cada configuración debido al uso del espacio discretizado.
 
 <a href="https://jmlr.csail.mit.edu/papers/volume13/bergstra12a/bergstra12a.pdf" target="_blank">Random Search</a> es una variante a Grid Search e intenta solventar la problemática anterior muestreando aleatoriamente configuraciones sin discretizar el espacio de búsqueda. Al no tener una condición de fin implícita la cantidad de configuraciones muestreadas a evaluar será escogida por nosotros.
 
-![ga_elements alt ><]({{ site.baseurl }}/assets/images/2_post_img_5.png)
+{% include image.html url="/assets/images/2_post_img_5.png" description="Fig.4. Representación a modo de ejemplo de Random Search." %}
 
 Este algoritmo también tiene la misma falencia respecto a la dimensionalidad del espacio de búsqueda, ya que a mayor espacio necesitará una mayor cantidad de muestreos para tener una mínima cobertura sobre este que asegure cierta aceptación.
 
@@ -65,7 +65,8 @@ Dada estas restricciones, necesitaremos de algoritmos más inteligentes para bus
 
 En esencia, la Optimización Bayesiana es un modelo de probabilidad que quiere aprender una función objetivo muy costosa basándose en observaciones previas. Tiene dos componentes principales: **un modelo sustituto y una función de adquisición**.
 
-![ga_elements alt ><]({{ site.baseurl }}/assets/images/2_post_img_6.png)
+{% include image.html url="/assets/images/2_post_img_6.png" description="Fig.5. Muestra como trabaja BO en distintas iteracciones." 
+%}
 
 La figura anterior será un buen punto de partida para entender cómo es que **BO** trabaja.
 Como mencionamos inicialmente, nuestro objetivo es encontrar el punto que minimice la función objetivo **f**. Pero recordemos que desconocemos el valor real de esta.
@@ -90,13 +91,13 @@ La idea detrás del algoritmo deriva directamente de su nombre:
 
 El objetivo de **SH** es asignar exponencialmente más recursos a configuraciones más prometedoras. Podemos observar que su funcionamiento es similar a Random Search, pero con la diferencia de que aplica <a href="https://en.wikipedia.org/wiki/Early_stopping" target="_blank">early stopping</a>, descartando aquellas configuraciones que peor desempeño estén obteniendo.
 
-![ga_elements alt ><]({{ site.baseurl }}/assets/images/2_post_img_7.gif)
+{% include image.html url="/assets/images/2_post_img_7.gif" description="Fig.6. Se observa como se descartan las configuraciones que menor rendimiento." %}
 
 Desafortunadamente, también nos enfrentamos a un problema con este tipo de enfoque. **SH** requiere como entrada el número de configuraciones **n** a evaluar. Dado un presupuesto finito **B**, se asignan en promedio un presupuesto **B/n** entre todas las configuraciones. Sin embargo, para una **B** fija, no está claro a priori si deberíamos: 
 + **(a)** Considerar muchas configuraciones **(n grande)** con un tiempo promedio pequeño de entrenamiento; o
 + **(b)** Considerar un pequeño número de configuraciones **(n pequeña)** con tiempos de entrenamiento en promedio más largos.
 
-![ga_elements alt ><]({{ site.baseurl }}/assets/images/2_post_img_8.png)
+{% include image.html url="/assets/images/2_post_img_8.png" description="Fig.7. Visualización sobre el rendimiento de dos configuraciones en el tiempo." %}
 
 Utilizaremos un ejemplo para comprender mejor este balance. La figura anterior muestra los rendimientos obtenidos por dos configuraciones **(v1 y v2)** sobre un conjunto de validación en función de los presupuestos totales asignados.
 
@@ -118,7 +119,7 @@ Hyperband tiene dos componentes principales:
 + **(1)** El loop interno que invoca  a **SH**  para valores fijos de **n** y **r** (líneas 3-9).
 + **(2)** El loop externo itera sobre diferentes valores de **n** y **r** (líneas 1-2).
 
-![ga_elements alt ><]({{ site.baseurl }}/assets/images/2_post_img_9.png)
+{% include image.html url="/assets/images/2_post_img_9.png" description="Algoritmo 1. Pseudocódigo del algoritmo Hyperband."%}
 
 
 Este algoritmo requiere dos entradas:
@@ -127,9 +128,8 @@ Este algoritmo requiere dos entradas:
 
 Tanto **R** como **η** determinarán los distintos valores para las **n** configuraciones que se evaluarán y el presupuesto **r** que se utilizará en cada una de estas. **HB** iniciará con el valor más alto para **n** maximizando así la exploración, y a continuación recorrerá los valores más pequeños, protegiendo así, a aquellas configuraciones que requieren de un mayor presupuesto.
 
-Luego, le dará paso a la llamada a **SH**, reduciendo en un factor **η** la cantidad de configuraciones a seguir evaluando hasta dejar solamente una. Esto se repetirá por cada valor de **n**, y al finalizar se selecciona la configuración que haya minimizado el error.
 
-![ga_elements alt ><]({{ site.baseurl }}/assets/images/2_post_img_10.png)
+{% include image.html url="/assets/images/2_post_img_10.png" description="Tabla 1. Valores para ni y ri correspondiente a varios valores de s, cuando R = 81 y η = 3." %}
 
 **HB** requiere de los siguientes métodos para su correcto funcionamiento:
 + **get_hyperparameter_configuration(n)**: una función que retorna un conjunto **n** de configuraciones muestreadas dada una distribución previamente definida.
