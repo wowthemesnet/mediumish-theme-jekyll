@@ -38,7 +38,7 @@ En este artículo no hablaremos de estas técnicas, pero te mostraré cómo util
 
 Este opera sobre una población de **cromosomas** (individuos de la población o soluciones candidatas), los cuales típicamente son formulados como una **cadena de bits**. A estos bits se los conocen como **genes** y están representados con valores de 0s y 1s (encoding).
 
-![ga_elements alt ><]({{ site.baseurl }}/assets/images/1_post_img_2.jpg)
+{% include image.html url="/assets/images/1_post_img_2.jpg" description="Fig.1. Elementos de los Algoritmos Genéticos." %}
 
 La idea es iterar generando sucesivas **generaciones** cada vez mejores a las anteriores. Esto se produce seleccionando a los mejores individuos de la población, de acuerdo a una **función fitness**, la cual evaluará y nos dará información sobre qué tan bueno es el individuo. 
 
@@ -46,7 +46,7 @@ Luego combinaremos a estos individuos con otros, utilizando diferentes **operado
 
 Un **Algoritmo Genético Básico** efectúa el siguiente flujo:
 
-![ga_workflow alt ><]({{ site.baseurl }}/assets/images/1_post_img_3.jpg)
+{% include image.html url="/assets/images/1_post_img_3.jpg" description="Fig.2. Flujo de trabajo para un Algoritmo Genético base." %}
 
 1. **Inicialización**: comenzamos generando de forma aleatoria una población de n cromosomas de longitud l (soluciones candidatas). 
 
@@ -62,7 +62,7 @@ Un **Algoritmo Genético Básico** efectúa el siguiente flujo:
 
 4. **Reemplazamos** la actual población con la nueva población generada.
 
-![ga_operators alt ><]({{ site.baseurl }}/assets/images/1_post_img_4.jpg)
+{% include image.html url="/assets/images/1_post_img_4.jpg" description="Fig.3. Operadores básicos utilizados por los Algoritmos Genéticos." %}
 
 ## Intuición de la selección de variables con GA
 
@@ -77,7 +77,7 @@ Estos individuos tomarán la forma de un vector de **0s y 1s**. Su longitud ser�
 
 Un ejemplo concreto sería el siguiente, tenemos a un individuo que será representado por el **vector: [1, 0, 1, 0, 0, 0]**. Este vector nos indica que vamos a evaluar la **variable número 1** y **la variable número 3**. 
 
-![ga_example alt ><]({{ site.baseurl }}/assets/images/1_post_img_5.jpg)
+{% include image.html url="/assets/images/1_post_img_5.jpg" description="Fig.4. Representación de un conjunto de variables como un individuo." %}
 
 Cuando decimos que vamos a evaluar a este individuo, estamos diciendo que entrenaremos el modelo con estas variables y como salida obtendremos un score (F1 score), que nos indicará que tan bueno fue el desempeño de este conjunto de variables en el entrenamiento. 
 
@@ -307,7 +307,7 @@ for g in range(NGEN):
     stats_records.append(build_stats(g, pop, fits))
 ```
 
-![ga_example alt ><]({{ site.baseurl }}/assets/images/1_post_img_6.png)
+{% include image.html url="/assets/images/1_post_img_6.png" description="" %}
 
 Para poder simplificar un poco el reporte anterior, te dejaré una visualización con la performance de cada generación.
 
@@ -320,7 +320,7 @@ plt.axis("tight")
 plt.show()
 ```
 
-![ga_example alt ><]({{ site.baseurl }}/assets/images/1_post_img_7.png)
+{% include image.html url="/assets/images/1_post_img_7.png" description="" %}
 
 Claramente podemos notar que mientras vamos **"avanzando en la evolución"** el score promedio de todos los individuos se va incrementando. Podemos concluir que cada generación está mejorando a la generación anterior, y en consecuencia se están generando mejores individuos (soluciones). 
 
@@ -335,8 +335,7 @@ print(
 )
 ```
 
-![ga_example alt ><]({{ site.baseurl }}/assets/images/1_post_img_8.png)
-
+{% include image.html url="/assets/images/1_post_img_8.png" description="" %}
 
 
 ## Conclusiones

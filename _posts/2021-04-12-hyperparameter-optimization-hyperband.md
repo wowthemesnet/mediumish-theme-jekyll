@@ -40,6 +40,7 @@ Se han propuestos varios enfoques para abordar el problema de **HPO**. Este árt
 {% include image.html url="/assets/images/2_post_img_3.png" description="Fig.2. Clasificación de los diferentes enfoques de HPO." %}
 
 ### Grid Search/Random Search
+
 <a href="https://jmlr.csail.mit.edu/papers/volume13/bergstra12a/bergstra12a.pdf" target="_blank">Grid Search</a> es uno de los enfoques más populares debido a su simplicidad al implementar. Este algoritmo actúa discretizando el espacio de búsqueda para poder generar todas las configuraciones posibles de hiperparametros. Luego, evalúa cada una de estas configuraciones, y al finalizar selecciona a la de mayor desempeño.
 
 Este enfoque posee ciertas desventajas. Por un lado, el número de configuraciones a evaluar <a href="https://en.wikipedia.org/wiki/Curse_of_dimensionality" target="_blank">crecerá exponencialmente</a> con respecto al número de hiperparámetros que se deban ajustar.
@@ -81,6 +82,7 @@ Si bien **BO** funciona muy bien en este tipo de optimizaciones, tiene una desve
 
 
 ## Successive Halving
+
 Antes de ir a nuestro tema en cuestión, debemos mencionar a su predecesor <a href="https://arxiv.org/pdf/1502.07943.pdf" target="_blank">Successives Halving (SH)</a>. 
 
 La idea detrás del algoritmo deriva directamente de su nombre: 
@@ -109,6 +111,7 @@ A pesar de este obstáculo, **SH** agiliza considerablemente el tiempo de búsqu
 
 
 ## Hyperband
+
 Ahora sí, llegó el momento de <a href="https://arxiv.org/abs/1603.06560" target="_blank">Hyperband (HB)</a>. Al igual que su predecesor, **HB** pone el foco en acelerar el enfoque Random Search asignando un presupuesto de forma adaptativa, paralelizando los recursos y utilizando early stopping, poniendo así el foco en las configuraciones más prometedoras.
 
 Esto le permite desempeñarse relativamente bien en problemas con espacios de alta dimensionalidad, y obtener así, un excelente balance entre velocidad y performance. Aborda también el problema de “n versus B/n” que padece **SH** al considerar varios valores posibles de **n** para un presupuesto **B** fijamente preestablecido. En esencia, ejecuta Grid Search sobre varios posibles para **n**.
@@ -121,13 +124,11 @@ Hyperband tiene dos componentes principales:
 
 {% include image.html url="/assets/images/2_post_img_9.png" description="Algoritmo 1. Pseudocódigo del algoritmo Hyperband."%}
 
-
 Este algoritmo requiere dos entradas:
 + **(1) R**, la cantidad máxima de recurso que se puede asignar a una sola configuración.
 + **(2) η**, una entrada que controla la proporción de configuraciones descartadas en cada ronda por **SH**.
 
 Tanto **R** como **η** determinarán los distintos valores para las **n** configuraciones que se evaluarán y el presupuesto **r** que se utilizará en cada una de estas. **HB** iniciará con el valor más alto para **n** maximizando así la exploración, y a continuación recorrerá los valores más pequeños, protegiendo así, a aquellas configuraciones que requieren de un mayor presupuesto.
-
 
 {% include image.html url="/assets/images/2_post_img_10.png" description="Tabla 1. Valores para ni y ri correspondiente a varios valores de s, cuando R = 81 y η = 3." %}
 
