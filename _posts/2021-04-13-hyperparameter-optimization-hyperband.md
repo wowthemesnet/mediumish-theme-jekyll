@@ -4,12 +4,12 @@ title:  "Hyperparameter optimization con Hyperband y Ray Tune"
 description: ""
 author: lzamora
 categories: [ hyperparameter-optimization, machine-learning ]
-featured: true
+featured: false
 hidden: true
 comments: false
 image: assets/images/2_post_img_1.png
 beforetoc: "<p>En estos últimos años los algoritmos de <b>Machine Learning(ML)</b> han resuelto con éxito una amplia variedad de tareas alcanzando el state of the art en diversas áreas. Esto no sólo se debe al desarrollo de nuevos algoritmos, más potentes y más grandes, en varias ocasiones la selección de buenos hiperparámetros ha contribuido a esta conquista.</p>
-Sin embargo, seleccionar hiperparámetros de una manera precisa no es una tarea para nada trivial, y en consecuencia, existen distintas técnicas enfocadas a resolver este tipo de desafío. En este artículo te presentaré una de estas llamada <b>Hyperband</b>.
+Sin embargo, seleccionar hiperparámetros de una manera precisa no es una tarea para nada trivial, y en consecuencia, existen distintas técnicas enfocadas a resolver este tipo de desafío. En este artículo te presentaré a una de estas: <b>Hyperband</b>.
 "
 toc: true
 ---
@@ -103,7 +103,7 @@ Desafortunadamente, también nos enfrentamos a un problema con este tipo de enfo
 
 Utilizaremos un ejemplo para comprender mejor este balance. La figura anterior muestra los rendimientos obtenidos por dos configuraciones **(v1 y v2)** sobre un conjunto de validación en función de los presupuestos totales asignados.
 
-Inicialmente, es muy difícil diferenciar una de la otra. Es más, podemos observar que **v2** se estaría desempeñando mejor que **v1**. En este caso, si hubiésemos seleccionados un **n grande**, dado que el presupuesto asignado sería pequeño, probablemente hubiesemos descartado a **v1** rápidamente.
+Inicialmente, es muy difícil diferenciar una de la otra. Es más, podemos observar que **v2** se estaría desempeñando mejor que **v1**. En este caso, si hubiésemos seleccionado un **n grande**, dado que el presupuesto asignado sería pequeño, probablemente hubiésemos descartado a **v1** rápidamente.
 
 Sin embargo, luego de un tiempo determinado, cuando el desempeño de ambas configuraciones se estabilizan, observamos que **v1** ha sido en realidad la que mayor rendimiento ha obtenido.
 
@@ -112,63 +112,102 @@ A pesar de este obstáculo, **SH** agiliza considerablemente el tiempo de búsqu
 
 ## Hyperband
 
-Ahora sí, llegó el momento de <a href="https://arxiv.org/abs/1603.06560" target="_blank">Hyperband (HB)</a>. Al igual que su predecesor, **HB** pone el foco en acelerar el enfoque Random Search asignando un presupuesto de forma adaptativa, paralelizando los recursos y utilizando early stopping, poniendo así el foco en las configuraciones más prometedoras.
+Ahora sí, llegó el momento de <a href="https://arxiv.org/abs/1603.06560" target="_blank">Hyperband (HB)</a>. Al igual que su predecesor, **HB** pone el foco en acelerar el enfoque Random Search asignando un presupuesto de forma adaptativa, paralelizando los recursos y utilizando early stopping, poniendo así mayor atención en las configuraciones más prometedoras.
 
-Esto le permite desempeñarse relativamente bien en problemas con espacios de alta dimensionalidad, y obtener así, un excelente balance entre velocidad y performance. Aborda también el problema de “n versus B/n” que padece **SH** al considerar varios valores posibles de **n** para un presupuesto **B** fijamente preestablecido. En esencia, ejecuta Grid Search sobre varios posibles para **n**.
+Esto le permite desempeñarse relativamente bien en problemas con espacios de alta dimensionalidad, y obtener así, un buen balance entre velocidad y performance. Aborda también el problema de “n versus B/n” que padece **SH** al considerar varios valores posibles de **n** para un presupuesto **B** fijamente preestablecido. En esencia, ejecuta Grid Search sobre varios posibles para **n**.
 
 **HB** se observa en el **Algoritmo 1**. Asociado con cada valor de **n** habrá un presupuesto mínimo **r** que se asignará a todas las configuraciones antes de que se descarten algunas; un valor mayor de **n** corresponde a una **r menor** y, por lo tanto, una early stopping más agresivo (se descartaran más configuraciones en menor tiempo).
 
 Hyperband tiene dos componentes principales:
-+ **(1)** El loop interno que invoca  a **SH**  para valores fijos de **n** y **r** (líneas 3-9).
-+ **(2)** El loop externo itera sobre diferentes valores de **n** y **r** (líneas 1-2).
++ **(1)** El loop externo itera sobre diferentes valores de **n** y **r**. Es el responsable de "ejecutar GridSearch" para varios valores de **n** (líneas 1-2). 
++ **(2)** El loop interno que invoca  a **SH** para valores fijos de **n** y **r** (líneas 3-9).
+
 
 {% include image.html url="/assets/images/2_post_img_9.png" description="Algoritmo 1. Pseudocódigo del algoritmo Hyperband."%}
 
-Este algoritmo requiere dos entradas:
+Este algoritmo requerirá de dos entradas:
 + **(1) R**, la cantidad máxima de recurso que se puede asignar a una sola configuración.
 + **(2) η**, una entrada que controla la proporción de configuraciones descartadas en cada ronda por **SH**.
 
-Tanto **R** como **η** determinarán los distintos valores para las **n** configuraciones que se evaluarán y el presupuesto **r** que se utilizará en cada una de estas. **HB** iniciará con el valor más alto para **n** maximizando así la exploración, y a continuación recorrerá los valores más pequeños, protegiendo así, a aquellas configuraciones que requieren de un mayor presupuesto.
-
 {% include image.html url="/assets/images/2_post_img_10.png" description="Tabla 1. Valores para ni y ri correspondiente a varios valores de s, cuando R = 81 y η = 3." %}
 
-**HB** requiere de los siguientes métodos para su correcto funcionamiento:
+Tanto **R** como **η** determinarán los distintos valores para **n** y el presupuesto **r** que se utilizará en cada una de estas. **HB** iniciará con el valor más alto para **n**, maximizando así la exploración, y luego recorrerá los valores más pequeños, protegiendo así, a aquellas configuraciones que requieren de un mayor presupuesto.
+
+
+## Implementacion de Hyperband
+
+**HB** para poder funcionar requiere de las siguientes funciones:
 + **get_hyperparameter_configuration(n)**: una función que retorna un conjunto **n** de configuraciones muestreadas dada una distribución previamente definida.
 
 + **run_then_return_val_loss(t, r)**: una función que toma como entrada un conjunto de configuraciones **t** y el presupuesto **r** asignado a cada una de estas. Retorna el error sobre el conjunto de validación obtenido por cada configuración.
 
 + **top_k(configs, losses, k)**: una función que toma como entrada un conjunto de configuraciones y su performance. Retorna las **k** que mejor performance hayan obtenido.
 
+Un ejemplo sencillo de como implementar **Hyperband** con **Python** puede observarse en el siguiente fragmento de código:
 
-## Implementacion con Ray Tune
+```python
+
+# Importamos las dos funciones auxiliares que utilizaremos para HB
+from problem import get_random_hyperparameter_configuration,run_then_return_val_loss
+
+max_iter = 81  # Cantidad maxima de iteraciones o epoch por configuracion
+eta = 3 # Definicion del downsampling rate (default=3)
+logeta = lambda x: log(x)/log(eta)
+s_max = int(logeta(max_iter))  # number of unique executions of Successive Halving (minus one)
+B = (s_max+1)*max_iter  # total number of iterations (without reuse) per execution of Succesive Halving (n,r)
+
+#### Comenzamos por el loop externo
+for s in reversed(range(s_max+1)):
+   n = int(ceil(int(B/max_iter/(s+1))*eta**s)) # Nro. inicial de configuraciones
+   r = max_iter*eta**(-s) # Nro. inicial de configuraciones para evaluar una configuracion
+
+
+   #### Bucle interno donde aplicamos Successive Halving with (n,r)
+   T = [ get_random_hyperparameter_configuration() for i in range(n) ]
+   for i in range(s+1):
+       # Corremos para c/u de las n_i configuraciones r_i iterations y mantenemos las mejores n_i/eta
+       n_i = n*eta**(-i)
+       r_i = r*eta**(i)
+       val_losses = [run_then_return_val_loss(num_iters=r_i, hyperparameters=t) for t in T]
+       T = [T[i] for i in argsort(val_losses)[0:int(n_i/eta)]]
+```
+
+Para ver el ejemplo completo ingresa al siguiente <a href="https://github.com/PeepData/hyperband" target="_blank">repositorio</a>.
+
+Vale la pena mencionar que existen varias implementaciones robustas para utilizar Hyperdband con todas las ventajas que nos ofrece. Dos que puedo recomendar son las desarrolladas por <a href="https://docs.ray.io/en/master/tune/index.html" target="_blank">Ray Tune</a> y <a href="https://automl.github.io/HpBandSter/ " target="_blank">HpBandSter</a>.
+
+Además, también disponemos de una implementación para utilizar con <a href="https://github.com/thuijskens/scikit-hyperband" target="_blank">Sklearn</a>.
 
 
 ## Conclusiones
-En la actualidad el funcionamiento de un modelo de Machine Learning o Deep Learning depende en gran medida a sus hiperparámetros. Esta tarea no es para nada fácil, y es por eso, que muchas investigaciones han puesto el foco en resolver este tipo de problema. El enfoque a seleccionar dependerá mucho de nuestro problema en cuestión y del equilibrio que necesitemos entre velocidad y performance.
+
+En la actualidad el correcto funcionamiento de un modelo de Machine Learning o Deep Learning depende en gran medida a sus hiperparámetros. Esta tarea no es para nada fácil, y es por eso, que muchas investigaciones han puesto el ojo en resolver este tipo de problemas. El enfoque a seleccionar dependerá mucho de nuestro problema en cuestión y del equilibrio que necesitemos entre velocidad y performance.
 
 **Referencias:**
 
-+ <a href="https://arxiv.org/abs/1807.02811" target="_blank">A Tutorial on Bayesian Optimization, Frazier, 2018 (Paper)</a>.
++ A Tutorial on Bayesian Optimization, Frazier, 2018 (Paper) <a href="https://arxiv.org/abs/1807.02811" target="_blank">[LINK]</a>.
 
-+ <a href="https://arxiv.org/abs/1603.06560" target="_blank">Hyperband: A Novel Bandit-Based Approach to Hyperparameter Optimization, Li et al., 2018 (Paper)</a>.
++ Hyperband: A Novel Bandit-Based Approach to Hyperparameter Optimization, Li et al., 2018 (Paper) <a href="https://arxiv.org/abs/1603.06560" target="_blank">[LINK]</a>.
 
-+ <a href="https://arxiv.org/abs/1807.01774" target="_blank">BOHB: Robust and Efficient Hyperparameter Optimization at Scale, Falkner et al., 2018 (Paper)</a>.
++ BOHB: Robust and Efficient Hyperparameter Optimization at Scale, Falkner et al., 2018 (Paper) <a href="https://arxiv.org/abs/1807.01774" target="_blank">[LINK]</a>.
 
-+ <a href="https://www.springer.com/gp/book/9783030053178" target="_blank">Automated Machine Learning Methods, Systems, Challenges, Capítulo 1 (Libro)</a>.
++ Automated Machine Learning Methods, Systems, Challenges, Capítulo 1 (Libro) <a href="https://www.springer.com/gp/book/9783030053178" target="_blank">[LINK]</a>.
 
-+ <a href="https://distill.pub/2020/bayesian-optimization/" target="_blank">Exploring Bayesian Optimization (Artículo)</a>.
++ Exploring Bayesian Optimization (Artículo) <a href="https://distill.pub/2020/bayesian-optimization/" target="_blank">[LINK]</a>.
 
 
 **Lecturas recomendadas:**
 
-+ <a href="https://static.sigopt.com/b/20a144d208ef255d3b981ce419667ec25d8412e2/static/pdf/SigOpt_Bayesian_Optimization_Primer.pdf" target="_blank">Bayesian Optimization Primer, SigOpt, 2015 (Paper)</a>.
++ Bayesian Optimization Primer, SigOpt, 2015 (Paper) <a href="https://static.sigopt.com/b/20a144d208ef255d3b981ce419667ec25d8412e2/static/pdf/SigOpt_Bayesian_Optimization_Primer.pdf" target="_blank">[LINK]</a>.
 
-+ <a href="https://www.researchgate.net/publication/216816964_Algorithms_for_Hyper-Parameter_Optimization" target="_blank">Algorithms for Hyper-Parameter Optimization, Bergstra, 2014 (Paper)</a>.
++ Algorithms for Hyper-Parameter Optimization, Bergstra, 2014 (Paper) <a href="https://www.researchgate.net/publication/216816964_Algorithms_for_Hyper-Parameter_Optimization" target="_blank">[LINK]</a>.
 
-+ <a href="https://towardsdatascience.com/a-conceptual-explanation-of-bayesian-model-based-hyperparameter-optimization-for-machine-learning-b8172278050f" target="_blank">A Conceptual Explanation of Bayesian Hyperparameter Optimization for Machine Learning (Artículo)</a>.
++ A Conceptual Explanation of Bayesian Hyperparameter Optimization for Machine Learning (Artículo) <a href="https://towardsdatascience.com/a-conceptual-explanation-of-bayesian-model-based-hyperparameter-optimization-for-machine-learning-b8172278050f" target="_blank">[LINK]</a>.
 
-+ <a href="https://machinelearningmastery.com/what-is-bayesian-optimization/" target="_blank">How to Implement Bayesian Optimization from Scratch in Python (Artículo)</a>.
++ How to Implement Bayesian Optimization from Scratch in Python (Artículo) <a href="https://machinelearningmastery.com/what-is-bayesian-optimization/" target="_blank">[LINK]</a>.
 
-+ <a href="https://2020blogfor.github.io/posts/2020/04/hyperband/" target="_blank">Utilizing the HyperBand Algorithm for Hyperparameter Optimization (Artículo)</a>.
++ Utilizing the HyperBand Algorithm for Hyperparameter Optimization (Artículo) <a href="https://2020blogfor.github.io/posts/2020/04/hyperband/" target="_blank">[LINK]</a>.
 
-+ <a href="https://www.automl.org/blog_bohb/" target="_blank">BOHB: Robust and efficient hyperparameter optimization at scale (Artículo)</a>.
++ BOHB: Robust and efficient hyperparameter optimization at scale (Artículo) <a href="https://www.automl.org/blog_bohb/" target="_blank">[LINK]</a>.
+
++ Hyperband (Artículo) <a href="https://homes.cs.washington.edu/~jamieson/hyperband.html" target="_blank">[LINK]</a>.
