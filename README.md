@@ -129,7 +129,7 @@ printf("Hello World");
 markdown 문서에 다음과 같이 iframe을 삽입한다.
 
 ```
-<p><iframe style="width:100%;" height="315" src="https://www.youtube.com/embed/Cniqsc9QfDo?rel=0&amp;showinfo=0" frameborder="0" allowfullscreen></iframe></p>
+<p><iframe style="width:100%;" height="360" src="https://www.youtube.com/embed/Cniqsc9QfDo?rel=0&amp;showinfo=0" frameborder="0" allowfullscreen></iframe></p>
 ```
 
 ## 강조 방법
