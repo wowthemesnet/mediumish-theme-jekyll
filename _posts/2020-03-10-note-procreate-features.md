@@ -16,7 +16,7 @@ toc: true
 해당 도서는 <a href="https://zzom.io/graphic-recording/" target="_blank">'처음 배우는 그래픽 레코딩'</a>라는 이름으로 번역되어 2021 출간 예정입니다. 
 
 * 원문: <a href="https://note.com/kuboasa/n/n1b01fd1ac6eb/" target="_blank">[Procreate] iPadで広がる表現力！ 使ってみたくなる便利機能11選</a>
-* 작성자: 구보타 아사미
+* 작성자: <a href="https://twitter.com/kubomi____" target="_blank">구보타 아사미</a>
 
 <figure>
 <img class="small" src="https://assets.st-note.com/production/uploads/images/29260305/profile_bcb004ca38cf7013ad3bb961920390c8.png?width=200&crop=1:1,smart" alter="">
@@ -24,7 +24,7 @@ toc: true
 
 <hr/>
 
-안녕하세요? <a href="https://twitter.com/kubomi____" target="_blank">쿠보미</a>입니다.
+안녕하세요? 쿠보미입니다.
 논의를 가시화할 수 있는 그래픽 레코딩에 관한 내용을 <a href="https://note.com/kuboasa/m/m1a133619a3a7" target="_blank">'그래픽 레코딩의 비밀'</a>에서 연재하고 있습니다. 그래픽 레코딩을 실천하는 방법과 다양한 아이디어가 있으니 한번 들러보세요. 연재된 내용은 2020년 8월에 'はじめてのグラフィックレコーディング'라는 이름으로 책이 되었고, 2021년 7월에는 '처음 배우는 그래픽 레코딩'이란 이름으로 한국어 번역서가 나올거에요!
 
 ## 아이패드를 사긴 했는데 놀고 있어요
