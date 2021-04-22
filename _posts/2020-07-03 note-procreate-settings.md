@@ -16,12 +16,12 @@ toc: true
 해당 도서는 <a href="https://zzom.io/graphic-recording/" target="_blank">'처음 배우는 그래픽 레코딩'</a>라는 이름으로 번역되어 2021 출간 예정입니다. 
 
 * 원문: <a href="https://note.com/kuboasa/n/ne9e23142d6f3/" target="_blank">iPadグラレコを始めるための、iPadの準備とProcreateの設定のコツ」</a>
-* 작성자: 구보타 아사미
+* 작성자: <a href="https://twitter.com/kubomi____" target="_blank">구보타 아사미</a>
 
 <hr/>
 
-안녕하세요? <a href="https://twitter.com/kubomi____" target="_blank">쿠보미</a>입니다.
-<a href="https://note.com/kuboasa/m/m1a133619a3a7" target="_blank">'그래픽 레코딩의 비밀'</a>에서 그래픽 레코딩을 하면서 겪게 되는 다양한 이야기를 연재하고 있어요.
+안녕하세요? 쿠보미</a>입니다.
+<a href="https://note.com/kuboasa/m/m1a133619a3a7" target="_blank">'그래픽 레코딩의 비밀'에서 그래픽 레코딩을 하면서 겪게 되는 다양한 이야기를 연재하고 있어요.
 
 앞서 전에 썼던 프로크리에이트 관련 게시물을 많은 분들이 읽어주셨네요. 감사합니다. ^^ 아직 읽지 못했다면 다음 게시물을 참고하세요. 
 

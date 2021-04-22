@@ -1,11 +1,11 @@
 {% if paginator.total_pages > 1 %}
 <div class="pagination">
   {% if paginator.previous_page %}
-    <!-- <a class="ml-1 mr-1" href="{{ paginator.previous_page_path | prepend: site.baseurl | replace: '//', '/' }}">&laquo; Prev</a> -->
-    <a class="ml-1 mr-1" href="{{ paginator.previous_page_path | prepend: site.baseurl | replace: '//', '/' }}">&laquo; 이전</a>
+    <a class="ml-1 mr-1" href="{{ paginator.previous_page_path | prepend: site.baseurl | replace: '//', '/' }}">&laquo; Prev</a>
+    <!-- <a class="ml-1 mr-1" href="{{ paginator.previous_page_path | prepend: site.baseurl | replace: '//', '/' }}">&laquo; 이전</a> -->
   {% else %}
-    <!-- <span>&laquo; Prev</span> -->
-    <span>&laquo; 이전</span>
+    <span>&laquo; Prev</span>
+    <!-- <span>&laquo; 이전</span> -->
   {% endif %}
 
   {% for page in (1..paginator.total_pages) %}
@@ -19,11 +19,11 @@
   {% endfor %}
 
   {% if paginator.next_page %}
-    <!-- <a class="ml-1 mr-1" href="{{ paginator.next_page_path | prepend: site.baseurl | replace: '//', '/' }}">Next &raquo;</a> -->
-    <a class="ml-1 mr-1" href="{{ paginator.next_page_path | prepend: site.baseurl | replace: '//', '/' }}">다음 &raquo;</a>
+    <a class="ml-1 mr-1" href="{{ paginator.next_page_path | prepend: site.baseurl | replace: '//', '/' }}">Next &raquo;</a>
+    <!-- <a class="ml-1 mr-1" href="{{ paginator.next_page_path | prepend: site.baseurl | replace: '//', '/' }}">다음 &raquo;</a> -->
   {% else %}
-    <!-- <span>Next &raquo;</span> -->
-    <span>다음 &raquo;</span>
+    <span>Next &raquo;</span>
+    <!-- <span>다음 &raquo;</span> -->
   {% endif %}
 </div>
 {% endif %}
