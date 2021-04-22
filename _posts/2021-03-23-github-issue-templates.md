@@ -6,8 +6,9 @@ categories: [Tools]
 tags: [GitHub, 사이트구축, 가나다라마바사아자차카타파하]
 image: assets/images/github-issue-templates/recycle-237874_1280.jpg
 description: "GitHub 이슈로 질문 게시판 만들었는데, GitHub 디스커션으로 갈아타야 했던 썰"
-featured: true
-hidden: true
+featured: false
+hidden: false
+toc: true
 comments: true
 rating: # 1~5까지 점수
 last_modified_at: # YYYY-MM-DD

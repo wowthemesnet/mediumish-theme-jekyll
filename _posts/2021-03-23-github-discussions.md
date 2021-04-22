@@ -6,8 +6,9 @@ categories: [Tools]
 tags: [GitHub, 사이트구축]
 image: assets/images/github-discussions/silhouette-1082129_1280.jpg
 description: "GitHub 이슈로 질문 게시판 만들었는데, GitHub 디스커션으로 갈아타야 했던 썰"
-featured: true
-hidden: true
+featured: false
+hidden: false
+toc: true
 comments: true
 rating: # 1~5까지 점수
 last_modified_at: # YYYY-MM-DD

@@ -1,18 +1,22 @@
 ---
 layout: post
-title:  "[프로크리에이트] 아이패드를 샀을 때 써봐야 할 11가지 추천 기능"
+title:  "프로크리에이트로 그림 그릴 때 꼭 써봐야할 11가지 추천 기능"
 author: bomber
 categories: [ Tools ]
 tags: [그래픽레코딩, 프로크리에이트, 아이패드]
 image: "https://assets.st-note.com/production/uploads/images/20694815/rectangle_large_type_2_a9089e26fb6f8c733ec6037828c23a6d.png?width=800"
 description: 
 featured: true
+hidden: true
 toc: true
+comments: true
+rating: # 1~5까지 점수
+last_modified_at: # YYYY-MM-DD
 ---
 
 <hr/>
 
-이 글은 도서 <a href="https://www.amazon.co.jp/dp/4798164887/" target="_blank">'はじめてのグラフィックレコーディング'</a>의 참고 페이지를 번역한 내용입니다. 
+이 글은 도서 <a href="https://www.amazon.co.jp/dp/4798164887/" target="_blank">'はじめてのグラフィックレコーディング'</a>의 참고 페이지를 한국 독자를 위해 번역한 내용입니다. 일부 의역과 현지화한 내용이 포함될 수 있습니다.
 해당 도서는 <a href="https://zzom.io/graphic-recording/" target="_blank">'처음 배우는 그래픽 레코딩'</a>라는 이름으로 번역되어 2021 출간 예정입니다. 
 
 * 원문: <a href="https://note.com/kuboasa/n/n1b01fd1ac6eb/" target="_blank">[Procreate] iPadで広がる表現力！ 使ってみたくなる便利機能11選</a>
