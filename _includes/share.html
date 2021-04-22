@@ -2,7 +2,8 @@
     <!-- Categories -->
     {% if page.categories.size != 0 %}
     <div class="post-cats">
-        <p>카테고리</p>
+        <!-- <p>카테고리</p> -->
+        <p>Categories</p>
         <ul class="tags ml-1 mr-1">
             {% assign sortedCategories = page.categories | sort %}
             {% for category in sortedCategories %}
@@ -18,7 +19,8 @@
     <!-- Tags -->
     {% if page.tags.size != 0 %}
     <div class="post-tags">
-        <p>태그</p>
+        <!-- <p>태그</p> -->
+        <p>Tags</p>
         <ul class="tags ml-1 mr-1">
             {% assign sortedTags = page.tags | sort %}
             {% for tag in sortedTags %}
@@ -32,7 +34,8 @@
     {% endif %}
 
     <div class="share">
-        <p>공유하기</p>
+        <p>Share</p>
+        <!-- <p>공유하기</p> -->
         <ul>
             <li class="ml-1 mr-1">
                 <a target="_blank" href="https://facebook.com/sharer.php?u={{ page.url | absolute_url }}" onclick="window.open(this.href, 'facebook-share', 'width=550,height=435');return false;">
