@@ -2,7 +2,7 @@
 layout: post
 title:  "Issues는 써 보지도 못하고 Discussions로 갈아 엎었다"
 author: bomber
-categories: [Tools]
+categories: [작업 환경]
 tags: [GitHub, 사이트구축]
 image: assets/images/github-discussions/silhouette-1082129_1280.jpg
 description: "GitHub 이슈로 질문 게시판 만들었는데, GitHub 디스커션으로 갈아타야 했던 썰"
