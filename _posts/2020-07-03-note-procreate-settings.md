@@ -22,6 +22,10 @@ last_modified_at: # YYYY-MM-DD
 * 원문: <a href="https://note.com/kuboasa/n/ne9e23142d6f3/" target="_blank">iPadグラレコを始めるための、iPadの準備とProcreateの設定のコツ」</a>
 * 작성자: <a href="https://twitter.com/kubomi____" target="_blank">구보타 아사미</a>
 
+<figure>
+<img class="small" src="https://assets.st-note.com/production/uploads/images/29260305/profile_bcb004ca38cf7013ad3bb961920390c8.png?width=200&crop=1:1,smart" alter="">
+</figure>
+
 <hr/>
 
 안녕하세요? 쿠보미</a>입니다.

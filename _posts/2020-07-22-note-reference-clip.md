@@ -14,7 +14,6 @@ rating: # 1~5까지 점수
 last_modified_at: # YYYY-MM-DD
 ---
 
-
 <hr/>
 
 이 글은 도서 <a href="https://www.amazon.co.jp/dp/4798164887/" target="_blank">'はじめてのグラフィックレコーディング'</a>의 참고 페이지를 한국 독자를 위해 번역한 내용입니다. 일부 의역과 현지화한 내용이 포함될 수 있습니다.
@@ -24,7 +23,7 @@ last_modified_at: # YYYY-MM-DD
 * 작성자: <a href="https://twitter.com/kubomi____" target="_blank">구보타 아사미</a>
 
 <figure>
-<img class="small" src="https://assets.st-note.com/production/uploads/images/30879719/rectangle_large_type_2_38013bc0050dab62b6ec666916e5f4bb.png?width=800" alter="">
+<img class="small" src="https://assets.st-note.com/production/uploads/images/29260305/profile_bcb004ca38cf7013ad3bb961920390c8.png?width=200&crop=1:1,smart" alter="">
 </figure>
 
 <hr/>
