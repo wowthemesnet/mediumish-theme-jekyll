@@ -18,6 +18,10 @@ toc: true
 * 원문: <a href="https://note.com/kuboasa/n/n1b01fd1ac6eb/" target="_blank">[Procreate] iPadで広がる表現力！ 使ってみたくなる便利機能11選</a>
 * 작성자: 구보타 아사미
 
+<figure>
+<img class="small" src="https://assets.st-note.com/production/uploads/images/29260305/profile_bcb004ca38cf7013ad3bb961920390c8.png?width=200&crop=1:1,smart" alter="">
+</figure>
+
 <hr/>
 
 안녕하세요? <a href="https://twitter.com/kubomi____" target="_blank">쿠보미</a>입니다.

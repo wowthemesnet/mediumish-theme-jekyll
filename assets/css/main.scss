@@ -13,6 +13,7 @@
 	"syntax",
     "starsnonscss"
 ;
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;900&family=Noto+Serif+KR:wght@400;900&display=swap');
 
 @font-face {
     font-family: 'CookieRunOTF-Bold';
@@ -50,44 +51,39 @@
 }
 
 .mainheading h1.sitetitle {
-	// font-family: 'CookieRunOTF-Bold';
-	// font-family: 'RIDIBatang';
-	font-family: 'MaruBuri-Regular';
+    // font-family: 'Noto Serif KR', serif;
+    font-family: 'Noto Sans KR', sans-serif;
 }
 
 .mainheading h1.posttitle {
-	// font-family: 'CookieRunOTF-Bold';
-	// font-family: 'RIDIBatang';
-	font-family: 'MaruBuri-Regular';
+    // font-family: 'Noto Serif KR', serif;
+    font-family: 'Noto Sans KR', sans-serif;
 }
 
 div.card-body h2, div.section-title h2, div.listrecent h2,  div.fortags h2 {
-	// font-family: 'CookieRunOTF-Bold';
-	// font-family: 'RIDIBatang';
-	font-family: 'MaruBuri-Regular';
+    // font-family: 'Noto Serif KR', serif;
+    font-family: 'Noto Sans KR', sans-serif;
 }
 
 div.article-post h1, div.article-post h2, div.article-post h3, div.article-post h4 {
-	// font-family: 'CookieRunOTF-Bold';
-	// font-family: 'RIDIBatang';
-	font-family: 'MaruBuri-Regular';
+    // font-family: 'Noto Serif KR', serif;
+    font-family: 'Noto Sans KR', sans-serif;
 }
 
 div.article-post h1, div.article-post h2, div.article-post h3, div.article-post h4, div.article-post h5, div.article-post h6 {
-	// font-family: 'CookieRunOTF-Bold';
-	// font-family: 'RIDIBatang';
-	font-family: 'MaruBuri-Regular';
+    // font-family: 'Noto Serif KR', serif;
+    font-family: 'Noto Sans KR', sans-serif;
 	margin-top: 2em;
 }
 
 div.pagination, a.prev, a.next {
-	// font-family: 'CookieRunOTF-Bold';
-	// font-family: 'RIDIBatang';
-	font-family: 'MaruBuri-Regular';
+    // font-family: 'Noto Serif KR', serif;
+    font-family: 'Noto Sans KR', sans-serif;
 }
 
 * {
-	font-family: 'MaruBuri-Regular';
+    // font-family: 'Noto Serif KR', serif;
+    font-family: 'Noto Sans KR', sans-serif;
     word-wrap: break-word;
     word-break: keep-all;
 }
