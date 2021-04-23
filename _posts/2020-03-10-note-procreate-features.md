@@ -16,20 +16,35 @@ last_modified_at: # YYYY-MM-DD
 
 <hr/>
 
-이 글은 도서 <a href="https://www.amazon.co.jp/dp/4798164887/" target="_blank">'はじめてのグラフィックレコーディング'</a>의 참고 페이지를 한국 독자를 위해 번역한 내용입니다. 일부 의역과 현지화한 내용이 포함될 수 있습니다. 책에서 직접 인용한 게시물은 번역이 되어 있으나 해당 게시물에서 링크로 연결된 문서는 번역되지 않았습니다.
+<div class="note">
+<p>
+이 글은 도서 <a href="https://www.amazon.co.jp/dp/4798164887/" target="_blank">'はじめてのグラフィックレコーディング'</a>의 참고 페이지를 한국 독자를 위해 번역한 내용입니다. 
+일부 의역과 현지화한 내용이 포함될 수 있습니다. 
+책에서 직접 인용한 게시물은 번역이 되어 있으나, 해당 게시물에서 링크로 연결된 문서는 번역되지 않을 수 있습니다.
+<br/>
 해당 도서는 <a href="https://zzom.io/graphic-recording/" target="_blank">'처음 배우는 그래픽 레코딩'</a>라는 이름으로 번역되어 2021년 여름 전에 출간 예정입니다. 
+</p>
 
-* 원문: <a href="https://note.com/kuboasa/n/n1b01fd1ac6eb/" target="_blank">[Procreate] iPadで広がる表現力！ 使ってみたくなる便利機能11選</a>
-* 작성자: <a href="https://twitter.com/kubomi____" target="_blank">구보타 아사미</a>
+<ul>
+<li>
+원문: <a href="https://note.com/kuboasa/n/n1b01fd1ac6eb/" target="_blank">[Procreate] iPadで広がる表現力！ 使ってみたくなる便利機能11選</a>
+</li>
+<li>
+작성자: <a href="https://twitter.com/kubomi____" target="_blank">구보타 아사미</a>
+</li>
+</ul>
 
 <figure>
 <img class="small" src="https://assets.st-note.com/production/uploads/images/29260305/profile_bcb004ca38cf7013ad3bb961920390c8.png?width=200&crop=1:1,smart" alter="">
 </figure>
 
+</div>
+
 <hr/>
 
-안녕하세요? 쿠보미입니다.
-논의를 가시화할 수 있는 그래픽 레코딩에 관한 내용을 <a href="https://note.com/kuboasa/m/m1a133619a3a7" target="_blank">'그래픽 레코딩의 비밀'</a>에서 연재하고 있습니다. 그래픽 레코딩을 실천하는 방법과 다양한 아이디어가 있으니 한번 들러보세요. 연재된 내용은 2020년 8월에 'はじめてのグラフィックレコーディング'라는 이름으로 책이 되었고, 2021년 7월에는 '처음 배우는 그래픽 레코딩'이란 이름으로 한국어 번역서가 나올거에요!
+안녕하세요? 쿠보미입니다.<br/>
+논의를 가시화할 수 있는 그래픽 레코딩에 관한 내용을 <a href="https://note.com/kuboasa/m/m1a133619a3a7" target="_blank">'그래픽 레코딩의 비밀'</a>에서 연재하고 있습니다. 그래픽 레코딩을 실천하는 방법과 다양한 아이디어가 있으니 한번 들러보세요. 
+연재된 내용은 2020년 8월에 'はじめてのグラフィックレコーディング'라는 이름으로 책이 되었고, 2021년 7월에는 '처음 배우는 그래픽 레코딩'이란 이름으로 한국어 번역서가 나올거에요!
 
 ## 아이패드를 사긴 했는데 놀고 있어요
 잔뜩 기대하며 아이패드를 질렀는데, 막상 사고 보니 활용할 데가 없어 난감한 분 계신가요? (제가 그랬습니다)

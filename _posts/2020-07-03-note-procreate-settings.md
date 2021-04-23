@@ -16,21 +16,35 @@ last_modified_at: # YYYY-MM-DD
 
 <hr/>
 
-이 글은 도서 <a href="https://www.amazon.co.jp/dp/4798164887/" target="_blank">'はじめてのグラフィックレコーディング'</a>의 참고 페이지를 한국 독자를 위해 번역한 내용입니다. 일부 의역과 현지화한 내용이 포함될 수 있습니다. 책에서 직접 인용한 게시물은 번역이 되어 있으나 해당 게시물에서 링크로 연결된 문서는 번역되지 않았습니다.
+<div class="note">
+<p>
+이 글은 도서 <a href="https://www.amazon.co.jp/dp/4798164887/" target="_blank">'はじめてのグラフィックレコーディング'</a>의 참고 페이지를 한국 독자를 위해 번역한 내용입니다. 
+일부 의역과 현지화한 내용이 포함될 수 있습니다. 
+책에서 직접 인용한 게시물은 번역이 되어 있으나, 해당 게시물에서 링크로 연결된 문서는 번역되지 않을 수 있습니다.
+<br/>
 해당 도서는 <a href="https://zzom.io/graphic-recording/" target="_blank">'처음 배우는 그래픽 레코딩'</a>라는 이름으로 번역되어 2021년 여름 전에 출간 예정입니다. 
+</p>
 
-* 원문: <a href="https://note.com/kuboasa/n/ne9e23142d6f3/" target="_blank">iPadグラレコを始めるための、iPadの準備とProcreateの設定のコツ」</a>
-* 작성자: <a href="https://twitter.com/kubomi____" target="_blank">구보타 아사미</a>
+<ul>
+<li>
+원문: 
+<a href="https://note.com/kuboasa/n/ne9e23142d6f3/" target="_blank">iPadグラレコを始めるための、iPadの準備とProcreateの設定のコツ」</a>
+</li>
+<li>
+작성자: <a href="https://twitter.com/kubomi____" target="_blank">구보타 아사미</a>
+</li>
+</ul>
 
 <figure>
 <img class="small" src="https://assets.st-note.com/production/uploads/images/29260305/profile_bcb004ca38cf7013ad3bb961920390c8.png?width=200&crop=1:1,smart" alter="">
 </figure>
 
+</div>
+
 <hr/>
 
-안녕하세요? 쿠보미입니다.
-<a href="https://note.com/kuboasa/m/m1a133619a3a7" target="_blank">'그래픽 레코딩의 비밀'에서 그래픽 레코딩을 하면서 겪게 되는 다양한 이야기를 연재하고 있어요.
-
+안녕하세요? 쿠보미입니다.<br/>
+<a href="https://note.com/kuboasa/m/m1a133619a3a7" target="_blank">'그래픽 레코딩의 비밀'</a>에서 그래픽 레코딩을 하면서 겪게 되는 다양한 이야기를 연재하고 있어요.
 앞서 전에 썼던 프로크리에이트 관련 게시물을 많은 분들이 읽어주셨네요. 감사합니다. ^^ 아직 읽지 못했다면 다음 게시물을 참고하세요. 
 
 * [](2020-07-03 note-procreate-settings.md)
@@ -41,6 +55,12 @@ last_modified_at: # YYYY-MM-DD
 ## 아이패드
 
 ### 종이 같은 느낌나게 필름 붙이기
+
+아이패드는 표면이 매끄러워 작은 글자를 쓰기 어려울 수 있어요. 이때는 종이 느낌이 나는 필름을 붙여주세요.
+
+<a href="https://search.shopping.naver.com/catalog/19456060336?cat_id=50002925" target="_blank">엘레컴 종이 질감 필름</a>
+
+저는 아이패드 프로 2017년 모델부터 이 필름을 썼는데 2020년 모델에도 이걸 붙였어요. 종이처럼 자연스럽게 필기할 수 있어 여러분께도 추천합니다.
 
 ### 방해받기 싫으면 알람은 꺼두기
 
