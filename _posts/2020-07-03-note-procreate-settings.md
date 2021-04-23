@@ -22,7 +22,7 @@ last_modified_at: # YYYY-MM-DD
 일부 의역과 현지화한 내용이 포함될 수 있습니다. 
 책에서 직접 인용한 게시물은 번역이 되어 있으나, 해당 게시물에서 링크로 연결된 문서는 번역되지 않을 수 있습니다.
 <br/>
-해당 도서는 <a href="https://zzom.io/graphic-recording/" target="_blank">'처음 배우는 그래픽 레코딩'</a>라는 이름으로 번역되어 2021년 여름 전에 출간 예정입니다. 
+해당 도서는 <a href="https://zzom.io/graphic-recording/" target="_blank">'처음 배우는 그래픽 레코딩'</a>이라는 이름으로 번역되어 2021년 여름 전에 출간 예정입니다. 
 </p>
 
 <ul>
@@ -120,7 +120,7 @@ last_modified_at: # YYYY-MM-DD
 <img width="640" src="https://assets.st-note.com/production/uploads/images/29578968/picture_pc_21e19e9c56cd6b9af13b18ea515858ed.jpg?width=800" alter="">
 </figure>
 
-여기까지 그래픽 레코딩을 할 때 도움이 되는 팁을 정리해봤습니다. <br/>그밖에도 알고 있는 좋은 팁이 있다면 제게도 알려주세요. ^^
+여기까지 그래픽 레코딩을 할 때 도움이 되는 팁을 정리해봤습니다. <br/>그 밖에도 알고 있는 좋은 팁이 있다면 제게도 알려주세요. ^^
 
 ### 궁금한 점은 여기로
 
