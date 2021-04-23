@@ -3,7 +3,7 @@ layout: post
 title:  "그래픽 레코딩 연습에 좋은 영상을 추천합니다"
 author: bomber
 categories: [ 그래픽 레코딩 ]
-tags: [그래픽레코딩, 프로크리에이트, 아이패드]
+tags: [그래픽레코딩, 프로크리에이트, 아이패드, 추천 영상, 연습]
 image: "https://assets.st-note.com/production/uploads/images/30879719/rectangle_large_type_2_38013bc0050dab62b6ec666916e5f4bb.png?width=800"
 description: 
 featured: true
