@@ -48,13 +48,13 @@ last_modified_at: # YYYY-MM-DD
 앞서 전에 썼던 프로크리에이트 관련 게시물을 많은 분들이 읽어주셨네요. 감사합니다. ^^ 아직 읽지 못했다면 다음 게시물을 참고하세요. 
 
 * [](2020-07-03 note-procreate-settings.md)
-<a href="https://zzom.io/note-procreate-features/" target="_blank">프로크리에이트로 그림 그릴 때 꼭 써봐야할 11가지 추천 기능</a>
+<a href="https://zzom.io/note-procreate-features/" target="_blank">프로크리에이트로 그림 그릴 때 꼭 써봐야 할 11가지 추천 기능</a>
 
 오늘은 아이패드와 프로크리에이트로 디지털 그래픽 레코딩을 할 때 알아두면 좋을 설정 팁을 소개합니다!
 
 ## 아이패드
 
-### 종이 같은 느낌나게 필름 붙이기
+### 종이 질감 필름 붙이기
 
 아이패드는 표면이 매끄러워 작은 글자를 쓰기 어려울 수 있어요. 이때는 종이 느낌이 나는 필름을 붙여주세요.
 
@@ -62,7 +62,9 @@ last_modified_at: # YYYY-MM-DD
 
 저는 아이패드 프로 2017년 모델부터 이 필름을 썼는데 2020년 모델에도 이걸 붙였어요. 종이처럼 자연스럽게 필기할 수 있어 여러분께도 추천합니다.
 
-### 방해받기 싫으면 알람은 꺼두기
+### 방해받지 않도록 알림 꺼두기
+
+화면을 공유하며 그래픽 레코딩을 하는 데 개인적인 알림이 오면 곤란하겠죠? 비행기 모드로 전환해서 알림이 표시되지 않게 합시다.
 
 <figure>
 <img width="640" src="https://assets.st-note.com/production/uploads/images/29578996/picture_pc_523da9fe37863cbc30e0d9f8c50532c3.jpg?width=800" alter="">
@@ -72,11 +74,17 @@ last_modified_at: # YYYY-MM-DD
 
 ### 캔버스 크기는 2배 크게 잡아주기
 
+완성된 그림을 확대했을 때도 흐릿하지 않도록 처음부터 캔버스 크기를 크게 잡아 둡시다. 
+
 <figure>
 <img width="640" src="https://assets.st-note.com/production/uploads/images/29578987/picture_pc_b0e074a6f1b536e4dc63c4230116fc62.jpg?width=800" alter="">
 </figure>
 
+예를 들어 화면에 HD(1920 x 1080)로 표시하고 싶다면 캔버스는 2배 크기인 3840 x 2160으로 만드는 거죠.
+
 ### 안내선을 표시하여 크기를 짐작하기
+
+캔버스 설정에서 안내선을 활성화하면 캔버스에 모눈 종이 같은 눈금이 표시됩니다. 글자나 도형의 위치를 잡는 데 편리하기도 하지만, 캔버스를 확대하거나 축소할 때 크기를 가늠하는 데도 도움이 됩니다.
 
 <figure>
 <img width="640" src="https://assets.st-note.com/production/uploads/images/29579384/picture_pc_a698068ea33c75a7272f7ca93d63421a.png?width=800" alter="">
@@ -86,9 +94,13 @@ last_modified_at: # YYYY-MM-DD
 <img width="640" src="https://assets.st-note.com/production/uploads/images/29579240/picture_pc_c671519f6193bc4a42f34f5ea20dcc3a.jpg?width=800" alter="">
 </figure>
 
+저는 보통 크기는 50px, 색깔은 검정, 굵기는 최대, 불투명도는 5~15%로 설정합니다. 
+
 <div class="center"><iframe width="640" height="360" src="https://www.youtube.com/embed/vOnXLJFVrhA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
 
-### 자주 쓰는 색깔은 파레트에 등록하기
+### 쓸 색깔을 파레트에 등록하기
+
+그래픽 레코딩에 쓸 색깔을 파레트에 미리 등록해두면 브러시 색을 바꾸는 게 빨라집니다.
 
 <figure>
 <img width="640" src="https://assets.st-note.com/production/uploads/images/29576277/picture_pc_2cd9542de1279e04dc2d778371624876.png?width=800" alter="">
@@ -98,6 +110,8 @@ last_modified_at: # YYYY-MM-DD
 
 ### 프로젝트 캔버스로 전체 화면 표시하기
 
+설정에서 '프로젝트 캔버스'를 활성화하면 작업하는 아이패드에는 각종 툴 바가 보이지만, 추가로 연결한 디스플레이 장치에는 캔버스 내용을 전체 화면으로 표시할 수 있어요.
+
 <figure>
 <img width="640" src="https://assets.st-note.com/production/uploads/images/29576306/picture_pc_7a3cb08237c912b8ad6a7254bcbef8ed.png?width=800" alter="">
 </figure>
@@ -106,8 +120,10 @@ last_modified_at: # YYYY-MM-DD
 <img width="640" src="https://assets.st-note.com/production/uploads/images/29578968/picture_pc_21e19e9c56cd6b9af13b18ea515858ed.jpg?width=800" alter="">
 </figure>
 
+여기까지 그래픽 레코딩을 할 때 도움이 되는 팁을 정리해봤습니다. <br/>그밖에도 알고 있는 좋은 팁이 있다면 제게도 알려주세요. ^^
+
 ### 궁금한 점은 여기로
 
-그래픽 레코딩, 도해, 비주얼 씽킹에 대해 궁금한 것이 있으면 알려주세요. 다음 번 포스트에 다뤄볼게요. 트위터로 문의주셔도 좋습니다. 부담없이 편하게 질문해주세요. 
+그래픽 레코딩, 도해, 비주얼 씽킹에 대해 궁금한 것이 있으면 알려주세요.<br/> 다음 번 포스트에 다뤄볼게요. 트위터로 문의하셔도 좋습니다. 부담 없이 편하게 질문해주세요. 
 
 * <a href="https://note.com/kuboasa/n/n43b6cac15a4c/" target="_blank">지난 질의응답 확인하기</a>
