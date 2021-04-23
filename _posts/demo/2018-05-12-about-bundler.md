@@ -1,6 +1,7 @@
 ---
 layout: post
 title:  "About Bundler"
+hidden: true
 author: david
 categories: [ Jekyll ]
 image: assets/images/2.jpg

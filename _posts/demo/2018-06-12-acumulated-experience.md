@@ -1,6 +1,7 @@
 ---
 layout: post
 title:  "Accumulated experience of social living"
+hidden: true
 author: david
 categories: [ Jekyll, tutorial ]
 image: assets/images/15.jpg

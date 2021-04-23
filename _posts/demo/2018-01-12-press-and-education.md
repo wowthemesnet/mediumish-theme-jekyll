@@ -1,6 +1,7 @@
 ---
 layout: post
 title:  "Press and education"
+hidden: true
 author: david
 categories: [ Jekyll, tutorial ]
 image: assets/images/7.jpg

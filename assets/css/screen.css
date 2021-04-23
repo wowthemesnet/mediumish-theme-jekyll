@@ -17,10 +17,15 @@ License: https://www.wowthemes.net/freebies-license/
     text-align: center;
 }
 
-a {
+h1 a {
     color: #00ab6b;
     transition: all 0.2s;
     color: black;
+}
+
+a {
+    color: #00ab6b;
+    transition: all 0.2s;
 }
 
 a:hover {

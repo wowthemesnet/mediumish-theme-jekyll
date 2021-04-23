@@ -1,6 +1,7 @@
 ---
 layout: post
 title:  "Never stopped worrying or loving the bomb"
+hidden: true
 author: david
 categories: [ Jekyll ]
 image: assets/images/14.jpg
