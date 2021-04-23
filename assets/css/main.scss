@@ -84,6 +84,10 @@ div.article-post h1, div.article-post h2, div.article-post h3, div.article-post 
 	margin-top: 2em;
 }
 
+div.article-post h3, div.article-post h4, div.article-post h5, div.article-post h6 {
+    color: gray;
+}
+
 div.pagination, a.prev, a.next {
     // font-family: 'Noto Serif KR', serif;
     font-family: 'Noto Sans KR', sans-serif;
