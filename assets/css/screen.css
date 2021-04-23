@@ -11,6 +11,18 @@ License: https://www.wowthemes.net/freebies-license/
     padding: 1rem 0rem;
 }
 
+.postheading {
+    margin: auto;
+    font-family: FreeMono;
+    text-align: center;
+}
+
+h1 a {
+    color: #00ab6b;
+    transition: all 0.2s;
+    color: black;
+}
+
 a {
     color: #00ab6b;
     transition: all 0.2s;
@@ -305,7 +317,7 @@ span.post-read-more a:hover {
 }
 
 .mainheading h1.sitetitle {
-    font-family: Righteous;
+    font-family: FreeMono;
 }
 
 .mainheading h1.posttitle {

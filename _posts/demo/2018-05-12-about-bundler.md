@@ -1,7 +1,8 @@
 ---
 layout: post
 title:  "About Bundler"
-author: sal
+hidden: true
+author: david
 categories: [ Jekyll ]
 image: assets/images/2.jpg
 rating: 3
