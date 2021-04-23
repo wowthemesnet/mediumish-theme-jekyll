@@ -171,5 +171,20 @@ CULTIBASE Radio는 조직의 혁신을 주제로 한 웹 미디어 <a href="http
 
 ## 한국 독자를 위한 추천 영상
 
-한국 독자를 위한 추천 영상을 추가할 예정입니다.
-현재 사용 동의 확보 중이니 조금만 더 기다려 주세요!
+다음은 <a href="https://www.amazon.co.jp/dp/4798164887/" target="_blank">'はじめてのグラフィックレコーディング'</a>의 한국어 번역서인 <a href="https://zzom.io/graphic-recording/" target="_blank">'처음 배우는 그래픽 레코딩'</a> 독자를 위한 추천 영상입니다. 
+
+### 책 낭독
+역자, 작가 겸 일러스트레이터 세메리 작가님이 읽어주시는 '벤자민 버튼의 시간은 거꾸로 간다'입니다.
+<div class="center"><iframe width="640" height="360"  src="https://www.youtube.com/embed/OfY6IHojuG8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
+
+### IT 트렌드
+팟캐스트 디지털히어로즈, 세컨드브레인 연구소 이임복님의 메타버스 강의입니다.
+
+<div class="center"><iframe width="640" height="360"  src="https://www.youtube.com/embed/f9DK8HmjaPs" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
+
+### 커뮤니케이션
+콘텐츠 인용 동의 확보 중입니다.
+
+### 스토리텔링
+우동이즘 스토리텔링 이동우 작가님의 '이야기 도입부 만드는 법 4가지'입니다.
+<div class="center"><iframe width="640" height="360"  src="https://www.youtube.com/embed/Wraks_lQRSU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
