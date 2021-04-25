@@ -183,7 +183,7 @@ CULTIBASE Radio는 조직의 혁신을 주제로 한 웹 미디어 <a href="http
 <div class="center"><iframe width="640" height="360"  src="https://www.youtube.com/embed/f9DK8HmjaPs" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
 
 ### 커뮤니케이션
-실생활에 바로 쓸 수 있는 희렌최님의 커뮤니케이션 팁 영상입니다.
+실생활에 바로 쓸 수 있는 희렌최님의 커뮤니케이션 꿀팁 영상입니다.
 <div class="center"><iframe width="640" height="360" src="https://www.youtube.com/embed/GTOsuStPRno" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
 
 ### 스토리텔링
