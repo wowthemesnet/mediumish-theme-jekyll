@@ -58,7 +58,7 @@ last_modified_at: # YYYY-MM-DD
 
 아이패드는 표면이 매끄러워 작은 글자를 쓰기 어려울 수 있어요. 이때는 종이 느낌이 나는 필름을 붙여주세요.
 
-<a href="https://search.shopping.naver.com/catalog/19456060336?cat_id=50002925" target="_blank">엘레컴 종이 질감 필름</a>
+* <a href="https://search.shopping.naver.com/catalog/19456060336?cat_id=50002925" target="_blank">엘레컴 종이 질감 필름</a>
 
 저는 아이패드 프로 2017년 모델부터 이 필름을 썼는데 2020년 모델에도 이걸 붙였어요. 종이처럼 자연스럽게 필기할 수 있어 여러분께도 추천합니다.
 
