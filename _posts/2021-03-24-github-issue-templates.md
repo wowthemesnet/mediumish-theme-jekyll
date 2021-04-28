@@ -3,7 +3,7 @@ layout: post
 title:  "Issues 템플릿을 만들면 재사용이 되더라고"
 author: bomber
 categories: [작업 환경]
-tags: [GitHub, 사이트구축, 가나다라마바사아자차카타파하]
+tags: [GitHub, 사이트구축]
 image: assets/images/github-issue-templates/recycle-237874_1280.jpg
 image-caption: 이미지 출처 <a href="https://pixabay.com/ko/users/imordaf-117056/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=237874">imordaf</a>
 description: "GitHub 이슈로 질문 게시판 만들었는데, GitHub 디스커션으로 갈아타야 했던 썰"
