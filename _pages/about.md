@@ -52,6 +52,11 @@ comments: false
 
     <div class="col-md-4">
         <div class="sticky-top sticky-top-80">
+            <h5>크라우드 펀딩은 여기로</h5>
+            <p>
+            <a href="https://tumblbug.com/graphicrecording" target="_blank">처음 배우는 그래픽 레코딩</a>
+            </p>
+
             <h5>책 구매는 여기로</h5>
             <p>
             준비 중입니다.
