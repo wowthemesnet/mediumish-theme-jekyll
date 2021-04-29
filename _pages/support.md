@@ -24,7 +24,8 @@ comments: false
             <h5>가장 편한 시간에,<br/> 가장 편한 곳에서,<br/> 가장 편한 방법으로 글을 남겨주세요.</h5>
             <p>알아볼 수 있으면 됩니다.<br/> 형식도 자유롭게 부담 없이 써주세요.</p>
             <ul>
-                <li><a href="https://github.com/project-zzom/project-zzom.github.io/discussions" target="_blank">GitHub이 편한 분은 여기로</a></li>
+                <li><a href="https://github.com/project-zzom/project-zzom.github.io/issues" target="_blank">GitHub Issues가 편한 분은 여기로</a></li>
+                <li><a href="https://github.com/project-zzom/project-zzom.github.io/discussions" target="_blank">GitHub Discussions가 편한 분은 여기로</a></li>
                 <li><a href="https://www.facebook.com/project.zzom/" target="_blank">Facebook이 편한 분은 여기로</a></li>
                 <li><a href="https://twitter.com/project_zzom/" target="_blank">Twitter가 편한 분은 여기로</a></li>
                 <li><a href="https://www.instagram.com/project.zzom/" target="_blank">Instagram이 편한 분은 여기로</a></li>
