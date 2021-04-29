@@ -9,7 +9,7 @@ comments: false
 
 Please ensure you are <a href="{{ site.baseurl }}/registration/">registered on Apnacomplex</a> as the owner of the flat. All prior maintenance and other dues must be cleared to approve the renovation/ interior works. In case you are a new owner a No Objection certificate from GOA will be required.
 
-* <a target="_blank" href="https://drive.google.com/file/d/1aD4ejk0V_sSAMoEeBxsHVxpG5FaJtM1x/view?usp=sharing">Download</a> the interior works form or collect it from GOA office in Alpine Block. You can also receive the form by email.
+* <a target="_blank" href="https://drive.google.com/file/d/12fiG53DochlPCA1zVKJmnHLsiYx1xzZ5/view?usp=sharing">Download</a> the interior works form or collect it from GOA office in Alpine Block. You can also receive the form by email.
 
 * Complete the form and submit in GOA office or send a scanned copy of the filled-in form
 
@@ -37,7 +37,7 @@ All such types of works that need material movement by truck, employment of work
 
 6. No work should be carried out or material should be placed in common areas.  Any damage to common areas shall be recovered from the unit owner
 
-7. No structural alteration to the building is allowed. In case of any deviation GOA shall be obliged to penalize the owner and recover the costs for reinstating to the original/sanctioned form.
+7. No structural alteration (such as breaking of walls), changes to the layout of the apartment or changes to the exterior appearance of the apartments (such as changing of balcony grills, windows or doors)  is allowed. In case of any deviation GOA shall be obliged to penalize the owner and recover the costs for reinstating to the original/sanctioned form.
 
 8. Replacement of tiles/flooring will need prior approval from facility manager to ensure there is no structural damage
 
