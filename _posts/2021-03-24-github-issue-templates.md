@@ -22,7 +22,7 @@ last_modified_at: # YYYY-MM-DD
 
 번역하는 책 대부분이 IT 관련서다보니 소스 코드나 다운로드 파일을 제공해야 한다. 사용한 소프트웨어가 업그레이드되거나, 서비스 공식 페이지가 리뉴얼되면 변경되는 부분도 많다. (적어도 1년에 2번은 업그레이드된다) 종이책을 늦게 받아보는 독자라면 다음 쇄가 나올 때까지 갱신된 내용을 받아볼 수 없다. 그것도 증쇄한다는 전제가 있었을 때 가능한 얘기다. 
 
-의도했던 안 했던 초기 출간 형태에서 바뀌는 내용은 어떻게든 독자에게 전달해야하고, 전달하지 못한다면 독자의 문의에 대응할 수 있어야 한다. 그러기 위해서는 형상관리 툴이 필요하고 지구상에서 가장 인지도 있는 형상관리 툴이라면 단연 GitHub일 것이다. 
+의도했던 안 했던 초기 출간 형태에서 바뀌는 내용은 어떻게든 독자에게 전달해야하고, 전달하지 못한다면 독자의 문의에 대응할 수 있어야 한다. 그러기 위해서는 형상 관리 툴이 필요하고 지구상에서 가장 인지도 있는 형상 관리 툴이라면 단연 GitHub일 것이다. 
 
 ... 라는 건 듣기 좋은 핑계고 사실은 개인 도메인을 사이트에 연동하는 게 무료라는 점이 GitHub을 선택한 가장 큰 이유가 되겠다. (거짓말 못 하는 성격이라) 어쨌거나 그렇게 결정한 이상 툴의 능력을 최대한 끌어내는 것은 엔지니어의 도리. 그래서 바로 GitHub에 제공하는 리포지터리 템플릿 기능을 써 보기로 했다.
 
@@ -53,7 +53,7 @@ Issue란 사전적 의미로 '주제, 안건, 쟁점, 사안' 등의 의미인�
 
 <img class="shadow" src="{{ site.baseurl }}/assets/images/github-issue-templates/issues-002.png" alter="issues-002">
 
-사실 정보를 수집하는 입장에서는 저렇게 형식을 갖춘 틀에 필요한 정보가 차곡차곡 들어오길 바란다. 하지만 정보를 입력하는 입장이라면 내가 할 말만 하고 싶을 뿐 저런 과잉 친절을 가장한 형식은 거부감만 유발한다. 
+사실 정보를 수집하는 입장에서는 저렇게 형식을 갖춘 틀에 필요한 정보가 차곡차곡 들어오길 바란다. 하지만, 정보를 입력하는 입장이라면 내가 할 말만 하고 싶을 뿐 저런 과잉 친절을 가장한 형식은 거부감만 유발한다. 
 
 <img class="shadow" src="{{ site.baseurl }}/assets/images/github-issue-templates/issues-003.png" alter="issues-003">
 
@@ -83,3 +83,9 @@ GitHub에서 이슈 템플릿을 쓰면 어떤 모양이되나 궁금하다면 �
         <a href="https://github.com/project-zzom/project-zzom.github.io/issues/new/choose" target="_blank">Project ZZOM 이슈 게시판</a>
     </li>
 </ul>
+
+그래서 오늘의 엔딩 곡은 이거로...<br/>
+'Julia Michaels'이 부릅니다. <br/>
+Issues
+
+<div class="center"><iframe width="640" height="360" src="https://www.youtube.com/embed/9Ke4480MicU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
