@@ -104,7 +104,7 @@ const Example = () =>{
     );
   }
 ```
-  위 코드에서 `useEffect`는 세 개의 함수를 통합해서 단 한 번에 끝낼 수 있다😁 `class`에서 했던 `ComponentDidMount`로 처음 `title`을 지정하고 `ComponentWillUpdate`로 count에 따라 title이 바뀌는 게 저 코드 블록으로 끝이 난다!
+  위 코드에서 `useEffect`는 세 개의 함수를 통합해서 단 한 번에 끝낼 수 있다😁 `class`에서 했던 `ComponentDidMount`로 처음 `title`을 지정하고 `componentDidUpdate`로 count에 따라 title이 바뀌는 게 저 코드 블록으로 끝이 난다!
 
  조금만 더 생각해 보자. 내가 원하지 않는 경우에 `re-render`가 계속되면은 비용이 커지지 않을까? 그래서 `useEffects`는 내부에 두 개의 파라미터를 사용한다. 첫 번째 인자는 `render`가 될 때 어떻게 동작할지에 대한 코드, 두 번째 인자로는 `dependency`를 설정해 준다. `dependency`가 바뀔 때만 `useEffect`는 `update`의 역할을 해줄 것이다.
 
