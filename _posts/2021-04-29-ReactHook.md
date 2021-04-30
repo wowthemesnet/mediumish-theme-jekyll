@@ -20,13 +20,16 @@ React를 엄청 복잡한 예제에서 무언가 가져오려면 구조를 바�
 
 이런 경우는 생각보다 자주 일어나고 사람과 컴퓨터가 힘들어진다😂
 
-리액트의 대가인 Dan은 위에서 얘기하는 문제들을 포괄해서 얘기하는데,
+리액트의 대가인 Dan은 위에서 얘기하는 문제들을 포괄해서 얘기한다.
+
 React가 더 가볍고 좋은 primitive나 add state를 제공하지 않기 때문에 생기는 현상이라고 말한다.
 
 그래서 React 팀은 기존의 코드를 엎지 않을 수 있으면서 새로운 API를 제공해 주려고 노력했다. 그게 바로 React Hook다!
 
 React Hook은 React 버전 16.8부터 추가되었다.
+
 실제 React에서 Hooks가 구현된 크기는 ~1.5kB(min + gzip).이다.
+
 단지 크기가 작다는 걸 얘기하는 게 아니다.
 
 기존에 만들었던 Class만으로 이루어진 프로젝트에 Hooks을 도입한다면 bundle size를 줄일 수 있다는 얘기다🧐
@@ -113,6 +116,7 @@ const Example = () =>{
 ```
 
 위 코드에서 `useEffect`는 세 개의 함수를 통합해서 단 한 번에 끝낼 수 있다😁
+
 `ComponentDidMount`와 `ComponentWillUpdate`로 count에 따라 `title`이 바뀌는 게 간단히 끝이 난다!
 
 조금만 더 생각해 보자. 내가 원하지 않는 경우에 `re-render`가 계속되면은 비용이 커지지 않을까?
