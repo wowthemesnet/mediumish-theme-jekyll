@@ -8,13 +8,6 @@ beeetea:
   web:
 
 # DSC CORE MEMBER
-jeongukjae:
-  name: 정욱재
-  display_name: 욱재
-  email: jeongukjae@gmail.com
-  github: jeongukjae
-  role: core
-  web:
 Enoch-Kim:
   name: 김유현
   display_name: 유현
@@ -36,6 +29,9 @@ r4k0nb4k0n:
   github: r4k0nb4k0n
   role: core
   web: https://r4k0nb4k0n.github.io/
+_blank1:
+  name: _blank
+  role: core
 gusrb3164:
   name: 김현규
   display_name: 현규
@@ -57,6 +53,9 @@ easter:
   github: lsh3163
   role: core
   web:
+_blank2:
+  name: _blank
+  role: core
 handal95:
   name: 한상일
   display_name: 상일
@@ -64,8 +63,32 @@ handal95:
   github: handal95
   role: core
   web:
+edit8080:
+  name: 이태희
+  display_name: 태희
+  email: leetaehee0205@gmail.com
+  github: edit8080
+  role: core
+  web:
+sheele41:
+  name: 석종규
+  display_name: 종규
+  email: mevius1718@gmail.com
+  github: SHEELE41
+  role: core
+  web: https://oasisfores.com
+_blank3:
+  name: _blank
+  role: core
 
 # DSC MEMBER
+jeongukjae:
+  name: 정욱재
+  display_name: 욱재
+  email: jeongukjae@gmail.com
+  github: jeongukjae
+  role: normal
+  web:
 hye1ng:
   name: 박혜인
   display_name: 혜인
@@ -80,13 +103,6 @@ howtolivelikehuman:
   github: howtolivelikehuman
   role: normal
   web: https://howtolivelikehuman.tistory.com/
-sheele41:
-  name: 석종규
-  display_name: 종규
-  email: mevius1718@gmail.com
-  github: SHEELE41
-  role: normal
-  web: https://oasisfores.com
 hoyeon94:
   name: 임호연
   display_name: 호연
@@ -170,4 +186,81 @@ presentnine:
   email: presentnine@naver.com
   github: presentnine
   role: normal
-  web:
+  web: https://presentnine.tistory.com
+LeeMir:
+  name: 이명재
+  display_name: 명재
+  email: manofgodmj@gmail.com
+  github: LeeMir
+  role: normal
+  web: https://leemir.github.io
+keepproceeding:
+  name: 오원진
+  display_name: 원진
+  email: jason7655@naver.com
+  github: keepproceeding
+  role: normal
+  web: https://keepproceeding.github.io
+suin0730:
+  name: 곽수인
+  display_name: 수인
+  email: ei654029@gmail.com
+  github: suin0730
+  role: normal
+  web: https://suintodev.tistory.com
+gganada:
+  name: 신정한
+  display_name: 정한
+  email: soccersinjun@gmail.com
+  github: gganada 
+  role: normal
+  web: 
+sally0226:
+  name: 김바다
+  display_name: 바다
+  email: sally734595@gmail.com
+  github: sally0226
+  role: normal
+  web: https://bba-dda.tistory.com
+poiu694:
+  name: 이상민
+  display_name: 상민
+  email: poiu694@naver.com
+  github: poiu694
+  role: normal
+  web: 
+aerojohn1223:
+  name: 황보겸
+  display_name: 겸
+  email: johnhwangbo17@gmail.com
+  github: aerojohn1223
+  role: normal
+  web: 
+yuniwisdom:
+  name: 최윤지
+  display_name: 윤지
+  email: dbswlchl66@gmail.com
+  github: yuniwisdom
+  role: normal
+  web: 
+kir3i:
+  name: 유시온
+  display_name: 시온
+  email: kirei7091@gmail.com
+  github: kir3i
+  role: normal
+  web: https://velog.io/@kir3i
+hyehyeonmoon:
+  name: 문혜현
+  display_name: 혜현
+  email: angelfox4@naver.com
+  github: hyehyeonmoon
+  role: normal
+  web: 
+owao:
+  name: 염정윤
+  display_name: 정윤
+  email: kori0423@naver.com
+  github: owao
+  role: normal
+  web: 
