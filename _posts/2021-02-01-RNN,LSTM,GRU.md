@@ -3,12 +3,12 @@ layout: post
 title: "RNN, LSTM, GRU"
 authors: [howtolivelikehuman]
 tags: ["ML"]
-image: assets/images/post-image_classification/RNN-LSTM-GRU_logo.png
+image: assets/images/post-image_classification/RNN-LSTM-GRU_logo.PNG
 description: "대학교 3학년도 알 수 있는 기초 RNN"
 featured: true
 ---
 
-#### RNN (Recurrent Neural Network)
+## RNN (Recurrent Neural Network)
 
 RNN은 연속적인 데이터셋을 처리하기 위해 등장하였다.
 
@@ -42,9 +42,7 @@ Many to One을 활용한 Encoder를 통해 문장을 학습, 처리가능한 형
 
 위와 같이 가장 기본인 RNN을 Vanilla RNN이라 한다. (똑같은 가중치를 사용하여 계속 계산, 학습)
 
-
-
-#### LSTM (Long Short-Term Memory)
+## LSTM (Long Short-Term Memory)
 
 이러한 Vanilla RNN 역시 한계에 도달하게 된다. 시점이 길어질수록 앞의 은닉 상태가 점점 소실되는 것이다.
 
@@ -92,7 +90,7 @@ Output Gate는 얼마나 출력할지에 대한 게이트이다.
 
 이제 Hidden State 이자, LSTM의 출력값을 다음과 같이 구할 수 있다.
 
-#### GRU (Gated Recurrent Unit)
+## GRU (Gated Recurrent Unit)
 
 GRU는 LSTM이 장기적으로 기억할 수 있는 장점을 유지하면서, 기존의 3개의 게이트를 사용하던 복잡한 구조를 단순화시킨 모델이다. 셀 상태 없이 Update Gate와 Reset Gate 두 개를 사용한다.
 
@@ -118,7 +116,7 @@ RNN의 고정 크기 벡터에 따른 정보 손실과, 기울기 소실을 보�
 
 이후 2017년 구글에서 Attention을 활용한 Transformer의 발표와 함께, 이를 사용한 BERT, GPT 등의 모델들이 현재는 자연어 처리 영역에서 활발하게 사용되고 있다.
 
-##### 참고
+## 참고
 
 딥 러닝을 이용한 자연어 처리 입문 (유원준) **[wikidocs.net/22886](https://wikidocs.net/22886)**
 
