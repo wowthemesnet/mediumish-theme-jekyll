@@ -13,13 +13,21 @@ title: Home
     </div>
     <div class="row">
 
+        {% assign featured_limit = 4 %}
+
         {% for post in site.posts %}
 
-        {% if post.featured == true %}
+            {% if post.featured == true and featured_limit > 0 %}
 
-        {% include featuredbox.html %}
+                {% assign featured_limit = featured_limit | minus : 1 %}
 
-        {% endif %}
+                {% include featuredbox.html %}
+
+            {% elsif featured_limit <= 0 %}
+
+                {% break %}
+
+            {% endif %}
 
         {% endfor %}
 
