@@ -969,3 +969,16 @@ iframe {
 .author-icon-wrapper .author-icon:first-child {
     margin-left: 0px;
 }
+
+@media (min-width: 768px) {
+    .author-blank {
+        display: none;
+        margin: 0;
+    }
+}
+
+@media (min-width: 992px) {
+    .author-blank {
+        display: flex;
+    }
+}
