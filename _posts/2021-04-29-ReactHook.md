@@ -144,12 +144,12 @@ const Example = () =>{
   
   const CountContext = createContext({});
   
-  const Counter = () => {
+  const Counter = () =>{
       const conunt = useContext(CountContext);
       return <div>seconds: {count}</div>
   };
   
-  const Timer = () => {
+  const Timer = () =>{
     const [seconds, setSeconds] = useState(0);
       
       useEffect(()=>{
@@ -201,7 +201,7 @@ const Example = () =>{
 
 - ```react
   dispatch({type: 'INC'}); // Increment
-  dispatch({type: 'DEC'}) // Decrement
+  dispatch({type: 'DEC'}); // Decrement
   ```
 
 - 다수의 하위 값을 포함하는 복잡한 정적 로직을 만드는 경우나 새로운 `state`가 이전 `state`에 의존적인 경우 주로 사용한다.
@@ -238,7 +238,7 @@ React Hook을 이용한 방법과 다른 방식으로 했던 방법을 비교해
 
 완성본 미리보기😎
 
-![1619681704501](../assets\images\post-React-Hook/Todolist.png)
+![1619681704501](../assets/images/post-React-Hook/Todolist.png)
 
 ### TODO
 
@@ -286,7 +286,7 @@ import ToDoList from "../components/Todo/ToDoList";
 
 const TODOS_LS = 'TODOS';
 
-const TodoTemplate = ()=>{
+const TodoTemplate = () =>{
     const [todos, setTodos] = UseLocalStorage(TODOS_LS, [{
       id:1, 
       task:"Submit Your TODO-LIST", 
@@ -312,7 +312,7 @@ TODO-ITEM을 추가해 줄 수 있는 `Header`를 만들어 보자. `input`을 �
 // Header.js
 import React, {useState} from "react";
 
-const Header = () => {
+const Header = () =>{
     const [value, setValue] = useState("");
 
     const handleChange = (e) =>{
@@ -350,17 +350,17 @@ const Header = () => {
 ```react
 // TodoTemplate.js
 // Add Task
-  const addTodo = (input, validator) =>{
-      let todosMap = [...todos];
-      todosMap.push({
-        id: todos[todos.length -1].id + 1,
-        task: input,
-        complete: false
-      })
-      setTodos(todosMap);
-  }
+const addTodo = (input, validator) =>{
+    let todosMap = [...todos];
+    todosMap.push({
+      id: todos[todos.length -1].id + 1,
+      task: input,
+      complete: false
+    })
+    setTodos(todosMap);
+}
   
-  <Header addTodo={addTodo} />
+<Header addTodo={addTodo} />
 ```
 
 여기서 `todosMap`을 만들어주고 `Header`에 `addTodo`를 넘겨준다.
@@ -374,9 +374,9 @@ const Header = () => {
 ```react
 // Header.js
 const handleSubmit = (e) =>{
-        e.preventDefault()
-        addTodo(value);
-        setValue("");
+    e.preventDefault();
+    addTodo(value);
+    setValue("");
 }
 ```
 
@@ -384,7 +384,7 @@ const handleSubmit = (e) =>{
 
 이 기능을 `form`안에 넣는다면 `LocalStorage`에 저장되는 모습을 볼 수 있다!
 
-![1619678285863](../assets\images\post-React-Hook/LocalStorage.png)
+![1619678285863](../assets/images/post-React-Hook/LocalStorage.png)
 
 ### TODO-LIST
 
