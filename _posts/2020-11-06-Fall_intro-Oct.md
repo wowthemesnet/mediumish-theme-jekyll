@@ -3,7 +3,7 @@ layout: post
 title: "Fall intro team 10월 파이썬 과제"
 authors: ["maybeluna"]
 tags: ["Fall intro"]
-image: https://www.bloter.net/wp-content/uploads/2016/09/navercast_python_01logo.png
+image: https://user-images.githubusercontent.com/72259053/116891473-b4cfe880-ac69-11eb-8d6b-3133a310be6e.png
 description: "과제 1, 2, 3"
 featured: false
 ---

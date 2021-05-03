@@ -3,7 +3,7 @@ layout: post
 title: "Fall intro team 11월 파이썬 과제"
 authors: ["maybeluna"]
 tags: ["Fall intro"]
-image: https://www.bloter.net/wp-content/uploads/2016/09/navercast_python_01logo.png
+image: https://user-images.githubusercontent.com/72259053/116891473-b4cfe880-ac69-11eb-8d6b-3133a310be6e.png
 description: "과제 4, 5 & 강의 듣기"
 featured: false
 ---
@@ -24,7 +24,7 @@ featured: false
 
    - bash와 zsh는 명령어 차이가 약간씩 다르기 때문에 이를 확인해주어야 한다.
 
-   - 현재 쓰는 쉘 종류를 알고 싶을 때
+   - 현재 쓰는 쉘의 종류를 알고 싶을 때
 
      ```shell
      echo $0
