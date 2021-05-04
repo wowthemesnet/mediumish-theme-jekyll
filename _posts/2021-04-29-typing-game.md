@@ -125,7 +125,7 @@ ended 이벤트가 발생하면 다음 동영상만 보이게 하고 나머지 `
 실제 caret의 `caret-color`를 transparent로 적용하여 가리고,
 fake caret이 맨 끝에 있는 경우 가짜 caret이 그럴듯하게 보이게 만들었습니다.
 
-@Taehee Lee 님의 기능 제안으로 Fake input을 통해 Fake caret도 화살표 키를 통해 움직이는 것을 구현할 에정입니다.
+@Taehee Lee 님의 기능 제안으로 Fake input을 통해 Fake caret도 화살표 키를 통해 움직이는 것을 구현할 예정입니다.
 [관련 PR](https://github.com/r4k0nb4k0n/typing-game/issues/6)
 
 ## 🧑‍💻 마치며
