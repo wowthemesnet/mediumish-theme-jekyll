@@ -22,7 +22,7 @@ featured: false
 저는 `2021-spring-web-beginner` 팀에서 [microsoft/Web-Devs-For-Beginner](https://github.com/microsoft/Web-Dev-For-Beginners)
 를 기반으로 웹 기초 지식을 학습하고, 프로젝트를 통해 이를 응용해보고 있습니다.
 
-![Primitive Typing Game Demo](https://github.com/microsoft/Web-Dev-For-Beginners/raw/main/4-typing-game/images/demo.gif)
+>![Primitive Typing Game Demo](https://github.com/microsoft/Web-Dev-For-Beginners/raw/main/4-typing-game/images/demo.gif)
 
 [Event-Driven Programming - Build a Typing Game](https://github.com/microsoft/Web-Dev-For-Beginners/tree/main/4-typing-game)
 파트에서 위와 같은 데모를 봤습니다. 이걸 제가 원하는 형태와 방식으로 만들어보고 싶었습니다.
