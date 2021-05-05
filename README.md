@@ -179,8 +179,8 @@ tags: [태그1], 태그2]
 image: assets/images/파일명.확장자 
 # image: "http://경로/파일명.확장자"
 description: 설명
-featured: true / false # featured 노출 여부
-hidden: true / false # featured, all stories 중복 노출 방지
+featured: false / false # featured 노출 여부
+hidden: false / false # featured, all stories 중복 노출 방지
 comments: true / false # page comment 사용 여부
 rating: 1~5까지 점수
 last_modified_at: YYYY-MM-DD
