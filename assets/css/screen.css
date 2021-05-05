@@ -3,6 +3,21 @@ Template Name: Mediumish
 Copyright: Sal, WowThemes.net, https://www.wowthemes.net
 License: https://www.wowthemes.net/freebies-license/
 */
+
+:root {
+    /* google guide color */
+    --white-color: #F8F9FA;
+    --black-color: #202124;
+    --red-color: #EA4335;
+    --yellow-color: #FBBC05;
+    --green-color: #34A853;
+    --blue-color: #2254AF;
+    --light-blue-color: #D2E3FC;
+    --light-green-color: #CEEAD6;
+    --light-yellow-color: #FEEFC3;
+    --light-red-color: #FAD2CF;
+  }
+
 .full_logo {
     margin: auto;
     display: block;
