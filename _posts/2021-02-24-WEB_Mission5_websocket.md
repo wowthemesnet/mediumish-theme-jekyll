@@ -1,7 +1,8 @@
 ---
 layout: post
 title: "Web Mission5 - WebSocket 구현하기"
-author: [rxdcxdrnine]
+authors: [rxdcxdrnine]
+
 tags: ["Web"]
 image: ../assets/images/post-WEB-Mission5/websocket_0.png
 description: "Socket.io 를 이용한 웹소켓 구현"
