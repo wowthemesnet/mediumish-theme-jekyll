@@ -3,7 +3,7 @@ layout: post
 title:  "Team blog - PR review 연습하기"
 authors: [hyehyeonmoon]
 tags: ["Review"]
-image: assets/images/post-practice/practice-title.png
+image: assets/images/post-practice/practice-title.PNG
 description: "PR리뷰를 위해 처음부터 끝까지 해보기"
 featured: true
 ---
@@ -11,12 +11,8 @@ featured: true
 ## Intro
 
  처음 "PR"이란 단어도 들었고, 처음 Visual code도 깔아봤다. Github으로 처음 협업을 해보는데 좀 재밌다..ㅎㅎ역시 기초 공부할 떄가 가장 재미있는 것 같다. 요구된 공부를 다 하고 드디어 PR review를 할 수 있나 싶었는데 막상 보니까 잘 모르는 게 많았다. 뭔가 잘못 건드려서 꼬이는 순간 걷잡을 수 없이 커질 것 같아 직접 PR을 날리고 내 PR을 내가 리뷰해 보는 과정을 해보기로 했다. 이게 마음이 편하다....
-<br>
-<br>
 
-<p align="center">
-<img src="../assets/images/post-practice/practice-title.png" align="center" width="220" height="190"> 
-</p>
+![tag](../assets/images/post-practice/practice-title.PNG){: width="660" height="250"}
 
 ## Course
 
