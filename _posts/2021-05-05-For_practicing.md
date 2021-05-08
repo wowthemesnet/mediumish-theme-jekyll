@@ -1,10 +1,10 @@
 ---
 layout: post
-title:  "Team blog - PR review 연습하기"
+title:  "Team blog - 초심자라면 추천하는 공부들"
 authors: [hyehyeonmoon]
 tags: ["Git"]
 image: assets/images/post-practice/practice-title.PNG
-description: "PR리뷰를 위해 처음부터 끝까지 해보기"
+description: "PR리뷰를 위해 처음부터 끝까지 경험해보기"
 featured: true
 ---
 
