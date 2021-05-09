@@ -61,8 +61,8 @@ PR Review를 하기 위해서는 우선 Git과 Github에 대한 기본적인 이
   - Github Desktop Install
   - [Markdownlint Install]("https://github.com/DSC-University-of-Seoul/2021-spring-web/blob/main/CONTRIBUTING.md)
   - 수빈 님의 친절한 DSC Blog Team.pptx 정독
-  - 유현 님의 친절한 "PR은 어떻게 하는가?" 강의 다시듣기
-- 직접 PR 날리고 PR Review해보기
+  - 유현 님의 친절한 "PR은 어떻게 하는가?" 강의 다시 듣기
+- 직접 PR 날리고 PR Review 해보기
 
 ## 느낀 점
 
