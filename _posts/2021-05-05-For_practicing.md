@@ -4,7 +4,7 @@ title:  "Team blog - 초심자라면 추천하는 공부들"
 authors: [hyehyeonmoon]
 tags: ["Git"]
 image: assets/images/post-practice/practice-title.PNG
-description: "PR리뷰를 위해 처음부터 끝까지 경험해보기"
+description: "PR Review를 위해 처음부터 끝까지 경험해보기"
 featured: true
 ---
 
@@ -62,7 +62,7 @@ PR Review를 하기 위해서는 우선 Git과 Github에 대한 기본적인 이
   - [Markdownlint Install]("https://github.com/DSC-University-of-Seoul/2021-spring-web/blob/main/CONTRIBUTING.md)
   - 수빈 님의 친절한 DSC Blog Team.pptx 정독
   - 유현 님의 친절한 "PR은 어떻게 하는가?" 강의 다시듣기
-- 직접 PR 날리고 PR 리뷰해보기
+- 직접 PR 날리고 PR Review해보기
 
 ## 느낀 점
 
