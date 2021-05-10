@@ -382,11 +382,13 @@ html 형태로 코드를 작성해 동적으로 DOM을 그리게 해주는 역�
 이제 mustache 파일을 이용해 html을 구성해봅시다. 코드의 재사용성이 높아졌습니다.
 
 ```mustache
+{% raw %}
 {{>layout/header}}
 
 <h1> 안녕하세요 여러분! </h1>
 
 {{>layout/footer}}
+{% endraw %}
 ```
 
 ## 5. 게시판 만들기
@@ -463,6 +465,7 @@ CDN을 사용하는 코드는 다음과 같습니다.
 3. 게시글을 저장하는 역할을 하는 post-save.mustache를 생성합니다.
 
     ```html
+        {% raw %}
         {{>layout/header}}
 
         <h1>게시글 등록</h1>
@@ -492,6 +495,7 @@ CDN을 사용하는 코드는 다음과 같습니다.
         </div>
 
         {{>layout/footer}}
+        {% endraw %}
     ```
 
 4. 게시글 등록 버튼이 동작할 수 있도록 index.js를 생성합니다.
@@ -546,6 +550,7 @@ var main 속성 안에 function을 추가함으로써 브라우저의 scope가 �
 1. 전체 목록을 나타낼 수 있도록 index.mustache의 UI를 변경합니다.
 
     ```mustache
+    {% raw %}
         <!-- 목록 출력 영역 -->
         <table class="table table-horizontal table-bordered">
             <thead class="thead-strong">
@@ -567,6 +572,7 @@ var main 속성 안에 function을 추가함으로써 브라우저의 scope가 �
             {{/posts}}
             </tbody>
         </table>
+    {% endraw %}
     ```
 
 2. 가독성을 높이기 위해 @Query 어노테이션을 사용해 PostsRepository.java를 작성합니다.
