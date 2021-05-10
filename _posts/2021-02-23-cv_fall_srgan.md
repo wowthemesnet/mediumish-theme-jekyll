@@ -84,15 +84,14 @@ test data인 SET-5, SET-14, 그리고 BSD100에 대해 PSNR, SSIM, MOS 지표를
 
 기존 SRGAN 논문에서 perceptual loss function으로 사용하던 vgg 네트워크를 imagenet 데이터에 대해 미리 학습된 네트워크로 대체했다. 사용하고자 하는 네트워크는 다음과 같았다.
 
-```
-VGG16
-VGG16_BN
-resnet152
-densenet201
-resnext101_32x8d
-wide_resnet_101
-inception_v3
-```
+
+- VGG16
+- VGG16_BN
+- resnet152
+- densenet201
+- resnext101_32x8d
+- wide_resnet_101
+- inception_v3
 
 모든 네트워크의 마지막 layer를 특징맵으로 사용했다. set5,set14,bsd100를 test data로 이용하여 성능을 측정했다.
 
