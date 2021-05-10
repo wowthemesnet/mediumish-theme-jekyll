@@ -12,6 +12,7 @@ License: https://www.wowthemes.net/freebies-license/
     --yellow-color: #FBBC05;
     --green-color: #34A853;
     --blue-color: #2254AF;
+    --light-black-color: #484A50;
     --light-blue-color: #D2E3FC;
     --light-green-color: #CEEAD6;
     --light-yellow-color: #FEEFC3;
@@ -32,13 +33,14 @@ License: https://www.wowthemes.net/freebies-license/
     padding: 1rem 0rem;
 }
 
+/* page a and hover*/
 a {
-    color: #00ab6b;
+    color: var(--green--color);
     transition: all 0.2s;
 }
 
 a:hover {
-    color: #038252;
+    color: var(--light-green-color);
     text-decoration: none;
 }
 
@@ -52,7 +54,7 @@ pre {
     font-size: .9rem;
     white-space: pre;
     overflow: auto;
-    background: #fff;
+    background: var(--white-color);
     border-radius: 0px;
     line-height: 1.6;
     color: #333;
