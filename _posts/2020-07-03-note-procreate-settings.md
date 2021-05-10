@@ -8,6 +8,7 @@ image: "https://assets.st-note.com/production/uploads/images/29580669/rectangle_
 description: 
 featured: false
 hidden: false
+beforetoc: 
 toc: true
 comments: true
 rating: # 1~5까지 점수

@@ -2,13 +2,13 @@
 layout: post
 title:  "출판사를 만든 동기를 moving motivator로 분석해봤다"
 author: bomber
-categories: [작업 환경]
+categories: [창업 에피소드]
 tags: [GitHub, 사이트구축]
 image: assets/images/moving-motivator/moving-motivator-card.jpg
 image-caption: 
 description: "출판사를 만든 동기를 moving motivator로 분석해본 썰"
 featured: true
-hidden: false
+hidden: true
 toc: true
 comments: true
 rating: # 1~5까지 점수
@@ -20,7 +20,7 @@ last_modified_at: # YYYY-MM-DD
 
 사람이 뭔가를 하고 안 하고를 결정하는 건 결국 움직이게 하는 계기, 즉 동기가 되겠다. 내가 왜 그랬던 걸까? 마침 생각해볼 기회가 생겨서 '그냥 궁금해서' 분석해보기로 했다. 
 
-## 내가 왜 그랬을까? 갑자기 궁금해졌다
+## 멀쩡하게 회사 잘 다니다가 내가 대체 왜 그랬을까?
 
 요즘 팀 동료가 책을 내고 싶다기에 도와주고 있는데 거기에 이런 키워드가 있었다. 'moving motivator' 움? 대충 느낌은 알겠는데 이걸 어떻게 번역할까? 시작은 단순한 궁금증에서 시작되었다.
 
@@ -119,6 +119,24 @@ last_modified_at: # YYYY-MM-DD
 
 
 ## 출판사를 만든 후 (번역가 / 출판인)
+
+<figure>
+<img  src="{{ site.baseurl }}/assets/images/moving-motivator/moving-motivator-publisher.jpg" alter="card">
+<figcaption>
+</figcaption>
+</figure>
+
+<figure>
+<img  src="{{ site.baseurl }}/assets/images/moving-motivator/moving-motivator-publisher-1.jpg" alter="card">
+<figcaption>
+</figcaption>
+</figure>
+
+<figure>
+<img  src="{{ site.baseurl }}/assets/images/moving-motivator/moving-motivator-publisher-2.jpg" alter="card">
+<figcaption>
+</figcaption>
+</figure>
 
 ## 그래서 뭐
 
