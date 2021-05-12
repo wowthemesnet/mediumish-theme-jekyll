@@ -35,12 +35,12 @@ License: https://www.wowthemes.net/freebies-license/
 
 /* page a and hover*/
 a {
-    color: var(--green--color);
+    color: var(--blue-color);
     transition: all 0.2s;
 }
 
 a:hover {
-    color: var(--light-green-color);
+    color: var(--light-blue-color);
     text-decoration: none;
 }
 
