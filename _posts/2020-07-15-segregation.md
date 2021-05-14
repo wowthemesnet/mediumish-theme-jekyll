@@ -22,11 +22,13 @@ Important : Housekeeping staff will not pick up waste from the flats that do not
 - All Waste must be kept next to the door-step on the left, right or opposite of the front door of the apartment, while taking care to ensure the walkways are not blocked. Please do not keep the bins in the main hallway opposite the lifts. 
 - Residents are expected to take the empty bins inside immediately after the pick-up and not leave the bins in the common areas.
 
+###### Debris waste
+- Picked up from doorstep if feasible between 9.30AM - 12.30PM. For large items residents must dispose them in the garbage collection area in each block or contact housekeeping staff. All interior / renovation waste must be disposed in the garbage collection area in each block and not be left in the hallways. 
+
 ###### e-Waste
 - Two e-waste collection bins are placed next to the facility office in Birch block. Please dispose the negative value items such as bulbs, batteries etc. in one of the bins. All the other e-Waste material will go into the second bin.
 
-###### Debris waste
-- Picked up from doorstep if feasible between 9.30AM - 12.30PM. For large items residents must dispose them in the garbage collection area in each block or contact housekeeping staff. All interior / renovation waste must be disposed in the garbage collection area in each block and not be left in the hallways. 
+<p class="mb-5"><img class="shadow-lg" src="{{site.baseurl}}/assets/images/ewaste-bins-location.jpg" alt="Greenage Waste Segregation Policy" /></p>
 
 
 #### Guidelines to Segregate Waste
