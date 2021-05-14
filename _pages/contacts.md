@@ -10,6 +10,8 @@ datatable: true
 
 <p> You will find here the contact numbers of clinics, police, helpdesk,facilities, security, laundry, car wash and shops in Greenage. To maintain data privacy, not all contacts are added here. You can find them in myGate app under community > documents. </p>
 
+<p>please contact goahelpdesk@vrfacilities.in to correct any errors in this directory or to add new numbers</p>
+
 <table id="example" class="table table-striped table-bordered display" style="width:100%; font-size:0.8em">
    <thead>
       <tr>
@@ -30,7 +32,7 @@ datatable: true
       {% endfor %}
    </tbody>
 </table>
- 
+
 </div>
 <p></p>
 <div class="col-md-4">
