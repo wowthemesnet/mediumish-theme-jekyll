@@ -982,3 +982,12 @@ iframe {
         display: flex;
     }
 }
+
+/** Image Caption **/
+img + em {
+    display: block;
+    margin-top: .8rem;
+    text-align: center;
+    font-size: .8rem;
+    color: #888888;
+}
