@@ -9,9 +9,9 @@ hidden: false
 comments: false
 ---
 
-<p>Waste segregation at source is mandatory for apartments of our size,  as per the notice from BBMP. All the flats must follow the below guidelines for segregation, to comply with BBMP guidelines.  
+<p>Waste segregation at source is mandatory for apartments of our size,  as per the notice from BBMP. All the flats must follow the below guidelines for segregation, to comply with BBMP guidelines.</p>   
 
-Important : Housekeeping staff will not pick up waste from the flats that do not segregate waste.As per BBMP rules for bulk generators, failure to segregate waste will attract a penalty of Rs.500 for the first instance and subsequently Rs. 1000 per instance</p> 
+<p><b>Important:</b> Housekeeping staff will not pick up waste from the flats that do not segregate waste.As per BBMP rules for bulk generators, failure to segregate waste will attract a penalty of Rs.500 for the first instance and subsequently Rs. 1000 per instance</p> 
 
 
 #### Garbage Collection Timings, Bin Location and Collection
