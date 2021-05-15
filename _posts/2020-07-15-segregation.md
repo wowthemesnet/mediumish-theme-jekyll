@@ -9,21 +9,21 @@ hidden: false
 comments: false
 ---
 
-<p>Waste segregation at source is mandatory for apartments of our size,  as per the notice from BBMP. All the flats must follow the below guidelines for segregation, to comply with BBMP guidelines.</p>   
+<p>Waste segregation at source is mandatory by law for the apartments of our size. All the flats must follow the below guidelines for segregation, to comply with BBMP guidelines.</p>   
 
-<p><b>Important:</b> Housekeeping staff will not pick up waste from the flats that do not segregate waste.As per BBMP rules for bulk generators, failure to segregate waste will attract a penalty of Rs.500 for the first instance and subsequently Rs. 1000 per instance</p> 
+<p><b>Important:</b> Housekeeping staff will not pick up waste from the flats that do not segregate waste. As per BBMP rules for bulk generators, failure to segregate waste will attract a penalty of Rs.500 for the first instance and subsequently Rs. 1000 per instance</p> 
 
 
 #### Garbage Collection Timings, Bin Location and Collection
 
 ###### Wet Waste, Reject Waste and Dry Waste 
 
-- Picked up at Doorstep between 9.30AM - 12.30PM. Any waste placed in the lobby after 9.30AM on the day will not picked up
-- All Waste must be kept next to the door-step on the left, right or opposite of the front door of the apartment, while taking care to ensure the walkways are not blocked. Please do not keep the bins in the main hallway opposite the lifts. 
+- Picked up at Doorstep between 9.30AM - 12.30PM. Any Waste placed outside after 9.30AM will not picked up. In such cases, Residents must take the waste inside and not leave it out. 
+- All Waste must be kept next to the door-step on the left, right or opposite of the front door of the apartment, while taking care to ensure the walkways are not blocked. Do not keep the bins in the main hallway opposite the lifts. 
 - Residents are expected to take the empty bins inside immediately after the pick-up and not leave the bins in the common areas.
 
 ###### Debris waste
-- Picked up from doorstep if feasible between 9.30AM - 12.30PM. For large items residents must dispose them in the garbage collection area in each block or contact housekeeping staff. All interior / renovation waste must be disposed in the garbage collection area in each block and not be left in the hallways. 
+- Picked up from doorstep between 9.30AM - 12.30PM, if feasible. For large items, residents must dispose them in the garbage collection area in each block or contact housekeeping staff. All interior / renovation waste must be disposed in the garbage collection area in each block and not be left in the lobby areas. 
 
 ###### e-Waste
 - Two e-waste collection bins are placed next to the facility office in Birch block. Please dispose the negative value items such as bulbs, batteries etc. in one of the bins. All the other e-Waste material will go into the second bin.
