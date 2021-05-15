@@ -3,7 +3,7 @@ layout: post
 title:  "Mandatory Waste Segregation at source"
 author: Admin
 categories: [Info]
-image: assets/images/greenagepic21.jpg
+image: assets/images/greenagepic24.jpg
 featured: false
 hidden: false
 comments: false
