@@ -17,7 +17,7 @@ License: https://www.wowthemes.net/freebies-license/
     --light-green-color: #CEEAD6;
     --light-yellow-color: #FEEFC3;
     --light-red-color: #FAD2CF;
-  }
+}
 
 .full_logo {
     margin: auto;
@@ -275,7 +275,6 @@ span.post-read {
 span.post-read-more {
     align-items: center;
     display: inline-block;
-    float: right;
     margin-top: 8px;
 }
 
@@ -985,6 +984,23 @@ iframe {
 
 .author-icon-wrapper .author-icon:first-child {
     margin-left: 0px;
+}
+
+.author .author-blog-team-border {
+    border: 3px solid transparent;
+    background-origin: border-box;
+    background-size: 400% 100%;
+    background-image: linear-gradient(135deg, #ffa551, #f7afff, #8df1f8, #ffa551, #f7afff, #8df1f8);
+    animation: GradientBorderAnimation 2s linear infinite;
+}
+
+@keyframes GradientBorderAnimation {
+    0% {
+        background-position: 0% 50%;
+    }
+    100% {
+        background-position: 100% 50%;
+    }
 }
 
 @media (min-width: 768px) {
