@@ -32,7 +32,7 @@ comments: false
         <figcaption>
         <a href="https://pixabay.com/ko/users/dariuszsankowski-1441456/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=1052014" target="_blank">Dariusz Sankowski</a>님의 작품
         </figcaption>
-        </figure>
+        </figure> 
 
         <p class="mb-5">
         사실 다들 뜯어 말렸어요. 그거 돈 안 된다고. 하지만 취미라고 생각하면 못할 것도 없을 것 같았어요. 
