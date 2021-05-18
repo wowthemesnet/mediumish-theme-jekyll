@@ -35,15 +35,13 @@ datatable: true
 
 </div>
 <p></p>
-<div class="col-md-4">
 
+<!--<div class="col-md-4">
 <div class="sticky-top sticky-top-80">
 <h5>Greenage Address</h5>
-
 <p>Salarpuria Greenage, 7 Hosur Main Road, Next to Oxford College, Bommanahalli, Bengaluru - 560068</p>
-
 <a target="_blank" href="https://goo.gl/maps/DJB7JAjHRAXRLe3W8" class="btn btn-danger">Find us on Google Maps</a> 
+</div>
+</div>-->
 
-</div>
-</div>
 </div>

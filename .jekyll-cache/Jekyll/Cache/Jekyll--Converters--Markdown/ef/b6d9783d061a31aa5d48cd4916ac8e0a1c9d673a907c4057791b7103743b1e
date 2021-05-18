@@ -1,4 +1,4 @@
-I"°(<div class="row justify-content-between">
+I"µ(<div class="row justify-content-between">
 <div class="col-md-8 pr-5">
 
 <p> You will find here the contact numbers of clinics, police, helpdesk,facilities, security, laundry, car wash and shops in Greenage. To maintain data privacy, not all contacts are added here. You can find them in myGate app under community &gt; documents. </p>
@@ -483,16 +483,14 @@
 
 </div>
 <p></p>
-<div class="col-md-4">
 
+<!--<div class="col-md-4">
 <div class="sticky-top sticky-top-80">
 <h5>Greenage Address</h5>
-
 <p>Salarpuria Greenage, 7 Hosur Main Road, Next to Oxford College, Bommanahalli, Bengaluru - 560068</p>
-
 <a target="_blank" href="https://goo.gl/maps/DJB7JAjHRAXRLe3W8" class="btn btn-danger">Find us on Google Maps</a> 
+</div>
+</div>-->
 
-</div>
-</div>
 </div>
 :ET
