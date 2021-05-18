@@ -2,7 +2,7 @@
 layout: post
 title:  "Mandatory Waste Segregation at source"
 author: Admin
-categories: [Info]
+categories: [policies]
 image: assets/images/greenagepic24.jpg
 featured: false
 hidden: false
@@ -19,7 +19,7 @@ comments: false
 ###### Wet Waste, Reject Waste and Dry Waste 
 
 - Picked up at doorstep between 9.30AM - 12.30PM. Any Waste placed outside after 9.30AM will not picked up. In such cases, Residents must take the waste inside and not leave it out. 
-- All Waste must be kept next to the doorstep on the left, right or opposite of the front door of the apartment, while taking care to ensure the walkways are not blocked. Do not keep the bins in the main hallway opposite the lifts. 
+- All bins must be marked with your flat number. The bins must be kept next to the doorstep on the left, right or opposite of the front door of the apartment, while taking care to ensure the walkways are not blocked. Do not keep them in the main hallway opposite the lifts. 
 - Residents are expected to take the empty bins inside immediately after the pick-up and not leave the bins in the common areas.
 
 ###### Debris waste
