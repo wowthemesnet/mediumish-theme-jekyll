@@ -14,6 +14,7 @@ Enoch-Kim:
   email: enochkim1220@gmail.com
   github: Enoch-Kim
   role: core
+  blog_team: true
   web:
 MOBUMIN:
   name: 김수빈
@@ -21,6 +22,7 @@ MOBUMIN:
   email: kiju23@naver.com
   github: MOBUMIN
   role: core
+  blog_team: true
   web:
 r4k0nb4k0n:
   name: 최형진
@@ -45,6 +47,7 @@ min6choi:
   email: minsik617@gmail.com
   github: min6choi
   role: core
+  blog_team: true
   web:
 easter:
   name: 이승현
@@ -88,6 +91,7 @@ jeongukjae:
   email: jeongukjae@gmail.com
   github: jeongukjae
   role: normal
+  blog_team: true
   web:
 hye1ng:
   name: 박혜인
@@ -193,6 +197,7 @@ LeeMir:
   email: manofgodmj@gmail.com
   github: LeeMir
   role: normal
+  blog_team: true
   web: https://leemir.github.io
 keepproceeding:
   name: 오원진
@@ -242,6 +247,7 @@ yuniwisdom:
   email: dbswlchl66@gmail.com
   github: yuniwisdom
   role: normal
+  blog_team: true
   web: 
 kir3i:
   name: 유시온
@@ -256,6 +262,7 @@ hyehyeonmoon:
   email: angelfox4@naver.com
   github: hyehyeonmoon
   role: normal
+  blog_team: true
   web: 
 owao:
   name: 염정윤
