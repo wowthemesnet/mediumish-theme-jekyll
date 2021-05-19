@@ -13,12 +13,11 @@ featured: true
 
 작성자 : DSC uos ML 논문 팀(황제홍, 임호연)
 
-DSC CV 논문팀에서는 SRGAN과 관련하여 기존에 나와있는 모델에서 일부분을 수정하여 개선하는 것을 목표로 하고 있다. SRGAN은 Super-Resolution Generative Adversarial Network의 약어로 간단하게 말하면 이미지의 화질을 개선하는 인공지능 모델이다. 이번 포스팅은 우리 논문팀에서 base로 참고하고 있는 논문을 소개하고자 한다. 
+DSC CV 논문팀에서는 SRGAN과 관련하여 기존에 나와있는 모델에서 일부분을 수정하여 개선하는 것을 목표로 하고 있다. SRGAN은 Super-Resolution Generative Adversarial Network의 약어로 간단하게 말하면 이미지의 화질을 개선하는 인공지능 모델이다. 이번 포스팅은 우리 논문팀에서 base로 참고하고 있는 논문을 소개하고자 한다.
 
 논문 링크 : [https://arxiv.org/pdf/1609.04802.pdf](https://arxiv.org/pdf/1609.04802.pdf)
 
 참고 블로그 : [https://aigong.tistory.com/51](https://aigong.tistory.com/51)
-
 
 ## Introduction
 
@@ -30,9 +29,9 @@ DSC CV 논문팀에서는 SRGAN과 관련하여 기존에 나와있는 모델에
 
 그래서 본 논문에서는 ResNet 구조와 perceptual loss를 이용한 SRGAN을 제안하고, MOS(Mean opinion score)라는 설문조사 방식의 성능지표를 이용해 제안한 모델이 잘 작동함을 보였다.
 
-## **Method**
+## Method
 
-SR의 목표는 LR input image로부터 SR image를 추정하는 것이다. 논문에서의 궁극적인 목표는 LR input image로부터 HR image를 생성하는 Generating function G를 훈련시키는 것이다. 
+SR의 목표는 LR input image로부터 SR image를 추정하는 것이다. 논문에서의 궁극적인 목표는 LR input image로부터 HR image를 생성하는 Generating function G를 훈련시키는 것이다.
 
 ![Capture](../assets/images/post-cv-fall-srgan/cv_fall_srgan_2.png)
 
@@ -44,7 +43,7 @@ SRGAN이 하는 방식은 실제 파트에서는 HR 이미지를 넣음으로써
 
 ![Capture](../assets/images/post-cv-fall-srgan/cv_fall_srgan_4.png)
 
-다음 그림에서 보이는 k는 kernel size, n은 channel, s는 stride를 의미한다. Generator에서 보이는 활성화 함수는 PReLU를 사용했다. Discriminator에서는 Leaky ReLU를 사용하며 마지막 활성화 함수로 sigmoid를 사용하며 0,1로 최종적으로 구분한다. 
+다음 그림에서 보이는 k는 kernel size, n은 channel, s는 stride를 의미한다. Generator에서 보이는 활성화 함수는 PReLU를 사용했다. Discriminator에서는 Leaky ReLU를 사용하며 마지막 활성화 함수로 sigmoid를 사용하며 0,1로 최종적으로 구분한다.
 
 ### Perceptual loss function
 
@@ -56,11 +55,11 @@ SRGAN이 하는 방식은 실제 파트에서는 HR 이미지를 넣음으로써
 
 ![Capture](../assets/images/post-cv-fall-srgan/cv_fall_srgan_6.png)
 
-보통의 MSE 기반으로 loss function을 사용할 때 위의 (4) 식과 같이 pixel-wise MSE Loss를 사용한다. 위에서 계속 얘기했듯 이 방법은 과도하게 질감(texture)를 부드럽게(smooth)하기 때문에 고품질의 디테일을 온전하게 구성하지 못하고 흐릿(blur)하게 보이는 특징이 존재한다. 
+보통의 MSE 기반으로 loss function을 사용할 때 위의 (4) 식과 같이 pixel-wise MSE Loss를 사용한다. 위에서 계속 얘기했듯 이 방법은 과도하게 질감(texture)를 부드럽게(smooth)하기 때문에 고품질의 디테일을 온전하게 구성하지 못하고 흐릿(blur)하게 보이는 특징이 존재한다.
 
 ![Capture](../assets/images/post-cv-fall-srgan/cv_fall_srgan_7.png)
 
-때문에 이 논문에서는 위의 식 (5)와 같이 미리 학습된 VGG 네트워크에 HR 이미지와 LR 이미지를 각각 넣는다. 그 후, 마지막 layer에서 특징맵을 뽑아내고 이를 pixel-wise로 비교한다. 
+때문에 이 논문에서는 위의 식 (5)와 같이 미리 학습된 VGG 네트워크에 HR 이미지와 LR 이미지를 각각 넣는다. 그 후, 마지막 layer에서 특징맵을 뽑아내고 이를 pixel-wise로 비교한다.
 
 ### Adversarial loss
 
@@ -72,7 +71,7 @@ SRGAN이 하는 방식은 실제 파트에서는 HR 이미지를 넣음으로써
 
 ![Capture](../assets/images/post-cv-fall-srgan/cv_fall_srgan_9.png)
 
-test data인 SET-5, SET-14, 그리고 BSD100에 대해 PSNR, SSIM, MOS 지표를 적용하여 자신들이 제안한 SRResnet, SRGAN과 다른 SR 알고리즘을 비교하였다. 
+test data인 SET-5, SET-14, 그리고 BSD100에 대해 PSNR, SSIM, MOS 지표를 적용하여 자신들이 제안한 SRResnet, SRGAN과 다른 SR 알고리즘을 비교하였다.
 
 ## 성능 개선 방안
 
@@ -83,7 +82,6 @@ test data인 SET-5, SET-14, 그리고 BSD100에 대해 PSNR, SSIM, MOS 지표를
 ### 성능 개선에 활용한 네트워크
 
 기존 SRGAN 논문에서 perceptual loss function으로 사용하던 vgg 네트워크를 imagenet 데이터에 대해 미리 학습된 네트워크로 대체했다. 사용하고자 하는 네트워크는 다음과 같았다.
-
 
 - VGG16
 - VGG16_BN
@@ -101,24 +99,22 @@ image net data 35만장에 대해 100에포크 가량을 학습해야 하다 보
 
 학습 결과는 다음과 같다.
 
-```
-vgg, PSNR = 24.54675320150087, SSIM = 0.7118159342212838
-resnext101_32x8d, PSNR = 24.254839593217472, SSIM = 0.7028170706344252
-```
+- vgg, PSNR = 24.54675320150087, SSIM = 0.7118159342212838
+- resnext101_32x8d, PSNR = 24.254839593217472, SSIM = 0.7028170706344252
 
 ![Capture](../assets/images/post-cv-fall-srgan/cv_fall_srgan_10.png)
 
-**perceptual loss - vgg**
+perceptual loss - vgg
 
 ![Capture](../assets/images/post-cv-fall-srgan/cv_fall_srgan_11.png)
 
-**perceptual loss - resnext101_32x8d**
+perceptual loss - resnext101_32x8d
 
 가장 왼쪽 사진이 LR 이미지, 중간 사진이 HR 이미지이며, 가장 오른쪽 사진은 학습된 SRGAN으로부터 얻어낸 SR 이미지이다.
 
 ![Capture](../assets/images/post-cv-fall-srgan/cv_fall_srgan_12.png)
 
-**왼쪽 vgg16 SR 이미지의 일부, 오른쪽 resnext101_32x8d SR 이미지의 일부**
+왼쪽 vgg16 SR 이미지의 일부, 오른쪽 resnext101_32x8d SR 이미지의 일부
 
 위에 제시된 이미지와 PSNR, SSIM 지표를 보면, perceptual loss의 네트워크 종류가 결과에 영향을 꽤 미친다는 것을 확인할 수 있다.
 
