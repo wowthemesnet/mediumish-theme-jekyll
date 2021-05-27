@@ -114,7 +114,7 @@ print("Label probs:", probs)  # prints: [[0.9927937  0.00421068 0.00299572]]
 
 ### 로컬에서 GPU 돌리기
 
-이제까지 Colab만 사용해 왔다. 하지만 Colab의 경우 Google Drive에 용량이 큰 파일을 올리는 데 시간이 오래 걸리기 때문에 local에서 gpu를 돌리려 했다. 시작은 미세하였고 오류는 창대했다. 제대로 돌리기까지 8시간이 걸렸다...  
+이제까지 Colab만 사용해 왔다. 하지만 Colab의 경우 Google Drive에 용량이 큰 파일을 올리는 데 시간이 오래 걸리기 때문에 local에서 gpu를 돌리려 했다. 목표는 미세하였고 오류는 창대했다. 제대로 돌리기까지 8시간이 걸렸다...  
 (~~anaconda 가상환경을 사용하였는데 경로 오류 너무 싫다. 앞으로 docker도 사용해야 하는데 나만 경로 오류 싫은가...~~)
 
 1. GPU Driver는 최신 것으로 업그레이드  하자.  
@@ -126,7 +126,7 @@ print("Label probs:", probs)  # prints: [[0.9927937  0.00421068 0.00299572]]
     -[Tensorflow와 호환되는 CUDA, cuDNN 설치하는 법](https://coding-groot.tistory.com/87)  
     -[윈도우에 PyTorch 설치, GPU 설정, 자세하게](https://chancoding.tistory.com/90)  
 
-3. Visual Studio Code 재부팅 꼭 하자.
+3. Visual Studio Code 재부팅 꼭 하자.  
 위의 과정을 모두 완료했음에도 오류가 뜬다. 성공했다 생각하고 간식 먹고 돌아오니까 torch.cuda.is_available()=True 에서 False가 된 순간도 있었다. library를 새롭게 설치했거나 외부에서 무언가 관련된 것을 다운로드 받았다면 항상 재부팅을 하자.
 
 4. 그래도 오류가 뜨는가? Python, cuda, cudnn, 라이브러리 버전을 항상 체크하자.
