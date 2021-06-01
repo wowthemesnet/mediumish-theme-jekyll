@@ -5,7 +5,7 @@ authors: [rxdcxdrnine]
 
 tags: ["Project"]
 image: ../assets/images/post-Team-Project-Openapi/thumbnail.png
-description: "Socket.io 를 이용한 웹소켓 구현"
+description: "협업을 위한 Swawgger 와 OpenAPI 의 node.js 적용"
 featured: false
 ---
 
