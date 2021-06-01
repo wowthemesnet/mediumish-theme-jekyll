@@ -15,7 +15,9 @@ featured: false
 
 우리는 때때로 프로젝트에서 필요한 외부 데이터를 검색하면서 Open API라는 단어와 마주합니다. 여기서 Open API는 말 그대로 개방형 API입니다. API(Application Programming Interface)는 응용 프로그램을 개발할 때 사용하는 인터페이스이므로, Open API는 곧 프로그래밍에서 사용할 수 있는 개방 상태의 인터페이스를 말합니다. 우리가 흔히 사용하는 구글, 페이스북 등의 기업들을 포함해 통계청, 기상청 등에서도 수집한 자료를 응용 프로그램에 사용할 수 있도록 Oepn API를 제공합니다.
 
-하지만 이는 저희가 API 문서화에 적용하는 OpenAPI와는 조금 다른 개념입니다..! (일단 띄어쓰기 없이 두 단어를 붙여 사용합니다.) 원래 각 기업별로 독자적인 규칙에 따라 API를 제공하는 명세가 있었는데, 2015년에 Microsoft, IBM 등의 기업들이 OpenAPI Initiative (OAI)리눅스 재단의 프로젝트에서 API 명세를 통합적으로 관리하기 시작했습니다. OpenAPI는 여기 OAI에서 API 기술을 발전시키기 위해 만든 기술로, OAI는 OpenAPI Specification (OAS)라는 API 명세를 배포합니다. 그렇다면 OAS는 또 뭘까요? OAS는 RESTful API와 웹 서비스에 대해 설명하고 시각화하는 명세(specification)입니다. 즉, json 또는 yaml 형식으로 OAS의 규칙에 따라 OpenAPI 문서를 작성하면 API의 스펙(spec)을 설명하고 보여줄 수 있습니다. OAI에서는 2017년에 OpenAPI 3.0.0 버전을 발표하였고, 2021년 2월에 3.1.0 버전을 릴리즈하였습니다. OpenAPI에 대한 자세한 설명과 작성 규칙은 아래 링크를 참고하세요!
+하지만 이는 저희가 API 문서화에 적용하는 OpenAPI와는 조금 다른 개념입니다..! (일단 띄어쓰기 없이 두 단어를 붙여 사용합니다.) 원래 각 기업별로 독자적인 규칙에 따라 API를 제공하는 명세가 있었는데, 2015년에 Microsoft, IBM 등의 기업들이 OpenAPI Initiative (OAI) 리눅스 재단의 프로젝트에서 API 명세를 통합적으로 관리하기 시작했습니다. OpenAPI는 여기 OAI에서 API 기술을 발전시키기 위해 만든 기술로, OAI는 OpenAPI Specification (OAS)라는 API 명세를 배포합니다.
+
+그렇다면 OAS는 또 뭘까요? OAS는 RESTful API와 웹 서비스에 대해 설명하고 시각화하는 명세(specification)입니다. 즉, json 또는 yaml 형식으로 OAS의 규칙에 따라 OpenAPI 문서를 작성하면 API의 스펙(spec)을 설명하고 보여줄 수 있습니다. OAI에서는 2017년에 OpenAPI 3.0.0 버전을 발표하였고, 2021년 2월에 3.1.0 버전을 릴리즈하였습니다. OpenAPI에 대한 자세한 설명과 작성 규칙은 아래 링크를 참고하세요!
 
 <https://spec.openapis.org/oas/v3.1.0>
 
@@ -27,10 +29,10 @@ featured: false
 
 그렇다면 swagger는 왜 사용해야 할까요?
 
-1. API 구조를 파악하기 쉽습니다
+1. API 구조를 파악하기 쉽습니다  
    위의 그림에서 왼쪽과 같이 코드 또는 글을 이용해서 API를 문서화 할 경우, API의 사용자에게 필요한 정보는 모두 있지만 그 구조를 파악하기 어렵습니다. 하지만 스웨거를 이용할 경우, API의 태그와 엔드포인트, HTTP method에 따라 사용해야할 APi를 쉽게 구별할 수 있습니다. 그리고 url에 입력해야할 paramter, http body 등을 보기 쉬운 UI로 한눈에 파악할 수 있고, response도 status code에 따라 구분 가능합니다.
 
-2. 테스트할 수 있는 UI를 제공합니다
+2. 테스트할 수 있는 UI를 제공합니다  
    프레임워크 내에서 별도의 테스트 코드를 작성하지 않고도. 스웨거 문서 내에서 API를 테스트할 수 있습니다. 또한 테스트 코드와 달리 테스트에 사용할 url과 http body 등을 쉽게 바꿀 수도 있고, 예제로 사용할 데이터도 직접 작성하여 넣을 수도 있습니다. 아래 그림에서 Try it out을 클릭하면 해당 API 엔드포인트에 POST로 요청할 http body를 수정할 수 있고, execute 를 클릭하면 실제로 해당 url에 요청해 API를 테스트할 수 있습니다.
 
 ![Swaggger Test](../assets/images/post-Team-Project-Openapi/swagger_test.png)
@@ -49,6 +51,8 @@ featured: false
 스웨거를 이용해 API 문서화를 하면 정말 좋아보이는데, OAS에 따라 json이나 yaml로 문서화를 하기 위한 파일을 작성하자니 막막해 보입니다. 다행히도 스웨거 자동 문서화를 위한 다양한 라이브러리들이 각 프레임워크마다 존재합니다! 하지만 제가 현재 프로젝트 팀에서 백엔드 프레임워크로 사용하고 있는 Node.js에서는 이와 같이 자동으로 API 문서화를 할 수 있는 라이브러리가 없었습니다.. 하지만 오히려 좋아! yaml 로 OAS에 따라 프로젝트에서 사용하는 모든 API 명세를 머리부터 발끝까지 작성해보기로 했습니다.
 
 이렇게 직접 작성하기로 한 데에는 이유가 있었습니다. 먼저번에 django의 스웨거 API 자동화 라이브러리인 drf-yasg를 사용해 보았는데, 자동으로 API 문서를 생성할 때 사소한 오류와 이로 인한 커스터마이징 때문에 코드 내에서 API 명세를 직접 작성하다보니 코드가 상당히 길어지는 문제가 발생했기 때문입니다. 하지만 API 명세를 소스 코드 내에서가 아닌 yaml 파일로 별도로 작성해 관리할 수 있다면? 생각만해도 마음이 편안해지는 부분입니다.
+
+</br>
 
 node.js에서 스웨거로 API 문서화를 위해 미리 3개의 라이브러리를 설치해야 합니다.
 
@@ -110,7 +114,7 @@ app.listen(app.get("port"), () => {
 
 swagger 디렉토리 내의 openapi.yaml에서는 API 기본 설정을 작성하고, swagger/paths 디렉토리 내의 index.yaml에서는 각 엔드포인트 별로 나눠 직성한 yaml 파일의 위치를 라우팅을 해줍니다. 그리고 swagger/paths/district 등의 디렉토리 내에는 실제 API 엔드포인트 별로 API 명세를 작성합니다.
 
-## swagger/openapi.yaml
+### swagger/openapi.yaml
 
 ```yaml
 openapi: "3.0.0"
@@ -128,7 +132,7 @@ paths:
   $ref: "./paths/index.yaml"
 ```
 
-## swagger/paths/index.yaml
+### swagger/paths/index.yaml
 
 ```yaml
 /districts:
@@ -139,7 +143,7 @@ paths:
   $ref: "district/district-retrieve-by-name.yaml"
 ```
 
-## swagger/paths/district/district-list.yaml
+### swagger/paths/district/district-list.yaml
 
 ```yaml
 get:
@@ -166,6 +170,8 @@ get:
 ```
 
 그리고 위와 같이 분리한 yaml 파일들을 하나의 build.yaml 파일로 통합하기 위해 swagger-cli 모듈을 이용합니다.
+
+### bash
 
 ```bash
 swagger-cli bundle swagger/_openapi.yaml --outfile swagger/build.yaml --type yaml
