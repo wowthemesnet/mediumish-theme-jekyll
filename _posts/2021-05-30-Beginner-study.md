@@ -90,7 +90,7 @@ function randColor() {
 
 회전 고양이는 아래 GIF와 같이 고양이가 마우스를 보는 고양이입니다.
 
-[rotate.gif](../assets/images/post-Beginner-study/rotate.gif)
+![rotate.gif](../assets/images/post-Beginner-study/rotate.gif)
 
 고양이의 각도는 코사인법칙을 이용하여 구현하였는데, 각도를 구하는 코드는 다음과 같습니다.
 
