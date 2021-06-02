@@ -29,7 +29,7 @@ last_modified_at: # YYYY-MM-DD
 </ul>
 
 <figure>
-<img class="middle" src="{{ site.baseurl }}/assets/images/graphic-recording-crowd-funding/tumblbug.png" alter="">
+<a href="https://tumblbug.com/graphicrecording" target="_blank"><img class="middle" src="{{ site.baseurl }}/assets/images/graphic-recording-crowd-funding/tumblbug.png" alter=""></a>
 <figcaption>
 </figcaption>
 </figure>
