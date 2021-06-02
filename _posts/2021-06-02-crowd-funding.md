@@ -1,12 +1,12 @@
 ---
 layout: post
-title:  "'처음 배우는 그래픽 레코딩' 크라우드 펀딩 개시"
+title:  "'처음 배우는 그래픽 레코딩' 크라우드 펀딩 스토리 공개"
 author: bomber
 categories: [크라우드 펀딩]
 tags: [처음 배우는 그래픽 레코딩, 크라우드 펀딩]
 image: assets/images/graphic-recording-crowd-funding/main-image.png
 image-caption: 
-description: "'처음 배우는 그래픽 레코딩' 크라우드 펀딩 개시"
+description: "'처음 배우는 그래픽 레코딩' 크라우드 펀딩 스토리 공개"
 featured: true
 hidden: true
 toc: true
