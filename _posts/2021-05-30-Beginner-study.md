@@ -27,7 +27,7 @@ featured: false
 메인 페이지의 배경화면이 투명해지고, 틱마다 배경의 고양이들의 크기와 배경색이 랜덤으로 바뀝니다.
 또, 좌측 고양이의 점프 속도가 빨라지며, 가운데 고양이가 회전합니다.
 
-[main.gif](../assets/images/post-Beginner-study/main.gif)
+![main.gif](../assets/images/post-Beginner-study/main.gif)
 
 `partytime()` 이벤트가 실행되면, 점프하는 고양이(`box`)의 애니메이션 시간이 짧아져, 점프 속도가 빨라집니다.
 메인 페이지(`sodyd`)의 배경색을 투명하게 만들어 뒤의 고양이 배경이 보이게 됩니다.
