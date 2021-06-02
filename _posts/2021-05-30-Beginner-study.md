@@ -8,8 +8,8 @@ description: "Web 비기너의 2달동안 성장과정"
 featured: false
 ---
 
-이 포스트에서는 웹린이가 두달간 학습하며 만들었던 간단한 웹페이지를 소개해드리고자 합니다.
-[NyanCat_Party](https://gganada.github.io/JH_WebStudy/)
+이 포스트에서는 웹린이가 두 달간 학습하며 만들었던 간단한 웹페이지를 소개해드리고자 합니다.
+![NyanCat_Party](https://gganada.github.io/JH_WebStudy/)
 에서 보실 수 있습니다.
 
 ## 만든 목적
@@ -27,7 +27,7 @@ featured: false
 메인 페이지의 배경화면이 투명해지고, 틱마다 배경의 고양이들의 크기와 배경색이 랜덤으로 바뀝니다.
 또, 좌측 고양이의 점프 속도가 빨라지며, 가운데 고양이가 회전합니다.
 
-[main.gif](../assets/images/post-Beginner-study/main.gif)
+![main.gif](../assets/images/post-Beginner-study/main.gif)
 
 `partytime()` 이벤트가 실행되면, 점프하는 고양이(`box`)의 애니메이션 시간이 짧아져, 점프 속도가 빨라집니다.
 메인 페이지(`sodyd`)의 배경색을 투명하게 만들어 뒤의 고양이 배경이 보이게 됩니다.
@@ -90,7 +90,7 @@ function randColor() {
 
 회전 고양이는 아래 GIF와 같이 고양이가 마우스를 보는 고양이입니다.
 
-[rotate.gif](../assets/images/post-Beginner-study/rotate.gif)
+![rotate.gif](../assets/images/post-Beginner-study/rotate.gif)
 
 고양이의 각도는 코사인법칙을 이용하여 구현하였는데, 각도를 구하는 코드는 다음과 같습니다.
 
@@ -114,4 +114,4 @@ function randColor() {
 
 비기너 팀에 들어와 아무것도 모르는 상태에서 두달간 웹을 공부해보았습니다.
 공부하면서 느낀점은 제가 디자인 감각이 매우 구리다는 것입니다...^%^
-지금 공부하고 있는 node.js로 서버 열기 부분을 어느정도 학습한 후에는 c++ graphics에 대해 학습해보고 싶습니다.
+지금 공부하고 있는 node.js로 서버 열기 부분을 어느 정도 학습한 후에는 c++ graphics에 대해 학습해보고 싶습니다.
