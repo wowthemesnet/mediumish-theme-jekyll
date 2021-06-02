@@ -8,7 +8,7 @@ description: "Web 비기너의 2달동안 성장과정"
 featured: false
 ---
 
-이 포스트에서는 웹린이가 두달간 학습하며 만들었던 간단한 웹페이지를 소개해드리고자 합니다.
+이 포스트에서는 웹린이가 두 달간 학습하며 만들었던 간단한 웹페이지를 소개해드리고자 합니다.
 [NyanCat_Party](https://gganada.github.io/JH_WebStudy/)
 에서 보실 수 있습니다.
 
