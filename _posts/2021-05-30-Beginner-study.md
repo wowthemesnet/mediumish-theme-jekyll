@@ -104,7 +104,7 @@ function randColor() {
 마우스의 좌표를 `A`, 고양이의 좌표를 `B` 라고 할 때, 아래 그림과 같은 직각삼각형이 만들어집니다.
 고양이를 회전시켜야 하는 각을 `X` 라고 하면, 다음과 같은 식이 성립합니다.
 
-[tri.png](../assets/images/post-Beginner-study/tri.png)
+![tri.png](../assets/images/post-Beginner-study/tri.png)
 
 ```javascript
      rot = Math.acos((event.clientX - lef) / (Math.sqrt(Math.pow(event.clientX - lef, 2) + Math.pow(event.clientY - topp, 2))));
