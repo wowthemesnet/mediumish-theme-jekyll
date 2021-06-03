@@ -181,13 +181,7 @@ Graphic recording is the real-time translation of conversations or presentations
 
 저자는 이런 분에게 도움이 될 거라고 이야기 합니다. 
 
-<figure>
-<img class="middle" src="{{ site.baseurl }}/assets/images/graphic-recording-crowd-funding/13.jpg" alter="">
-<figcaption>
-</figcaption>
-</figure>
-
-여러분은 이 안에 포함되시나요? 축하합니다.</br>
+여러분은 이 안에 포함되시나요? 축하합니다.
 이 책은 여러분을 위한 책입니다!
 
 ## 목차 미리 보기
@@ -477,7 +471,7 @@ Graphic recording is the real-time translation of conversations or presentations
 
 최종적으로 중도 후원 철회에 대한 예비비 10%와 텀블벅 플랫폼 수수료 (부가세 포함) 8.8%를 고려하면 다음과 같은 펀딩 목표 금액이 나옵니다.
 
-* (555 + 640 + 45 + 180) x 118% = 약 1,676만원
+* (555 + 640 + 45 + 180) x 118.8% = 약 1,687만원
 
 이 금액을 모두 펀딩받으면 좋겠지만, **크라우드펀딩의 기본 취지가 수익 추구보다는 기초 자금 확보**인 만큼, 목표 금액을 아래처럼 조정합니다.
 
@@ -490,7 +484,7 @@ Graphic recording is the real-time translation of conversations or presentations
 
 목표 금액에서 인건비, 굿즈 제작비, 배송까지 제외한 순수 **선인세와 종이책 제작비**만 펀딩 목표로 잡았습니다. 
 
-* 555 x 118% = 약 655만원
+* 555 x 118.8% = 약 660만원
 
 필요 제작비에 비하면 많이 부족하지만, 펀딩 목표로는 부담되는 금액이기도 합니다. 다소 달성하기 어렵더라도 도전 목표로 잡아보겠습니다!
 
