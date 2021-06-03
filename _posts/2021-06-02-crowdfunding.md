@@ -22,7 +22,7 @@ last_modified_at: # YYYY-MM-DD
 6/7에 프로젝트가 오픈되며 아래 경로에서 알림 신청을 할 수 있습니다. 
 </p>
 
-<p style="text-decoration: overline">
+<p style="text-decoration: underline">
 알림 설정하신 분이 얼리버드 혜택을 놓치는 일이 없도록 오픈 전에 얼리버드 개수를 늘려둘까 합니다. 얼리버드를 굿즈가 필요하신 분은 알림 설정해두세요!
 </p>
  
