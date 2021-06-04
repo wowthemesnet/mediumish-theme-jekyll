@@ -1,9 +1,8 @@
 ---
 layout: post
 title:  "Back Online - Sort of..."
-author: James
+author: james
 categories: [ welcome, in-progress ]
-image: assets/images/16.jpg
 ---
 It's been a real long time since I've posted any content on my blog - it's been over a full year. 
 
