@@ -1,5 +1,6 @@
 ---
 layout: post
+comments: enabled
 title:  "Inception Movie"
 author: john
 categories: [ Jekyll, tutorial ]

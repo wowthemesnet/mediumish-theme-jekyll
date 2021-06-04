@@ -7,7 +7,7 @@ favicon: 'assets/images/logo.png'
 google_analytics: 'A-118602217-1'
 include: ["_pages"]
 permalink: /:title/
-
+disqus: teachmehow-tech
 # Authors
 authors:
   james:
