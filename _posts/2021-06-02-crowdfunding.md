@@ -15,7 +15,6 @@ rating: # 1~5까지 점수
 last_modified_at: # YYYY-MM-DD
 ---
 
-
 <div class="note">
 <p>
 이 글은 크라우드펀딩 서비스 '텀블러'에 등록된 프로젝트 스토리를 옮긴 내용입니다.
