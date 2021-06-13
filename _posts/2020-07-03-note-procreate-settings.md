@@ -6,8 +6,8 @@ categories: [ 그래픽 레코딩 ]
 tags: [그래픽레코딩, 프로크리에이트, 아이패드, 설정]
 image: "https://assets.st-note.com/production/uploads/images/29580669/rectangle_large_type_2_6b7c64f631c76dee7c88fdb211e49006.png?width=800"
 description: 
-featured: true
-hidden: true
+featured: false
+hidden: false
 beforetoc: 
 toc: true
 comments: true

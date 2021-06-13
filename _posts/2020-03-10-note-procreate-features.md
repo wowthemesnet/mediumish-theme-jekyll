@@ -6,8 +6,8 @@ categories: [ 그래픽 레코딩 ]
 tags: [그래픽레코딩, 프로크리에이트, 아이패드, 추천 기능]
 image: "https://assets.st-note.com/production/uploads/images/20694815/rectangle_large_type_2_a9089e26fb6f8c733ec6037828c23a6d.png?width=800"
 description: 
-featured: true
-hidden: true
+featured: false
+hidden: false
 beforetoc: 
 toc: true
 comments: true
