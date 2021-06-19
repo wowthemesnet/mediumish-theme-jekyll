@@ -1,10 +1,10 @@
 {
   "ExpandedNodes": [
     "",
+    "\\assets",
     "\\_includes",
     "\\_layouts",
     "\\_pages"
   ],
-  "SelectedNode": "\\_layouts\\default.html",
   "PreviewInSolutionExplorer": false
 }
