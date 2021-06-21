@@ -2,9 +2,12 @@
   "ExpandedNodes": [
     "",
     "\\assets",
+    "\\assets\\css",
     "\\_includes",
     "\\_layouts",
-    "\\_pages"
+    "\\_pages",
+    "\\_posts"
   ],
+  "SelectedNode": "\\_pages\\amenities.md",
   "PreviewInSolutionExplorer": false
 }

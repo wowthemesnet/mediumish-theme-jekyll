@@ -1,4 +1,4 @@
-I"P‹
+I"£}
 <!-- Featured
 ================================================== -->
 <section class="featured-posts">
@@ -6,104 +6,6 @@
         <h2><span>Featured</span></h2>
     </div>
     <div class="row">
-
-    
-
-        
-
-    
-
-        
-
-    
-
-        
-
-    
-
-        
-
-    
-
-        
-
-    
-
-        
-
-    
-
-        
-
-    
-
-        
-
-    
-
-        
-
-    
-
-        
-
-    
-
-        
-
-            <!-- begin post -->
-
-<div class="col-md-6 mb-30px">
-    <div class="listfeaturedtag h-100">
-        <div class="row h-100">
-            <div class="col-12 col-md-12 col-lg-5 pr-lg-0">
-                <div class="h-100">
-                    <div class="wrapthumbnail">
-                        <a href="/intro/">
-                            
-                            <img class="featured-box-img-cover" src="/assets/images/greenagepic2.jpg" />
-                            
-                        </a>
-                    </div>
-                </div>
-            </div>
-            <div class="col-12 col-md-12 col-lg-7">
-                <div class="h-100 card-group">
-                    <div class="card">
-                        <div class="card-body">
-                            <h2 class="card-title">
-                                <a class="text-dark" href="/intro/">About Greenage</a>
-                                
-                            </h2>
-
-                            <h4 class="card-text">Salarpuria Greenage is a residential complex on Hosur Road in Bengaluru. We are a short distance away from Koramangala and HSR Layout. The complex is...</h4>
-                        </div>
-                        <div class="card-footer b-0 bg-white mt-auto">
-                            <div class="wrapfooter">
-                                
-                                <span class="meta-footer-thumb">
-                                
-                                <img class="author-thumb" src="https://www.gravatar.com/avatar/?s=250&amp;d=mm&amp;r=x" alt="Greenage" />
-                                
-                                </span>
-                                <span class="author-meta">
-                                <span class="post-name"><a target="_blank" href="">Greenage</a></span><br />
-                                
-                                <span class="post-date">15 Aug 2020</span>
-                                </span>
-                                <span class="post-read-more"><a href="//intro/" title="Read Story"><svg class="svgIcon-use" width="25" height="25" viewbox="0 0 25 25"><path d="M19 6c0-1.1-.9-2-2-2H8c-1.1 0-2 .9-2 2v14.66h.012c.01.103.045.204.12.285a.5.5 0 0 0 .706.03L12.5 16.85l5.662 4.126a.508.508 0 0 0 .708-.03.5.5 0 0 0 .118-.285H19V6zm-6.838 9.97L7 19.636V6c0-.55.45-1 1-1h9c.55 0 1 .45 1 1v13.637l-5.162-3.668a.49.49 0 0 0-.676 0z" fill-rule="evenodd"></path></svg></a></span>
-                                <div class="clearfix"></div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-</div>
-<!-- end post -->
-
-        
 
     
 
@@ -148,7 +50,7 @@
                                 <span class="author-meta">
                                 <span class="post-name"><a target="_blank" href="">Greenage</a></span><br />
                                 
-                                <span class="post-date">14 Aug 2020</span>
+                                <span class="post-date">07 Sep 2020</span>
                                 </span>
                                 <span class="post-read-more"><a href="//new/" title="Read Story"><svg class="svgIcon-use" width="25" height="25" viewbox="0 0 25 25"><path d="M19 6c0-1.1-.9-2-2-2H8c-1.1 0-2 .9-2 2v14.66h.012c.01.103.045.204.12.285a.5.5 0 0 0 .706.03L12.5 16.85l5.662 4.126a.508.508 0 0 0 .708-.03.5.5 0 0 0 .118-.285H19V6zm-6.838 9.97L7 19.636V6c0-.55.45-1 1-1h9c.55 0 1 .45 1 1v13.637l-5.162-3.668a.49.49 0 0 0-.676 0z" fill-rule="evenodd"></path></svg></a></span>
                                 <div class="clearfix"></div>
@@ -161,6 +63,50 @@
     </div>
 </div>
 <!-- end post -->
+
+        
+
+    
+
+        
+
+    
+
+        
+
+    
+
+        
+
+    
+
+        
+
+    
+
+        
+
+    
+
+        
+
+    
+
+        
+
+    
+
+        
+
+    
+
+        
+
+    
+
+        
+
+    
 
         
 
@@ -227,61 +173,6 @@
 
         
 
-            <!-- begin post -->
-
-<div class="col-md-6 mb-30px">
-    <div class="listfeaturedtag h-100">
-        <div class="row h-100">
-            <div class="col-12 col-md-12 col-lg-5 pr-lg-0">
-                <div class="h-100">
-                    <div class="wrapthumbnail">
-                        <a href="/covid/">
-                            
-                            <img class="featured-box-img-cover" src="/assets/images/greenagepic19.jpg" />
-                            
-                        </a>
-                    </div>
-                </div>
-            </div>
-            <div class="col-12 col-md-12 col-lg-7">
-                <div class="h-100 card-group">
-                    <div class="card">
-                        <div class="card-body">
-                            <h2 class="card-title">
-                                <a class="text-dark" href="/covid/">COVID Pre-Cautions, Testing and Containment Procedures for Greenage</a>
-                                
-                            </h2>
-
-                            <h4 class="card-text">For reporting COVID positive cases or for other support, please contact salarpuria-greenage+health@apnacomplex.com.
-</h4>
-                        </div>
-                        <div class="card-footer b-0 bg-white mt-auto">
-                            <div class="wrapfooter">
-                                
-                                <span class="meta-footer-thumb">
-                                
-                                <img class="author-thumb" src="https://www.gravatar.com/avatar/?s=250&amp;d=mm&amp;r=x" alt="Greenage" />
-                                
-                                </span>
-                                <span class="author-meta">
-                                <span class="post-name"><a target="_blank" href="">Greenage</a></span><br />
-                                
-                                <span class="post-date">01 Aug 2020</span>
-                                </span>
-                                <span class="post-read-more"><a href="//covid/" title="Read Story"><svg class="svgIcon-use" width="25" height="25" viewbox="0 0 25 25"><path d="M19 6c0-1.1-.9-2-2-2H8c-1.1 0-2 .9-2 2v14.66h.012c.01.103.045.204.12.285a.5.5 0 0 0 .706.03L12.5 16.85l5.662 4.126a.508.508 0 0 0 .708-.03.5.5 0 0 0 .118-.285H19V6zm-6.838 9.97L7 19.636V6c0-.55.45-1 1-1h9c.55 0 1 .45 1 1v13.637l-5.162-3.668a.49.49 0 0 0-.676 0z" fill-rule="evenodd"></path></svg></a></span>
-                                <div class="clearfix"></div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-</div>
-<!-- end post -->
-
-        
-
     
 
         
@@ -301,7 +192,7 @@
 
     <div class="section-title">
 
-        <h2><span>All Stories</span></h2>
+        <h2><span>All Posts</span></h2>
 
     </div>
 
@@ -764,6 +655,53 @@
                 <span class="post-date">17 Aug 2020</span>
                 </span>
                 <span class="post-read-more"><a href="/pets/" title="Read Story"><svg class="svgIcon-use" width="25" height="25" viewbox="0 0 25 25"><path d="M19 6c0-1.1-.9-2-2-2H8c-1.1 0-2 .9-2 2v14.66h.012c.01.103.045.204.12.285a.5.5 0 0 0 .706.03L12.5 16.85l5.662 4.126a.508.508 0 0 0 .708-.03.5.5 0 0 0 .118-.285H19V6zm-6.838 9.97L7 19.636V6c0-.55.45-1 1-1h9c.55 0 1 .45 1 1v13.637l-5.162-3.668a.49.49 0 0 0-.676 0z" fill-rule="evenodd"></path></svg></a></span>
+                <div class="clearfix"></div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- end post -->
+
+        
+
+        <!-- begin post -->
+
+
+<div class="col-lg-4 col-md-6 mb-30px card-group">
+    <div class="card h-100">
+        <div class="maxthumb">
+            <a href="/covid/">
+                
+
+                    
+                        <img class="img-fluid" src="/assets/images/greenagepic19.jpg" alt="COVID Pre-Cautions, Testing and Containment Procedures for Greenage" /> 
+                    
+
+                
+            </a>
+        </div>
+        <div class="card-body">
+            <h2 class="card-title">
+                <a class="text-dark" href="/covid/">COVID Pre-Cautions, Testing and Containment Procedures for Greenage</a>
+                
+            </h2>
+            <h4 class="card-text">For reporting COVID positive cases or for other support, please contact salarpuria-greenage+health@apnacomplex.com.
+</h4>
+        </div>
+        <div class="card-footer bg-white">
+            <div class="wrapfooter">
+                
+                <span class="meta-footer-thumb">
+                
+                <img class="author-thumb" src="https://www.gravatar.com/avatar/?s=250&amp;d=mm&amp;r=x" alt="Greenage" />
+                
+                </span>
+                <span class="author-meta">
+                <span class="post-name"><a target="_blank" href="">Greenage</a></span><br />
+                
+                <span class="post-date">01 Aug 2020</span>
+                </span>
+                <span class="post-read-more"><a href="/covid/" title="Read Story"><svg class="svgIcon-use" width="25" height="25" viewbox="0 0 25 25"><path d="M19 6c0-1.1-.9-2-2-2H8c-1.1 0-2 .9-2 2v14.66h.012c.01.103.045.204.12.285a.5.5 0 0 0 .706.03L12.5 16.85l5.662 4.126a.508.508 0 0 0 .708-.03.5.5 0 0 0 .118-.285H19V6zm-6.838 9.97L7 19.636V6c0-.55.45-1 1-1h9c.55 0 1 .45 1 1v13.637l-5.162-3.668a.49.49 0 0 0-.676 0z" fill-rule="evenodd"></path></svg></a></span>
                 <div class="clearfix"></div>
             </div>
         </div>
