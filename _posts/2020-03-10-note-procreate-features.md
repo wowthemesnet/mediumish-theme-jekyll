@@ -21,7 +21,7 @@ last_modified_at: # YYYY-MM-DD
 일부 의역과 현지화한 내용이 포함될 수 있습니다. 
 책에서 직접 인용한 게시물은 번역이 되어 있으나, 해당 게시물에서 링크로 연결된 문서는 번역되지 않을 수 있습니다.
 <br/>
-해당 도서는 <a href="https://zzom.io/graphic-recording/" target="_blank">'처음 배우는 그래픽 레코딩'</a>이라는 이름으로 번역되어 2021년 여름 전에 출간 예정입니다. 
+해당 도서는 '처음 배우는 그래픽 레코딩'이라는 이름으로 번역되어 <a href="https://tumblbug.com/graphicrecording/" target="_blank">텀블벅에서 크라우드 펀딩</a> 중입니다.
 </p>
 
 <ul>
@@ -43,13 +43,13 @@ last_modified_at: # YYYY-MM-DD
 
 안녕하세요? 쿠보미입니다.<br/>
 논의를 가시화할 수 있는 그래픽 레코딩에 관한 내용을 <a href="https://note.com/kuboasa/m/m1a133619a3a7" target="_blank">'그래픽 레코딩의 비밀'</a>에서 연재하고 있습니다. 그래픽 레코딩을 실천하는 방법과 다양한 아이디어가 있으니 한번 들러보세요. 
-연재된 내용은 2020년 8월에 'はじめてのグラフィックレコーディング'라는 이름으로 책이 되었고, 2021년 7월에는 '처음 배우는 그래픽 레코딩'이란 이름으로 한국어 번역서가 나올 거에요!
+연재된 내용은 2020년 8월에 'はじめてのグラフィックレコーディング'라는 이름으로 책이 되었습니다.
 
-## 아이패드를 사긴 했는데 놀고 있어요
+## 아이패드를 샀는데 놀고 있어요
 잔뜩 기대하며 아이패드를 질렀는데, 막상 사고 보니 활용할 데가 없어 난감한 분 계신가요? (제가 그랬습니다)
 이번 글에서는 아이패드로 그림을 그릴 때 써보면 좋을 기능을 소개합니다. 
 
-## 그림 앱의 끝판왕 '프로크리에이트'
+### 그림 앱의 끝판왕 '프로크리에이트'
 아이패드로 그림을 그리고 싶다면 '프로크리에이트'를 추천합니다. 평소에는 취미로 낙서할 때 쓰고, 일할 때는 그래픽 레코딩 도구로 활용하고 있어요. 유료 앱인데 구독형은 아니고 일시불 12,000원에 살 수 있습니다. 정기적으로 업데이트되면서 기능이 계속 늘고 있어요.
 
 * [프로크리에이트](https://apps.apple.com/kr/app/procreate/id425073498)
@@ -148,3 +148,24 @@ last_modified_at: # YYYY-MM-DD
 
 ### 마무리
 여기까지 한번 써보길 추천하는 기능을 소개했습니다. 디지털 드로잉의 강점을 살리면 '즉석에서 그리면서 내용을 전달하는' 커뮤니케이션 도구로 쓸 수 있습니다. 메모나 필기, 낙서나 스케치 등 다양한 용도로 활용해보세요.
+
+<div class="note">
+    <p>이 글은 '처음 배우는 그래픽 레코딩'을 번역하던 중 자자의 블로그로 외부 참조된 자료가 있어 번역하게 되었습니다. 현재 텀블벅에서 크라우드펀딩 중이며 아래 경로로 후원하실 수 있습니다.
+
+    </p>
+    <b>관련 도서 정보</b>
+    <ul>
+        <li>크라우드 펀딩: <a href="https://tum.bg/tgLB7f" target="_blank">처음 배우는 그래픽 레코딩</a> </li>
+        <li>원서: <a href="https://www.amazon.co.jp/dp/B08CK437LG/" target="_blank">はじめてのグラフィックレコーディング</a></li>
+    </ul>
+
+    <figure>
+    <a href="https://tum.bg/tgLB7f" target="_blank">
+    <img class="large" src="{{ site.baseurl }}/assets/images/graphic-recording/main-image.png" alter=""></a>
+    </figure>    
+
+    <figure>
+    <a href="https://youtu.be/66ZZql76PNI" target="_blank">
+    <img class="large" src="{{ site.baseurl }}/assets/images/note-procreate-features/217.png" alter=""></a>
+    </figure>
+</div>

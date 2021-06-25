@@ -21,7 +21,7 @@ last_modified_at: # YYYY-MM-DD
 일부 의역과 현지화한 내용이 포함될 수 있습니다. 
 책에서 직접 인용한 게시물은 번역이 되어 있으나, 해당 게시물에서 링크로 연결된 문서는 번역되지 않을 수 있습니다.
 <br/>
-해당 도서는 <a href="https://zzom.io/graphic-recording/" target="_blank">'처음 배우는 그래픽 레코딩'</a>이라는 이름으로 번역되어 2021년 여름 전에 출간 예정입니다. 
+해당 도서는 '처음 배우는 그래픽 레코딩'이라는 이름으로 번역되어 <a href="https://tumblbug.com/graphicrecording/" target="_blank">텀블벅에서 크라우드 펀딩</a> 중입니다.
 </p>
 
 <ul>
@@ -126,3 +126,24 @@ last_modified_at: # YYYY-MM-DD
 그래픽 레코딩, 도해, 비주얼 씽킹에 대해 궁금한 것이 있으면 알려주세요.<br/> 다음 번 포스트에 다뤄볼게요. 트위터로 문의하셔도 좋습니다. 부담 없이 편하게 질문해주세요. 
 
 * <a href="https://note.com/kuboasa/n/n43b6cac15a4c/" target="_blank">지난 질의응답 확인하기</a>
+
+<div class="note">
+    <p>이 글은 '처음 배우는 그래픽 레코딩'을 번역하던 중 자자의 블로그로 외부 참조된 자료가 있어 번역하게 되었습니다. 현재 텀블벅에서 크라우드펀딩 중이며 아래 경로로 후원하실 수 있습니다.
+
+    </p>
+    <b>관련 도서 정보</b>
+    <ul>
+        <li>크라우드 펀딩: <a href="https://tum.bg/tgLB7f" target="_blank">처음 배우는 그래픽 레코딩</a> </li>
+        <li>원서: <a href="https://www.amazon.co.jp/dp/B08CK437LG/" target="_blank">はじめてのグラフィックレコーディング</a></li>
+    </ul>
+
+    <figure>
+    <a href="https://tum.bg/tgLB7f" target="_blank">
+    <img class="large" src="{{ site.baseurl }}/assets/images/graphic-recording/main-image.png" alter=""></a>
+    </figure>    
+
+    <figure>
+    <a href="https://tum.bg/tgLB7f" target="_blank">
+    <img class="large" src="{{ site.baseurl }}/assets/images/note-procreate-settings/226.png" alter=""></a>
+    </figure>
+</div>
