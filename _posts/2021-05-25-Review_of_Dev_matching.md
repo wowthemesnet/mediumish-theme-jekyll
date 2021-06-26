@@ -27,7 +27,7 @@ featured: true
 ### 참고자료
 
 이틀 동안 다음 세 가지 자료를 중점적으로 공부했다.  
-최종 목표는 Multi-label clasification, Multi-class classification 두 task를 모두 다룰 수 있고, Efficient Net+OOF를 task에 적용하는 것이었다.
+최종 목표는 Multi-label classification, Multi-class classification 두 task를 모두 다룰 수 있고, Efficient Net+OOF를 task에 적용하는 것이었다.
 
 1. [Daycon Multi-label Resnet101+OOF](https://dacon.io/competitions/official/235697/codeshare/2368?page=2&dtype=recent)
 2. [Programmers Dev Matching_승현님 Notion](https://www.notion.so/Programmers-Dev-Matching-f8b984920e4b48e38fbf4d763dd3ede6)
@@ -138,7 +138,7 @@ print("Label probs:", probs)  # prints: [[0.9927937  0.00421068 0.00299572]]
 
 이제까지 용량이 큰 데이터를 다루어본 적 없던 것이 화근이었던 건가. 학습시키려 시도했던 것은 "Daycon Multi-label Resnet101+OOF"의 코드였고 3Giga의 image train set을 가졌으며 Resnet101이었다. Daycon 게시된 코드를 보면 GPU만 4개인 것이 보이는데 어떻게든 GPU 1개로 해보겠다고 정말 많은 시도를 했고 실패했다.  
 
-이 일을 계기로 딥러닝 실행에 있어 중요한 문제인 Memory를 인식하게 되었고, epoch, batch_siz 등의 값에 따라 시간과 용량이 얼마나 달라지는지를 감을 잡을 수 있었다.
+이 일을 계기로 딥러닝 실행에 있어 중요한 문제인 Memory를 인식하게 되었고, epoch, batch_size 등의 값에 따라 시간과 용량이 얼마나 달라지는지를 감을 잡을 수 있었다.
 
 - [RAM, CPU, GPU는 무슨 일을 하는가](https://deepinsight.tistory.com/103)  
 - [용량에 문제가 생겼다면 batch size를 줄여라](https://towardsdatascience.com/how-to-break-gpu-memory-boundaries-even-with-large-batch-sizes-7a9c27a400ce)
@@ -156,7 +156,7 @@ print("Label probs:", probs)  # prints: [[0.9927937  0.00421068 0.00299572]]
 
 ## 소감
 
-이틀 동안 합쳐서 5시간 잔 것 같다. 공부한 시간 반절, 오류 잡는 시간 반절이었다. Dev-Matcing을 끝낸 소감은 아래와 같다.
+이틀 동안 합쳐서 5시간 잔 것 같다. 공부한 시간 반절, 오류 잡는 시간 반절이었다. Dev-Matching을 끝낸 소감은 아래와 같다.
 
 - 계속해서 생기는 오류를 하나하나 다 찾아가면서 어떻게든 해결하는 과정을 반복하면서 개발분야의 어려움을 확실히 겪었던 것 같다. (~~그래도 오류 해결할 때의 짜릿함은 꽤 컸다~~)
 - 이렇게 집중해서 오랫동안 코딩을 한 적은 처음인 것 같다. 사실 엄청 힘들지 않았고 "실행시켜야 해"라는 생각만 갖고 있었던 것 같다. 그래서 개발 적성을 완전히 맞지 않는 건 아니구나 하고 느꼈다.
