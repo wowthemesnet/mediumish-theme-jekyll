@@ -40,7 +40,7 @@ featured: true
 ![HTML DOM Tree](../assets/images/post-virtualDOM/HTMLDOMTree.gif)
 *w3schools.com*
 
-이러한 변환은 브라우저의 렌더링 엔진에서 발생한다. 렌더링 엔진은 브라우저의 구성 요소이며, 클라이언트가 브라우저에 요청한 타입의 문서를 화면의 표현하는 기능을 한다. 이 과정에서 문서를 DOM으로 변환하게 되는데, 세부적인 동작의 예시(Webkit 렌더링 엔진)는 다음과 같다.
+이러한 변환은 브라우저의 렌더링 엔진에서 발생한다. 렌더링 엔진은 브라우저의 구성 요소이며, 클라이언트가 브라우저에 요청한 타입의 문서를 화면에 표현하는 기능을 한다. 이 과정에서 문서를 DOM으로 변환하게 되는데, 세부적인 동작의 예시(Webkit 렌더링 엔진)는 다음과 같다.
 
 ![Rendering Engine Flow](../assets/images/post-virtualDOM/RenderingEngineFlow.png)
 *How Browsers Work: Behind the scenes of modern web browsers by Tali Garsiel and Paul Irish*
