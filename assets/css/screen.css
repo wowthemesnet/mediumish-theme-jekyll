@@ -899,3 +899,16 @@ iframe {
     opacity: 0;
     transition: opacity .25s;
 }
+
+div.article-post>table {
+    width: 100%;
+    margin-bottom: 2rem;
+    border: 1px solid #ddd;
+    border-collapse: collapse;
+}
+
+div.article-post>table td, th {
+    border-bottom: 1px solid #ddd;
+}
+
+div.article-post>table tr:hover {background-color:#f5f5f5;}
