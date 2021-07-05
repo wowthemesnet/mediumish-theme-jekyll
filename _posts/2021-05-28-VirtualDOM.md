@@ -3,7 +3,7 @@ layout: post
 title:  "VirtualDOM과 비교 알고리즘"
 authors: [sejkimm]
 tags: ["Web"]
-image: assets/images/post-virtualDOM/thumb.PNG
+image: assets/images/post-virtualDOM/virtualDOM.png
 description: "VirtualDOM과 비교 알고리즘 살펴보기"
 featured: true
 ---
@@ -23,16 +23,16 @@ featured: true
 다음은 HTML 문서를 브라우저에서 변환한 DOM 트리의 예시이다.
 
  ```HTML
- <!doctype html> 
- <HTML>
-    <head>
-      <title>My title</title>
-   </head>
-   <body>
-     <a href="/">My link</a>
-     <h1>My header</h1>
-   </body>
- </HTML>
+<!doctype html> 
+<HTML>
+   <head>
+     <title>My title</title>
+  </head>
+  <body>
+    <a href="/">My link</a>
+    <h1>My header</h1>
+  </body>
+</HTML>
  ```
 
 위 코드는 DOM 트리로 표현이 가능히다.
@@ -98,9 +98,9 @@ Virtual DOM과 DOM 모두 트리 형태를 가진다. 두 트리를 비교하는
 
 트리 (a)를 트리 (c)로 변환하고자 한다. 먼저 트리의 노드 c를 삭제한다(트리 (b)). 노드 c를 노드 a와 노드 d사이에 삽입하고 노드 f를 a로, 노드 d를 e로 재명명한다. 각 편집 연산에 비용 함수(Cost Function)을 정의하였을 때 변환의 총 비용을 최소화하는 연산의 집합을 최적 편집 스크립트(Optimal Edit Script)라고 한다.
 
-트리 편집 거리 문제에 대한 좋은 알고리즘중 하나는 Zhang and Shasha의 알고리즘으로 알려져 있다. 해당 알고리즘을 간단하게 소개하면, 정렬된 트리에 대해 keyroots를 트리의 루트 노드와 왼쪽 형제가 있는 노드의 집합으로 정의한다. 노드 v가 keyroots에 포함되는 경우 v에 대한 서브트리는 재귀적으로 전체 트리에 대한 문제와 같은 방식으로 풀 수 있다. 이때 v에 대한 서브트리를 연관된 부분 문제(relevant subproblem)라고 부른다. 정렬된 트리에 대해서 연관된 부분 문제의 수는 O(&#124T&#124cdepth(T)) 를 넘지 못한다(&#124T&#124: 트리의 전체 노드 수, cdepth(v): 노드 v에 대한 keyroots에 포함되는 조상의 수, cdepth(T): 트리 T에 포함된 모든 노드 v에 대한 cdepth(v) 값 중 가장 큰 값). 트리 T에 대해서 cdepth(T)의 값은 트리 T의 깊이 또는 리프 노드 수 보다 작거나 같다. 동적 프로그래밍 기법을 통해 반복했을 때 트리 편집 거리 문제는 O(&#124T1&#124T2&#124 min {Depth(T1), Leaves(T1)} min {Depth(T2), Leaves(T2)}) 시간 안에 해결할 수 있다.
+트리 편집 거리 문제에 대한 좋은 알고리즘중 하나는 Zhang and Shasha의 알고리즘으로 알려져 있다. 해당 알고리즘을 간단하게 소개하면, 정렬된 트리에 대해 keyroots를 트리의 루트 노드와 왼쪽 형제가 있는 노드의 집합으로 정의한다. 노드 v가 keyroots에 포함되는 경우 v에 대한 서브트리는 재귀적으로 전체 트리에 대한 문제와 같은 방식으로 풀 수 있다. 이때 v에 대한 서브트리를 연관된 부분 문제(relevant subproblem)라고 부른다. 정렬된 트리에 대해서 연관된 부분 문제의 수는 O(&#124;T&#124;cdepth(T)) 를 넘지 못한다(&#124;T&#124;: 트리의 전체 노드 수, cdepth(v): 노드 v에 대한 keyroots에 포함되는 조상의 수, cdepth(T): 트리 T에 포함된 모든 노드 v에 대한 cdepth(v) 값 중 가장 큰 값). 트리 T에 대해서 cdepth(T)의 값은 트리 T의 깊이 또는 리프 노드 수 보다 작거나 같다. 동적 프로그래밍 기법을 통해 반복했을 때 트리 편집 거리 문제는 O(&#124;T1&#124;T2&#124; min {Depth(T1), Leaves(T1)} min {Depth(T2), Leaves(T2)}) 시간 안에 해결할 수 있다.
 
-이 아이디어에서 P.N. Klein이 발전시킨 알고리즘이 트리 편집 거리 문제의 SOTA 알고리즘으로 알려져 있으며, O(&#124T1&#124^2&#124T2&#124log(&#124T2&#124) 시간 내에 두 트리의 비교가 가능하다. 두 알고리즘의 자세한 구현은 다음 페이지에서 확인이 가능하다. [Zhang and Shasha's Algorithm](http://www.grantjenks.com/wiki/_media/ideas/simple_fast_algorithms_for_the_editing_distance_between_tree_and_related_problems.pdf) [Klein's Algorithm](http://citeseerx.ist.psu.edu/viewdoc/download;jsessionid=65513FA97EB55AACB6637F9002748C1C?doi=10.1.1.186.5624&rep=rep1&type=pdf)
+이 아이디어에서 P.N. Klein이 발전시킨 알고리즘이 트리 편집 거리 문제의 SOTA 알고리즘으로 알려져 있으며, O(&#124;T1&#124;^2&#124;T2&#124;log(&#124;T2&#124;) 시간 내에 두 트리의 비교가 가능하다. 두 알고리즘의 자세한 구현은 다음 페이지에서 확인이 가능하다. [Zhang and Shasha's Algorithm](http://www.grantjenks.com/wiki/_media/ideas/simple_fast_algorithms_for_the_editing_distance_between_tree_and_related_problems.pdf) [Klein's Algorithm](http://citeseerx.ist.psu.edu/viewdoc/download;jsessionid=65513FA97EB55AACB6637F9002748C1C?doi=10.1.1.186.5624&rep=rep1&type=pdf)
 
 일반적으로 두 트리의 노드의 개수가 n으로 동일하다고 생각하면 O(n^3)의 시간이 걸린다고 생각이 가능하다. 위와 같은 트리 비교 알고리즘을 바로 DOM 트리와 Virtual DOM 트리의 비교에 적용하면 엘리먼트의 개수에 따라 비교 시간이 지수적으로 증가하기에 처음부터 DOM 트리를 구축해 다시 렌더링하는 것에 비해 Virtual DOM을 사용하는 이점을 잃는다.
 
