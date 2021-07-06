@@ -32,7 +32,7 @@ featured: true
     <a href="/">My link</a>
     <h1>My header</h1>
   </body>
-</HTML>
+</html>
  ```
 
 위 코드는 DOM 트리로 표현이 가능히다.
