@@ -50,7 +50,7 @@ later 변수에 innerFunction을 대입해준 뒤 호출하게 되면 어떻게 
 
 ---
 
-## Js의 Garbage Collection
+## Javascript의 Garbage Collection
 
 바로 자바스크립트의 가비지 컬렉터 정책 때문입니다.
 
