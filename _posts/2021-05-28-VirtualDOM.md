@@ -24,7 +24,7 @@ featured: true
 
  ```HTML
 <!doctype html> 
-<HTML>
+<html>
    <head>
      <title>My title</title>
   </head>
