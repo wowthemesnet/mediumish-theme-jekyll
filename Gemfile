@@ -18,3 +18,7 @@ group :jekyll_plugins do
     gem 'kramdown'
     gem 'rouge'
 end
+
+# Install jekyll-admin
+gem 'jekyll-admin', group: :jekyll_plugins
+
