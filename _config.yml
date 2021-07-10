@@ -18,7 +18,7 @@ plugins:
   - jekyll-feed
 
 # Pagination
-paginate: 10
+paginate: 12
 paginate_path: /page:num/
 
 # Other
