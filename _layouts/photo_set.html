@@ -1,0 +1,24 @@
+---
+layout: default
+---
+
+<section>
+
+{% assign num = page.photos.size %}
+
+    <div class="section-title">
+        <h2><span>{{ page.title }}</span></h2>
+    </div>
+
+
+<div class="photo-set">
+  {% for i in (1..num) %}
+  <figure>
+    <img src="{{ site.baseurl }}/assets/images/photos/{{ page.photos.set }}-{{ i }}.jpg" alt="Photo {{ i }} from {{ page.photos.set | capitalize }}">
+  </figure>
+  {% endfor %}
+</ul>
+<div>
+  <a href="{{ site.baseurl }}/gallery/">View all Greenage Albums</a>
+</div>
+</section>

@@ -1,0 +1,331 @@
+---
+-
+    Unit: Help Desk
+    Intercom: 222225
+    Contact1: 9620218358
+    Contact2: 
+-
+    Unit: Main Gate Security
+    Intercom: 9
+    Contact1: 9108014226
+    Contact2: 
+-
+    Unit: GOA Office
+    Intercom: 111120
+    Contact1: 080-40984649
+    Contact2: 
+-
+    Unit: Alpine Block Security
+    Intercom: 111113
+    Contact1: 
+    Contact2: 
+-
+    Unit: Birch Block Secuirty
+    Intercom: 222223
+    Contact1: 
+    Contact2: 
+-
+    Unit: Cedar Block Security
+    Intercom: 500001
+    Contact1: 
+    Contact2: 
+-
+    Unit: Deodar Block Security
+    Intercom: 600001
+    Contact1: 
+    Contact2: 
+-
+    Unit: Ebony Block Security
+    Intercom: 711111
+    Contact1: 
+    Contact2: 
+-
+    Unit: Ginger Block Security
+    Intercom: 715555
+    Contact1: 
+    Contact2: 
+-
+    Unit: Hibiscus Block A Wing Security
+    Intercom: 713333
+    Contact1: 
+    Contact2: 
+-
+    Unit: Hibiscus Block B Wing Security
+    Intercom: 714444
+    Contact1: 
+    Contact2: 
+-
+    Unit: Juniper Block A Wing Security
+    Intercom: 333331
+    Contact1: 
+    Contact2: 
+-
+    Unit: Juniper Block B Wing Security
+    Intercom: 333332
+    Contact1: 
+    Contact2: 
+-
+    Unit: Juniper Block C Wing Security
+    Intercom: 333333
+    Contact1: 
+    Contact2: 
+-
+    Unit: Oak Block A Wing Security
+    Intercom: 444443
+    Contact1: 
+    Contact2: 
+-
+    Unit: Oak Block B Wing Security
+    Intercom: 444444
+    Contact1: 
+    Contact2: 
+-
+    Unit: Oak Block C Wing Security
+    Intercom: 444445
+    Contact1: 
+    Contact2: 
+-
+    Unit: Clubhouse
+    Intercom: 222229
+    Contact1: 9945590887
+    Contact2: 
+-
+    Unit: BESCOM (Kudlu Gate)
+    Intercom: 
+    Contact1: 1912
+    Contact2: 
+-
+    Unit: TATA SKY DTH & Broad Band 
+    Intercom: 
+    Contact1: 9148669999
+    Contact2: 
+-
+    Unit: ACT Broad Band
+    Intercom: 
+    Contact1: 8884718210
+    Contact2: 
+-
+    Unit: BSNL Broad Band
+    Intercom: 
+    Contact1: 080-22727272
+    Contact2: 
+-
+    Unit: AIRTEL Broad Band
+    Intercom: 
+    Contact1: 9632983382
+    Contact2: 
+-
+    Unit: VIDEOCON DTH
+    Intercom: 
+    Contact1: 9115691156
+    Contact2: 
+-
+    Unit: FIRE/POLICE/AMBULANCE
+    Intercom: 
+    Contact1: 112
+    Contact2: 
+-
+    Unit: Police Station (Bommanahalli)
+    Intercom: 
+    Contact1: 080-22942269
+    Contact2: 
+-
+    Unit: Traffic Police Station (Madiwala)
+    Intercom: 
+    Contact1: 080-22943116
+    Contact2: 
+-
+    Unit: Fire Brigade (Electronic city) 
+    Intercom: 
+    Contact1: 080-22971577
+    Contact2: 
+-
+    Unit: Fire Brigade (Jayanagar)
+    Intercom: 
+    Contact1: 080-22971538
+    Contact2: 
+-
+    Unit: Prashant Hospital (Bommanahalli)
+    Intercom: 
+    Contact1: 080-33055402
+    Contact2: 
+-
+    Unit: Apollo Clinic (HSR) 
+    Intercom: 
+    Contact1: 080-25724235
+    Contact2: 
+-
+    Unit: Narayana Multispeciality Hospital (HSR Layout)
+    Intercom: 
+    Contact1: 080-71112300
+    Contact2: 
+-
+    Unit: St. Johns Hospital (Sarjapur Road)
+    Intercom: 
+    Contact1: 080-22065008
+    Contact2: 
+-
+    Unit: Apollo Hospital (Bannergatta Road)
+    Intercom: 
+    Contact1: 080-41463151
+    Contact2: 
+-
+    Unit: Fortis Hospital (Bannergatta Road)
+    Intercom: 
+    Contact1: 080-66214444
+    Contact2: 
+-
+    Unit: Manipal Hospital (Jayanagar)
+    Intercom: 
+    Contact1: 080-33081526
+    Contact2: 
+-
+    Unit: LAUNDRY - Alpine, Birch, Juniper
+    Intercom: 
+    Contact1: 9663916274
+    Contact2: 8088273093
+-
+    Unit: LAUNDRY - Oak, Hibiscus, Ginger
+    Intercom: 
+    Contact1: 9632731683
+    Contact2: 9741056566
+-
+    Unit: LAUNDRY - Cedar, Deodar, Ebony
+    Intercom: 
+    Contact1: 9632731683
+    Contact2: 9740561557
+-
+    Unit: CAR WASHING - Alpine
+    Intercom: 
+    Contact1: 9663278400
+    Contact2: 9686890740
+-
+    Unit: CAR WASHING - Birch
+    Intercom: 
+    Contact1: 8861562005
+    Contact2: 9902859257
+-
+    Unit: CAR WASHING - Cedar
+    Intercom: 
+    Contact1: 9880788384
+    Contact2: 7349475384
+-
+    Unit: CAR WASHING - Deodar
+    Intercom: 
+    Contact1: 9880788384
+    Contact2: 7349475384
+-
+    Unit: CAR WASHING - Ebony
+    Intercom: 
+    Contact1: 8880999045
+    Contact2: 9902167114
+-
+    Unit: CAR WASHING - Hibiscus
+    Intercom: 
+    Contact1: 8792598500
+    Contact2: 7349530251
+-
+    Unit: CAR WASHING - Juniper
+    Intercom: 
+    Contact1: 7760040939
+    Contact2: 9663278400
+-
+    Unit: CAR WASHING - Oak
+    Intercom: 
+    Contact1: 9900992667
+    Contact2: 8880999045
+-
+    Unit: News Paper
+    Intercom: 
+    Contact1: 8861444625
+    Contact2: 9741578785
+-
+    Unit: Milk Supply
+    Intercom: 
+    Contact1: 9060023456
+    Contact2: 9886447373
+-
+    Unit: Drinking Water 
+    Intercom: 
+    Contact1: 9741056566
+    Contact2: 9986809888
+-
+    Unit: Apollo Clinic
+    Intercom: 
+    Contact1: 9121065804
+    Contact2: 
+-
+    Unit: Family Clinic 
+    Intercom: 
+    Contact1: 9980289548
+    Contact2: 9902605454
+-
+    Unit: Family Pharmacy
+    Intercom: 
+    Contact1: 8105855574
+    Contact2: 8105855574
+-
+    Unit: Cuddles Pre-school
+    Intercom: 
+    Contact1: 7899860728
+    Contact2: 
+-
+    Unit: Rasoi Ghar
+    Intercom: 
+    Contact1: 9886907231
+    Contact2: 9986209271
+-
+    Unit: Desi Cafe
+    Intercom: 
+    Contact1: 9215921008
+    Contact2: 7406213777
+-
+    Unit: Green farm fresh
+    Intercom: 
+    Contact1: 9108968218
+    Contact2: 6200149189
+-
+    Unit: Durga Vegetables
+    Intercom: 
+    Contact1: 9632508080
+    Contact2: 9632257980
+-
+    Unit: Dus Minute
+    Intercom: 
+    Contact1: 9986270278
+    Contact2: 9513415500
+-
+    Unit: Ayoka Essentials
+    Intercom: 
+    Contact1: 9343135069
+    Contact2: 9830337069
+-
+    Unit: Celebrate Life Family Salon & Spa
+    Intercom: 
+    Contact1: 8660798167
+    Contact2: 9844681243
+-
+    Unit: Mukund Juice Center
+    Intercom: 
+    Contact1: 7353059857
+    Contact2: 7349641772
+-
+    Unit: Tejasvi Boutique
+    Intercom: 
+    Contact1: 7019275014
+    Contact2: 9900264175
+-
+    Unit: Relex Pharma (inside dus minute)
+    Intercom: 
+    Contact1: 7032165147
+    Contact2: 8068953234
+-
+    Unit: Avya Mega Store 
+    Intercom: 
+    Contact1: 7004744110
+    Contact2: 9934050320
+-
+    Unit: Med World
+    Intercom: 
+    Contact1: 9743339377
+    Contact2: 804083604

@@ -899,3 +899,15 @@ iframe {
     opacity: 0;
     transition: opacity .25s;
 }
+
+ul.photo-set li {
+    padding: .5em .5em;
+}
+
+ul.photo-set, ul.gallery {
+    display: inline;
+    list-style: none;
+    margin: 0 10px 10px 0;
+    padding: 1em 1em;
+    text-align: left;
+}
