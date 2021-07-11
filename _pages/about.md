@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Mediumish Template for Jekyll
+title: About us
 permalink: /about
 comments: true
 ---
@@ -8,16 +8,16 @@ comments: true
 <div class="row justify-content-between">
 <div class="col-md-8 pr-5">
 
-<p>This website is built with Jekyll and Mediumish template for Jekyll. It's for demonstration purposes, no real content can be found. Mediumish template for Jekyll is compatible with Github pages, in fact even this demo is created with Github Pages and hosted with Github.</p>
+<p>Currently working as Senior Project Manager at <a href="http://www.ferventsoft.com/" target="_blank"> Fervent Software Solutions</a> - a Software Development company based out from New Delhi</p>
 
-<p class="mb-5"><img class="shadow-lg" src="{{site.baseurl}}/assets/images/mediumish-jekyll-template.png" alt="jekyll template mediumish" /></p>
-<h4>Documentation</h4>
+<h4>Why this Blog?</h4>
 
-<p>Please, read the docs <a href="https://bootstrapstarter.com/bootstrap-templates/template-mediumish-bootstrap-jekyll/">here</a>.</p>
+<p> in this ever changing world of technology, we are in the midst of a very exciting phase and probably never experienced before.I felt writing this blog would be an excellent way for me to share my experiences with all young and talented programmers out there, specifically ones which excite me. 
+ </p>
 
-<h4>Questions or bug reports?</h4>
+<h4>Who should read this blog?</h4>
 
-<p>Head over to our <a href="https://github.com/wowthemesnet/mediumish-theme-jekyll">Github repository</a>!</p>
+<p>While this blog is not intended for any specific audience,anyone who breathes programming passionately and willing to share their exciting programming experiences as well would enjoy and have fun here. If anyone can benefit by reading my blog, I will deem my blog a success and would feel more excited to continue sharing my experiences.</p>
 
 </div>
 
@@ -26,10 +26,9 @@ comments: true
 <div class="sticky-top sticky-top-80">
 <h5>Buy me a coffee</h5>
 
-<p>Thank you for your support! Your donation helps me to maintain and improve <a target="_blank" href="https://github.com/wowthemesnet/mediumish-theme-jekyll">Mediumish <i class="fab fa-github"></i></a>.</p>
+<p>Thank you for your support! Your donation helps me to maintain and improve <a target="_blank" href="https://github.com/munna">Munna Bhakta <i class="fab fa-github"></i></a>.</p>
 
-<a target="_blank" href="https://www.wowthemes.net/donate/" class="btn btn-danger">Buy me a coffee</a> <a target="_blank" href="https://bootstrapstarter.com/bootstrap-templates/template-mediumish-bootstrap-jekyll/" class="btn btn-warning">Documentation</a>
-
+<a target="_blank" href="https://www.buymeacoffee.com/munnabhakta" class="btn btn-danger">Buy me a coffee</a>
 </div>
 </div>
 </div>
