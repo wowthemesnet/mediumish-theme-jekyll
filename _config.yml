@@ -6,7 +6,7 @@ logo: 'https://avatars.githubusercontent.com/u/40053093?v=4'
 favicon: 'https://avatars.githubusercontent.com/u/40053093?v=4'
 baseurl: 
 google_analytics:
-disqus: '@baskaranthulukanam'
+disqus: @baskaranthulukanam
 mailchimp-list: 'https://gmail.us6.list-manage.com/subscribe?u=a297cf3e4b54c5d45370e381f&id=6a46f295fe'
 include: ["_pages"]
 permalink: /:title/
