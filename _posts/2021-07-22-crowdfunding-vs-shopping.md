@@ -1,12 +1,12 @@
 ---
 layout: post
-title:  "크라우드펀딩에서 후원하기 vs. 일반 서점에서 구입하기"
+title:  "과연 크라우드펀딩 후원자는 호구인 걸까?"
 author: bomber
 categories: [크라우드펀딩]
 tags: [처음 배우는 그래픽 레코딩, 크라우드펀딩, 텀블벅]
-image: 
-image-caption: 
-description: "트랜스젠더 나카가와 미유님의 인터뷰 번역"
+image: assets/images/crowdfunding-vs-shopping/girl-1034421_1920.jpg
+image-caption: 이미지 출처 <a href="https://pixabay.com/ko/users/klimkin-1298145/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=1034421">klimkin</a>
+description: "크라우드펀딩으로 후원하면 손해보는 건 아닐까라는 의문에 대하여"
 featured: true
 hidden: true
 toc: true
@@ -15,19 +15,53 @@ rating: # 1~5까지 점수
 last_modified_at: # YYYY-MM-DD
 ---
 
+
+<div class="note">
+<p>
+크라우드펀딩을 처음 준비하면서 고민했던 내용을 정리합니다.<br/>
+현재 프로젝트는 230% 달성했고(7/24 기준) 1주일 후인 7/31에 마감합니다. <br/>
+펀딩 종료 후의 진행 과정이나 전자책 출간 소식은 아래 뉴스레터로 공유할 예정입니다. 
+</p>
+
+<ul>
+<li>
+ZZOM 뉴스레터: <a href="https://page.stibee.com/subscriptions/112756?groupIds=10738" target="_blank">구독하기</a>
+</li>
+</ul>
+
+<figure>
+<a href="https://page.stibee.com/subscriptions/112756?groupIds=10738" target="_blank"><img class="middle" src="{{ site.baseurl }}/assets/images/zzom-banner.jpg" alter=""></a>
+<figcaption>
+</figcaption>
+</figure>
+
+</div>
+
+<hr/>
+
 ## 크라우드펀딩에서 후원하기 vs. 일반 서점에서 구입하기
 
+1인 출판 프로젝트를 하다보니 여러가지 고민 거리가 많았다.
+그 중 하나가 첫 책을 크라우드펀딩으로 세상에 선보일지, 일반 서점에 바로 내놓을지 결정하는 거였다.
 
+펀딩하냐 안하냐에 정답은 없다.
+다만 내가 어떤 사고의 흐름으로 크라우드펀딩을 택했는지는 설명할 수 있다.
+나와 비슷한 고민을 하고 있는 사람이 있다면 이 놈은 어떤 생각을 했나 들어나보고 마음대로 정하는 데 도움이 되면 좋겠다.
 
-## 크라우드펀딩은 커머스와 다르다! 커머스와는!
+그럼 1인 출판프로젝트 ZZOM의 첫 책, '처음 배우는 그래픽 레코딩'를 크라우드펀딩하기끼지의 이야기를 조심스레 풀어보자.
 
-[람바랄 짤]
+## 크라우드펀딩은 쇼핑과 다르다
 
-크라우드펀딩은 이커머스보다 매력적이다.
+<figure>
+<img class="large" src="{{ site.baseurl }}/assets/images/crowdfunding-vs-shopping/ramba-ral.png" alter="">
+</figure>
+
+크라우드펀딩은 쇼핑보다 매력적이다.
 생산자와 소비자의 관계가 아니라 창작자와 후원자의 사이에서 드라마가 만들어지기 때문이다.
 
-생산자는 판매하고, 소비자는 구매한다.
-창작자는 도전하고, 후원자는 응원한다.
+* 생산자는 판매하고, 소비자는 구매한다.
+* 창작자는 도전하고, 후원자는 응원한다.
+
 최종 결과물을 받아보고 만족하는 것에 그치지 않고 결과물이 나오기까지의 과정을 만끽한다.
 이건 마치 소년 만화의 성장 스토리와도 비슷하다.
 
@@ -35,10 +69,6 @@ last_modified_at: # YYYY-MM-DD
 가끔은 작은 성공에 기뻐하기도 하고, 가끔은 더진 진행에 고구마를 먹기도 한다. 
 기대한 만큼의 결과를 얻지 못해도 그 과정에 의미를 두고 다음 도전을 기약하기도 한다.
 크라우드펀딩이 딱 그렇다. 
-
-오늘은 1인 출판프로젝트 ZZOM의 첫 책, '처음 배우는 그래픽 레코딩'의 굿즈 준비 과정을 공유해본다.
-
-# 승
 
 ## 왜 크라우드펀딩인가?
 
@@ -243,37 +273,3 @@ A5 학생 노트 40매가 온라인 최저가 860원이니 워크북 제작에�
 
 
 
-
-## 초기 후보
-### 마카
-### 정진호 작가 수채화 엽서
-### 드로잉 글로브
-
-# 전
-## 추가 후보
-### 파버카스텔 니더블 지우개
-
-품영	URL	단가	배송료 포함 1개당 가격
-파버카스텔 니더블 지우개	남대문 미술상사	900	900
-애플펜슬 펜촉 20pcs	https://s.click.aliexpress.com/e/_A4xax0	25480	1274
-드로잉 글로브 100pcs	https://www.aliexpress.com/item/32698184796.html	40767	408
-동물 책갈피	https://s.click.aliexpress.com/e/_AF9FxG	519	480
-사람 책갈피	https://s.click.aliexpress.com/e/_AO7X5g	1109	1109
-사람 모양 연필깎이	https://s.click.aliexpress.com/e/_ArAE3o	838	1291
-일러스트 포스트잇	https://s.click.aliexpress.com/e/_AYn8P0	814	1176
-고양이 책갈피 18pcs	https://s.click.aliexpress.com/e/_9RLug2	4659	316
-정진호 작가 수채화 엽서 (6장 1세트)		600	100
-
-명화 포스트잇 세트 (장바구니 참고)
-
-
-# 결
-최종 결정된 랜덤 굿즈는 다음과 같다.
-
-* 드로잉 글로브
-* 캐릭터 접착식 책갈피
-* 고양이 자석식 책갈피 
-* 정진호 작가 수채화 엽서
-
-책 정가가 더 비싼 걸 하게 되면 더 좋은 랜덤 굿즈를 골라야지.
-사은품 굿즈 고민되는 사람은 참고하시길
