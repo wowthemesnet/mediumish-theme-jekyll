@@ -3,7 +3,7 @@ name: "Baskaran Thulukanam"
 title: "Machine Learning and Deep Learning Engineer"
 description: "ML and DL blogs"
 logo: 'https://avatars.githubusercontent.com/u/40053093?v=4'
-favicon: 'assets/images/logo.png'
+favicon: 'https://avatars.githubusercontent.com/u/40053093?v=4'
 baseurl: 
 google_analytics:
 disqus: '@baskaranthulukanam'
@@ -13,14 +13,14 @@ permalink: /:title/
 
 # Authors
 authors:
-  sal:
-    name: Sal
-    display_name: Sal
-    gravatar: e56154546cf4be74e393c62d1ae9f9d4
-    email: wowthemesnet@gmail.com
-    web: https://www.wowthemes.net
-    twitter: https://twitter.com/wowthemesnet
-    description: "Author of Mediumish, a Bootstrap Medium styled template available for WordPress, HTML, Ghost and Jekyll. You are currently previewing Jekyll template demo."
+  baskar:
+    name: baskaran Thulukanam
+    display_name: Baskar
+    gravatar: 
+    email: baskar.mailbox@gmail.com
+    web: 
+    twitter:
+    description: "Machine learning and Deep learning blogs"
   
 
 # Plugins
@@ -55,8 +55,8 @@ kramdown:
 
 # Adsense (change to "enabled" to activate, also your client id and ad slot. Create a new ad unit from your Adsense account to get the slot.)
 adsense: "disabled"
-adsense-data-ad-client: "ca-pub-3412143450191416"
-adsense-data-ad-slot: "1363087678"
+adsense-data-ad-client: ""
+adsense-data-ad-slot: ""
 
 # Lazy Images ("enabled" or "disabled")
 lazyimages: "disabled"
