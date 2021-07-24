@@ -1,13 +1,13 @@
 # Site
-name: "Mediumish"
-title: "Mediumish"
-description: "Jekyll template, Medium styled, free for bloggers."
+name: "Baskaran Thulukanam" 
+title: "Machine Learning and Deep Learning Engineer"
+description: "ML and DL blogs"
 logo: 'assets/images/logo.png'
 favicon: 'assets/images/logo.png'
 baseurl: /mediumish-theme-jekyll
-google_analytics: 'UA-46278016-1'
-disqus: 'demowebsite'
-mailchimp-list: 'https://wowthemes.us11.list-manage.com/subscribe/post?u=8aeb20a530e124561927d3bd8&amp;id=8c3d2d214b'
+google_analytics:
+disqus: '@baskaranthulukanam'
+mailchimp-list: 'https://gmail.us6.list-manage.com/subscribe?u=a297cf3e4b54c5d45370e381f&id=6a46f295fe'
 include: ["_pages"]
 permalink: /:title/
 
