@@ -22,6 +22,10 @@ ZZOM의 첫 책 <a href="https://tumblbug.com/graphicrecording/" target="_blank"
 펀딩 종료 후의 진행 과정이나 전자책 출간 소식은 아래 경로로 공유할 예정입니다. 
 </p>
 
+<figure>
+<img class="large" src="{{ site.baseurl }}/assets/images/crowdfunding/tumblgub-260-777-graph.png" alter="">
+</figure>
+
 <ul>
 <li>
 ZZOM 블로그: <a href="https://zzom.io" target="_blank">살펴보기</a>
@@ -29,13 +33,11 @@ ZZOM 블로그: <a href="https://zzom.io" target="_blank">살펴보기</a>
 <li>
 ZZOM 뉴스레터: <a href="https://page.stibee.com/subscriptions/112756?groupIds=108084" target="_blank">구독하기</a>
 </li>
-</ul>
+<li>
+텀블벅: <a href="https://tumblbug.com/graphicrecording/" target="_blank">살펴보기</a>
+</li>
 
-<figure>
-<a href="https://page.stibee.com/subscriptions/112756?groupIds=10738" target="_blank"><img class="middle" src="{{ site.baseurl }}/assets/images/zzom-banner.jpg" alter=""></a>
-<figcaption>
-</figcaption>
-</figure>
+</ul>
 
 </div>
 
@@ -294,7 +296,11 @@ ZZOM 뉴스레터: <a href="https://page.stibee.com/subscriptions/112756?groupId
 
 1인 출판 프로젝트 ZZOM
 
-
+<figure>
+<a href="https://page.stibee.com/subscriptions/112756?groupIds=10738" target="_blank"><img class="middle" src="{{ site.baseurl }}/assets/images/zzom-banner.jpg" alter=""></a>
+<figcaption>
+</figcaption>
+</figure>
 
 
 
