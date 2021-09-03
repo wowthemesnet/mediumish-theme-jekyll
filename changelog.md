@@ -1,5 +1,8 @@
 # Mediumish Jekyll Theme - Change Log
 
+## unreleased
+- FIX: permalinks in pages tags, categories, and about (in jekyll 4.x, permalinks without trailing slash has .html appended)
+
 ## 2019-05-16, v1.0.36
 - docker-composer.yml
 - better responsiveness for 1920x1080 resolution
