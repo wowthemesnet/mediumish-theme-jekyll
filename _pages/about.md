@@ -53,7 +53,7 @@ comments: false
         ZZOM 프로젝트를 하기 전에 여러 출판사에서 작업했던 번역서는 다음과 같습니다.
         </p>
         <figure><a href="https://codelabor.github.io/translating-developer/" target="_blank">        
-        <img class="featured-image img-fluid" src="{{site.baseurl}}/assets/images/about/translating-developer.png" alt="translating-developer" /></a>
+        <img class="featured-image img-fluid" src="{{site.baseurl}}/assets/images/about/translating-developer.jpg" alt="translating-developer" /></a>
         <figcaption>타 출판사와 협업한 번역서</figcaption>
         </figure>
     </div>
