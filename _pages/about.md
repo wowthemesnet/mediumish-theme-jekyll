@@ -59,7 +59,7 @@ comments: false
 
             <h5>책 구매는 여기로</h5>
             <p>
-            준비 중입니다.
+            <a href="http://book.naver.com/bookdb/book_detail.nhn?bid=20916537" target="_blank">처음 배우는 그래픽 레코딩</a>
             </p>
 
             <h5>후원은 여기로</h5>
