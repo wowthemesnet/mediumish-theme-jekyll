@@ -3,7 +3,7 @@ layout: post
 title: '함수형 언어의 특징 "Closure"'
 authors: [gusrb3164]
 tags: ['Web']
-image: https://johnie.site/static/69ee9f46cf972cc37caa407a42bd4db4/3ddad/logo.png
+image: ../assets/images/post-js-closure/javascript-logo.png
 description: '자바스크립트의 기술중 하나인 클로저에 대해서'
 featured: true
 ---
@@ -131,10 +131,10 @@ assert(ninja.feints === undefined, '하지만 private변수에 직접 접근할 
 useState가 outerFunction, state와 setState가 innerFunction로 매핑되는걸 확인할 수 있습니다.
 
 ```js
-const useState = (initialValue) => {
+const useState = initialValue => {
   let innerState = initialValue;
   const state = () => innerState;
-  const setState = (newValue) => {
+  const setState = newValue => {
     innerState = newValue;
   };
   return [state, setState];
