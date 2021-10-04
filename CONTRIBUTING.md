@@ -21,3 +21,20 @@
 
 1. PR을 작성해주세요!
     * ***이 레포지토리의 master 브랜치로 Pull Request를 날려주세요!***
+
+## 블로그 author 추가하는 방법
+
+1. `_data` 폴더에 `author.yml`을 수정해주세요.
+    1. author 속성은 다음과 같습니다.
+
+    ```markdown
+        [닉네임]:
+            name: [이름]
+            display_name: [표시되는 이름]
+            email: [본인 이메일]
+            github: [Github 닉네임]
+            role: [역할, lead || core || normal ]
+            alumni: [alumni 여부]
+            blog_team: [블로그 팀 테두리 입히기]
+            web: [블로그 주소]
+    ```

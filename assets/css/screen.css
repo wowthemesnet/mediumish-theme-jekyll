@@ -13,6 +13,7 @@ License: https://www.wowthemes.net/freebies-license/
     --green-color: #34A853;
     --blue-color: #2254AF;
     --light-black-color: #484A50;
+    --grey-color: #888888;
     --light-blue-color: #D2E3FC;
     --light-green-color: #CEEAD6;
     --light-yellow-color: #FEEFC3;
@@ -87,6 +88,8 @@ section.recent-posts {
 }
 
 .section-title h2 {
+    display: flex;
+    gap: 1.5rem;
     border-bottom: 1px solid rgba(0, 0, 0, .125);
     margin-bottom: 25px;
     font-weight: 700;
@@ -95,10 +98,59 @@ section.recent-posts {
 }
 
 .section-title span {
-    border-bottom: 1px solid rgba(0, 0, 0, .44);
     display: inline-block;
     padding-bottom: 20px;
     margin-bottom: -1px;
+    color: var(--grey-color);
+    cursor: pointer;
+}
+
+.section-title .active {
+    color: var(--black-color);
+    border-bottom: 1px solid rgba(0, 0, 0, .44);
+}
+
+/* about page alumni tabs */
+
+.member-alumni-container {
+    display: flex;
+    width: 100%;
+    overflow-x: hidden;
+}
+
+.member-alumni-container > div {
+    position: relative;
+    min-width: 100%;
+}
+
+.alumni-info-container {
+    left: 100%;
+}
+
+.slide-left {
+    animation: slide-left 0.5s forwards ease-out;
+}
+
+@keyframes slide-left {
+    0% {
+        left: 0%;
+    }
+    100% {
+        left: -100%;
+    }
+}
+
+.slide-right {
+    animation: slide-right 0.5s forwards ease-out;
+}
+
+@keyframes slide-right {
+    0% {
+        left: -100%;
+    }
+    100% {
+        left: 0%;
+    }
 }
 
 .article-post ol,
