@@ -6,6 +6,7 @@ beeetea:
   email: relativity1915@gmail.com
   github: beeetea
   role: lead
+  member: false
   alumni: true
   web:
 Enoch-Kim:
@@ -14,6 +15,7 @@ Enoch-Kim:
   email: enochkim1220@gmail.com
   github: Enoch-Kim
   role: core
+  member: false
   alumni: true
   blog_team: true
   web:
@@ -23,6 +25,7 @@ MOBUMIN:
   email: kiju23@naver.com
   github: MOBUMIN
   role: core
+  member: false
   alumni: true
   blog_team: true
   web:
@@ -32,6 +35,7 @@ r4k0nb4k0n:
   email: chj6097@gmail.com
   github: r4k0nb4k0n
   role: core
+  member: false
   alumni: true
   web: https://r4k0nb4k0n.github.io/
 gusrb3164:
@@ -40,6 +44,7 @@ gusrb3164:
   email: gusrb3164@gmail.com
   github: gusrb3164
   role: core
+  member: false
   alumni: true
   web: https://gusrb3164.github.io
 min6choi:
@@ -48,6 +53,7 @@ min6choi:
   email: minsik617@gmail.com
   github: min6choi
   role: core
+  member: false
   alumni: true
   blog_team: true
   web:
@@ -57,6 +63,7 @@ easter:
   email: easter3163@gmail.com
   github: lsh3163
   role: core
+  member: false
   alumni: true
   web:
 handal95:
@@ -65,6 +72,7 @@ handal95:
   email: handal0131@gmail.com
   github: handal95
   role: core
+  member: false
   alumni: true
   web:
 edit8080:
@@ -73,6 +81,7 @@ edit8080:
   email: leetaehee0205@gmail.com
   github: edit8080
   role: core
+  member: false
   alumni: true
   web:
 jeongukjae:
@@ -81,6 +90,7 @@ jeongukjae:
   email: jeongukjae@gmail.com
   github: jeongukjae
   role: normal
+  member: false
   alumni: true
   blog_team: true
   web:
@@ -90,7 +100,8 @@ hye1ng:
   email: hye1ng@gmail.com
   github: Hye1ng
   role: normal
-  alumni: true
+  member: false
+  alumni: false
   web:
 howtolivelikehuman:
   name: 엄현식
@@ -98,6 +109,7 @@ howtolivelikehuman:
   email: yoich_@naver.com
   github: howtolivelikehuman
   role: normal
+  member: false
   alumni: true
   web: https://howtolivelikehuman.tistory.com/
 hoyeon94:
@@ -106,6 +118,7 @@ hoyeon94:
   email: hoyeon351@gmail.com
   github: hoyeon94
   role: normal
+  member: false
   alumni: true
   web:
 maybeluna:
@@ -114,6 +127,7 @@ maybeluna:
   email: ksb981703@gmail.com
   github: maybeluna
   role: normal
+  member: false
   alumni: true
   web:
 lsh110600:
@@ -122,6 +136,7 @@ lsh110600:
   email: lsh110600@naver.com
   github: lsh110600
   role: normal
+  member: false
   alumni: true
   web:
 GoonLee:
@@ -130,6 +145,7 @@ GoonLee:
   email: auteur.kor@gmail.com
   github: GoonLee
   role: normal
+  member: false
   alumni: true
   web:
 koreanhole:
@@ -138,6 +154,7 @@ koreanhole:
   email: koreanhole1@gmail.com
   github: koreanhole
   role: normal
+  member: false
   alumni: true
   web:
 coloryourlife:
@@ -146,6 +163,7 @@ coloryourlife:
   email: 95chris0319@gmail.com
   github: coloryourlife
   role: normal
+  member: false
   alumni: true
   web:
 zeze1004:
@@ -154,7 +172,8 @@ zeze1004:
   email: whoiszeze1004@gmail.com
   github: zeze1004
   role: normal
-  alumni: true
+  member: false
+  alumni: false
   web:
 leegwae:
   name: 이준영
@@ -162,7 +181,8 @@ leegwae:
   email: leegwae@gmail.com
   github: leegwae
   role: normal
-  alumni: true
+  member: false
+  alumni: false
   web:
 KoDaHyeon:
   name: 고다현
@@ -170,7 +190,8 @@ KoDaHyeon:
   email: ekgusdl__@naver.com
   github: KoDaHyeon
   role: normal
-  alumni: true
+  member: false
+  alumni: false
   web:
 presentnine:
   name: 김현구
@@ -178,6 +199,7 @@ presentnine:
   email: presentnine@naver.com
   github: presentnine
   role: normal
+  member: false
   alumni: true
   web: https://presentnine.tistory.com
 sally0226:
@@ -186,7 +208,8 @@ sally0226:
   email: sally734595@gmail.com
   github: sally0226
   role: normal
-  alumni: true
+  member: false
+  alumni: false
   web: https://bba-dda.tistory.com
 yuniwisdom:
   name: 최윤지
@@ -194,7 +217,8 @@ yuniwisdom:
   email: dbswlchl66@gmail.com
   github: yuniwisdom
   role: normal
-  alumni: true
+  member: false
+  alumni: false 
   blog_team: true
   web: 
 sejkimm:
@@ -203,7 +227,8 @@ sejkimm:
   email: sjkhalladay@gmail.com
   github: sejkimm
   role: normal
-  alumni: true
+  member: false
+  alumni: false
   web:
 
 # - - - - - - - - - - -
@@ -217,6 +242,7 @@ sheele41:
   email: mevius1718@gmail.com
   github: SHEELE41
   role: lead
+  member: true
   web: https://oasisfores.com
 
 # DSC CORE MEMBER
@@ -226,6 +252,7 @@ LeeMir:
   email: manofgodmj@gmail.com
   github: LeeMir
   role: core
+  member: true
   blog_team: true
   web: https://leemir.github.io
 poiu694:
@@ -234,6 +261,7 @@ poiu694:
   email: poiu694@naver.com
   github: poiu694
   role: core
+  member: true
   web: 
 suin0730:
   name: 곽수인
@@ -241,6 +269,7 @@ suin0730:
   email: ei654029@gmail.com
   github: suin0730
   role: core
+  member: true
   web: https://suintodev.tistory.com
 YubeenSon:
   name: 손유빈
@@ -248,6 +277,7 @@ YubeenSon:
   email: s49451392@gmail.com
   github: YubeenSon
   role: core
+  member: true
   web:
 
 # GDSC MEMBER
@@ -257,6 +287,7 @@ rxdcxdrnine:
   email: rkckr1@naver.com
   github: rxdcxdrnine
   role: normal
+  member: true
   web:
 keepproceeding:
   name: 오원진
@@ -264,6 +295,7 @@ keepproceeding:
   email: jason7655@naver.com
   github: keepproceeding
   role: normal
+  member: true
   web: https://keepproceeding.github.io
 gganada:
   name: 신정한
@@ -271,6 +303,7 @@ gganada:
   email: soccersinjun@gmail.com
   github: gganada 
   role: normal
+  member: true
   web: 
 aerojohn1223:
   name: 황보겸
@@ -278,6 +311,7 @@ aerojohn1223:
   email: johnhwangbo17@gmail.com
   github: aerojohn1223
   role: normal
+  member: true
   web: 
 kir3i:
   name: 유시온
@@ -285,6 +319,7 @@ kir3i:
   email: kirei7091@gmail.com
   github: kir3i
   role: normal
+  member: true
   web: https://velog.io/@kir3i
 hyehyeonmoon:
   name: 문혜현
@@ -292,6 +327,7 @@ hyehyeonmoon:
   email: angelfox4@naver.com
   github: hyehyeonmoon
   role: normal
+  member: true
   blog_team: true
   web: 
 owao:
@@ -300,4 +336,5 @@ owao:
   email: kori0423@naver.com
   github: owao
   role: normal
+  member: true
   web: 

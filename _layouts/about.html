@@ -3,28 +3,28 @@ layout: default
 ---
 
 <section>
-    <div class="section-title">
+    <div class='section-title'>
         <h2>
             <span class='active'>{{ page.title }}</span>
             <span class='deactive'>Special Alumni</span>
         </h2>
     </div>
 
-    <div class="article-post">
+    <div class='article-post'>
         {{content}}
     </div>
-    <div class="member-alumni-container">
-        <div class="member-info-container">
+    <div class='member-alumni-container'>
+        <div class='member-info-container'>
             <!-- Lead -->
             <div>
                 <h4><span><b>Lead</b></span></h4><br/>    
 
-                <div class="row listrecent">    
-                    {% assign authors = site.data.author | where: "role", "lead" %}
+                <div class='row listrecent'>
+                    {% assign authors = site.data.author | where: 'role', 'lead' %}
                     {% for author in authors %}
-                    {% if author.alumni != true %}
-                    {% include authorbox.html %}
-                    {% endif %}
+                        {% if author.member == true %}
+                            {% include authorbox.html %}
+                        {% endif %}
                     {% endfor %}
                 </div>
             </div>
@@ -32,12 +32,12 @@ layout: default
             <!-- Core Member -->
             <div>
                 <h4><span><b>Core Member</b></span></h4><br/>    
-                <div class="row listrecent">
-                    {% assign authors = site.data.author | where: "role", "core" %}
+                <div class='row listrecent'>
+                    {% assign authors = site.data.author | where: 'role', 'core' %}
                     {% for author in authors %}
-                    {% if author.alumni != true %}
-                    {% include authorbox.html %}
-                    {% endif %}
+                        {% if author.member == true %}
+                            {% include authorbox.html %}
+                        {% endif %}
                     {% endfor %}
                 
                 </div>
@@ -46,27 +46,25 @@ layout: default
             <!-- Member -->
             <div>
                 <h4><span><b>Member</b></span></h4>    
-                <div class="row listrecent">
-                    {% assign authors = site.data.author | where: "role", "normal" %}
+                <div class='row listrecent'>
+                    {% assign authors = site.data.author | where: 'role', 'normal' %}
                     {% for author in authors %}
-                
-                    {% if author.alumni != true %}
-                    {% include authorbox.html %}
-                    {% endif %}
-                
+                        {% if author.member == true %}
+                            {% include authorbox.html %}
+                        {% endif %}
                     {% endfor %}
                 
                 </div>
             </div>
         </div>
-        <div class="alumni-info-container">
+        <div class='alumni-info-container'>
             <!-- Alumni -->
             <div>
                 <h4><span><b>GDSC UOS Alumni</b></span></h4> 
-                <div class="row listrecent">    
-                    {% assign authors = site.data.author | where: "alumni", "true" %}
+                <div class='row listrecent'>    
+                    {% assign authors = site.data.author | where: 'alumni', 'true' %}
                     {% for author in authors %}
-                    {% include authorbox.html %}
+                        {% include authorbox.html %}
                     {% endfor %}
                 </div>
             </div>
@@ -75,6 +73,7 @@ layout: default
 
 
     <script>
+        /* Slide */
         const tabs = {
             about: document.querySelector('.section-title .active'),
             alumni: document.querySelector('.section-title .deactive')
