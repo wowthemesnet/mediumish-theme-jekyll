@@ -40,7 +40,7 @@ GDSC UOS에서 자체 운영하는 팀 블로그입니다!
 [Ukjae Jeong(Jay)](https://github.com/jeongukjae)|[Enoch Kim](https://github.com/Enoch-Kim)|[MOBUMIN](https://github.com/MOBUMIN)|[Minsik Choi](https://github.com/min6choi)|
 |:---:|:---:|:---:|:---:|
 <img src="https://github.com/jeongukjae.png">|<img src="https://github.com/enoch-kim.png">|<img src="https://github.com/mobumin.png">|<img src="https://github.com/min6choi.png">
-[LeeMir](https://github.com/LeeMir)|[hyehyeonmoon](https://github.com/hyehyeonmoon)|[yuniwisdom](https://github.com/yuniwisdom)
+[**LeeMir**](https://github.com/LeeMir)|[**hyehyeonmoon**](https://github.com/hyehyeonmoon)|[**yuniwisdom**](https://github.com/yuniwisdom)
 |<img src="https://github.com/leemir.png">|<img src="https://github.com/hyehyeonmoon.png">|<img src="https://github.com/yuniwisdom.png">
 
 ### 21 F/W
