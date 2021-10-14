@@ -243,6 +243,7 @@ sheele41:
   github: SHEELE41
   role: lead
   member: true
+  alumni: false
   web: https://oasisfores.com
 
 # DSC CORE MEMBER
@@ -253,6 +254,7 @@ LeeMir:
   github: LeeMir
   role: core
   member: true
+  alumni: false
   blog_team: true
   web: https://leemir.github.io
 poiu694:
@@ -262,6 +264,7 @@ poiu694:
   github: poiu694
   role: core
   member: true
+  alumni: false
   web: 
 suin0730:
   name: 곽수인
@@ -270,6 +273,7 @@ suin0730:
   github: suin0730
   role: core
   member: true
+  alumni: false
   web: https://suintodev.tistory.com
 YubeenSon:
   name: 손유빈
@@ -278,6 +282,7 @@ YubeenSon:
   github: YubeenSon
   role: core
   member: true
+  alumni: false
   web:
 
 # GDSC MEMBER
@@ -288,6 +293,7 @@ rxdcxdrnine:
   github: rxdcxdrnine
   role: normal
   member: true
+  alumni: false
   web:
 keepproceeding:
   name: 오원진
@@ -296,6 +302,7 @@ keepproceeding:
   github: keepproceeding
   role: normal
   member: true
+  alumni: false
   web: https://keepproceeding.github.io
 gganada:
   name: 신정한
@@ -304,6 +311,7 @@ gganada:
   github: gganada 
   role: normal
   member: true
+  alumni: false
   web: 
 aerojohn1223:
   name: 황보겸
@@ -312,6 +320,7 @@ aerojohn1223:
   github: aerojohn1223
   role: normal
   member: true
+  alumni: false
   web: 
 kir3i:
   name: 유시온
@@ -320,6 +329,7 @@ kir3i:
   github: kir3i
   role: normal
   member: true
+  alumni: false
   web: https://velog.io/@kir3i
 hyehyeonmoon:
   name: 문혜현
@@ -328,6 +338,7 @@ hyehyeonmoon:
   github: hyehyeonmoon
   role: normal
   member: true
+  alumni: false
   blog_team: true
   web: 
 owao:
@@ -337,4 +348,5 @@ owao:
   github: owao
   role: normal
   member: true
+  alumni: false
   web: 
