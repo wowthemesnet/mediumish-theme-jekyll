@@ -3,7 +3,7 @@ layout: post
 title: "리액트의 렌더링 최적화"
 authors: [poiu694]
 tags: ["Web"]
-image: ../assets/images/react-fiber/react_fiber.jpg
+image: ../assets/images/post-react-fiber/fiber_tree.png
 description: "React Fiber Architecture"
 featured: true
 ---
