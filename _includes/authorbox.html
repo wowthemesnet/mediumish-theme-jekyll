@@ -1,0 +1,43 @@
+<!-- begin authorbox -->
+{% capture className %} img-circle {% endcapture %}
+{% if author.blog_team == true %}
+{% capture className %} img-circle author-blog-team-border {% endcapture %}
+{% endif %}
+<!-- conditional-rendering authorbox or blank -->
+{% if author.name != "_blank" %}
+<div class="col-lg-3 col-md-6 mb-30px card-group">
+    <div class="author h-100">
+        <div class="author-img">
+            {% if site.lazyimages == "enabled" %}
+            {% assign className = className | append: " lazyimg" %}
+            <img class= "{{ className }}"
+                src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAMAAAACCAQAAAA3fa6RAAAADklEQVR42mNkAANGCAUAACMAA2w/AMgAAAAASUVORK5CYII="
+                data-src="https://github.com/{{author.github}}.png" alt="{{ author.name }}">
+            {% else %}
+            <img class= "{{ className }}" src="https://github.com/{{author.github}}.png" alt="{{ author.name }}">
+            {% endif %}
+        </div>
+        <div class="author-body">
+            <h2 class="author-title">
+                <span class="top-author-name">{{ author.name }}</span>
+            </h2>
+            <div class="author-icon-wrapper">
+                <span class="author-icon"><a class="link-dark" href="mailto:{{ author.email }}"><i
+                            class="far fa-envelope"></i></a></span>
+                <span class="author-icon"><a class="link-dark" href="https://github.com/{{ author.github }}"><i
+                            class="fab fa-github"></i></a></span>
+                {% if author.web %}
+                <span class="author-icon"><a class="link-dark" href="{{ author.web }}"><i
+                            class="fas fa-blog"></i></a></span>
+                {% endif %}
+            </div>
+
+        </div>
+    </div>
+</div>
+
+{% else %}
+<div class="col-lg-3 mb-30px author-blank"></div>
+
+{% endif %}
+<!-- end post -->

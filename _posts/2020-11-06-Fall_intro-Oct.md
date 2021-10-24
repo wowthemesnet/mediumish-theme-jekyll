@@ -3,7 +3,7 @@ layout: post
 title: "Fall intro team 10월 파이썬 과제"
 authors: ["maybeluna"]
 tags: ["Fall intro"]
-image: https://www.bloter.net/wp-content/uploads/2016/09/navercast_python_01logo.png
+image: https://user-images.githubusercontent.com/72259053/116891473-b4cfe880-ac69-11eb-8d6b-3133a310be6e.png
 description: "과제 1, 2, 3"
 featured: false
 ---
@@ -59,7 +59,7 @@ Don't panic 이라는 신념 하에 개발을 하는 과정을 적어나가도�
 
     그래서 강제로 pull(git -hard HEAD)도 해보고 유튜브에서 git add -A를 해보라고 해서 해보기도 했지만 결과는.. 여전히 이 상태 **error failed to push some refs to 'origin'**이 뜨면서 병합 불가!
 
-    ![git_push_error](../assets/images/post-INTRO-Oct/git_push_error.PNG)
+    ![git_error](https://user-images.githubusercontent.com/72259053/116881834-b7791080-ac5e-11eb-9d97-5fc9adae0ec2.png)
 
     결국 git clone을 새 폴더에 다시 작업하여 시작!
 

@@ -13,15 +13,23 @@ title: Home
     </div>
     <div class="row">
 
-    {% for post in site.posts %}
+        {% assign featured_limit = 4 %}
 
-        {% if post.featured == true %}
+        {% for post in site.posts %}
 
-            {% include featuredbox.html %}
+            {% if post.featured == true and featured_limit > 0 %}
 
-        {% endif %}
+                {% assign featured_limit = featured_limit | minus : 1 %}
 
-    {% endfor %}
+                {% include featuredbox.html %}
+
+            {% elsif featured_limit <= 0 %}
+
+                {% break %}
+
+            {% endif %}
+
+        {% endfor %}
 
     </div>
 </section>
@@ -53,9 +61,32 @@ title: Home
 <!-- Pagination
 ================================================== -->
 <div class="bottompagination">
-<div class="pointerup"><i class="fa fa-caret-up"></i></div>
-<span class="navigation" role="navigation">
-    {% include pagination.html %}
-</span>
+    <div class="pointerup"><i class="fa fa-caret-up"></i></div>
+    <span class="navigation" role="navigation">
+        {% include pagination.html %}
+    </span>
 </div>
 
+<!-- Falling Flower( in winter, to change snow :) )
+================================================== -->
+
+<!-- Summer is coming...
+<div class="flakes" aria-hidden="true">
+    <div class="flake">✿</div>
+    <div class="flake">❀</div>
+    <div class="flake">❁</div>
+    <div class="flake">✿</div>
+    <div class="flake red">✿</div>
+    <div class="flake red">❁</div>
+    <div class="flake red">❀</div>
+    <div class="flake red">✿</div>
+    <div class="flake yellow">✿</div>
+    <div class="flake yellow">❁</div>
+    <div class="flake yellow">❀</div>
+    <div class="flake yellow">✿</div>
+    <div class="flake green">☘</div>
+    <div class="flake green">☘</div>
+    <div class="flake green">☘</div>
+    <div class="flake green">🍀</div>
+</div>
+-->
