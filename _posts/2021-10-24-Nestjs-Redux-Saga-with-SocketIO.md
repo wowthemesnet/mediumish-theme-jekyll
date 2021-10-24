@@ -18,7 +18,8 @@ featured: false
 
 ![2021-state-of-js-backend](../assets/images/post-Nestjs-Redux-Saga-SocketIO/image_1.png)
 
-(아직 express 에 비해 점유율은 낮지만 만족도는 못지않게 높은 편이다.)
+(아직 express 에 비해 점유율은 낮지만 만족도는 못지않게 높은 편이다.)  
+출처: <https://2020.stateofjs.com/en-US/technologies/back-end-frameworks/>
 
 하지만 Nest.js 는 다릅니다. controller, service, module 각 클래스들와, Nest.js 에서 제공하는 filter, pipe, guard 등의 클래스들은 모두 다 역할을 가지고 있습니다. 클래스들를 사용하는 데 있어 Spring 과 같이 IoC (Inversion of Control), DI (Depdency Injection) 등의 디자인 패턴을 도입하였기 때문에, 각 클래스의 역할에 맞춰 개발해야 역할에 따른 기능을 온전히 사용할 수 있습니다. 하지만 이런 제한은 개발의 통일성을 가져오고, 저와 같이 높은 자유도에서 방황히기 쉬운 개발자에게는 훌륭한 가이드가 될 수 있습니다. 예를 들면 Express.js 에서 Socket.IO 를 사용하고자 한다면, 애플리케이션을 시랭할 index.js 로부터 Socket.IO API 를 호출하는 모듈을 분리하기 위해 디렉터리와 파일을 직접 생성하고, index.js 와 해당 파일에서 모듈의 import/export 에 대한 코드를 직접 작성해주어야 합니다. 하지만 Nest.js 의 경우에는 `@nestjs/cli` 패키지에서 제공하는 모듈 생성 기능을 통해, Socket.IO 의 통신이 이루어지는 gateway 클래스를 어떤 모듈 아래에 생성할지 지정하면 Nest.js 에서 DI를 위한 코드도 작성해줍니다. 이를 통해 구조에 대한 고민을 덜고 서비스 기능 구현에 집중할 수 있다는 점이 Nest.js 의 큰 장점이라고 생각합니다.
 
@@ -47,7 +48,8 @@ React.js 에서 어플리케이션이 복잡해질수록 컴포넌트에 데이�
 
 ![2021-state-of-js-backend](../assets/images/post-Nestjs-Redux-Saga-SocketIO/image_2.png)
 
-(recoil 등의 대체제가 등장했지만 redux 의 점유율은 여전히 높다.)
+(recoil 등의 대체제가 등장했지만 redux 의 점유율은 여전히 높다.)  
+(출처 : <https://2020.stateofjs.com/en-US/technologies/datalayer/>)
 
 channel 은 redux-saga 에서 사용하는 take, put 과 같은 effect 를 미들웨어에 등록된 saga 함수 사이, 그리고 클라이언트와 외부 event source 사이의 통신으로 일반화시킨 개념이라고 docs 에서 설명하는데... 무슨 뜻인지 쉽게 와닿지는 않습니다. 좀 더 직관적으로 채널을 FIFO 의 큐(Queue)라고 생각해보겠습니다. 컴포넌트에서 특정 action 이 dispatch 되었을 때, 해당 action 의 이름과 dispatch 시 의 payload 만이 추가되는 큐라고 말이죠. 그리고 redux 미들웨어에 등록된 어떤 saga 함수에서는 해당 channel 을 redux-saga 의 take effect 를 이용해 받을 준비를 하고 있다가, 컴포넌트에서 dispatch 함에 따라 channel 에 action 의 정보가 추가 되었을 때, 해당 action 의 payload 를 받아 비동기 함수 호출과 같이 개발자가 원하는 로직을 처리합니다. 이를 코드로 보면 아래와 같습니다.
 
