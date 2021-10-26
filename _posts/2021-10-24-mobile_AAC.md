@@ -1,9 +1,11 @@
+---
 layout: post
 title:  "안드로이드 AAC에 대해 알아봅시다"
 authors: [EGGHEADIARY]
 tags: ["mobile"]
 image: ![android logo](https://user-images.githubusercontent.com/90834683/138595431-8d89ef7d-b1f4-4a60-afab-cf8035016236.png)
 featured: true
+---
 
 ##intro
 
