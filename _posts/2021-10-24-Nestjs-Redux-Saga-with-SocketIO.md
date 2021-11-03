@@ -12,7 +12,7 @@ featured: false
 
 ### 왜 Nest.js 를 선택했어?
 
-이전까지 프로젝트를 진행할 때 주로 서버 개발에 참여하면서 Python Django/Flask, Node.js Express, Java Spring 등 여러 언어의 서버사이드 프레임워크를 사용하였습니다. 현재는 가급적이면 현업에서 많이 사용하는 Spring 프레임워크를 기반으로 개발하고자 하지만, 프로젝트를 진행할 때마다 팀 내 상황에 맞춰 언어와 프레임워크를 선택하고 있습니다. 이번 프로젝트를 진행하는데 있어서도 함께 참여하는 팀원들이 Spring 에 대한 경험은 없었지만 JS 와 Express.js 에 대한 경험들이 있었고, 소켓 통신을 구현하는데 사용할 Socket.IO API 의 경우 기본적으로 Node.js 서버를 지원하며 documentation 도 모두 JS 기반으로 작성되어있어, Socket.IO 라이브러리를 안정적이고 효율적으로 사용할 수 있을 것이라고 생각했기 때문에 최종적으로 서버 개발 환경으로 Node.js 를 선택하게 되었습니다.
+이전까지 프로젝트를 진행할 때 주로 서버 개발에 참여하면서 Python Django/Flask, Node.js Express, Java Spring 등 여러 언어의 서버사이드 프레임워크를 사용하였습니다. 현재는 가급적이면 현업에서 많이 사용하는 Spring 프레임워크를 기반으로 개발하고자 하지만, 프로젝트를 진행할 때마다 팀 내 상황에 맞춰 언어와 프레임워크를 선택하고 있습니다. 이번 프로젝트를 진행하는데 있어서도 함께 참여하는 팀원들이 Spring 에 대한 경험은 없었지만 JS 와 Express.js 에 대한 경험들이 있었습니다. 그리고 소켓 통신을 구현하는데 사용할 Socket.IO API 의 경우 기본적으로 Node.js 서버를 지원하며 documentation 도 모두 JS 기반으로 작성되어있어, Socket.IO 라이브러리를 안정적이고 효율적으로 사용할 수 있을 것이라고 생각했습니다. 따라서 최종적으로 서버 개발 환경으로 Node.js 를 선택하게 되었습니다.
 
 이전에 사용했던 Express.js 는 웹 어플리케이션 서버(WAS)를 빠르게 구현하는 데 최적화 되어있습니다. 구조가 간단하고, 개발 시에 자유도가 높기 때문에 프레임워크 혹은 서드파티 라이브러리가 제공하는 다양한 툴이나 미들웨어를 바탕으로 개발자가 선호하는 구조로 개발을 진행할 수 있습니다. 하지만 개발자가 개발 경험이나 구조에 대한 지식이 부족할 경우 이러한 자유도가 오히려 발목을 잡을 수 있습니다. 저 또한 지난 프로젝트에서 Express.js 를 기반으로 개발하면서, 이런 부분들에 있어 아쉬움을 느꼈습니다. 예를 들면 API 서버 개발 과정 초기에는 Express.js 의 Router 미들웨어에 요청과 응답 사이에 처리를 하나의 함수 내에 전부 작성하는 등, layered architecture 에 대한 이해 없이 코드를 작성하면서 애플리케이션의 규모가 커졌을 때 대응하기 힘든 구조를 만들었습니다.
 
@@ -44,7 +44,7 @@ export class GameGateway {
 
 ### 왜 Redux-saga 를 선택했어?
 
-React.js 에서 어플리케이션이 복잡해질수록 컴포넌트에 데이터를 props 로만 넘겨주기 힘들기 때문에, redux 와 같은 SPA (Single Page Application) 전역 상태 관리 라이브러리를 사용합니다. redux 를 사용하는 경우, 상태를 업데이트할 때 비동기 처리를 위한 복잡한 로직을 쉽게 핸들링하기 위해 redux 의 미들웨어를 사용하는데, 대표적으로는 redux-thunk 나 redux-saga 등이 있습니다. 현재 프로젝트에서는 클라이언트에서 서버와 통신할 때 Socket.IO 뿐만 아니라 REST API 를 사용하는데, REST API 를 이용한 데이터 fetch 시 Promise 를 활용한 비동기 처리를 활용하고, Socket.IO 의 client API 사용 시 callback 함수를 활용하여 상태 업데이트 로직을 구성하기 위해 redux 의 미들웨어에 대한 필요성을 느꼈습니다. 특히 redux-saga 의 경우 어플리케이션 내부에서 사용하는 action 과 Socket.IO 등에서 사용하는 외부 event 를 channel 이라는 개념을 도입해, action 의 dispatch 와 event 의 trigger 를 동일한 로직으로 처리할 수 있어 redux-saga 를 프로젝트에 도입하게 되었습니다.
+React.js 에서 어플리케이션이 복잡해질수록 컴포넌트에 데이터를 props 로만 넘겨주기 힘들기 때문에, redux 와 같은 SPA (Single Page Application) 전역 상태 관리 라이브러리를 사용합니다. redux 를 사용하는 경우, 상태를 업데이트할 때 비동기 처리를 위한 복잡한 로직을 쉽게 핸들링하기 위해 redux 의 미들웨어를 사용하는데, 대표적으로는 redux-thunk 나 redux-saga 등이 있습니다. 현재 프로젝트에서는 클라이언트에서 서버와 통신할 때 Socket.IO 뿐만 아니라 REST API 를 사용하기도 합니다. REST API 를 이용한 데이터 fetch 시 Promise 를 활용한 비동기 처리를 활용하고, Socket.IO 의 client API 사용 시 callback 함수를 활용하여 상태 업데이트 로직을 구성하기 위해 redux 의 미들웨어에 대한 필요성을 느꼈습니다. 특히 redux-saga 의 경우 어플리케이션 내부에서 사용하는 action 과 Socket.IO 등에서 사용하는 외부 event 를 channel 이라는 개념을 도입해, action 의 dispatch 와 event 의 trigger 를 동일한 로직으로 처리할 수 있어 redux-saga 를 프로젝트에 도입하게 되었습니다.
 
 ![2021-state-of-js-backend](../assets/images/post-Nestjs-Redux-Saga-SocketIO/image_2.png)
 
