@@ -5,7 +5,7 @@ authors: [rxdcxdrnine]
 tags: ["Web"]
 image: ../assets/images/post-Nestjs-Redux-Saga-SocketIO/thumbnail.png
 description: "nest.js 와 redux-saga, Socket.IO 를 이용한 소켓 통신 모듈화"
-featured: false
+featured: true
 ---
 
 현재 진행하고 있는 프로젝트에서 웹 클라이언트를 React.js 와 상태 관리 라이브러리 Redux 및 Redux-saga 로 구현하고, 서버를 Node.js 의 서버사이드 프레임워크인 Nest.js 로 구현하며 Socket.IO API 을 이용한 소켓 통신 기반 서비스를 개발하고 있습니다. React.js 와 Nest.js 모두 이번 프로젝트를 통해 처음 사용하게 되었는데, 왜 이 기술들을 선택하게 되었고 어떤 장점을 느낄 수 있었는지 경험을 바탕으로 이야기해보고자 합니다.
