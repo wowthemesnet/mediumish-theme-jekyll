@@ -24,7 +24,7 @@ AAC(Android Architecture Components)는 테스트와 유지보수가 쉬운 앱�
 AAC에 대한 조사를 하다보니, 앱 아키텍처 원칙이란 게 있어 이 또한 정리해보려고 합니다.
 
 코드를 작성할 때 Activity, Fragment와 같은 UI 기반의 클래스는 UI 및 OS 상호작용을 처리하는 로직만 포함해야 한다고 해요.
-이는 UI 클래스를 최대한 가볍게 유지해, LIFECYCLE 관련 문제를 피하기 위함입니다. 
+이는 UI 클래스를 최대한 가볍게 유지해, LIFECYCLE 관련 문제를 피하기 위함입니다.
 
 요약하면 UI 클래스로부터 UI, OS 상호작용을 제외한 다른 로직을 분리해 UI 클래스에 대한 의존성을 최소화 하는 게 앱 관리 측면에서 좋다는 것입니다.
 
@@ -40,7 +40,7 @@ model은 가급적이면 지속적인 model을 사용하는 게 좋은데,
 
 ## View model
 
-viewmodel은 앱의 lifecycle을 고려해, ui 관련 데이터를 저장, 관리하는 컴포넌트 입니다. 
+viewmodel은 앱의 lifecycle을 고려해, ui 관련 데이터를 저장, 관리하는 컴포넌트 입니다.
 UI를 관리하는 UI Controller에 과도한 역할을 부여하면 과부하가 올 수 있고, 테스트 또한 어려워집니다.
 따라서 ui 관리시 view data 소유권을 분리하는 방법이 더 쉽고 효율적이라는 점을 이용한 게 viewmodel 이라고 해요~
 
@@ -58,7 +58,7 @@ UI와 데이터 상태의 일치 보장, 메모리 누수 없음, 중지된 활�
 
 ## Room
 
- Room 라이브러리는 SQlite에 추상화 레이어를 제공하여 원활한 DB 액세스를 지원하고 SQLite를 완벽히 활용할 수 있게 하는 라이브러리입니다. 
+ Room 라이브러리는 SQlite에 추상화 레이어를 제공하여 원활한 DB 액세스를 지원하고 SQLite를 완벽히 활용할 수 있게 하는 라이브러리입니다.
 
  ![room_architecture](../assets/images/post-10month-AAC/room_archithecture)
 
@@ -75,20 +75,17 @@ Databinding을 사용하면 코드가 단순해지고, 메모리 누수가 방�
 
 ## 마치면서
 
-GDSC에 들어온지 얼마 되지 않았다보니 글을 쓰기 전부터도, 쓰면서도 여러가지 어려움이 있었던 거 같습니다. 
+GDSC에 들어온지 얼마 되지 않았다보니 글을 쓰기 전부터도, 쓰면서도 여러가지 어려움이 있었던 거 같습니다.
 (뭐가 뭔지 잘 모르는 사람의 문제점이 뭘까요? 제 개인적인 의견으론, 뭘 모르는지 뭘 아는지도 잘 파악을 못한다는 것입니다.)
 
-이번 포스팅을 쓰기위해 조사하면서 AAC에 대해 알아보는 시간을 가졌음에도 불구하고.. 많이 부족하고, 완벽히 이해가 되지 않았습니다. 
+이번 포스팅을 쓰기위해 조사하면서 AAC에 대해 알아보는 시간을 가졌음에도 불구하고.. 많이 부족하고, 완벽히 이해가 되지 않았습니다.
 그래도 아무것도 하지 않은 것보단 이렇게 알아가는 과정 속에서 하나라도 배운 게 있을 것이라고 굳게 믿도록 하겠습니다. ㅎㅎ.
 그리고 언젠간 제가 알게 된 내용을 잘 적용하는 날이 오겠죠? 와야합니다 ㅠ
 
 ## 참고자료
 
-1. [안드로이드 아키텍처 구성요소]
-(https://developer.android.com/topic/libraries/architecture?hl=ko)
+1. [안드로이드 아키텍처 구성요소](https://developer.android.com/topic/libraries/architecture?hl=ko)
 
-2. [[Android] 안드로이드 아키텍쳐 컴포넌트(AAC) - LiveData, Databinding, Room, ViewModel]
-(https://4z7l.github.io/2020/09/21/android-aac.html)
+2. [[Android] 안드로이드 아키텍쳐 컴포넌트(AAC) - LiveData, Databinding, Room, ViewModel](https://4z7l.github.io/2020/09/21/android-aac.html)
 
-3. [[Android] 안드로이드 AAC]
-(https://velog.io/@hwi_chance/Android-%EC%95%88%EB%93%9C%EB%A1%9C%EC%9D%B4%EB%93%9C-AAC)
+3. [[Android] 안드로이드 AAC](https://velog.io/@hwi_chance/Android-%EC%95%88%EB%93%9C%EB%A1%9C%EC%9D%B4%EB%93%9C-AAC)
