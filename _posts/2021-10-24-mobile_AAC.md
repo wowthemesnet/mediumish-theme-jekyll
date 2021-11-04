@@ -3,7 +3,7 @@ layout: post
 title:  "안드로이드 AAC에 대해 알아봅시다"
 authors: [EGGHEADIARY]
 tags: ["Mobile"]
-image: ![android logo](../assets/images/post-mobile-AAC/android_logo.png)
+image: ../assets/images/post-mobile-AAC/android_logo.png
 description: "안드로이드 아키텍처 구성요소에 대해 알아보는 포스트"
 featured: true
 ---
