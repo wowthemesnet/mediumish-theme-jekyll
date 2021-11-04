@@ -58,11 +58,11 @@ UI와 데이터 상태의 일치 보장, 메모리 누수 없음, 중지된 활�
 
 ## Room
 
- Room 라이브러리는 SQlite에 추상화 레이어를 제공하여 원활한 DB 액세스를 지원하고 SQLite를 완벽히 활용할 수 있게 하는 라이브러리입니다.
+Room 라이브러리는 SQlite에 추상화 레이어를 제공하여 원활한 DB 액세스를 지원하고 SQLite를 완벽히 활용할 수 있게 하는 라이브러리입니다.
 
- ![room_architecture](../assets/images/post-10month-AAC/room_archithecture)
+![room_architecture](../assets/images/post-10month-AAC/room_archithecture)
 
- Room 라이브러리를 사용하면 앱을 실행하는 기기에서 앱 데이터의 캐시를 만들 수 있고, 이 캐시를 통해 사용자는 인터넷 연결 여부와 관계없이 앱에 있는 주요 정보를 일관된 형태로 볼 수 있다고 합니다.
+Room 라이브러리를 사용하면 앱을 실행하는 기기에서 앱 데이터의 캐시를 만들 수 있고, 이 캐시를 통해 사용자는 인터넷 연결 여부와 관계없이 앱에 있는 주요 정보를 일관된 형태로 볼 수 있다고 합니다.
 
 구성요소엔 database( 데이터 베이스 홀더를 포함하고 데이터에 연결하기 위한 역할을 함), entity (데이터 베이스 내의 테이블), DAO(Data access object, 데이터 베이스에 접근할 때 사용되는 메소드를 포함)가 있습니다
 
