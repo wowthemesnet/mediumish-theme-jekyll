@@ -3,7 +3,7 @@ layout: post
 title:  "안드로이드 AAC에 대해 알아봅시다"
 authors: [EGGHEADIARY]
 tags: ["Mobile"]
-image: ![android logo](../assets/images/post-mobile-AAC/android_logo)
+image: ![android logo](../assets/images/post-mobile-AAC/android_logo.png)
 description: "안드로이드 아키텍처 구성요소에 대해 알아보는 포스트"
 featured: true
 ---
@@ -44,7 +44,7 @@ viewmodel은 앱의 lifecycle을 고려해, ui 관련 데이터를 저장, 관�
 UI를 관리하는 UI Controller에 과도한 역할을 부여하면 과부하가 올 수 있고, 테스트 또한 어려워집니다.
 따라서 ui 관리시 view data 소유권을 분리하는 방법이 더 쉽고 효율적이라는 점을 이용한 게 viewmodel 이라고 해요~
 
-![viewmodel-lifecycle](../assets/images/post-mobile-AAC/viewmodel-lifecycle)
+![viewmodel-lifecycle](../assets/images/post-mobile-AAC/viewmodel-lifecycle.png)
 
 viewmodelprovider가 viewmodel에 lifecycle을 전달하며 viewmodel은 lifecycle이 끝날 때까지 메모리에 남아있습니다.
 
@@ -60,7 +60,7 @@ UI와 데이터 상태의 일치 보장, 메모리 누수 없음, 중지된 활�
 
 Room 라이브러리는 SQlite에 추상화 레이어를 제공하여 원활한 DB 액세스를 지원하고 SQLite를 완벽히 활용할 수 있게 하는 라이브러리입니다.
 
-![room_architecture](../assets/images/post-mobile-AAC/room_archithecture)
+![room_architecture](../assets/images/post-mobile-AAC/room_architecture.png)
 
 Room 라이브러리를 사용하면 앱을 실행하는 기기에서 앱 데이터의 캐시를 만들 수 있고, 이 캐시를 통해 사용자는 인터넷 연결 여부와 관계없이 앱에 있는 주요 정보를 일관된 형태로 볼 수 있다고 합니다.
 
