@@ -13,3 +13,37 @@
 	"syntax",
     "starsnonscss"
 ;
+
+/* pagination */
+
+$paginateColor: #00ab6b;
+
+.pagination > li > a
+{
+    background-color: white;
+    color: $paginateColor;
+}
+
+.pagination > li > a:focus,
+.pagination > li > a:hover,
+.pagination > li > span:focus,
+.pagination > li > span:hover
+{
+    color: #5a5a5a;
+    background-color: #eee;
+    border-color: #ddd;
+}
+
+.pagination > .active > a
+{
+    color: white;
+    background-color: $paginateColor !important;
+    border: solid 1px $paginateColor !important;
+}
+
+.pagination > .active > a:hover
+{
+    background-color: $paginateColor !important;
+    border: solid 1px $paginateColor;
+}
+/* pagination end */
