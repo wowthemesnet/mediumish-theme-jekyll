@@ -56,7 +56,7 @@ featured: true
  이렇게 사용자와의 상호 작용으로 사용자가 특정 작업을 처리할 때 생성한 액티비티의 집합을 **태스크**(Task)라고 하는데, 이 태스크에 속한 액티비티들은 실행된 순서에 따라 액티비티 스택으로 관리됩니다.
  이 **액티비티 스택**은 액티비티라는 문서들이 들어 있는 태스크 상자를 사용자가 위에서 보는 것으로도 이해할 수 있습니다.
 
-![activity-stack](../assets/images/post-mobile-four-major-components-of-AOS/activity-stack.png)
+![activity-stack](../assets/images/post-mobile-four-major-components-of-AOS/stack.png)
 *액티비티 상자로 나타낸 태스크*
 
  스택 구조는 **LIFO(후입 선출)** 구조라고도 표현하며, 나중에 생성된 액티비티는 스택 최상단에 위치하여 가장 나중에 생성된 액티비티가 사용자에게 보여지게 됩니다.
