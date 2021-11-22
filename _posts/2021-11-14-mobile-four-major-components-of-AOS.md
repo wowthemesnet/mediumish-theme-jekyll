@@ -107,7 +107,7 @@ featured: true
 
  서비스를 구현하였다면 ```AndroidManifest.xml``` 파일에 ```<service>``` 요소를 등록한 뒤 ```startService()``` 메소드로 바인딩되지 않은 서비스를, ```bindService()``` 메소드로 바인딩된 서비스를 호출할 수 있게 됩니다. 호출된 서비스는 액티비티처럼 특정한 생명 주기에 따라서 동작하게 되는데, 서비스의 호출 방법에 따라 생명 주기가 약간 다릅니다.
   
-  ![service-lifecycle](../assets/images/post-mobile-four-major-components-of-AOS/lifecycle.png)
+  ![service-lifecycle](../assets/images/post-mobile-four-major-components-of-AOS/services-lifecycle.png)
  *서비스의 생명주기*
   
   바인딩되지 않은 서비스의 경우 최초 ```startService()``` 메소드 실행시 ```onCreate()``` 상태와 ```onStartCommand()``` 상태를 모두 지나게 되고, 이후 ```startService()``` 실행시 ```onStartCommand()``` 상태만을 지나게 되며, ```stopService()``` 메소드에 의해 서비스가 ```onDestroy()``` 메소드와 함께 종료됩니다.
