@@ -1,50 +1,52 @@
 ---
 layout: default
-title: Home
+title: Sea n Cliffs
 ---
 
 {% if page.url == "/" %}
 
-<!-- Featured
+<!-- Destinazioni
 ================================================== -->
 <section class="featured-posts">
     <div class="section-title">
-        <h2><span>Featured</span></h2>
+        <h2><span>Destinazioni</span></h2>
     </div>
-    <div class="row">
+    <div class="row listrecent">
 
-    {% for post in site.posts %}
-
-        {% if post.featured == true %}
-
-            {% include featuredbox.html %}
-
+    {% assign destinazioni = site.posts | where:"type","Destinazione" %}
+    {% assign destinazioni_link = site.baseurl | append:"/destinazioni" %}
+    {% for post in destinazioni limit: 2 %}
+        {% if post.type == "Destinazione" %}
+            {% include postbox.html %}
         {% endif %}
-
     {% endfor %}
+    {% include postboxmore.html more_title="Altri destinazioni" more_link=destinazioni_link %}
 
     </div>
 </section>
 
 {% endif %}
 
-<!-- Posts Index
+<!-- Itinerari
 ================================================== -->
 <section class="recent-posts">
 
     <div class="section-title">
 
-        <h2><span>All Stories</span></h2>
+        <h2><span>Intinerari</span></h2>
 
     </div>
 
     <div class="row listrecent">
 
-        {% for post in paginator.posts %}
-
-        {% include postbox.html %}
-
+        {% assign itinerari = site.posts | where:"type","Itinerario" %}
+        {% assign itinerari_link = site.baseurl | append:"/itinerari" %}
+        {% for post in itinerari limit: 2 %}
+            {% if post.type == "Itinerario" %}
+                {% include postbox.html %}
+            {% endif %}
         {% endfor %}
+        {% include postboxmore.html more_title="Altri itinerari" more_link=itinerari_link %}
 
     </div>
 
@@ -55,7 +57,6 @@ title: Home
 <div class="bottompagination">
 <div class="pointerup"><i class="fa fa-caret-up"></i></div>
 <span class="navigation" role="navigation">
-    {% include pagination.html %}
 </span>
 </div>
 
