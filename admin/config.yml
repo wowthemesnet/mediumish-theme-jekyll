@@ -1,0 +1,6 @@
+backend:
+  name: github
+  repo: seancliffs/seancliffs.github.io
+  branch: master
+  site_domain: epic-goldberg-f806a5.netlify.app
+media_folder: 'assets/uploads'
