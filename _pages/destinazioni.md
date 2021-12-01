@@ -11,11 +11,8 @@ permalink: /destinazioni
 
     <div class="row listrecent">
 
-        {% assign destinazioni = site.posts | where:"type","Destinazione" %}
-        {% for post in destinazioni %}
-            {% if post.type == "Destinazione" %}
-                {% include postbox.html %}
-            {% endif %}
+        {% for post in site.destinazioni %}
+            {% include postbox.html %}
         {% endfor %}
 
     </div>

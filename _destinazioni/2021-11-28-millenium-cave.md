@@ -1,6 +1,6 @@
 ---
 layout: post
 title:  "Millenium Cave"
-image: millenium-cave.jpg
+image: /assets/uploads/millenium-cave.jpg
 ---
 Bla bla bla some content about Millenium Cave.

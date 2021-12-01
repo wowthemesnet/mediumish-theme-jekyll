@@ -11,11 +11,8 @@ permalink: /itinerari
 
     <div class="row listrecent">
 
-        {% assign itinerari = site.posts | where:"type","Itinerario" %}
-        {% for post in itinerari %}
-            {% if post.type == "Itinerario" %}
-                {% include postbox.html %}
-            {% endif %}
+        {% for post in site.itinerari %}
+            {% include postbox.html %}
         {% endfor %}
 
     </div>
