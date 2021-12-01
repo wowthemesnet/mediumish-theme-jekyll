@@ -7,9 +7,9 @@ favicon: 'assets/images/logo.png'
 include: ["_pages"]
 permalink: /:title/
 
-domain: rorystephenson.github.io
-url: https://rorystephenson.github.io
-baseurl: /blog-for-gio
+domain: seancliffs.github.io
+url: https://seancliffs.github.io
+baseurl: /seancliffs
 
 # Authors
 authors:
