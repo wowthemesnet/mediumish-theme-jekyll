@@ -5,8 +5,11 @@ backend:
   site_domain: epic-goldberg-f806a5.netlify.app
 media_folder: 'assets/uploads'
 collections:
-  - name: 'blog'
-    label: 'Blog'
-    folder: '_posts/'
+  - name: 'itinerari'
+    label: 'Itinerari'
+    folder: '_itinerari/'
+    create: true
+    slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
     fields:
-      - { name: Title }
+      - { label: "Title", name: "title", widget: "string" }
+      - { label: "Image", name: "image", widget: "image" }

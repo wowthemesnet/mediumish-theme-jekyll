@@ -16,13 +16,12 @@ post_class: post-template
         </div>
 
         <!-- Post -->
-        {% assign author = site.authors[page.author] %}
+        {% assign author = site.authors["Giovanni"] %}
 
         <div class="col-md-9 flex-first flex-md-unordered">
             <div class="mainheading">
 
                 <!-- Author Box -->
-                {% if page.author %}
                 <div class="row post-top-meta">
                     <div class="col-xs-12 col-md-3 col-lg-2 text-center text-md-left mb-4 mb-md-0">
                         {% if author.avatar %}
@@ -36,7 +35,6 @@ post_class: post-template
                         <span class="author-description">{{ author.description }}</span>
                     </div>
                 </div>
-                {% endif %}
 
                 <!-- Post Title -->
                 <h1 class="posttitle">{{ page.title }}</h1>
