@@ -63,25 +63,11 @@ ga('send', 'pageview');
 
             <ul class="navbar-nav ml-auto">
 
-                {% if page.url == "/" %}
-                <li class="nav-item active">
-                {% else %}
-                <li class="nav-item">
-                {% endif %}
-                <a class="nav-link" href="{{ site.baseurl }}/">Home</a>
-                </li>
-
-                <li class="nav-item">
-                <a class="nav-link" href="{{ site.baseurl }}/destinazioni">Destinazioni</a>
-                </li>
-
-                <li class="nav-item">
-                <a class="nav-link" href="{{ site.baseurl }}/itinerari">Itinerari</a>
-                </li>
-
-                <li class="nav-item">
-                <a class="nav-link" href="{{ site.baseurl }}/about">About</a>
-                </li>
+                {% include link.html url="/" name="Home" %}
+                {% include link.html url="/destinazioni" name="Destinazioni" %}
+                {% include link.html url="/itinerari" name="Itinerari" %}
+                {% include link.html url="/contact" name="Contact" %}
+                {% include link.html url="/about" name="About" %}
 
                 {% include search-lunr.html %}
 
