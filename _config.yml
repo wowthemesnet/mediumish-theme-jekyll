@@ -35,6 +35,12 @@ jekyll-archives:
   permalinks:
     category: '/category/:name/'
 
+collections:
+  itinerari:
+    output: true
+  destinazioni:
+    output: true
+
 # Pagination
 paginate: 3
 paginate_path: /page:num/

@@ -13,12 +13,9 @@ title: Sea n Cliffs
     </div>
     <div class="row listrecent">
 
-    {% assign destinazioni = site.posts | where:"type","Destinazione" %}
     {% assign destinazioni_link = site.baseurl | append:"/destinazioni" %}
-    {% for post in destinazioni limit: 2 %}
-        {% if post.type == "Destinazione" %}
-            {% include postbox.html %}
-        {% endif %}
+    {% for post in site.destinazioni limit: 2 %}
+        {% include postbox.html %}
     {% endfor %}
     {% include postboxmore.html more_title="Altri destinazioni" more_link=destinazioni_link %}
 
@@ -39,12 +36,9 @@ title: Sea n Cliffs
 
     <div class="row listrecent">
 
-        {% assign itinerari = site.posts | where:"type","Itinerario" %}
         {% assign itinerari_link = site.baseurl | append:"/itinerari" %}
-        {% for post in itinerari limit: 2 %}
-            {% if post.type == "Itinerario" %}
-                {% include postbox.html %}
-            {% endif %}
+        {% for post in site.itinerari limit: 2 %}
+            {% include postbox.html %}
         {% endfor %}
         {% include postboxmore.html more_title="Altri itinerari" more_link=itinerari_link %}
 
