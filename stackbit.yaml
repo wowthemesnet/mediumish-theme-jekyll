@@ -1,0 +1,262 @@
+stackbitVersion: ~0.2.0
+ssgName: custom
+publishDir: _site
+buildCommand: bundle install && bundle exec jekyll build
+uploadDir: assets/images
+staticDir: ""
+pagesDir: ./
+dataDir: ./
+models:
+  config:
+    type: data
+    label: Config
+    file: _config.yml
+    fields:
+      - type: string
+        name: name
+        label: Site Name
+      - type: string
+        name: title
+        label: Site Title
+      - type: string
+        name: description
+        label: Site Description
+      - type: image
+        name: logo
+        label: Logo
+      - type: image
+        name: favicon
+        label: Favicon
+      - type: string
+        name: baseurl
+        label: Base URL
+      - type: string
+        name: google_analytics
+        label: Google Analytics Code
+      - type: string
+        name: disqus
+        label: Disqus
+      - type: string
+        name: mailchimp-list
+        label: Mailchimp List
+      - type: list
+        name: include
+        label: Include
+        items:
+          type: string
+      - type: string
+        name: permalink
+        label: Permalink
+      - type: object
+        name: authors
+        label: Authors
+        fields:
+          - type: object
+            name: sal
+            label: Sal
+            fields:
+              - type: string
+                name: name
+                label: Author Name
+              - type: string
+                name: display_name
+                label: Display Name
+              - type: string
+                name: gravatar
+                label: Gravatar
+              - type: string
+                name: email
+                label: Email
+              - type: string
+                name: web
+                label: Web
+              - type: string
+                name: twitter
+                label: Twitter
+              - type: string
+                name: description
+                label: Description
+          - type: object
+            name: john
+            label: John
+            fields:
+              - type: string
+                name: name
+                label: Author Name
+              - type: string
+                name: display_name
+                label: Display Name
+              - type: image
+                name: avatar
+                label: Avatar
+              - type: string
+                name: gravatar
+                label: Gravatar
+              - type: string
+                name: email
+                label: Email
+              - type: string
+                name: web
+                label: Web
+              - type: string
+                name: twitter
+                label: Twitter
+              - type: string
+                name: description
+                label: Description
+      - type: list
+        name: plugins
+        label: Plugins
+        items:
+          type: string
+      - type: object
+        name: jekyll-archives
+        label: Jekyll Archives
+        fields:
+          - type: list
+            name: enabled
+            label: Enabled
+            items:
+              type: string
+          - type: string
+            name: layout
+            label: Layout
+          - type: object
+            name: permalinks
+            label: Permalinks
+            fields:
+              - type: string
+                name: category
+                label: Category
+      - type: number
+        name: paginate
+        label: Paginate
+      - type: string
+        name: paginate_path
+        label: Paginate Path
+      - type: string
+        name: markdown
+        label: Markdown
+      - type: object
+        name: kramdown
+        label: Kramdown
+        fields:
+          - type: string
+            name: input
+            label: Input
+          - type: string
+            name: syntax_highlighter
+            label: Syntax Highlighter
+          - type: object
+            name: syntax_highlighter_opts
+            label: Syntax Highlighter Opts
+            fields:
+              - type: object
+                name: block
+                label: Block
+                fields:
+                  - type: boolean
+                    name: line_numbers
+                    label: Line Numbers
+      - type: enum
+        name: adsense
+        label: Adsense
+        options: ['disabled', 'enabled']
+      - type: string
+        name: adsense-data-ad-client
+        label: Adsense Data Ad Client
+      - type: string
+        name: adsense-data-ad-slot
+        label: Adsense Data Ad Slot
+      - type: enum
+        name: lazyimages
+        label: Lazyimages
+        options: ['disabled', 'enabled']
+      - type: list
+        name: exclude
+        label: Exclude
+        items:
+          type: string
+  home:
+    type: page
+    label: Home
+    file: index.md
+    singleInstance: true
+    fields:
+      - type: string
+        name: layout
+        label: Layout
+      - type: string
+        name: title
+        label: Title
+  basicpage:
+    type: page
+    label: Basic Page
+    folder: _pages
+    fields:
+      - type: string
+        name: layout
+        label: Layout
+      - type: string
+        name: title
+        label: Title
+      - type: string
+        name: permalink
+        label: Permalink
+      - type: boolean
+        name: comments
+        label: Comments
+  post:
+    type: page
+    label: Posts
+    folder: _posts
+    fields:
+      - type: string
+        name: layout
+        label: Layout
+      - type: string
+        name: title
+        label: Title
+      - type: string
+        name: author
+        label: Author
+      - type: list
+        name: categories
+        label: Categories
+        items:
+          type: string
+      - type: list
+        name: tags
+        label: Tags
+        items:
+          type: string
+      - type: image
+        name: image
+        label: Image
+      - type: text
+        name: description
+        label: Description
+      - type: boolean
+        name: featured
+        label: Featured
+      - type: boolean
+        name: hidden
+        label: Hidden
+      - type: number
+        subtype: float
+        name: rating
+        label: Rating
+      - type: string
+        name: beforetoc
+        label: Before Toc
+      - type: boolean
+        name: toc
+        label: TOC
+
+
+
+
+
+
+
+
