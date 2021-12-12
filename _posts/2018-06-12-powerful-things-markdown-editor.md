@@ -18,6 +18,14 @@ As well as bold and italics, you can also use some other special formatting in M
 + ==highlight==
 + \*escaped characters\*
 
+## Tables
+
+|House    |Leader            |Seat         |
+|---------|------------------|-------------|
+|Stark    |Jon Snow          |Winterfell   |
+|Lannister|Cersei Lannister  |Kings Landing|
+|Targaryen|Daenerys Targaryen|Dragonstone  |
+|Greyjoy  |Pyke              |Euron Greyjoy|
 
 ## Writing code blocks
 
