@@ -1,5 +1,38 @@
+*.gem
+.bundle
+.jekyll-cache
+.jekyll-metadata
+.obsidian
 _site
-.DS_Store
+
+# Ignore hidden folders #
+# This takes care of .tmp, .sass-cache, and many others #
+.*/
+
+# Ignore OS generated files #
+.DS_Store*
+ehthumbs.db
+Icon?
+Thumbs.db
+
+# Ignore packages #
+*.7z
+*.dmg
+*.gz
+*.iso
+*.jar
+*.rar
+*.tar
+*.zip
+
+# Always-ignore these #
+*.diff
+*.err
+*.log
+*.orig
+*.rej
+*.swn
+*.swo
 *.swp
-.sass-cache
+._*
 *~
