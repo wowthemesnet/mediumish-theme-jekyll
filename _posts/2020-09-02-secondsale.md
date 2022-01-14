@@ -2,7 +2,7 @@
 layout: post
 title:  "Name Transfer for Secondary Property Sales"
 author: Admin
-categories: [Moving-in or out]
+categories: [Info]
 image: assets/images/greenagepic12.jpg
 comments: false
 ---
