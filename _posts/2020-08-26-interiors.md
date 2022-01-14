@@ -2,7 +2,7 @@
 layout: post
 title:  "Guide to get interiors or renovations done"
 author: Admin
-categories: [policies]
+categories: [movements]
 image: assets/images/greenagepic4.jpg
 comments: false
 ---
