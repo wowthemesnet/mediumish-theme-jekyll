@@ -2,7 +2,7 @@
 layout: post
 title:  "Greenage Cares"
 author: Admin
-categories: [policies]
+categories: [Info]
 image: assets/images/greenagepic21.jpg
 featured: false
 hidden: false
