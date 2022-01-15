@@ -16,7 +16,7 @@ Happy New Year and may 2022 bring us all Peace and Prosperity. Every few months,
 
 ##### GOA Elections in November 2021
 
-<p class="mb-5"><img class="shadow-lg" src="{{site.baseurl}}/assets/images/uploads/ec.ong" alt="EC Pic" /></p>
+<p class="mb-5"><img class="shadow-lg" src="{{site.baseurl}}/assets/images/uploads/ec.png" alt="EC Pic" /></p>
 
 Elections were held on 14th November,  2021. The Election team did a commendable job and conducted the proceedings smoothly.We thank the team and the volunteers for their effort.
 
