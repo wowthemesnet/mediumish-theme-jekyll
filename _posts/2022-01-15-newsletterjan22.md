@@ -3,7 +3,7 @@ layout: post
 title:  "Newsletter - January 2022"
 author: Admin
 categories: [updates]
-image: assets/images/updates/greenagepic.jpg
+image: assets/images/updates/greenagepic.png
 featured: false
 hidden: false
 comments: false
