@@ -2,8 +2,8 @@
 layout: post 
 title: "객체를 다루는 당신, 이것을 조심하세요!"
 authors: [suin0730]
-tags: ["Effective Java", "객체 생성", "객체 파괴"]
-image: ../assets/images/post-AlexNet/2.png
+tags: ["Effective Java", "객체지향", "객체 생성과 파괴"]
+image: ../assets/images/post-Creating-and-Destroying-Objects/1.png
 featured: true
 ---
 
