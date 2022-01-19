@@ -4,11 +4,12 @@
     "\\assets",
     "\\assets\\css",
     "\\assets\\images",
+    "\\assets\\images\\updates",
     "\\_includes",
     "\\_layouts",
     "\\_pages",
     "\\_posts"
   ],
-  "SelectedNode": "\\_posts\\2020-08-29-dues.md",
+  "SelectedNode": "\\assets\\css",
   "PreviewInSolutionExplorer": false
 }

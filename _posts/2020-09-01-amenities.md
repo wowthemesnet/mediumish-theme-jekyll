@@ -23,7 +23,7 @@ comments: false
 <p></p>
 
 ##### Outdoor Sports (Prior Bookings Required)
-<p class="mb-5"><img class="shadow-lg" src="{{site.baseurl}}/assets/images/greenagepic17.jpg" alt="Greenage Amenities" /></p>
+<p class="mb-5"><img class="shadow-lg" src="{{site.baseurl}}/assets/images/amenities-tennis.png" alt="Greenage Amenities" /></p>
 <li>Cricket Pitch - behind Oak</li> 
 <li>Tennis Court - behind Birch</li>
 <li>Basketball Court - between Juniper and Hibiscus</li>
