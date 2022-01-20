@@ -19,7 +19,7 @@ Object Detection은 1-stage와 2-stage 2가지 방향으로 발전되어 왔습�
 먼저 1-stage는 분류와 위치 문제를 한번에 해결하는 방식으로 대표적인 알고리즘으로 yolo가 있습니다. 
 2-stage는 각 위치에 대한 특징을 추출한 다음, 이를 통해 분류 문제를 해결하는 것입니다. 2-stage는 R-CNN을 기반으로 발전되어 왔는데 자세한 내용은 뒤에서 다뤄보겠습니다.
 
-![activity-stack](../assets/images/post-mobile-four-major-components-of-AOS/stack.png)
+![object-detection](../assets/images/post-object-detection/1.png)
 
 # 1-stage
 
@@ -28,19 +28,23 @@ Object Detection은 1-stage와 2-stage 2가지 방향으로 발전되어 왔습�
 
 ### 원리
 
-Yolo는
+![object-detection](../assets/images/post-object-detection/2.png)
 
-Non-max suppression: 한 물체에 대해 하나의 bounding box를 가져야 하므로 가장 높은 것을 선택하고 나머지 낮은 확률을 가지는 bounding box들을 제거한다.
+Yolo는 아래와 같은 방식으로 동작합니다.
 
-1)	확률(0<= x<=1), bounding box의 위치와 크기에 대한 prediction output이 나온다
-2)	Class에 대한 확률 p가 0.6보다 작거나 같은 모든 bounding box들을 버린다
+1)	확률(0<= x<=1), bounding box의 위치와 크기에 대한 prediction output이 나옵니다.
+2)	Class에 대한 확률 p가 0.6보다 작거나 같은 모든 bounding box들을 버립니다.
 3)	남은 box 중 가장 큰 p를 갖는 박스를 고른다 => output
-4)	3)에서 나온 박스들 중 IoU가 0.5이상인 어떤 박스가 있다면 모두 버린다
+4)	3)에서 나온 박스들 중 IoU가 0.5이상인 어떤 박스가 있다면 모두 버립니다.
+
+한 물체에 대해 하나의 bounding box를 가져야 하므로 가장 높은 것을 선택하고 나머지 낮은 확률을 가지는 bounding box들을 제거합니다. (Non max suppression)
 
 
 # 2-stage
 
 ### R-CNN: Regions with CNN features (CVPR 2014)
+
+![object-detection](../assets/images/post-object-detection/3.png)
 
 R-CNN은 CNN을 이용하여 각 Region의 class를 분류하는 가장 기본이 되는 아키텍처 입니다.
 
@@ -60,6 +64,9 @@ R-CNN은 2014년 기준 좋은 성능을 보여주었지만 몇 가지 한계점
 
 ### Fast R-CNN (ICCV 2015)
 
+![object-detection](../assets/images/post-object-detection/4.png)
+
+
 Fast R-CNN은 R-CNN과 달리 이미지를 CNN에 한번만 넣어서 Feature map을 생성합니다.
 이렇게 나온 feature map은 원본 이미지에서의 위치에 대한 정보를 포함하고 있기 때문에 Feature map에 ROI Projection을 시켜 feature map 상에서 물체가 존재할 법한 위치를 찾습니다.
 다음은 ROI pooling을 거쳐서 얻은 위치 정보에 대해 물체의 특징 ROI feature vector 추출합니다.
@@ -75,6 +82,8 @@ Fast r-cnn에서 가장 핵심이 되는 부분은 roi pooling layer라고 할 �
 
 
 ### Faster R-CNN (NIPS 2015)
+
+![object-detection](../assets/images/post-object-detection/5.png)
 
 Fast R-CNN + RPN
 
@@ -96,10 +105,15 @@ intermediate layer가 classification layer와 regression layer를 거쳐서
 1by1 1by2 2by1 3가지 비율을 3가지 scale로 총 9개의 anchor boxes를 이용합니다.
 물체 위치 상당히 정확하게 예측하는 결과를 보여주었습니다.
 
+![object-detection](../assets/images/post-object-detection/6.png)
+
 Translation-invariant 이동 불변성 좋은 특성 
 왼쪽 가운데 오른쪽과 같이, 입력의 위치가 바뀌어도 결과는 같은 동상이라고 인식하는 것을 의미합니다.
+
+![object-detection](../assets/images/post-object-detection/7.png)
 
 기존의 방식은 다양한 크기의 이미지에 각각의 feature map을 적용해서 시간이 오래 걸렸지만 
 Pyramid of image는 한 크기의 이미지에 여러 비율과 크기의 anchor box를 사용했습니다.
 즉 pyramid 형식의 anchor라고 볼 수 있습니다.
 
+![object-detection](../assets/images/post-object-detection/8.png)
