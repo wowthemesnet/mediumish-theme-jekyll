@@ -1,9 +1,11 @@
 # Site settings
-title:
-email:
-description: > # this means to ignore newlines until "baseurl:"
-baseurl: "" # the subpath of your site, e.g. /blog/
-url: "" # the base hostname & protocol for your site
+title: Sea \'n Cliffs
+email: rorystephenson@gmail.com
+description: >
+  This will be the description...
+domain: seancliffs.github.io
+url: https://seancliffs.github.io
+baseurl: /seancliffs
 
 twitter_username:
 github_username:
