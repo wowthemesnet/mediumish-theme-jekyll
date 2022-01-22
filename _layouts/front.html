@@ -9,9 +9,16 @@
   {% include esplora.html %}
   {% include escursioni.html %}
   {% include foto-video.html %}
-  {% include contatti.html %}
   {% include about.html %}
+  {% include contatti.html %}
   {% include scripts.html %}
+
+  <script>
+    $(document).ready(function(){ $('#gallery').poptrox({
+      usePopupNav: true,
+      usePopupCaption: true,
+    }); });
+  </script>
 </body>
 
 </html>

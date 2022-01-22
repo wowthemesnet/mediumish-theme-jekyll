@@ -18,6 +18,22 @@ hr.light {
     border-color: white;
 }
 
+.hike-box {
+  width: 100%;
+  height: 100%;
+  color: inherit;
+  &:hover {
+    color: inherit;
+    text-decoration: inherit;
+  }
+  &:focus {
+    color: inherit;
+    text-decoration: inherit;
+    outline: inherit;
+    outline-offset: inherit;
+  }
+}
+
 a {
     @include transition-all;
     color: $theme-primary;
@@ -56,7 +72,7 @@ p {
 }
 
 section {
-    padding: 100px 0;
+    padding: 50px 0;
 }
 
 aside {
@@ -66,6 +82,12 @@ aside {
 .no-padding {
     padding: 0;
 }
+
+.no-horizontal-padding {
+    padding-left: 0;
+    padding-right: 0;
+}
+
 
 // Navigation
 
@@ -222,60 +244,22 @@ header {
     }
 }
 
+.hike-box {
+    margin-bottom: 30px !important;
+    filter: drop-shadow(3px 3px 4px #CCC);
+    background-color: white;
+}
+
+
+.padding-15 {
+  padding: 15px;
+}
+
 .portfolio-box {
     position: relative;
     display: block;
     max-width: 650px;
     margin: 0 auto;
-    .portfolio-box-caption {
-        color: white;
-        opacity: 0;
-        display: block;
-        background: rgba( $theme-primary, .9 );
-        position: absolute;
-        bottom: 0;
-        text-align: center;
-        width: 100%;
-        height: 100%;
-        @include transition-all;
-        .portfolio-box-caption-content {
-            width: 100%;
-            text-align: center;
-            position: absolute;
-            top: 50%;
-            transform: translateY(-50%);
-            .project-category,
-            .project-name {
-                @include sans-serif-font;
-                padding: 0 15px;
-            }
-            .project-category {
-                text-transform: uppercase;
-                font-weight: 600;
-                font-size: 14px;
-            }
-            .project-name {
-                font-size: 18px;
-            }
-        }
-    }
-    &:hover {
-        .portfolio-box-caption {
-            opacity: 1;
-        }
-    }
-    @media (min-width: 768px) {
-        .portfolio-box-caption {
-            .portfolio-box-caption-content {
-                .project-category {
-                    font-size: 16px;
-                }
-                .project-name {
-                    font-size: 22px;
-                }
-            }
-        }
-    }
 }
 
 .call-to-action {
@@ -349,3 +333,49 @@ body {
     -webkit-tap-highlight-color: $theme-dark;
 }
 
+.card-row {
+  margin-bottom: 2em;
+}
+
+.card-image {
+  height: 200px;
+}
+
+.content {
+  float: left;
+  padding: 5px;
+}
+
+.content h4 {
+  margin: 5px 0;
+}
+
+.img-cover {
+   object-fit: cover;
+   height: 100%;
+}
+
+.img-wrapper {
+  position: relative;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden
+}
+
+.img-overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  text-align: center;
+}
+
+.img-overlay:before {
+  content: ' ';
+  display: block;
+  /* adjust 'height' to position overlay content vertically */
+  height: 75%;
+}
