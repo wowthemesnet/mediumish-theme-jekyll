@@ -203,6 +203,7 @@ export default function Example() {
 위의 예시에 대한 전체 코드입니다. 사실 지금 설명드린 sx뿐만 아니라 Theme provider에 대해서도 내용이 있습니다. 사실 이부분은 분량 문제상 생략을 하려고 했지만... 간단하게 설명을 하고 넘어가도록 하겠습니다.
 
 c. @mui/material/styles
+
 자주 사용하는 CSS를 이용하여 그대로 custom이 가능합니다.
 위의 Button custom 부분을 참고해주시면 될 것 같습니다.
 
