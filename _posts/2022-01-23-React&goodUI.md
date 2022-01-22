@@ -87,6 +87,7 @@ Material UI에는 상당히 많은 Components가 존재하고 이들을 적절�
 #### a. Button
 
 웹에서 매우 자주 사용되는 요소 중 하나입니다. 아마 백엔드, 프론트엔드를 통틀어서 HTML에서 이 버튼을 만들지 못하는 사람은 단 하나도 없을 것입니다. 그렇다면 HTML로 만들면 되지 뭣하러 npm으로 MUI Docs를 읽고 이 방법을 따라서 귀찮게 만들어야 하는 가에 대한 의문이 생길 수도 있습니다.
+
 ![button](../assets/images/post-React&goodUI/MUIbutton.png)
 
 ```Javascript
