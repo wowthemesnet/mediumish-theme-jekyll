@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "쿠키와 세션을 이용한 로그인"
+title: "쿠키와 세션을 이용한 로그인 (feat. JWT)"
 authors: [JihamSong]
 tags: ["Web", "Cookie", "Session", "JWT"]
 image: ../assets/images/post-Login-using-cookie-and-session/cookies_banner.svg
