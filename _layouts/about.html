@@ -3,49 +3,99 @@ layout: default
 ---
 
 <section>
-    <div class="section-title">
-        <h2><span>{{ page.title }}</span></h2>
+    <div class='section-title'>
+        <h2>
+            <span class='active'>{{ page.title }}</span>
+            <span class='deactive'>Special Alumni</span>
+        </h2>
     </div>
 
-    <div class="article-post">
-    {{content}}
+    <div class='article-post'>
+        {{content}}
     </div>
-    
-    <!-- Lead -->
-    <div>
-        <h4><span><b>Lead</b></span></h4><br/>    
+    <div class='member-alumni-container'>
+        <div class='member-info-container'>
+            <!-- Lead -->
+            <div>
+                <h4><span><b>Lead</b></span></h4><br/>    
 
-        <div class="row listrecent">    
-            {% assign author = site.data.author | where: "role", "lead" | first %}
-            {% include authorbox.html %}
+                <div class='row listrecent'>
+                    {% assign authors = site.data.author | where: 'role', 'lead' %}
+                    {% for author in authors %}
+                        {% if author.member == true %}
+                            {% include authorbox.html %}
+                        {% endif %}
+                    {% endfor %}
+                </div>
+            </div>
+
+            <!-- Core Member -->
+            <div>
+                <h4><span><b>Core Member</b></span></h4><br/>    
+                <div class='row listrecent'>
+                    {% assign authors = site.data.author | where: 'role', 'core' %}
+                    {% for author in authors %}
+                        {% if author.member == true %}
+                            {% include authorbox.html %}
+                        {% endif %}
+                    {% endfor %}
+                
+                </div>
+            </div>
+
+            <!-- Member -->
+            <div>
+                <h4><span><b>Member</b></span></h4>    
+                <div class='row listrecent'>
+                    {% assign authors = site.data.author | where: 'role', 'normal' %}
+                    {% for author in authors %}
+                        {% if author.member == true %}
+                            {% include authorbox.html %}
+                        {% endif %}
+                    {% endfor %}
+                
+                </div>
+            </div>
+        </div>
+        <div class='alumni-info-container'>
+            <!-- Alumni -->
+            <div>
+                <h4><span><b>GDSC UOS Alumni</b></span></h4> 
+                <div class='row listrecent'>    
+                    {% assign authors = site.data.author | where: 'alumni', 'true' %}
+                    {% for author in authors %}
+                        {% include authorbox.html %}
+                    {% endfor %}
+                </div>
+            </div>
         </div>
     </div>
 
-    <!-- Core Member -->
-    <div>
-        <h4><span><b>Core Member</b></span></h4><br/>    
-        <div class="row listrecent">
-            {% assign authors = site.data.author | where: "role", "core" %}
-            {% for author in authors %}
-    
-            {% include authorbox.html %}
-    
-            {% endfor %}
-    
-        </div>
-    </div>
 
-    <!-- Member -->
-    <div>
-        <h4><span><b>Member</b></span></h4>    
-        <div class="row listrecent">
-            {% assign authors = site.data.author | where: "role", "normal" %}
-            {% for author in authors %}
-    
-            {% include authorbox.html %}
-    
-            {% endfor %}
-    
-        </div>
-    </div>
+    <script>
+        /* Slide */
+        const tabs = {
+            about: document.querySelector('.section-title .active'),
+            alumni: document.querySelector('.section-title .deactive')
+        }
+        const infoContainer = document.querySelector('.member-alumni-container');
+        const memberContainer = document.querySelector('.member-info-container');
+        const alumniContainer = document.querySelector('.alumni-info-container');
+        tabs.about.addEventListener('click', (e) => {
+            tabs.about.classList.add('active');
+            tabs.alumni.classList.remove('active');
+            memberContainer.classList.add('slide-right');
+            alumniContainer.classList.add('slide-right');
+            memberContainer.classList.remove('slide-left');
+            alumniContainer.classList.remove('slide-left');
+        });
+        tabs.alumni.addEventListener('click', (e) => {
+            tabs.about.classList.remove('active');
+            tabs.alumni.classList.add('active');
+            memberContainer.classList.remove('slide-right');
+            alumniContainer.classList.remove('slide-right');
+            memberContainer.classList.add('slide-left');
+            alumniContainer.classList.add('slide-left');
+        });
+    </script>
 </section>

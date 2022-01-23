@@ -1,6 +1,6 @@
 # Site
-name: "DSC UOS"
-description: "DSC UOS 블로그입니다."
+name: "GDSC UOS"
+description: "GDSC UOS 블로그입니다."
 
 baseurl:
 include: ["_pages"]
@@ -18,7 +18,7 @@ plugins:
   - jekyll-feed
 
 # Pagination
-paginate: 10
+paginate: 12
 paginate_path: /page:num/
 
 # Other
@@ -41,3 +41,8 @@ exclude:
   - .gitignore
   - .DS_Store
   - CONTRIBUTING.md
+
+# MathJax
+lsi: false
+excerpt_separator: "\n\n"
+incremental: false

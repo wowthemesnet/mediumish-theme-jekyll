@@ -1,7 +1,9 @@
 <!DOCTYPE html>
 <html>
-
 <head>
+    {% if page.use_math %}
+        {% include mathjax_support.html %}
+    {% endif %}
     <title>{{ page.title }} | {{ site.name }}</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
