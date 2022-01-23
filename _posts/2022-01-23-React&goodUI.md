@@ -34,8 +34,9 @@ _2021 StackOverflow developer survey_
 
 ### 1-1. Material Design
 
-> Material이란 구글이 밀고 있는 디자인 시스템으로써 플랫 디자인의 장점을 살리면서 빛에 따른 종이의 그림자 효과를 이용하여 입체감을 살리는 디자인입니다. 이를 통해 웹, 앱 전반에 통일성과 시인성을 충분히 살린 디자인을 가진 컴포넌트를 배치하여 사용자 친화적인 UI를 구성할 수 있습니다.
-> ![image](../assets/images/post-React&goodUI/MUI Design.gif)
+Material이란 구글이 밀고 있는 디자인 시스템으로써 플랫 디자인의 장점을 살리면서 빛에 따른 종이의 그림자 효과를 이용하여 입체감을 살리는 디자인입니다. 이를 통해 웹, 앱 전반에 통일성과 시인성을 충분히 살린 디자인을 가진 컴포넌트를 배치하여 사용자 친화적인 UI를 구성할 수 있습니다.
+
+![image](../assets/images/post-React&goodUI/MUI Design.gif)
 
 이러한 장점을 가지고 있는 Material UI는 어떠한 방식으로 구성되어 있으며 사용할 수 있을까요?
 
@@ -113,7 +114,7 @@ const ImageSrc = styled('span')({
 });
 ```
 
-위는 바로 위의 복잡한 버튼을 만드는 데에 사용된 요소 중에서 '@mui/material/styles'을 통해서 customization을 한 부분을 가져온 것입니다. 보시다시피 기존의 CSS를 이용하여 custom이 가능합니다. 이와는 다르게 styled Components를 사용하는 것 또한 가능하지만 이는 조금 있다가 다루도록 하겠습니다.
+위는 바로 위의 복잡한 버튼을 만드는 데에 사용된 요소 중에서 '@mui/material/styles'을 통해서 customization을 한 부분을 가져온 것입니다. 보시다시피 기존의 CSS를 이용하여 custom이 가능합니다. 이와는 다르게 styled-components를 사용하는 것 또한 가능하지만 이는 조금 있다가 다루도록 하겠습니다.
 _SVG를 사용하는 것도 가능합니다 custom의 길이 열려 있습니다!_
 
 #### b. Skleton Component
@@ -168,30 +169,30 @@ export default function Example() {
   return (
     <ThemeProvider theme={theme}>
       <Box
-        sx={{
+        sx={%{%
           bgcolor: 'background.paper',
           boxShadow: 1,
           borderRadius: 2,
           p: 2,
           minWidth: 300,
-        }}
+        %}%}
       >
-        <Box sx={{ color: 'text.secondary' }}>Sessions</Box>
-        <Box sx={{ color: 'text.primary', fontSize: 34, fontWeight: 'medium' }}>
+        <Box sx={%{% color: 'text.secondary' %}%}>Sessions</Box>
+        <Box sx={%{% color: 'text.primary', fontSize: 34, fontWeight: 'medium' %}%}>
           98.3 K
         </Box>
         <Box
-          sx={{
+          sx={%{%
             color: 'success.dark',
             display: 'inline',
             fontWeight: 'bold',
             mx: 0.5,
             fontSize: 14,
-          }}
+          %}%}
         >
           +18.77%
         </Box>
-        <Box sx={{ color: 'text.secondary', display: 'inline', fontSize: 14 }}>
+        <Box sx={%{% color: 'text.secondary', display: 'inline', fontSize: 14 %}%}>
           vs. last week
         </Box>
       </Box>
@@ -207,9 +208,9 @@ c. @mui/material/styles
 자주 사용하는 CSS를 이용하여 그대로 custom이 가능합니다.
 위의 Button custom 부분을 참고해주시면 될 것 같습니다.
 
-d. styled Component
+d. styled-Component
 
-MUI + styledComponent를 통해서도 custom이 가능하며 자주 사용되는 조합으로 알고 있습니다. 사실 이는 MUI의 styled와도 거의 비슷한 CSS in JS 방식입니다. 간단한 예시입니다.
+MUI + styled-components를 통해서도 custom이 가능하며 자주 사용되는 조합으로 알고 있습니다. 사실 이는 MUI의 styled와도 거의 비슷한 CSS in JS 방식입니다. 간단한 예시입니다.
 
 ```Javascript
 import styled from "styled-components";
@@ -237,7 +238,7 @@ export default function App() {
 }
 ```
 
-사실상 위의 MUI의 styles와 비슷한 양상임을 볼 수 있습니다. 이 중에서 특이한 부분은 && 부분입니다. 이 것은 styleComponent의 작동 방식과 관련이 있습니다. styled Component로 추가된 style tag는 runtime 중에 생성이 되고 기본적으로 MUI의 style은 styled Components로 추가된 style보다 아래에 선언이 되기에 정상적으로 작동이 되지 않습니다. 이 부분은 [MUI Advance](https://mui.com/styles/advanced/#injectfirst)에 있는 방법과 &&을 사용하는 위의 방법으로 해결이 가능합니다. MUI Advance의 내용을 이용하면 StylesProvider injectFirst 를 통해서 Material-UI → Styled-Components 의 순서로 바꿀 수 있습니다. 또한 &&은 비슷하게 우선순위를 높여서 적용이 되도록 하는 것입니다.
+사실상 위의 MUI의 styled-components와 비슷한 양상임을 볼 수 있습니다. 이 중에서 특이한 부분은 && 부분입니다. 이 것은 styled-components의 작동 방식과 관련이 있습니다. styled-components로 추가된 style tag는 runtime 중에 생성이 되고 기본적으로 MUI의 style은 styled-components로 추가된 style보다 아래에 선언이 되기에 정상적으로 작동이 되지 않습니다. 이 부분은 [MUI Advance](https://mui.com/styles/advanced/#injectfirst)에 있는 방법과 &&을 사용하는 위의 방법으로 해결이 가능합니다. MUI Advance의 내용을 이용하면 StylesProvider injectFirst 를 통해서 Material-UI → styled-components 의 순서로 바꿀 수 있습니다. 또한 &&은 비슷하게 우선순위를 높여서 적용이 되도록 하는 것입니다.
 
 ## 3. 마치며
 
