@@ -1,8 +1,8 @@
-<section class="bg-primary" id="esplora">
+<section class="bg-primary-light" id="esplora">
     <div class="container">
         <div class="row">
             <div class="col-lg-12 text-center">
-                <h2 class="section-heading">Esplora</h2>
+                <h2 class="section-heading">{{ site.data.sections.esplora }}</h2>
                 <hr class="light">
             </div>
         </div>
@@ -12,12 +12,8 @@
       <div class="row card-row">
         <div class="col-md-8 col-sm-6 col-xs-12">
           <div class="content">
-            <h2 class="section-heading">
-              Title Goes Here
-            </h2>
-            <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-            </p>
+              <h2 class="section-heading">{{ page.esplora_title_1 }}</h2>
+              <p>{{ page.esplora_description_1 }}</p>
           </div>
           <div class="clearfix">
 
@@ -26,9 +22,9 @@
         <div class="col-md-4 col-sm-6 col-xs-12">
           <div class="card-image">
             <div class="img-wrapper">
-              <img src="/seancliffs/img/smiaf.jpg" class="img-responsive img-cover" />
+                <img src="{{ page.esplora_image_1 | relative_url }}" class="img-responsive img-cover" />
               <div class="img-overlay">
-                <a href="#" class="btn btn-default">Book now</a>
+                  <a href="#" class="btn btn-default">{{ page.esplora_book_now_text }}</a>
               </div>
             </div>
           </div>
@@ -38,12 +34,8 @@
       <div class="row card-row">
         <div class="col-md-8 col-sm-6 col-xs-12">
           <div class="content">
-            <h2 class="section-heading">
-              Title Goes Here
-            </h2>
-            <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-            </p>
+              <h2 class="section-heading">{{ page.esplora_title_2 }}</h2>
+              <p>{{ page.esplora_description_2 }}</p>
           </div>
           <div class="clearfix">
 
@@ -52,9 +44,9 @@
         <div class="col-md-4 col-sm-6 col-xs-12">
           <div class="card-image">
             <div class="img-wrapper">
-              <img src="/seancliffs/img/smiaf.jpg" class="img-responsive img-cover" />
+              <img src="{{ page.esplora_image_2 | relative_url }}" class="img-responsive img-cover" />
               <div class="img-overlay">
-                <a href="#" class="btn btn-default">Book now</a>
+                <a href="#" class="btn btn-default">{{ page.esplora_book_now_text }}</a>
               </div>
             </div>
           </div>

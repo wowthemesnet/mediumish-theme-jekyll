@@ -62,6 +62,10 @@ p {
     background-color: $theme-primary;
 }
 
+.bg-primary-light {
+    background-color: $theme-primary-light;
+}
+
 .bg-dark {
     background-color: $theme-dark;
     color: white;
@@ -177,7 +181,6 @@ header {
     min-height: auto;
     @include background-cover;
     background-position: center;
-    background-image: url('../img/header.jpg');
     text-align: center;
     color: white;
     .header-content {
