@@ -13,3 +13,5 @@ markdown: kramdown
 collections:
   escursioni:
     output: true
+  gallery:
+    output: true
