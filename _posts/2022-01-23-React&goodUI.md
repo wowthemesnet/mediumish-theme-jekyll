@@ -114,8 +114,9 @@ const ImageSrc = styled('span')({
 });
 ```
 
-상단의 코드는 바로 위에서 그림으로 보인 복잡한 버튼을 만드는 데에 사용된 요소 중에서 '@mui/material/styles'을 통해서 customization을 한 부분을 가져온 것입니다. 보시다시피 기존의 CSS를 이용하여 custom이 가능합니다. 이와는 다르게 styled-component를 사용하는 것 또한 가능하지만 이는 조금 있다가 다루도록 하겠습니다.
-_SVG를 사용하는 것도 가능합니다 custom의 길이 열려 있습니다!_
+상단의 코드는 바로 위에서 그림으로 보인 복잡한 버튼을 만드는 데에 사용된 요소 중에서 '@mui/material/styles'을 통해서 customization을 한 부분을 가져온 것입니다. 보시다시피 기존의 CSS를 이용하여 custom이 가능합니다. '@mui/material/styles'가 아닌 styled-component를 사용하여도 같은 효과를 낼 수 있습니다만 styled-component를 통해 다루는 것에 대해서는 조금 있다가 다루도록 하겠습니다.
+
+_Button에 SVG를 사용하는 것도 가능합니다 다양한 custom의 길이 열려 있습니다!_
 
 #### b. Skleton Component
 
