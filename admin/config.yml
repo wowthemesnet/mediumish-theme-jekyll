@@ -3,43 +3,54 @@ backend:
   repo: seancliffs/seancliffs
   branch: master
   site_domain: epic-goldberg-f806a5.netlify.app
-media_folder: 'assets/uploads'
+media_folder: 'img/uploads'
 collections:
 
-  - name: '_pages_'
-    label: 'Pages'
-    files:
-      - label: 'Home page'
-        name: 'home'
-        file: '_data/site.yml'
-        fields:
-          - { label: "Website name", name: "name", widget: "string" }
-          - { label: "Description", name: "description", widget: "string" }
-      - label: 'About page'
-        name: 'about'
-        file: '_pages/about.md'
-        fields:
-          - { label: "Layout", name: "layout", widget: "hidden", default: "page" }
-          - { label: "Permalink", name: "permalink", widget: "hidden", default: "/about" }
-          - { label: "Title", name: "title", widget: "string" }
-          - { label: "Body", name: "body", widget: "markdown" }
-  - name: 'itinerari'
-    label: 'Itinerari'
-    folder: '_itinerari/'
+  - label: 'Section names'
+    name: 'section_names'
+    file: '_data/sections.yaml'
+    fields:
+      - { label: "Esplora", name: "esplora", widget: "string" }
+      - { label: "Escursioni", name: "escursioni", widget: "string" }
+      - { label: "Foto & Video", name: "foto_video", widget: "string" }
+      - { label: "About", name: "about", widget: "string" }
+      - { label: "Contatti", name: "contatti", widget: "string" }
+  - label: 'Home page'
+    name: 'home'
+    file: 'index.html'
+    fields:
+      - { label: "Layout", name: "layout", widget: "hidden", default: "front" }
+      - { label: "Header title", name: "header_title", widget: "string" }
+      - { label: "Header subtitle", name: "header_subtitle", widget: "string" }
+      - { label: "Header image", name: "header_image", widget: "image" }
+      - { label: "Esplora book now text", name: "esplora_book_now_text", widget: "string" }
+      - { label: "Esplora titolo 1", name: "esplora_title_1", widget: "string" }
+      - { label: "Esplora descrizione 1", name: "esplora_description_1", widget: "string" }
+      - { label: "Esplora image 1", name: "esplora_image_1", widget: "string" }
+      - { label: "Esplora titolo 2", name: "esplora_title_2", widget: "string" }
+      - { label: "Esplora descrizione 2", name: "esplora_description_2", widget: "string" }
+      - { label: "Esplora image 2", name: "esplora_image_2", widget: "string" }
+      - { label: "About content", name: "about_content", widget: "markdown" }
+      - { label: "Contatti content", name: "contatti_content", widget: "markdown" }
+  - name: 'gallery'
+    label: 'Gallery'
+    folder: '_gallery/'
     create: true
     slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
     fields:
-      - { label: "Layout", name: "layout", widget: "hidden", default: "post" }
       - { label: "Title", name: "title", widget: "string" }
-      - { label: "Image", name: "image", widget: "image" }
-      - { label: "Body", name: "body", widget: "markdown" }
-  - name: 'destinazioni'
-    label: 'Destinazioni'
-    folder: '_destinazioni/'
+      - { label: "Caption", name: "caption", widget: "string" }
+      - { label: "Thumbnail", name: "thumbnail", widget: "image" }
+      - { label: "Image link", name: "image", widget: "image" }
+      - { label: "Youtube link", name: "body", widget: "string" }
+  - name: 'escursioni'
+    label: 'Escursioni'
+    folder: '_escursioni/'
     create: true
     slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
     fields:
-      - { label: "Layout", name: "layout", widget: "hidden", default: "post" }
+      - { label: "Layout", name: "layout", widget: "hidden", default: "escursione" }
       - { label: "Title", name: "title", widget: "string" }
+      - { label: "Thumbnail", name: "thumbnail", widget: "image" }
       - { label: "Image", name: "image", widget: "image" }
       - { label: "Body", name: "body", widget: "markdown" }
