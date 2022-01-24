@@ -1,6 +1,7 @@
 ---
-layout: escursione
 title: Pedra Lunga
+caption: "An image of Pedra Lunga"
 thumbnail: "img/portfolio/1.jpg"
-link: "img/portfolio/1.jpg"
+image_link: "img/portfolio/1.jpg"
+youtube_link: ""
 ---

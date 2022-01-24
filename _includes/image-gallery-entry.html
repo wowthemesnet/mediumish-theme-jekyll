@@ -1,0 +1,7 @@
+{% assign image_link = include.entry.image_link | relative_url %}
+{% assign thumbnail_image = include.entry.thumbnail | relative_url %}
+{% assign caption = include.entry.caption %}
+
+<a href="{{ image_link }}" class="portfolio-box col-lg-4 col-sm-6">
+    <img src="{{ thumbnail_image }}" class="img-responsive" alt="" title="{{ caption }}" />
+</a>

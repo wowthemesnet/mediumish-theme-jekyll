@@ -357,6 +357,26 @@ body {
   margin: 5px 0;
 }
 
+.gallery img {
+  height: 260px;
+  width: 100%;
+}
+
+.youtube-overlay {
+  background-image: url('../img/youtube-play-overlay.png');
+  background-size: 90px 60px;
+  background-repeat: no-repeat;
+  background-position-x: 50%;
+  background-position-y: 50%;
+  opacity: 0.8;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  text-align: center;
+}
+
 .img-cover {
    object-fit: cover;
    height: 100%;

@@ -8,11 +8,13 @@
         </div>
     </div>
     <div class="container-fluid">
-        <div class="row no-gutter" id="gallery">
+        <div class="row no-gutter gallery" id="gallery">
             {% for gallery_entry in site.gallery %}
-            <a href="{{ gallery_entry.link }}" class="portfolio-box col-lg-4 col-sm-6">
-                <img src="{{ gallery_entry.thumbnail }}" class="img-responsive" alt="" title="Some caption should be here" />
-            </a>
+                {% if gallery_entry.youtube_link and gallery_entry.youtube_link != "" %}
+                    {% include youtube-gallery-entry.html entry=gallery_entry %}
+                {% else %}
+                    {% include image-gallery-entry.html entry=gallery_entry %}
+                {% endif %}
             {% endfor %}
         </div>
     </div>

@@ -1,0 +1,21 @@
+{% assign youtube_link = include.entry.youtube_link %}
+{% if youtube_link contains "?v=" %}
+    {% assign video_id = youtube_link | split: "?v=" | last %}
+{% else %}
+    {% assign video_id = youtube_link | split: "/" | last %}
+{% endif %}
+{% assign video_url = "https://youtu.be/" | append: video_id  %}
+
+{% assign thumbnail = include.entry.thumbnail %}
+{% if !thumbnail or thumbnail == '' %}
+    {% assign thumbnail = "https://img.youtube.com/vi/" | append: video_id | append: "/0.jpg" %}
+{% else %}
+    {% assign thumbnail = thumbnail | relative_url %}
+{% endif %}
+
+{% assign caption = include.entry.caption %}
+
+<a href="{{video_url}}" class="portfolio-box col-lg-4 col-sm-6">
+    <img src="{{ thumbnail }}" class="img-responsive img-cover" alt="" title="{{ caption }}" />
+    <div class="youtube-overlay"></div>
+</a>
