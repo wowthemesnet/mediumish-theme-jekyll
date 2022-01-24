@@ -1,3 +1,17 @@
+{% assign home_link = "#page-top" %}
+{% assign esplora_link = "#esplora" %}
+{% assign escursioni_link = "#escursioni" %}
+{% assign foto_video_link = "#foto-video" %}
+{% assign about_link = "#about" %}
+{% assign contatti_link = "#contatti" %}
+{% if page.name != "index.html" %}
+    {% assign home_link = "/" | relative_url %}
+    {% assign esplora_link = esplora_link | relative_url %}
+    {% assign escursioni_link = escursioni_link | relative_url %}
+    {% assign foto_video_link = foto_video_link | relative_url %}
+    {% assign about_link = about_link | relative_url %}
+    {% assign contatti_link = contatti_link | relative_url %}
+{% endif %}
 <nav id="mainNav" class="navbar navbar-default navbar-fixed-top">
     <div class="container-fluid">
         <!-- Brand and toggle get grouped for better mobile display -->
@@ -8,26 +22,26 @@
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
             </button>
-            <a class="navbar-brand page-scroll" href="#page-top">Sea 'n Cliffs</a>
+            <a class="navbar-brand page-scroll" href="{{ home_link }}">Sea 'n Cliffs</a>
         </div>
 
         <!-- Collect the nav links, forms, and other content for toggling -->
         <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
             <ul class="nav navbar-nav navbar-right">
                 <li>
-                    <a class="page-scroll" href="#esplora">Esplora</a>
+                    <a class="page-scroll" href="{{ esplora_link }}">Esplora</a>
                 </li>
                 <li>
-                    <a class="page-scroll" href="#escursioni">Escursioni</a>
+                    <a class="page-scroll" href="{{ escursioni_link }}">Escursioni</a>
                 </li>
                 <li>
-                    <a class="page-scroll" href="#foto-video">Foto & Video</a>
+                    <a class="page-scroll" href="{{ foto_video_link }}">Foto & Video</a>
                 </li>
                 <li>
-                    <a class="page-scroll" href="#about">About</a>
+                    <a class="page-scroll" href="{{ about_link }}">About</a>
                 </li>
                 <li>
-                    <a class="page-scroll" href="#contatti">Contatti</a>
+                    <a class="page-scroll" href="{{ contatti_link }}">Contatti</a>
                 </li>
             </ul>
         </div>

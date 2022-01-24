@@ -7,80 +7,22 @@
             </div>
         </div>
     </div>
-    <div class="container-fluid">
+    <div class="container">
         <div class="row">
+            {% for escursione in site.escursioni %}
             <div class="col-lg-4 col-sm-6">
                 <div class="portfolio-box hike-box">
-                    <img src="img/portfolio/1.jpg" class="img-responsive" alt="">
+                    <img src="{{ escursione.thumbnail }}" class="img-responsive" alt="">
                       <div class="padding-15">
-                      <h3 class="section-heading">Header</h3>
-                      <p>
-                        Now some text
-                      </p>
-                      <a href="#about" class="btn btn-primary">Scopri di piú</a>
+                          <h3 class="section-heading">{{ escursione.title }}</h3>
+                          <p>
+                          {{ escursione.content | strip_html | truncatewords: 30 }}
+                          </p>
+                          <a href="{{ escursione.url | relative_url }}" class="btn btn-primary">Scopri di piú</a>
                     </div>
                 </div>
             </div>
-            <div class="col-lg-4 col-sm-6">
-                <div class="portfolio-box hike-box">
-                    <img src="img/portfolio/1.jpg" class="img-responsive" alt="">
-                      <div class="padding-15">
-                      <h3 class="section-heading">Header</h3>
-                      <p>
-                        Now some text
-                      </p>
-                      <a href="#about" class="btn btn-primary">Scopri di piú</a>
-                    </div>
-                </div>
-            </div>
-            <div class="col-lg-4 col-sm-6">
-                <div class="portfolio-box hike-box">
-                    <img src="img/portfolio/1.jpg" class="img-responsive" alt="">
-                      <div class="padding-15">
-                      <h3 class="section-heading">Header</h3>
-                      <p>
-                        Now some text
-                      </p>
-                      <a href="#about" class="btn btn-primary">Scopri di piú</a>
-                    </div>
-                </div>
-            </div>
-            <div class="col-lg-4 col-sm-6">
-                <div class="portfolio-box hike-box">
-                    <img src="img/portfolio/1.jpg" class="img-responsive" alt="">
-                      <div class="padding-15">
-                      <h3 class="section-heading">Header</h3>
-                      <p>
-                        Now some text
-                      </p>
-                      <a href="#about" class="btn btn-primary">Scopri di piú</a>
-                    </div>
-                </div>
-            </div>
-            <div class="col-lg-4 col-sm-6">
-                <div class="portfolio-box hike-box">
-                    <img src="img/portfolio/1.jpg" class="img-responsive" alt="">
-                      <div class="padding-15">
-                      <h3 class="section-heading">Header</h3>
-                      <p>
-                        Now some text
-                      </p>
-                      <a href="#about" class="btn btn-primary">Scopri di piú</a>
-                    </div>
-                </div>
-            </div>
-            <div class="col-lg-4 col-sm-6">
-                <div class="portfolio-box hike-box">
-                    <img src="img/portfolio/1.jpg" class="img-responsive" alt="">
-                      <div class="padding-15">
-                      <h3 class="section-heading">Header</h3>
-                      <p>
-                        Now some text
-                      </p>
-                      <a href="#about" class="btn btn-primary">Scopri di piú</a>
-                    </div>
-                </div>
-            </div>
+            {% endfor %}
         </div>
     </div>
 </section>

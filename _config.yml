@@ -7,8 +7,9 @@ domain: seancliffs.github.io
 url: https://seancliffs.github.io
 baseurl: /seancliffs
 
-twitter_username:
-github_username:
-
 # Build settings
 markdown: kramdown
+
+collections:
+  escursioni:
+    output: true

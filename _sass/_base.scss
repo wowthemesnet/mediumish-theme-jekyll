@@ -53,8 +53,8 @@ h6 {
 }
 
 p {
-    font-size: 16px;
-    line-height: 1.5;
+    font-size: 1.8rem;
+    line-height: 3.6rem;
     margin-bottom: 20px;
 }
 
@@ -246,8 +246,15 @@ header {
 
 .hike-box {
     margin-bottom: 30px !important;
-    filter: drop-shadow(3px 3px 4px #CCC);
-    background-color: white;
+    border: 1px solid rgba(0,0,0,.125);
+    border-radius: 0.3rem;
+    overflow: hidden;
+    p {
+        color: rgba(0, 0, 0, .44);
+        line-height: 1.6;
+        font-weight: 300;
+        font-size: 1.6rem;
+    }
 }
 
 

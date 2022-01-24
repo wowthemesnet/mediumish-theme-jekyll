@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+
+{% include head.html %}
+
+<body id="page-top">
+  {% include nav.html %}
+  <header style="min-height: 66%; background-image: url({{ "/img/header.jpg" | absolute_url }})">
+      <div class="header-content">
+          <div class="header-content-inner">
+            <h1>{{ page.title }}</h1>
+          </div>
+      </div>
+  </header>
+  <div class="container" style="margin-top: 30px">
+      <div class="row justify-content-center">
+          <div class="col-md-2"></div>
+          <div class="col-md-9">
+              {{ content }}
+          </div>
+      </div>
+  </div>
+  {% include scripts.html %}
+</body>
+
+</html>
