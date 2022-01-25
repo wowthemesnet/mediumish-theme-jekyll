@@ -144,7 +144,7 @@ public class Circles {
 Circles circles = new Circles();
 circles.setRadius(3);
 circles.setCount(7);
-circles.setColor('yellow');
+circles.setColor("yellow");
 circles.setShadow(true);
 ```
 
@@ -153,7 +153,7 @@ public class Circles {
   // 기본값으로 초기화
   private int radius = 1;
   private int count = 1;
-  private String color = 'white';
+  private String color = "white";
   private boolean solidLine = true;
   private boolean shadow = false;
   
@@ -177,7 +177,7 @@ public class Circles {
 아래 예제를 보면 **빌더의 세터 메서드는 빌더 자신을 반환하기 때문에 연쇄적으로 호출할 수 있습니다.** 이 코드는 점층적 생성자 패턴보다 읽고 쓰기 쉽습니다.
 
 ```java
-Circles circle = new Circles.Builder(3, 7).color('yellow').shadow(true);
+Circles circle = new Circles.Builder(3, 7).color("yellow").shadow(true);
 ```
 
 ```java
@@ -194,7 +194,7 @@ public class Circles {
     private final int count;
 
     // 선택 매개변수 (기본값으로 초기화)
-    private String color = 'white';
+    private String color = "white";
     private boolean solidLine = true;
     private boolean shadow = false;
 
@@ -229,9 +229,9 @@ public class Circles {
 
 > 사용하는 자원에 따라 동작이 달라지는 클래스에는 [정적 유틸리티 클래스](https://github.com/suin0730/active-reading/blob/main/%5B1%5D%20%EC%9D%B4%ED%8E%99%ED%8B%B0%EB%B8%8C%20%EC%9E%90%EB%B0%94%203%ED%8C%90/%5BItem%204%5D%20%EC%9D%B8%EC%8A%A4%ED%84%B4%EC%8A%A4%ED%99%94%EB%A5%BC%20%EB%A7%89%EC%9C%BC%EB%A0%A4%EB%A9%B4%20private%20%EC%83%9D%EC%84%B1%EC%9E%90%EB%A5%BC%20%EC%82%AC%EC%9A%A9%ED%95%98%EB%9D%BC.md)나 [싱글턴](https://github.com/suin0730/active-reading/blob/main/%5B1%5D%20%EC%9D%B4%ED%8E%99%ED%8B%B0%EB%B8%8C%20%EC%9E%90%EB%B0%94%203%ED%8C%90/%5BItem%203%5D%20private%20%EC%83%9D%EC%84%B1%EC%9E%90%EB%82%98%20%EC%97%B4%EA%B1%B0%20%ED%83%80%EC%9E%85%EC%9C%BC%EB%A1%9C%20%EC%8B%B1%EA%B8%80%ED%84%B4%EC%9E%84%EC%9D%84%20%EB%B3%B4%EC%A6%9D%ED%95%98%EB%9D%BC.md)이 적합하지 않습니다.
 
-자원을 정적으로 명시해두는 것이 부자연스러울 때가 종종 있다. 예를 들어, 맞춤법을 검사하는 프로그램을 아래와 같이 만들었다고 생각해보자. 현실 세계에서는 언어가 바뀔수도, 특수한 사전을 사용할수도 있지만 이 코드는 단 하나의 사전만 자원으로 사용한다.
+자원을 정적으로 명시해두는 것이 부자연스러울 때가 종종 있습니다. 예를 들어, 맞춤법을 검사하는 프로그램을 아래와 같이 만들었다고 생각해봅시다. 현실 세계에서는 언어가 바뀔수도, 특수한 사전을 사용할수도 있지만 이 코드는 단 하나의 사전만 자원으로 사용합니다.
 
-만약 `final` 한정자를 지우고 사전을 바꿀 수 있는 메소드를 추가한다면 여러 사전을 사용할 수 있겠지만 thread-safe하지 않다.
+만약 `final` 한정자를 지우고 사전을 바꿀 수 있는 메소드를 추가한다면, 여러 사전을 사용할 수 있겠지만 thread-safe하지 않습니다.
 
 ```java
 // 정적 유틸리티 사용
