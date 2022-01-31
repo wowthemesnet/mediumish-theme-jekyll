@@ -35,7 +35,7 @@ Apache, Python, Flask가 깔려있는 Ubuntu 18.04
 
 **WAS? Web Server?**
 
-아직 웹에 익숙하시지 않은 분들은 WAS(Web Application Server, 웹 어플리케이션 서버), Web Server(웹 서버)와 같은 단어들이 헷갈리기만 할 겁니다.
+아직 웹에 익숙하시지 않은 분들은 WAS(Web Application Server, 웹 애플리케이션 서버), Web Server(웹 서버)와 같은 단어들이 헷갈리기만 할 겁니다.
 
 내용을 검색해봐도 네모랑 화살표만 가득한 구조도만 줄줄이 나올 뿐이죠.
 
