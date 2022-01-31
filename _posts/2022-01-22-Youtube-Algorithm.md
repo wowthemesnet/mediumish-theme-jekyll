@@ -78,7 +78,7 @@ Candidate generation 단계에서는 사용자의 개인 활동(시청, 좋아�
 
 $$ r\left(v_i, v_j\right) = \frac{c_{ij}}{f\left(v_i, v_j\right)} $$
 
-Association rule을 사용하여 스코어를 생성할 때 co-visitation count를 하나의 섹션에서 일어난 것으로 하되, 공통의 관심 비디오를 정규화 하는 함수인 $$ f(v_i, v_j) $$ 로 나누어 간단하게 계산한다고 합니다.
+Association rule을 사용하여 스코어를 생성할 때 co-visitation count를 하나의 섹션에서 일어난 것으로 하되, 공통의 관심 비디오를 정규화 하는 함수인 $ f(v_i, v_j) $ 로 나누어 간단하게 계산한다고 합니다.
 
 $$ f\left(v_i, v_j\right) = c_i·c_j $$
 
@@ -97,11 +97,11 @@ $$ f\left(v_i, v_j\right) = c_i·c_j $$
 이어 붙인 유저의 벡터를 fully connected ReLU라 불리는 함수에 넣어서 출력값으로 각 유저의 user embedding을 얻었습니다. 
 그런 다음, 출력한 이 유저의 정보를 위의 [softmax 함수](#용어-정리)에 넣어서 그 유저에 대한 각 비디오의 가중치를 구하였습니다. 
 
-$$ P\left(w_t =i\|U,C\right) = \frac{e^{v_iu}}{\sum_{j \in V}{e^{v_ju}}} $$
+$$ P\left(w_t =i|U,C\right) = \frac{e^{v_iu}}{\sum_{j \in V}{e^{v_ju}}} $$
 
 > $$v_j\in R^N은 \space 각 \space 후보 \space 비디오이며, \space u \in R^N은 \space 유저를 \space 나타낸다.$$
 
-위 식은 softmax 함수로, 특정 시간 $$ t $$ 에 유저 $$ U $$ 가 $$ C $$라는 context를 가지고 있을 때 각각의 동영상 $$ v_i $$를 볼 확률을 정의한 것입니다. 
+위 식은 softmax 함수로, 특정 시간 $$ t $$ 에 유저 $ U $ 가 $ C $라는 context를 가지고 있을 때 각각의 동영상 $ v_i $를 볼 확률을 정의한 것입니다. 
 
 Softmax 함수 단계에서는 모든 비디오를 입력 값으로 넣지 않고 [Negative Sampling](#용어-정리)이라는 방법으로 알맞은 비디오를 추출하여 입력 값으로 넣어줌으로써 성능 개선을 하였습니다. 사용자가 비디오를 전부 시청했다면 해당 비디오는 유저가 positive implicit feedback을 준 것으로 간주합니다. 
 
