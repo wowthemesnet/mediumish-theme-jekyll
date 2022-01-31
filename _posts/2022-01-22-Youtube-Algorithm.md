@@ -78,7 +78,7 @@ Candidate generation 단계에서는 사용자의 개인 활동(시청, 좋아�
 
 $$ r\left(v_i, v_j\right) = \frac{c_{ij}}{f\left(v_i, v_j\right)} $$
 
-Association rule을 사용하여 스코어를 생성할 때 co-visitation count를 하나의 섹션에서 일어난 것으로 하되, 공통의 관심 비디오를 정규화 하는 함수인 f(vi, vj)로 나누어 간단하게 계산한다고 합니다.
+Association rule을 사용하여 스코어를 생성할 때 co-visitation count를 하나의 섹션에서 일어난 것으로 하되, 공통의 관심 비디오를 정규화 하는 함수인 $$ f(v_i, v_j) $$ 로 나누어 간단하게 계산한다고 합니다.
 
 $$ f\left(v_i, v_j\right) = c_i·c_j $$
 
@@ -101,7 +101,7 @@ $$ P\left(w_t =i\|U,C\right) = \frac{e^{v_iu}}{\sum_{j \in V}{e^{v_ju}}} $$
 
 > $$v_j\in R^N은 \space 각 \space 후보 \space 비디오이며, \space u \in R^N은 \space 유저를 \space 나타낸다.$$
 
-위 식은 softmax 함수로, 특정 시간 t에 유저 U가 C라는 context를 가지고 있을 때 각각의 동영상 vi를 볼 확률을 정의한 것입니다. 
+위 식은 softmax 함수로, 특정 시간 $$ t $$ 에 유저 $$ U $$ 가 $$ C $$라는 context를 가지고 있을 때 각각의 동영상 $$ v_i $$를 볼 확률을 정의한 것입니다. 
 
 Softmax 함수 단계에서는 모든 비디오를 입력 값으로 넣지 않고 [Negative Sampling](#용어-정리)이라는 방법으로 알맞은 비디오를 추출하여 입력 값으로 넣어줌으로써 성능 개선을 하였습니다. 사용자가 비디오를 전부 시청했다면 해당 비디오는 유저가 positive implicit feedback을 준 것으로 간주합니다. 
 
@@ -183,7 +183,7 @@ MoE 모델이란 입력 데이터를 서로 다른 패턴으로 학습하는 exp
 1. binary classification task(유저의 클릭)
 2. regression task(시청 시간)
 
-![image](../assets/images/post-Youtube-Algorithm/selection_bias.png){:.align-right}
+![image](../assets/images/post-Youtube-Algorithm/selection_bias.png)
 
 두 번째 과제의 경우 'shallow tower'를 통해 selection bias를 조절하고자 하였습니다.
 영상의 추천 랭킹 순위와 device id 등 여러 feature를 'shallow tower'라는 함수를 통해 selection bias를 만들어 냈고, 이러한 feature는 missing value로 간주하여 높은 랭킹에 페널티를 주는 방식을 적용하였습니다.
