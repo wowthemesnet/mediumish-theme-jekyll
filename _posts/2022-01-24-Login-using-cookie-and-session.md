@@ -41,19 +41,19 @@ HTTP는 서버의 부담을 줄이기 위해 비연결성(Connectionless)과 비
 ## 2. 세션
 
 쿠키가 클라이언트에 저장되는 정보라면 세션은 서버에 저장되는 정보입니다.
-세션은 비밀번호와 같은 인증 정보를 쿠키에 저장하지 않고 서버에 저장하며 대신 쿠키에는 사용자 식별자인 session-id를 저장합니다.
-이처럼 세션도 쿠키를 이용하지만 추정 불가능한 session-id를 주고받기 때문에 보안상 안전합니다.
+세션은 비밀번호와 같은 인증 정보를 쿠키에 저장하지 않고 서버에 저장하며 대신 쿠키에는 사용자 식별자인 `session-id`를 저장합니다.
+이처럼 세션도 쿠키를 이용하지만 추정 불가능한 `session-id`를 주고받기 때문에 보안상 안전합니다.
 따라서 노출되면 안 되는 중요한 정보는 세션을 이용하여 저장합니다.
 
 세션을 이용한 로그인 과정을 살펴봅시다.
 
 1. 클라이언트가 아이디와 비밀번호를 입력하여 로그인에 성공합니다.
-2. 서버는 해당 클라이언트 고유의 session-id를 생성하고 상태 정보를 서버에 저장합니다.
-3. 서버는 클라이언트에게 요청에 대한 응답과 session-id가 담긴 쿠키 파일을 함께 전송합니다.
-4. 클라이언트는 쿠키를 사용하여 session-id를 저장합니다.
-5. 클라이언트가 해당 사이트에 접속할 때, 서버로 session-id가 담긴 쿠키 파일을 함께 전달합니다.
-6. 서버는 해당 요청의 쿠키 파일 내에 있는 session-id를 이용해 사용자를 식별합니다.
-7. 클라이언트 종료 시 (브라우저 종료 시) session-id를 제거하고 서버에서도 세션을 제거합니다.
+2. 서버는 해당 클라이언트 고유의 `session-id`를 생성하고 상태 정보를 서버에 저장합니다.
+3. 서버는 클라이언트에게 요청에 대한 응답과 `session-id`가 담긴 쿠키 파일을 함께 전송합니다.
+4. 클라이언트는 쿠키를 사용하여 `session-id`를 저장합니다.
+5. 클라이언트가 해당 사이트에 접속할 때, 서버로 `session-id`가 담긴 쿠키 파일을 함께 전달합니다.
+6. 서버는 해당 요청의 쿠키 파일 내에 있는 `session-id`를 이용해 사용자를 식별합니다.
+7. 클라이언트 종료 시 (브라우저 종료 시) `session-id`를 제거하고 서버에서도 세션을 제거합니다.
 
 세션은 정보들이 서버에 저장되므로 사용자가 많아질수록 서버 메모리를 차지하여 서버에 부담이 된다는 단점이 있습니다.
 또한 서버 메모리에 문제가 생기면 로그인한 사용자들이 모두 사라지는 상황이 발생하게 됩니다.
@@ -71,7 +71,9 @@ JWT는 사용자 인증에 필요한 모든 정보를 토큰 자체에 담고 �
 ![image](../assets/images/post-Login-using-cookie-and-session/jwt.png)
 
 ```JWT
-eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIxMjM0NTY3ODkwIiwibmFtZSI6IkpvaG4gRG9lIiwiaWF0IjoxNTE2MjM5MDIyfQ.SflKxwRJSMeKKF2QT4fwpMeJf36POk6yJV_adQssw5c
+eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.
+eyJzdWIiOiIxMjM0NTY3ODkwIiwibmFtZSI6IkpvaG4gRG9lIiwiaWF0IjoxNTE2MjM5MDIyfQ.
+SflKxwRJSMeKKF2QT4fwpMeJf36POk6yJV_adQssw5c
 ```
 
 JWT의 구조입니다. JWT는 위의 사진과 코드처럼 마침표(.)를 구분자로 `Header`, `Payload`, `Signature`로 이루어져 있습니다.
@@ -163,14 +165,14 @@ JWT를 사용하면 `Signature`로 데이터의 위변조 여부를 확인할 �
 
 ![image](../assets/images/post-Login-using-cookie-and-session/jwt_token.png)
 
-기존 Access 토큰은 제 3자에게 탈취당하면 보안에 취약하다는 문제를 가지고 있습니다.
-이를 해결하기 위해 클라이언트가 로그인 요청을 보내면 서버는 기존의 Access 토큰과 Refresh 토큰을 발급합니다.
-Refresh 토큰은 Access 토큰과 동일하지만 보다 긴 유효기간을 가지고 있어서 Access 토큰이 만료되었을 때 재발급을 요청할 수 있습니다.
-또한 Refresh 토큰은 서버에 따로 저장해두어 이후 검증에 사용합니다.
-Refresh 토큰까지 만료되었다면 사용자는 새로 로그인해야 합니다.
+기존 `Access token`은 제 3자에게 탈취당하면 보안에 취약하다는 문제를 가지고 있습니다.
+이를 해결하기 위해 클라이언트가 로그인 요청을 보내면 서버는 기존의 `Access token`과 `Refresh token`을 발급합니다.
+`Refresh token`은 `Access token`과 동일하지만 보다 긴 유효기간을 가지고 있어서 `Access token`이 만료되었을 때 재발급을 요청할 수 있습니다.
+또한 `Refresh token`은 서버에 따로 저장해두어 이후 검증에 사용합니다.
+`Refresh token`까지 만료되었다면 사용자는 새로 로그인해야 합니다.
 
-이 전략을 사용하면 Refresh 토큰이 만료되기 전까지는 사용자가 재로그인을 할 필요가 없고, 서버가 강제로 Refresh 토큰을 삭제할 수 있다는 장점이 있습니다.
-그러나 Refresh 토큰은 탈취될 가능성이 상당히 낮긴 하지만 그럼에도 두 개의 토큰이 모두 탈취될 수 있고, Access 토큰이 아직 유효할 때 탈취된다면 보안상 위험하기 때문에 이 방법 역시 완벽하게 안전하다고는 할 수 없습니다.
+이 전략을 사용하면 `Refresh token`이 만료되기 전까지는 사용자가 재로그인을 할 필요가 없고, 서버가 강제로 `Refresh token`을 삭제할 수 있다는 장점이 있습니다.
+그러나 `Refresh token`은 탈취될 가능성이 상당히 낮긴 하지만 그럼에도 두 개의 token이 모두 탈취될 수 있고, `Access token`이 아직 유효할 때 탈취된다면 보안상 위험하기 때문에 이 방법 역시 완벽하게 안전하다고는 할 수 없습니다.
 
 ## 결론
 
