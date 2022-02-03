@@ -34,7 +34,7 @@ Yolo는 아래와 같은 방식으로 동작합니다.
 
 1)	확률(0<= x<=1), bounding box의 위치와 크기에 대한 prediction output이 나옵니다.
 2)	Class에 대한 확률 p가 0.6보다 작거나 같은 모든 bounding box들을 버립니다.
-3)	남은 box 중 가장 큰 p를 갖는 박스를 고른다 => output
+3)	남은 box 중 가장 큰 p를 갖는 박스를 고릅니다 => output
 4)	3)에서 나온 박스들 중 IoU가 0.5이상인 어떤 박스가 있다면 모두 버립니다.
 
 한 물체에 대해 하나의 bounding box를 가져야 하므로 가장 높은 것을 선택하고 나머지 낮은 확률을 가지는 bounding box들을 제거합니다. (Non max suppression)
@@ -64,17 +64,16 @@ R-CNN은 2014년 기준 좋은 성능을 보여주었지만 몇 가지 한계점
 
 ### Fast R-CNN (ICCV 2015)
 
-![object-detection](../assets/images/post-object-detection/4.png)
-
-
 Fast R-CNN은 R-CNN과 달리 이미지를 CNN에 한번만 넣어서 Feature map을 생성합니다.
 이렇게 나온 feature map은 원본 이미지에서의 위치에 대한 정보를 포함하고 있기 때문에 Feature map에 ROI Projection을 시켜 feature map 상에서 물체가 존재할 법한 위치를 찾습니다.
 다음은 ROI pooling을 거쳐서 얻은 위치 정보에 대해 물체의 특징 ROI feature vector 추출합니다.
 이 벡터로 softmax와 bounding box regression을 진행하여 분류와 regression 문제를 해결합니다.
 분류를 위해 fully-conntected layer를 이용할 것이기 때문에 max pooling을 이용해서 고정된 크기의 벡터를 생성합니다.
 
+![object-detection](../assets/images/post-object-detection/4.png)
 
-예를 들어 2by2 feature를 추출한다면 ROI feature map이 2by2로 적절히 나누어지도록 하기 위해 왼쪽 그림처럼 나누고 각 부분마다 가장 큰 값을 고릅니다.
+
+예를 들어 2by2 feature를 추출한다면 ROI feature map이 2by2로 적절히 나누어지도록 하기 위해 위의 그림처럼 나누고 각 부분마다 가장 큰 값을 고릅니다.
 Roi feature vector에 대해 softmax와 regressor을 통과하여 문제를 해결합니다.
 RCNN과 달리 svm 대신 softmax 사용합니다.
 
@@ -97,23 +96,16 @@ Image에서 convolution layer를 거쳐 feature maps을 만들었는데 이 부�
 이 둘을 합치기 위해 RPN과 Fast R-CNN과정을 번갈아 fine-tuning하며 학습 진행하여서 빠르게 network 수렴하고 convolutional feature 적절히 공유할 수 있었습니다.
 
 한장의 image를 convolution layer에 넣어서 feature map을 만들고
-anchor boxes를 sliding window 방식으로 이동하면서 mapping해서 intermediate layer 만듭니다.
-intermediate layer가 classification layer와 regression layer를 거쳐서
- 물체가 존재하는지 존재하지 않는지
-4k 물체가 어디에 존재하는지 그 중심의 가로와 세로 너비 높이 예측합니다. 
-예를 들어서 k=9 이면, 
-1by1 1by2 2by1 3가지 비율을 3가지 scale로 총 9개의 anchor boxes를 이용합니다.
+anchor boxes를 sliding window 방식으로 이동하면서 mapping해서 Intermediate layer 만듭니다.
+Intermediate layer가 classification layer와 regression layer를 거쳐서
+물체의 존재 유무와 그 위치를 예측합니다.
+예를 들어서 k=9 이면 1X1, 1X2, 2X1 이 3가지 비율을 3가지 scale로 총 9개의 anchor boxes를 이용합니다.
 물체 위치 상당히 정확하게 예측하는 결과를 보여주었습니다.
-
-![object-detection](../assets/images/post-object-detection/6.png)
-
-Translation-invariant 이동 불변성 좋은 특성 
-왼쪽 가운데 오른쪽과 같이, 입력의 위치가 바뀌어도 결과는 같은 동상이라고 인식하는 것을 의미합니다.
 
 ![object-detection](../assets/images/post-object-detection/7.png)
 
 기존의 방식은 다양한 크기의 이미지에 각각의 feature map을 적용해서 시간이 오래 걸렸지만 
 Pyramid of image는 한 크기의 이미지에 여러 비율과 크기의 anchor box를 사용했습니다.
-즉 pyramid 형식의 anchor라고 볼 수 있습니다.
+그래서 이러한 방법은 pyramid 형식의 anchor라고 불립니다.
 
 ![object-detection](../assets/images/post-object-detection/8.png)
