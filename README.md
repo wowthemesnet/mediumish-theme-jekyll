@@ -20,4 +20,15 @@ Copyright (C) 2019 Sal, https://www.wowthemes.net
 3. Create a branch off of master and give it a meaningful name (e.g. my-new-mediumish-feature).
 4. Make necessary changes, commit, push and open a pull request on GitHub.
 
+### Usage
+
+1. [Fork the repo](https://github.com/wowthemesnet/mediumish-theme-jekyll). or do `git clone git@github.com:wowthemesnet/mediumish-theme-jekyll.git` in your directory.
+2. Change directory with the command: enter `cd mediumish-theme-jekyll/` in the terminal to change directory.
+3. Enter `bundle config set --local path 'vendor/bundle'`  in the terminal for allowing to install and update your gems.
+4. Enter `bundle install` in the terminal for installing the dependencies specified in your Gemfile.
+5. Enter `bundle update` in the terminal to update your gems to the latest available versions.
+6. Enter `bundle exec jekyll serve --livereload` in the terminal To view your static-website (--livereload to automatically reload the page, when you're changing the content inside your directory.)
+
+Check the pages in your `mediumish-theme-jekyll` for help. Example: view `2018-01-11-quick-start-guide.md` in the `_posts/2018-01-11-quick-start-guide.md` directory.
+
 Thank you!
