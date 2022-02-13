@@ -11,11 +11,13 @@ If you are doing a secondary sale transcation of a property in Greenage, as a bu
 
 ##### Seller of the Property in Greenage
 
-1. The Seller of the property must clear all the dues pending against the flat before registration. 
+1. If there are any dues pending with the builder, Salarpuria Sattva, they must be cleared and a NOC must be obtained from the builder prior to approaching GOA.
 
-2. As per the GOA resolution on 16.Jun.2019 and DOD clause 52.3 the sellers need to pay a transfer fee of ₹ 15000 for secondary sales of the property in Greenage
+2. The Seller of the property must clear all the dues pending against the flat before registration. 
 
-3. Collect No-Objection Certificate (NOC) from GOA Office and hand it over to the buyer before the registration of the property
+3. As per the GOA resolution on 16.Jun.2019 and DOD clause 52.3 the sellers need to pay a transfer fee of ₹ 15000 for secondary sales of the property in Greenage
+
+4. Collect No-Objection Certificate (NOC) from GOA Office and hand it over to the buyer before the registration of the property
 
 
 ##### Buyer of the Property in Greenage
