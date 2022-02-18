@@ -145,7 +145,7 @@ User specificity는 사용자의 시청 기록으로부터 사용자의 선호�
 
 ### 2016년
 
-![image](<../assets/images/post-Youtube-Algorithm/Ranking_architecture(2016).png>)
+![image](../assets/images/post-Youtube-Algorithm/Ranking_architecture(2016).png)
 
 Ranking 모델도 동 연도의 candidate generation의 모델과 매우 유사합니다.
 각 비디오의 정보(feature)를 입력 값으로 넣은 뒤 fully connected ReLU라는 함수에 넣어 순위를 매깁니다.
@@ -166,7 +166,7 @@ Feature들은 다음과 같이 분류됩니다.
 
 ### 2019년
 
-![image](<../assets/images/post-Youtube-Algorithm/Ranking_architecture(2019).png>)
+![image](../assets/images/post-Youtube-Algorithm/Ranking_architecture(2019).PNG)
 
 2019년 논문은 랭킹 모델에 대해 중점적으로 설명하고 있습니다.
 
@@ -175,7 +175,7 @@ Wide & Deep은 넓은 선형 모델과 딥러닝 모델을 결합한 형태입�
 
 아래는 Wide&Deep 모델을 그림으로 나타낸 것입니다.
 
-![image](../assets/images/post-Youtube-Algorithm/Wide_and_Deep.png)
+![image](../assets/images/post-Youtube-Algorithm/Wide_and_Deep.PNG)
 
 > 출처: https://bcho.tistory.com/1187
 
@@ -184,12 +184,12 @@ Wide & Deep은 넓은 선형 모델과 딥러닝 모델을 결합한 형태입�
 1. 어떤 것을 최적화할지 잘 조정해야 한다.
 2. feedback loop에 빠지지 않도록 selection bias를 효율적으로 제거해야 한다.
 
-![image](<../assets/images/post-Youtube-Algorithm/MMoE(Paper).png>)
+![image](../assets/images/post-Youtube-Algorithm/MMoE(Paper).PNG)
 
 먼저 1번 과제의 경우 MMoE 구조를 통해 해결하고자 하였습니다.
 즉, 다음에 어떤 영상을 볼지를 예측하는 것도 중요하지만 그 영상을 얼마나 시청할지, 좋아할지 등 objective를 분리시키는 것이 중요합니다.
 
-![image](../assets/images/post-Youtube-Algorithm/MMoE.png)
+![image](../assets/images/post-Youtube-Algorithm/MMoE.PNG)
 
 MMoE 모델이란 Multi-gate Mixture-of-Experts의 약자로 MoE 기반 멀티 테스크 학습 모델입니다.
 MoE 모델이란 입력 데이터를 서로 다른 패턴으로 학습하는 experts 네트워크를 포함하는 모델입니다. 이는 experts 네트워크에서 데이터의 서로 다른 패턴을 학습한 후에 출력값을 gating network에서 나온 가중치와 곱해져 최종적으로 학습합니다.
@@ -201,7 +201,7 @@ MoE 모델이란 입력 데이터를 서로 다른 패턴으로 학습하는 exp
 1. binary classification task(유저의 클릭)
 2. regression task(시청 시간)
 
-![image](../assets/images/post-Youtube-Algorithm/selection_bias.png)
+![image](../assets/images/post-Youtube-Algorithm/selection_bias.PNG)
 
 두 번째 과제의 경우 'shallow tower'를 통해 selection bias를 조절하고자 하였습니다.
 영상의 추천 랭킹 순위와 device id 등 여러 feature를 'shallow tower'라는 함수를 통해 selection bias를 만들어 냈고, 이러한 feature는 missing value로 간주하여 높은 랭킹에 페널티를 주는 방식을 적용하였습니다.
