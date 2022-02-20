@@ -1,363 +1,136 @@
 ---
 layout: post 
-title: "[REST API 서버] wsgi로 Apache, Flask 연동하기"
-authors: [sheele41]
-tags: ["apache", "flask", "wsgi"]
-image: https://oasisfores.com/wp-content/uploads/2020/09/1_MS989ztKY9KfRed2J6K4_Q.png
+title: "개체명 인식(Named Entity Recognition, NER)"
+authors: [solbat]
+tags: ["NLP", "NER", "개체명인식"]
+image: ../assets/images/post-Named-Entity-Recognition/taxonomy-of-DL-based-NER.png
 featured: true
 ---
 
-## 시작하기 전에
-
+## 개체명 인식(NER)이란?
 ---
 
-### 이 글의 목적
+**개체명 인식(Named Entity Recognition)**은 말 그대로 문장에서 '이름을 가진 개체(named entity)'를 '인식(recognition)'하는 것을 의미합니다.
 
-나중에 또 같은 삽질을 하지 않도록 과정을 기록
+개체명 인식의 정의는 한국정보통신기술협회가 제공하는 정보통신용어사전에 따르면 다음과 같습니다.
 
-### 독자의 기본 필요 지식 및 유익 분기점
+*미리 정의해 둔 사람, 회사, 장소, 시간, 단위 등에 해당하는 단어(개체명)를 문서에서 인식하여 추출 분류하는 기법. 추출된 개체명은 인명(person), 지명(location), 기관명(organization), 시간(time) 등으로 분류된다. 개체명 인식(NER)은 정보 추출을 목적으로 시작되어 자연어 처리, 정보 검색 등에 사용된다.*
 
-REST API는 뭐고 API는 뭐에요? → _모르셔도 됩니다._
+*※ 예 : 철수[인명]는 서울역[지명]에서 영희[인명]와 10시[시간]에 만나기로 약속하였다.*
 
-Python은 알겠는데 Apache랑 Flask는 뭐에요? → _Apache랑 Flask를 다른 곳에서 공부하신 뒤 다시 와주세요._
+일반적으로 **개체명(Named Entity, NE)**은 2가지로 분류됩니다.
 
-제 서버에는 Apache도 Python도 Flask도 안 깔려있는데요? → _깔고 와주세요._
+1) **일반적인 개체명(Generic NEs)**으로 인물이나 장소 등의 명칭이 이에 해당합니다.    
+2) **특정 분야 개체명(Domain-specific NEs)**으로 전문 분야의 용어가 이에 해당합니다.
 
-wsgi는 뭔가요? → _일단 모르셔도 됩니다. 글로만 백날 읽어도 난해하기만 할 뿐더러 여기서 직접 해볼거니까요._
+이 글에서는 **일반적인 개체명(Generic NEs)**에 대해서만 다룹니다.
 
-### 서버 환경
 
-Apache, Python, Flask가 깔려있는 Ubuntu 18.04
-
-## Apache와 Flask를 연동한다는 것
-
+## 개체명 인식(NER)의 태깅 시스템
 ---
 
-**WAS? Web Server?**
+데이터셋마다 적용하는 태깅 시스템이 각각 다르지만, 보편적으로 사용되는 태깅 시스템에 대해 소개하고자 합니다.
 
-아직 웹에 익숙하시지 않은 분들은 WAS(Web Application Server, 웹 애플리케이션 서버), Web Server(웹 서버)와 같은 단어들이 헷갈리기만 할 겁니다.
+예를 들어 다음과 같은 문장이 있다고 하겠습니다.
+![sentence1](../assets/images/post-Named-Entity-Recognition/sentence1.png)
 
-내용을 검색해봐도 네모랑 화살표만 가득한 구조도만 줄줄이 나올 뿐이죠.
+이 문장에서 우리는 다음과 같은 3가지 개체명을 찾을 수 있습니다.
+![sentence2](../assets/images/post-Named-Entity-Recognition/sentence2.png)
 
-사람들이 일부러 어렵게 설명하려고 그렇게 적어놓은게 아니라 실제로 말로 설명하려면 그런 내용이 되어버립니다.
+하지만 분석을 위해서 개체명을 단어 별로 토큰화하여 각각 태그를 붙여줘야 합니다.
 
-어차피 봐도 이해 안되는거, 어려운 내용은 접어두고, 까짓거 무작정 앞으로 걸어가봅시다.
+**BIESO 시스템**에서는 여러 개의 토큰으로 이루어진 개체명이 시작할 때 'B(begin)', 토큰이 개체명 중간에 있을 때 'I(inside)', 개체명의 마지막에 위치할 때는 'E(end)'를 붙여줍니다. 개체명이 하나의 토큰으로 이루어져 있을 때는 'S(singleton)'을 붙여줍니다. 토큰이 개체명이 아닐 경우에는 'O(outside)'를 붙여줍니다.
 
-![apache](https://oasisfores.com/wp-content/uploads/2020/09/2.png)
+BIESO 시스템을 위의 예시에 적용해보면 다음과 같습니다.
+![sentence3](../assets/images/post-Named-Entity-Recognition/sentence3.png)
 
-![flask](https://oasisfores.com/wp-content/uploads/2020/09/4.png)
+**BIO 시스템**은 BIESO 시스템에서 E는 I로, S는 B로 단순화하여 표현한 것입니다. 일반적으로 사용되는 태깅 시스템입니다. 
 
-우선 앞서 설명드린대로 여러분들이 Apache와  Flask에 대한 이해가 어느 정도 되어있다는 가정 하에 진행을 하겠습니다.
+BIO 시스템을 위의 예시에 적용해보면 다음과 같습니다.
+![sentence4](../assets/images/post-Named-Entity-Recognition/sentence4.png)
 
-어떻게 보면 **Apache도 웹 페이지를 띄워주는 서버**이고, **Flask도 웹 페이지를 띄워주는 서버**인데 굳이 같은 기능을 하는 두 개를 모두 깔아놓고 '연동' 이라는 것을 할 필요가 있을까요?
 
-**네 있습니다.** Flask만으로는 웹 서버 역할을 하기에는 좀 많이 부족하거든요. (하나의 요청밖에 처리하지 못하고... 느리고...)
-
-그리고 SSL, VirtualHost 같은 Apache의 편리한 기본 기능을 놓친다는 건 굉장히 아깝잖아요? ㅎㅎ
-
-그래서 이렇게 욕심쟁이처럼 **두 기능을 모두 쓰고 싶을 때** 하는 것이 바로 **Apache, Flask의 연동**입니다.
-
-이 경우 **Flask를 httpd 위에 얹는다, 웹 서버를 앞단에 둔다(그림 참조)** 등 여러가지로 표현하기도 합니다. ㅎㅎ
-
-![server](https://oasisfores.com/wp-content/uploads/2020/09/server.png)
-
-## wsgi를 이용하여 Apache, Flask 연동하기
-
+## 개체명 인식(NER) 대표 데이터셋
 ---
 
-아무튼 이제 Apache와 Flask 두 개를 연동해야 한다는 건 알겠는데... 연동은 어떻게 하는 걸까요?
+![NERdataset](../assets/images/post-Named-Entity-Recognition/list-of-annotated-datasets-for-English-NER.png)
+*논문 'A Survey on Deep Learning for Named Entity Recognition'에 제시된 'List of annotated datasets for English NER'*
 
-그 방법이 바로 **wsgi (Web Server Gateway Interface)** 입니다.
+개체명 인식을 위한 대표적인 데이터셋을 소개하고자 합니다. 데이터셋에 따라 NE type의 수가 다릅니다.
 
-wsgi를 검색해보면 이것 저것 어려운 단어들이 많이 나올텐데 일단은 그냥 두 개를 연결해주는 **'프로그램'** 이라고 생각해둡시다.
+영어에는 다음과 같은 데이터셋이 있습니다.
 
-실제로 wsgi는 아래 명령어를 통해 설치해주어야 합니다.
+1. **CoNLL-03**(3개) : PER, ORG, LOC    
 
-### Python 3.x 버전의 경우
 
-```bash
-apt-get install libapache2-mod-wsgi-py3
-```
+2. **OntoNotes5**(18개) : PERSON, NORP, FACILITY, ORGANIZATION, GPE, LOCATION, PRODUCT, EVENT, WORK OF ART, LAW, LANGUAGE, DATE, TIME, PERCENT, MONEY, QUANTITY, ORDINAL, CARDINAL
 
-### Python 2.x 버전의 경우
+한국의 경우, 한국정보기술협회(TTA)에서 내놓은 15개의 카테고리를 한국어 NER 카테고리의 표준으로 제시합니다.    
+: 인물(PS), 학문분야(FD), 이론(TR), 인공물(AF), 기관(OR), 지역(LC), 문명(CV), 날짜(DT), 시간(TI), 수량(QT), 이벤트(EV), 동물(AM), 식물(PT), 물질(MT), 용어(TM)
 
-```bash
-apt-get install libapache2-mod-wsgi
-```
+하지만 실무에서는 데이터셋에 따라 이것을 조금씩 변형하여 사용합니다.
 
-설치가 끝난 뒤에는 꼭 모듈을 enable 시켜주세요.
+1. **국립국어원**(5개) : 장소(LC), 날짜(DT), 기관(OG), 시간(TI), 인물(PS) 
 
-```bash
-a2enmod wsgi
-```
 
-이제 준비도 다 끝났으니 본격적으로 연동을 시작해보죠.
+2. **부산해양대학교 자연어처리 연구소**(10개) : 인물(PER), 기관(ORG), 지명(LOC), 기타(POH), 날짜(DAT), 시간(TIM), 기간(DUR), 통화(MNY), 비율(PNT), 기타 수량표현(NOH)   
 
-아직 wsgi도 뭔지 잘 모르겠고 아리까리하다구요? 당연한겁니다.
 
-백문이불여일견이라고... 이런건 하면서 배우는겁니다 하면서.
+3. **Naver NER Challenge**(14개) : 인물(PER), 학문분야(FLD), 인공물(AFW), 기관 및 단체(ORG), 지역명(LOC), 문명 및 문화(CVL), 날짜(DAT), 시간(TIM), 숫자(NUM), 사건 사고 및 행사(EVT), 동물(ANM), 식물(PLT), 금속/암석/화학물질(MAT), 의학용어/IT관련 용어(TRM)
 
-**우선 자신의 웹 페이지가 위치할 디렉토리에 .py 파일과 .wsgi 파일을 만들어줍니다.**
 
-파일명은 제가 알아서 정한 것들이니 꼭 저게 되어야 하는 것은 아닙니다.
-
-### app.py
-
-```python
-from flask import Flask
-
-app = Flask(\_\_name\_\_)
-
-@app.route("/")
-def hello\_world():
-    return "Good!"
-```
-
-### mywsgi.wsgi
-
-```python
-import sys
-sys.path.insert(0, "웹 페이지 디렉토리 ex) /var/www/html")
-from app import app as application
-```
-
-이때 중요한게 있는데 wsgi 파일의 마지막 라인에서 **from 다음에는 같이 만들어준 .py 파일의 이름**을, **import 다음에는 .py 파일 내부에서 생성해준 Flask 객체의 변수명**을 적어주어야 합니다.
-
-```python
-from <.py File Name> import <Flask Object Name> as application
-```
-
-.py 파일과 .wsgi 파일을 만들어주었다면 다음으로는 **Apache의 VirtualHost 파일들이 존재하는 디렉토리로 이동**합니다.
-
-```bash
-cd /etc/apache2/sites-available/
-```
-
-대충 **자기\_사이트\_주소.conf** 파일을 만들어주고 VirtualHost 내용을 작성해줍니다.
-
-```bash
-vi www.example.com.conf
-```
-
-**첨부된 코드는 아래와 같은 상황을 가정하고 작성된 내용입니다.**
-
-* 사이트 주소 : www.example.com
-
-* 웹 디렉토리 : /var/www/html
-
-* wsgi 파일명 : mywsgi.wsgi
-
-* 프로세스명, 프로세스 그룹명(별 의미 없음) : myflaskapp
-
-* 할당 유저 및 그룹 : www-data / www-data
-
-이때 웬만하면 user와 group은 www-data로 하시기 바랍니다.
-
-권한 문제로 soc 파일을 쓰거나 읽지 못하게 되면 **503 service unavailable** 에러가 발생합니다. ( [https://webmaster.cafe/tools/apache-conf-generator/](https://webmaster.cafe/tools/apache-conf-generator/) 를 이용하시면 편리합니다. )  
-
-### **SSL(https)을 사용하지 않는 경우**
-
-```xml
-<VirtualHost \*:80>
-    ServerName www.example.com
-        
-    WSGIScriptAlias / /var/www/html/mywsgi.wsgi
-    WSGIDaemonProcess myflaskapp user=www-data group=www-data threads=5
-
-    DocumentRoot /var/www/html
-
-    <Directory /var/www/html>
-        WSGIProcessGroup myflaskapp
-        WSGIApplicationGroup %{GLOBAL}
-        WSGIScriptReloading on
-        Options FollowSymLinks MultiViews
-        AllowOverride All
-        require all granted
-
-        php\_value upload\_max\_filesize 10M
-        php\_value post\_max\_size 10M
-
-        php\_value session.cookie\_httponly 1
-        php\_value session.use\_strict\_mode 1
-
-        # php\_value memory\_limit 128M
-        # php\_value max\_execution\_time 30
-        # php\_value max\_input\_time 60
-    </Directory>
-
-    AssignUserID www-data www-data
-
-    ErrorLog ${APACHE\_LOG\_DIR}/www.example.com-error.log
-    CustomLog ${APACHE\_LOG\_DIR}/www.example.com-access.log combined
-
-</VirtualHost>
-```
-
-### **SSL(https)을 사용하는 경우**
-
-```xml
-<VirtualHost \*:80>
-    ServerName www.example.com
-
-    WSGIScriptAlias / /var/www/html/mywsgi.wsgi
-
-    <IfModule mod\_rewrite.c>
-    RewriteEngine on
-
-    RewriteRule ^ - \[E=protossl\]
-    RewriteCond %{HTTPS} on
-    RewriteRule ^ - \[E=protossl:s\]
-
-    RewriteCond %{HTTPS} !=on
-    RewriteRule ^ https://%{HTTP\_HOST}%{REQUEST\_URI} \[L,R=301\]
-
-    </IfModule>
-
-</VirtualHost>
-
-# Specify the SSL cache directory. If possible, use shmcb, otherwise use the provided path.
-SSLStaplingCache shmcb:/var/run/ocsp(128000)
-
-<VirtualHost \*:443>
-    ServerName www.example.com
-
-    DocumentRoot /var/www/html
-
-    WSGIScriptAlias / /var/www/html/mywsgi.wsgi
-    WSGIDaemonProcess myflaskapp user=www-data group=www-data threads=5
-
-    <Directory /var/www/html>
-        WSGIProcessGroup myflaskapp
-        WSGIApplicationGroup %{GLOBAL}
-        WSGIScriptReloading on
-        Options FollowSymLinks MultiViews
-        AllowOverride All
-        require all granted
-
-        # upload\_max\_filesize and post\_max\_size must have the same value.
-        php\_value upload\_max\_filesize 10M
-        php\_value post\_max\_size 10M
-
-        # Enhance session security.
-        php\_value session.cookie\_httponly 1
-        php\_value session.use\_strict\_mode 1
-  
-        # php\_value memory\_limit 128M
-        # php\_value max\_execution\_time 30
-        # php\_value max\_input\_time 60
-    </Directory>
-
-    AssignUserID www-data www-data
-
-    ErrorLog ${APACHE\_LOG\_DIR}/www.example.com-error.log
-    CustomLog ${APACHE\_LOG\_DIR}/www.example.com-access.log combined
-
-    Header always set Strict-Transport-Security "max-age=31536000"
-
-    SSLEngine on
-
-    SSLProtocol all -SSLv2 -SSLv3
-
-    SSLCipherSuite ECDHE-RSA-AES128-GCM-SHA256:ECDHE-ECDSA-AES128-GCM-SHA256:ECDHE-RSA-AES256-GCM-SHA384:ECDHE-ECDSA-AES256-GCM-SHA384:DHE-RSA-AES128-GCM-SHA256:DHE-DSS-AES128-GCM-SHA256:kEDH+AESGCM:ECDHE-RSA-AES128-SHA256:ECDHE-ECDSA-AES128-SHA256:ECDHE-RSA-AES128-SHA:ECDHE-ECDSA-AES128-SHA:ECDHE-RSA-AES256-SHA384:ECDHE-ECDSA-AES256-SHA384:ECDHE-RSA-AES256-SHA:ECDHE-ECDSA-AES256-SHA:DHE-RSA-AES128-SHA256:DHE-RSA-AES128-SHA:DHE-DSS-AES128-SHA256:DHE-RSA-AES256-SHA256:DHE-DSS-AES256-SHA:DHE-RSA-AES256-SHA:AES128-GCM-SHA256:AES256-GCM-SHA384:AES128-SHA256:AES256-SHA256:AES128-SHA:AES256-SHA:AES:CAMELLIA:DES-CBC3-SHA:!aNULL:!eNULL:!EXPORT:!DES:!RC4:!MD5:!PSK:!aECDH:!EDH-DSS-DES-CBC3-SHA:!EDH-RSA-DES-CBC3-SHA:!KRB5-DES-CBC3-SHA
-
-    SSLHonorCipherOrder on
-    SSLCertificateFile "/etc/letsencrypt/live/www.example.com/cert.pem"
-    SSLCertificateKeyFile "/etc/letsencrypt/live/www.example.com/privkey.pem"
-    SSLCertificateChainFile "/etc/letsencrypt/live/www.example.com/chain.pem"
-
-    # Turn on OCSP stapling
-    SSLUseStapling on
-    SSLStaplingResponderTimeout 5
-    SSLStaplingReturnResponderErrors off
-
-</VirtualHost>
-```
-
-중요한 것만 간단하게 설명드리자면 아래와 같습니다. (자세한 내용은 [https://modwsgi.readthedocs.io/en/develop/configuration.html](https://modwsgi.readthedocs.io/en/develop/configuration.html) 참조)
-
-### 사이트 URL/ 접근시 mywsgi.wsgi 파일 참조
-
-```xml
-WSGIScriptAlias / /var/www/html/mywsgi.wsgi
-```
-
-### Flask 프로세스, user, group, thread 설정
-
-```xml
-WSGIDaemonProcess myflaskapp user=www-data group=www-data threads=5
-```
-
-자 이제 힘든건 다 끝났습니다. VirtualHost 파일 작성이 끝났다면 다음 명령어를 통해 **사이트를 enable** 시켜줍니다.
-
-```bash
-a2ensite www.example.com.conf
-```
-
-Apache도 한 번 재시작 해주고.
-
-```xml
-service apache2 restart
-```
-
-자신의 사이트 주소에 접속을 해보면 정상적으로 잘 작동하는 모습을 확인할 수 있습니다.
-
-![ok](https://oasisfores.com/wp-content/uploads/2020/09/6.png)
-
-## TroubleShooting
-
+## 딥러닝을 활용하여 개체명 인식(NER)을 해야하는 이유
 ---
 
-웹 페이지가 정상적으로 나오지 않는다구요?
+1. **자동으로 feature들을 추출하기 때문에 비용이 감소한다.**
 
-그럴 수 있죠... 오히려 되는게 신기한 겁니다.
 
-설정을 한 두개 한 것도 아니고 여러 파일이 복잡하게 얽혀있으니까요...
+2. **비선형 transform으로 복잡한 feature들을 학습할 수 있다.**    
+    : HMM, CRF와 같은 선형 모델과 비교하여 딥러닝 모델은 더 복잡하고 정교한 특성을 학습할 수 있다.
+    
 
-문제를 해결하기 위해서는 로그를 봐야하는데 터미널에는 로그가 코빼기도 안보이네요?
+3. **end-to-end 학습이 가능하다.**    
+    : gradient descent를 통해 일련의 과정을 거치지 않고 오로지 신경망에 학습을 맡길 수 있다.    
+    : 즉, 데이터를 넣어서 바로 결과를 확인할 수 있다.
 
-우선 로그를 띄워봅시다.
 
-아까 작성했던 VirtualHost 파일에서 에러 파일 저장 위치와 파일명을 확인합니다.
-
-```xml
-ErrorLog ${APACHE\_LOG\_DIR}/www.example.com-error.log
-```
-
-그 다음 경로와 파일명에 맞게 명령어를 치면...?
-
-```bash
-tail -f /var/log/apache2/www.example.com-error.log
-```
-
-![error](https://oasisfores.com/wp-content/uploads/2020/09/7.png)
-
-위와 같이 에러가 실시간으로 올라오는 모습을 확인하실 수 있습니다. (종료는 Ctrl + C)
-
-추가) 만약 로그가 잘 뜨지 않는 것 같으면 **.wsgi** 파일을 다음과 같이 변경해보세요.
-
-```python
-import sys
-import logging
-
-logging.basicConfig(stream=sys.stderr)
-sys.path.insert(0, "MY\_WEB\_DIRECTORY")
-from app import app as application
-```
-
-대부분의 문제는 **VirtualHost, wsgi, py 등의 파일 작성 실수, 권한 설정, Python 패키지 설정(venv로 해결)**으로 인해 발생하니 이것들을 우선적으로 확인하면 빠른 문제 해결에 도움이 될겁니다.
-
-## 마치며
-
+## 딥러닝 기반 개체명 인식(NER) 모델의 구조
 ---
 
-이렇게 wsgi를 이용하여 Apache와 Flask를 연동하는 방법을 알아보았는데 어떻게 좀 감이 잡히셨나요? ^^;
+논문[]에서 딥러닝 기반 개체명 인식(NER) 모델의 구조를 다음과 같이 세 단계로 나누어 설명한다.
 
-이래저래 말이 길었지만 결국 **VirtualHost에 wsgi 관련 설정을 해줌으로써 요청이 들어왔을 때 Flask로 넘겨주는 것이 가능**하다는 내용입니다.
+![taxonomy](../assets/images/post-Named-Entity-Recognition/taxonomy-of-DL-based-NER.png)
 
-흐름이죠 결국은...
 
-이제 웹 서버를 앞단에 갖다 놓는다느니, Flask를 httpd에 얹는다느니 하는 아리송한 이야기들이 좀 이해가 가시죠? ㅎㅎ
+1. **Distributed Representations for Input**    
+    : 입력 단어를 저차원의 벡터로 함축시키는 과정    
+    : Pre-trained word embedding, Character-level embedding, POS tag, Gazetteer
+![model-structure1](../assets/images/post-Named-Entity-Recognition/cnn-and-rnn-based-models-for-extracting-character-level-representation.png)
 
-전문적이고 정확하지는 않아도 최대한 이해하기 쉬운 글이 되도록 노력해보았습니다.
 
-부디 여러분들에게 도움이 되었으면 좋겠네요. 긴 글 읽어주셔서 감사합니다. ^^
+2. **Context Encoder** (for capturing contextual dependencies for tag decoder)    
+    : 문맥 정보를 추출하여 담아내는 과정    
+    : CNN, RNN, Language model, Transformer
+![model-structure2](../assets/images/post-Named-Entity-Recognition/rnn-based-context-encoder.png)
+
+
+3. **Tag Decoder** (for predicting labels of words in the given sequence)    
+    : context-dependent representation을 입력으로 하고, 입력 시퀀스에 대한 태그를 붙이는 과정    
+    : Softmax, CRF, RNN, Point network    
+![model-structure3](../assets/images/post-Named-Entity-Recognition/tag-decoders.png)
+
+
+## 각 모델 간의 성능 비교
+---
+
+논문[1]에 정리된 성능 비교표를 마지막으로 글을 마치도록 하겠습니다.
+
+
+![summary](../assets/images/post-Named-Entity-Recognition/summary-of-recent-works-on-neural-NER.png)
+*Summary of recent works on neural NER*
+
+
+## 참고자료
+---
+
+1. https://arxiv.org/abs/1812.09449
