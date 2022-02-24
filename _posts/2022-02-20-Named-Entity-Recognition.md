@@ -54,7 +54,7 @@ BIO 시스템을 위의 예시에 적용해보면 다음과 같습니다.
 ---
 
 ![NERdataset](../assets/images/post-Named-Entity-Recognition/list-of-annotated-datasets-for-English-NER.png)
-*논문 'A Survey on Deep Learning for Named Entity Recognition'에 제시된 'List of annotated datasets for English NER'*
+*논문[1] 'A Survey on Deep Learning for Named Entity Recognition'에 제시된 'List of annotated datasets for English NER'*
 
 개체명 인식을 위한 대표적인 데이터셋을 소개하고자 합니다. 데이터셋에 따라 NE type의 수가 다릅니다.
 
@@ -82,22 +82,22 @@ BIO 시스템을 위의 예시에 적용해보면 다음과 같습니다.
 ## 딥러닝을 활용하여 개체명 인식(NER)을 해야하는 이유
 ---
 
-1. **자동으로 feature들을 추출하기 때문에 비용이 감소한다.**
+1. **자동으로 feature들을 추출하기 때문에 비용이 감소합니다.**
 
 
-2. **비선형 transform으로 복잡한 feature들을 학습할 수 있다.**    
-    : HMM, CRF와 같은 선형 모델과 비교하여 딥러닝 모델은 더 복잡하고 정교한 특성을 학습할 수 있다.
+2. **비선형 transform으로 복잡한 feature들을 학습할 수 있습니다.**    
+    : HMM, CRF와 같은 선형 모델과 비교하여 딥러닝 모델은 더 복잡하고 정교한 특성을 학습할 수 있습니다.
     
 
 3. **end-to-end 학습이 가능하다.**    
-    : gradient descent를 통해 일련의 과정을 거치지 않고 오로지 신경망에 학습을 맡길 수 있다.    
-    : 즉, 데이터를 넣어서 바로 결과를 확인할 수 있다.
+    : gradient descent를 통해 일련의 과정을 거치지 않고 오로지 신경망에 학습을 맡길 수 있습니다.    
+    : 즉, 데이터를 넣어서 바로 결과를 확인할 수 있습니다.
 
 
 ## 딥러닝 기반 개체명 인식(NER) 모델의 구조
 ---
 
-논문[]에서 딥러닝 기반 개체명 인식(NER) 모델의 구조를 다음과 같이 세 단계로 나누어 설명한다.
+논문[1]에서 딥러닝 기반 개체명 인식(NER) 모델의 구조를 다음과 같이 세 단계로 나누어 설명합니다.
 
 ![taxonomy](../assets/images/post-Named-Entity-Recognition/taxonomy-of-DL-based-NER.png)
 
@@ -133,4 +133,4 @@ BIO 시스템을 위의 예시에 적용해보면 다음과 같습니다.
 ## 참고자료
 ---
 
-1. https://arxiv.org/abs/1812.09449
+1. [https://arxiv.org/abs/1812.09449](https://arxiv.org/abs/1812.09449)
