@@ -123,7 +123,7 @@ BIO 시스템을 위의 예시에 적용해보면 다음과 같습니다.
 ## 각 모델 간의 성능 비교
 ---
 
-논문[1]에 정리된 성능 비교표를 마지막으로 글을 마치도록 하겠습니다.
+논문[1]에 정리된 성능 비교표를 마지막으로 글을 마치도록 하겠습니다!
 
 
 ![summary](../assets/images/post-Named-Entity-Recognition/summary-of-recent-works-on-neural-NER.png)
