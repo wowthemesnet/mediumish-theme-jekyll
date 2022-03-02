@@ -63,6 +63,7 @@ android {
 
 
 ### Activity에서 설정
+
 ```kotlin
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
@@ -87,6 +88,7 @@ class MainActivity : AppCompatActivity() {
 원래는 R.layout.activity_main을 넘겨주지만 이번에는 우리가 생성한 루트 뷰를 넘겨준다.
 
 ### 바인딩 클래스 이름 규칙
+
 바인딩 클래스 이름은 규칙이 정해져 있다.  
 
 | Activity 이름  | Binding 클래스 이름  |
@@ -103,6 +105,7 @@ binding.button2.setBackgroundColor(Color.BLACK)
 ```
 
 ### Fragment에서 설정
+
 ```kotlin
 class BlankFragment : Fragment() {
  
@@ -148,6 +151,3 @@ Activity 와 다른 점은 **onDestroyView** 에서 **binding** 에 **null** 을
 
 안드로이드 생태계는 최근 1,2년간 굉장히 급변하고 있다. 불과 1년 전에 나온 책으로 공부해도 수 많은 요소들이 deprecated 되어 그 책을 유물로 만들어 버린다.  
 모바일 앱 생태계에서 살아남는 법은 꾸준히 공부하고 뒤쳐지지 않는 것임을 또 한번 느끼는 순간이다.
-
-
-
