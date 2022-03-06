@@ -302,6 +302,15 @@ happiesoo41:
   member: true
   alumni: false
   web:
+YubeenSon:
+  name: 손유빈
+  display_name: 유빈
+  email: s49451392@gmail.com
+  github: YubeenSon
+  role: core
+  member: true
+  alumni: false
+  web:
 kstew16:
   name: 태은우
   display_name: 은우
@@ -347,15 +356,6 @@ rxdcxdrnine:
   display_name: 창구
   email: rkckr1@naver.com
   github: rxdcxdrnine
-  role: normal
-  member: true
-  alumni: false
-  web:
-YubeenSon:
-  name: 손유빈
-  display_name: 유빈
-  email: s49451392@gmail.com
-  github: YubeenSon
   role: normal
   member: true
   alumni: false
