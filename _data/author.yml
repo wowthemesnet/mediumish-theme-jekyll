@@ -230,6 +230,15 @@ sejkimm:
   member: false
   alumni: false
   web:
+keepproceeding:
+  name: 오원진
+  display_name: 원진
+  email: jason7655@naver.com
+  github: keepproceeding
+  role: normal
+  member: false
+  alumni: true
+  web: https://keepproceeding.github.io
 
 # - - - - - - - - - - -
 
@@ -275,15 +284,6 @@ poiu694:
   member: true
   alumni: false
   web: 
-YubeenSon:
-  name: 손유빈
-  display_name: 유빈
-  email: s49451392@gmail.com
-  github: YubeenSon
-  role: core
-  member: true
-  alumni: false
-  web:
 iju1633:
   name: 임재욱
   display_name: 재욱
@@ -331,6 +331,15 @@ ms9648:
   alumni: false
   blog_team: true
   web:
+custardcream98:
+  name: 박시우
+  display_name: 시우
+  email: custardcream@kakao.com
+  github: custardcream98
+  role: core
+  member: true
+  alumni: false
+  web:
 
 # GDSC MEMBER
 rxdcxdrnine:
@@ -342,33 +351,15 @@ rxdcxdrnine:
   member: true
   alumni: false
   web:
-keepproceeding:
-  name: 오원진
-  display_name: 원진
-  email: jason7655@naver.com
-  github: keepproceeding
+YubeenSon:
+  name: 손유빈
+  display_name: 유빈
+  email: s49451392@gmail.com
+  github: YubeenSon
   role: normal
   member: true
   alumni: false
-  web: https://keepproceeding.github.io
-gganada:
-  name: 신정한
-  display_name: 정한
-  email: soccersinjun@gmail.com
-  github: gganada 
-  role: normal
-  member: true
-  alumni: false
-  web: 
-aerojohn1223:
-  name: 황보겸
-  display_name: 겸
-  email: johnhwangbo17@gmail.com
-  github: aerojohn1223
-  role: normal
-  member: true
-  alumni: false
-  web: 
+  web:
 kir3i:
   name: 유시온
   display_name: 시온
@@ -388,15 +379,6 @@ hyehyeonmoon:
   alumni: false
   blog_team: true
   web: 
-owao:
-  name: 염정윤
-  display_name: 정윤
-  email: kori0423@naver.com
-  github: owao
-  role: normal
-  member: true
-  alumni: false
-  web:
 pasly0920:
   name: 정인우
   display_name: 인우
@@ -435,10 +417,55 @@ solbat:
   web:
 jminie-o8o:
   name: 정현우
-  display_name: 정현우
+  display_name: 현우
   email: jminie@naver.com
   github: jminie-o8o
   role: normal
   member: true
   alumni: false
   web:
+SSUHYUNKIM:
+  name: 김수현
+  display_name: 수현
+  email: yellosuhyun@naver.com
+  github: SSUHYUNKIM
+  role: normal
+  member: true
+  alumni: false
+  web:
+tnghd5761:
+  name: 강수홍
+  display_name: 수홍
+  email: tnghd5761@gmail.com
+  github: tnghd5761
+  role: normal
+  member: true
+  alumni: false
+  web:
+hjm507:
+  name: 황진민
+  display_name: 진민
+  email: hjm507@naver.com
+  github: hjm507
+  role: normal
+  member: true
+  alumni: false
+  web:
+qf9ar8nv:
+  name: 차현철
+  display_name: 현철
+  email: ckguscjf0@gmail.com
+  github: qf9ar8nv
+  role: normal
+  member: true
+  alumni: false
+  web: https://velog.io/@qf9ar8nv
+dghg:
+  name: 강동형
+  display_name: 동형
+  email: donghyeongzz@gmail.com
+  github: dghg
+  role: normal
+  member: true
+  alumni: false
+  web: 
