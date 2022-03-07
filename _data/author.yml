@@ -239,6 +239,33 @@ keepproceeding:
   member: false
   alumni: true
   web: https://keepproceeding.github.io
+kir3i:
+  name: 유시온
+  display_name: 시온
+  email: kirei7091@gmail.com
+  github: kir3i
+  role: normal
+  member: false
+  alumni: true
+  web: https://velog.io/@kir3i
+owao:
+  name: 염정윤
+  display_name: 정윤
+  email: kori0423@naver.com
+  github: owao
+  role: normal
+  member: false
+  alumni: true
+  web:
+aerojohn1223:
+  name: 황보겸
+  display_name: 겸
+  email: johnhwangbo17@gmail.com
+  github: aerojohn1223
+  role: normal
+  member: false
+  alumni: true
+  web:
 
 # - - - - - - - - - - -
 
@@ -360,15 +387,6 @@ rxdcxdrnine:
   member: true
   alumni: false
   web:
-kir3i:
-  name: 유시온
-  display_name: 시온
-  email: kirei7091@gmail.com
-  github: kir3i
-  role: normal
-  member: true
-  alumni: false
-  web: https://velog.io/@kir3i
 hyehyeonmoon:
   name: 문혜현
   display_name: 혜현
