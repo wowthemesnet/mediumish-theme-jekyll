@@ -347,16 +347,6 @@ kstew16:
   member: true
   alumni: false
   web:
-EGGHEADIARY:
-  name: 서보미
-  display_name: 보미
-  email: eggheadiary@gmail.com
-  github: EGGHEADIARY
-  role: core
-  member: true
-  alumni: false
-  blog_team: true
-  web:
 ms9648:
   name: 김민서
   display_name: 민서
