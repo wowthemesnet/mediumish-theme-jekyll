@@ -11,7 +11,7 @@ featured: true
 > 2022년 웹 개발 트렌드 PWA?
 
 스마트폰에서 앱은 우리 일상생활에서 큰 역할을 하고 있으며 많은 비중을 차지하고 있습니다.  
-그와 함께 **네이티브 앱(native app, 플랫폼의 OS에 맞는 언어로 제작된 앱)**의 시대도 함께 찾아왔습니다.  
+그와 함께 **네이티브 앱(native app, 플랫폼의 OS에 맞는 언어로 제작된 앱)** 의 시대가 찾아왔습니다.  
 앱은 계속해서 우리들의 일상에서 중요한 역할을 하고 있습니다. 하지만 **네이티브 앱**을 개발하고 유지 보수하는 것은 상당히 길고 복잡한 과정이며, 큰 비용이 드는 경우도 많습니다.  
 이런 이유로 기존에 웹사이트를 운영하고 있는 기업들은 우리가 웹에서 사용하는 기술과 **네이티브 앱**의 장점을 결합합니다. 그것이 바로 **프로그레시브 웹 앱(progressive web app)**, 줄여서 **PWA**라고 부르는 것입니다.
 
@@ -19,12 +19,12 @@ featured: true
 
 ## PWA란 무엇인가?
 
-**PWA**는 **'Progressive Web App'**의 줄인 말로, 모바일 사이트에서 네이티브 앱과 같은 사용자 경험을 제공하는 웹과 앱 모두의 장점을 결합한 제품입니다.  
-**PWA**는 우리 모두가 알고 있고 좋아하는 `HTML`, `CSS`, `JavaScript`와 같은 웹 기술로 만드는 앱입니다.
+**PWA**는 **'Progressive Web App'** 의 줄인 말로, 모바일 사이트에서 **네이티브 앱**과 같은 사용자 경험을 제공하는 웹과 앱 모두의 장점을 결합한 제품입니다.  
+**PWA**는 우리 모두가 알고 있고 좋아하는 `HTML`, `CSS`, `JavaScript`와 같은 웹 기술로 만드는 앱입니다.  
 몇 가지의 스마트한 기능들을 추가하면, 세상의 그 어떤 웹사이트라도 **PWA**로 바꿀 수 있습니다.  
 즉, **네이티브 앱**을 개발하는 것은 상당히 어렵지만, **PWA**는 훨씬 더 빠르게 개발할 수 있다는 것입니다. 또한, 푸시 알림이나 오프라인 지원과 같은 **네이티브 앱**의 특징들도 전부 제공할 수 있습니다.  
 
-![image](../assets/images/post-progressive-web-app/twiter.jpg)
+![image](../assets/images/post-progressive-web-app/twitter.jpg)
 
 우리가 온라인에서 볼 수 있는 많은 사이트들도 실제로는 **PWA**입니다. 예로 [트위터](twitter.com)가 대표적입니다.  
 스마트폰에 저장된 트위터 사이트를 열어 보면, 모양도 **네이티브 앱**처럼 보이고, 기능도 모두 똑같습니다. 아이폰이든 안드로이드 스마트폰이든 관계없이, 실행하는 데 있어서는 아무런 차이도 없습니다. 그냥 로그인을 해서 이용하기만 하면 됩니다.  
@@ -39,10 +39,13 @@ featured: true
 
 * **HTTPS**
   * **PWA**는 `HTTPS`를 전제로 한 기술입니다.
-  * 신뢰할 수 있는 연결 상태에서만 동작하기 때문에, 보안 연결을 통해서 서비스를 제공해야 합니다. 이건 단지 보안상의 이유 때문만은 아니고, 사용자들의 신뢰를 얻기 위해서도 아주 중요한 부분입니다.
+  * 신뢰할 수 있는 연결 상태에서만 동작하기 때문에, 보안 연결을 통해서 서비스를 제공해야 합니다.
+  * 이건 단지 보안상의 이유 때문만은 아니고, 사용자들의 신뢰를 얻기 위해서도 아주 중요한 부분입니다.  
+
 * **[service worker(서비스 워커)](https://developer.mozilla.org/en-US/docs/Web/Progressive_web_apps/Offline_Service_workers)**
   * 서비스 워커는 백그라운드에서 실행되는 스크립트입니다.
   * 서비스 워커는 네트워크와 관련된 요청의 처리를 도와주기 때문에, 더욱 복잡한 작업을 수행할 수 있습니다.
+
 * **manifest file**
   * 이것은 `JSON`(용량이 작은 데이터를 교환하기 위한 형식) 파일이며, **PWA**가 표시되고 기능하는 방식에 대한 정보들이 포함되어 있는 것입니다.
   * 여기에서는 **PWA**의 이름, 설명, 아이콘, 색상 등을 지정할 수 있습니다.
@@ -165,12 +168,12 @@ safari 브라우저에서는 이를 지원하지 않아 `head`에 다음과 같은 태그를 추가하여 브
 ## PWA는 어떻게 설정하는가?
 
 여러분이 직접 간단한 **PWA**를 만들어 볼 수 있는 리소스들은 많이 있습니다.  
-구글은 자신들의 [웹 데브(web-dev)](https://web.dev/progressive-web-apps/) 사이트에 PWA에 대해서 쉽게 따라 해 볼 수 있는 훌륭한 교육자료들을 많이 올려놓고 있습니다.  
-[모질라(Mozilla)](https://developer.mozilla.org/en-US/docs/Web/Progressive_web_apps)는 PWA 개발에 대한 방대한 문서들을 갖고 있습니다.  
-[마이크로소프트](https://docs.microsoft.com/ko-kr/microsoft-edge/progressive-web-apps-chromium/) 역시 PWA 개발과 관련한 문서들을 풍부하게 보유하고 있습니다.  
-마이크로소프트는 또한 [PWA 빌더(PWABuilder)](https://www.pwabuilder.com/)라는 도구도 만들었는데, 이걸 이용하면 여러분의 사이트를 PWA로 바꿀 수 있습니다.  
-[워드프레스(WordPress)](https://wordpress.org/plugins/pwa/)의 플러그인을 이용해서 PWA를 만드는 방법도 있습니다.  
-또한, 구글은 워드프레스의 코어(Core)에서 PWA를 기본적으로 지원하기 위해서 작업을 하고 있습니다.
+구글은 자신들의 [웹 데브(web-dev)](https://web.dev/progressive-web-apps/) 사이트에 **PWA**에 대해서 쉽게 따라 해 볼 수 있는 훌륭한 교육자료들을 많이 올려놓고 있습니다.  
+[모질라(Mozilla)](https://developer.mozilla.org/en-US/docs/Web/Progressive_web_apps)는 **PWA** 개발에 대한 방대한 문서들을 갖고 있습니다.  
+[마이크로소프트](https://docs.microsoft.com/ko-kr/microsoft-edge/progressive-web-apps-chromium/) 역시 **PWA** 개발과 관련한 문서들을 풍부하게 보유하고 있습니다.  
+마이크로소프트는 또한 [PWA 빌더(PWABuilder)](https://www.pwabuilder.com/)라는 도구도 만들었는데, 이걸 이용하면 여러분의 사이트를 **PWA**로 바꿀 수 있습니다.  
+[워드프레스(WordPress)](https://wordpress.org/plugins/pwa/)의 플러그인을 이용해서 **PWA**를 만드는 방법도 있습니다.  
+또한, 구글은 워드프레스의 코어에서 **PWA**를 기본적으로 지원하기 위해서 작업을 하고 있습니다.
 
 ## 마치며
 
