@@ -5,6 +5,7 @@ authors: [0inhae0]
 tags: ["Component", "DesignPattern", "Web"]
 image: ../assets/images/post_Component-Design-Pattern/Component Design Pattern.PNG
 featured: true
+
 ---
 
 # 어떻게 하면 똑똑하게 컴포넌트를 짤 수 있을까
@@ -15,7 +16,7 @@ featured: true
 - 설계된 컴포넌트들을 재사용 및 수정할 경우가 많아지면서, 편리한 방법을 찾아나가고 있다.
 - 보다 명확하고  깔끔하며, 이해가 쉬운 코드를 구성하기 위해서 디자인패턴을 사용할 수 있다.
 
-
+</n>
 
 ## Presenter&Container vs Atomic Design Pattern
 
@@ -25,7 +26,7 @@ featured: true
 
 웹 디자인이 점차 발전함에 따라, 우리는 페이지를 디자인하는 것이 아니라 컴포넌트의 구조를 디자인해야합니다.
 
-
+</n>
 
 ### Presenter&Container Component Design Pattern
 
@@ -37,7 +38,7 @@ featured: true
 - 같은 `state`를 다른 container에게 `props`를 내려줌으로써 상태 공유가 가능
 - 동일한 마크업, container 레이아웃(header, footer)는 반복 작성하지 않고, `this.props.children`로 구현 할 수 있습니다.
 
-
+</n>
 
 #### 🔸 Presentational Component
 
@@ -58,9 +59,9 @@ featured: true
   - 즉, 스타일을 사용하지 않음
 - 데이터와 데이터 조작에 관한 함수를 만들어서 present component에 제공
 
+</n>
 
-
-### 정리
+### 🔸 정리
 
 1. **코드의 가독성을 높여준다.**
 
@@ -82,7 +83,7 @@ featured: true
 
    특히, markup 변경에 매우 유연합니다.
 
-
+</n>
 
 ※ 참고자료 : [Dan Abramov의 글](https://medium.com/@dan_abramov/smart-and-dumb-components-7ca2f9a7c7d0) _ Present&Container를 처음 가져왔을 때 작성
 
@@ -94,15 +95,15 @@ featured: true
 
 ![atomic-design-pattern](../assets/images/post_Component-Design-Pattern/atomic-design-pattern.png)
 
-*원자 > 분자 > 유기체 > 템플릿 > 페이지*
+> 원자 > 분자 > 유기체 > 템플릿 > 페이지
 
-
+</n>
 
 말 그래도 작은 단위의 컴포넌트를 재사용성이 강하고, 단단하게 잘 설계함으로서 점진적으로 지속적으로 개발하기 용이하게 하는 방식이다.
 
 웹 프론트 개발에 가장 많이 쓰이는 프레임워크인 Vue, React 모두 컴포넌트 단위로 개발을 진행하기 때문에 이러한 컴포넌트 중심 설계 패턴이 더욱 주목 받게 되었다.(Flutter 또한 마찬가지이다!)
 
-
+</n>
 
 #### 🔹 Atom(원자)
 
@@ -127,7 +128,7 @@ featured: true
 
 #### 🔹 Template(템플릿)
 
-- **컴포넌트(유기체)들의 위치 조정 / 즉, 페이지의 그리드를 정해주는 역할 **
+- **컴포넌트(유기체)들의 위치 조정 / 즉, 페이지의 그리드를 정해주는 역할**
 - 단, 템플릿에는 Styling이나 Color는 들어가지 않음
 
 #### 🔹 Page(페이지)
@@ -135,7 +136,7 @@ featured: true
 - 사용자에게 보이는 최종 모습
 - 템플릿에서 완성된 레이아웃에 실제 데이터 혹은 더미데이터를 넣어 만들어짐
 
-
+</n>
 
 #### 간소화된 Atomic Design
 
@@ -143,16 +144,16 @@ featured: true
 
 *[Line Entry의 Atomic Design 적응기](https://www.youtube.com/watch?v=33yj-Q5v8mQ)*
 
-
+</n>
 
 #### Atomic Design 효율 높이는 방법
 
 1. 재사용성을 높이기 위한 **Styled-Component(함수형 컴포넌트)**의 사용
 2. 리액트 사용 시, 컴포넌트 단위의 개발 효율을 높여주는 **Storybook**을 사용
 
+</n>
 
-
-### 정리
+### 🔹 정리
 
 1. **재사용성이 많은 UI 컴포넌트들을 잘 만들어두면**, 추후에 사용하기에 편리하기 때문에 **좋은 Legacy Code**가 생겨나게 됨
    - 원자 단위의 컴포넌트들은 여러 코드에서 **재사용하기 쉬움**
@@ -170,7 +171,7 @@ featured: true
 6. 부모로부터 하위 컴포넌트에게 스타일을 지정하는 방법이 제한적
 7. **실무에서 주로 쓰는** 컴포넌트 디자인패턴
 
-
+</n>
 
 ※ 참고자료 : [Atomic 디자인 패턴 책 서술자 Brad Frost의 글](https://bradfrost.com/blog/post/atomic-web-design/)
 
