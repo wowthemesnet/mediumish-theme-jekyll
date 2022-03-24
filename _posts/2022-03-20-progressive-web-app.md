@@ -12,7 +12,7 @@ featured: true
 
 스마트폰에서 앱은 우리 일상생활에서 큰 역할을 하고 있으며 많은 비중을 차지하고 있습니다.  
 그와 함께 앱은 계속해서 우리들의 일상에서 중요한 역할을 하고 있습니다. 하지만 **Native App**을 개발하고 유지 보수하는 것은 상당히 길고 복잡한 과정이며, 큰 비용이 드는 경우도 많습니다.  
-이런 이유로 기존에 웹사이트를 운영하고 있는 기업들은 우리가 웹에서 사용하는 기술과 **Native App**의 장점을 결합합니다. 그것이 바로 **Rrogressive Web App**, 줄여서 **PWA**라고 부르는 것입니다.
+이런 이유로 기존에 웹사이트를 운영하고 있는 기업들은 우리가 웹에서 사용하는 기술과 **Native App**의 장점을 결합합니다. 그것이 바로 **Progressive Web App**, 줄여서 **PWA**라고 부르는 것입니다.
 
 이번 포스팅에서는 **PWA**에 대해 알아보도록 하겠습니다.
 
@@ -36,14 +36,14 @@ featured: true
 
 **Native App**을 만들려면 플랫폼 환경에 맞는 언어(Android : Java, Kotlin / iOS : objective-C, swift)를 배워야 합니다.  
 **PWA**는 다른 언어나 프레임워크를 필요로 하는 것이 아니라 `Javascript` 1개의 언어로 플랫폼(iOS, Android)에 상관없는 앱을 만들 수 있어서 웹 개발자들이 쉽게 접근할 수 있으며, 기존에 개발된 **Web App**에도 쉽게 적용할 수 있습니다.  
-또한, `Vue.js`, `React.js`, `Ember.js`, `Angular.js` 등의 client side framework에도 모두 **PWA**를 지원하기 때문에 손쉽게 **PWA**를 사용하여 개발을 할 수 있습니다.
+또한, `Vue.js`, `React.js`, `Ember.js`, `Angular.js` 등의 Client Side Framework에도 모두 **PWA**를 지원하기 때문에 손쉽게 **PWA**를 사용하여 개발을 할 수 있습니다.
 
 ### 사용자 관점
 
 **Native App**과 **Mobile Web**의 사용률을 비교한 통계 자료를 보면 **Native App**의 사용률이 **Mobile web**에 비해 6.7배 정도 높다고 합니다. **Native App**에서 일반적인 **Web App**이 제공하지 않는 여러 기능을 제공하기 때문입니다.  
-하지만, 필요한 앱을 설치하는데도 Google play store 나 Apple app store에 들어가서 찾고 설치해야 하기 때문에 여간 번거로운 작업이 아닙니다.
+하지만, 필요한 앱을 설치하는데도 Google Play Store 나 Apple App Store에 들어가서 찾고 설치해야 하기 때문에 여간 번거로운 작업이 아닙니다.
 
-그에 비해 **PWA**에서는 home screen icon 추가 기능(바로 가기 아이콘 유사)을 제공하기 때문에 App store 접속 없이 브라우저로 접근하여 손쉽게 앱을 설치할 수 있습니다.
+그에 비해 **PWA**에서는 Home Screen Icon 추가 기능(바로 가기 아이콘 유사)을 제공하기 때문에 App Store 접속 없이 브라우저로 접근하여 손쉽게 앱을 설치할 수 있습니다.
 웹 서핑 도중 자연스럽게 **App**에 대한 노출도를 높임으로써 새로운 설치 가능성을 높여줍니다.
 또한, **PWA**는 **Native App**이 제공하는 대부분의 기능을 제공합니다.  
 
@@ -120,7 +120,7 @@ featured: true
 홈 화면에 추가하면 생길 때 사용할 `icon`을 설정하는 옵션입니다.  
 설정한 `icon` 이미지들은 앱 실행, 작업 전환, 스플래시 화면 등의 장소에 사용하게 됩니다.
 
-safari 브라우저에서는 이를 지원하지 않아 `head`에 다음과 같은 태그를 추가하여 브라우징 이슈를 해결할 수 있습니다.
+Safari 브라우저에서는 이를 지원하지 않아 `head`에 다음과 같은 태그를 추가하여 브라우징 이슈를 해결할 수 있습니다.
 
 ```html
 <link rel="apple-touch-icon" sizes="192x192" href="/images/icons/icon-192x192.png">
@@ -196,7 +196,6 @@ const appShellFiles = [
 ```
 
 먼저, 캐시 이름을 저장할 변수를 생성하고 캐싱을 적용할 파일들을 하나의 배열에 담습니다.  
-**service worker**의 lifecycle은 `register` - `install` - `activate` - `fetch`로 이루어져있습니다.
 
 #### register
 
@@ -243,7 +242,8 @@ self.addEventListener('activate', function(e) {
 });
 ```
 
-`install`이 되고 나면, 바로 `activate` 단계로 진입합니다. 단, 이미 활성화 중인 **Service Worker**가 있는 경우에는 활성화 대기 상태로 남습니다. 왜냐하면 기존의 **Service Worker**가 app을 control 하고 있는데, 중간에 새로운 **Service Worker**가 활성화 돼버린다면 app이 crash 돼버리는 위험이 있기 때문입니다.
+`install`이 되고 나면, 바로 `activate` 단계로 진입합니다. **Service Worker**가 클라이언트를 제어하고 `push`와 `sync`같은 기능적 이벤트를 처리할 준비가 되면 `activate` 이벤트를 받게 됩니다.
+단, 이미 활성화 중인 **Service Worker**가 있는 경우에는 활성화 대기 상태로 남습니다. 왜냐하면 기존의 **Service Worker**가 App을 control 하고 있는데, 중간에 새로운 **Service Worker**가 활성화 돼버린다면 App이 crash 돼버리는 위험이 있기 때문입니다.
 
 #### fetch
 
@@ -294,3 +294,5 @@ self.addEventListener('fetch', function(e) {
 [Lab: Auditing with Lighthouse](https://developers.google.com/web/ilt/pwa/lab-auditing-with-lighthouse#41_create_the_manifest_file)  
 [PWA](https://velog.io/@jduckling_1024/PWA#lighthouse)  
 [Service worker를 사용해 PWA를 오프라인에서 동작하게 만들기](https://developer.mozilla.org/ko/docs/Web/Progressive_web_apps/Offline_Service_workers)  
+[[PWA] 4. Service Worker](https://www.happykoo.net/@happykoo/posts/176)
+[The service worker lifecycle](https://web.dev/service-worker-lifecycle/)  
