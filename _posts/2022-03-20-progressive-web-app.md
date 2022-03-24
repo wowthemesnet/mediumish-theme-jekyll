@@ -11,9 +11,7 @@ featured: true
 > 2022년 웹 개발 트렌드 PWA?
 
 스마트폰에서 앱은 우리 일상생활에서 큰 역할을 하고 있으며 많은 비중을 차지하고 있습니다.  
-그와 함께 **네이티브 앱(native app, 플랫폼의 OS에 맞는 언어로 제작된 앱)** 의 시대가 찾아왔습니다.  
-
-앱은 계속해서 우리들의 일상에서 중요한 역할을 하고 있습니다. 하지만 **네이티브 앱**을 개발하고 유지 보수하는 것은 상당히 길고 복잡한 과정이며, 큰 비용이 드는 경우도 많습니다.  
+그와 함께 앱은 계속해서 우리들의 일상에서 중요한 역할을 하고 있습니다. 하지만 **네이티브 앱**을 개발하고 유지 보수하는 것은 상당히 길고 복잡한 과정이며, 큰 비용이 드는 경우도 많습니다.  
 이런 이유로 기존에 웹사이트를 운영하고 있는 기업들은 우리가 웹에서 사용하는 기술과 **네이티브 앱**의 장점을 결합합니다. 그것이 바로 **프로그레시브 웹 앱(progressive web app)**, 줄여서 **PWA**라고 부르는 것입니다.
 
 이번 포스팅에서는 **PWA**에 대해 알아보도록 하겠습니다.
@@ -29,10 +27,42 @@ featured: true
 우리가 온라인에서 볼 수 있는 많은 사이트들도 실제로는 **PWA**입니다. 예로 [트위터](twitter.com)가 대표적입니다.  
 스마트폰에 저장된 트위터 사이트를 열어 보면, 모양도 **네이티브 앱**처럼 보이고, 기능도 모두 똑같습니다. 아이폰이든 안드로이드 스마트폰이든 관계없이, 실행하는 데 있어서는 아무런 차이도 없습니다. 그냥 로그인을 해서 이용하기만 하면 됩니다.  
 
-이것이 바로 **PWA**로 웹 애플리케이션을 만들 때의 가장 큰 장점이라고 할 수 있습니다.  
-
 ![image](../assets/images/post-progressive-web-app/platform.svg)
 *플랫폼별 앱, 웹 앱 및 프로그레시브 웹 앱의 기능과 도달 범위 비교*
+
+## PWA의 장점
+
+### 개발자 관점
+
+**Native App**을 만들려면 플랫폼 환경에 맞는 언어(Android : Java, Kotlin / iOS : objective-C, swift)를 배워야 합니다.  
+**PWA**는 다른 언어나 프레임워크를 필요로 하는 것이 아니라 `javascript` 1개의 언어로 플랫폼(iOS, Android)에 상관없는 앱을 만들 수 있어서 웹 개발자들이 쉽게 접근할 수 있으며, 기존에 개발된 **Web App**에도 쉽게 적용할 수 있습니다.  
+또한, `Vue.js`, `React.js`, `Ember.js`, `Angular.js` 등의 **client side framework**에도 모두 **PWA**를 지원하기 때문에 손쉽게 **PWA**를 사용하여 개발을 할 수 있습니다.
+
+### 사용자 관점
+
+**Native App**과 **Mobile Web**의 사용률을 비교한 통계 자료를 보면 **Native App**의 사용률이 **Mobile web**에 비해 6.7배 정도 높다고 합니다.  
+하지만, 필요한 앱을 설치하는데도 **Google play store** 나 **Apple app store**에 들어가서 찾고 설치해야 하기 때문에 여간 번거로운 작업이 아닙니다.
+
+그에 비해 **PWA**에서는 **home screen icon** 추가 기능(바로 가기 아이콘 유사)을 제공하기 때문에 **App store** 접속 없이 브라우저로 접근하여 손쉽게 앱을 설치할 수 있습니다.
+웹서핑 도중 자연스럽게 **App**에 대한 노출도를 높임으로써 새로운 설치 가능성을 높여줍니다.
+또한, **PWA**는 **Native App**이 제공하는 대부분의 기능을 제공합니다.  
+
+따라서, **PW**A는 **Mobile Web**과 **Native App**의 장점을 모두 가졌으며, **Mobile Web**의 사용자와 **Native App**의 사용자를 모두 흡수할 수 있는 기술입니다.
+
+## [lighthouse](https://developers.google.com/web/ilt/pwa/lab-auditing-with-lighthouse#41_create_the_manifest_file)
+
+> Lighthouse is an open-source, automated tool for improving the quality of web pages.
+
+**LightHouse**란, 웹앱의 품질을 개선하는 오픈 소스 자동화 도구로, 확인할 URL을 지정하고 페이지에 대한 테스트를 실행한 후 이에 대한 보고서를 작성하게 됩니다.  
+어떤 웹 페이지든 (그것이 공개되었든, 인증이 필요하든) 사용할 수 있습니다.
+
+**Lighthouse**는 성능, **PWA**, 접근성, 모범 사례 및 **SEO**의 5가지 범주를 사용하여 웹사이트의 잠재력을 측정합니다. 0에서 100 사이의 성능 점수를 제공하여 이러한 각 범주를 개별적으로 검토합니다.
+
+![image](../assets/images/post-progressive-web-app/lighthousesuccess.png)
+*모바일 설치 가능시 LightHouse에 뜨는 화면*
+
+![image](../assets/images/post-progressive-web-app/lighthousefail.png)
+*모바일 설치 불가능시 LightHouse에 뜨는 화면 - reasons을 누르면 이유를 알 수 있음*
 
 ## PWA의 세 가지 구성요소
 
@@ -41,9 +71,9 @@ featured: true
 * **HTTPS**
   * **PWA**는 `HTTPS`를 전제로 한 기술입니다.
   * 신뢰할 수 있는 연결 상태에서만 동작하기 때문에, 보안 연결을 통해서 서비스를 제공해야 합니다.
-  * 이건 단지 보안상의 이유 때문만은 아니고, 사용자들의 신뢰를 얻기 위해서도 아주 중요한 부분입니다.  
+  * 로컬에서는 `http`를 사용해도 무방하지만 서버에 배포할 때는 `https`를 사용해야 **Service Worker**를 사용할 수 있습니다.
 
-* **[service worker(서비스 워커)](https://developer.mozilla.org/en-US/docs/Web/Progressive_web_apps/Offline_Service_workers)**
+* **[Service Worker(서비스 워커)](https://developer.mozilla.org/en-US/docs/Web/Progressive_web_apps/Offline_Service_workers)**
   * 서비스 워커는 백그라운드에서 실행되는 스크립트입니다.
   * 서비스 워커는 네트워크와 관련된 요청의 처리를 도와주기 때문에, 더욱 복잡한 작업을 수행할 수 있습니다.
 
@@ -69,6 +99,7 @@ featured: true
       "sizes": "192x192"
     }
   ],
+  "prefer_related_applications": true,
   "start_url": "/?source=pwa",
   "background_color": "#3367D6",
   "display": "standalone",
@@ -77,19 +108,14 @@ featured: true
 }
 ```
 
-### name, short_name
+### name, short_name(필수)
 
 * **name**
   * 웹을 설치하게 되면 `icon`에 표시되는 이름입니다.
 * **short_name**
   * 사용자의 홈 화면이나 `name`을 보여주기에는 제한적인 장소에서 표시되는 이름입니다.
 
-```JSON
-"short_name": "Weather",
-"name": "Weather: Do I need an umbrella?"
-```
-
-### display
+### display(필수)
 
 ![image](../assets/images/post-progressive-web-app/display.png)
 *PWA가 메인 스크린에서 실행됨(왼쪽), 메인 스크린에서 독립형 모드로 실행됨(중간), 메인 스크린에서 전체 화면 모드로 시작됨(오른쪽)*
@@ -104,29 +130,10 @@ featured: true
 |fullscreen|상태 표시줄도 제외한 전체 화면으로 보여줍니다. (ex 게임)|
 |minimul-ui|fullscreen 과 비슷하지만 뒤로 가기, 새로고침 등 최소한의 영역만 제공합니다.(모바일 크롬 전용)|
 
-```JSON
-"display": "standalone"
-```
-
-### icons
+### icons(필수)
 
 홈 화면에 추가하면 생길 때 사용할 아이콘을 설정하는 옵션입니다.  
 설정한 아이콘 이미지들은 앱 실행, 작업 전환, 스플래시 화면 등의 장소에 사용하게 됩니다.
-
-```JSON
-"icons": [ 
-    {
-      "src": "/images/icons-vector.svg",
-      "type": "image/svg+xml",
-      "sizes": "512x512"
-    },
-    {
-      "src": "/images/icons-192.png",
-      "type": "image/png",
-      "sizes": "192x192"
-    }
-  ]
-```
 
 safari 브라우저에서는 이를 지원하지 않아 `head`에 다음과 같은 태그를 추가하여 브라우징 이슈를 해결할 수 있습니다.
 
@@ -135,40 +142,121 @@ safari 브라우저에서는 이를 지원하지 않아 `head`에 다음과 같�
 <link rel="apple-touch-icon" sizes="512x512" href="/images/icons/icon-512x512.png">
 ```
 
-### start_url
+### start_url(필수)
 
 홈 화면에 설치한 앱을 시작할 때 처음에 시작할 위치를 지정합니다.
 
-```JSON
-"start_url": "/?source=pwa"
-```
+### prefer_related_applications(필수)
+
+웹앱과 네이티브 앱 사이의 우선순위 결정합니다. (false가 default이며 true로 변경하면 사용자 에이전트가 앱의 설치를 권장한다.)
 
 ### theme_color
 
 상단부의 테마 부분의 색상을 지정할 수 있습니다. 해당 색상은 `hex`로 지정합니다.
 
-```JSON
-"theme_color": "#3367D6"
-```
-
 ### background_color
 
 웹이 처음 시작될 때 `splashScreen`에서 사용됩니다. 값으로는 `hex` 값을 넣어줄 수 있습니다.
 
-```JSON
-"background_color": "#3367D6"
-```
-
 ### splashScreen
+
+![image](../assets/images/post-progressive-web-app/splashscreen.png)
 
 스플래시 화면은 앱이 시작될 때 브라우저에서 초기 콘텐츠의 렌더링이 끝날 때까지의 잠시 동안 띄워주는 화면입니다.  
 스플래시 이미지는 따로 설정하지 않고 `name`, `background_color`, `icons` 설정이 되어있으면 이를 조합하여 보여주게 됩니다.
 
-![image](../assets/images/post-progressive-web-app/splashscreen.png)
+### manifest.json 작성 완료 후
 
-## PWA는 어떻게 설정하는가?
+```html
+<link rel="manifest" href="manifest.json" crossorigin="use-credentials">
+```
 
-여러분이 직접 간단한 **PWA**를 만들어 볼 수 있는 리소스들은 많이 있습니다.  
+해당 코드를 index.html의 헤더 부분에 넣어주면 됩니다.
+
+## service-worker.js
+
+```javascript
+const CACHE_NAME = 'cache-v2';
+
+const FILES_TO_CACHE = [
+  'offline.html',
+];
+
+// 나머지 코드는 아래에 설명과 함께 있습니다.
+```
+
+### 사용 전 작성 코드
+
+```html
+  <script>
+    if ('serviceWorker' in navigator) {
+      navigator.serviceWorker.register('service-worker.js').then((reg) => console.log('Service worker registered.', reg));
+    }
+  </script>
+```
+
+해당 코드를 `index.html`에 추가해 줘야 하는데, 이는 `service-worker.js` 안의 서비스 워커를 실행하겠다는 뜻입니다.
+
+### install
+
+```javascript
+self.addEventListener('install', (evt) => {
+    evt.waitUntil(
+        caches.open(CACHE_NAME).then((cache) => {
+            console.log('install');
+            return cache.addAll(FILES_TO_CACHE);
+        }),
+    );
+});
+```
+
+캐시를 초기화하고 오프라인을 위한 파일들을 추가할 수 있습니다.
+
+`waitUntil` - **Service Worker**는 `waitUntil` 안의 코드가 실행되기 전까지는 설치되지 않습니다.  
+`caches` - 데이터를 저장할 수 있도록 주어진 **Service Worker**의 범위 내에서 사용할 수 있는 특별한 객체입니다.
+
+### activate
+
+```javascript
+self.addEventListener('activate', (evt) => {
+    evt.waitUntil(
+        caches.keys().then((keyList) => {
+            return Promise.all(keyList.map((key) => {
+                if (key !== CACHE_NAME) {
+                    console.log('Removing old cache', key);
+                    return caches.delete(key);
+                }
+            }));
+        }),
+    );
+});
+```
+
+더 이상 필요하지 않은 파일을 제거하고 앱이 끝난 후 정리하는 데 사용합니다. 최상단에 버전명이 바뀌었을 때 작동하는 코드입니다.
+
+### fetch
+
+```javascript
+self.addEventListener('fetch', (evt) => {
+    if (evt.request.mode !== 'navigate') {
+        return;
+    }
+    evt.respondWith(
+        fetch(evt.request)
+        .catch(() => {
+            return caches.open(CACHE_NAME)
+            .then((cache) => {
+                return cache.match('offline.html');
+            });
+        }),
+    );
+});
+```
+
+네트워크에서 뭔가를 받아올 때 인터넷에 연결되지 않을 경우 캐시에 저장된 것들을 꺼내는 역할을 합니다.
+
+## 간단한 PWA를 만들어 볼 수 있는 리소스들
+
 구글은 자신들의 [웹 데브(web-dev)](https://web.dev/progressive-web-apps/) 사이트에 **PWA**에 대해서 쉽게 따라 해 볼 수 있는 훌륭한 교육자료들을 많이 올려놓고 있습니다.  
 [모질라(Mozilla)](https://developer.mozilla.org/en-US/docs/Web/Progressive_web_apps)는 **PWA** 개발에 대한 방대한 문서들을 갖고 있습니다.  
 [마이크로소프트](https://docs.microsoft.com/ko-kr/microsoft-edge/progressive-web-apps-chromium/) 역시 **PWA** 개발과 관련한 문서들을 풍부하게 보유하고 있습니다.  
@@ -191,3 +279,6 @@ safari 브라우저에서는 이를 지원하지 않아 `head`에 다음과 같�
 [[PWA] 모바일에서 네이티브 앱 경험을 제공하는 Progressive Web Apps](https://codepathfinder.com/entry/PWA-%EB%AA%A8%EB%B0%94%EC%9D%BC%EC%97%90%EC%84%9C-%EB%84%A4%EC%9D%B4%ED%8B%B0%EB%B8%8C-%EC%95%B1-%EA%B2%BD%ED%97%98%EC%9D%84-%EC%A0%9C%EA%B3%B5%ED%95%98%EB%8A%94-Progressive-Web-Apps)  
 [PWA 적용해보기 - manifest 적용](https://blog.woolta.com/categories/3/posts/150)  
 [PWA(Progressive Web Apps) Manifest 만들기](https://uxgjs.tistory.com/225?category=748572)
+[[PWA] 1. Progressive Web Apps 이란?](https://www.happykoo.net/@happykoo/posts/173)  
+[Lab: Auditing with Lighthouse](https://developers.google.com/web/ilt/pwa/lab-auditing-with-lighthouse#41_create_the_manifest_file)  
+[PWA](https://velog.io/@jduckling_1024/PWA#lighthouse)  
