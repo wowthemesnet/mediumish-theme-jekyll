@@ -148,7 +148,7 @@ safari 브라우저에서는 이를 지원하지 않아 `head`에 다음과 같�
 
 ### prefer_related_applications(필수)
 
-웹앱과 네이티브 앱 사이의 우선순위 결정합니다. (false가 default이며 true로 변경하면 사용자 에이전트가 앱의 설치를 권장한다.)
+웹 앱과 네이티브 앱 사이의 우선순위 결정합니다. (false가 default이며 true로 변경하면 사용자 에이전트가 앱의 설치를 권장한다.)
 
 ### theme_color
 
