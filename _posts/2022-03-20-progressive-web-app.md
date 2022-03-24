@@ -59,10 +59,10 @@ featured: true
 **Lighthouse**는 성능, **PWA**, 접근성, 모범 사례 및 SEO의 5가지 범주를 사용하여 웹사이트의 잠재력을 측정합니다. 0에서 100 사이의 성능 점수를 제공하여 이러한 각 범주를 개별적으로 검토합니다.
 
 ![image](../assets/images/post-progressive-web-app/lighthousesuccess.png)
-*모바일 설치 가능시 Lighthouse에 뜨는 화면*
+*모바일 설치 가능 시 Lighthouse에 뜨는 화면*
 
 ![image](../assets/images/post-progressive-web-app/lighthousefail.png)
-*모바일 설치 불가능시 Lighthouse에 뜨는 화면 - reasons을 누르면 이유를 알 수 있음*
+*모바일 설치 불가능 시 Lighthouse에 뜨는 화면 - reasons을 누르면 이유를 알 수 있음*
 
 ## PWA의 세 가지 구성요소
 
@@ -158,7 +158,7 @@ Safari 브라우저에서는 이를 지원하지 않아 `head`에 다음과 같�
 
 웹이 처음 시작될 때 `splashScreen`에서 사용됩니다. 값으로는 `hex` 값을 넣어줄 수 있습니다.
 
-#### splashScreen
+#### splashscreen
 
 ![image](../assets/images/post-progressive-web-app/splashscreen.png)
 
@@ -242,8 +242,8 @@ self.addEventListener('activate', function(e) {
 });
 ```
 
-`install`이 되고 나면, 바로 `activate` 단계로 진입합니다. **Service Worker**가 클라이언트를 제어하고 `push`와 `sync`같은 기능적 이벤트를 처리할 준비가 되면 `activate` 이벤트를 받게 됩니다.
-단, 이미 활성화 중인 **Service Worker**가 있는 경우에는 활성화 대기 상태로 남습니다. 왜냐하면 기존의 **Service Worker**가 App을 control 하고 있는데, 중간에 새로운 **Service Worker**가 활성화 돼버린다면 App이 crash 돼버리는 위험이 있기 때문입니다.
+`install`이 되고 나면, 바로 `activate` 단계로 진입합니다. **Service Worker**가 클라이언트를 제어하고 `push`와 `sync` 같은 기능적 이벤트를 처리할 준비가 되면 `activate` 이벤트를 받게 됩니다.
+단, 이미 활성화 중인 **Service Worker**가 있는 경우에는 활성화 대기 상태로 남습니다. 왜냐하면 기존의 **Service Worker**가 App을 control 하고 있는데, 중간에 새로운 **Service Worker**가 활성화돼버린다면 App이 crash 돼버리는 위험이 있기 때문입니다.
 
 #### fetch
 
@@ -255,8 +255,8 @@ self.addEventListener('fetch', function(e) {
       return r || fetch(e.request).then(function(response) {
                 return caches.open(cacheName).then(function(cache) {
           console.log('[Service Worker] Caching new resource: '+e.request.url);
-          cache.put(e.request, response.clone()); // 캐시에 응답 저장
-          return response; // 응답 반환
+          cache.put(e.request, response.clone()); 
+          return response;
         });
       });
     })
