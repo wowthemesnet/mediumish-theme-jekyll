@@ -99,7 +99,6 @@ featured: true
       "sizes": "192x192"
     }
   ],
-  "prefer_related_applications": true,
   "start_url": "/?source=pwa",
   "background_color": "#3367D6",
   "display": "standalone",
@@ -126,10 +125,6 @@ Safari 브라우저에서는 이를 지원하지 않아 `head`에 다음과 같�
 <link rel="apple-touch-icon" sizes="192x192" href="/images/icons/icon-192x192.png">
 <link rel="apple-touch-icon" sizes="512x512" href="/images/icons/icon-512x512.png">
 ```
-
-#### prefer_related_applications(필수)
-
-**Web App**과 **Native App** 사이의 우선순위 결정합니다. (false가 default이며 true로 변경하면 사용자 에이전트가 앱의 설치를 권장한다.)
 
 #### start_url(필수)
 
@@ -210,11 +205,11 @@ if('serviceWorker' in navigator) {
 #### install
 
 ```javascript
-self.addEventListener('install', function(e) {
-  console.log('[Service Worker] Install');
+self.addEventListener("install", function (e) {
+  console.log("[Service Worker] Install");
   e.waitUntil(
-    caches.open(cacheName).then(function(cache) {
-          console.log('[Service Worker] Caching all: app shell and content');
+    caches.open(cacheName).then(function (cache) {
+      console.log("[Service Worker] Caching all: app shell and content");
       return cache.addAll(contentToCache);
     })
   );
@@ -229,14 +224,16 @@ self.addEventListener('install', function(e) {
 #### activate
 
 ```javascript
-self.addEventListener('activate', function(e) {
+self.addEventListener("activate", function (e) {
   e.waitUntil(
-    caches.keys().then(function(keyList) {
-          return Promise.all(keyList.map(function(key) {
-        if(cacheName.indexOf(key) === -1) {
-          return caches.delete(key);
-        }
-      }));
+    caches.keys().then(function (keyList) {
+      return Promise.all(
+        keyList.map(function (key) {
+          if (cacheName.indexOf(key) === -1) {
+            return caches.delete(key);
+          }
+        })
+      );
     })
   );
 });
@@ -248,20 +245,26 @@ self.addEventListener('activate', function(e) {
 #### fetch
 
 ```javascript
-self.addEventListener('fetch', function(e) {
+self.addEventListener("fetch", function (e) {
   e.respondWith(
-    caches.match(e.request).then(function(r) {
-          console.log('[Service Worker] Fetching resource: '+e.request.url);
-      return r || fetch(e.request).then(function(response) {
-                return caches.open(cacheName).then(function(cache) {
-          console.log('[Service Worker] Caching new resource: '+e.request.url);
-          cache.put(e.request, response.clone()); 
-          return response;
-        });
-      });
+    caches.match(e.request).then(function (r) {
+      console.log("[Service Worker] Fetching resource: " + e.request.url);
+      return (
+        r ||
+        fetch(e.request).then(function (response) {
+          return caches.open(cacheName).then(function (cache) {
+            console.log(
+              "[Service Worker] Caching new resource: " + e.request.url
+            );
+            cache.put(e.request, response.clone());
+            return response;
+          });
+        })
+      );
     })
   );
 });
+
 ```
 
 캐싱 된 리소스를 먼저 찾고, 리소스가 없을 경우 추가로 요청하여 `fetch` 한 후에 캐시에 응답을 저장합니다. 응답은 파일 요청, 캐시 된 사본, 또는 특정 작업을 수행하는 `JavaScript` 코드 조각 등 원하는 어떠한 것도 될 수 있습니다.
