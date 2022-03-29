@@ -1,6 +1,7 @@
 ## 설치 및 설정 방법
 
 * Ruby 2.6 버전 사용할 것
+* Windows download: https://rubyinstaller.org/downloads/ 
 
 ```
 gem install bundler:2.0.1
