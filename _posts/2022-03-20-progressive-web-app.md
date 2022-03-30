@@ -40,7 +40,7 @@ featured: true
 
 ### 사용자 관점
 
-**Native App**과 **Mobile Web**의 사용률을 비교한 통계 자료를 보면 **Native App**의 사용률이 **Mobile web**에 비해 6.7배 정도 높다고 합니다. **Native App**에서 일반적인 **Web App**이 제공하지 않는 여러 기능을 제공하기 때문입니다.  
+**Native App**과 **Mobile Web**의 사용률을 비교한 통계 자료를 보면 **Native App**의 사용률이 **Mobile Web**에 비해 6.7배 정도 높다고 합니다. **Native App**에서 일반적인 **Web App**이 제공하지 않는 여러 기능을 제공하기 때문입니다.  
 하지만, 필요한 앱을 설치하는데도 Google Play Store 나 Apple App Store에 들어가서 찾고 설치해야 하기 때문에 여간 번거로운 작업이 아닙니다.
 
 그에 비해 **PWA**에서는 Home Screen Icon 추가 기능(바로 가기 아이콘 유사)을 제공하기 때문에 App Store 접속 없이 브라우저로 접근하여 손쉽게 앱을 설치할 수 있습니다.
