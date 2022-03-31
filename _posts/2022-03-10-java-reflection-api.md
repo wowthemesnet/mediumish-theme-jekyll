@@ -3,7 +3,7 @@ layout: post
 title:  "Reflection API로 외부에서 private 메소드에 접근하기"
 authors: [kir3i]
 tags: ["Java", "ReflectionAPI"]
-image: 
+image: ../assets/images/post-java-reflection-api/java.png
 description: "Java의 Reflection API로 외부에서 private 메소드를 호출해보자"
 featured: true
 ---
