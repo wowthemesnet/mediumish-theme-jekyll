@@ -39,11 +39,13 @@ All such types of works that need material movement by truck, employment of work
 
 7. No structural alteration (such as breaking of walls), changes to the layout of the apartment or changes to the exterior appearance of the apartments (such as changing of balcony grills, windows or doors)  is allowed. In case of any deviation GOA shall be obliged to penalize the owner and recover the costs for reinstating to the original/sanctioned form.
 
-8. Replacement of tiles/flooring will need prior approval from facility manager to ensure there is no structural damage
+8. GOA reserves the right to visit the apartment from time to time and inspect the works to ensure no works are being taken up that will  impact the safety and aesthetics of the building. 
 
-9. No debris must be left in the common areas. It must be disposed of in the designated debris disposal areas in basements. 
+9. Replacement of tiles/flooring will need prior approval from facility manager to ensure there is no structural damage
 
-10. Use of liquor, drugs, tobacco, pan masala by workers is prohibited.
+10. No debris must be left in the common areas. It must be disposed of in the designated debris disposal areas in basements. If the interior works include any approved civil works by GOA (such as tiles replacement etc.) the debris generated need to be either  transported out by the owner or charges need to be paid to the GOA approved vendors for having it done. 
+
+11. Use of liquor, drugs, tobacco, pan masala by workers is prohibited.
 
 GOA office contacts (9.30AM to 1.30PM and 2.30 to 6PM):    
 salarpuria-greenage+goaoffice@apnacomplex.com.    
