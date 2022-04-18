@@ -183,11 +183,11 @@
     Unit: LAUNDRY - Alpine, Birch, Juniper
     Intercom: 
     Contact1: 9663916274
-    Contact2: 8088273093
+    Contact2: 7760439766
 -
     Unit: LAUNDRY - Oak, Hibiscus, Ginger
     Intercom: 
-    Contact1: 9632731683
+    Contact1: -
     Contact2: 9741056566
 -
     Unit: LAUNDRY - Cedar, Deodar, Ebony
@@ -205,25 +205,20 @@
     Contact1: 8861562005
     Contact2: 9902859257
 -
-    Unit: CAR WASHING - Cedar
+    Unit: CAR WASHING - Cedar & Deodar
     Intercom: 
     Contact1: 9880788384
     Contact2: 7349475384
 -
-    Unit: CAR WASHING - Deodar
-    Intercom: 
-    Contact1: 9880788384
-    Contact2: 7349475384
--
-    Unit: CAR WASHING - Ebony
+    Unit: CAR WASHING - Ebony & Fern
     Intercom: 
     Contact1: 8880999045
     Contact2: 9902167114
 -
-    Unit: CAR WASHING - Hibiscus
+    Unit: CAR WASHING - Hibiscus & Ginger
     Intercom: 
     Contact1: 8792598500
-    Contact2: 7349530251
+    Contact2: 6364816411
 -
     Unit: CAR WASHING - Juniper
     Intercom: 
@@ -253,27 +248,27 @@
     Unit: Apollo Clinic
     Intercom: 
     Contact1: 9121065804
-    Contact2: 
+    Contact2: 6363726001
 -
     Unit: Family Clinic 
     Intercom: 
-    Contact1: 9980289548
-    Contact2: 9902605454
+    Contact1: 9902605454
+    Contact2: -
 -
     Unit: Family Pharmacy
     Intercom: 
     Contact1: 8105855574
-    Contact2: 8105855574
+    Contact2: 6364900826
 -
     Unit: Cuddles Pre-school
     Intercom: 
     Contact1: 7899860728
-    Contact2: 
+    Contact2: -
 -
     Unit: Rasoi Ghar
     Intercom: 
     Contact1: 9886907231
-    Contact2: 9986209271
+    Contact2: 9741560392
 -
     Unit: Desi Cafe
     Intercom: 
@@ -292,7 +287,7 @@
 -
     Unit: Dus Minute
     Intercom: 
-    Contact1: 9986270278
+    Contact1: 9008210537
     Contact2: 9513415500
 -
     Unit: Ayoka Essentials
@@ -308,24 +303,24 @@
     Unit: Mukund Juice Center
     Intercom: 
     Contact1: 7353059857
-    Contact2: 7349641772
--
-    Unit: Tejasvi Boutique
-    Intercom: 
-    Contact1: 7019275014
-    Contact2: 9900264175
--
-    Unit: Relex Pharma (inside dus minute)
-    Intercom: 
-    Contact1: 7032165147
-    Contact2: 8068953234
+    Contact2: -
 -
     Unit: Avya Mega Store 
     Intercom: 
     Contact1: 7004744110
     Contact2: 9934050320
 -
+    Unit: Maamara Designing Studio
+    Intercom: 
+    Contact1: 9980312727
+    Contact2: 9916927810
+-
     Unit: Med World
     Intercom: 
     Contact1: 9743339377
-    Contact2: 804083604
+    Contact2: 9060508049
+-
+    Unit: Hunar Besties
+    Intercom: 
+    Contact1: 9899964347
+    Contact2: -

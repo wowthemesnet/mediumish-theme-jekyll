@@ -253,17 +253,17 @@
     Unit: Apollo Clinic
     Intercom: 
     Contact1: 9121065804
-    Contact2: 9845879244
+    Contact2: 
 -
     Unit: Family Clinic 
     Intercom: 
     Contact1: 9980289548
-    Contact2: 7022196464
+    Contact2: 9902605454
 -
     Unit: Family Pharmacy
     Intercom: 
     Contact1: 8105855574
-    Contact2: 9731059963
+    Contact2: 8105855574
 -
     Unit: Cuddles Pre-school
     Intercom: 
@@ -292,7 +292,7 @@
 -
     Unit: Dus Minute
     Intercom: 
-    Contact1: 9972964987
+    Contact1: 9986270278
     Contact2: 9513415500
 -
     Unit: Ayoka Essentials
@@ -302,8 +302,8 @@
 -
     Unit: Celebrate Life Family Salon & Spa
     Intercom: 
-    Contact1: 9844681243
-    Contact2: 8660798167
+    Contact1: 8660798167
+    Contact2: 9844681243
 -
     Unit: Mukund Juice Center
     Intercom: 
@@ -317,10 +317,15 @@
 -
     Unit: Relex Pharma (inside dus minute)
     Intercom: 
-    Contact1: 9035707662
-    Contact2: 7032165147
+    Contact1: 7032165147
+    Contact2: 8068953234
 -
     Unit: Avya Mega Store 
     Intercom: 
     Contact1: 7004744110
     Contact2: 9934050320
+-
+    Unit: Med World
+    Intercom: 
+    Contact1: 9743339377
+    Contact2: 804083604
