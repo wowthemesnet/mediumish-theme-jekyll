@@ -22,7 +22,7 @@ datatable: true
       </tr>
    </thead>
    <tbody>
-      {% for contact in site.data.contacts %}
+      {% for contact in site.data.contacts_old %}
       <tr>
          <td>{{ contact.Unit }}</td>
          <td>{{ contact.Intercom }}</td>
