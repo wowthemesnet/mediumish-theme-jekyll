@@ -4,7 +4,7 @@ title:  "Newsletter - January 2022"
 author: Admin
 categories: [updates]
 image: assets/images/updates/greenagepic.png
-featured: true
+featured: false
 hidden: true
 comments: false
 ---
