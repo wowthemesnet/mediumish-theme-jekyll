@@ -125,17 +125,18 @@ featured: true
 
 *[Line Entry의 Atomic Design 적응기](https://www.youtube.com/watch?v=33yj-Q5v8mQ)*
 
-</n>
-
 #### Atomic Design 효율 높이는 방법
 
 1. 재사용성을 높이기 위한 **Styled-Component(함수형 컴포넌트)**의 사용
-  - Styled-Component란?
+
+- Styled-Component란?
     : CSS in JS 관련 대표적인 라이브러리
       ES6 및 CSS의 장점을 사용하여 스타일을 지정
       class 선언 없이 컴포넌트에 css를 직접 적용하는 방식
+      
 2.컴포넌트 단위의 개발 효율을 높여주는 **Storybook**을 사용
-  - Storybook이란?
+
+- Storybook이란?
     : UI 컴포넌트와 페이지를 개별적으로 빌드하기 위한 오픈 소스 도구
       UI 개발과 테스트 및 문서화를 간소화해 줌
       네이버에서도 사용 중
@@ -173,4 +174,3 @@ featured: true
 추가로, 리액트에서는 비슷한 로직이 여러 컴포넌트에서 사용될 경우 중복된 로직을 **커스텀 훅**을 만들어 최소화하는 방안이 있다.
 
 어떤 디자인 패턴이 더 옳다고 할 수는 없으며, 각자의 취향과 중요도에 따라 더 적합하다고 판단되는 디자인 패턴을 결정하여 사용하는 것을 추천한다 :)
-
