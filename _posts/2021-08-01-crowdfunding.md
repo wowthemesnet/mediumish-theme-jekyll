@@ -7,8 +7,8 @@ tags: [처음 배우는 그래픽 레코딩, 크라우드펀딩, 텀블벅]
 image: assets/images/crowdfunding/girl-1034421_1920.jpg
 image-caption: 이미지 출처 <a href="https://pixabay.com/ko/users/klimkin-1298145/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=1034421">klimkin</a>
 description: "크라우드펀딩으로 후원하면 손해 보는 건 아닐까 하는 의문에 대하여"
-featured: true
-hidden: true
+featured: false
+hidden: false
 toc: true
 comments: true
 rating: # 1~5까지 점수
