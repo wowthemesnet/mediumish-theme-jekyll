@@ -41,3 +41,8 @@ exclude:
   - .gitignore
   - .DS_Store
   - CONTRIBUTING.md
+
+# MathJax
+lsi: false
+excerpt_separator: "\n\n"
+incremental: false

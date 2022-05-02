@@ -62,6 +62,24 @@
 
       ​
 
+## 블로그 포스팅 수식 사용하는 방법
+md파일 작성 시 use_math:true를 추가해주세요!
+
+[수식 참고 사이트](https://ko.wikipedia.org/wiki/%EC%9C%84%ED%82%A4%EB%B0%B1%EA%B3%BC:TeX_%EB%AC%B8%EB%B2%95#%EA%B5%AC%EB%B3%84_%EB%B6%80%ED%98%B8)
+
+```
+---
+layout: post
+title: 포스팅 제목
+authors: [github 아이디]
+tags: 
+image: 
+featured: true
+use_math: true
+---
+
+```
+
 ## 블로그 author 추가하는 방법(블로그팀만)
 
 1. `_data` 폴더에 `author.yml`을 수정해주세요.
