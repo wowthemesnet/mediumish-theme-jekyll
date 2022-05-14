@@ -1,0 +1,10 @@
+I"+<p><code class="language-plaintext highlighter-rouge">gem install bundler</code> installs the bundler gem through RubyGems. You only need to install it once - not every time you create a new Jekyll project. Here are some additional details:</p>
+
+<p><code class="language-plaintext highlighter-rouge">bundler</code> is a gem that manages other Ruby gems. It makes sure your gems and gem versions are compatible, and that you have all necessary dependencies each gem requires.</p>
+
+<p>The <code class="language-plaintext highlighter-rouge">Gemfile</code> and <code class="language-plaintext highlighter-rouge">Gemfile.lock</code> files inform <code class="language-plaintext highlighter-rouge">Bundler</code> about the gem requirements in your site. If your site doesn’t have these Gemfiles, you can omit <code class="language-plaintext highlighter-rouge">bundle exec</code> and just <code class="language-plaintext highlighter-rouge">run jekyll serve</code>.</p>
+
+<p>When you run <code class="language-plaintext highlighter-rouge">bundle exec jekyll serve</code>, <code class="language-plaintext highlighter-rouge">Bundler</code> uses the gems and versions as specified in <code class="language-plaintext highlighter-rouge">Gemfile.lock</code> to ensure your Jekyll site builds with no compatibility or dependency conflicts.</p>
+
+<p>For more information about how to use <code class="language-plaintext highlighter-rouge">Bundler</code> in your Jekyll project, this tutorial should provide answers to the most common questions and explain how to get up and running quickly.</p>
+:ET

@@ -1,0 +1,28 @@
+I".<p>Review products, books, movies, restaurant and anything you like on your Jekyll blog with Mediumish! JSON-LD ready for review property.</p>
+
+<h4 id="how-to-use">How to use?</h4>
+
+<p>It’s actually really simple! Add the rating in your YAML front matter. It also supports halfs:</p>
+
+<div class="language-html highlighter-rouge"><div class="highlight"><pre class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+</pre></td><td class="rouge-code"><pre>---
+layout: post
+title:  "Inception Movie"
+author: john
+categories: [ Jekyll, tutorial ]
+tags: [red, yellow]
+image: assets/images/11.jpg
+description: "My review of Inception movie. Actors, directing and more."
+rating: 4.5
+---
+</pre></td></tr></tbody></table></code></pre></div></div>
+:ET

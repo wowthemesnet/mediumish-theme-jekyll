@@ -1,0 +1,2 @@
+I"L<p><code class="language-plaintext highlighter-rouge">jekyll new &lt;PATH&gt;</code> installs a new Jekyll site at the path specified (relative to current directory). In this case, Jekyll will be installed in a directory called <code class="language-plaintext highlighter-rouge">myblog</code>. Here are some additional details:</p>
+:ET

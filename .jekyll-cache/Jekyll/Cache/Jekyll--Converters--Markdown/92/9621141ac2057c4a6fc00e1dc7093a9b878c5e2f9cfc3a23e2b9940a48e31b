@@ -1,0 +1,10 @@
+I"v<p><code class="language-plaintext highlighter-rouge">jekyll new &lt;PATH&gt;</code> installs a new Jekyll site at the path specified (relative to current directory). In this case, Jekyll will be installed in a directory called <code class="language-plaintext highlighter-rouge">myblog</code>. Here are some additional details:</p>
+
+<ul>
+  <li>To install the Jekyll site into the directory you’re currently in, run <code class="language-plaintext highlighter-rouge">jekyll new</code> . If the existing directory isn’t empty, you can pass the –force option with jekyll new . –force.</li>
+  <li><code class="language-plaintext highlighter-rouge">jekyll new</code> automatically initiates <code class="language-plaintext highlighter-rouge">bundle install</code> to install the dependencies required. (If you don’t want Bundler to install the gems, use <code class="language-plaintext highlighter-rouge">jekyll new myblog --skip-bundle</code>.)</li>
+  <li>By default, the Jekyll site installed by <code class="language-plaintext highlighter-rouge">jekyll new</code> uses a gem-based theme called Minima. With gem-based themes, some of the directories and files are stored in the theme-gem, hidden from your immediate view.</li>
+  <li>We recommend setting up Jekyll with a gem-based theme but if you want to start with a blank slate, use <code class="language-plaintext highlighter-rouge">jekyll new myblog --blank</code></li>
+  <li>To learn about other parameters you can include with <code class="language-plaintext highlighter-rouge">jekyll new</code>, type <code class="language-plaintext highlighter-rouge">jekyll new --help</code>.</li>
+</ul>
+:ET

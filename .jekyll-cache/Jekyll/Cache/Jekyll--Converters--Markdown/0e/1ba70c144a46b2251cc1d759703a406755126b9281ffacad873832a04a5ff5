@@ -1,0 +1,9 @@
+I"�<table>
+  <tbody>
+    <tr>
+      <td>Sitemap: {{ “sitemap.xml”</td>
+      <td>absolute_url }}</td>
+    </tr>
+  </tbody>
+</table>
+:ET
