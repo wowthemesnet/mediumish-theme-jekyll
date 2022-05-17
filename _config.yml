@@ -1,26 +1,26 @@
 # Site
-name: "Mediumish"
-title: "Mediumish"
-description: "Jekyll template, Medium styled, free for bloggers."
+name: "HDI"
+title: "Humanities Data Inquiry"
+description: "Website of the Humanities Data Inquiry project"
 logo: 'assets/images/logo.png'
 favicon: 'assets/images/logo.png'
 baseurl: /mediumish-theme-jekyll
 google_analytics: 'UA-46278016-1'
-disqus: 'demowebsite'
-mailchimp-list: 'https://wowthemes.us11.list-manage.com/subscribe/post?u=8aeb20a530e124561927d3bd8&amp;id=8c3d2d214b'
+disqus: ''
+mailchimp-list: ''
 include: ["_pages"]
 permalink: /:title/
 
 # Authors
 authors:
   sal:
-    name: Sal
-    display_name: Sal
-    gravatar: e56154546cf4be74e393c62d1ae9f9d4
-    email: wowthemesnet@gmail.com
-    web: https://www.wowthemes.net
-    twitter: https://twitter.com/wowthemesnet
-    description: "Author of Mediumish, a Bootstrap Medium styled template available for WordPress, HTML, Ghost and Jekyll. You are currently previewing Jekyll template demo."
+    name: Daniel O'Donnell
+    display_name: Dan
+    gravatar: 
+    email: daniel.odonnell@uleth.ca
+    web: http://people.uleth.ca/~daniel.odonnell
+    twitter: https://twitter.com/danielPaulOD
+    description: "Professor of English at the University of Lethbridge"
   john:
     name: John
     display_name: John    
