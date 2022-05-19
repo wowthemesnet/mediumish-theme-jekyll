@@ -19,7 +19,7 @@ featured: true
 
 ![tailwindcss](../assets/images/post-Tailwind-CSS/tailwind-site.svg)
 
-Tailwind CSS의 공식홈페이지에서는 **HTML을 벗어나지 않고도 웹사이트를 빠르게 구축할 수 있다.**라고 말합니다.
+Tailwind CSS의 공식홈페이지에서는 **"HTML을 벗어나지 않고도 웹사이트를 빠르게 구축할 수 있다."**라고 말합니다.
 
 Tailwind CSS에서는 HTML요소의 style을 클래스명에 작성함으로써 HTML요소와 CSS를 하나의 파일에서 작성합니다. 그리고 모든 HTML, JavaScript 구성 요소 등의 class를 검색하고 해당 스타일을 생성한 다음 정적 CSS 파일에 작성하여 작동합니다. 그렇기 때문에 위에서 말했듯이 HTML과 CSS를 오가며 작성하지 않고도 웹사이트를 구축하는 것이 가능하다는 것입니다!
 
@@ -168,8 +168,10 @@ Tailwind CSS가 항상 좋은 것만은 아닙니다. 요소들을 모두 마치
 그럼에도 불구하고, 커스텀도 쉽고 원하는 디자인을 세밀하면서도 빠르게 구현할 수 있다는 장점을 가졌기에 CSS 프레임워크들 중에서 높은 평가를 받고 있고 그런 평가에 힘입어 점점 많은 관심을 받고 있습니다!
 
 ![CSS Frameworks Satisfaction Ranking](../assets/images/post-Tailwind-CSS/css_frameworks_satisfaction_ranking.png)
+*The State of CSS 2021: Satisfaction*
 
 ![CSS Frameworks Usage Ranking](../assets/images/post-Tailwind-CSS/css_frameworks_usage_ranking.png)
+*The State of CSS 2021: Usage*
 
 ## 참고자료
 
