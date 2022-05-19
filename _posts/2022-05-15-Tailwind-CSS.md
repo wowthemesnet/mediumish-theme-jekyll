@@ -29,21 +29,21 @@ Tailwind CSS에서는 HTML요소의 style을 클래스명에 작성함으로써 
 
 작성방법을 배우기 전에, 우선 설치방법을 알아보겠습니다. Tailwind CSS를 install하는 방법에는
 
-- Tailwind CLI
-- PostCSS Plugin
-- Framework에 설치
-- CDN 사용하기
+> 1. Tailwind CLI
+> 2. PostCSS Plugin
+> 3. Framework에 설치
+> 4. CDN 사용하기
 
 이렇게 4가지가 있습니다. 그 중에 PostCSS Plugin으로 설치하는 방법으로 진행해보도록 하겠습니다!
 
-> tailwindcss와 peer dependency들을 설치하고, `tailwind.config.js`파일을 생성합니다.
+- tailwindcss와 peer dependency들을 설치하고, `tailwind.config.js`파일을 생성합니다.
 
 ```js
 npm install -D tailwindcss postcss autoprefixer
 npx tailwindcss init
 ```
 
-> `postcss.config.js`파일에 tailwindcss와 autoprefixer를 추가합니다.
+- `postcss.config.js`파일에 tailwindcss와 autoprefixer를 추가합니다.
 
 ```jS
 // postcss.confing.js
@@ -55,7 +55,7 @@ module.exports = {
 }
 ```
 
-> `tailwind.config.js` 파일에 template files의 경로들을 추가합니다.
+- `tailwind.config.js` 파일에 template files의 경로들을 추가합니다.
 
 ```js
 // tailwind.config.js
@@ -68,7 +68,7 @@ module.exports = {
 }
 ```
 
-> 메인 CSS 파일에 `@tailwind directives`를 추가합니다.
+- 메인 CSS 파일에 `@tailwind directives`를 추가합니다.
 
 ```css
 @tailwind base;
