@@ -9,8 +9,6 @@ featured: true
 
 ## Intro
 
---
-
 **CSS**는 HTML 요소들의 표시 방법을 기술하기 위한 스타일 시트 언어입니다. CSS가 없다면 HTML 요소들의 스타일을 하나하나 따로 지정해주어야 합니다.(똑같은 내용과 똑같은 스타일을 가진 요소들이어도 말이죠.) CSS가 있음으로써 우리는 더욱 빠르게 요소들의 스타일을 지정해줄 수 있을 뿐만 아니라, 스타일의 일관성과 유지보수 면에서도 큰 이점을 가질 수 있습니다.
 
 그럼에도 불구하고, 웹 개발자들이 더 효과적으로 코드를 작성하기 위해 Spring, Express, Vue.js, React 등과 같은 프레임워크(React는 프레임워크가 아니지만...)를 사용하듯이 CSS도 개발자들이 UI를 손쉽게 구현하기 위하여 **CSS 프레임워크**를 사용합니다.
@@ -18,8 +16,6 @@ featured: true
 오늘은 CSS 프레임워크 중 하나인 **Tailwind CSS**에 대하여 이야기해보자 합니다.
 
 ## Tailwind CSS
-
---
 
 ![tailwindcss](../assets/images/post-Tailwind-CSS/tailwind-site.svg)
 
@@ -40,14 +36,14 @@ Tailwind CSS에서는 HTML요소의 style을 클래스명에 작성함으로써 
 
 이렇게 4가지가 있습니다. 그 중에 PostCSS Plugin으로 설치하는 방법으로 진행해보도록 하겠습니다!
 
-tailwindcss와 peer dependency들을 설치하고, `tailwind.config.js`파일을 생성합니다.
+> tailwindcss와 peer dependency들을 설치하고, `tailwind.config.js`파일을 생성합니다.
 
 ```js
 npm install -D tailwindcss postcss autoprefixer
 npx tailwindcss init
 ```
 
-`postcss.config.js`파일에 tailwindcss와 autoprefixer를 추가합니다.
+> `postcss.config.js`파일에 tailwindcss와 autoprefixer를 추가합니다.
 
 ```jS
 // postcss.confing.js
@@ -59,7 +55,7 @@ module.exports = {
 }
 ```
 
-`tailwind.config.js` 파일에 template files의 경로들을 추가합니다.
+> `tailwind.config.js` 파일에 template files의 경로들을 추가합니다.
 
 ```js
 // tailwind.config.js
@@ -72,7 +68,7 @@ module.exports = {
 }
 ```
 
-메인 CSS 파일에 `@tailwind directives`를 추가합니다.
+> 메인 CSS 파일에 `@tailwind directives`를 추가합니다.
 
 ```css
 @tailwind base;
@@ -157,25 +153,23 @@ HTML 코드에서 `.chat-notification`클래스의 style 중 Tailwind CSS와 대
 - `border-radius: 0.5rem` -> `rounded-xl`
 - `background-color: #fff` -> `bg-white`
 
-처음 Tailwind CSS로 개발을 하게 되면, 기존과는 상당히 다른 클래스명때문에 적응하는데 시간이 필요합니다. 'Tailwind CSS IntelliSense'라는 extension을 사용하면 좀 더 수월하게 익숙해질 수 있고, 익숙해지고 나면 코드 작성이 정말 쉽고 빨라지게 됩니다!
+처음 Tailwind CSS로 개발을 하게 되면, 기존과는 상당히 다른 클래스명때문에 적응하는데 시간이 필요합니다. '**Tailwind CSS IntelliSense**'라는 extension을 사용하면 좀 더 수월하게 익숙해질 수 있고, 익숙해지고 나면 코드 작성이 정말 쉽고 빨라지게 됩니다!
 
 만약 원하는 스타일에 대한 클래스명을 모르겠다면 `tailwind.config.js`에 사용자 정의 스타일을 추가하거나 [Tailwind CSS Documentation](https://tailwindcss.com/docs)에서 기존 CSS style에 대한 Tailwind CSS의 유틸리티 클래스명을 확인할 수 있습니다.
 
 ## Tailwind CSS versus Bootstrap
 
---
-
 대부분의 Frontend Engineer에게 익숙한 CSS 프레임워크로 Bootstrap이 있습니다. Bootstrap을 사용해 본 경험이 있는 개발자라면, 위의 작성방법이 익숙하게 느껴지실 것입니다.
 
-Tailwind CSS는 Utility-First를 지향하기 때문에 거의 모든 종류의 여백, 패딩, 글꼴 등에 대한 클래스를 제공합니다. 그리고 Bootstrap에 비해 고유한 테마를 만드는 것이 수월하기 때문에 유연성면에서도 더 좋습니다. 또한, Bootstrap은 사용하지 않는 클래스도 모두 담아두는데 반해, Tailwind CSS는 사용하지 않는 클래스는 제거함으로써 파일 크기를 줄일 수 있습니다.
+Tailwind CSS는 **Utility-First**를 지향하기 때문에 거의 모든 종류의 여백, 패딩, 글꼴 등에 대한 클래스를 제공합니다. 그리고 Bootstrap에 비해 고유한 테마를 만드는 것이 수월하기 때문에 유연성면에서도 더 좋습니다. 또한, Bootstrap은 사용하지 않는 클래스도 모두 담아두는데 반해, Tailwind CSS는 사용하지 않는 클래스는 제거함으로써 파일 크기를 줄일 수 있습니다.
 
 Tailwind CSS가 항상 좋은 것만은 아닙니다. 요소들을 모두 마치 인라인 스타일처럼 작성하는 Tailwind CSS 특성상 가독성이 떨이지고, 출시된 지도 오래되고 가장 popular한 Bootstrap에 비해 references도 부족하다는 단점이 있습니다.
 
 그럼에도 불구하고, 커스텀도 쉽고 원하는 디자인을 세밀하면서도 빠르게 구현할 수 있다는 장점을 가졌기에 CSS 프레임워크들 중에서 높은 평가를 받고 있고 그런 평가에 힘입어 점점 많은 관심을 받고 있습니다!
 
-![CSS Frameworks Satisfaction Ranking](../assets/images/post-Tailwind-CSS/css_framworks_satisfaction_ranking.png)
+![CSS Frameworks Satisfaction Ranking](../assets/images/post-Tailwind-CSS/css_frameworks_satisfaction_ranking.png)
 
-![CSS Frameworks Usage Ranking](../assets/images/post-Tailwind-CSS/css_framworks_usage_ranking.png)
+![CSS Frameworks Usage Ranking](../assets/images/post-Tailwind-CSS/css_frameworks_usage_ranking.png)
 
 ## 참고자료
 
