@@ -163,7 +163,7 @@ HTML 코드에서 `.chat-notification`클래스의 style 중 Tailwind CSS와 대
 
 Tailwind CSS는 **Utility-First**를 지향하기 때문에 거의 모든 종류의 여백, 패딩, 글꼴 등에 대한 클래스를 제공합니다. 그리고 Bootstrap에 비해 고유한 테마를 만드는 것이 수월하기 때문에 유연성면에서도 더 좋습니다. 또한, Bootstrap은 사용하지 않는 클래스도 모두 담아두는데 반해, Tailwind CSS는 사용하지 않는 클래스는 제거함으로써 파일 크기를 줄일 수 있습니다.
 
-Tailwind CSS가 항상 좋은 것만은 아닙니다. 요소들을 모두 마치 인라인 스타일처럼 작성하는 Tailwind CSS 특성상 가독성이 떨이지고, 출시된 지도 오래되고 가장 popular한 Bootstrap에 비해 references도 부족하다는 단점이 있습니다.
+Tailwind CSS가 항상 좋은 것만은 아닙니다. 요소들을 모두 마치 인라인 스타일처럼 작성하는 Tailwind CSS 특성상 가독성이 떨어지고, 출시된 지도 오래되고 가장 popular한 Bootstrap에 비해 references도 부족하다는 단점이 있습니다.
 
 그럼에도 불구하고, 커스텀도 쉽고 원하는 디자인을 세밀하면서도 빠르게 구현할 수 있다는 장점을 가졌기에 CSS 프레임워크들 중에서 높은 평가를 받고 있고 그런 평가에 힘입어 점점 많은 관심을 받고 있습니다!
 
