@@ -1,4 +1,14 @@
-# 리액트의 생명주기
+---
+layout: post
+title: '리액트의 생명주기'
+authors: [poiu694]
+tags: ['Web']
+image: ../assets/images/post-life-cycle/lifecycle_1.png
+description: '리액트의 생명주기를 알아보자'
+featured: true
+---
+
+## 리액트의 생명주기
 
 ## When do we use React LifeCycle?
 
