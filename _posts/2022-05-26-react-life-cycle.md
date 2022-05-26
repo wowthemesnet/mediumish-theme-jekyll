@@ -18,6 +18,8 @@ featured: true
 
 리액트에서는 DOM(Document Object Model)에서 특정한 시간에 특정한 행동을 일어나게 할 수 있도록 생명주기를 만들었다고 생각합니다. 즉, 리액트에서 말하는 생명주기는 내가 원하는 것과 화면에 렌더링하는 구성 요소들을 일치시킬 수 있도록 DOM을 관리하는 일종의 수단이 됩니다👍
 
+기반이 되는 클래스 생명주기부터 함수형 생명주기까지 확인해 봅시다 !
+
 ## What is React Life Cycle?
 
 리액트에서 생명주기는 크게 3단계로 나눌 수 있습니다. 각 과정의 순서는 `Mounting` → `Updating` → `Unmounting` 과정으로 진행됩니다. 각각의 과정에서 어떤 것을 할 수 있는지에 대해 알아봅시다🧐
@@ -58,11 +60,11 @@ getDerivedStateFromProps는 static 메서드로 this로 접근 할 수 없으며
 
 사용시 주의할 사항이 있는데, getDerivedStateFromProps는 Render가 될 때마다 매 번 실행이 되고, 필요없는 상황에서 사용할 경우도 있습니다. 그래서 정말 드문 경우에만 사용하는걸 추천하며 아래에 해당되는 내용이 있으면 리액트에서 제시하는 대안을 사용하면 좋습니다.
 
-props 변화에 대응한 부수 효과를 발생시켜야 한다면 (예를 들어, 데이터 가져오기 또는 애니메이션), [componentDidUpdate](https://ko.reactjs.org/docs/react-component.html#componentdidupdate) 생명주기를 대신해서 사용하세요.
-
-props가 변화했을 때에만 일부 데이터를 다시 계산 하고 싶다면, Memoization Helper를 대신해서 사용하세요.
-
-props가 변화할 때에 일부 state를 재설정 하고 싶다면, 완전 제어 컴포넌트 또는 [key를 사용하는 완전 비제어 컴포넌트](https://ko.reactjs.org/blog/2018/06/07/you-probably-dont-need-derived-state.html#recommendation-fully-uncontrolled-component-with-a-key)로 만들어서 사용하세요.
+> *props 변화에 대응한 부수 효과를 발생시켜야 한다면 (예를 들어, 데이터 가져오기 또는 애니메이션), [componentDidUpdate](https://ko.reactjs.org/docs/react-component.html#componentdidupdate) 생명주기를 대신해서 사용하면 됩니다.*
+>
+> *props가 변화했을 때에만 일부 데이터를 다시 계산 하고 싶다면, Memoization Helper를 대신해서 사용하면 됩니다.*
+>
+> *props가 변화할 때에 일부 state를 재설정 하고 싶다면, 완전 제어 컴포넌트 또는 [key를 사용하는 완전 비제어 컴포넌트](https://ko.reactjs.org/blog/2018/06/07/you-probably-dont-need-derived-state.html#recommendation-fully-uncontrolled-component-with-a-key)로 만들어서 사용하면 됩니다.*
 
 ## Updating
 
@@ -117,7 +119,7 @@ componentDidUpdate(prevProps, prevState, snapshot) {
 
 오직 최적화만을 위한 생명주기입니다.
 
-이 메서드는 props 또는 state가 새로운 값으로 갱신되어서 Rendering이 발생하기 직전에 호출됩니다. 기본값은 true며 이 메서드는 초기 렌더링 또는 forceUpdate가 사용될 때에는 호출되지 않습니다. 사용 할려면 이전값과 현재 값을 비교해서 false를 반환하게 만들어 줘야 합니다.
+이 메서드는 props 또는 state가 새로운 값으로 갱신돼 Rendering이 발생하기 직전에 호출됩니다. 기본 값은 true며, 이 메서드는 초기 렌더링 또는 forceUpdate가 사용될 때에는 호출되지 않습니다. 사용하려면 이전 값과 현재 값을 비교해서 false를 반환하게 만들어 줘야 합니다.
 
 shouldComponentUpdate 내에서는 깊은 동일성 검사를 수행하거나 JSON.stringify를 사용하는 것을 권하지 않습니다. 아주 비효율적이며 성능을 떨어트릴 수 있습니다.
 
@@ -149,7 +151,7 @@ Clean하는 과정입니다. 일반적으로, 네트워크의 요청이나 이�
 
 사용예시
 
-```javascript
+```jsx
 class ErrorBoundary extends React.Component {
   constructor(props) {
     super(props);
@@ -267,7 +269,7 @@ function ScrollView({ row }) {
 
 사용 예시
 
-```javascript
+```jsx
 const Button = React.memo((props) => {
   // 당신의 컴포넌트
 });
@@ -286,7 +288,7 @@ function Parent({ a, b }) {
 }
 ```
 
-다른 부분은 리액트측에서 얘기해주는 것은 따로 없습니다. 하지만, 스택오버플로우나 이런데 다른 곳에서 사람들이 다뤄논 코드가 있으니 찾아봐도 좋습니다.
+다른 부분은 리액트측에서 얘기해주는 것은 따로 없습니다. 하지만, 스택오버플로우나 이런데 다른 곳에서 사람들이 다뤄 놓은 코드가 있으니 찾아봐도 좋습니다.
 
 찾아보면서 알게된 점인데, 리액트 훅에서도 모든 생명주기를 지원할 수 있게끔 업데이트 하는게 목표라고 합니다.
 
