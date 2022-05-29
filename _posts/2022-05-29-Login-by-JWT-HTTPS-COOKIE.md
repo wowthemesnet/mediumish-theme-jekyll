@@ -3,7 +3,7 @@ layout: post
 title:  "JWT HTTPS Cookie 사용한 보안 로그인"
 authors: [hyehyeonmoon]
 tags: ["Web"]
-image: ../assets/images/post-Login-by-JWT-HTTPS-COOKIE/cover.png
+image: ../assets/images/post-Login-by-JWT-HTTPS-COOKIE/jwt3.png
 featured: true
 ---
 
@@ -14,13 +14,13 @@ featured: true
 서버 기반의 인증 시스템과 토큰 기반의 인증 시스템의 장단점을 고려했고 확장하기 쉬운 토큰 기반의 인증 시스템을 선택했습니다.  
 **서버 기반의 인증 시스템 단점**
 
-    - **세션**
+- **세션**
 
-    세션은 메모리 또는 DB에 저장하는데, 로그인 중인 사용자가 늘어날 경우에는 부하가 걸리게 된다.
+세션은 메모리 또는 DB에 저장하는데, 로그인 중인 사용자가 늘어날 경우에는 부하가 걸리게 된다.
 
-    - **확장성**
+- **확장성**
 
-    사용자가 늘어나게 되면 서버를 확장해야 하는데 세션을 분산시키는 시스템을 설계가 어렵다.
+사용자가 늘어나게 되면 서버를 확장해야 하는데 세션을 분산시키는 시스템을 설계가 어렵다.  
 **토큰 기반의 인증 시스템 장점**
 
 - **무상태성(Stateless) & 확장성(Scalability)**
@@ -35,11 +35,9 @@ featured: true
 
 ### Oauth 인증과 JWT 토큰을 발급
 
-[https://github.com/boostcampwm-2021/Web11-Donggle/pull/86](https://github.com/boostcampwm-2021/Web11-Donggle/pull/86)
+[Oauth 인증과 JWT 토큰을 발급 구현 PR](https://github.com/boostcampwm-2021/Web11-Donggle/pull/86)
 
-![Untitled](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/e2e7224d-9e68-400e-a5d4-feb3848da6dd/Untitled.png)
-
-![Untitled](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/422cf83e-5efc-4d57-bd7d-d916506c3d8a/Untitled.png)
+![image](../assets/images/post-Login-by-JWT-HTTPS-COOKIE/oauth.png)
 
 - 발급 과정
 
@@ -49,10 +47,12 @@ featured: true
 4. Github에서 받은 Acess Token을 이용해 또다시 Github에 사용자 정보 요청
 5. Github에서 받은 사용자 정보를 이용해 JWT 토큰을 발급
 6. Frontend에서 JWT토큰을 Session Storage에 저장
-    - (왼쪽 사진 5번~7번) 이후 요청에 Access Token을 넣고 검증을 통해 응답을 받습니다.
-    - Access Token은 계속 세션 스토리지에 저장하고 있습니다.
 
 - JWT
+
+![image](../assets/images/post-Login-by-JWT-HTTPS-COOKIE/jwt1.png)
+
+ 이후 요청에 Access Token을 넣고 검증을 통해 응답을 받습니다.
 
 JWT는 만료기간을 주지 않고, SecretKey와 algorithm을 적용하여 생성했습니다.
 
@@ -80,30 +80,31 @@ JWT는 Stateless이기 때문에 한 번 만들어지면 제어가 불가능합�
 1. 만료기간을 주기 때문에 액세스토큰에 대한 공격의 범위를 줄여준다.
 2. Refresh Token의 경우 Access Token이 만료한 경우만 서버에 보내기 때문에 탈취 위험이 적다.
 
-> ⁉️Refresh Token을 탈취해서 똑같이 Access Token을 발급해서 악용하면 Access Token 유효기간을 길게 잡는 것과 뭐가 다른가요?
-> JWT토큰의 탈취는 보통 공유기 등의 네트워크 쪽에서 탈취되기 때문에 리프레시토큰이 의의가 있으며 클라이언트의 PC가 해킹되었다면 서버에서는 더 이상 할 수 있는 일은 없습니다.
+- ⁉️Refresh Token을 탈취해서 똑같이 Access Token을 발급해서 악용하면 Access Token 유효기간을 길게 잡는 것과 뭐가 다른가요?  
+
+JWT토큰의 탈취는 보통 공유기 등의 네트워크 쪽에서 탈취되기 때문에 리프레시토큰이 의의가 있으며 클라이언트의 PC가 해킹되었다면 서버에서는 더 이상 할 수 있는 일은 없습니다.
 
 - Refresh Token 구현과정
 
-[https://github.com/boostcampwm-2021/Web11-Donggle/pull/134](https://github.com/boostcampwm-2021/Web11-Donggle/pull/134)
+[Refresh Token 구현과정 PR](https://github.com/boostcampwm-2021/Web11-Donggle/pull/134)
 
-![Untitled](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/6e6fa877-80e8-40c4-bbbf-2366aa55f911/Untitled.png)
+![image](../assets/images/post-Login-by-JWT-HTTPS-COOKIE/jwt2.png)
 
 1. 사용자가 로그인을 합니다.
 2. DB에서 사용자를 확인합니다.
 3. Access Token과 Refresh Token을 발급합니다.
 4. 발급받은 Token 두 개를 session storage에 저장합니다.
-5. 6. 7. 이후 요청에 Access Token을 넣고 검증을 통해 응답을 받습니다.
-8.   Access Token이 만료된 것을 FrontEnd에서 확인합니다.
-
-
-1. 만료되었을 때 Acces Token, Refresh Token을 Header에 담아서 보냅니다.
-2. 서버에서는 Token의 만료를 확인한 뒤 Refresh Token이 유효한지 확인하고 새로운 Access Token을 발급합니다.
-3. 재발급된 Access Token을 session storage에 저장합니다.
+5. .
+6. .
+7. 5, 6, 7번 이후 요청에 Access Token을 넣고 검증을 통해 응답을 받습니다.
+8. Access Token이 만료된 것을 FrontEnd에서 확인합니다.
+9. 만료되었을 때 Acces Token, Refresh Token을 Header에 담아서 보냅니다.
+10. 서버에서는 Token의 만료를 확인한 뒤 Refresh Token이 유효한지 확인하고 새로운 Access Token을 발급합니다.
+11. 재발급된 Access Token을 session storage에 저장합니다.
 
 - Refresh Token
 
-Access Token과 Refresh Token 모두 만료시간을 줍니다. 
+Access Token과 Refresh Token 모두 만료시간을 줍니다.
 
 Access Token은 만료시간을 짧게, Refresh Token은 만료시간을 길게 줍니다.
 
@@ -149,23 +150,24 @@ HTTPS에서 Secure Cookie와 HTTP Only 쿠키를 사용해 자바스크립트 �
 
 - HTTPS Cookie 구현 과정
 
-[https://github.com/boostcampwm-2021/Web11-Donggle/pull/220](https://github.com/boostcampwm-2021/Web11-Donggle/pull/220)
+[HTTPS Cookie 구현 과정 PR 1](https://github.com/boostcampwm-2021/Web11-Donggle/pull/220)
 
-[https://github.com/boostcampwm-2021/Web11-Donggle/pull/173](https://github.com/boostcampwm-2021/Web11-Donggle/pull/173)
+[HTTPS Cookie 구현 과정 PR 2](https://github.com/boostcampwm-2021/Web11-Donggle/pull/173)
 
-![Untitled](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/7416499f-8156-4021-a643-35e0107942d0/Untitled.png)
+![image](../assets/images/post-Login-by-JWT-HTTPS-COOKIE/jwt3.png)
 
 1. 사용자가 로그인을 합니다.
 2. DB에서 사용자를 확인합니다.
 3. Access Token을 sameSite, httpOnly, Secure 옵션을 준 Cookie에 담습니다.
 4. 새롭게 발급받은 cookie를 응답으로 받습니다.
-5. 6. 7. 이후 요청에 Cookie를 credentials: same-origin으로 보내어 Access Token 검증을 통해 응답을 받습니다.
-8.  Access Token과 Cookie는 일정 시간이 지나면 만료되고 사라집니다.
-
-1. Cookie가 담기지 않은 상태로 요청이 보내집니다.
-2. Cookie가 있는지 Access Token이 만료되었는지 확인하고 에러를 보냅니다.
-3. 응답으로 에러를 받고 로그인 페이지로 이동시킵니다.
-4. 재로그인을 해야 합니다.
+5. .
+6. .
+7. 이후 요청에 Cookie를 credentials: same-origin으로 보내어 Access Token 검증을 통해 응답을 받습니다.
+8. Access Token과 Cookie는 일정 시간이 지나면 만료되고 사라집니다.
+9. Cookie가 담기지 않은 상태로 요청이 보내집니다.
+10. Cookie가 있는지 Access Token이 만료되었는지 확인하고 에러를 보냅니다.
+11. 응답으로 에러를 받고 로그인 페이지로 이동시킵니다.
+12. 재로그인을 해야 합니다.
 
 **⁉️ 왜 위와 같은 구조를 생각하게 되었는가?**
 
@@ -239,7 +241,7 @@ HTTPS에서 Secure Cookie와 HTTP Only 쿠키를 사용해 자바스크립트 �
 
 ### ⁉️ CORS를 만나 행복했다
 
-개발 환경은 Nginx 없이 [https://127.0.0.1:3000](https://127.0.0.1:3000) 과 [http://127.0.0.1:3001](http://127.0.0.1:3001) 을 사용했고 배포 환경은 Nginx를 사용했습니다. 그래서 개발 환경에서 CORS 오류가 났었고 이를 해결하기 위해 고군분투하며 아래와 같이 설정했습니다.
+개발 환경은 Nginx 없이 "https://127.0.0.1:3000" 과 "http://127.0.0.1:3001" 을 사용했고 배포 환경은 Nginx를 사용했습니다. 그래서 개발 환경에서 CORS 오류가 났었고 이를 해결하기 위해 고군분투하며 아래와 같이 설정했습니다.
 
 ```jsx
 // client request(fetch) option
@@ -304,3 +306,13 @@ CSRF 공격에 완전히 방어하기 위해 CSRF Token을 도입해 보안을 �
 - 👉🏻 HTTPS가 만능은 아니다
 
 취약한 암호 알고리즘과 공격 당하기 쉬운 SSL/TLS 낮은 버전을 사용하는 것에 주의해야 합니다. 예를 들어, 낮은 버전에서는 중간자 공격(Man-in-the-middle attack)으로 Handshake 단계에서 공격자가 개입해 보안을 취약한 것으로 변경할 수 있습니다.
+
+## 참고
+
+[[React] OAuth Github 로그인 구현하기](https://rrecoder.tistory.com/148)
+
+[🍪 프론트에서 안전하게 로그인 처리하기 (ft. React)](https://velog.io/@yaytomato/%ED%94%84%EB%A1%A0%ED%8A%B8%EC%97%90%EC%84%9C-%EC%95%88%EC%A0%84%ED%95%98%EA%B2%8C-%EB%A1%9C%EA%B7%B8%EC%9D%B8-%EC%B2%98%EB%A6%AC%ED%95%98%EA%B8%B0#-%EB%A1%9C%EC%BB%AC%EC%97%90%EC%84%9C-%ED%85%8C%EC%8A%A4%ED%8C%85%ED%95%98%EB%A0%A4%EB%A9%B4)
+
+[[Server] JWT(Json Web Token)란?](https://mangkyu.tistory.com/56)
+
+[JWT의 단점과 주의사항](https://yceffort.kr/2021/05/drawback-of-jwt)
