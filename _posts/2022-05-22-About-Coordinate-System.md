@@ -3,7 +3,7 @@ layout: post
 title: "지도 데이터, 얼마나 알고 계신가요?"
 authors: [custardcream98]
 tags: ["Map", "SRID", "GCS", "PCS", "Coordinate System"]
-image: ../assets/images/post-progressive-web-app/cover.png
+image: ../assets/images/post-About-Coordinate-System/thumbnail.png
 featured: true
 ---
 
