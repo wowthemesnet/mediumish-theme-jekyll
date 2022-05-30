@@ -1,35 +1,81 @@
 # Site
-name: "Mediumish"
-title: "Mediumish"
-description: "Jekyll template, Medium styled, free for bloggers."
+name: "Platformatory Blog"
+title: "Platformatory Blog"
+description: "Platform Engineering in 2022"
 logo: 'assets/images/logo.png'
 favicon: 'assets/images/logo.png'
-baseurl: /mediumish-theme-jekyll
+baseurl: /blog
 google_analytics: 'UA-46278016-1'
-disqus: 'demowebsite'
-mailchimp-list: 'https://wowthemes.us11.list-manage.com/subscribe/post?u=8aeb20a530e124561927d3bd8&amp;id=8c3d2d214b'
+#disqus: 'demowebsite'
+mailchimp-list: 'https://platformatory.us17.list-manage.com/subscribe/post?u=8cc2e44e80300ae193f198bcc&amp;id=6246b12a61'
 include: ["_pages"]
 permalink: /:title/
 
 # Authors
 authors:
-  sal:
-    name: Sal
-    display_name: Sal
+  p6:
+    name: pavan
+    display_name: Pavan Keshavamurthy
     gravatar: e56154546cf4be74e393c62d1ae9f9d4
-    email: wowthemesnet@gmail.com
-    web: https://www.wowthemes.net
-    twitter: https://twitter.com/wowthemesnet
-    description: "Author of Mediumish, a Bootstrap Medium styled template available for WordPress, HTML, Ghost and Jekyll. You are currently previewing Jekyll template demo."
-  john:
-    name: John
-    display_name: John    
+    email: pavan@platformatory.io
+    web: https://grahana.net
+    twitter: https://twitter.com/p6
+    description: "Cofounder of Platformatory. Aspiring Farmer; Love programming, distributed systems and random walks"
+  badri:
+    name: badri
+    display_name: Lakshminarasimhan Parthasarathy    
     avatar: 'assets/images/avatar.png'
     gravatar: b1cc14991db7a456fcd761680bbc8f81
-    email: wowthemesnet@gmail.com
-    web: https://www.wowthemes.net
+    email: lakshmi@platformatory.io
+    web: https://www.platformatory.io
     twitter: https://twitter.com/wowthemesnet
-    description: "This is the author box. Write a short description of the author here. You are currently previewing Mediumish demo, a Jekyll template compatible with Github pages."
+    description: "Principal Engineer at Platformatory; Musician"
+  srikanth:
+    name: srikanth
+    display_name: Srikanth Pai
+    avatar: 'assets/images/avatar.png'
+    gravatar: b1cc14991db7a456fcd761680bbc8f81
+    email: srikanth@platformatory.io
+    web: https://www.platformatory.io
+    twitter: https://twitter.com/wowthemesnet
+    description: "Data Engineer at Platformatory;"
+  dasa:
+    name: dasa
+    display_name: Dasa Sathyan
+    avatar: 'assets/images/avatar.png'
+    gravatar: b1cc14991db7a456fcd761680bbc8f81
+    email: srikanth@platformatory.io
+    web: https://www.platformatory.io
+    twitter: https://twitter.com/wowthemesnet
+    description: "Data Engineer at Platformatory;"
+  ashwin:
+    name: ashwin
+    display_name: Ashwin Venkatesan
+    avatar: 'assets/images/avatar.png'
+    gravatar: b1cc14991db7a456fcd761680bbc8f81
+    email: srikanth@platformatory.io
+    web: https://www.platformatory.io
+    twitter: https://twitter.com/wowthemesnet
+    description: "Data Engineer at Platformatory;"
+  venkatesh:
+    name: venkatesh
+    display_name: Venkatesh Keshavamurthy
+    avatar: 'assets/images/avatar.png'
+    gravatar: b1cc14991db7a456fcd761680bbc8f81
+    email: srikanth@platformatory.io
+    web: https://www.platformatory.io
+    twitter: https://twitter.com/wowthemesnet
+    description: "Data Engineer at Platformatory;"
+  kiran:
+    name: kiran
+    display_name: Kiran Sreevastav
+    avatar: 'assets/images/avatar.png'
+    gravatar: b1cc14991db7a456fcd761680bbc8f81
+    email: srikanth@platformatory.io
+    web: https://www.platformatory.io
+    twitter: https://twitter.com/wowthemesnet
+    description: "Data Engineer at Platformatory;"
+
 
 # Plugins
 plugins:
