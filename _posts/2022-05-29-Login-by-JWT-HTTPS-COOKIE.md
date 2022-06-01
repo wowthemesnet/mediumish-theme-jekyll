@@ -42,8 +42,8 @@ featured: true
 - 발급 과정
 
 1. Frontend에서 Github에 authorization code를 요청
-2. Github에 지정한 callback url로 redirect된 뒤 받은 authorization code를 BE에 요청
-3. BE에서 autorization code를 이용해 Github에 access Token을 요청
+2. Github에 지정한 callback url로 redirect된 뒤 받은 authorization code를 Backend에 요청
+3. Backend에서 autorization code를 이용해 Github에 Access Token을 요청
 4. Github에서 받은 Acess Token을 이용해 또다시 Github에 사용자 정보 요청
 5. Github에서 받은 사용자 정보를 이용해 JWT 토큰을 발급
 6. Frontend에서 JWT토큰을 Session Storage에 저장
@@ -69,20 +69,20 @@ const jwtConfig: Config = {
 
 - 보안 이슈 발생
 
-JWT는 Stateless이기 때문에 한 번 만들어지면 제어가 불가능합니다 .임의로 토큰을 삭제할 수 없기 때문에 만료기간을 설정하지 않으면 탈취될 가능성이 높습니다.
+JWT는 Stateless이기 때문에 한 번 만들어지면 제어가 불가능합니다. 임의로 토큰을 삭제할 수 없기 때문에 만료기간을 설정하지 않으면 탈취될 가능성이 높습니다.
 
 ### Refresh Token을 사용해보자
 
-- Refresh Token을 사용함으로서 가질 수 있는 보안성
+- Refresh Token을 사용함으로써 가질 수 있는 보안성
 
-앞서 발생한 보안 이슈를 회피하기 위해 Refresh Token을 사용하기로 했습니다. Refresh Token을 사용함으로서 아래와 같은 보안성을 높였습니다.
+앞서 발생한 보안 이슈를 회피하기 위해 Refresh Token을 사용하기로 했습니다. Refresh Token을 사용함으로써 아래와 같은 보안성을 높였습니다.
 
 1. 만료기간을 주기 때문에 액세스토큰에 대한 공격의 범위를 줄여준다.
 2. Refresh Token의 경우 Access Token이 만료한 경우만 서버에 보내기 때문에 탈취 위험이 적다.
 
 - ⁉️Refresh Token을 탈취해서 똑같이 Access Token을 발급해서 악용하면 Access Token 유효기간을 길게 잡는 것과 뭐가 다른가요?  
 
-JWT토큰의 탈취는 보통 공유기 등의 네트워크 쪽에서 탈취되기 때문에 리프레시토큰이 의의가 있으며 클라이언트의 PC가 해킹되었다면 서버에서는 더 이상 할 수 있는 일은 없습니다.
+JWT토큰의 탈취는 보통 공유기 등의 네트워크 쪽에서 탈취되기 때문에 Refresh Token이 의의가 있으며 클라이언트의 PC가 해킹되었다면 서버에서는 더 이상 할 수 있는 일은 없습니다.
 
 - Refresh Token 구현과정
 
