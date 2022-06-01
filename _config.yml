@@ -1,7 +1,7 @@
 # Site
-name: "> RightAheadLog"
-title: "> RightAheadLog"
-description: "The Platform and Product Engineering Journal"
+name: "The Write Ahead Log"
+title: "The Write Ahead Log"
+description: "Platform and Product Engineering Journal"
 logo: 'assets/images/plf-logo.svg'
 favicon: 'assets/images/logo.png'
 baseurl: /blog
@@ -18,7 +18,7 @@ authors:
     display_name: Pavan Keshavamurthy
     gravatar: e56154546cf4be74e393c62d1ae9f9d4
     email: pavan@platformatory.io
-    web: https://grahana.net
+    web: https://platformatory.io
     twitter: https://twitter.com/p6
     description: "Cofounder @ Platformatory; Random walks @ Bangalore"
   badri:
@@ -28,7 +28,7 @@ authors:
     gravatar: b1cc14991db7a456fcd761680bbc8f81
     email: lakshmi@platformatory.io
     web: https://www.platformatory.io
-    twitter: https://twitter.com/wowthemesnet
+    twitter: https://twitter.com/platformatory
     description: "Principal Engineer at Platformatory; Musician"
   srikanth:
     name: srikanth
@@ -37,8 +37,8 @@ authors:
     gravatar: b1cc14991db7a456fcd761680bbc8f81
     email: srikanth@platformatory.io
     web: https://www.platformatory.io
-    twitter: https://twitter.com/wowthemesnet
-    description: "Data Engineer at Platformatory;"
+    twitter: https://twitter.com/platformatory
+    description: "Consultant at Platformatory;"
   dasa:
     name: dasa
     display_name: Dasa Sathyan
@@ -46,8 +46,8 @@ authors:
     gravatar: b1cc14991db7a456fcd761680bbc8f81
     email: srikanth@platformatory.io
     web: https://www.platformatory.io
-    twitter: https://twitter.com/wowthemesnet
-    description: "Data Engineer at Platformatory;"
+    twitter: https://twitter.com/platformatory
+    description: "Sr Consultant at Platformatory;"
   ashwin:
     name: ashwin
     display_name: Ashwin Venkatesan
@@ -55,8 +55,8 @@ authors:
     gravatar: b1cc14991db7a456fcd761680bbc8f81
     email: srikanth@platformatory.io
     web: https://www.platformatory.io
-    twitter: https://twitter.com/wowthemesnet
-    description: "Data Engineer at Platformatory;"
+    twitter: https://twitter.com/platformatory
+    description: "Sr Consultant at Platformatory;"
   venkatesh:
     name: venkatesh
     display_name: Venkatesh Keshavamurthy
@@ -64,7 +64,7 @@ authors:
     gravatar: b1cc14991db7a456fcd761680bbc8f81
     email: srikanth@platformatory.io
     web: https://www.platformatory.io
-    twitter: https://twitter.com/wowthemesnet
+    twitter: https://twitter.com/platformatory
     description: "Data Engineer at Platformatory;"
   kiran:
     name: kiran
@@ -73,7 +73,7 @@ authors:
     gravatar: b1cc14991db7a456fcd761680bbc8f81
     email: srikanth@platformatory.io
     web: https://www.platformatory.io
-    twitter: https://twitter.com/wowthemesnet
+    twitter: https://twitter.com/platformatory
     description: "Data Engineer at Platformatory;"
 
 
@@ -108,9 +108,9 @@ kramdown:
       line_numbers: true
 
 # Adsense (change to "enabled" to activate, also your client id and ad slot. Create a new ad unit from your Adsense account to get the slot.)
-adsense: "disabled"
-adsense-data-ad-client: "ca-pub-3412143450191416"
-adsense-data-ad-slot: "1363087678"
+#adsense: "disabled"
+#adsense-data-ad-client: "ca-pub-3412143450191416"
+#adsense-data-ad-slot: "1363087678"
 
 # Lazy Images ("enabled" or "disabled")
 lazyimages: "disabled"

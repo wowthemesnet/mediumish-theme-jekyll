@@ -6,9 +6,11 @@ categories: [ Platform Engineering, Data, Infrastructure, Kafka, Kong, Kubernete
 image: assets/blog-images/platform-arch-model.svg
 featured: true
 hidden: true
+teaser: A technology leader's guide to modern platform engineering
+toc: true
 ---
 
-## Strategic Underpinnings
+# Strategic Underpinnings
 
 In the last year or so, we've been spending a lot of time thinking about how organizations can run IT/Digital better. Clearly, IT has changed over the years from being a services centric organization that administers servers & infrastructure to modern organizations that operate a heterogenous, multi-cloud stack. In practice, many (including those who claim to be leaders) are actually laggards at running operations and we feel this is a "mission to enable" that is worthy of catering to.
  
@@ -46,7 +48,7 @@ In doing so, you will end up choosing best-in-breed (or prospectively best-in-br
  
 ------------------------
 
-## The Key Components
+# The 3 Key Pillars
  
 It is important to think deeply through what it means to run platform(s) at central IT scale; There are two main points here:
  
@@ -82,7 +84,7 @@ There are naysayers who think K8S is just too complex (there maybe a hint of tru
  
 Even capabilities that were seemingly a point of proprietary leverage for public cloud, such as serverless functions have now gained a first class foothold in Kubernetes, allowing product teams to build towards a deployment target that may run on any IaaS, with Kubernetes. 
  
-> Our advice - if you are willing to make some investments towards Kubernetes, it is about time. Do it.
+Our advice - if you are willing to make some investments towards Kubernetes, it is about time. Do it.
  
 ## Real time core for data & service integration
  
@@ -104,7 +106,7 @@ Apart from these, Kafka also offers an ecosystem of connectors, stream processin
  
 Most of all, similar to K8S, Apache Kafka's data plane protocol has emerged as the defacto API standard for brokered eventing. This is evident in that even with Kafka's emergent competition,  such as Azure event hubs, Apache pulsar or the new kid on the block, RedPanda (formerly vectorized.io) –  that are innovating in the path of Kafka (in arguably superior ways), there is still conformance and compatibility to the same API protocol.
  
->The Kafka based pub-sub streaming model is clearly emerging as the integration & data backbone of the enterprise. Data mesh like architectures will evolve on top of Kafka as the data plane standard and enable Data Productization that will be owned and stewarded by domains. App and services integrations will on the other hand, leverage changelog streams and increasingly lead to event-sourced architectures with newer Kafka centric API standards (such as AsyncAPI, CloudEvents) being the guardrails.
+The Kafka based pub-sub streaming model is clearly emerging as the integration & data backbone of the enterprise. Data mesh like architectures will evolve on top of Kafka as the data plane standard and enable Data Productization that will be owned and stewarded by domains. App and services integrations will on the other hand, leverage changelog streams and increasingly lead to event-sourced architectures with newer Kafka centric API standards (such as AsyncAPI, CloudEvents) being the guardrails.
  
 ## APIs (everything as a service)
  
@@ -120,10 +122,10 @@ While it is unfair to say Kong is in the de-facto standard of it’s category cl
  
 The coalescence of API gateways and Service meshes has only begun. We predict Envoy based data-planes will become better and more efficient; We will increasingly look at architectures that not only externalize all network level cross cutting concerns (such as security, traffic management, routing) to the ubiquitous Envoy-at-the-core mesh layer, but also see much “smarter” wire level interception capabilities for different technologies, thus enabling sophisticated capabilities around resilience, load balancing and much more.  This is only the beginning, but there are several interesting possibilities just in the networking world with eBPF at the core.  On the other hand, HTTP/2 is emerging and there is a rebound of RPC protocols (gRPC, Thrift, Dubbo) that provide consistent typing and deep, idiomatic programming language support; Finally, we also recognize heterogeneous API standards emerging (GraphQL, AsyncAPI, CloudEvents to name some) for a variety of use-cases beyond the core request-response oriented REST/SOAP standards that have been prevalent; To address these and other possibilities, if we had to make a choice today - it would almost certainly be Kong. 
  
-> Finally, we must stress that APIs are just endpoints unless bundled together or built to suit use-cases of their audiences (ie, developers); For API Management to mature in an organization (regardless of API gateway or service mesh infrastructure), the curation of API products (or in an even more abstract sense, integration products) is the most important goal. This enables a transformation from APIs as integration endpoints towards APIs being literally, your business as a service.
+Finally, we must stress that APIs are just endpoints unless bundled together or built to suit use-cases of their audiences (ie, developers); For API Management to mature in an organization (regardless of API gateway or service mesh infrastructure), the curation of API products (or in an even more abstract sense, integration products) is the most important goal. This enables a transformation from APIs as integration endpoints towards APIs being literally, your business as a service.
  
 ------------------
  
-## Conclusion
+# Conclusion
  
 In this lengthy exploration, we've attempted to provide you a view of the emergent "k3" platform stack, consisting of Kubernetes, Kafka, Kong. These address respectively, the three most important pillars of an enterprise digital platform strategy - namely, infrastructure, data and APIs. For the discerning CT(I)O or platform engineering leader, the opportunities are vast and the OSS community has a lot to offer. It is important to take note and strategize accordingly.
