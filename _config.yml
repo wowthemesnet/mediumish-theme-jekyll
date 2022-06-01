@@ -1,11 +1,11 @@
 # Site
-name: "Platformatory Blog"
-title: "Platformatory Blog"
-description: "Platform Engineering in 2022"
-logo: 'assets/images/logo.png'
+name: "> RightAheadLog"
+title: "> RightAheadLog"
+description: "The Platform and Product Engineering Journal"
+logo: 'assets/images/plf-logo.svg'
 favicon: 'assets/images/logo.png'
 baseurl: /blog
-google_analytics: 'UA-46278016-1'
+google_analytics: 'G-PWW2W71JX1'
 #disqus: 'demowebsite'
 mailchimp-list: 'https://platformatory.us17.list-manage.com/subscribe/post?u=8cc2e44e80300ae193f198bcc&amp;id=6246b12a61'
 include: ["_pages"]
@@ -20,7 +20,7 @@ authors:
     email: pavan@platformatory.io
     web: https://grahana.net
     twitter: https://twitter.com/p6
-    description: "Cofounder of Platformatory. Aspiring Farmer; Love programming, distributed systems and random walks"
+    description: "Cofounder @ Platformatory; Random walks @ Bangalore"
   badri:
     name: badri
     display_name: Lakshminarasimhan Parthasarathy    
