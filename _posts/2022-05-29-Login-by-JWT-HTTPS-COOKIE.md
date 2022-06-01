@@ -12,24 +12,26 @@ featured: true
 ### 서버 기반의 인증 시스템 vs 토큰 기반의 인증 시스템
 
 서버 기반의 인증 시스템과 토큰 기반의 인증 시스템의 장단점을 고려했고 확장하기 쉬운 토큰 기반의 인증 시스템을 선택했습니다.  
-**서버 기반의 인증 시스템 단점**
 
-- **세션**
+- **서버 기반의 인증 시스템 단점**
 
-세션은 메모리 또는 DB에 저장하는데, 로그인 중인 사용자가 늘어날 경우에는 부하가 걸리게 된다.
+  - **세션**
 
-- **확장성**
+  세션은 메모리 또는 DB에 저장하는데, 로그인 중인 사용자가 늘어날 경우에는 부하가 걸리게 된다.
 
-사용자가 늘어나게 되면 서버를 확장해야 하는데 세션을 분산시키는 시스템을 설계가 어렵다.  
-**토큰 기반의 인증 시스템 장점**
+  - **확장성**
 
-- **무상태성(Stateless) & 확장성(Scalability)**
+  사용자가 늘어나게 되면 서버를 확장해야 하는데 세션을 분산시키는 시스템을 설계가 어렵다.  
 
-토큰은 클라이언트 측에 저장되기 때문에 서버는 완전히 Stateless하며, 확장하기에 매우 적합하다.
+- **토큰 기반의 인증 시스템 장점**
 
-- **확장성(Extensibility)**
+  - **무상태성(Stateless) & 확장성(Scalability)**
 
- 토큰에 선택적인 권한만 부여하여 발급할 수 있으며 OAuth의 경우 Facebook, Google 등과 같은 소셜 계정을 이용하여 다른 웹서비스에서도 로그인을 할 수 있다.
+  토큰은 클라이언트 측에 저장되기 때문에 서버는 완전히 Stateless하며, 확장하기에 매우 적합하다.
+
+  - **확장성(Extensibility)**
+
+  토큰에 선택적인 권한만 부여하여 발급할 수 있으며 OAuth의 경우 Facebook, Google 등과 같은 소셜 계정을 이용하여 다른 웹서비스에서도 로그인을 할 수 있다.
 
 ## JWT 구현
 
@@ -44,7 +46,7 @@ featured: true
 1. Frontend에서 Github에 authorization code를 요청
 2. Github에 지정한 callback url로 redirect된 뒤 받은 authorization code를 Backend에 요청
 3. Backend에서 autorization code를 이용해 Github에 Access Token을 요청
-4. Github에서 받은 Acess Token을 이용해 또다시 Github에 사용자 정보 요청
+4. Github에서 받은 Access Token을 이용해 또다시 Github에 사용자 정보 요청
 5. Github에서 받은 사용자 정보를 이용해 JWT 토큰을 발급
 6. Frontend에서 JWT토큰을 Session Storage에 저장
 
@@ -171,9 +173,9 @@ HTTPS에서 Secure Cookie와 HTTP Only 쿠키를 사용해 자바스크립트 �
 
 **⁉️ 왜 위와 같은 구조를 생각하게 되었는가?**
 
-- Refresh Token은 Access Token의 만료시간을 짧게 주어 스니핑 시 피해를 줄이기 위해 도입되었습니다. 따라서 Access Token이 담긴 요청이 평소에 사용되다 만료되어 에러가 났을 때만 Refresh Token이 담긴 요청이 다시 가는 형태였습니다. 하지만 HTTPS에서 (xss 공격에 대비해 웹스토리지에 저장하지 않음) http only를 적용해 Access Token과 Refresh Token 모두 쿠키에 담아야 하고 스니핑 시 계속해서 Refresh Token에 의해 Access Token을 연장시키는 것밖에 되지 않습니다. 그래서 Refresh Token을 제거했고 대신 쿠키 만료시간을 설정하고 Access Token 만료시간을 남겨두었습니다.
+- Refresh Token은 Access Token의 만료시간을 짧게 주어 스니핑 시 피해를 줄이기 위해 도입되었습니다. 따라서 Access Token이 담긴 요청이 평소에 사용되다 만료되어 에러가 났을 때만 Refresh Token이 담긴 요청이 다시 가는 형태였습니다. 하지만 HTTPS에서 (xss 공격에 대비해 웹스토리지에 저장하지 않음) httpOnly 옵션을 적용해 Access Token과 Refresh Token 모두 쿠키에 담아야 하고 스니핑 시 계속해서 Refresh Token에 의해 Access Token을 연장시키는 것밖에 되지 않습니다. 그래서 Refresh Token을 제거했고 대신 쿠키 만료시간을 설정하고 Access Token 만료시간을 남겨두었습니다.
 - Access Token에 만료시간을 준 이유는 Cookie가 만료되기 전에 패킷이 가로채지고 암호화가 풀려도 해당 토큰을 이용한 공격의 범위를 줄일 수 있다 생각했습니다.
-- 쿠키를 이용한 자동로그인을 고려했고 Session/Local storage에 아무것도 저장하지 않는 대신에 백엔드로 요청을 보내 로그인 여부를 확인하는 로직을 도입했습니다.
+- 쿠키를 이용한 자동 로그인을 고려했고 Session/Local storage에 아무것도 저장하지 않는 대신에 백엔드로 요청을 보내 로그인 여부를 확인하는 로직을 도입했습니다.
 
 - HTTPS Cookie
 
