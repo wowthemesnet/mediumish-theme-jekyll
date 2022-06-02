@@ -60,11 +60,11 @@ getDerivedStateFromProps는 static 메서드로 this로 접근 할 수 없으며
 
 사용시 주의할 사항이 있는데, getDerivedStateFromProps는 Render가 될 때마다 매 번 실행이 되고, 필요없는 상황에서 사용할 경우도 있습니다. 그래서 정말 드문 경우에만 사용하는걸 추천하며 아래에 해당되는 내용이 있으면 리액트에서 제시하는 대안을 사용하면 좋습니다.
 
-> *props 변화에 대응한 부수 효과를 발생시켜야 한다면 (예를 들어, 데이터 가져오기 또는 애니메이션), [componentDidUpdate](https://ko.reactjs.org/docs/react-component.html#componentdidupdate) 생명주기를 대신해서 사용하면 됩니다.*
+> _props 변화에 대응한 부수 효과를 발생시켜야 한다면 (예를 들어, 데이터 가져오기 또는 애니메이션), [componentDidUpdate](https://ko.reactjs.org/docs/react-component.html#componentdidupdate) 생명주기를 대신해서 사용하면 됩니다._
 >
-> *props가 변화했을 때에만 일부 데이터를 다시 계산 하고 싶다면, Memoization Helper를 대신해서 사용하면 됩니다.*
+> _props가 변화했을 때에만 일부 데이터를 다시 계산 하고 싶다면, Memoization Helper를 대신해서 사용하면 됩니다._
 >
-> *props가 변화할 때에 일부 state를 재설정 하고 싶다면, 완전 제어 컴포넌트 또는 [key를 사용하는 완전 비제어 컴포넌트](https://ko.reactjs.org/blog/2018/06/07/you-probably-dont-need-derived-state.html#recommendation-fully-uncontrolled-component-with-a-key)로 만들어서 사용하면 됩니다.*
+> _props가 변화할 때에 일부 state를 재설정 하고 싶다면, 완전 제어 컴포넌트 또는 [key를 사용하는 완전 비제어 컴포넌트](https://ko.reactjs.org/blog/2018/06/07/you-probably-dont-need-derived-state.html#recommendation-fully-uncontrolled-component-with-a-key)로 만들어서 사용하면 됩니다._
 
 ## Updating
 
@@ -297,6 +297,9 @@ function Parent({ a, b }) {
 Reference
 
 <https://medium.com/@drewisatlas/react-lifecycle-methods-what-are-they-when-do-we-use-them-edccb5ec860a>
+
 <https://ko.reactjs.org/docs/react-component.html>
+
 <https://react.vlpt.us/basic/25-lifecycle.html>
+
 <https://ko.reactjs.org/docs/hooks-faq.html>
