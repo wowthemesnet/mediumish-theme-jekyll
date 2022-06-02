@@ -1,11 +1,11 @@
-```
+---
 layout: post
 title: "코드 리뷰 어떻게 하시나요?"
 authors: [iju1633]
 tags: ["REST", "아키텍쳐"]
 image: ../assets/images/post-Code-Review/thumbnail.png
 featured: true
-```
+---
 
 ## 코드 리뷰를 주제로 다룬 이유
 
