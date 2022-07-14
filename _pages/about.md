@@ -30,32 +30,7 @@ comments: false
         그러다보면 언젠가는 저도 좀 더 멋진 사람이 되어 있을지 않을까요? 
         </p>
 
-        <h2>ZZOM 프로젝트 결과물</h2>
-        <p class="mb-5">
-        작업 완료된 도서는 다음과 같습니다.
-        </p>
-        <figure><a href="https://zzom.io/graphic-recording/" target="_blank">        
-        <img class="featured-image img-fluid" src="{{site.baseurl}}/assets/images/about/graphic-recording.png" alt="graphic-recording" /></a>
-        <figcaption>처음 배우는 그래픽 레코딩</figcaption>
-        </figure>
-
-        <p class="mb-5">
-        현재 작업 중인 도서는 다음과 같습니다.
-        </p>
-        <figure>
-        <img class="featured-image img-fluid" src="{{site.baseurl}}/assets/images/about/scrum-master.jpg" alt="scrum-master" />
-        <figcaption>출근했더니 스크럼 마스터가 된 건에 관하여</figcaption>
-        </figure>
-
-
-        <h2>타 출판사와 협업한 결과물</h2>
-        <p class="mb-5">
-        ZZOM 프로젝트를 하기 전에 여러 출판사에서 작업했던 번역서는 다음과 같습니다.
-        </p>
-        <figure><a href="https://codelabor.github.io/translating-developer/" target="_blank">        
-        <img class="featured-image img-fluid" src="{{site.baseurl}}/assets/images/about/translating-developer.jpg" alt="translating-developer" /></a>
-        <figcaption>타 출판사와 협업한 번역서</figcaption>
-        </figure>
+        
     </div>
 
     <div class="col-md-4">

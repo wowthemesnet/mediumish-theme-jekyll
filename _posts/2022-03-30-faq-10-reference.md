@@ -7,8 +7,8 @@ tags: [번역, FAQ]
 image: https://img1.daumcdn.net/thumb/R1280x0.fpng/?fname=http://t1.daumcdn.net/brunch/service/user/96Gy/image/j8z8PIKan7x4MBtdAlNS1S6k6Tc.png
 image-caption: 
 description: "본 내용에는 담지 못했지만 함께 보면 도움될 자료"
-featured: true
-hidden: true
+featured: false
+hidden: false
 toc: true
 comments: true
 rating: # 1~5까지 점수
