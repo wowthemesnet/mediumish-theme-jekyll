@@ -72,6 +72,6 @@ last_modified_at: # YYYY-MM-DD
 
 <ul>
 <li>
-이전 글: <a href="{{ site.baseurl }}/faq-9-why" target="_blank">돈도 안 되는데 도대체 왜?</a>
+이전 글: <a href="{{ site.baseurl }}/faq-09-why" target="_blank">돈도 안 되는데 도대체 왜?</a>
 </li>
 </ul>
