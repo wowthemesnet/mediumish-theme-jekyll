@@ -159,8 +159,7 @@ ex) CPU requested 12 → 캐시 미스 → stall CPU pipeline
         
         0과 8이 cache index가 같아서 다른 캐시 공간이 있는데도 다툼 → **conflict miss**
         
-        | 순서 | Block Addr | Cache Index
-        (하위 2bit) | Hit/Miss | Cache 0 | Cache 1 | Cache 2 | Cache 3 |
+        | 순서 | Block Addr | Cache Index (하위 2bit) | Hit/Miss | Cache 0 | Cache 1 | Cache 2 | Cache 3 |
         | --- | --- | --- | --- | --- | --- | --- | --- |
         | 1 | 0 (0000) | 0 (00) | Miss | Mem[0] |  |  |  |
         | 2 | 8 (1000) | 0 (00) | Miss | Mem[8] |  |  |  |
@@ -171,8 +170,7 @@ ex) CPU requested 12 → 캐시 미스 → stall CPU pipeline
         
         Set Index가 같으면 다음와 같이 Set 1 공간을 낭비
         
-        | 순서 | Block Addr | Set Index
-        (하위 1bit) | Hit/Miss | Set 0 | Set 0 | Set 1 | Set 1 |
+        | 순서 | Block Addr | Set Index (하위 1bit) | Hit/Miss | Set 0 | Set 0 | Set 1 | Set 1 |
         | --- | --- | --- | --- | --- | --- | --- | --- |
         | 1 | 0 (0000) | 0 (0) | Miss | Mem[0] |  |  |  |
         | 2 | 8 (1000) | 0 (0) | Miss | Mem[0] | Mem[8] |  |  |
