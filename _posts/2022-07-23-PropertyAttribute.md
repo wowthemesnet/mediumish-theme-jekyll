@@ -4,7 +4,7 @@ title: "What is Property Attribute"
 authors: [pasly0920]
 tags: ["Web"]
 image: ../assets/images/post-Property-Attribute/ModernJsDeepDive.png
-description: "JS는 어떻게 내부적으로 작동하는가?"
+description: "JS의 프로퍼티는 어떻게 작동하는가?"
 featured: true
 ---
 
@@ -104,7 +104,7 @@ console.log(Object.getOwnPropertyDescriptor(person, "name"));
 // { value: 'Lee', writeable: true, enumerable: true, configurable: true}
 ```
 
-Object.getOwnPropertyDescriptor 메서드가 반환한 프로퍼티 디스크립터 객체를 살펴보면 value 프로퍼티의 값은 'Lee'로 이것은 프로퍼티 어트리뷰트 [[Value]]의 값이 'Lee'임을 의미한다. writeable, enumerable, configurable 모두 true인 것은 [[Writeable]], [[Enumerable]], [[Configurable]]이 모두 True임을 의미한다. 이처럼 프로퍼티가 생성될 때 [[Value]]의 값은 프로퍼티 값을 초기화되며 [[Writeable]], [[Enumerable]], [[Configurable]]은 true로 초기화된다. 이는 프로퍼티를 동적 추가해도 동일하게 적용된다. 데이터 프로퍼티의 속성 정리는 위의 속성 정리를 참고하면 된다.
+Object.getOwnPropertyDescriptor 메서드가 반환한 프로퍼티 디스크립터 객체를 살펴보면 value 프로퍼티의 값은 'Lee'로 이것은 프로퍼티 어트리뷰트 [[Value]]의 값이 'Lee'임을 의미한다. writeable, enumerable, configurable 모두 true인 것은 [[Writeable]], [[Enumerable]], [[Configurable]]이 모두 true임을 의미한다. 이처럼 프로퍼티가 생성될 때 [[Value]]의 값은 프로퍼티 값을 초기화되며 [[Writeable]], [[Enumerable]], [[Configurable]]은 true로 초기화된다. 이는 프로퍼티를 동적 추가해도 동일하게 적용된다. 데이터 프로퍼티의 속성 정리는 위의 속성 정리를 참고하면 된다.
 
 #### 3.2 접근자 프로퍼티
 
@@ -152,8 +152,6 @@ const person = {
 3. 검색된 fullName 프로퍼티가 데이터 프로퍼티인지 접근자 프로퍼티인지 확인한다. fullName 프로퍼티는 접근자 프로퍼티이다.
 
 4. 접근자 프로퍼티 fullName의 프로퍼티 어트리뷰트 [[Get]]의 값, 즉 getter 함수를 호출하여 그 결과를 반환한다. 프로퍼티 fullName 의 프로퍼티 어트리뷰트 [[Get]]의 값은 Object.getOwnPropertyDescriptor 메서드가 반환하는 프로퍼티 디스크립터 객체의 get 프로퍼티 값과 같다.
-
-프로포타입에 대해서는 추후 19장에서 다루도록 한다.
 
 접근자 프로퍼티와 데이터 프로퍼티는 각각이 가지는 디스크립터 객체의 프로퍼티가 다름을 통해서 구분이 가능하다.
 
