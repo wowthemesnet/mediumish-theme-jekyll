@@ -12,12 +12,12 @@ License: https://www.wowthemes.net/freebies-license/
 }
 
 a {
-    color: #00ab6b;
+    color: #1c7dd1;
     transition: all 0.2s;
 }
 
 a:hover {
-    color: #038252;
+    color: #1765ab;
     text-decoration: none;
 }
 
@@ -183,29 +183,38 @@ section.recent-posts {
     border-radius: 100%;
 }
 
-.post-top-meta {
-    margin-bottom: 2rem;
-}
-
-.post-top-meta .author-thumb {
+.post-meta .author-thumb {
     width: 72px;
     height: 72px;
 }
 
-.post-top-meta.authorpage .author-thumb {
+.post-meta.authorpage .author-thumb {
     margin-top: 40px;
 }
 
-.post-top-meta span {
+.post-meta span {
     font-size: 0.9rem;
     color: rgba(0, 0, 0, .44);
     display: inline-block;
 }
 
-.post-top-meta .author-description {
+.post-meta .author-description {
     margin-bottom: 5px;
     margin-top: 5px;
     font-size: 0.95rem;
+}
+
+.post-meta.post-top-meta .author-thumb {
+    width: 40px;
+    height: 40px;
+}
+
+.post-meta.post-top-meta {
+    padding-bottom: 1rem;
+}
+
+.post-bottom-meta {
+    margin-top: 3rem;
 }
 
 .toc ul {
@@ -525,18 +534,20 @@ ul.tags li a:hover {
 }
 
 .btn.follow {
-    border-color: #02B875;
-    color: #1C9963;
+    border-color: #1765ab;
+    color: #fff;
+    background-color: #1765ab;
     padding: 3px 10px;
     text-align: center;
     border-radius: 999em;
     font-size: 0.85rem;
     display: inline-block;
+    margin-left: 1rem!important;
 }
 
 .btn.subscribe {
-    background-color: #1C9963;
-    border-color: #1C9963;
+    background-color: #1765ab;
+    border-color: #1765ab;
     color: rgba(255, 255, 255, 1);
     fill: rgba(255, 255, 255, 1);
     border-radius: 30px;
@@ -581,8 +592,8 @@ ul.tags li a:hover {
 }
 
 .alertbar input[type="submit"] {
-    background-color: #1C9963;
-    border: 1px solid #1C9963;
+    background-color: #1765ab;
+    border: 1px solid #1765ab;
     color: rgba(255, 255, 255, 1);
     fill: rgba(255, 255, 255, 1);
     font-size: 0.85rem;
@@ -774,7 +785,7 @@ iframe {
         padding: 0;
         height: 350px;
         border-radius: 0;
-        background-image: url(../images/jumbotron.jpg);
+        background-color: #1964ab;
         background-size: cover;
     }
 
@@ -792,7 +803,7 @@ iframe {
     margin-top: 3rem;
     padding: 0;
     border-radius: 0;
-    background-image: url(../images/jumbotron.jpg);
+    background-color: #1964ab;
     background-size: cover;
 }
 
@@ -898,4 +909,25 @@ iframe {
 .lazyimg[data-srcset] {
     opacity: 0;
     transition: opacity .25s;
+}
+
+.post .audio {
+    padding: 1rem;
+    border: 2px solid #1765ab;
+    border-radius: 12px;
+    background-color: #1765ab;
+    color: #fff;
+}
+
+.post .audio audio {
+    width: 100%;
+}
+
+section.page h1 {
+    font-size: 2rem;
+}
+
+.section-header {
+    font-size: 1.5rem;
+    font-weight: 700;
 }

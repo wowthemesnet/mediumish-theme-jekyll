@@ -6,6 +6,8 @@
 
 <link rel="icon" href="{{ site.baseurl }}/assets/images/logo.png">
 
+{% if post %}
+{% endif %}
 <title>{{ page.title }} | {{site.name}}</title>
 
 {% seo %}
@@ -68,29 +70,30 @@ ga('send', 'pageview');
                 {% else %}
                 <li class="nav-item">
                 {% endif %}
-                <a class="nav-link" href="{{ site.baseurl }}/index.html">Blog</a>
+                    <a class="nav-link" href="{{ site.baseurl }}/index.html">Blog</a>
+                </li>
+
+                {% if page.url == "/about" %}
+                <li class="nav-item active">
+                {% else %}
+                <li class="nav-item">
+                {% endif %}
+                    <a class="nav-link" href="{{ site.baseurl }}/about">Sobre mí</a>
                 </li>
 
                 <li class="nav-item">
-                <a class="nav-link" href="{{ site.baseurl }}/about">About</a>
+                    <a target="_blank" class="nav-link" href="https://github.com/didacrius">
+                        <i class="fab fa-github"></i> 
+                        Github
+                    </a>
                 </li>
 
                 <li class="nav-item">
-                <a target="_blank" class="nav-link" href="https://bootstrapstarter.com/bootstrap-templates/template-mediumish-bootstrap-jekyll/"> Docs</a>
+                    <a class="nav-link" target="_blank" href="https://www.youtube.com/channel/UCfuNJz_teSLWlNyBmPHkK1g/featured">
+                        <i class="fa fa-play-circle text-danger"></i>
+                        Youtube
+                    </a>
                 </li>
-
-                <li class="nav-item">
-                <a target="_blank" class="nav-link" href="https://www.wowthemes.net/themes/mediumish-wordpress/"><i class="fab fa-wordpress-simple"></i> WP Version</a>
-                </li>
-
-                <li class="nav-item">
-                <a target="_blank" class="nav-link" href="https://www.wowthemes.net/themes/mediumish-ghost/"><i class="fab fa-snapchat-ghost"></i> Ghost Version</a>
-                </li>
-
-                <li class="nav-item">
-                <a target="_blank" class="nav-link" href="https://github.com/wowthemesnet/mediumish-theme-jekyll"><i class="fab fa-github"></i> Fork on Github</a>
-                </li>
-
                 {% include search-lunr.html %}
 
             </ul>
@@ -108,14 +111,7 @@ ga('send', 'pageview');
 
 <div class="container">
 
-<!-- Site Title
-================================================== -->
-<div class="mainheading">
-    <h1 class="sitetitle">{{ site.name }}</h1>
-    <p class="lead">
-        {{ site.description }}
-    </p>
-</div>
+
 
 <!-- Content
 ================================================== -->
@@ -128,11 +124,11 @@ ga('send', 'pageview');
 ================================================== -->
 <div class="alertbar">
 	<div class="container text-center">
-		<span><img src="{{ site.baseurl }}/{{ site.logo }}" alt="{{site.title}}"> &nbsp; Never miss a <b>story</b> from us, subscribe to our newsletter</span>
+		<span><img src="{{ site.baseurl }}/{{ site.logo }}" alt="{{site.title}}"> &nbsp; No te pierdas <b>entrada</b> alguna, suscribete a la newsletter</span>
         <form action="{{site.mailchimp-list}}" method="post" name="mc-embedded-subscribe-form" class="wj-contact-form validate" target="_blank" novalidate>
             <div class="mc-field-group">
             <input type="email" placeholder="Email" name="EMAIL" class="required email" id="mce-EMAIL" autocomplete="on" required>
-            <input type="submit" value="Subscribe" name="subscribe" class="heart">
+            <input type="submit" value="Me subscribo!" name="subscribe" class="heart">
             </div>
         </form>
 	</div>
@@ -147,7 +143,7 @@ ga('send', 'pageview');
 	<div class="d-md-flex h-100">
 		<div class="col-md-4 transpdark align-self-center text-center h-100">
             <div class="d-md-flex align-items-center justify-content-center h-100">
-                <h2 class="d-md-block align-self-center py-1 font-weight-light">Explore <span class="d-none d-md-inline">→</span></h2>
+                <h2 class="d-md-block align-self-center py-1 font-weight-light">Explorar <span class="d-none d-md-inline">→</span></h2>
             </div>
 		</div>
 		<div class="col-md-8 p-5 align-self-center text-center">
@@ -174,8 +170,7 @@ ga('send', 'pageview');
             <div class="col-md-6 col-sm-6 text-center text-lg-left">
                 Copyright © {{ site.time | date: "%Y" }} {{ site.name }} 
             </div>
-            <div class="col-md-6 col-sm-6 text-center text-lg-right">    
-                <a target="_blank" href="https://www.wowthemes.net/mediumish-free-jekyll-template/">Mediumish Jekyll Theme</a> by WowThemes.net
+            <div class="col-md-6 col-sm-6 text-center text-lg-right">
             </div>
         </div>
     </div>

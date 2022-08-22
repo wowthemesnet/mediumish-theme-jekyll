@@ -1,10 +1,10 @@
 # Site
-name: "Mediumish"
-title: "Mediumish"
-description: "Jekyll template, Medium styled, free for bloggers."
-logo: 'assets/images/logo.png'
+name: "Blog sobre Desarrollo de Software"
+title: "thedotnetguy blog"
+description: "Blog especializado en el desarrollo de software en .NET. Contenidos complementarios: diseño y arquitectura de software, DevOps, virtualización, etc."
+logo: 'assets/images/dotnetguy-header-logo.png'
 favicon: 'assets/images/logo.png'
-baseurl: /mediumish-theme-jekyll
+baseurl: ''
 google_analytics: 'UA-46278016-1'
 disqus: 'demowebsite'
 mailchimp-list: 'https://wowthemes.us11.list-manage.com/subscribe/post?u=8aeb20a530e124561927d3bd8&amp;id=8c3d2d214b'
@@ -30,6 +30,15 @@ authors:
     web: https://www.wowthemes.net
     twitter: https://twitter.com/wowthemesnet
     description: "This is the author box. Write a short description of the author here. You are currently previewing Mediumish demo, a Jekyll template compatible with Github pages."
+  didac:
+      name: Didac Rius
+      display_name: Didac Rius    
+      avatar: 'assets/images/didacrius-author-avatar.png'
+      gravatar: b1cc14991db7a456fcd761680bbc8f81
+      email: didacriuscom@gmail.com
+      web: https://www.thedotnetguy.github.io
+      twitter: https://twitter.com/DidacRius
+      description: "Ingeniero de software especializado en la tecnología .NET. Sólidos conocimientos en .NET Framework, .NET Core y Angular frameworks, así como en diseño y arquitectura de software, DevOps y virtualización."
 
 # Plugins
 plugins:

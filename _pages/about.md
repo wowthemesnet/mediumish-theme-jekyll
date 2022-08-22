@@ -1,34 +1,43 @@
 ---
 layout: page
-title: Mediumish Template for Jekyll
+title: Sobre mí
 permalink: /about
-comments: true
+comments: false
 ---
 
 <div class="row justify-content-between">
 <div class="col-md-8 pr-5">
 
-<p>This website is built with Jekyll and Mediumish template for Jekyll. It's for demonstration purposes, no real content can be found. Mediumish template for Jekyll is compatible with Github pages, in fact even this demo is created with Github Pages and hosted with Github.</p>
+<p>Desarrollador de software especializado en .NET. Mi pasión es mi profesión.</p>
 
-<p class="mb-5"><img class="shadow-lg" src="{{site.baseurl}}/assets/images/mediumish-jekyll-template.png" alt="jekyll template mediumish" /></p>
-<h4>Documentation</h4>
+<p>Quiero pensar que tengo sólidos conocimientos en .NET Framework, .NET Core y Angular frameworks, así como en Unit e Integration testing y virtualización.</p>
 
-<p>Please, read the docs <a href="https://bootstrapstarter.com/bootstrap-templates/template-mediumish-bootstrap-jekyll/">here</a>.</p>
+<p>A ratos creo contenido visual sobre .NET, Testing, Virtualización y demás en YouTube y por escrito en este blog.</p>
 
-<h4>Questions or bug reports?</h4>
+<p>Me defino como un chico proactivo e inquieto, comprometido y productivo. Con ganas, motivación y actitud, mucha actitud.</p>
 
-<p>Head over to our <a href="https://github.com/wowthemesnet/mediumish-theme-jekyll">Github repository</a>!</p>
+<p>Cuando esté un poco ausente es porque me estoy tomando una buena cerveza fría o disfrutando de la playa.</p>
+
+<p class="mb-5"><img class="shadow-lg" src="{{site.baseurl}}/assets/images/trabajando-desarrollo-software-healthcare.png" alt="jekyll template mediumish" /></p>
+
+<p class="section-header">¿Dónde encontrar el código fuente de todos los tutoriales?</p>
+
+<p>Todo el código fuente de cada uno de los ejemplos lo puedes encontrar en <a target="_blank" href="https://github.com/didacrius">mi reposotorio de GitHub <i class="fab fa-github"></i></a>.</p>
+
+<p class="section-header">¿Quieres que colaboremos?</p>
+
+<p>Contacta conmigo por <a target="_blank" href="https://www.linkedin.com/in/didac-rius/">LinkedIn</a>! Vamos a aportar algo interesante a la comunidad.</p>
 
 </div>
 
 <div class="col-md-4">
 
 <div class="sticky-top sticky-top-80">
-<h5>Buy me a coffee</h5>
+<h5>Invitate a una cerveza</h5>
 
-<p>Thank you for your support! Your donation helps me to maintain and improve <a target="_blank" href="https://github.com/wowthemesnet/mediumish-theme-jekyll">Mediumish <i class="fab fa-github"></i></a>.</p>
+<p>¡Gracias por tu apoyo! Tu donación me ayuda a mantener y mejorar el contenido de <b>thedotnetguy</b>.</p>
 
-<a target="_blank" href="https://www.wowthemes.net/donate/" class="btn btn-danger">Buy me a coffee</a> <a target="_blank" href="https://bootstrapstarter.com/bootstrap-templates/template-mediumish-bootstrap-jekyll/" class="btn btn-warning">Documentation</a>
+<a target="_blank" href="https://www.wowthemes.net/donate/" class="btn btn-danger">Toma cerveza!</a> <a class="btn btn-warning">No tengo ni pa mí.</a>
 
 </div>
 </div>
