@@ -8,6 +8,7 @@ gem install bundler:2.0.1
 gem install bundle
 bundle update --bundler
 bundle install
+bundle add webrick
 bundle exec jekyll serve
 ```
 
