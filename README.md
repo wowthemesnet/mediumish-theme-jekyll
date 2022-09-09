@@ -5,6 +5,7 @@
 
 ```
 gem install bundler:2.0.1
+gem install bundle
 bundle update --bundler
 bundle install
 bundle exec jekyll serve
