@@ -5,9 +5,9 @@ description: "Blog especializado en el desarrollo de software en .NET. Contenido
 logo: 'assets/images/dotnetguy-header-logo.png'
 favicon: 'assets/images/logo.png'
 baseurl: ''
-google_analytics: 'UA-46278016-1'
-disqus: 'demowebsite'
-mailchimp-list: 'https://wowthemes.us11.list-manage.com/subscribe/post?u=8aeb20a530e124561927d3bd8&amp;id=8c3d2d214b'
+google_analytics: 'G-EJLMH0PQZT'
+disqus: 'https-didacrius-github-io'
+mailchimp-list: 'https://github.us9.list-manage.com/subscribe?u=b67af2485d1062a2d2e43e4f3&id=d896c7a285'
 include: ["_pages"]
 permalink: /:title/
 
