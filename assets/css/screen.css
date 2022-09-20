@@ -874,7 +874,7 @@ iframe {
 .spoiler:after {
     position: absolute;
     opacity: 0;
-    content: 'Click to reveal spoiler';
+    content: 'Clic para revelar el spoiler';
     top: 45%;
     left: calc(50% - 100px);
     text-shadow: none;
@@ -930,4 +930,5 @@ section.page h1 {
 .section-header {
     font-size: 1.5rem;
     font-weight: 700;
+    font-family: -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
 }
