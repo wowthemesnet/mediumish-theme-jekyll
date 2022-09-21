@@ -39,7 +39,7 @@ comments: false
 <div class="sticky-top sticky-top-80">
 <h5>Invitate a una cerveza</h5>
 
-<p>¡Gracias por tu apoyo! Tu donación me ayuda a mantener y mejorar el contenido de <b>thedotnetguy</b>.</p>
+<p>¡Gracias por tu apoyo! Tu donación me ayuda a mantener y mejorar el contenido.</p>
 
 <a target="_blank" href="https://www.paypal.com/donate/?hosted_button_id=SC7AY4KTXXK78" class="btn btn-danger">Toma cerveza!</a> <a class="btn btn-warning">No tengo ni pa mí.</a>
 

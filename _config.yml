@@ -1,6 +1,6 @@
 # Site
 name: "Blog sobre Desarrollo de Software"
-title: "thedotnetguy blog"
+title: "Blog de Desarrollo de Software"
 description: "Blog especializado en el desarrollo de software en .NET. Contenidos complementarios: diseño y arquitectura de software, DevOps, virtualización, etc."
 logo: 'assets/images/dotnetguy-header-logo.png'
 favicon: 'assets/images/logo.png'
@@ -19,7 +19,7 @@ authors:
       avatar: 'assets/images/didacrius-author-avatar.png'
       gravatar: b1cc14991db7a456fcd761680bbc8f81
       email: didacriuscom@gmail.com
-      web: https://www.thedotnetguy.github.io
+      web: https://www.didacrius.github.io
       twitter: https://twitter.com/DidacRius
       description: "Ingeniero de software especializado en la tecnología .NET. Sólidos conocimientos en .NET Framework, .NET Core y Angular frameworks, así como en diseño y arquitectura de software, DevOps y virtualización."
 
