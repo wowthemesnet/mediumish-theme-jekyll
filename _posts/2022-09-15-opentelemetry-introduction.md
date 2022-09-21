@@ -119,3 +119,12 @@ Hay diferentes opciones de configuración disponibles, tales como:
 ### Instrumentación Manual
 Con esta opción, deberemos importar la API y el SDK de OpenTelemetry, configurar la API de OpenTelemetry creando un >
 <em>tracer</em>, configurar el SDK de Open Telemetry si está creando un proceso, crear datos de telemetría como trazas, métricas y logs, y luego exportar los datos a proveedor backeend como Jaeger, Loki, Prometheus o Zipkin.
+
+<br/>
+<b>Enlaces de interés:</b>
+- <a href="https://opentelemetry.io" target="_blank">Sitio web de OpenTelemetry</a>.
+- <a href="https://www.cncf.io/projects/opentelemetry" target="_blank">OpenTelemetry en el ecosistema CNCF</a>.
+- <a href="https://github.com/open-telemetry/opentelemetry-dotnet" target="_blank">Repositorio oficial de .NET de OpenTelemetry</a>.
+- <a href="https://github.com/open-telemetry/opentelemetry-dotnet-contrib" target="_blank">Repositorio oficial de contribuciones de .NET de OpenTelemetry</a>.
+- <a href="https://github.com/open-telemetry/opentelemetry-collector" target="_blank">Repositorio oficial de OTEL Collector</a>.
+- <a href="https://github.com/open-telemetry/opentelemetry-collector-contrib" target="_blank">Repositorio oficial de contribuciones de OTEL Collector</a>.
