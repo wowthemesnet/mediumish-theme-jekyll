@@ -85,7 +85,6 @@ En este punto ya cada lenguaje de programación quizás tenga una librería de a
 El ejemplo con dotnet lo realizaremos con la librería de Serilog y algunas extensiones de la misma.
 
 Añadiremos en nuestro .csproj las siguientes librerías:
-https://github.com/serilog/serilog-aspnetcore
 - <a href="https://www.nuget.org/packages/Serilog.AspNetCore/" target="_blank">Serilog.AspNetCore</a>: librería de Serilog. <a href="https://github.com/serilog/serilog-aspnetcore" target="_blank">Enlace al código fuente del NuGet</a>.
 - <a href="https://www.nuget.org/packages/Serilog.Sinks.Datadog.Logs" target="_blank">Serilog.Sinks.Datadog.Logs</a>: extensión de Serilog para exportar los logs a Datadog. <a href="https://github.com/DataDog/serilog-sinks-datadog-logs/" target="_blank">Enlace al código fuente del NuGet</a>.
 - <a href="https://www.nuget.org/packages/Serilog.Enrichers.Datadog.OpenTelemetry" target="_blank">Serilog.Enrichers.Datadog.OpenTelemetry</a>: extensión de Serilog para añadir la información de la correlación de la traza, traceId y spanId, como atributos en el log que sepa interpretar Datadog. <a href="https://github.com/didacrius/serilog-enrichers-datadog-opentelemetry" target="_blank">Enlace al código fuente del NuGet</a>.
@@ -112,3 +111,4 @@ builder.Logging
         .CreateLogger());
 ```
 
+Y <em>voilà</em>! Una vez arranquemos nuestros servicios deberíamos de empezar a ver cómo nos llegan trazas, métricas y logs a Datadog y cómo están correllacionados entre ellos. Desde una traza podremos ver os logs asociados a la misma al igual que las métricas globales del servicio durante ese período de tiempo y desde un log podremos ver la traza asociada al mismo.
