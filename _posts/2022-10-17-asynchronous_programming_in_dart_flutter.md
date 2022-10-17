@@ -3,14 +3,17 @@ layout: post
 title:  "Dart/Flutter에서 비동기처리하기"
 authors: [hfjxjjd123]
 tags: ["Dart","Flutter","asynchronous","다트","플러터"]
-; image: assets/images/post-WebSocket/websocket.png
+image: assets/images/post-asyncDart/asynchronous.jpg
 description: "Dart/Flutter에서 비동기처리하기"
 featured: true
 ---
 
---- 
+
  ## 비동기처리(asynchronous programming)란?
  <br>
+
+ ![image](../assets/images/post-asyncDart/asynchronous.jpg)
+
 
 <strong>비동기처리</strong>는 대기를 필요로하는 작업을 기다리면서도 프로세스가 다른 작업을 수행할 수 있도록 작업하는 방식을 말한다.
 
@@ -27,6 +30,8 @@ featured: true
 <br>
 
 Dart언어에서는 <strong>`Stream`</strong>과 <strong>`Future`</strong>, 2가지 종류로 비동기처리를 지원한다.
+
+<br> 
 <br>
 
 ## Stream이란?
@@ -61,6 +66,8 @@ await for (final value in stream) { //await for
 이렇게 한 이벤트는 한 번 사용하고 버리는 것을 <strong>단일구독스트림</strong>라고 한다.
 
 하나의 이벤트에 여러번 접근해서 값을 사용하고 싶다면 <strong>브로드캐스트스트림</strong> 형식을 사용하면 된다.
+
+<br>
 <br>
 
 ## Future란?
@@ -77,6 +84,9 @@ await for (final value in stream) { //await for
 Flutter에서 데이터베이스를 다룰 때 주로 `Future`를 사용하므로 예제 소스코드 3개를 보면서 개념을 자세히 확인해 보자. 
 
 참고로 `getString1()` / `getString3()`은 각각 1초, 3초 기다렸다 `String` 값을 의미적으로 받아오는 `Future<String>` 타입의 함수이다.
+
+<br>
+
 
 ### 1. `then` 키워드 쓰임새
 ```dart
@@ -97,6 +107,8 @@ void main() async{
   //getString1() 요청 후 계속..
 ```
 `getString3()`이 먼저 호출됐지만 비동기적 연산을 하므로`getString1()`의 호출도 즉시 이뤄진다. 이후 `then` 키워드를 통해 비동기연산의 결과(필요한 데이터)를 받아오는데, 1초 후 `getString1()`의 결과값이 먼저(`연산1`) 연산되며 이후 2초가 더 지난 뒤 `getString3()`의 결과값(`연산3`)이 처리되므로 `연산1`이 먼저 출력된 후 `연산3`이 출력된다.
+
+<br>
 
 ### 2. `await` 키워드 쓰임새
 ```dart
@@ -122,6 +134,8 @@ void main() async{
 `getString3()`이 먼저 호출됐으며, `await`라는 키워드로 `getString3()`의 결과값이 반환될 때 까지 프로세스는 기다린 후 그 결과값을 반환한다. 
 3초 후 `getString3()`이 반환되고 나서 `getString1()`이 호출되며 마찬가지로 결과값이 반환될 때 까지 프로세스가 기다린 후 그 결과값을 반환하게 되므로 `연산3`이 먼저 출력된 후에 `연산1`이 출력되게 된다.
 
+<br>
+
 ### 3. `await`의 필요성
 `await`는 얼핏보면 동기적 처리 성격을 가지고 있어서 일반적인 동기처리 방식으로 해결하면 되지 않나 하는 생각이 들 수 있지만 `await`는 연쇄적으로 `async`함수 , `Future`를 받아오는 상황에서 유용하게 쓰일 수 있다.
 
@@ -139,6 +153,8 @@ onTap:() async{
 하지만 `getAllModel`을 통해 받아온 데이터 모델들은 아직 데이터값으로 반환할 필요가 없기 때문에 `await` 사용 없이 `Future` 자료형인 채로 그대로 다음 메소드의 인자로 전달하여 처리를 미룰 수 있게 된다. 
 
 이렇게 `await`는 필요한 순간에 데이터값을 반환하거나 완료를 기다릴 수 있도록 해주기 때문에 비동기처리에서 데이터를 다룰 때 유용하게 사용된다.
+
+<br>
 <br>
 
 ## 비동기처리 in Flutter
@@ -151,6 +167,8 @@ Flutter에서의 쓰임을 얘기하기 전에 간단하게 생소하실 Flutter
 `Widget`을 빌드할 때 사용될 정보가 데이터베이스에 있는 등의 상황에서, 비동기처리를 이용해 `Widget`을 렌더링 해야하는데, Flutter에선 이를 지원해주는 기본 빌더 `FutureBuilder`, `StreamBuilder`가 있다.
 
 기본적으로 `FutureBuilder` , `StreamBuilder` 모두 <strong>`AsyncSnapshot`</strong>이라는 객체를 추가적으로 다룬다.
+
+<br>
 
 ### `AsyncSnapshot`이란? 
 
@@ -168,6 +186,7 @@ Flutter에서의 쓰임을 얘기하기 전에 간단하게 생소하실 Flutter
 `snapshot.hasError`라는 필드를 통해선 반환값이 에러인지 확인가능하고,
 `snapshot.data`필드를 통해 반환한 실제 데이터값을 얻어낼 수 있다.
 
+<br>
 
 ### `StreamBuilder`, `FutureBuilder` 사용법
 
