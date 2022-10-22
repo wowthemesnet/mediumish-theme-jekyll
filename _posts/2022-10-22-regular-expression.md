@@ -28,8 +28,8 @@ use_math: true
 
 > |**정규 표현식**|**결과 예시**|
 > |:---:|:---:|
-> |woodchunks|interesting links to <span style="color:red">**woodchucks**</span> and lemurs|
-> |a|M<span style="color:red">**a**</span>ry Ann stopped by Mon<span style="color:red">**a**</span>'s|
+> |woodchunks|interesting links to <span style="color:red">**<u>woodchucks</u>**</span> and lemurs|
+> |a|M<span style="color:red">**<u>a</u>**</span>ry Ann stopped by Mon<span style="color:red">**<u>a</u>**</span>'s|
 
 - - -
 
@@ -43,9 +43,9 @@ use_math: true
 
 > |**정규 표현식**|**의미**|**결과 예시**|
 > |:---:|:---:|:---:|
-> |[wW]oodchunks|Woodchunk or woodchunk|<span style="color:red">**Woodchucks**</span>|
-> |[abc]|'a','b', or 'c'|In uomini, in sold<span style="color:red">**a**</span>ti|
-> |[0123456789]|any digit|plenty of <span style="color:red">**7**</span> to <span style="color:red">**5**</span>
+> |[wW]oodchunks|Woodchunk or woodchunk|<span style="color:red">**<u>Woodchucks</u>**</span>|
+> |[abc]|'a','b', or 'c'|In uomini, in sold<span style="color:red">**<u>a</u>**</span>ti|
+> |[0123456789]|any digit|plenty of <span style="color:red">**<u>7</u>**</span> to <span style="color:red">**<u>5</u>**</span>
 
 ### **2-2) Ranges -**
 
@@ -55,8 +55,8 @@ use_math: true
 
 > |**정규 표현식**|**의미**|**결과 예시**|
 > |:---:|:---:|:---:|
-> |[A-Z]|an upper case letter|we should call it '<span style="color:red">**D**</span>renched <span style="color:red">**B**</span>lossoms'|
-> |[0-9]|a single digit|Chapter <span style="color:red">**1**</span>: Down the Rabbit Hole
+> |[A-Z]|an upper case letter|we should call it '<span style="color:red">**<u>D</u>**</span>renched <span style="color:red">**<u>B</u>**</span>lossoms'|
+> |[0-9]|a single digit|Chapter <span style="color:red">**<u>1</u>**</span>: Down the Rabbit Hole
 
 - - -
 
@@ -70,9 +70,9 @@ use_math: true
 
 > |**정규 표현식**|**의미**|**결과 예시**|
 > |:---:|:---:|:---:|
-> |[^A-Z]|not an upper case letter|O<span style="color:red">**yfn pripetchik**</span>|
-> |[e^]|either 'e' or '^'|look up <span style="color:red">**^**</span> now|
-> |a^b|the pattern 'a^b'|look up <span style="color:red">**a^b**</span> now|
+> |[^A-Z]|not an upper case letter|O<span style="color:red">**<u>yfn pripetchik</u>**</span>|
+> |[e^]|either 'e' or '^'|look up <span style="color:red">**<u>^</u>**</span> now|
+> |a^b|the pattern 'a^b'|look up <span style="color:red">**<u>a^b</u>**</span> now|
 
 - - -
 
@@ -84,8 +84,8 @@ use_math: true
 
 > |**정규 표현식**|**의미**|**결과 예시**|
 > |:---:|:---:|:---:|
-> |woodchunks?|woodchunk or woodchunks|<span style="color:red">**woodchunk**</span>|
-> |colou?r|color or colour|<span style="color:red">**color**</span>|
+> |woodchunks?|woodchunk or woodchunks|<span style="color:red">**<u>woodchunk</u>**</span>|
+> |colou?r|color or colour|<span style="color:red">**<u>color</u>**</span>|
 
 
 ### **4-2) Period .**
@@ -94,7 +94,7 @@ use_math: true
 
 > |**정규 표현식**|**의미**|**결과 예시**|
 > |:---:|:---:|:---:|
-> |beg.n|any character between beg and n|<span style="color:red">**begin**</span>, <span style="color:red">**beg'n**</span>, <span style="color:red">**begun**</span>|
+> |beg.n|any character between beg and n|<span style="color:red">**<u>begin</u>**</span>, <span style="color:red">**<u>beg'n</u>**</span>, <span style="color:red">**<u>begun</u>**</span>|
 
 - - -
 
@@ -106,7 +106,7 @@ use_math: true
 
 > |**정규 표현식**|**의미**|**결과 예시**|
 > |:---:|:---:|:---:|
-> |oo*h!|0 or more of previous char|<span style="color:red">**oh!**</span> <span style="color:red">**ooh!**</span> <span style="color:red">**oooh!**</span> <span style="color:red">**ooooh!**</span>|
+> |oo*h!|0 or more of previous char|<span style="color:red">**<u>oh!</u>**</span> <span style="color:red">**<u>ooh!</u>**</span> <span style="color:red">**<u>oooh!</u>**</span> <span style="color:red">**<u>ooooh!</u>**</span>|
 
 ### **5-2) Plus \+**
 
@@ -114,7 +114,7 @@ use_math: true
 
 > |**정규 표현식**|**의미**|**결과 예시**|
 > |:---:|:---:|:---:|
-> |o+h!|1 or more of previous char|<span style="color:red">**oh!**</span> <span style="color:red">**ooh!**</span> <span style="color:red">**oooh!**</span> <span style="color:red">**ooooh!**</span>|
+> |o+h!|1 or more of previous char|<span style="color:red">**<u>oh!</u>**</span> <span style="color:red">**<u>ooh!</u>**</span> <span style="color:red">**<u>oooh!</u>**</span> <span style="color:red">**<u>ooooh!</u>**</span>|
 
 - - -
 
@@ -128,8 +128,8 @@ use_math: true
 
 > |**정규 표현식**|**결과 예시**|
 > |:---:|:---:|
-> |^[A-Z]|<span style="color:red">**P**</span>alo Alto|
-> |^[^A-Za-z]|<span style="color:red">**"**</span>Hello"|
+> |^[A-Z]|<span style="color:red">**<u>P</u>**</span>alo Alto|
+> |^[^A-Za-z]|<span style="color:red">**<u>"</u>**</span>Hello"|
 
 ### **6-2) $**
 
@@ -139,8 +139,8 @@ $는 패턴의 끝을 가리킵니다.
 
 > |**정규 표현식**|**결과 예시**|
 > |:---:|:---:|
-> |\\.$|The end<span style="color:red">**.**</span>|
-> |.$|The end<span style="color:red">**!**</span>|
+> |\\.$|The end<span style="color:red">**<u>.</u>**</span>|
+> |.$|The end<span style="color:red">**<u>!</u>**</span>|
 
 ### **6-3) \b**
 
@@ -150,8 +150,8 @@ $는 패턴의 끝을 가리킵니다.
 
 > |**정규 표현식**|**결과 예시**|
 > |:---:|:---:|
-> |the|<span style="color:red">**The**</span> o<span style="color:red">**the**</span>rs make <span style="color:red">**the**</span>m happy|
-> |\bthe\b|<span style="color:red">**The**</span> others make them happy|
+> |the|<span style="color:red">**<u>The</u>**</span> o<span style="color:red">**<u>the</u>**</span>rs make <span style="color:red">**<u>the</u>**</span>m happy|
+> |\bthe\b|<span style="color:red">**<u>The</u>**</span> others make them happy|
 
 - - -
 
@@ -165,7 +165,7 @@ or의 역할과 비슷합니다.
 
 > |**정규 표현식**|**결과 예시**|
 > |:---:|:---:|
-> |yours\|mine|<span style="color:red">**yours mine**</span>|
+> |yours\|mine|<span style="color:red">**<u>yours</u> <u>mine</u>**</span>|
 
 ### **7-2) Parenthesis ( )**
 
@@ -175,8 +175,8 @@ or의 역할과 비슷합니다.
 
 > |**정규 표현식**|**결과 예시**|
 > |:---:|:---:|
-> |gupp(y\|ies)|<span style="color:red">**guppy guppies**</span>|
-> |(Column [0-9]+ \*)\*|<span style="color:red">**Colum 1&nbsp;&nbsp;&nbsp;Column 2&nbsp;&nbsp;&nbsp;&nbsp;Column 3**</span>|
+> |gupp(y\|ies)|<span style="color:red">**<u>guppy</u> <u>guppies</u>**</span>|
+> |(Column [0-9]+ \*)\*|<span style="color:red">**<u>Colum 1&nbsp;&nbsp;&nbsp;Column 2&nbsp;&nbsp;&nbsp;&nbsp;Column 3</u>**</span>|
 
 - - -
 
