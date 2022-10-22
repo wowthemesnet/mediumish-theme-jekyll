@@ -28,8 +28,8 @@ use_math: true
 
 > |**정규 표현식**|**결과 예시**|
 > |:---:|:---:|
-> |woodchunks|interesting links to <span style="color:red">**<u>woodchucks</u>**</span> and lemurs|
-> |a|M<span style="color:red">**<u>a</u>**</span>ry Ann stopped by Mon<span style="color:red">**<u>a</u>**</span>'s|
+> |woodchunks|interesting links to `woodchucks` and lemurs|
+> |a|M`a`ry Ann stopped by Mon`a`'s|
 
 - - -
 
@@ -43,9 +43,9 @@ use_math: true
 
 > |**정규 표현식**|**의미**|**결과 예시**|
 > |:---:|:---:|:---:|
-> |[wW]oodchunks|Woodchunk or woodchunk|<span style="color:red">**<u>Woodchucks</u>**</span>|
-> |[abc]|'a','b', or 'c'|In uomini, in sold<span style="color:red">**<u>a</u>**</span>ti|
-> |[0123456789]|any digit|plenty of <span style="color:red">**<u>7</u>**</span> to <span style="color:red">**<u>5</u>**</span>
+> |[wW]oodchunks|Woodchunk or woodchunk|`Woodchucks`|
+> |[abc]|'a','b', or 'c'|In uomini, in sold`a`ti|
+> |[0123456789]|any digit|plenty of `7` to `5`
 
 ### **2-2) Ranges -**
 
@@ -55,8 +55,8 @@ use_math: true
 
 > |**정규 표현식**|**의미**|**결과 예시**|
 > |:---:|:---:|:---:|
-> |[A-Z]|an upper case letter|we should call it '<span style="color:red">**<u>D</u>**</span>renched <span style="color:red">**<u>B</u>**</span>lossoms'|
-> |[0-9]|a single digit|Chapter <span style="color:red">**<u>1</u>**</span>: Down the Rabbit Hole
+> |[A-Z]|an upper case letter|we should call it '`D`renched `B`lossoms'|
+> |[0-9]|a single digit|Chapter `1`: Down the Rabbit Hole
 
 - - -
 
@@ -70,9 +70,9 @@ use_math: true
 
 > |**정규 표현식**|**의미**|**결과 예시**|
 > |:---:|:---:|:---:|
-> |[^A-Z]|not an upper case letter|O<span style="color:red">**<u>yfn pripetchik</u>**</span>|
-> |[e^]|either 'e' or '^'|look up <span style="color:red">**<u>^</u>**</span> now|
-> |a^b|the pattern 'a^b'|look up <span style="color:red">**<u>a^b</u>**</span> now|
+> |[^A-Z]|not an upper case letter|O`yfn pripetchik`|
+> |[e^]|either 'e' or '^'|look up `^` now|
+> |a^b|the pattern 'a^b'|look up `a^b` now|
 
 - - -
 
@@ -84,8 +84,8 @@ use_math: true
 
 > |**정규 표현식**|**의미**|**결과 예시**|
 > |:---:|:---:|:---:|
-> |woodchunks?|woodchunk or woodchunks|<span style="color:red">**<u>woodchunk</u>**</span>|
-> |colou?r|color or colour|<span style="color:red">**<u>color</u>**</span>|
+> |woodchunks?|woodchunk or woodchunks|`woodchunk`|
+> |colou?r|color or colour|`color`|
 
 
 ### **4-2) Period .**
@@ -94,7 +94,7 @@ use_math: true
 
 > |**정규 표현식**|**의미**|**결과 예시**|
 > |:---:|:---:|:---:|
-> |beg.n|any character between beg and n|<span style="color:red">**<u>begin</u>**</span>, <span style="color:red">**<u>beg'n</u>**</span>, <span style="color:red">**<u>begun</u>**</span>|
+> |beg.n|any character between beg and n|`begin`, `beg'n`, `begun`|
 
 - - -
 
@@ -106,7 +106,7 @@ use_math: true
 
 > |**정규 표현식**|**의미**|**결과 예시**|
 > |:---:|:---:|:---:|
-> |oo*h!|0 or more of previous char|<span style="color:red">**<u>oh!</u>**</span> <span style="color:red">**<u>ooh!</u>**</span> <span style="color:red">**<u>oooh!</u>**</span> <span style="color:red">**<u>ooooh!</u>**</span>|
+> |oo*h!|0 or more of previous char|`oh!` `ooh!` `oooh!` `ooooh!`|
 
 ### **5-2) Plus \+**
 
@@ -114,7 +114,7 @@ use_math: true
 
 > |**정규 표현식**|**의미**|**결과 예시**|
 > |:---:|:---:|:---:|
-> |o+h!|1 or more of previous char|<span style="color:red">**<u>oh!</u>**</span> <span style="color:red">**<u>ooh!</u>**</span> <span style="color:red">**<u>oooh!</u>**</span> <span style="color:red">**<u>ooooh!</u>**</span>|
+> |o+h!|1 or more of previous char|`oh!` `ooh!` `oooh!` `ooooh!`|
 
 - - -
 
@@ -128,8 +128,8 @@ use_math: true
 
 > |**정규 표현식**|**결과 예시**|
 > |:---:|:---:|
-> |^[A-Z]|<span style="color:red">**<u>P</u>**</span>alo Alto|
-> |^[^A-Za-z]|<span style="color:red">**<u>"</u>**</span>Hello"|
+> |^[A-Z]|`P`alo Alto|
+> |^[^A-Za-z]|`"`Hello"|
 
 ### **6-2) $**
 
@@ -139,8 +139,8 @@ $는 패턴의 끝을 가리킵니다.
 
 > |**정규 표현식**|**결과 예시**|
 > |:---:|:---:|
-> |\\.$|The end<span style="color:red">**<u>.</u>**</span>|
-> |.$|The end<span style="color:red">**<u>!</u>**</span>|
+> |\\.$|The end`.`|
+> |.$|The end`!`|
 
 ### **6-3) \b**
 
@@ -150,8 +150,8 @@ $는 패턴의 끝을 가리킵니다.
 
 > |**정규 표현식**|**결과 예시**|
 > |:---:|:---:|
-> |the|<span style="color:red">**<u>The</u>**</span> o<span style="color:red">**<u>the</u>**</span>rs make <span style="color:red">**<u>the</u>**</span>m happy|
-> |\bthe\b|<span style="color:red">**<u>The</u>**</span> others make them happy|
+> |the|`The` o`the`rs make `the`m happy|
+> |\bthe\b|`The` others make them happy|
 
 - - -
 
@@ -165,7 +165,7 @@ or의 역할과 비슷합니다.
 
 > |**정규 표현식**|**결과 예시**|
 > |:---:|:---:|
-> |yours\|mine|<span style="color:red">**<u>yours</u> <u>mine</u>**</span>|
+> |yours\|mine|`yours` `mine`|
 
 ### **7-2) Parenthesis ( )**
 
@@ -175,8 +175,8 @@ or의 역할과 비슷합니다.
 
 > |**정규 표현식**|**결과 예시**|
 > |:---:|:---:|
-> |gupp(y\|ies)|<span style="color:red">**<u>guppy</u> <u>guppies</u>**</span>|
-> |(Column [0-9]+ \*)\*|<span style="color:red">**<u>Colum 1&nbsp;&nbsp;&nbsp;Column 2&nbsp;&nbsp;&nbsp;&nbsp;Column 3</u>**</span>|
+> |gupp(y\|ies)|`guppy` `guppies`|
+> |(Column [0-9]+ \*)\*|`Colum 1 Column 2 Column 3`|
 
 - - -
 
@@ -203,6 +203,3 @@ or의 역할과 비슷합니다.
 만약 **정규 표현식**을 사용하지 않는다면, 어떠한 텍스트에서 우리가 원하는 정보를 추출해 내기 위해서 조건문과 반복문 등으로 복잡한 로직을 구현하거나, 여러 가지 다른 함수들을 동원해야 할 것입니다.
 
 이러한 정규 표현식을 이용한 텍스트 처리는 다양한 NLP 문제나 웹 크롤링을 통한 데이터마이닝 등 매우 폭넓게 활용할 수 있습니다.
-
-- - -
-
