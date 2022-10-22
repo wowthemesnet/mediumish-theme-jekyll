@@ -29,9 +29,9 @@ featured: true
 
 ![Untitled](%E1%84%89%E1%85%A5%E1%84%87%E1%85%A5%20%E1%84%8B%E1%85%A5%E1%86%B9%E1%84%8B%E1%85%B5%20%E1%84%83%E1%85%A6%E1%84%8B%E1%85%B5%E1%84%90%E1%85%A5%E1%84%85%E1%85%B3%E1%86%AF%20%E1%84%8C%E1%85%A5%E1%84%8C%E1%85%A1%E1%86%BC%E1%84%92%E1%85%A1%E1%84%80%E1%85%A9%20%E1%84%89%E1%85%B5%E1%87%81%E1%84%8B%E1%85%A5%E1%84%8B%E1%85%AD!%207ba1a244d14441f0993db59da69b8501/Untitled.jpeg)
 
-# WebStorage
+## WebStorage
 
-웹 스토리지는 웹 개발을 한다면 한번쯤은 사용하게 될 친구입니다. **Local Storage, Session Storage** 두 가지가 있는데, 이 둘의 차이는 **‘얼마나 오래 보존되느냐, 무엇을 기준으로 저장되느냐’**에 있습니다. 
+웹 스토리지는 웹 개발을 한다면 한번쯤은 사용하게 될 친구입니다. **Local Storage, Session Storage** 두 가지가 있는데, 이 둘의 차이는 **'무엇을 기준으로 저장되느냐’**에 있습니다. 
 
 ### Local Storage
 
@@ -39,7 +39,6 @@ featured: true
 
 Local Storage에 저장한 데이터를 지우려면 **JavaScript를 코드로 삭제하거나 브라우저의 캐시 또는 local Storage 데이터를 직접 지워야**합니다. 때문에 로그인이나 접속 이력등을 관리할 때 편리합니다. 
 
----
 
 ### Session Storage
 
@@ -56,24 +55,24 @@ Session Storage에 저장된 데이터는 탭 또는 창이 종료되면 자동�
 
 ```jsx
 // 키에 데이터 쓰기
-localStorage.setItem("key", value);
-sessionStorage.setItem("key", value);
+window.localStorage.setItem("key", value);
+window.sessionStorage.setItem("key", value);
 
 // 키로 부터 데이터 읽기
-localStorage.getItem("key");
-sessionStorage.getItem("key", value);
+window.localStorage.getItem("key");
+window.sessionStorage.getItem("key", value);
 
 // 키의 데이터 삭제
-localStorage.removeItem("key");
-sessionStorage.removeItem("key", value);
+window.localStorage.removeItem("key");
+window.sessionStorage.removeItem("key", value);
 
 // 모든 키의 데이터 삭제
-localStorage.clear();
-sessionStorage.clear();
+window.localStorage.clear();
+window.sessionStorage.clear();
 
 // 저장된 키/값 쌍의 개수
-localStorage.length;
-sessionStorage.length;
+window.localStorage.length;
+window.sessionStorage.length;
 ```
 
 ### 예제(Local)
@@ -90,7 +89,7 @@ sessionStorage.length;
 - **탭을 껐다 켜도 남아있어요. 한번 테스트해보세요!**
 - Session Storage도 같은 방식으로 테스트 할 수 있습니다.
 
-# IndexedDB
+### IndexedDB
 
 다음으로는 IndexedDB 입니다. 
 
@@ -99,7 +98,7 @@ sessionStorage.length;
 
 사용할 수 있는 웹 스토리지 중에서 제일 실제 데이터베이스와 비슷하달까요! 
 
-문자열 타입의 키&값을 사용해야하는 webStorage와 달리 indexedDB에서는 js가 취급하는 모든 타입을 사용할 수 있습니다. 여러개의 데이터베이스를 생성할 수 있으며, **데이터를 요청하고 응답받는 과정이 비동기적으로 작동한다**는 점이 특이사항입니다. 
+문자열 타입의 키&값을 사용해야하는 webStorage와 달리 IndexedDB에서는 js가 취급하는 모든 타입을 사용할 수 있습니다. 여러 개의 데이터베이스를 생성할 수 있으며, **데이터를 요청하고 응답받는 과정이 비동기적으로 작동한다**는 점이 특이사항입니다. 
 
 때문에 단순하고 적은 양의 데이터가 아닌, 많은 양의 구조화된 데이터를 쌓고 싶을 때 추천합니다 😎
 
