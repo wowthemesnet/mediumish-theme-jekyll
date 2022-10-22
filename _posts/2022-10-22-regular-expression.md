@@ -62,7 +62,7 @@ use_math: true
 
 ## **3. Negation**
 
-괄호 [ ] 안에서 첫 번째로 쓰이는 ^는 not을 의미합니다. 
+괄호 [ ] 안에서 첫 번째로 쓰이는 ^는 not을 의미합니다.
 
 원래 결과와는 반대로, 뒤에 오는 문자들이 들어있지 않은 형태를 찾습니다.
 
@@ -86,7 +86,6 @@ use_math: true
 > |:---:|:---:|:---:|
 > |woodchunks?|woodchunk or woodchunks|`woodchunk`|
 > |colou?r|color or colour|`color`|
-
 
 ### **4-2) Period .**
 
