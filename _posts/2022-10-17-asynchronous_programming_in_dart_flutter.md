@@ -28,21 +28,14 @@ featured: true
 
 - 파일로부터 데이터를 읽어올 때
 <br>
+<br>
 
 Dart언어에서는 <strong>`Stream`</strong>과 <strong>`Future`</strong>, 2가지 종류로 비동기처리를 지원한다.
-
-<br> 
-<br>
-
-## Stream이란?
-<br>
-다른 환경에서도 많이 사용해서 다소 익숙한 비동기처리 개념 중 하나인 Stream은 Flutter에선 비동기식 이벤트(값)의 연속된 소스를 의미한다. 
 
 `Stream`도 그렇고 `Future`도 그렇고 비동기처리의 개념은 주로 외부에 사상/연산을 주고받고 하는 과정에서 사용되므로, 변수에 바로 `Stream`/`Future` 타입이 할당되기보단 외부작업을 맡기는 로직이 쓰이게 되는 함수 내에서 `Stream`/`Future` 객체의 개념을 요구하는 경우가 대부분이다.
 
 따라서 `Stream`/`Future` 객체는 함수에서 반환되는 경우가 많으며, 이 때 함수가 정의될 때 함수의 body에서 비동기처리 방식이 사용된다는 것을 아래 코드와 같이 명시해줘야 한다. 
 
-```Stream``` 함수에는 <strong>`async*`</strong>,  `Future` 함수에는 <strong>`async`</strong>라는 키워드를 통해서 함수 내에서 비동기처리방식이 쓰인다는 것을 명시할 수 있다.
 ```dart
 Stream<T> function() async*{
 	...
@@ -52,8 +45,23 @@ Future<T> function() async{
 	...
 }
 ```
+위와 같이 다루는 타입에 따라서 `Stream` 함수엔 <strong>`async*`</strong>,  `Future` 함수엔 <strong>`async`</strong>라는 서로 다른 키워드를 통해서 함수 내에서 비동기처리방식이 쓰인다는 것을 명시할 수 있다.
+
+다만 이 함수들의 반환형이 꼭 `Stream<T>`, `Future<T>`일 필요는 없다. `async*`/`async` 키워드는 함수의 body내에서 비동기처리가 있다는 것을 명시할 뿐 그 함수의 반환형에 대한 정보를 의미하는 것이 아니다.
+
+<br> 
+<br>
+
+## Stream이란?
+<br>
+다른 환경에서도 많이 사용해서 다소 익숙한 비동기처리 개념 중 하나인 Stream은 Flutter에선 비동기식 이벤트(값)의 연속된 소스를 의미한다. 
+
+
+
+<br>
+
 `Stream`으로 정의된 함수는 선언 즉시 `Stream` 객체를 반환하며, 그 후엔 `Stream`의 데이터에 접근해 사용할 때까지 아무 일도 일어나지 않는다.
-이후 <strong>`listen()`</strong>/<strong>`await for`</strong> 키워드를 통해 `Stream`객체의 데이터에 접근할 수 있으며, 이 때 `async*` 함수가 동작하게 된다.
+이후 <strong>`listen()`</strong>/<strong>`await for`</strong> 키워드를 통해 `Stream`객체의 <strong>데이터</strong>에 접근할 수 있으며, 이 때 `async*` 함수가 동작하게 된다.
 ```dart
 stream.listen((int x) => print(x)); //listen()
     
@@ -62,7 +70,7 @@ await for (final value in stream) { //await for
 }
 ```
 
-일반적으로 `Stream` 객체의 데이터에 접근하는 과정에서 iterator의 개념이 사용되는데, 가장 최근에 올라온 이벤트들을 하나씩 처리하고 지워나가면서 `Stream` 안에 남은이벤트가 없어질 때 까지 이를 계속하게 된다. 
+일반적으로 `Stream` 객체의 데이터에 접근하는 과정에서 iterator의 개념이 사용되는데, 가장 최근에 올라온 이벤트들을 하나씩 처리하고 지워나가면서 `Stream` 안에 남은 이벤트가 없어질 때 까지 이를 계속하게 된다. 
 이렇게 한 이벤트는 한 번 사용하고 버리는 것을 <strong>단일구독스트림</strong>라고 한다.
 
 하나의 이벤트에 여러번 접근해서 값을 사용하고 싶다면 <strong>브로드캐스트스트림</strong> 형식을 사용하면 된다.
@@ -172,16 +180,18 @@ Flutter에서의 쓰임을 얘기하기 전에 간단하게 생소하실 Flutter
 
 ### `AsyncSnapshot`이란? 
 
-비동기처리의 상태를 알 수 있게 해주는 객체이다.
+비동기처리의 상태를 알 수 있게 해주는 객체이며, 외부의 데이터를 받아 완료된 상태라면 받아 온 데이터를 조회할 수도 있다.
+
 앞서 얘기했지만 비동기처리는 다음과 같이 2가지 상태를 가질 수 있다.
 
 - 외부로부터 결과값을 받은 상태
 - 외부로부터 결과값을 아직 받지 못한 상태
 <br>
 
-이 때, `snapshot.hasData`라는 필드에 접근해서 비동기처리의 상태를 알아낼 수 있다.
-`true` => 외부로부터 결과값 or Error값을 받아온 상태
-`false` => 외부로부터 결과값을 받지 못한 상태
+편의상 `snapshot`을 `AsyncSnapshot`의 객체라 할 때, `snapshot.hasData`라는 필드에 접근해서 비동기처리의 상태를 알아낼 수 있다.
+
+`snapshot.hasData == true` => 외부로부터 결과값 or Error값을 받아온 상태 <br> 
+`snapshot.hasData == false` => 외부로부터 결과값을 받지 못한 상태
 
 `snapshot.hasError`라는 필드를 통해선 반환값이 에러인지 확인가능하고,
 `snapshot.data`필드를 통해 반환한 실제 데이터값을 얻어낼 수 있다.
@@ -205,7 +215,7 @@ FutureBuilder<T>(
     }
 )
 ```
-다음과 같이 위젯을 구성하며,빌더는 인자로 들어간 `stream`, `future`의 `AsyncSnapshot`을 받아온 후 `snapshot.hasData`의 결과에 따라서 
+위젯의 기본 구성은 다음과 같으며,빌더는 인자로 들어간 `stream`, `future`의 `AsyncSnapshot`을 받아온 후 `snapshot.hasData`의 결과에 따라서 
 `true` 일때는 `Widget('Result')`를, 
 `false`일 때는 `Widget('Waiting')`을 빌드한다는 것을 알 수 있다.
 
