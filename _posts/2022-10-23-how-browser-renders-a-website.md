@@ -143,15 +143,15 @@ document.querySelector("body").style.backgroundColor = "tomato";
 
 script를 `body` 요소의 맨 밑에 배치하는 것 외에 다른 방법도 여럿 있습니다.
 
-HTML5 이후부터는 `async` 혹은 `difer` attribute를 활용하기도 합니다. 둘 다 JS script load를 파싱과 병렬적으로 진행하며, 전자는 다운로드가 완료되는 순으로 script를 실행(실행하는 도중에는 파싱이 중단됨), 후자는 파싱이 끝나 DOM 생성이 완료된 후 script 순서대로 실행한다는 특성을 가지고 있습니다.
+HTML5 이후부터는 `async` 혹은 `defer` attribute를 활용하기도 합니다. 둘 다 JS script load를 파싱과 병렬적으로 진행하며, 전자는 다운로드가 완료되는 순으로 script를 실행(실행하는 도중에는 파싱이 중단됨), 후자는 파싱이 끝나 DOM 생성이 완료된 후 script 순서대로 실행한다는 특성을 가지고 있습니다.
 
-`type` attribute로 `module`을 지정하는 경우에도 `difer` attribute를 붙인 것처럼 실행됩니다. 다만 `type="module"`과 `async`를 동시에 줄 경우 `async` attribute를 붙인 것처럼 로딩이 끝나면 다른 스크립트나 HTML 문서의 처리가 끝나기 전에 실행됩니다.
+`type` attribute로 `module`을 지정하는 경우에도 `defer` attribute를 붙인 것처럼 실행됩니다. 다만 `type="module"`과 `async`를 동시에 줄 경우 `async` attribute를 붙인 것처럼 로딩이 끝나면 다른 스크립트나 HTML 문서의 처리가 끝나기 전에 실행됩니다.
 
 > `async`의 실사용 예가 헷갈릴 수 있는데, 광고, 조회수 카운터처럼 다른 요소나 스크립트에 종속되지 않는 기능을 구현할 때 더 빠른 로드를 구현하기 위해 사용합니다.
 
 ## Critical Rendering Path (CRP)
 
-지금까지 보신 일련의 과정을 CRP라고 부르며, CRP를 최적화는 웹사이트 퍼포먼스 개선에 큰 도움이 됩니다. 최적화가 잘된 웹사이트는 CRP 중간에 block되는 일 없이 점진적으로 렌더링됩니다.
+지금까지 보신 일련의 과정을 CRP라고 부르며, CRP 최적화는 웹사이트 퍼포먼스 개선에 큰 도움이 됩니다. 최적화가 잘된 웹사이트는 CRP 중간에 block되는 일 없이 점진적으로 렌더링됩니다.
 
 Lighthouse를 활용하면 CRP가 잘 최적화 됐는지 확인하기 좋습니다. 다음은 Lighthouse를 통해 GDSC UOS 블로그의 render-blocking 리소스를 확인한 내용입니다. (통과했네요!)
 
