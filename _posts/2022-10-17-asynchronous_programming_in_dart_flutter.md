@@ -8,8 +8,7 @@ description: "Dart/Flutter에서 비동기처리하기"
 featured: true
 ---
 
-
- ## 비동기처리(asynchronous programming)란?
+## 비동기처리(asynchronous programming)란?
   ---
   <br>
 <strong>비동기처리</strong>는 대기를 필요로 하는 작업을 기다리면서도 프로세스가 다른 작업을 수행할 수 있도록 작업하는 방식을 말한다.
