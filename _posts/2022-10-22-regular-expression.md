@@ -26,10 +26,10 @@ use_math: true
 
 해당 표현식과 동일한 형태를 찾아 반환하며, 이때 대소문자를 구분합니다.
 
-> |**정규 표현식**|**결과 예시**|
-> |:---:|:---:|
-> |woodchunks|interesting links to `woodchucks` and lemurs|
-> |a|M`a`ry Ann stopped by Mon`a`'s|
+> |**정규 표현식**|**결과 예시**                               |
+> |:------------:|:------------------------------------------:|
+> |woodchunks    |interesting links to `woodchucks` and lemurs|
+> |a             |M`a`ry Ann stopped by Mon`a`'s              |
 
 - - -
 
@@ -41,11 +41,11 @@ use_math: true
 
 괄호 안의 문자들은 or 관계라고 생각할 수 있습니다.
 
-> |**정규 표현식**|**의미**|**결과 예시**|
-> |:---:|:---:|:---:|
-> |[wW]oodchunks|Woodchunk or woodchunk|`Woodchucks`|
-> |[abc]|'a','b', or 'c'|In uomini, in sold`a`ti|
-> |[0123456789]|any digit|plenty of `7` to `5`
+> |**정규 표현식**|**의미**              |**결과 예시**          |
+> |:------------:|:--------------------:|:---------------------:|
+> |[wW]oodchunks |Woodchunk or woodchunk|`Woodchucks`           |
+> |[abc]         |'a','b', or 'c'       |In uomini, in sold`a`ti|
+> |[0123456789]  |any digit             |plenty of `7` to `5`   |
 
 ### **2-2) Ranges -**
 
@@ -53,10 +53,10 @@ use_math: true
 
 즉, 알파벳이나 숫자를 문자 하나하나 모두 나열하지 않아도 표현이 가능합니다.
 
-> |**정규 표현식**|**의미**|**결과 예시**|
-> |:---:|:---:|:---:|
-> |[A-Z]|an upper case letter|we should call it '`D`renched `B`lossoms'|
-> |[0-9]|a single digit|Chapter `1`: Down the Rabbit Hole
+> |**정규 표현식**|**의미**            |**결과 예시**                             |
+> |:------------:|:------------------:|:---------------------------------------:|
+> |[A-Z]         |an upper case letter|we should call it '`D`renched `B`lossoms'|
+> |[0-9]         |a single digit      |Chapter `1`: Down the Rabbit Hole        |
 
 - - -
 
@@ -68,11 +68,11 @@ use_math: true
 
 단, 괄호 [ ] 안의 첫 번째로 쓰이지 않는 ^는 문자 ^를 의미합니다.
 
-> |**정규 표현식**|**의미**|**결과 예시**|
-> |:---:|:---:|:---:|
-> |[^A-Z]|not an upper case letter|O`yfn pripetchik`|
-> |[e^]|either 'e' or '^'|look up `^` now|
-> |a^b|the pattern 'a^b'|look up `a^b` now|
+> |**정규 표현식**|**의미**                |**결과 예시**    |
+> |:------------:|:----------------------:|:---------------:|
+> |[^A-Z]        |not an upper case letter|O`yfn pripetchik`|
+> |[e^]          |either 'e' or '^'       |look up `^` now  |
+> |a^b           |the pattern 'a^b'       |look up `a^b` now|
 
 - - -
 
@@ -82,18 +82,18 @@ use_math: true
 
 ?의 바로 직전 문자는 있던 지 없던 지 상관없도록 하여 검색합니다.
 
-> |**정규 표현식**|**의미**|**결과 예시**|
-> |:---:|:---:|:---:|
-> |woodchunks?|woodchunk or woodchunks|`woodchunk`|
-> |colou?r|color or colour|`color`|
+> |**정규 표현식**|**의미**               |**결과 예시**|
+> |:------------:|:---------------------:|:-----------:|
+> |woodchunks?   |woodchunk or woodchunks|`woodchunk`  |
+> |colou?r       |color or colour        |`color`      |
 
 ### **4-2) Period .**
 
 .가 쓰인 자리는 모든 문자와 매치가 가능합니다.
 
-> |**정규 표현식**|**의미**|**결과 예시**|
-> |:---:|:---:|:---:|
-> |beg.n|any character between beg and n|`begin`, `beg'n`, `begun`|
+> |**정규 표현식**|**의미**                       |**결과 예시**            |
+> |:------------:|:-----------------------------:|:-----------------------:|
+> |beg.n         |any character between beg and n|`begin`, `beg'n`, `begun`|
 
 - - -
 
@@ -103,17 +103,17 @@ use_math: true
 
 \*의 바로 직전 문자는, 아예 없거나 몇 개가 오든 상관없도록 하여 찾습니다.
 
-> |**정규 표현식**|**의미**|**결과 예시**|
-> |:---:|:---:|:---:|
-> |oo*h!|0 or more of previous char|`oh!` `ooh!` `oooh!` `ooooh!`|
+> |**정규 표현식**|**의미**                  |**결과 예시**                |
+> |:------------:|:------------------------:|:---------------------------:|
+> |oo*h!         |0 or more of previous char|`oh!` `ooh!` `oooh!` `ooooh!`|
 
 ### **5-2) Plus \+**
 
 \+의 바로 직전 문자는, 반드시 1개 이상 있도록 하되, 그 이상은 몇 개가 오든 상관없도록 하여 찾습니다.
 
-> |**정규 표현식**|**의미**|**결과 예시**|
-> |:---:|:---:|:---:|
-> |o+h!|1 or more of previous char|`oh!` `ooh!` `oooh!` `ooooh!`|
+> |**정규 표현식**|**의미**                  |**결과 예시**                |
+> |:------------:|:------------------------:|:---------------------------:|
+> |o+h!          |1 or more of previous char|`oh!` `ooh!` `oooh!` `ooooh!`|
 
 - - -
 
@@ -126,9 +126,9 @@ use_math: true
 맨 앞에서만 찾게 됩니다.
 
 > |**정규 표현식**|**결과 예시**|
-> |:---:|:---:|
-> |^[A-Z]|`P`alo Alto|
-> |^[^A-Za-z]|`"`Hello"|
+> |:------------:|:-----------:|
+> |^[A-Z]        |`P`alo Alto  |
+> |^[^A-Za-z]    |`"`Hello"    |
 
 ### **6-2) $**
 
@@ -137,9 +137,9 @@ $는 패턴의 끝을 가리킵니다.
 맨 뒤에서만 찾게 됩니다.
 
 > |**정규 표현식**|**결과 예시**|
-> |:---:|:---:|
-> |\\.$|The end`.`|
-> |.$|The end`!`|
+> |:------------:|:-----------:|
+> |\\.$          |The end`.`   |
+> |.$            |The end`!`   |
 
 ### **6-3) \b**
 
@@ -147,10 +147,10 @@ $는 패턴의 끝을 가리킵니다.
 
 찾고자 하는 패턴이 단어에서 시작 또는 끝에 위치해야 하는 경우, 그 위치를 명시적으로 지정하여 찾게 됩니다.
 
-> |**정규 표현식**|**결과 예시**|
-> |:---:|:---:|
-> |the|`The` o`the`rs make `the`m happy|
-> |\bthe\b|`The` others make them happy|
+> |**정규 표현식**|**결과 예시**                   |
+> |:------------:|:------------------------------:|
+> |the           |`The` o`the`rs make `the`m happy|
+> |\bthe\b       |`The` others make them happy    |
 
 - - -
 
@@ -162,9 +162,9 @@ $는 패턴의 끝을 가리킵니다.
 
 or의 역할과 비슷합니다.
 
-> |**정규 표현식**|**결과 예시**|
-> |:---:|:---:|
-> |yours\|mine|`yours` `mine`|
+> |**정규 표현식**|**결과 예시** |
+> |:------------:|:------------:|
+> |yours\|mine   |`yours` `mine`|
 
 ### **7-2) Parenthesis ( )**
 
@@ -172,9 +172,9 @@ or의 역할과 비슷합니다.
 
 즉 * 또는 +를 직전 문자가 아닌 직전 패턴에 적용하고 싶은 경우 유용합니다.
 
-> |**정규 표현식**|**결과 예시**|
-> |:---:|:---:|
-> |gupp(y\|ies)|`guppy` `guppies`|
+> |**정규 표현식**      |**결과 예시**              |
+> |:------------------:|:-------------------------:|
+> |gupp(y\|ies)        |`guppy` `guppies`          |
 > |(Column [0-9]+ \*)\*|`Colum 1 Column 2 Column 3`|
 
 - - -
