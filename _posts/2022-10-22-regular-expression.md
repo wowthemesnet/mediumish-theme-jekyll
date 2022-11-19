@@ -151,18 +151,25 @@ or의 역할과 비슷합니다.
 
 우리는 위 파일에서 각각의 **대사**와 해당 **대사가 시작하는 시간**을 추출하고 싶다고 해봅시다.
 
-> 단, 여기서는 Python의 정규 표현식 라이브러리 re를 이용합니다.
-> 이용하는 라이브러리나 사전 정의에 따라 정규 표현식에 대한 결과가 다를 수 있으니, 사용하는 라이브러리에 대해서는 문서를 찾아보시는 것을 추천합니다.
+- - -
 
 우선, 해당 파일을 텍스트로 불러오면 다음과 같습니다.
 
+> 단, 여기서는 Python의 정규 표현식 라이브러리 re를 이용합니다.
+
+> 이용하는 라이브러리나 사전 정의에 따라 정규 표현식에 대한 결과가 다를 수 있습니다.
+
 ![read_smi_using_python](../assets/images/post-regular-expression/read_smi_using_python.jpg)
+
+- - -
 
 여기서 다음과 같은 **정규 표현식**을 사용하면, 아래와 같이 우리가 원하는 정보를 간단하게 추출해낼 수 있습니다.
 
 ![regular_expression1](../assets/images/post-regular-expression/regular_expression1.jpg)
 
 ![regular_expression2](../assets/images/post-regular-expression/regular_expression2.jpg)
+
+- - -
 
 만약 **정규 표현식**을 사용하지 않는다면, 어떠한 텍스트에서 우리가 원하는 정보를 추출해 내기 위해서 조건문과 반복문 등으로 복잡한 로직을 구현하거나, 여러 가지 다른 함수들을 동원해야 할 것입니다.
 
