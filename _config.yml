@@ -5,7 +5,6 @@ description: "One-person Publishing Project"
 logo: 'assets/images/zzom-logo-dark (48 x 48).png'
 favicon: 'favicon.ico'
 baseurl: 
-# google_analytics: 'UA-192688751-1'
 google_analytics: 'G-FL5818NYCK'
 # mail-list: 
   # mailchimp: 'https://gmail.us2.list-manage.com/subscribe/post?u=f0c2c860abc78e38661cc5458&amp;id=fa3043bfc8'
