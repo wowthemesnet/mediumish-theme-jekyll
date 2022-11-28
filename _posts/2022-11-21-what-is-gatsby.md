@@ -63,7 +63,7 @@ featured: true
 
 먼저 `gatsby`를 설치한 후, 새 프로젝트를 생성합니다.
 
-```
+```shell
 $ npm install -g gatsby-cli
 $ gatsby new gatsby-site
 ```
@@ -77,14 +77,14 @@ gatsby-transformer-remark 플러그인을 사용하면 마크다운 파일을 `H
 
 ### 플러그인 설치
 
-```
+```shell
 $ npm install --save gatsby-source-filesystem gatsby-transformer-remark
 ```
 
 gatsby-source-filesystem 플러그인은 파일을 읽어옵니다. 
 플러그인을 사용하기 위해서는 gatsby-config.js 파일에 사용할 플러그인을 등록해야 합니다.
 
-```
+```javascript
 // gatsby-config.js
 plugins: [
     {
@@ -105,7 +105,7 @@ options의 path에는 파일이 들어있는 디렉토리를 지정합니다.
 
 마크다운 파일에는 ---로 둘러싸인 블록 안에 정보를 추가할 수 있습니다. 이 정보는 gatsby-markdown-remark가 frontmatter로 파싱 합니다. 
 
-```
+```markdown
 ---
 - date: "2019-10-20"
 - title: "테스트용 게시글입니다."
