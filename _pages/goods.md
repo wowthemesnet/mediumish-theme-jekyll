@@ -11,7 +11,8 @@ comments: false
         <h2>ZZOM 프로젝트 굿즈</h2>
         ZZOM 프로젝트를 통해 기획된 굿즈는 다음과 같습니다.
 
-        <h5>플래닝 화투</h5>        
+        <h5>플래닝 화투</h5>
+        <a href="https://zzom.io/planning-hwatu/" target="_blank">공식 페이지</a> / 
         <a href="https://tumblbug.com/scrum-master" target="_blank">크라우드펀딩</a> / 
         <a href="" target="">ZZOM 스토어 (준비 중)</a>
 
