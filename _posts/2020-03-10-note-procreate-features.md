@@ -21,7 +21,7 @@ last_modified_at: # YYYY-MM-DD
 일부 의역과 현지화한 내용이 포함될 수 있습니다. 
 책에서 직접 인용한 게시물은 번역이 되어 있으나, 해당 게시물에서 링크로 연결된 문서는 번역되지 않을 수 있습니다.
 <br/>
-해당 도서는 '처음 배우는 그래픽 레코딩'이라는 이름으로 번역되어 <a href="https://tumblbug.com/graphicrecording/" target="_blank">텀블벅에서 크라우드 펀딩</a> 중입니다.
+해당 도서는 '처음 배우는 그래픽 레코딩'이라는 이름으로 번역되어 <a href="https://tumblbug.com/graphicrecording/" target="_blank">텀블벅에서 크라우드펀딩</a> 중입니다.
 </p>
 
 <ul>
@@ -155,7 +155,7 @@ last_modified_at: # YYYY-MM-DD
     </p>
     <b>관련 도서 정보</b>
     <ul>
-        <li>크라우드 펀딩: <a href="https://tum.bg/tgLB7f" target="_blank">처음 배우는 그래픽 레코딩</a> </li>
+        <li>크라우드펀딩: <a href="https://tum.bg/tgLB7f" target="_blank">처음 배우는 그래픽 레코딩</a> </li>
         <li>원서: <a href="https://www.amazon.co.jp/dp/B08CK437LG/" target="_blank">はじめてのグラフィックレコーディング</a></li>
     </ul>
 

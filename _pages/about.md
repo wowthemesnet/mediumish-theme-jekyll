@@ -37,19 +37,18 @@ comments: false
         <div class="sticky-top sticky-top-80">
             <h5>크라우드펀딩은 여기로</h5>
             <p>
-            <a href="https://tumblbug.com/graphicrecording" target="_blank">처음 배우는 그래픽 레코딩</a>
+            <a href="https://tumblbug.com/u/zzom/created" target="_blank">텀블벅</a>
             </p>
 
             <h5>책 구매는 여기로</h5>
             <p>
-            <a href="http://book.naver.com/bookdb/book_detail.nhn?bid=20916537" target="_blank">처음 배우는 그래픽 레코딩</a>
+            <a href="http://smartstore.zzom.io/" target="_blank">ZZOM 스토어</a>
             </p>
 
-            <h5>후원은 여기로</h5>
+            <h5>커피 후원은 여기로</h5>
             <p>
-            여러분이 후원하신 커피 한 잔은 <a target="_blank" href="https://zzom.io">ZZOM</a>이 더 좋은 책을 만드는 데 도움이 됩니다. <i class="fas fa-coffee"></i>
+            <a href="https://www.buymeacoffee.com/zzom" target="_blank">커피 후원</a> 
             </p>
-            <a target="_blank" href="https://www.buymeacoffee.com/zzom" class="btn btn-danger buymeacofee">커피 한 잔 후원하기</a> 
         </div>
     </div>
 </div>
