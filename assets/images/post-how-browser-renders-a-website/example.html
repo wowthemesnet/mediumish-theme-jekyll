@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>스크립트 요소 위치에 따른 변화 테스트</title>
+  </head>
+  <body>
+    <script>
+      const above = document.querySelector(".target");
+    </script>
+    <p><span class="target">바나나</span> 우유 맛있어요</p>
+    <p>어떤 우유가 맛있어요?</p>
+    <ul>
+      <li class="ans">위에 있는 script:</li>
+
+      <li class="ans">아래에 있는 script:</li>
+    </ul>
+    <script>
+      const bottom = document.querySelector(".target");
+      const ans = document.querySelectorAll(".ans");
+
+      const setAns = (ansNode, ele) =>
+        ansNode.appendChild(document.createTextNode(" " + (ele ? ele.textContent : "비어있음")));
+
+      console.log(above);
+
+      setAns(ans[0], above);
+      setAns(ans[1], bottom);
+    </script>
+  </body>
+</html>
