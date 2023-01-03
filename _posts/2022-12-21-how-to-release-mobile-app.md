@@ -82,7 +82,7 @@ Gradle에서 서명을 구성하기 위해서, `build.gradle` 파일을 수정�
 Gradle에서 `ProGuard`를 구성하기 위해, `build.gradle` 파일을 수정하여 Release Build 할 때 `ProGuard`의 규칙이 적용되도록 한다.
 
 ```
-* ProGaurd: 자바 코드를 최적화하고 난독화하는 도구 
+* ProGuard: 자바 코드를 최적화하고 난독화하는 도구 
 	바이트코드(컴파일 된 코드) 최적화 및 사용하지 않는 명령어 감지, 난독화 기능으로 아이디어 & 알고리즘 숨김
 	안드로이드 SDK의 한 부분으로 배포되며 Release Build 과정에서 실행
 ```
