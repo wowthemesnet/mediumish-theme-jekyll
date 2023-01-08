@@ -11,10 +11,11 @@ comments: false
         <h2>ZZOM 프로젝트 번역서</h2>
         ZZOM 프로젝트를 통해 번역한 도서는 다음과 같습니다.
 
-        <h5>애자일 개발이 처음인 내가 출근했더니 스크럼 마스터가 된 건에 관하여</h5>        
+        <h5>애자일 개발이 처음인 내가 출근했더니 스크럼 마스터가 된 건에 관하여</h5>
+        <a href="https://smartstore.naver.com/zzom/products/7616969339" target="_blank">ZZOM 스토어</a> /
         <a href="https://zzom.io/scrum-master" target="_blank">공식 페이지</a> / 
-        <a href="https://tumblbug.com/scrum-master" target="_blank">크라우드펀딩</a> / 
-        <a href="https://smartstore.naver.com/zzom/products/7616969339" target="_blank">ZZOM 스토어</a>
+        <a href="https://tumblbug.com/scrum-master" target="_blank">크라우드펀딩</a>
+
 
         <div class="center">
         <iframe width="640" height="480" src="https://www.youtube.com/embed/ozWDQ7vjUjE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
@@ -24,9 +25,9 @@ comments: false
         </figure>
 
         <h5>처음 배우는 그래픽 레코딩</h5>
+        <a href="https://smartstore.naver.com/zzom/products/6237850646" target="_blank">ZZOM 스토어</a> / 
         <a href="https://zzom.io/graphic-recording/" target="_blank">공식 페이지</a> / 
-        <a href="https://tumblbug.com/graphicrecording" target="_blank">크라우드펀딩</a> / 
-        <a href="https://smartstore.naver.com/zzom/products/6237850646" target="_blank">ZZOM 스토어</a>
+        <a href="https://tumblbug.com/graphicrecording" target="_blank">크라우드펀딩</a>
 
         <div class="center">
         <iframe width="640" height="480" src="https://www.youtube.com/embed/fJAt2H6YHyE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
