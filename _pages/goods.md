@@ -21,8 +21,10 @@ comments: false
         <img class="large" src="{{site.baseurl}}/assets/images/about/planning-hwatu.png" alt="planning-hwatu" />
         </figure>
 
-        <h5>개발자 팔찌</h5>        
+        <h5>개발자 팔찌</h5>   
+        <div class="center">
         <a href="https://tumblbug.com/scrum-master" target="_blank">크라우드펀딩</a> / 
+        </div>
 
         <figure>
         <img class="large" src="{{site.baseurl}}/assets/images/about/silicon-bracelet.png" alt="silicon-bracelet" />
