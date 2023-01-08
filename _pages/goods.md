@@ -14,7 +14,7 @@ comments: false
         <h5>플래닝 화투</h5>
         <a href="https://zzom.io/planning-hwatu/" target="_blank">공식 페이지</a> / 
         <a href="https://tumblbug.com/scrum-master" target="_blank">크라우드펀딩</a> / 
-        <a href="" target="">ZZOM 스토어 (준비 중)</a>
+        <a href="https://bit.ly/3GQiCyk" target="_blank">ZZOM 스토어</a>
 
         <figure>
         <img class="large" src="{{site.baseurl}}/assets/images/about/planning-hwatu.png" alt="planning-hwatu" />
@@ -22,7 +22,6 @@ comments: false
 
         <h5>개발자 팔찌</h5>        
         <a href="https://tumblbug.com/scrum-master" target="_blank">크라우드펀딩</a> / 
-        <a href="" target="">ZZOM 스토어 (준비 중)</a>
 
         <figure>
         <img class="large" src="{{site.baseurl}}/assets/images/about/silicon-bracelet.png" alt="silicon-bracelet" />
