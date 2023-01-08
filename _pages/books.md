@@ -16,6 +16,9 @@ comments: false
         <a href="https://tumblbug.com/scrum-master" target="_blank">크라우드펀딩</a> / 
         <a href="https://smartstore.naver.com/zzom/products/7616969339" target="_blank">ZZOM 스토어</a>
 
+        <div class="center">
+        <iframe width="640" height="480" src="https://www.youtube.com/embed/ozWDQ7vjUjE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+        </div>
         <figure>
         <img class="large" src="{{site.baseurl}}/assets/images/about/scrum-master.png" alt="scrum-master" />
         </figure>
@@ -25,6 +28,9 @@ comments: false
         <a href="https://tumblbug.com/graphicrecording" target="_blank">크라우드펀딩</a> / 
         <a href="https://smartstore.naver.com/zzom/products/6237850646" target="_blank">ZZOM 스토어</a>
 
+        <div class="center">
+        <iframe width="640" height="480" src="https://www.youtube.com/embed/fJAt2H6YHyE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+        </div>
         <figure><a href="https://zzom.io/graphic-recording/" target="_blank">        
         <img class="large" src="{{site.baseurl}}/assets/images/about/graphic-recording.png" alt="graphic-recording" /></a>
         </figure>
