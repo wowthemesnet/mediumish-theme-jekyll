@@ -12,22 +12,22 @@ comments: false
         ZZOM 프로젝트를 통해 기획된 굿즈는 다음과 같습니다.
 
         <h5>플래닝 화투</h5>
+        <a href="https://bit.ly/3GQiCyk" target="_blank">ZZOM 스토어</a> /
         <a href="https://zzom.io/planning-hwatu/" target="_blank">공식 페이지</a> / 
-        <a href="https://tumblbug.com/scrum-master" target="_blank">크라우드펀딩</a> / 
-        <a href="https://bit.ly/3GQiCyk" target="_blank">ZZOM 스토어</a>
+        <a href="https://tumblbug.com/scrum-master" target="_blank">크라우드펀딩</a>
+        <br/>
 
         <div class="center">
-        <iframe width="560" height="315" src="https://www.youtube.com/embed/x3_9hbuEhG4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+        <iframe width="640" height="480" src="https://www.youtube.com/embed/x3_9hbuEhG4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
         </div>
         <figure>
         <img class="large" src="{{site.baseurl}}/assets/images/about/planning-hwatu.png" alt="planning-hwatu" />
         </figure>
 
         <h5>개발자 팔찌</h5>   
-        <div class="center">
-        <a href="https://tumblbug.com/scrum-master" target="_blank">크라우드펀딩</a> / 
-        </div>
-
+        <a href="https://tumblbug.com/scrum-master" target="_blank">크라우드펀딩</a>
+        <br/>
+        
         <figure>
         <img class="large" src="{{site.baseurl}}/assets/images/about/silicon-bracelet.png" alt="silicon-bracelet" />
         </figure>
