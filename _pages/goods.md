@@ -16,6 +16,7 @@ comments: false
         <a href="https://tumblbug.com/scrum-master" target="_blank">크라우드펀딩</a> / 
         <a href="https://bit.ly/3GQiCyk" target="_blank">ZZOM 스토어</a>
 
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/x3_9hbuEhG4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
         <figure>
         <img class="large" src="{{site.baseurl}}/assets/images/about/planning-hwatu.png" alt="planning-hwatu" />
         </figure>
