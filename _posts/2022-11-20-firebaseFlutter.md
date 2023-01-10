@@ -3,7 +3,7 @@ layout: post
 title: "Flutter로 Firebase에 휴대전화, 이메일 계정 연동하기"
 authors: [simpack0513]
 tags: ["Flutter", "Firebase"]
-image: 
+image: ../assets/images/post-firebaseflutter/intro.png
 featured: true
 use_math: true
 ---
