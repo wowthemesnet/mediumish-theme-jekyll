@@ -4,6 +4,7 @@ title: "파이토치로 데이터 병렬 딥러닝 학습하기"
 authors: [yurishin929]
 tags: ["딥러닝", "분산학습", "파이토치"]
 featured: true
+image: ../assets/images/post-distributeddataparallel/post-ddp-pytorch.png
 ---
  
 ## 분산학습
