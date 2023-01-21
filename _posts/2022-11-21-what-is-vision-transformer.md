@@ -1,133 +1,106 @@
 ---
 layout: post
-title:  "CNN의 시대는 끝났다 - vision transformer 리뷰"
-authors: [SSUHYUNKIM]
-tags: ["Web" , "PWA"]
-#image: ../assets/images/post-what-is-gatsby/cover.jpg
+title:  "Transformer in image task? - vision transformer 간단 리뷰"
+authors: [beutifulchoi]
+tags: ["Computer Vision" , "Transformer", "ViT", "attention"]
+image: ../assets/images/post-vision-transformer/vit_background.jpg
 featured: true
 ---
 
 ## INTRO
 
-2019년 구글팀에서 발표한 **Vision Transformer(An Image is Worth 16x16 Words: Transformers for Image Recognition at Scale)**의 등장은 게임 체인저가 되어, 이후 **CNN(Convolutional Neural Network)**알고리즘 기반에서 **transformer** 기반으로 옮겨갔습니다. 많은 거대한 데이터를 사전학습한 transformer 구조를 사용한 모델들이 SOTA를 갱신하고 있습니다. 대표적인 예로 가장 유명한 데이터 중 하나인 ImageNet 분류 문제에서 상위 10개 모델 중 9개가 transformer 기법을 사용하였습니다. 
+2019년 구글팀에서 발표한 **Vision Transformer(An Image is Worth 16x16 Words: Transformers for Image Recognition at Scale)**의 등장은 게임 체인저가 되어, 이후 **CNN(Convolutional Neural Network)**알고리즘 기반에서 **transformer** 기반으로 옮겨갔습니다. 거대한 데이터를 사전학습한 vision transformer 기반 모델들이 SOTA를 갱신하고 있습니다. 대표적인 예로 가장 유명한 데이터 중 하나인 ImageNet 분류 문제에서 상위 10개 모델 중 9개가 해당 모델을 기반으로 만들어졌습니다.
 
 이제는 필수로 알아야 하는 구조가 된 만큼, 본 글에서는 Vision transformer 모델을 이해하는데 알아야하는 선행지식인 NLP 영역의 전반적인 지식과 함께 transformer에서 사용된 기법들을 요약하겠습니다.
 
+## Transformer 모델의 구조
 
-## attention
-![1_basic](../assets/images/post-regular-expression/1_basic.png)
-디코더에서 출력 단어를 예측하는 매 시점(time step)마다, 인코더에서의 전체 입력 문장을 다시 한 번 참고한다는 점입니다. 단, 전체 입력 문장을 전부 다 동일한 비율로 참고하는 것이 아니라, 해당 시점에서 예측해야할 단어와 연관이 있는 입력 단어 부분을 좀 더 집중(attention)해서 보게 됩니다.
+기존에 나왔던 자연어 처리 모델은 RNN 기반의 LSTM(GLU) 셀들로 이루어져 있었습니다. 단어가 입력될 때 마다 이전 단어(hidden state)상태 포함해서 hidden state 갱신되었고 마지막 state는 전체 문장 대표하는 하나의 context vector로 사용됩니다(전체 문맥적인 정보를 담고 있습니다). 고정된 크기에 정보 압축하려고 하니까 다양한 길이의 문장에 대해 고정된 크기로 가지고 있는게 문제가 되었고 비슷한 맥락으로 하나의 문맥 벡터가 소스 문장의 모든 정보를 가지고 있어야 해서 성능 저하를 야기했습니다. 따라서 Transformer 구조에서는 위에서 살펴본 "어텐션" 구조만을 활용하였습니다. RNN 계열 구조는 순차적으로 이전 단어에서 나온 값을 입력으로 사용하기 때문에 위치정보를 자체적으로 함축하고 있었지만, 어텐션 구조는 문장 내 단어들의 위치정보를 가질 수 없기 때문에 추가적으로 positional encoding이라는 것을 활용하여 위치정보를 더해주었습니다.
+(사인 함수와 코사인 함수의 값을 임베딩 벡터에 더해주므로서 단어의 순서 정보를 더해주게 되는 것입니다.)
 
-어텐션 메커니즘은 Query, Key, Value의 함수로 설명할 수 있습니다. 들어온 query에 대하여 key와의 유사도를 구하고(attention score) 이를 기반으로 key에 대응하는 value 값과 선형결합(weighted sum)을 해주게 됩니다. 
-좀 더 자세한 매커니즘은 아래와 같습니다.
+모델의 전반적인 구조는 다음과 같습니다.
+![1_basic](../assets/images/post-vision-transformer/transformer_model.JPG)
 
-**1. 어텐션 스코어**
-디코더 은닉층 출력과 인코더의 각 셀에서 나오는 은닉층 출력을 내적 후 softmax를 통과합니다.(내적은 해당 query와 key가 얼마나 ‘유사한지’ 나타낼 수 있는 척도로 사용 할 수 있습니다)
-소프트 맥스 통과한 각 확률은 어텐션 분포가 됩니다.
+transformer에서는 위와 같은 구조의 인코더와 디코더가 각 6개씩 구성되어 있습니다.
+각 인코더와 디코더 셀은 크게 멀티헤드 어텐션, FFNN(FeedForword Neural Network)층, 그리고 layer norm과 residual connection으로 구성되어 있습니다. 
+각 층별 역할과 구조를 더 자세하게 알아보기 전에, trasformer구조의 핵심이 되는 self attention 구조에 대하여 먼저 보겠습니다.
 
-**2. 어텐션 값**
-이 후 어텐션 분포의 각 값(스칼라)와 해당 인코더 은닉층 출력값(벡터)를 선형 결합(weighted sum)하여 현재 디코더에서 구하고자 하는 출력물의 어텐션 값을 구합니다(이걸 컨텍스트 벡터로 사용)
+### transformer에서의 self attention 
 
-**3. concat+ 최종 출력**
-어텐션 값과 디코더 은닉층 값을 연결 시킨 후, 신경망을 하나 더 통과합니다.
+self attention 이란 input 데이터(여기서는 문장을 input 데이터로 이용하여 설명하겠습니다)내에서 자기 자신의 연관관계를 찾는다고 하여 붙여진 이름입니다. 
+예를 들어 입력 문장으로 '나는 멋진 서울시립대학교 학생입니다' 라는 문장이 입력으로 들어온다면 '나는' 이라는 단어(Query)는 문장 내 다른 단어들과 얼마나 관련성이 있는지 살핍니다. 다시 말해, '멋진', '서울시립대학교', '학생입니다' 라는 단어들의 벡터들과 비교하여 점수를 매기고, 이 점수를 해당 단어 벡터와 선형결합합니다. 아래에서 좀 더 자세히 살펴보겠습니다.
 
-## transformer에서의 self attention 
-기존 seq2seq 에서의 어텐션 기법은 각 디코더 내의 셀(쿼리 Q)에서 인코더의 모든 출력(K, V)에 대해 어텐션하는 것이었습니다.
+**1. Q,K,V 벡터를 구한다**
+![1_basic](../assets/images/post-vision-transformer/qkv.JPG.JPG)
+문장에서 임베딩 벡터를 뽑은 이 후, 해당 단어에 대한 query, key, value 벡터를 구합니다. 이 때, transformer구조에서는 어텐션을 여러번 해주는 'multi head attention'(병렬적으로 어텐션을 여러번 하면 한번만 어텐션하는 것 보다 성능이 높다고 합니다)을 적용하기 때문에 Q,K,V 벡터는 모델이 가져야 하는 차원보다 더 낮은 차원으로 변환됩니다. 
 
-셀프 어텐션은 쿼리, 키, 벨류의 벡터 출처가 같습니다(같은 인코더나 같은 디코더 내에서 이루어 질 때). 따라서 입력 문장의 모든 단어 벡터들이 서로를 어텐션 하여 문장 내의 한 단어가 어떤 단어와 연관성이 높은지 찾는 구조입니다.
+**2. 어텐션 값 구하기**
+![1_basic](../assets/images/post-vision-transformer/att_value.JPG)
+이후 Q로부터 Key 와의 유사도를 구하고(내적은 해당 query와 key가 얼마나 ‘유사한지’ 나타낼 수 있는 척도로 사용 할 수 있습니다- 어텐션 스코어) 이를 기반으로 어텐션 분포를 만들고(어텐션 스코어를 소프트맥스 함수에 통과)이 후 어텐션 분포의 각 값와 해당 단어의 value값를 선형 결합(weighted sum)하여 각 단어와 단어간 연관성을 나타내는 어텐션 값을 구합니다. 트랜스포머에서는 dot product 어텐션에서 발전하여 scaled dot product attention 이라는 방법을 사용합니다. 
 
+**3. 멀티 헤드 어텐션**
+![1_basic](../assets/images/post-vision-transformer/multi_att.JPG)
+앞서 Q,K,V를 실제 한번만 수행될 때 나오는 차원보다 작게 하여 여러번 어텐션 수행한다고 하였습니다. 어텐션을 병렬로 수행하여 다른 시각으로 정보들을 수집하므로써 단어들의 연관성을 더 잘 파악할 수 있습니다. 각 병렬 어텐션 수행된 값은 어텐션 헤드라고 부릅니다. 
 
+![1_basic](../assets/images/post-vision-transformer/att_out.JPG)
+어텐션이 모두 끝나면 각 헤드에서 나온 어텐션 값을 하나로 이어줍니다(concatenate)
+이 후, 구하고자 하는 차원으로 바꿔주기 위해 weight를 곱하여 멀티헤드 어텐션 행렬을 얻습니다.
 
+### FFNN
+![1_basic](../assets/images/post-vision-transformer/ffnn.JPG)
+FFNN층은 단순한 선형결합층과 활성화 함수인 relu 층을 사용합니다.
+위 그림에서의 매개변수 W1, b1, W2, b2는 하나의 인코더 층 내에서는 다른 문장, 다른 단어들마다 동일하게 사용됩니다.
 
-## 왜 Gatsby를 사용해야 하는가
+### Add
+![1_basic](../assets/images/post-vision-transformer/residual.JPG)
+여기서의 Add층은 ResNet에서 나온 개념인 residual connection을 의미합니다. residual connection이란 간단히 말해서 블럭을 통과한 출력과 해당 블럭의 입력으로 들어간 벡터를 더해 주는 기법을 말합니다. 해당 기법은 기울기 소실을 방지하는 효과를 지닙니다.
 
-**1. 정적 사이트 생성**
-- `Gatsby`는 서버 없이, 오로지 정적 사이트 생성을 위해 사용하는 프레임워크입니다.
-그래서 서비스 및 기업 소개 페이지, 블로그, 포트폴리오 등에 많이 사용됩니다.
+### Norm
+![1_basic](../assets/images/post-vision-transformer/layernorm.JPG)
+여기서의 Norm이란 layer normalization(층 정규화)을 의미합니다. 해당 기법은 텐서의 마지막 차원에 대해서 평균과 분산을 구하고, 이를 가지고 어떤 수식을 통해 값을 정규화하여 학습을 돕습니다.
 
-**2. 검색 엔진 최적화와 성능 모두 챙기기**
-- `JavaScript`가 실행되면 빈 `HTML` 페이지 안에 마크업을 추가해 주는 SPA(Single Page Application)와 다르게, 개발 후 Build 과정에서 마크업이 생성됩니다.
-- `Gatsby`는 단순히 정적 페이지를 만들어 주는 것으로 끝나는 것이 아니라, 필요에 따라 CSR(Client Side Rendering) 과 SSR(Server Side Rendering), lazy loading 을 적절히 섞어 사용할 수 있어 성능 면에서도 단순 정적 페이지보다 큰 장점이 있습니다.
+## Vision Transformer
+기존 이미지 처리 분야 에서도 어텐션을 적용하려는 노력을 하긴 했지만 CNN을 벗어날 순 없었습니다(CNN과 함께 사용되거나 전체 CNN 구조를 유지하면서 CNN의 특정 구성 요소를 대체) 하지만 본 논문은 이미치 패치의 시퀀스를 입력값으로 사용하는 transformer를 적용하여 CNN 기반의 모델의 성능을 넘는 성능을 보였습니다.
+전반적인 매커니즘은 Transformer와 거의 동일합니다.
 
-**3. React 기반 프레임워크**
-- `Gatsby`는 `React` 기반의 정적 페이지 생성 프레임워크입니다. 
-- 프로젝트의 구조를 component, modules, pages로 나누며 컴포넌트 계층 구조로 개발을 할 수 있습니다.
+NLP영역에서의 모델 구조와 Vision Transformer구조를 비교해보겠습니다.
+![1_basic](../assets/images/post-vision-transformer/layernorm.JPG)
 
-**4. 친절한 [Gatsby 공식 문서](https://www.gatsbyjs.com/docs/)**
-- 초반에 `Gatsby`가 어떻게 동작하는지, 어떤 템플릿이 있는지 알고 싶다면 다양한 Gatsby Starter를 사용하면 됩니다.
-- `Gatsby` 공식 문서에서 적용 가능한 각각의 CMS 템플릿도 있고 홈페이지/블로그/포트폴리오 등의 다양한 스타터들이 있습니다.
+우선 출력이 시퀀스가 아니기 때문에 디코더는 MLP(MLP head 블럭)로 대체된 것을 볼 수 있으며 인코더의 구조가 살짝 변경되었습니다.(LayerNorm 먼저 진행 후 attention)
 
-**5. 다양한 Gatsby Plugin**
-- Gatsby에는 다양한 [Gatsby Plugin](https://www.gatsbyjs.com/plugins) 들이 있습니다. 
+이미지를 transformer 구조에 넣기 위한 절차는 다음과 같습니다.
+- Transformer와 동일한 구조의 입력 데이터를 만들기 위해서 이미지를 패치 단위(패치란 이미지의 일부 영역을 뜻합니다)로 나누고 각 패치를 나열하여 시퀀스 데이터 처럼 만듭니다.
+- 각 패치를 linear projection(단어를 임베딩 벡터로 만드는 것과 유사)를 통해 벡터화 합니다.
+- 임베딩 결과에 클래스를 예측하는 클래스 토큰을 하나 추가 합니다.
+- 이미지에서도 각 패치의 위치가 중요하기 때문에 입력 값에 Positional Embedding을 더해줍니다. 
 
-## 설치 및 시작하기
+- 만약 **224 * 224** 이미지 사용한다고 가정하면
+- 16*16 패치로 자른다고 하면 → 총 14*14개의 sequence 생성
+- 3*224*224 ⇒ 196*16*16*3
+- linear projection⇒ 196*768 
+- 클래스 토큰(cls_token) 하나 더 끼워넣으면 ⇒ 197*768
+- positional embedding 값 더해주면 197*768 사이즈 벡터를 얻습니다.
 
-먼저 `gatsby`를 설치한 후, 새 프로젝트를 생성합니다.
+이 후 위에서 살펴본 transformer 구조와 같이 MSA(Multi-head Self Attention) 층 거치고 →Residual connection→ MLP→ Residual connection → layer normalization을 반복합니다. 
 
-```shell
-$ npm install -g gatsby-cli
-$ gatsby new gatsby-site
-```
+![1_basic](../assets/images/post-vision-transformer/att_vit.JPG)
 
-gatsby-site 디렉토리 안에 프로젝트가 생성됩니다.
-gatsby develop 커맨드를 실행하면 localhost:8000에서 페이지를 확인할 수 있습니다.
+구조의 디테일은 아래 그림과 같습니다
+![1_basic](../assets/images/post-vision-transformer/vit_archi.JPG)
 
-
-## 마크다운 파일로 블로그 만들기
-gatsby-transformer-remark 플러그인을 사용하면 마크다운 파일을 `HTML`로 변환할 수 있습니다. 
-
-### 플러그인 설치
-
-```shell
-$ npm install --save gatsby-source-filesystem gatsby-transformer-remark
-```
-
-gatsby-source-filesystem 플러그인은 파일을 읽어옵니다. 
-플러그인을 사용하기 위해서는 gatsby-config.js 파일에 사용할 플러그인을 등록해야 합니다.
-
-```javascript
-// gatsby-config.js
-plugins: [
-    {
-        resolve: "gatsby-source-filesystem",
-        options: {
-            name: "markdown-pages",
-            path: `${__dirname}/src/markdown-pages`
-        }
-    },
-    "gatsby-transformer-remark"
-];
-```
-
-plugins 배열에 사용할 플러그인의 이름과 설정을 추가합니다. 
-options의 path에는 파일이 들어있는 디렉토리를 지정합니다.
-
-### 마크다운 파일 만들기
-
-마크다운 파일에는 ---로 둘러싸인 블록 안에 정보를 추가할 수 있습니다. 이 정보는 gatsby-markdown-remark가 frontmatter로 파싱 합니다. 
-
-```markdown
----
-- date: "2019-10-20"
-- title: "테스트용 게시글입니다."
-- description: "게시글에 대한 설명입니다."
-- template: "post"
-- path: "/posts/test-post"
-- draft: false
----
-
-## 게시글(게시글 내용은 여기에 작성합니다.)
-```
+## 단점
+대표적인 단점이 데이터가 많이 필요하다는 것 입니다. vision transformer는 inductive bias의 부족으로 인하여 CNN 보다 데이터가 많이 요구됩니다.
+여기서 inductive bias라는 것은 모델이 처음보는 입력에 대한 출력을 예측하기 위하여 사용하는 가정이라고 말할 수 있습니다.
+위에서 언급하였듯, 입력 이미지를 패치단위로 쪼갠 후, flatten 하여 벡터화 하는 과정을 거칩니다. 이 때 위치 정보가 손실되기 때문에 2차원의 지역적인 정보가 유지되지 않습니다. CNN의 경우 이미지 전체에서 Convolution 필터가 이미지의 일부분만 보게 되는데 이 특정 영역만을 보고 특징을 추출할 수 있다는 것을 가정합니다. attention 구조는 데이터 전체를 보고 attention할 위치를 정하는 메커니즘이기 때문에 이 패턴을 익히기 위해서 CNN 보다 더 많은 데이터를 필요로 하게 됩니다. 
+따라서 large scale 데이터셋에서 학습을 하고 transfer learning을 이용해야 효과적으로 모델을 활용할 수 있으며 CNN 모델보다 우수한 결과를 얻을 수 있습니다.
 
 ## 마치며
-이번에는 짧은 시간에 정보를 찾아 글을 작성하다 보니 실제로 코드를 작성하거나 검증해 보지 못하고 구글링을 통해 여러 블로그의 정보를 가져와 나열하고 마칠 수밖에 없어서 아쉬움이 컸습니다. 
-해당 기술을 실제로 사용할 일이 생길지는 모르겠지만 기회가 된다면 다음 기회에는 좀 더 구체적인 내용도 공부해 보면서 `gatsby` 이용해서 결과물을 만들어보고 싶다는 생각을 하였습니다. 
-다음번에는 좀 더 시간을 들여서 더 좋은 정보를 제공할 수 있도록 하겠습니다.
-끝!
+vision transformer를 이해하기 위해 NLP에서 처음 나온 transformer 논문의 개념부터 간단히 살펴보았습니다. 사실 timm 라이브러리 등에서 코드 몇줄을 통해 간단히 모델을 불러와서 사용할 수도 있지만, 모델이 나오게 된 배경과 디테일들을 알아야 모델을 task에 맞게 튜닝할 수도 있고, 최신 딥러닝 트렌드를 따라갈 수 있다고 생각합니다.
+다음번에는 vision transformer를 이용한 다른 논문 리뷰와 함께 해당 모델을 이용한 task를 직접 수행하며 코드 리뷰까지 해보겠습니다 :)
 
 ## Reference
 
-[Gatsby로 개인 블로그 만들기 -클론부터 배포까지-](https://suitee.me/getting-started-gatsby/)  
-[Gatsby는 처음이라 :: 개념부터 프로젝트 시작까지](https://mnxmnz.github.io/gatsby/what-is-gatsby/)  
-[Gatsby로 블로그 만들기](https://devsoyoung.github.io/posts/gatsby-blog/)  
-[올리브영 테크블로그 Gatsby 전환&개발기](https://oliveyoung.tech/blog/2022-07-04/How-to-Develop-And-Migration-Blog-With-Gatsby/)  
+[Vision Transformer (AN IMAGE IS WORTH 16X16 WORDS, TRANSFORMERS FOR IMAGE RECOGNITION AT SCALE)](https://gaussian37.github.io/dl-concept-vit/)  
+[트랜스포머(Transformer)](https://wikidocs.net/31379)  
+[Attention Is All You Need](https://arxiv.org/pdf/1706.03762.pdf)  
+[AN IMAGE IS WORTH 16X16 WORDS, TRANSFORMERS FOR IMAGE RECOGNITION AT SCALE](https://arxiv.org/pdf/2010.11929.pdf/)  
