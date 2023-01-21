@@ -9,7 +9,7 @@ featured: true
 
 ## INTRO
 
-2019년 구글팀에서 발표한 **Vision Transformer(An Image is Worth 16x16 Words: Transformers for Image Recognition at Scale)**의 등장은 게임 체인저가 되어, 이후 **CNN(Convolutional Neural Network)**알고리즘 기반에서 **transformer** 기반으로 옮겨갔습니다. 거대한 데이터를 사전학습한 vision transformer 기반 모델들이 SOTA를 갱신하고 있습니다. 대표적인 예로 가장 유명한 데이터 중 하나인 ImageNet 분류 문제에서 상위 10개 모델 중 9개가 해당 모델을 기반으로 만들어졌습니다.
+2019년 구글팀에서 발표한 **Vision Transformer(An Image is Worth 16x16 Words: Transformers for Image Recognition at Scale)** 의 등장은 게임 체인저가 되어, 이후 **CNN(Convolutional Neural Network)** 알고리즘 기반에서 **transformer** 기반으로 옮겨갔습니다. 거대한 데이터를 사전학습한 vision transformer 기반 모델들이 SOTA를 갱신하고 있습니다. 대표적인 예로 가장 유명한 데이터 중 하나인 ImageNet 분류 문제에서 상위 10개 모델 중 9개가 해당 모델을 기반으로 만들어졌습니다.
 
 이제는 필수로 알아야 하는 구조가 된 만큼, 본 글에서는 Vision transformer 모델을 이해하는데 알아야하는 선행지식인 NLP 영역의 전반적인 지식과 함께 transformer에서 사용된 기법들을 요약하겠습니다.
 
@@ -26,12 +26,13 @@ transformer에서는 위와 같은 구조의 인코더와 디코더가 각 6개�
 각 층별 역할과 구조를 더 자세하게 알아보기 전에, trasformer구조의 핵심이 되는 self attention 구조에 대하여 먼저 보겠습니다.
 
 ### transformer에서의 self attention 
+(설명 이미지 출처: https://wikidocs.net/31379)
 
 self attention 이란 input 데이터(여기서는 문장을 input 데이터로 이용하여 설명하겠습니다)내에서 자기 자신의 연관관계를 찾는다고 하여 붙여진 이름입니다. 
 예를 들어 입력 문장으로 '나는 멋진 서울시립대학교 학생입니다' 라는 문장이 입력으로 들어온다면 '나는' 이라는 단어(Query)는 문장 내 다른 단어들과 얼마나 관련성이 있는지 살핍니다. 다시 말해, '멋진', '서울시립대학교', '학생입니다' 라는 단어들의 벡터들과 비교하여 점수를 매기고, 이 점수를 해당 단어 벡터와 선형결합합니다. 아래에서 좀 더 자세히 살펴보겠습니다.
 
 **1. Q,K,V 벡터를 구한다**
-![1_basic](../assets/images/post-vision-transformer/qkv.JPG.JPG)
+![1_basic](../assets/images/post-vision-transformer/qkv.JPG)
 문장에서 임베딩 벡터를 뽑은 이 후, 해당 단어에 대한 query, key, value 벡터를 구합니다. 이 때, transformer구조에서는 어텐션을 여러번 해주는 'multi head attention'(병렬적으로 어텐션을 여러번 하면 한번만 어텐션하는 것 보다 성능이 높다고 합니다)을 적용하기 때문에 Q,K,V 벡터는 모델이 가져야 하는 차원보다 더 낮은 차원으로 변환됩니다. 
 
 **2. 어텐션 값 구하기**
@@ -40,23 +41,28 @@ self attention 이란 input 데이터(여기서는 문장을 input 데이터로 
 
 **3. 멀티 헤드 어텐션**
 ![1_basic](../assets/images/post-vision-transformer/multi_att.JPG)
+
 앞서 Q,K,V를 실제 한번만 수행될 때 나오는 차원보다 작게 하여 여러번 어텐션 수행한다고 하였습니다. 어텐션을 병렬로 수행하여 다른 시각으로 정보들을 수집하므로써 단어들의 연관성을 더 잘 파악할 수 있습니다. 각 병렬 어텐션 수행된 값은 어텐션 헤드라고 부릅니다. 
 
 ![1_basic](../assets/images/post-vision-transformer/att_out.JPG)
+
 어텐션이 모두 끝나면 각 헤드에서 나온 어텐션 값을 하나로 이어줍니다(concatenate)
 이 후, 구하고자 하는 차원으로 바꿔주기 위해 weight를 곱하여 멀티헤드 어텐션 행렬을 얻습니다.
 
 ### FFNN
 ![1_basic](../assets/images/post-vision-transformer/ffnn.JPG)
+
 FFNN층은 단순한 선형결합층과 활성화 함수인 relu 층을 사용합니다.
 위 그림에서의 매개변수 W1, b1, W2, b2는 하나의 인코더 층 내에서는 다른 문장, 다른 단어들마다 동일하게 사용됩니다.
 
 ### Add
 ![1_basic](../assets/images/post-vision-transformer/residual.JPG)
+
 여기서의 Add층은 ResNet에서 나온 개념인 residual connection을 의미합니다. residual connection이란 간단히 말해서 블럭을 통과한 출력과 해당 블럭의 입력으로 들어간 벡터를 더해 주는 기법을 말합니다. 해당 기법은 기울기 소실을 방지하는 효과를 지닙니다.
 
 ### Norm
 ![1_basic](../assets/images/post-vision-transformer/layernorm.JPG)
+
 여기서의 Norm이란 layer normalization(층 정규화)을 의미합니다. 해당 기법은 텐서의 마지막 차원에 대해서 평균과 분산을 구하고, 이를 가지고 어떤 수식을 통해 값을 정규화하여 학습을 돕습니다.
 
 ## Vision Transformer
@@ -74,7 +80,7 @@ NLP영역에서의 모델 구조와 Vision Transformer구조를 비교해보겠�
 - 임베딩 결과에 클래스를 예측하는 클래스 토큰을 하나 추가 합니다.
 - 이미지에서도 각 패치의 위치가 중요하기 때문에 입력 값에 Positional Embedding을 더해줍니다. 
 
-- 만약 **224 * 224** 이미지 사용한다고 가정하면
+예시: **224 * 224** 이미지 사용한다고 가정
 - 16*16 패치로 자른다고 하면 → 총 14*14개의 sequence 생성
 - 3*224*224 ⇒ 196*16*16*3
 - linear projection⇒ 196*768 
@@ -83,10 +89,9 @@ NLP영역에서의 모델 구조와 Vision Transformer구조를 비교해보겠�
 
 이 후 위에서 살펴본 transformer 구조와 같이 MSA(Multi-head Self Attention) 층 거치고 →Residual connection→ MLP→ Residual connection → layer normalization을 반복합니다. 
 
+이미지 데이터에서의 셀프어텐션은 다음과 같습니다.
 ![1_basic](../assets/images/post-vision-transformer/att_vit.JPG)
-
-구조의 디테일은 아래 그림과 같습니다
-![1_basic](../assets/images/post-vision-transformer/vit_archi.JPG)
+출처: https://arxiv.org/pdf/2101.01169.pdf/
 
 ## 단점
 대표적인 단점이 데이터가 많이 필요하다는 것 입니다. vision transformer는 inductive bias의 부족으로 인하여 CNN 보다 데이터가 많이 요구됩니다.
@@ -104,3 +109,4 @@ vision transformer를 이해하기 위해 NLP에서 처음 나온 transformer �
 [트랜스포머(Transformer)](https://wikidocs.net/31379)  
 [Attention Is All You Need](https://arxiv.org/pdf/1706.03762.pdf)  
 [AN IMAGE IS WORTH 16X16 WORDS, TRANSFORMERS FOR IMAGE RECOGNITION AT SCALE](https://arxiv.org/pdf/2010.11929.pdf/)  
+[Transformers in Vision: A Survey](https://arxiv.org/pdf/2101.01169.pdf/)  
