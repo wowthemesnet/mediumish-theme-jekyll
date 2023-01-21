@@ -75,7 +75,7 @@ FFNN층은 단순한 선형결합층과 활성화 함수인 relu 층을 사용�
 전반적인 매커니즘은 Transformer와 거의 동일합니다.
 
 NLP영역에서의 모델 구조와 Vision Transformer구조를 비교해보겠습니다.
-![1_basic](../assets/images/post-vision-transformer/layernorm.JPG)
+![1_basic](../assets/images/post-vision-transformer/nlp-vit.JPG)
 
 우선 출력이 시퀀스가 아니기 때문에 디코더는 MLP(MLP head 블럭)로 대체된 것을 볼 수 있으며 인코더의 구조가 살짝 변경되었습니다.(LayerNorm 먼저 진행 후 attention)
 
