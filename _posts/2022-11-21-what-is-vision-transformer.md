@@ -90,7 +90,9 @@ NLP영역에서의 모델 구조와 Vision Transformer구조를 비교해보겠�
 이 후 위에서 살펴본 transformer 구조와 같이 MSA(Multi-head Self Attention) 층 거치고 →Residual connection→ MLP→ Residual connection → layer normalization을 반복합니다. 
 
 이미지 데이터에서의 셀프어텐션은 다음과 같습니다.
+
 ![1_basic](../assets/images/post-vision-transformer/att_vit.JPG)
+
 출처: https://arxiv.org/pdf/2101.01169.pdf/
 
 ## 단점
