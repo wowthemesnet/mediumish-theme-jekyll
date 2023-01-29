@@ -59,7 +59,7 @@ HTTP Request Valdiation과 파라미터 바인딩을 함께 할 수 있도록 Sp
 
 ### HandlerMethodArgumentResolver
 
-가장 핵심이 되는 인터페이스는 `HandlerMethodArgumentResolver` 이다. 해당 인터페이스는 두가지 method의 구현을 필요로 한다. 
+가장 핵심이 되는 인터페이스는 `HandlerMethodArgumentResolver` 이다. 해당 인터페이스는 2 가지 method의 구현을 필요로 한다. 
 
 1. `resolveArgument`
 	- HTTP Request를 받아서 실제 resolve된 객체를 리턴해줘야하는 메소드이다.
@@ -185,7 +185,7 @@ Spring MVC는 MVC 관련 설정들을 편하게 관리하기 위해 `WebMvcConfi
 class UserArgumentResolverConfiguration(
   private val userResolver: UserResolver,
 ) : WebMvcConfigurer {
-	override fun    addArgumentResolvers(resolvers:MutableList<HandlerMethodArgumentResolver>) {  
+	override fun addArgumentResolvers(resolvers:MutableList<HandlerMethodArgumentResolver>) {  
 	    resolvers.add(userResolver)  
 	    super.addArgumentResolvers(resolvers)  
 	}
