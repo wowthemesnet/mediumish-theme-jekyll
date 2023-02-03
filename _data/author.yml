@@ -277,7 +277,7 @@ sheele41:
   email: mevius1718@gmail.com
   github: SHEELE41
   role: lead
-  member: true
+  member: false
   alumni: true
   web: https://oasisfores.com
 suin0730:
@@ -286,7 +286,7 @@ suin0730:
   email: ei654029@gmail.com
   github: suin0730
   role: core
-  member: true
+  member: false
   alumni: true
   web: https://suintodev.tistory.com
 LeeMir:
@@ -295,7 +295,7 @@ LeeMir:
   email: manofgodmj@gmail.com
   github: LeeMir
   role: core
-  member: true
+  member: false
   alumni: true
   blog_team: true
   web: https://leemir.github.io
@@ -305,7 +305,7 @@ happiesoo41:
   email: happiesoo41@gmail.com
   github: happiesoo41
   role: core
-  member: true
+  member: false
   alumni: true
   web:
 YubeenSon:
@@ -314,7 +314,7 @@ YubeenSon:
   email: s49451392@gmail.com
   github: YubeenSon
   role: core
-  member: true
+  member: false
   alumni: true
   web:
 kstew16:
@@ -323,7 +323,7 @@ kstew16:
   email: kstew9916@gmail.com
   github: kstew16
   role: core
-  member: true
+  member: false
   alumni: true
   web:
 rxdcxdrnine:
@@ -332,7 +332,7 @@ rxdcxdrnine:
   email: rkckr1@naver.com
   github: rxdcxdrnine
   role: normal
-  member: true
+  member: false
   alumni: true
   web:
 hyehyeonmoon:
@@ -341,7 +341,7 @@ hyehyeonmoon:
   email: angelfox4@naver.com
   github: hyehyeonmoon
   role: normal
-  member: true
+  member: false
   alumni: true
   blog_team: true
   web: 
@@ -351,7 +351,7 @@ solbat:
   email: kimminjun9@naver.com
   github: solbat
   role: normal
-  member: true
+  member: false
   alumni: true
   web:
 0inhae0:
@@ -360,7 +360,7 @@ solbat:
   email: 0inha0@gmail.com
   github: 0inhae0
   role: normal
-  member: true
+  member: false
   alumni: true
   web:
 jminie-o8o:
@@ -369,7 +369,7 @@ jminie-o8o:
   email: jminie@naver.com
   github: jminie-o8o
   role: normal
-  member: true
+  member: false
   alumni: true
   web:
 qf9ar8nv:
@@ -378,7 +378,7 @@ qf9ar8nv:
   email: ckguscjf0@gmail.com
   github: qf9ar8nv
   role: normal
-  member: true
+  member: false
   alumni: true
   web: https://velog.io/@qf9ar8nv
 
@@ -479,11 +479,11 @@ yurishin929:
   member: true
   alumni: false
   web:
-dlalsrb02:
+dlalsrb0248:
   name: 이민규
   display_name: 민규
   email: mk020408@gmail.com
-  github: dlalsrb02
+  github: dlalsrb0248
   role: core
   member: true
   alumni: false
