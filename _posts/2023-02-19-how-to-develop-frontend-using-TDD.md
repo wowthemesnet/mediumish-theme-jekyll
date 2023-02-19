@@ -241,6 +241,14 @@ export default Modal;
 
 컴포넌트를 한번도 브라우저로 렌더링해보지 않고도 잘 동작되는 `Modal` 컴포넌트를 개발했습니다!
 
+## 생각해볼 거리
+
+Jest 프레임워크의 도움으로 `Modal` 컴포넌트를 개발할 수 있었습니다. 다만, 실제로 어떻게 렌더링 되고 있는지를 보려면 결국 React 웹서버를 실행해야 합니다.
+
+Frontend는 근본적으로 눈에 보이는 부분을 개발하는 만큼, CLI 환경에서 진행되는 테스트만으론 부족하다는 생각이 들었습니다. 따라서 Storybook을 활용해 로직을 테스트함과 동시에 눈으로 렌더링 결과를 보며 개발하는게 더 FE스러운 TDD가 아닐까 하는 생각이 듭니다.
+
+여러분의 생각을 나눠주세요!
+
 ## Reference
 
 - [What is Test-Driven Development?](https://testdriven.io/test-driven-development/)
