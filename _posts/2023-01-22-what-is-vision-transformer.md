@@ -90,7 +90,7 @@ NLP영역에서의 모델 구조와 Vision Transformer구조를 비교해보겠�
 
 >> $16 \times 16$ 패치로 자른다고 하면 → 총 $14 \times 14$개의 sequence 생성
 >> $3 \times 224 \times 224$ ⇒ $196 \times 16 \times 16 \times 3$
->> linear projection⇒ $196*768$
+>> linear projection⇒ $196 \times 768$
 >> 클래스 토큰(cls_token) 하나 더 끼워넣으면 ⇒ $197 \times 768$
 >> positional embedding 값 더해주면 $197 \times 768$ 사이즈 벡터를 얻습니다.
 
