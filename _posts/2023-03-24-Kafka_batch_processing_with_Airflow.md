@@ -1,4 +1,14 @@
-# Kafka batch processing with Airflow
+---
+layout: post
+title:  "Kafka batch processing with Airflow"
+author: ashwin
+categories: [ Airflow, Batch processing, Data, Kafka, Kafka Consumer, Docker]
+image: assets/blog-images/batch_processing_blog/KafkaBatchProcessing.png
+featured: true
+hidden: true
+teaser: Batch processing from Kafka Topics by using Apache Airlfow DAG
+toc: true
+---
 
 ## Introduction
 
@@ -8,14 +18,14 @@ Kafka is a distributed streaming platform which uses logs as the unit of storage
 
 Airflow is an open source orchestration tool to manage big data workflows. Workflows are programmatically authored as Directed Acyclic Graphs (DAGs) of tasks. The Airflow scheduler executes your tasks on an array of workers while following the specified dependencies. Airflow pipelines are defined as Python code, which means that anything that you can do with Python you can do with Airflow. It also provides a variety of operators and hooks which helps us to integrate seamlessly with most of the cloud and open-source services. Airflow is designed as a configuration-as-a-code system and it can be heavily customized with plugins.
 
-## ****Why Airflow in Batch processing pipeline?****
+## Why Airflow in Batch processing pipeline?
 
 Although real time stream processing is used with Kafka mostly, there are a lot of instances where batch processing is required. For example, 
 
 - Online stores might be interested in finding out the hourly or daily aggregate of the number of unique users arriving through a particular advertising channel to optimise their ad spends.
 - Banks settling the accumulated bills to vendors at the end of day based on daily transactions.
 
-![Image-1](../assets/images/airflow_blog_1.png)
+![Image-1](../assets/blog-images/batch_processing_blog/airflow_blog_1.png)
 
 Airflow is an ideal tool to orchestrate and manage batch processing of logs from Kafka topics as it run on schedules, so the resource usage is significantly lower when compared to Kafka streams or any streaming application. Airflow allows us to decouple big tasks into smaller ones and manage the dependencies between them using DAGs. It also allows us to monitor the status of tasks, re-run or restart tasks from any given point in a workflow in case of failure. Airflow also lets you integrate with tools like Apache Spark etc. to execute the task.
 
@@ -25,15 +35,15 @@ In general, Kafka consumers are identified by a consumer group id i.e. all the c
 
 To control the consumer-partition mapping, we need to manually assign a `TopicPartition` to a consumer in the group. This can be achieved by using `consumer.assign()` command. Manual partition assignment can be useful in cases where different processing logic are applied for different partitions, assigning dedicated consumers to heavy throughput partitions etc. In this example, we will use `consumer.assign` to consume from a specific partition, process the data and produce the values to the same output topic partition as input topic. 
 
-## **Airflow Dynamic Task Mapping**
+## Airflow Dynamic Task Mapping
 
 Dynamic task mapping enables us to create parallel tasks in DAG at run time. It facilitates running parallel tasks equal to the number of input Kafka topic partitions. In Kafka, maximum parallelisation is defined by the number of topic partitions. The expand() command is used to dynamically map tasks in Airflow. For more information, visit this [link](https://airflow.apache.org/docs/apache-airflow/2.3.0/concepts/dynamic-task-mapping.html).
 
-![Image-2](../assets/images/airflow_blog_2.png)
+![Image-2](../assets/blog-images/batch_processing_blog/airflow_blog_2.png)
 
 We will use manual partition assignment with consumers rather than group based partition assignment. This is to ensure that data can be consumed from an input topic partition, processed and produced to an output topic partition same as the input topic partition in parallel tasks. For the above logic to hold true, the input and output topic should be created with the same number of partitions. Consumer re-balancing in group based partition assignment can lead to mix up while processing data in parallel tasks.
 
-## **Step 1: Download and setup Airflow**
+## Step 1: Download and setup Airflow
 
 For this tutorial purposes, we will run airflow in docker. For Production, Airflow supports helm charts for Kubernetes deployment. We will be following this [link](https://airflow.apache.org/docs/apache-airflow/stable/start/docker.html) to set up Airflow in docker.
 
@@ -124,11 +134,11 @@ Next, we need Kafka python libraries which are not available in the default airf
 
 Airflow web UI can be accessed at [http://localhost:8080/](http://localhost:8080/)
 
-## **Step 2: Setup the Kafka Server config file**
+## Step 2: Setup the Kafka Server config file
 
 Before we start writing dags, let’s create the config file to access the input topic in a Kafka cluster. This tutorial assumes you have basic Kafka knowledge and already have an input Kafka topic set up in a remote or local Kafka cluster. Here, we will use an existing topic in the Confluent Cloud as the input topic. The client config file to connect to Kafka cluster will look like the following,
 
-<kafka_server.config>
+`kafka_server.config`
 
 ```
 bootstrap.servers=<CLUSTER_LISTENER_URL>:<CLUSTER_LISTENER_PORT>
@@ -149,9 +159,9 @@ The input topic here contains the following as message value,
 }
 ```
 
-## **Step 3: Define DAG parameters**
+## Step 3: Define DAG parameters
 
-Let’s create the `dag.py` inside the /dags folder. Airflow automatically reads dags defined in the /dags folder.
+Let’s create the `dag.py` inside the `/dags` folder. Airflow automatically reads dags defined in the `/dags` folder.
 
 1. Import the required modules,
     
@@ -235,7 +245,7 @@ Let’s create the `dag.py` inside the /dags folder. Airflow automatically reads
 
 The config `catchup=False` is set up to avoid DAG to run missed scheduled runs.
 
-## **Step 4: Fetch partition ids for the given topic**
+## Step 4: Fetch partition ids for the given topic
 
 Let’s start building the DAG by defining each sequential task. All the tasks should be defined inside the `DAG()` function with `@task` decorator.
 
@@ -256,7 +266,7 @@ def DAG():
 
 Kafka Admin Client is used to fetch the topic partitions.
 
-## **Step 5: Consume new data for each partition**
+## Step 5: Consume new data for each partition
 
 Next task is to consume the message for each given topic partition till the latest offset from the previously committed offset.
 
@@ -337,7 +347,7 @@ def consume_from_topic_partition(partition_id):
     	return partition_id, high_offset
 ```
 
-## **Step 6: Commit latest offset for each topic partition locally**
+## Step 6: Commit latest offset for each topic partition locally
 
 Next task is to commit the latest consumed offset to the local offset file. Partition Id and latest offset are taken as input from the previous task. Partition ids are passed to the next task.
 
@@ -355,7 +365,7 @@ def commit_offsets_locally(partition_offset_values):
       return partition_ids
 ```
 
-## **Step 7: Aggregate values for each partition**
+## Step 7: Aggregate values for each partition
 
 Next task is to aggregate the values for the consumed messages. We will calculate the average voltage for each unique date and store them in a transient processed-csv file.
 
@@ -370,7 +380,7 @@ def process_topic_messages(partition_id):
     	return partition_id
 ```
 
-## **Step 8: Produce aggregated value to output topic**
+## Step 8: Produce aggregated value to output topic
 
 Next task is to produce the aggregated values to the output topic. Date wise average voltage values are produced to the same partition as the input topic. So, the input and output topics are co-partitioned.
 
@@ -394,7 +404,7 @@ def produce_processed_data_to_output_topic(partition_id):
     	return "Finished producing"
 ```
 
-## **Step 9: Define the task flow for the DAG**
+## Step 9: Define the task flow for the DAG
 
 Next step is to connect the defined tasks in the appropriate order for the dag to execute. The `expand()` command is used to execute tasks in parallel and simultaneously.
 
@@ -422,17 +432,17 @@ Username: airflow
 Password: airflow
 ```
 
-Once you log in, you should be able to see the defined DAG in the web UI which should have the same name as the dag_id we defined in the DAG configuration.
+Once you log in, you should be able to see the defined DAG in the web UI which should have the same name as the `dag_id` we defined in the DAG configuration.
 
-![Image-3](../assets/images/airflow_blog_3.png)
+![Image-3](../assets/blog-images/batch_processing_blog/airflow_blog_3.png)
 
 We can now trigger the **`airflow-input-topic_batch_processor`** by clicking the play button under the `Actions` section.
 
 We can track the dag status in Graph or Grid mode in the dag page. Also, we can see the Logs, XCom etc. for each dag task like below.
 
-![Image-4](../assets/images/airflow_blog_4.png)
+![Image-4](../assets/blog-images/batch_processing_blog/airflow_blog_4.png)
 
-## **Conclusion**
+## Conclusion
 
 In this tutorial, we were able to do the following,
 
@@ -444,7 +454,7 @@ In this tutorial, we were able to do the following,
 
 In conclusion, Kafka and Airflow are two of the most popular open-source tools that are used for batch processing. Kafka is designed to handle high-volume data streams in real-time, while Airflow is designed to orchestrate complex workflows and data processing pipelines. Using Kafka and Airflow together can provide a scalable and fault-tolerant solution for batch processing large datasets.
 
-### **References**
+## References
 
 1. [https://airflow.apache.org/docs/apache-airflow/2.3.0/start/docker.html](https://airflow.apache.org/docs/apache-airflow/2.3.0/start/docker.html)
 2. [https://airflow.apache.org/docs/apache-airflow/2.3.0/concepts/dynamic-task-mapping.html](https://airflow.apache.org/docs/apache-airflow/2.3.0/concepts/dynamic-task-mapping.html)

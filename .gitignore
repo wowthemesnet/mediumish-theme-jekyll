@@ -3,3 +3,5 @@ _site
 *.swp
 .sass-cache
 *~
+_posts/2023-03-29-Ksql_and_Kafka_Connect_101.md
+assets/blog-images/ksql_connect_blog
