@@ -36,7 +36,8 @@ Spring에서 Transaction을 처음 만나게 되면 JPA, JDBC를 통해 알게 �
 
 Spring Data JPA를 사용하였다면, 기본적으로 Transaction이 제공되고 있습니다.
 
-[<SimpleJpaRepository.java Github>](https://github.com/sbj156/-/blob/master/src/main/java/org/springframework/data/jpa/repository/support/SimpleJpaRepository.java#L392)
+[SimpleJpaRepository.java Github](https://github.com/sbj156/-/blob/master/src/main/java/org/springframework/data/jpa/repository/support/SimpleJpaRepository.java#L392)
+
 ![](../assets/images/post-Transaction/save_code.png)
 
 즉, `JpaRepository`를 구현한 Repository가 있다면, save, update.. 같은 명령어는 기본적으로 Transaction이 붙어있습니다. 그러므로 간단한 DB 명령어는 우리도 모르는 사이에 트랜잭션이 걸려있었습니다.
