@@ -3,10 +3,10 @@
 
 <div class="col-lg-12 col-md-12 mb-30px card-group">
     <div class="card h-100">
-        <div class="maxthumb">
-            <a href="{{ site.baseurl }}{{ post.url }}">
+        <div class="row g-0">
+            <div class="col-md-3">
+              <a href="{{ site.baseurl }}{{ post.url }}">
                 {% if post.image %}
-
                     {% if site.lazyimages == "enabled" %}
                         <img class="img-fluid lazyimg" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAMAAAACCAQAAAA3fa6RAAAADklEQVR42mNkAANGCAUAACMAA2w/AMgAAAAASUVORK5CYII=" data-src="{% if post.image contains "://" %}{{ post.image }}{% else %}{{ site.baseurl }}/{{ post.image }}{% endif %}" alt="{{ post.title }}">
                     {% else %}
@@ -15,8 +15,9 @@
 
                 {% endif %}
             </a>
-        </div>
-        <div class="card-body">
+            </div>
+            <div class="col-md-9">
+              <div class="card-body">
             <h2 class="card-title">
                 <a class="text-dark" href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a>
                 {% if post.rating %}
@@ -27,6 +28,9 @@
             </h2>
             <h4 class="card-text">{{ post.excerpt | strip_html | truncatewords:30 }}</h4>
         </div>
+            </div>
+          </div>
+        
     </div>
 </div>
 <!-- end post -->
