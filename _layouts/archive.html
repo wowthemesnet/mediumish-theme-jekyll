@@ -7,16 +7,12 @@ permalink: "/archive.html"
 <!-- Begin List Posts
 ================================================== -->
 <section class="recent-posts">
-<div class="section-title">
-    <h2>Todos los posts</h2>
-</div>
-<div class="row listrecent">
-
-{% for post in site.posts %}
-
-    {% include postbox.html %}
-
-{% endfor %}
-
-</div>
+    <div class="section-title">
+        <h2>Todos los posts</h2>
+    </div>
+    <div class="row listrecent">
+        {% for post in site.posts | sort: 'last_updated' %}
+            {% include postbox.html %}
+        {% endfor %}
+    </div>
 </section>
