@@ -17,7 +17,7 @@
             </a>
             </div>
             <div class="col-md-9">
-              <div class="card-body">
+              <div class="card-body pl-0">
             <h2 class="card-title">
                 <a class="text-dark" href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a>
                 {% if post.rating %}
@@ -26,7 +26,7 @@
                 </div>
                 {% endif %}
             </h2>
-            <h4 class="card-text">{{ post.excerpt | strip_html | truncatewords:30 }}</h4>
+            <h4 class="card-text">{{ post.excerpt | strip_html | truncatewords:120 }}</h4>
         </div>
             </div>
           </div>
