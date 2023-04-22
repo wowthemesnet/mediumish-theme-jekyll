@@ -4,6 +4,7 @@
 <div class="col-lg-12 col-md-12 mb-30px card-group">
     <div class="card h-100">
         <div class="row g-0">
+            <a href="{{ site.baseurl }}{{ post.url }}">
             <div class="col-md-4">
                 <div style="
     background: url({% if post.image contains "://" %}{{ post.image }}{% else %}{{ site.baseurl }}/{{ post.image }}{% endif %}) no-repeat center;
@@ -11,6 +12,7 @@
     background-size: cover;
 "></div>
             </div>
+            </a>
             <div class="col-md-8">
               <div class="card-body">
             <h2 class="card-title">
