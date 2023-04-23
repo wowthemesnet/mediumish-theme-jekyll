@@ -2,7 +2,7 @@
 layout: post
 title:  "Opciones y forma de uso en el blog"
 author: danifernandezs
-categories: [ blog, how-to ]
+categories: [ ]
 image: assets/images/posts/2023-01-01/jekyll.png
 featured: false
 hidden: true
