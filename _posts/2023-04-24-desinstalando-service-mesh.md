@@ -8,10 +8,11 @@ featured: false
 hidden: false
 ---
 
-¿Cómo? ¿Desinstalar un operador y retirar todos los recursos credos por el mismo?. Además, ¿el propio operador de Service Mesh?, pero si está de moda usar Istio. 
-Existen situaciones en las que es necesario o deseable retirar el operador de Service Mesh, por ejemplo, si se ha probado y no se ajusta a las necesidades o si no es el producto adecuado para resolver el problema original que se intentó abordar. En el caso que se plantea, se debe retirar OpenShift Service Mesh para poder desplegar otra Mesh de otro proveedor, ya que no es compatible tener Istio desplegado en el mismo clúster.
+¿Cómo? ¿Desinstalar un operador y retirar todos los recursos creados por el mismo?. Además, ¿el mismísimo operador de Service Mesh?, pero si está de moda usar Istio. <br>
+Existen situaciones en las que es necesario o deseable retirar el operador de Service Mesh, por ejemplo, si se ha probado y no se ajusta a las necesidades que se desean cubrir o si no es el producto adecuado para resolver el problema original que se intentó abordar.<br>
+En el caso que se plantea, se decide retirar OpenShift Service Mesh para poder desplegar otra Mesh de otro proveedor, ya que no es compatible tener Istio desplegado en el mismo clúster con la nueva Mesh.
 
-Eliminaremos todos los recursos que componen Red Hat OpenShift Service Mesh.
+Eliminaremos todos los recursos que componen `Red Hat OpenShift Service Mesh`.
 
 ## Pasos que realizaremos
 
