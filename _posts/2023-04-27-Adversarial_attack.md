@@ -13,7 +13,7 @@ featured: true
 
 위의 예시에서처럼, 기존의 해킹 방법과는 다르게, 머신러닝 알고리즘이 내제하고 있는 취약점을 이용한 방법이 바로 적대적 공격입니다. 즉, 적대적인 공격은 미세하게 변경된 입력 데이터인 적대적 예제를 활용해 신경망의 정확도를 떨어뜨리는 행위입니다.
 
-![image](../assets/images/post-Adversarial Attack/machine learning adversarial attack.png)
+![img1](../assets/images/post-Adversarial Attack/machine learning adversarial attack.png)
 *머신러닝 학습 과정과 적대적 공격 생성*
 
 그림에서처럼 머신러닝은 데이터를 수집하고, 학습 데이터를 준비합니다. 이후 알맞은 머신러닝 알고리즘을 선택하여 학습 데이터를 입력해 기계를 학습시킵니다. 적대적 공격은 학습 데이터에 적대적 예제, 즉 잘못된 결과를 산출하도록 공격자가 의도적으로 조작함으로써 이루어집니다.
@@ -52,7 +52,7 @@ def fgsm_attack(image, epsilon, data_grad):
 
 공격을 직접 실행한 결과는 다음과 같습니다.
 
-![image](../assets/images/post-Adversarial Attack/epsilon_accuracy.png)
+![img2](../assets/images/post-Adversarial Attack/epsilon_accuracy.png)
 
 여기서 전체 테스트 스텝을 각 엡실론(Ɛ) 값에 실행합니다. Ɛ=0인 경우 공격이 없는 원본 테스트 정확도를 의미합니다. 위 그래프에서 엡실론이 증가할수록 테스트 정확도는 떨어집니다.
 
