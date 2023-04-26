@@ -15,6 +15,7 @@ featured: true
 
 ![image](../assets/images/post-Adversarial Attack/machine learning adversarial attack.png)
 *머신러닝 학습 과정과 적대적 공격 생성*
+
 그림에서처럼 머신러닝은 데이터를 수집하고, 학습 데이터를 준비합니다. 이후 알맞은 머신러닝 알고리즘을 선택하여 학습 데이터를 입력해 기계를 학습시킵니다. 적대적 공격은 학습 데이터에 적대적 예제, 즉 잘못된 결과를 산출하도록 공격자가 의도적으로 조작함으로써 이루어집니다.
 
 ## 적대적 공격 유형
