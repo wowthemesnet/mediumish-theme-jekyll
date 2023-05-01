@@ -45,7 +45,7 @@ if(deletePage(page) = E_OK) {
 
 1. if 블럭이 중첩된다.
 2. 구조가 반복된다.
-3. 기능코드에 오류를 판별하는 불필요한 로직을 포함하게 된다. 
+3. 기능코드에 오류를 판별하는 불필요한 로직을 포함하게 된다.
 
 따라서 에러코드를 리턴하는 행위대신 아래의 코드블럭과 같이 Exception을 사용하고 거기에 추가로 Try / Catch 구문을 사용하면서 예외사항을 처리하는 별도의 함수를 추출하면, 코드의 가독성과 유지보수성을  높일 수 있습니다.
 
@@ -105,27 +105,25 @@ type error interface {
 }
 ```
 
-그리고 error 타입의 특성을 활용하여 error를 가지는 값이 nil 인지 아닌지를 체크하는 것으로 에러의 유무를 체크하고 처리 동작을 연결할 수 있습니다. 
+그리고 error 타입의 특성을 활용하여 error를 가지는 값이 nil 인지 아닌지를 체크하는 것으로 에러의 유무를 체크하고 처리 동작을 연결할 수 있습니다.
 
 ```go
 func (err PasswordError) Error() string {
 	return "암호 길이 문제"
 }
 func RegisterAccount(n,p string) errer{
-	if ~~{
+	if (조건문) {
 		return PasswordError
 	}
 }
 func main() {
 	err := RegisterAccount("myID","myPw")
 	if err != nil{
-			~~~~~~
-	} else {
-		~~~~~
+		(에러처리로직)
 	}
 }
 ```
 
 ## 마치며
 
-일반적인 상황에서, 특히 Java 언어를 사용한 개발 환경에서라면 Java가 제공하는 Exception을 잘 활용하는 것은 에러를 핸들링하기에 적합한 방법으로 보입니다. 하지만 Exception이 항상 에러를 처리하는 정답은 아니며 상황과 환경에 따라서 적절한 에러처리 기술을 잘 활용할 수 있어야 할 것 입니다.
+일반적인 상황에서, 특히 Java 언어를 사용한 개발 환경에서라면 Java가 제공하는 Exception을 잘 활용하는 것은 에러를 핸들링하기에 적합한 방법으로 보입니다. 하지만 Exception이 항상 에러를 처리하는 정답은 아니며 상황과 환경에 따라서 적절한 에러처리 기술을 잘 활용할 수 있어야 할 것입니다.
