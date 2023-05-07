@@ -3,7 +3,7 @@ layout: post
 title:  "Unity란?"
 authors: [SSUHYUNKIM]
 tags: ["Game","Unity"]
-image: ../assets/images/post-what-is-unity/cover.jpg
+image: ../assets/images/post-what-is-unity/cover.png
 featured: true
 ---
 
