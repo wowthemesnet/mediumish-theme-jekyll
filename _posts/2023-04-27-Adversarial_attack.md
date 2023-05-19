@@ -3,7 +3,7 @@ layout: post
 title: "FSGM을 이용하여 적대적 공격 살펴보기"
 authors: [00HS]
 tags: ["적대적 공격", "FSGM"]
-image: ![deeplearning](../assets/images/post-Adversarial Attack/deeplearning.jpg)
+image: ../assets/images/post-Adversarial Attack/deeplearning.jpg
 featured: true
 ---
 
