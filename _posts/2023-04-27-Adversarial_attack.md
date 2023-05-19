@@ -3,7 +3,7 @@ layout: post
 title: "FSGM을 이용하여 적대적 공격 살펴보기"
 authors: [00HS]
 tags: ["적대적 공격", "FSGM"]
-image: 포스트 커버 이미지
+image: ![deeplearning](../assets/images/post-Adversarial Attack/deeplearning.jpg)
 featured: true
 ---
 
@@ -22,8 +22,8 @@ featured: true
 적대적 공격은 신경망 내부 정보 보유 여부에 따라 두 가지로 나뉩니다. white-box 공격은 신경망 내부 정보를 아는 상태로 수행하는 공격으로, 이 때문에 더욱 효과적인 공격을 수행할 수 있습니다. Black-box 공격은 반대로 신경망 내부 정보를 모르는 상태로 수행하는 공격으로, 실제 상황에서 신경망은 이 유형의 공격을 당할 확률이 높습니다.
 
 ## FSGM
-대표적인 적대적 공격인 FSGM에 대해 코드를 통해 살펴보도록 하겠습니다. 
-FSGM은 공격 목표를 정할 수 없는 non-targeted 방식이자, 대상 모델의 정보가 필요한 화이트박스 방식입니다.
+대표적인 적대적 공격인 FSGM에 대하여 코드를 통해 살펴보도록 하겠습니다. 
+FSGM은 공격 목표를 정할 수 없는 non-targeted 방식이자, 대상 모델의 정보가 필요한 white box 방식입니다.
 
 공격받는 모델은 pytorch/examples/mnist 와 동일한 MNIST 모델입니다.
 fgsm_attack 함수는 입력 파라미터로 3가지를 가집니다. 
