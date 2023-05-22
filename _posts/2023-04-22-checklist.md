@@ -3,7 +3,7 @@ layout: post
 title:  "앱 출시 전 체크리스트"
 authors: [Sooyeon-Kwon]
 tags: ["Mobile"]
-image: ../assets/images/post-list/1.jpg
+image: ../assets/images/post-list/1.jpeg
 featured: true
 ---
 
@@ -51,7 +51,7 @@ featured: true
 
 ## 앱 테스트 체크리스트
 
-1. 행동 유도성
+### 1. 행동 유도성
 
 행동 유도성은 다음에 대한 답을 제공합니다.
 
@@ -75,7 +75,7 @@ featured: true
 
 
 
-2. 일관성
+### 2. 일관성
 
 일관성이란 ?
 
@@ -99,7 +99,7 @@ featured: true
 
 
 
-3. 근접성과 그룹핑
+### 3. 근접성과 그룹핑
 
 **근접성과 그룹핑 테스트**
 
@@ -113,7 +113,7 @@ featured: true
 
 
 
-4. 피드백
+### 4. 피드백
 
 좋은 피드백은 아래 질문에 대한 답을 제공합니다.
 
