@@ -3,7 +3,7 @@ layout: post
 title:  "앱 출시 전 체크리스트"
 authors: [Sooyeon-Kwon]
 tags: ["Mobile"]
-image: ../assets/images/post-list/1.jpeg
+image: ../assets/images/post-checklist/1.jpeg
 featured: true
 ---
 
