@@ -1,0 +1,37 @@
+<mxfile host="app.diagrams.net" modified="2023-05-20T16:58:23.514Z" agent="Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/112.0.0.0 Safari/537.36" etag="JlPkpuPDzMKcjeAC0quh" version="21.3.2" type="device">
+  <diagram name="Page-1" id="qVnddIYi8-NolfxgfNcJ">
+    <mxGraphModel dx="1434" dy="739" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1169" pageHeight="827" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="yn8R-PdNbGNw_ilMAcxb-14" value="" style="group" parent="1" vertex="1" connectable="0">
+          <mxGeometry x="19.999999999999943" y="70" width="691.24" height="773.7101310896624" as="geometry" />
+        </mxCell>
+        <mxCell id="yn8R-PdNbGNw_ilMAcxb-9" value="Control Plane Machine Set" style="rounded=1;whiteSpace=wrap;html=1;fontSize=20;verticalAlign=top;" parent="yn8R-PdNbGNw_ilMAcxb-14" vertex="1">
+          <mxGeometry x="20.32" width="668.67" height="360" as="geometry" />
+        </mxCell>
+        <mxCell id="yn8R-PdNbGNw_ilMAcxb-8" value="" style="shape=image;html=1;verticalAlign=top;verticalLabelPosition=bottom;labelBackgroundColor=#ffffff;imageAspect=0;aspect=fixed;image=https://cdn1.iconfinder.com/data/icons/iconoir-vol-3/24/refresh-128.png;rotation=30;" parent="yn8R-PdNbGNw_ilMAcxb-14" vertex="1">
+          <mxGeometry x="109.99859988804464" y="29.998730977706913" width="506.02280022391085" height="506.02280022391085" as="geometry" />
+        </mxCell>
+        <mxCell id="yn8R-PdNbGNw_ilMAcxb-4" value="Master Node 0" style="rounded=1;whiteSpace=wrap;html=1;verticalAlign=bottom;fontSize=14;fillColor=#f5f5f5;strokeColor=#666666;fontColor=#333333;" parent="yn8R-PdNbGNw_ilMAcxb-14" vertex="1">
+          <mxGeometry x="92.61" y="87.54" width="144.58" height="152.46" as="geometry" />
+        </mxCell>
+        <mxCell id="yn8R-PdNbGNw_ilMAcxb-5" value="Master Node 1" style="rounded=1;whiteSpace=wrap;html=1;verticalAlign=bottom;fontSize=14;fillColor=#f5f5f5;strokeColor=#666666;fontColor=#333333;" parent="yn8R-PdNbGNw_ilMAcxb-14" vertex="1">
+          <mxGeometry x="273.33" y="87.54" width="144.58" height="152.46" as="geometry" />
+        </mxCell>
+        <mxCell id="yn8R-PdNbGNw_ilMAcxb-6" value="Master Node 2" style="rounded=1;whiteSpace=wrap;html=1;fontSize=14;verticalAlign=bottom;fillColor=#f5f5f5;strokeColor=#666666;fontColor=#333333;" parent="yn8R-PdNbGNw_ilMAcxb-14" vertex="1">
+          <mxGeometry x="454.05" y="87.54" width="144.58" height="152.46" as="geometry" />
+        </mxCell>
+        <mxCell id="yn8R-PdNbGNw_ilMAcxb-1" value="" style="image;sketch=0;aspect=fixed;html=1;points=[];align=center;fontSize=12;image=img/lib/mscae/OpenShift.svg;" parent="yn8R-PdNbGNw_ilMAcxb-14" vertex="1">
+          <mxGeometry x="481.16182148854756" y="105.04723858662413" width="90.36121432569837" height="83.1323171796425" as="geometry" />
+        </mxCell>
+        <mxCell id="yn8R-PdNbGNw_ilMAcxb-2" value="" style="image;sketch=0;aspect=fixed;html=1;points=[];align=center;fontSize=12;image=img/lib/mscae/OpenShift.svg;" parent="yn8R-PdNbGNw_ilMAcxb-14" vertex="1">
+          <mxGeometry x="300.4393928371509" y="105.04723858662413" width="90.36121432569837" height="83.1323171796425" as="geometry" />
+        </mxCell>
+        <mxCell id="yn8R-PdNbGNw_ilMAcxb-3" value="" style="image;sketch=0;aspect=fixed;html=1;points=[];align=center;fontSize=12;image=img/lib/mscae/OpenShift.svg;" parent="yn8R-PdNbGNw_ilMAcxb-14" vertex="1">
+          <mxGeometry x="119.7169641857542" y="105.04723858662413" width="90.36121432569837" height="83.1323171796425" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
