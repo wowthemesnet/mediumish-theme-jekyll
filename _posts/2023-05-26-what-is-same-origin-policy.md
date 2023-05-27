@@ -19,7 +19,7 @@ featured: true
 
 # **SOP(Same-Origin-Policy)**
 
-![image01](../assets/images/post-what-is-same-origin-policy\head.png)
+![image01](../assets/images/post-what-is-same-origin-policy/head.png)
 
 MDN 문서에 따르면
 >SOP는 한 Origin 에서 불러온 문서 또는 스크립트가 다른 Origin의 리소스와 상호작용할 수 있는 방법을 제한하는 보안 메커니즘이라고 합니다.
