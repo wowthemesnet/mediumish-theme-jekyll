@@ -3,7 +3,7 @@ layout: post
 title: "Gradient Boosting"
 authors: [ha789ha]
 tags: ["MachineLearning"]
-image: ![image](../assets/images/post-Gradient_boosting/machine_learning.jpg)
+image: ../assets/images/post-Gradient_boosting/machine_learning.jpg
 featured: true
 ---
 
@@ -13,10 +13,10 @@ featured: true
 Gradient Boosting은 약한 학습기를 결합해 강력한 예측 모델을 구축하는 알고리즘이며, 다양한 문제에 효과적으로 적용될 수 있습니다. 실제로 세계 최대 데이터 경진 대회 사이트 Kaggle에서는 우승 알고리즘으로 수차례 Gradient Boosting 알고리즘이 채택되기도 하였습니다. 그렇다면 Graident Boosting은 어떤 원리로 예측을 하며 왜 사랑받을까요??
 
 ## 의사결정트리
-우리는 Gradient Boosting을 알기 전에 우선 트리 기반 모델에 대해 알아볼 필요가 있습니다. 트리 기반 모델은 머신러닝에서 널리 사용되는 알고리즘 중 하나로, 데이터의 구조와 패턴을 학습하는 데 사용됩니다. 트리 기반 모델의 기본 단위는 의사결정트리(decision tree)로, 데이터를 분석하고 예측을 수행하는데 도움이 됩니다.
+Gradient Boosting을 알기 전에 우선 트리 기반 모델에 대해 알아볼 필요가 있습니다. 트리 기반 모델은 머신러닝에서 널리 사용되는 알고리즘 중 하나로, 데이터의 구조와 패턴을 학습하는 데 사용됩니다. 트리 기반 모델의 기본 단위는 의사결정트리(decision tree)로, 데이터를 분석하고 예측을 수행하는데 도움이 됩니다.
 
 ![image](../assets/images/post-Gradient_boosting/decision_tree.png)
-의사결정트리의 구조는 위의 사진과 같으면 크게 뿌리 노드(Root Node), 분기 노드, 리프 노드로 이루어져 있습니다. 
+의사결정트리의 구조는 위의 사진과 같으며 크게 뿌리 노드(Root Node), 분기 노드, 리프 노드로 이루어져 있습니다. 
 
 
 ![image](../assets/images/post-Gradient_boosting/tree_example.png)
@@ -57,7 +57,7 @@ Gradient Boosting은 Gradient(잔차)를 사용하여 이전 모형의 약점을
 마지막으로는 데이터의 크기입니다. 딥러닝은 대규모 데이터에서 복잡한 패턴을 학습하는데 강점이 있지만 데이터가 충분하지 않은 경우 현저히 떨어지는 성능을 보이는 경우가 많습니다. 하지만 Gradient Boosting 모델은 적은 데이터로도 훌륭한 성능을 보입니다.
 
 ## Code
-마지막으로는 Gradient Boosting 알고리즘의 대표적인 라이브러리 중 하나인 Xgboost의 적용 코드 예시를 작성하면서 마무리하겠습니다. Gradient Boosting을 실제 코드에 적용하려면 수많은 파라미터를 조절하는 과정이 필요한데요 오늘은 Gradient Boosting에 대해 이론적으로 설명하는 시간이라 기회가 된다면 파라미터 조절과 코드 작성에 대해서도 포스팅하겠습니다.
+마지막으로는 Gradient Boosting 알고리즘의 대표적인 라이브러리 중 하나인 Xgboost의 적용 코드 예시를 작성하면서 마무리하겠습니다. Gradient Boosting을 실제 코드에 적용하려면 수많은 파라미터를 조절하는 과정이 필요합니다. 오늘은 Gradient Boosting에 대해 이론적으로 설명하는 시간이라 기회가 된다면 파라미터 조절과 코드 작성에 대해서도 포스팅하겠습니다.
 
 
 ```python
