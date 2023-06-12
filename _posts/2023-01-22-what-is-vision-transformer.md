@@ -3,7 +3,7 @@ layout: post
 title:  "Transformer in image task? - vision transformer 간단 리뷰"
 authors: [beautifulchoi]
 tags: ["Computer Vision" , "Transformer", "ViT", "attention"]
-image: ../assets/images/post-vision-transformer/vit_background.jpg
+image: ../assets/images/post-vision-transformer/vit_background.JPG
 featured: true
 use_math: true
 ---
