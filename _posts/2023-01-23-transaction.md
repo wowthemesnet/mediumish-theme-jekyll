@@ -44,7 +44,7 @@ Spring Data JPA를 사용하였다면, 기본적으로 Transaction이 제공되�
 
 여기서 문제가 발생할 수 있습니다.
 
-```
+```kotlin
 fun setUser(): String {
     val user = userRepository.findById(1).orElseThrow { IllegalArgumentException("잘못된 id 입니다.") }
     val user2 = userRepository.findById(2).orElseThrow { IllegalArgumentException("잘못된 id 입니다.") }
@@ -77,7 +77,7 @@ fun setUser(): String {
 
 Transaction을 처리하는 방법을 검색하면 가장 많이 나오는 방법이라 생각합니다. 실행하고자 하는 Method 위에 `@Transactional`만 붙이면 트랜잭션을 수행하기 때문에 매우 간단하다는 장점이 있습니다.
 
-```
+```kotlin
 ex)
 
 @Transactional
@@ -105,7 +105,7 @@ AOP는 그 자체로 복잡한 기술이며, 얘기할 내용이 많으므로 �
 추가)
 - 내부 함수를 호출하는 경우
 
-```
+```kotlin
 fun setUser(): String {
     return internalSetUser()
 }
@@ -139,7 +139,7 @@ fun internalSetUser(): String {
 
 이때, `EntityManager` 를 이용할 수 있습니다. `EntityManagerFactory`에서 얻을 수 있으며, Spring Data JPA를 사용한다면 `@PersisteneContext`를 통해 Bean에서 쉽게 받을 수 있습니다.
 
-```
+```kotlin
 class UserService{
     
     @PersistenceContext
@@ -185,7 +185,7 @@ class UserService{
 
 예시)
 
-```
+```kotlin
 @Component
 class CustomTransactionTemplate {
 
@@ -202,7 +202,7 @@ class CustomTransactionTemplate {
 }
 ```
 
-```
+```kotlin
 class UserService(
     val userRepository: UserRepository,
     val customTransactionTemplate: CustomTransactionTemplate
