@@ -82,4 +82,4 @@ featured: true
 
 [[Unity 입문 강좌 - 1] Unity 란?](https://ctkim.tistory.com/195)  
 [[Unity] 유니티란? 게임개발을 위한 엔진 유니티를 소개합니다](https://blcan.tistory.com/8)  
-[유니티와 협업으로 진행된 <가상현실 프로그래밍 교육>, 생생한 후기 밀착 취재!](https://liberaledu.snu.ac.kr/board/blog/view/862)
+[유니티와 협업으로 진행된 \<가상현실 프로그래밍 교육\>, 생생한 후기 밀착 취재!](https://liberaledu.snu.ac.kr/board/blog/view/862)
