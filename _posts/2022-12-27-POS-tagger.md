@@ -117,7 +117,7 @@ sentence = "히어로들이 세상에 존재하지 않는다는 사실을 깨달
 이제 sentence를 각 형태소 분석기에 적용시킨 결과를 비교해볼 것이다.
 
 **1. 각 형태소 분석기의 nouns 메서드를 이용한 추출 결과**
-<img src="../assets/images/post-POS-tagger/nouns.png" width="1000" height="300">
+<img src="../assets/images/post-POS-tagger/nouns.png" width="1000">
 
 ---
 
@@ -126,17 +126,17 @@ sentence = "히어로들이 세상에 존재하지 않는다는 사실을 깨달
 - Hannanum, Kkma
 
 <p align="center">
-  <img src="../assets/images/post-POS-tagger/han_morphs.png" align="center" width="500" height = "400">
-  <img src="../assets/images/post-POS-tagger/kkma_morphs.png" align="center" width="500" height = "400">
+  <img src="../assets/images/post-POS-tagger/han_morphs.png" align="center" width="700">
+  <img src="../assets/images/post-POS-tagger/kkma_morphs.png" align="center" width="700">
 </p>
 
 
 - Komoran, Mecab, Okt
 
 <p align="center">
-  <img src="../assets/images/post-POS-tagger/komoran_morphs.png" align="center" width="330" height = "400">
-  <img src="../assets/images/post-POS-tagger/mecab_morphs.png" align="center" width="330" height = "400">
-  <img src="../assets/images/post-POS-tagger/Okt_morphs.png" align="center" width="330" height = "400">
+  <img src="../assets/images/post-POS-tagger/komoran_morphs.png" align="center" width="700">
+  <img src="../assets/images/post-POS-tagger/mecab_morphs.png" align="center" width="700">
+  <img src="../assets/images/post-POS-tagger/Okt_morphs.png" align="center" width="700">
 </p>
 
 ---
@@ -146,13 +146,13 @@ sentence = "히어로들이 세상에 존재하지 않는다는 사실을 깨달
 1)Hannanum
 
 <p align="center">
-  <img src="../assets/images/post-POS-tagger/han_pos9F.png" align="center" width="500" height = "300">
-  <img src="../assets/images/post-POS-tagger/han_pos9T.png" align="center" width="500" height = "400">
+  <img src="../assets/images/post-POS-tagger/han_pos9F.png" align="center" width="700">
+  <img src="../assets/images/post-POS-tagger/han_pos9T.png" align="center" width="700">
 </p>
 
 <p align="center">
-  <img src="../assets/images/post-POS-tagger/han_pos22F.png" align="center" width="500" height = "300">
-  <img src="../assets/images/post-POS-tagger/han_pos22T.png" align="center" width="500" height = "400">
+  <img src="../assets/images/post-POS-tagger/han_pos22F.png" align="center" width="700">
+  <img src="../assets/images/post-POS-tagger/han_pos22T.png" align="center" width="700">
 </p>
 
 
@@ -160,38 +160,38 @@ sentence = "히어로들이 세상에 존재하지 않는다는 사실을 깨달
 2)Kkma
 
 <p align="center">
-  <img src="../assets/images/post-POS-tagger/kkma_posF.png" align="center" width="500" height = "300">
-  <img src="../assets/images/post-POS-tagger/kkma_posT.png" align="center" width="500" height = "400">
+  <img src="../assets/images/post-POS-tagger/kkma_posF.png" align="center" width="700">
+  <img src="../assets/images/post-POS-tagger/kkma_posT.png" align="center" width="700">
 </p>
 
 
 3)Komoran
 
 <p align="center">
-  <img src="../assets/images/post-POS-tagger/komoran_posF.png" align="center" width="500" height = "300">
-  <img src="../assets/images/post-POS-tagger/komoran_posT.png" align="center" width="500" height = "400">
+  <img src="../assets/images/post-POS-tagger/komoran_posF.png" align="center" width="700">
+  <img src="../assets/images/post-POS-tagger/komoran_posT.png" align="center" width="700">
 </p>
 
 
 4)Mecab
 
 <p align="center">
-  <img src="../assets/images/post-POS-tagger/mecab_posF.png" align="center" width="500" height = "300">
-  <img src="../assets/images/post-POS-tagger/mecab_posT.png" align="center" width="500" height = "400">
+  <img src="../assets/images/post-POS-tagger/mecab_posF.png" align="center" width="700">
+  <img src="../assets/images/post-POS-tagger/mecab_posT.png" align="center" width="700">
 </p>
 
 
 5)Okt
 
 <p align="center">
-  <img src="../assets/images/post-POS-tagger/okt_posFF.png" align="center" width="500" height = "300">
-  <img src="../assets/images/post-POS-tagger/okt_posTF.png" align="center" width="500" height = "400">
+  <img src="../assets/images/post-POS-tagger/okt_posFF.png" align="center" width="700">
+  <img src="../assets/images/post-POS-tagger/okt_posTF.png" align="center" width="700">
 </p>
 
 
 <p align="center">
-  <img src="../assets/images/post-POS-tagger/okt_posFT.png" align="center" width="500" height = "300">
-  <img src="../assets/images/post-POS-tagger/okt_posTT.png" align="center" width="500" height = "400">
+  <img src="../assets/images/post-POS-tagger/okt_posFT.png" align="center" width="700">
+  <img src="../assets/images/post-POS-tagger/okt_posTT.png" align="center" width="700">
 </p>
 
 
@@ -204,7 +204,7 @@ sentence = "히어로들이 세상에 존재하지 않는다는 사실을 깨달
 
 실행 결과 형태학적으로 가능한 후보를 리턴하게 된다.
 
-<img src="../assets/images/post-POS-tagger/han_analyze.png" width="1000" height="400">
+<img src="../assets/images/post-POS-tagger/han_analyze.png" width="1000">
 
 
 2)Kkma.sentences(phrase)
@@ -223,7 +223,7 @@ sentence = "히어로들이 세상에 존재하지 않는다는 사실을 깨달
 
 아래의 그래프는 문자의 개수에 따른 각 형태소 분석기의 pos 메소드를 실행시간을 나타낸 것이다.
 
-<p align="center"><img src="../assets/images/post-POS-tagger/graph.png" width="700" height="500"></p>
+<p align="center"><img src="../assets/images/post-POS-tagger/graph.png" width="700"></p>
 
 그래프만 놓고 봤을 땐 Mecab이 가장 빠르게 나온다.
 
