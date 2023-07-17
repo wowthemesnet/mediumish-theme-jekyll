@@ -85,15 +85,15 @@ Recently, Confluent acquired Immerok which is a contributor to the open source s
 
 We will now build a sample end-to-end streaming pipeline using Kafka Connect and KSQLDB in both Confluent Cloud and Confluent Platform. Both the scenarios will be using Kafka Cluster deployed in Confluent Cloud for Kafka Topic storage. So, please create a Basic Kafka cluster in Confluent Cloud by registering in this [link](https://confluent.cloud/signup).
 
-![faust_blog_1.png](/assets/blog-images/e2e_ksql_connect_blog/faust_blog_1.png)
+![faust_blog_1.png](../assets/blog-images/e2e_ksql_connect_blog/faust_blog_1.png)
 
 This demo will also require Schema registry cluster for storing Avro schema of the record values. You can create a Schema registry cluster in the Confluent Cloud by enabling the Streams Governance Essentials Package. You can follow this [link](https://docs.confluent.io/cloud/current/stream-governance/packages.html#stream-governance-packages-features-and-limits) for more information.
 
-![streamsgovernanceimage.png](/assets/blog-images/e2e_ksql_connect_blog/streamsgovernanceimage.png)
+![streamsgovernanceimage.png](../assets/blog-images/e2e_ksql_connect_blog/streamsgovernanceimage.png)
 
 Create a Kafka cluster API Key in your Confluent cloud account from under the Cluster Overview section, so that the connectors and KSQLDB can access data from Kafka topics during stream processing.
 
-![CreateKafkaApiKey.png](/assets/blog-images/e2e_ksql_connect_blog/CreateKafkaApiKey.png)
+![CreateKafkaApiKey.png](../assets/blog-images/e2e_ksql_connect_blog/CreateKafkaApiKey.png)
 
 Following are the details of the streaming pipeline,
 
@@ -104,7 +104,7 @@ Following are the details of the streaming pipeline,
 
 The connectors used in this demo will be deployed using SQL queries in KSQL in both Confluent Cloud and Confluent Platform deployments. 
 
-![StreamDesignerPipeline.png](/assets/blog-images/e2e_ksql_connect_blog/StreamDesignerPipeline.png)
+![StreamDesignerPipeline.png](../assets/blog-images/e2e_ksql_connect_blog/StreamDesignerPipeline.png)
 
 ### Confluent Cloud
 
@@ -112,7 +112,7 @@ We will use the Confluent Cloud console to create KSQL cluster but this can be a
 
 Create a KSQL cluster in your Confluent Cloud account with Global access (only for testing).
 
-![CreateKSQLinCC.png](/assets/blog-images/e2e_ksql_connect_blog/CreateKSQLinCC.png)
+![CreateKSQLinCC.png](../assets/blog-images/e2e_ksql_connect_blog/CreateKSQLinCC.png)
 
 Once, the KSQL cluster is provisioned. we will create a Datagen source connector to push data into  the input topic `clickstream_cloud_input`. We will use the `SHOE_CLICKSTREAM` quick start data generator and set the data type as `AVRO` for the record values. The Kafka API key pair created above will be used to create the input topic and write data into it.
 
@@ -130,7 +130,7 @@ CREATE SOURCE CONNECTOR "ClickstreamDataGenSourceConnector" WITH (
 
 Once the Datagen source connector is successfully deployed, we should be able to see the generated records for the input topic in the Confluent Cloud UI. 
 
-![InputTopicMessagesCrop.png](/assets/blog-images/e2e_ksql_connect_blog/InputTopicMessagesCrop.png)
+![InputTopicMessagesCrop.png](../assets/blog-images/e2e_ksql_connect_blog/InputTopicMessagesCrop.png)
 
 Let’s create a Kafka stream called `CLICKSTREAM_CLOUD_STREAM` from this input topic `clickstream_cloud_input` for further processing. We will mention the timestamp field in the message value to be used for windowing by using the `timestamp` variable under the `WITH` clause. 
 
@@ -158,7 +158,7 @@ GROUP BY USER_ID, PRODUCT_ID;
 
 Following, is a sample view of the records received by the ouput topic `clickstream_cloud_output`
 
-![OutputTopicMessagesCrop.png](/assets/blog-images/e2e_ksql_connect_blog/OutputTopicMessagesCrop.png)
+![OutputTopicMessagesCrop.png](../assets/blog-images/e2e_ksql_connect_blog/OutputTopicMessagesCrop.png)
 
 Let’s create a Postgres JDBC Sink connector which writes the aggregated values from the output topic to a remote Postgres database. 
 
@@ -192,7 +192,7 @@ CREATE SINK CONNECTOR "PostgresClickstreamSinkConnector" WITH (
 
 Here is the sample view of the `clickstream_user_product_viewtime` table in the Postgres database post the sink connector deployment.
 
-![PostgresTableOutputCrop.png](/assets/blog-images/e2e_ksql_connect_blog/PostgresTableOutputCrop.png)
+![PostgresTableOutputCrop.png](../assets/blog-images/e2e_ksql_connect_blog/PostgresTableOutputCrop.png)
 
 ### Confluent Platform
 
@@ -350,7 +350,7 @@ Connect to the KSQLDB server inside the KSQLDB CLI container,
 ksql http://ksqldb-server:8088
 ```
 
-![KSQLdbCLI.png](/assets/blog-images/e2e_ksql_connect_blog/KSQLdbCLI.png)
+![KSQLdbCLI.png](../assets/blog-images/e2e_ksql_connect_blog/KSQLdbCLI.png)
 
 Deploy the Datagen Source connector,
 
