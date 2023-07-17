@@ -61,7 +61,7 @@ A general architecture is as follows,
 2. A command dispatcher service (like a Kafka consumer) handles reading & committing offsets including hand off to Airflow by invoking the concerned DAG (via it's REST interface). By doing this, we therefore separate consuming from processing.
 3. Airflow DAG itself is parametrized to process one command / event at a time. This therefore provides granular observability and auditable controls of what happened, thus enabling retrying/re-processing or dead-letter queue.
 
-![Dispatcher_Architecture.png](/assets/blog-images/command_processing_blog/Dispatcher_Architecture.png)
+![Dispatcher_Architecture.png](../assets/blog-images/command_processing_blog/Dispatcher_Architecture.png)
 
 This pattern could thus be used for:
 
@@ -311,7 +311,7 @@ send_email_task
 
 In this example, we've defined a DAG called `send_email_alert` that runs once (**`schedule_interval='@once'`**) and has a single task called **`send_email_task`**. The **`EmailOperator`** is used to send the email, and we've defined the recipient, subject, and body of the email as arguments to the operator. The recipient parameter is passed from dag run conf parameter. We've also specified some default arguments for the DAG like the number of times to retry the task if it fails etc.
 
-![EmailDAG.png](/assets/blog-images/command_processing_blog/EmailDAG.png)
+![EmailDAG.png](../assets/blog-images/command_processing_blog/EmailDAG.png)
 
 To run this DAG, you'll need to have a working SMTP server set up to send the email. You can configure the SMTP server settings in your Airflow configuration file.
 
