@@ -20,7 +20,7 @@ authors:
     email: pavan@platformatory.io
     web: https://platformatory.io
     twitter: https://twitter.com/platformatory
-    description: "Pavan is a cofounder and principal consultant at Platformatory. While not being a handyman for everything at Platformatory, he is likely indluging in random walks (around Bangalore), music or herding kids"
+    description: "Cofounder at Platformatory. Pavan has handyman experience around systems programming, data, infrastructure and running tech consulting gigs"
   badri:
     name: badri
     display_name: Lakshminarasimhan Parthasarathy    
@@ -29,16 +29,7 @@ authors:
     email: lakshmi@platformatory.io
     web: https://www.platformatory.io
     twitter: https://twitter.com/platformatory
-    description: "Principal Engineer at Platformatory; Musician"
-  srikanth:
-    name: srikanth
-    display_name: Srikanth Pai
-    avatar: 'assets/images/avatar.png'
-    gravatar: b1cc14991db7a456fcd761680bbc8f81
-    email: srikanth@platformatory.io
-    web: https://www.platformatory.io
-    twitter: https://twitter.com/platformatory
-    description: "Consultant at Platformatory;"
+    description: "Principal Engineer at Platformatory; Lakshmi comes with the triad of full stack development, operations and data experience"
   dasa:
     name: dasa
     display_name: Dasa Sathyan
@@ -56,7 +47,7 @@ authors:
     email: ashwin@platformatory.io
     web: https://www.platformatory.io
     twitter: https://twitter.com/platformatory
-    description: "Sr Consultant at Platformatory;"
+    description: "Platform Engineer at Platformatory specialzing in streaming; Ashwin has previously dabbled in data science, machine learning and predicting box office success for Tollywood movies"
   venkatesh:
     name: venkatesh
     display_name: Venkatesh Keshavamurthy
@@ -66,15 +57,15 @@ authors:
     web: https://www.platformatory.io
     twitter: https://twitter.com/platformatory
     description: "Data Engineer at Platformatory;"
-  kiran:
-    name: kiran
-    display_name: Kiran Sreevastav
+  avinash:
+    name: avinash
+    display_name: Avinash Upadhyaya
     avatar: 'assets/images/avatar.png'
     gravatar: b1cc14991db7a456fcd761680bbc8f81
-    email: srikanth@platformatory.io
+    email: avinash@platformatory.io
     web: https://www.platformatory.io
     twitter: https://twitter.com/platformatory
-    description: "Data Engineer at Platformatory;"
+    description: "Platform Engineer at Platformatory specializing in Infrastructure; Avinash is a Kong champion and organizes several meetup groups around CNCF projects across India"
 
 
 # Plugins

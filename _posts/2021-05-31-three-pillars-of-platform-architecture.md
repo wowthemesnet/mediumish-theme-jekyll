@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "The 3 pillars of a platform strategy"
+title:  "The 3 pillars of Platform architecture"
 author: p6
 categories: [ Platform Engineering, Data, Infrastructure, Kafka, Kong, Kubernetes ]
 image: assets/blog-images/platform-arch-model.svg
