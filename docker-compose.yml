@@ -1,4 +1,5 @@
-jekyll:
+services:
+  jekyll:
     image: jekyll/jekyll:latest
     command: jekyll serve --force_polling
     ports:
