@@ -2,6 +2,7 @@
 layout: post
 title:  "The Kafka benchmarking suite"
 categories: [ Kafka, Kubernetes, Performance, Helm ]
+featured: true
 ---
 
 There are numerous parameters we have to consider tweaking when benchmarking a Kafka cluster. Irrespective of these parameters, we optimize along the following dimensions:
