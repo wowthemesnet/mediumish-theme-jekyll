@@ -4,6 +4,7 @@ title:  "The Kafka benchmarking suite"
 categories: [ Kafka, Kubernetes, Performance, Helm ]
 featured: true
 image: assets/blog-images/kafka-perf-suite/kafka-benchmark-metrics-featured.png
+teaser: "Distributed testing grid for Kafka on top of Kubernetes"
 author: badri
 ---
 

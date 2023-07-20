@@ -4,7 +4,6 @@ title:  "End-To-End Streaming Pipeline using KSQLDB and Kafka Connect"
 author: ashwin
 categories: [ KSQL, Kafka Connect, Confluent Cloud, Kafka, Stream Design, Docker]
 image: assets/blog-images/e2e_ksql_connect_blog/end-to-end-pipeline.jpg
-hidden: true
 teaser: Complete End-to-End stream processing pipeline using KSQLDB and Kafka Connect with both Confluent Cloud and Standalone Confluent Platform 
 toc: true
 ---
