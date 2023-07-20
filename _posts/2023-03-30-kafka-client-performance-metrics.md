@@ -3,6 +3,8 @@ layout: post
 title:  "The Kafka benchmarking suite"
 categories: [ Kafka, Kubernetes, Performance, Helm ]
 featured: true
+image: assets/blog-images/kafka-perf-suite/kafka-benchmark-metrics-featured.png
+author: badri
 ---
 
 There are numerous parameters we have to consider tweaking when benchmarking a Kafka cluster. Irrespective of these parameters, we optimize along the following dimensions:
@@ -471,7 +473,7 @@ Grafana requires credentials, which are `admin` and `platformatory`(the default 
 Once we have the scaffold ready, we run a helm release using the following command,
 
 ```bash
-helm upgrade --install march-25-2023-durability-producer ./confluent-performance-suite  --values durability-producer-values.yml
+helm upgrade --install march-25-2023-durability-producer ./kafka-performance-metrics-chart  --values durability-producer-values.yml
 ```
 
 This is how a typical producer dashboard would look like.
@@ -491,7 +493,7 @@ Next, we run the corresponding consumer job using the Helm chart.
 ![Consumer Dashboard 3](../assets/blog-images/kafka-perf-suite/consumer-dashboard-03.png)
 
 ```bash
-helm upgrade --install march-25-2023-durability-consumer ./confluent-performance-suite  --values durability-consumer-values.yml
+helm upgrade --install march-25-2023-durability-consumer ./kafka-performance-metrics-chart  --values durability-consumer-values.yml
 ```
 
 ...and process the consumer dashboard.
@@ -515,4 +517,4 @@ prometheus:
     bearer_token: xxxxxxxxxxxxxxxxxxxxxxxxxxx
 ```
 
-The Helm charts and the associated code mentioned in this post can be found [here](https://github.com/Platformatory/confluent-performance-suite).
+The Helm charts and the associated code mentioned in this post can be found [here](https://github.com/Platformatory/kafka-performance-suite).
