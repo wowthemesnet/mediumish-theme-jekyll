@@ -39,8 +39,11 @@ featured: true
 
 웹 환경에서 스크린 리더는 보통 HTML의 내용과 메타데이터를 기반으로 정보를 해석합니다. 예컨대, 이미지는 일반적으로 스크린 리더가 해석할 수 없는데 HTML의 `<img>` 태그에 `alt` 속성이 있다면 이 속성에 쓰인 글로 대체해 읽어줍니다. 따라서, 웹 개발 시 이러한 부분이 제대로 기술되어 있어야 스크린 리더 사용자에게 더 나은 경험을 제공할 수 있습니다.
 
-<center><iframe width="560" height="315" src="https://www.youtube.com/embed/dEbl5jvLKGQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-<p><small>스크린 리더를 웹에서 활용하는 영상</small></p></center>
+> 아래 영상은 스크린 리더를 웹에서 활용하는 모습을 보여줍니다.
+> 
+> [![스크린 리더를 웹에서 활용하는 영상](https://img.youtube.com/vi/dEbl5jvLKGQ/0.jpg)](https://www.youtube.com/watch?v=dEbl5jvLKGQ)
+> 
+> 이미지를 클릭하면 동영상 페이지로 이동합니다.
 
 ## WAI-ARIA
 
