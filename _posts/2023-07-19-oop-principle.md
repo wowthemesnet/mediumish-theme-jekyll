@@ -25,14 +25,23 @@ https://github.com/uoslife/server-meeting
 객체 지향적인 설계 및 구현을 위해서는 생활 체조를 하듯이 반복적으로 연습해야 한다는 것이고, 이를 위해서 아래에서 9가지 구체적인 가이드라인을 제시한다라는 뜻이 되겠다.
 
 > 규칙 1: 한 메서드에 오직 한 단계의 들여쓰기(indent)만 한다.
-규칙 2: else 예약어를 쓰지 않는다.
-규칙 3: 모든 원시값과 문자열을 포장한다.
-규칙 4: 한 줄에 점을 하나만 찍는다.
-규칙 5: 줄여쓰지 않는다(축약 금지).
-규칙 6: 모든 엔티티를 작게 유지한다.
-규칙 7: 3개 이상의 인스턴스 변수를 가진 클래스를 쓰지 않는다.
-규칙 8: 일급 콜렉션을 쓴다.
-규칙 9: 게터/세터/프로퍼티를 쓰지 않는다
+>
+> 규칙 2: else 예약어를 쓰지 않는다.
+>
+> 규칙 3: 모든 원시값과 문자열을 포장한다.
+>
+> 규칙 4: 한 줄에 점을 하나만 찍는다.
+>
+> 규칙 5: 줄여쓰지 않는다(축약 금지).
+>
+> 규칙 6: 모든 엔티티를 작게 유지한다.
+>
+> 규칙 7: 3개 이상의 인스턴스 변수를 가진 클래스를 쓰지 않는다.
+>
+> 규칙 8: 일급 콜렉션을 쓴다.
+>
+> 규칙 9: 게터/세터/프로퍼티를 쓰지 않는다.
+
 
 각각의 규칙의 의미와 이에 맞게 Meeting Service를 리팩토링해보고자 한다.
 
@@ -42,7 +51,7 @@ https://github.com/uoslife/server-meeting
 
 해당 원칙을 지키기 위해 코드를 각각의 책임과 역할에 따라 분리하면 자연스럽게 가독성과 유지보수가 용이한 코드를 작성할 수 있다.
 
-아래는 실제 MeetingService 내의 Code 조각이다.
+아래는 실제 `MeetingService` 내의 Code 조각이다.
 
 ### 원본 코드
 ```kotlin
@@ -68,7 +77,7 @@ https://github.com/uoslife/server-meeting
     
 ```
 
-중간에 val meetingTeam 코드를 보면 해당 코드의 경우 위에서 말한 depth 관련 조건을 위배했을 뿐 아니라 해당 코드의 의도를 명확히 알 수 없다.
+중간에 `val meetingTeam` 코드를 보면 해당 코드의 경우 위에서 말한 depth 관련 조건을 위배했을 뿐 아니라 해당 코드의 의도를 명확히 알 수 없다.
 
 추가적으로 위에서 exception을 던지는 부분은 해당 코드 조각 뿐만 아니라 다른 곳에서 많이 사용하고 있기에 이를 validator로 분리했다.
 
@@ -88,8 +97,8 @@ https://github.com/uoslife/server-meeting
 ```
 
 물론 이 코드에서도 불만스러운 부분이 많이 보이긴 한다.
-예를 들면 saveMeetingTeam이라는 naming보다는 createEmptyMeetingTeam이라는 naming이 조금 더 직관적이지 않을까 하는 생각이 들고,
-saveUserTeam 역시 뒤의 parameter를 너무 많이 받고 있고, 뭔가 직관적이지 못하다.
+예를 들면 `saveMeetingTeam이라는` naming보다는 `createEmptyMeetingTeam`이라는 naming이 조금 더 직관적이지 않을까 하는 생각이 들고,
+`saveUserTeam` 역시 뒤의 parameter를 너무 많이 받고 있고, 뭔가 직관적이지 못하다.
 
 이러한 문제점들에 대한 수정을 진행하였고 이는 각 Section의 응집성을 위해서 최하단에서 다루도록 하겠다.
 
@@ -215,8 +224,8 @@ public class main {
 }
 ```
 
-예를 들어보자면 위의 코드가 아래로 바뀐 것을 보여주는 것입니다.
-아래의 코드는 Map을 wrapping하고 Private 변수로 선언함으로서 Method로만 접근 가능하고 다양한 비즈니스 로직들을 같이 넣을 수 있도록 변경하였습니다.
+예를 들어보자면 위의 코드가 아래로 바뀐 것을 보여주는 것이다.
+아래의 코드는 Map을 wrapping하고 Private 변수로 선언함으로서 Method로만 접근 가능하고 다양한 비즈니스 로직들을 같이 넣을 수 있도록 변경하였다.
 
 ```java
 public class GameRanking {
@@ -273,7 +282,7 @@ meetingTeamUsers.toMeetingTeamUserListGetResponse(meetingTeam.name!!)
 
 기존의 코드의 경우 userList Entity Collection을 그대로 드러내고 있었고, 이를 통해 원하는 대로 수정이 가능했다.
 
-이를 MeetingTeamUsers를 통해 private collection 일급 콜렉션을 사용하여 직접 접근을 막고, 해당 콜렉션으로부터 의도를 가진 Method를 뽑아내어 사용할 수 있도록 했다.
+이를 `MeetingTeamUsers를` 통해 private collection 일급 콜렉션을 사용하여 직접 접근을 막고, 해당 콜렉션으로부터 의도를 가진 Method를 뽑아내어 사용할 수 있도록 했다.
 
 이는 더 나아가 객체 지향의 기본적인 원리에도 다가가는 방법이 아닌가 싶다. 이전에 들었던 바로 객체를 단순히 데이터를 보관하는 것이 아니라 객체가 그 데이터를 활용할 수 있도록 하는 것, 객체가 동작의 주체가 되도록 하는 것이 객체 지향과 코드 분리의 관점에서 DDD와도 이어져 있다고 생각한다.
 
@@ -360,9 +369,9 @@ JPA의 QueryDSL을 사용하거나 하는 경우나 Chaining Pattern 등 특수�
     }
 ```
 
-위의 코드 또한 어느 정도 정돈된 것으로 보이지만, isUserHaverOnlyOneTeam이나 isTeamNameLeast2Character 같은 validation 부분이 해당 Class 의 최하단에 private function으로 추가되어 기하급수적으로 Class의 길이가 늘어났다.
+위의 코드 또한 어느 정도 정돈된 것으로 보이지만, `isUserHaverOnlyOneTeam`이나 `isTeamNameLeast2Character` 같은 validation 부분이 해당 Class 의 최하단에 private function으로 추가되어 기하급수적으로 Class의 길이가 늘어났다.
 
-또한 getUniqueTeamCode와 같은 코드 역시 같은 상황이었다. 이를 아래처럼 수정하였다.
+또한 `getUniqueTeamCode`와 같은 코드 역시 같은 상황이었다. 이를 아래처럼 수정하였다.
 
 ### 수정 코드
 ```kotlin
@@ -381,7 +390,7 @@ JPA의 QueryDSL을 사용하거나 하는 경우나 Chaining Pattern 등 특수�
     }
 ```
 
-validation 부분을 해당 Domain의 공통 Validator로 분리하여 호출하였고, code를 생성하는 부분은 util package의 uniqueCodeGenerator의 function으로 분리하였다.
+validation 부분을 해당 Domain의 공통 Validator로 분리하여 호출하였고, code를 생성하는 부분은 util package의 `uniqueCodeGenerator`의 function으로 분리하였다.
 
 이를 통해서 실제 Service 내에 핵심적인 Logic에 관련된 코드를 남겨 크기를 최소화였다.
 
@@ -468,7 +477,7 @@ class UserTeam(
 
 ```
 
-위와 코드가 뭐가 다른가요? 결국 UserTeam.createUserTeam은 parameter가 3개가 넘는데요? 라고 할 수 있지만, 일단 수정본에서는 객체가 스스로 값을 받아서 그에 따른 객체를 만들어 넘기고 있다.
+위와 코드가 뭐가 다른가요? 결국 `UserTeam.createUserTeam`은 parameter가 3개가 넘는데요? 라고 할 수 있지만, 일단 수정본에서는 객체가 스스로 값을 받아서 그에 따른 객체를 만들어 넘기고 있다.
 
 이는 이전에 DAO로 값을 직접 넘겨서 이를 DAO 내에서 객체로 조립하여 persist하던 것과는 차이가 있다.
 
@@ -501,9 +510,9 @@ class UserTeam(
 
 ### ep-1. 위에서 거슬리던 부분들
 
-1에서 거슬렸던 부분으로 code를 반환하는 부분에서 SingleMeetingService의 경우 ""의 원시값을 보내는 것과 UserTeamDao 관련하여 Parameter가 많은 것이 무언가 찜찜하였는데,
+1에서 거슬렸던 부분으로 code를 반환하는 부분에서 `SingleMeetingService`의 경우 ""의 원시값을 보내는 것과 `UserTeamDao` 관련하여 Parameter가 많은 것이 무언가 찜찜하였는데,
 
-SingleMeetingService의 ""의 경우 DB의 nullable과도 연관이 있고 이미 Service를 통해 받은 데이터와의 호완성 문제도 있어, 이는 차후에 생각하기로 하였다.
+`SingleMeetingService`의 ""의 경우 DB의 nullable과도 연관이 있고 이미 Service를 통해 받은 데이터와의 호완성 문제도 있어, 이는 차후에 생각하기로 하였다.
 
 Parameter 관련해서는 8에서 수정하였다.
 
