@@ -291,7 +291,11 @@ meetingTeamUsers.toMeetingTeamUserListGetResponse(meetingTeam.name!!)
 ### 5. 한 줄에 점을 하나만 찍는다.
 
 이 부분은 크게 설명을 드릴 것이 없을 정도로 간단하다.
-.을 통해서 자주 내부의 property나 method를 불러와 사용하는 경우가 있다. 이 때 .을 통해 연결을 단 한 번만 하라는 것이다.
+
+
+`.`을 통해서 자주 내부의 property나 method를 불러와 사용하는 경우가 있다. 
+
+이 때 `.`을 통해 연결을 단 한 번만 하라는 것이다.
 
 ```koltin
 user.information.money
