@@ -97,7 +97,7 @@ https://github.com/uoslife/server-meeting
 ```
 
 물론 이 코드에서도 불만스러운 부분이 많이 보이긴 한다.
-예를 들면 `saveMeetingTeam이라는` naming보다는 `createEmptyMeetingTeam`이라는 naming이 조금 더 직관적이지 않을까 하는 생각이 들고,
+예를 들면 `saveMeetingTeam`이라는 naming보다는 `createEmptyMeetingTeam`이라는 naming이 조금 더 직관적이지 않을까 하는 생각이 들고,
 `saveUserTeam` 역시 뒤의 parameter를 너무 많이 받고 있고, 뭔가 직관적이지 못하다.
 
 이러한 문제점들에 대한 수정을 진행하였고 이는 각 Section의 응집성을 위해서 최하단에서 다루도록 하겠다.
@@ -282,7 +282,7 @@ meetingTeamUsers.toMeetingTeamUserListGetResponse(meetingTeam.name!!)
 
 기존의 코드의 경우 userList Entity Collection을 그대로 드러내고 있었고, 이를 통해 원하는 대로 수정이 가능했다.
 
-이를 `MeetingTeamUsers를` 통해 private collection 일급 콜렉션을 사용하여 직접 접근을 막고, 해당 콜렉션으로부터 의도를 가진 Method를 뽑아내어 사용할 수 있도록 했다.
+이를 `MeetingTeamUsers`를 통해 private collection 일급 콜렉션을 사용하여 직접 접근을 막고, 해당 콜렉션으로부터 의도를 가진 Method를 뽑아내어 사용할 수 있도록 했다.
 
 이는 더 나아가 객체 지향의 기본적인 원리에도 다가가는 방법이 아닌가 싶다. 이전에 들었던 바로 객체를 단순히 데이터를 보관하는 것이 아니라 객체가 그 데이터를 활용할 수 있도록 하는 것, 객체가 동작의 주체가 되도록 하는 것이 객체 지향과 코드 분리의 관점에서 DDD와도 이어져 있다고 생각한다.
 
