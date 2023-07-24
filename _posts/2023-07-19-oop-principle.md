@@ -43,15 +43,15 @@ https://github.com/uoslife/server-meeting
 > 규칙 9: 게터/세터/프로퍼티를 쓰지 않는다.
 
 
-각각의 규칙의 의미와 이에 맞게 Meeting Service를 리팩토링해보고자 한다.
+각각의 규칙의 의미와 이에 맞게 `MeetingService`를 리팩토링해보고자 한다.
 
 ### 1. 한 메서드에 오직 한 단계의 들여쓰기(indent)만 한다.
 
-1개의 메서드 또는 블록 안에서 if/for/while 등을 2 depth 이상 사용하지 않는다. depth를 여러 번 들어가면서 사용한다는 것은 안에 또 하나의 응집된 블록이 생겼다는 것을 암시적으로 의미하는 것으로 이는 코드를 분리해야 될 때가 되었다는 것을 의미한다.
+1개의 메서드 또는 블록 안에서 `if/for/while` 등을 2 depth 이상 사용하지 않는다. depth를 여러 번 들어가면서 사용한다는 것은 안에 또 하나의 응집된 블록이 생겼다는 것을 암시적으로 의미하는 것으로 이는 코드를 분리해야 될 때가 되었다는 것을 의미한다.
 
 해당 원칙을 지키기 위해 코드를 각각의 책임과 역할에 따라 분리하면 자연스럽게 가독성과 유지보수가 용이한 코드를 작성할 수 있다.
 
-아래는 실제 `MeetingService` 내의 Code 조각이다.
+아래는 실제 `MeetingService` 내의 코드 조각이다.
 
 ### 원본 코드
 ```kotlin
@@ -242,7 +242,7 @@ public class GameRanking {
 
 일급 컬렉션에 대해서 더 알고 싶으시다면 위의 글을 참고하는 것은 어떨까?
 
-그러면 이제 실제 MeetingService 내에서 해당 코드를 수정해보자
+그러면 이제 실제 `MeetingService` 내에서 해당 코드를 수정해보자
 
 ### 원본 코드
 
@@ -280,7 +280,7 @@ val meetingTeamUsers = MeetingTeamUsers(userTeamDao.findByTeam(meetingTeam).map 
 meetingTeamUsers.toMeetingTeamUserListGetResponse(meetingTeam.name!!)
 ```
 
-기존의 코드의 경우 userList Entity Collection을 그대로 드러내고 있었고, 이를 통해 원하는 대로 수정이 가능했다.
+기존의 코드의 경우 `UserList Entity Collection`을 그대로 드러내고 있었고, 이를 통해 원하는 대로 수정이 가능했다.
 
 이를 `MeetingTeamUsers`를 통해 private collection 일급 콜렉션을 사용하여 직접 접근을 막고, 해당 콜렉션으로부터 의도를 가진 Method를 뽑아내어 사용할 수 있도록 했다.
 
