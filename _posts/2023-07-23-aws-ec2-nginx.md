@@ -15,19 +15,13 @@ featured: true
 
 해당 포스팅에서 배포 과정을 정리하고, 앞서 말한 문제의 해결 방법을 공유하려 한다.
 
-</br>
-
 ## 1. Nginx란?
 
 Nginx는 비교적 적은 수의 스레드로 효율적인 일처리가 가능한 웹 서버 소프트웨어이다.
 
-</br>
-
 ## 2. 배포 과정
 
 ### 2-1. 인스턴스 시작
-
-</br>
 
 AWS에 접속해 서비스에서 EC2를 검색한 후 '인스턴스 시작'을 누른다.
 
@@ -35,11 +29,7 @@ AWS에 접속해 서비스에서 EC2를 검색한 후 '인스턴스 시작'을 �
 
 ![image](../assets/images/post-aws-ec2-nginx/1.png)
 
-</br>
-
 ### 2-2. 세부 정보 설정
-
-</br>
 
 필자의 경우 AMI는 Amazon Linux 2를 선택했다.
 
@@ -55,23 +45,15 @@ AWS에 접속해 서비스에서 EC2를 검색한 후 '인스턴스 시작'을 �
 chmod 400 ~/Example.pem
 ```
 
-</br>
-
 네트워크 설정에서 HTTP를 추가한다. (Nginx로 React를 배포하기 때문)
 
 - 만약 React + Node.js 앱을 배포하려 한다면 Node.js 개발에서 사용한 서버 포트 번호도 추가한다.
 
 ![image](../assets/images/post-aws-ec2-nginx/4.png)
 
-</br>
-
 이름, 인스턴스 유형 등을 각자 설정하고 인스턴스를 시작한다.
 
-</br>
-
 ### 2-3. 인스턴스 연결
-
-</br>
 
 인스턴스 생성이 완료되면 '인스턴스 ID > 연결 > SSH 클라이언트'로 들어간 후 아래 사진의 연두색 박스 안의 부분을 복사한다.
 
@@ -81,25 +63,17 @@ chmod 400 ~/Example.pem
 
 ![image](../assets/images/post-aws-ec2-nginx/6.png)
 
-</br>
-
 다음과 같이 실행되면 성공한 것이다.
 
 ![image](../assets/images/post-aws-ec2-nginx/9.png)
 
-</br>
-
 ### 2-4. 배포 준비
-
-</br>
 
 우선 root 권한으로 전환한다.
 
 ```
 sudo su
 ```
-
-</br>
 
 그 다음 yarn, Node.js, Nginx를 설치한다.
 
@@ -117,8 +91,6 @@ nvm install 16
 sudo amazon-linux-extras install nginx1.12
 ```
 
-</br>
-
 git을 설치하고 배포하려는 React 앱을 clone한다.
 
 ```
@@ -127,11 +99,7 @@ sudo yum install git
 git clone [url]
 ```
 
-</br>
-
 ### 2-5. Nginx 설정
-
-</br>
 
 nginx.conf의 설정들을 편리하고 깔끔하게 관리하기 위해 sites-enabled 디렉토리에 따로 설정을 만들려 한다.
 
@@ -146,8 +114,6 @@ include /etc/nginx/sites-enabled/*.conf;
 ```
 
 ![image](../assets/images/post-aws-ec2-nginx/7.png)
-
-</br>
 
 sites-available 디렉토리에 필요한 파일들을 작성한 후 이들과 연결되는 symbolic link를 sites-enabled 디렉토리에 추가하려 한다.
 
@@ -174,11 +140,7 @@ server {
 }
 ```
 
-</br>
-
 ### 2-6. 배포
-
-</br>
 
 React 앱의 상위 디렉토리로 이동한 후 다음을 실행해 build한다.
 
@@ -194,15 +156,9 @@ chmod 711 /home/ec2-user
 sudo systemctl start nginx
 ```
 
-</br>
-
 인스턴스의 퍼블릭 IPv4 주소를 주소창에 입력하면 배포에 성공한 것을 확인할 수 있다!
 
-</br>
-
 ## 3. 배포 후 백엔드와의 통신 문제
-
-</br>
 
 로컬에서 개발 당시 백엔드 API를 요청할 때 발생하는 CORS 에러를 방지하기 위해 다음과 같이 설정했다.
 
@@ -211,8 +167,6 @@ sudo systemctl start nginx
 ```
 npm install http-proxy-middleware
 ```
-
-</br>
 
 ### 3-2. setupProxy.js 생성
 
@@ -231,19 +185,13 @@ module.exports = function (app) {
 };
 ```
 
-</br>
-
 하지만 이 설정이 Nginx로 배포를 하고 나서 적용이 되지 않는 문제가 발생했다.
-
-</br>
 
 ### 3-3. 문제 해결
 
 Nginx가 제공하는 reverse proxy 기능을 이용해 문제를 해결할 수 있었다.
 
 reverse proxy는 외부에서 내부 서버가 제공하는 서비스에 접근할 경우, proxy server를 통해서 들어오는 방식이다. reverse proxy를 통해 배포 후에도 백엔드와 정상적으로 통신할 수 있었다.
-
-</br>
 
 example.conf를 열어 다음과 같이 수정한다.
 
@@ -262,8 +210,6 @@ server {
 ```
 
 ![image](../assets/images/post-aws-ec2-nginx/8.png)
-
-</br>
 
 Nginx를 재시작한다.
 
