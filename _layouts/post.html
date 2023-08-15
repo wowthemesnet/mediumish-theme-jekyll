@@ -38,6 +38,31 @@ post_class: post-template
                 </div>
                 {% endif %}
 
+                {% if page.authors %}
+                {% assign authors = page.authors | split: "," %}
+                    <h2>Authors</h2>
+                    {% for author_name in authors %}
+                        {% assign author = site.authors[author_name] %}
+                        {% if author %}
+                            <!-- Author Box -->
+                            <div class="row post-top-meta">
+                                <div class="col-xs-12 col-md-3 col-lg-2 text-center text-md-left mb-4 mb-md-0">
+                                    {% if author.avatar %}
+                                    <img class="author-thumb" src="{{site.baseurl}}/{{ author.avatar }}" alt="{{ author.display_name }}">
+                                    {% else %}
+                                    <img class="author-thumb" src="https://www.gravatar.com/avatar/{{ author.gravatar }}?s=250&d=mm&r=x" alt="{{ author.display_name }}">
+                                    {% endif %}
+                                </div>
+                                <div class="col-xs-12 col-md-9 col-lg-10 text-center text-md-left">
+                                    <a target="_blank" class="link-dark" href="{{ author.web }}">{{ author.display_name }}</a>
+                                    <a target="_blank" href="{{ author.twitter }}" class="btn follow">Follow</a>
+                                    <span class="author-description">{{ author.description }}</span>
+                                </div>
+                            </div>
+                        {% endif %}
+                    {% endfor %}
+                {% endif %}
+
                 <!-- Post Title -->
                 <h1 class="posttitle">{{ page.title }}</h1>
 
