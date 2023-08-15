@@ -5,7 +5,7 @@ categories: [ Kafka, Kubernetes, Performance, Helm ]
 featured: true
 image: assets/blog-images/kafka-perf-suite/kafka-benchmark-metrics-featured.png
 teaser: "Distributed testing grid for Kafka on top of Kubernetes"
-author: badri
+authors: badri,p6
 ---
 
 There are numerous parameters we have to consider tweaking when benchmarking a Kafka cluster. Irrespective of these parameters, we optimize along the following dimensions:
