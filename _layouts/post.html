@@ -23,44 +23,48 @@ post_class: post-template
 
                 <!-- Author Box -->
                 {% if page.author %}
-                <div class="row post-top-meta">
-                    <div class="col-xs-12 col-md-3 col-lg-2 text-center text-md-left mb-4 mb-md-0">
+                <!-- <h4 class="">Author</h4> -->
+                <h6 class="">Authored by</h6>
+                <!-- <div class="row post-top-meta"> -->
+                    <!-- <div class="col-xs-12 text-center text-md-left mb-4 mb-md-0">
                         {% if author.avatar %}
-                        <img class="author-thumb" src="{{site.baseurl}}/{{ author.avatar }}" alt="{{ author.display_name }}">
+                        <img class="author-thumb-top" src="{{site.baseurl}}/{{ author.avatar }}" alt="{{ author.display_name }}">
                         {% else %}
-                        <img class="author-thumb" src="https://www.gravatar.com/avatar/{{ author.gravatar }}?s=250&d=mm&r=x" alt="{{ author.display_name }}">
+                        <img class="author-thumb-top" src="https://www.gravatar.com/avatar/{{ author.gravatar }}?s=250&d=mm&r=x" alt="{{ author.display_name }}">
                         {% endif %}
+                    </div> -->
+                   
+                    <div class="col-xs-12 text-center text-md-left">
+                        <a target="_blank" class="link-dark" href="{{ author.web }}">{{ author.display_name }}</a>
                     </div>
-                    <div class="col-xs-12 col-md-9 col-lg-10 text-center text-md-left">
-                        <a target="_blank" class="link-dark" href="{{ author.web }}">{{ author.display_name }}</a><a target="_blank" href="{{ author.twitter }}" class="btn follow">Follow</a>
-                        <span class="author-description">{{ author.description }}</span>
-                    </div>
-                </div>
+                <!-- </div> -->
                 {% endif %}
 
                 {% if page.authors %}
                 {% assign authors = page.authors | split: "," %}
-                    <h2>Authors</h2>
-                    {% for author_name in authors %}
-                        {% assign author = site.authors[author_name] %}
-                        {% if author %}
-                            <!-- Author Box -->
-                            <div class="row post-top-meta">
-                                <div class="col-xs-12 col-md-3 col-lg-2 text-center text-md-left mb-4 mb-md-0">
-                                    {% if author.avatar %}
-                                    <img class="author-thumb" src="{{site.baseurl}}/{{ author.avatar }}" alt="{{ author.display_name }}">
-                                    {% else %}
-                                    <img class="author-thumb" src="https://www.gravatar.com/avatar/{{ author.gravatar }}?s=250&d=mm&r=x" alt="{{ author.display_name }}">
-                                    {% endif %}
-                                </div>
-                                <div class="col-xs-12 col-md-9 col-lg-10 text-center text-md-left">
-                                    <a target="_blank" class="link-dark" href="{{ author.web }}">{{ author.display_name }}</a>
-                                    <a target="_blank" href="{{ author.twitter }}" class="btn follow">Follow</a>
-                                    <span class="author-description">{{ author.description }}</span>
-                                </div>
-                            </div>
-                        {% endif %}
-                    {% endfor %}
+                    
+                    <h6 class="">Authored by</h6>
+                        <div class="d-flex">
+                            {% for author_name in authors %}
+                                {% assign author = site.authors[author_name] %}
+                                {% if author %}
+                                    <!-- Author Box -->
+                                    <!-- <div class="row align-items-center gap-2 post-top-meta"> -->
+                                        <!-- <div class="col-xs-12  text-center text-md-left mb-2 mb-md-0">
+                                            {% if author.avatar %}
+                                            <img class="author-thumb-top" src="{{site.baseurl}}/{{ author.avatar }}" alt="{{ author.display_name }}">
+                                            {% else %}
+                                            <img class="author-thumb-top" src="https://www.gravatar.com/avatar/{{ author.gravatar }}?s=250&d=mm&r=x" alt="{{ author.display_name }}">
+                                            {% endif %}
+                                        </div> -->
+                                        <div class="text-center text-md-left">
+                                            <a target="_blank" class="link-dark " href="{{ author.web }}">{{ author.display_name }}{% if forloop.last == false %},&nbsp;
+                                                {% endif %}</a>
+                                        </div>
+                                    <!-- </div> -->
+                                {% endif %}
+                            {% endfor %}
+                        </div>
                 {% endif %}
 
                 <!-- Post Title -->
@@ -109,6 +113,55 @@ post_class: post-template
             </div>
             {% endif %}
 
+             <!-- Author Box -->
+             {% if page.author %}
+             <h3 class="text-center d-md-none">About The Author</h3>
+                <h3 class="text-start d-md-flex d-none">About The Author</h3>
+             <div class="row post-top-meta">
+                 <div class="col-xs-12 col-md-3 col-lg-2 text-center text-md-left mb-4 mb-md-0">
+                     {% if author.avatar %}
+                     <img class="author-thumb" src="{{site.baseurl}}/{{ author.avatar }}" alt="{{ author.display_name }}">
+                     {% else %}
+                     <img class="author-thumb" src="https://www.gravatar.com/avatar/{{ author.gravatar }}?s=250&d=mm&r=x" alt="{{ author.display_name }}">
+                     {% endif %}
+                 </div>
+                 <div class="col-xs-12 col-md-9 col-lg-10 text-center text-md-left">
+                     <a target="_blank" class="link-dark" href="{{ author.web }}">{{ author.display_name }}</a><a target="_blank" href="{{ author.twitter }}" class="btn follow">Follow</a>
+                     <span class="author-description">{{ author.description }}</span>
+                 </div>
+             </div>
+             {% endif %}
+
+            <!-- Authors Box -->
+            {% if page.authors %}
+            {% assign authors = page.authors | split: "," %}
+                <h3 class="text-center d-md-none">About The Authors</h3>
+                <h3 class="text-start d-md-flex d-none">About The Authors</h3>
+                <div class="mt-2">
+                    {% for author_name in authors %}
+                        {% assign author = site.authors[author_name] %}
+                        {% if author %}
+                            <!-- Author Box -->
+                            <div class="row post-top-meta">
+                                <div class="col-xs-12 col-md-3 col-lg-2 text-center text-md-left mb-2 mb-md-0">
+                                    {% if author.avatar %}
+                                    <img class="author-thumb" src="{{site.baseurl}}/{{ author.avatar }}" alt="{{ author.display_name }}">
+                                    {% else %}
+                                    <img class="author-thumb" src="https://www.gravatar.com/avatar/{{ author.gravatar }}?s=250&d=mm&r=x" alt="{{ author.display_name }}">
+                                    {% endif %}
+                                </div>
+                                <div class="col-xs-12 col-md-9 col-lg-10 text-center text-md-left">
+                                    <a target="_blank" class="link-dark" href="{{ author.web }}">{{ author.display_name }}</a>
+                                    <a target="_blank" href="{{ author.twitter }}" class="btn follow">Follow</a>
+                                    <span class="author-description">{{ author.description }}</span>
+                                </div>
+                            </div>
+                        {% endif %}
+                    {% endfor %}
+                </div>
+            {% endif %}
+
+
             <!-- Post Date -->
             <p>
             <small>
@@ -145,6 +198,7 @@ post_class: post-template
             </div>
             <!-- End Tags -->
 
+            
             <!-- Prev/Next -->
             <div class="row PageNavigation d-flex justify-content-between font-weight-bold">
             {% if page.previous.url %}
@@ -159,6 +213,8 @@ post_class: post-template
 
         </div>
         <!-- End Post -->
+
+        
 
     </div>
 </div>

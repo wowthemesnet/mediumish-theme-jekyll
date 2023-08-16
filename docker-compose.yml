@@ -1,8 +1,8 @@
 services:
   jekyll:
     image: jekyll/jekyll:latest
-    command: jekyll serve --force_polling
+    command: jekyll serve --force_polling --trace
     ports:
-        - 4000:4000
+      - 4000:4000
     volumes:
-        - .:/srv/jekyll
+      - .:/srv/jekyll

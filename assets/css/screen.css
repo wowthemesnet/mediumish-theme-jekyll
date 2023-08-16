@@ -170,10 +170,17 @@ section.recent-posts {
 }
 
 .wrapfooter {
-    font-size: .8rem;
+    font-size: .7rem;
     display: flex;
     align-items: center;
     margin-bottom: 15px;
+}
+
+.author-thumb-top{
+    width: 35px;
+    height: 35px;
+    margin:0 13px;
+    border-radius: 100%;
 }
 
 .author-thumb {
@@ -184,7 +191,7 @@ section.recent-posts {
 }
 
 .post-top-meta {
-    margin-bottom: 2rem;
+    margin-bottom: 1rem;
 }
 
 .post-top-meta .author-thumb {
@@ -220,6 +227,14 @@ section.recent-posts {
     overflow: hidden !important;
 }
 
+span.post-name{
+    font-size: 14px;
+    font-weight: 600;
+    text-transform: uppercase;
+    line-height: 10px;
+    font-stretch: expanded;
+    color:#5a5a5a;
+}
 span.post-name,
 span.post-date,
 span.author-meta {
