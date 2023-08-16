@@ -28,24 +28,28 @@
             <h4 class="card-text">{{ post.excerpt | strip_html | truncatewords:30 }}</h4>
         </div>
         <div class="card-footer bg-white">
+            
             <div class="wrapfooter">
                 {% if post.author %}
-                <span>Author: &nbsp;</span>
                 <span class="meta-footer-thumb">
                 </span>
                 <span class="author-meta">
+                <span style="color:#8d8d8d; margin:0; font-weight:600;">AUTHOR &nbsp;</span><br/>
+
                 <span class="post-name">{{ author.display_name }}</span><br/>
                 {% endif %}
 
                 {% if post.authors %}
-                <span>Authors: &nbsp;</span>
                 <span class="meta-footer-thumb">
                 </span>
                 <span class="author-meta">
+                    <span style="color:#8d8d8d; margin:0; font-weight:600;">AUTHORS &nbsp;</span><br/>
                 {% assign authors_list = post.authors | split: "," %}
                 {% for single_author in authors_list %}
                     {% assign this_author = site.authors[single_author] %}
-                    <span class="post-name">{{ this_author.display_name }} &nbsp;</span><br/>
+                    <span class="post-name">{{ this_author.display_name }}{% if forloop.last == false %}, 
+                        {% endif %}</span>
+                    <br/>
                 {% endfor %}
                 {% endif %}
                 </span>

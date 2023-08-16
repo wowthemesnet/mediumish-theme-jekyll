@@ -34,21 +34,26 @@
                         <div class="card-footer b-0 bg-white mt-auto">
                             <div class="wrapfooter">
                                 {% if post.author %}
-                                <span>Authors: &nbsp;</span>
                                 <span class="meta-footer-thumb">
                                 </span>
                                 <span class="author-meta">
-                                <span class="post-name">{{ author.display_name }}</span><br/>
+                                <span style="color:#8d8d8d; margin:0; font-weight:600;">AUTHOR</span><br/>
+                                <span class="post-name" style="margin: 0; ">{{ author.display_name }}</span><br/>
+
                                 {% endif %}
                                 {% if post.authors %}
-                                <span>Authors: &nbsp;</span>
+                                <!-- <span style="color:rgb(121, 121, 121)">Authors:</span> -->
                                 <span class="meta-footer-thumb">
                                 </span>
                                 <span class="author-meta">
+                                <span style="color:#8d8d8d; margin:0; font-weight:600;">AUTHORS</span><br/>
                                 {% assign authors_list = post.authors | split: "," %}
                                 {% for single_author in authors_list %}
                                     {% assign this_author = site.authors[single_author] %}
-                                    <span class="post-name">{{ this_author.display_name }} &nbsp;</span><br/>
+                                    <span class="post-name">{{ this_author.display_name }}{% if forloop.last == false %}, 
+                                        {% endif %}</span>
+                                   
+                                    <br/>
                                 {% endfor %}
                                 {% endif %}                                
                                 <!--span class="post-date">{{ post.date | date_to_string }}</span-->
