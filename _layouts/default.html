@@ -62,6 +62,9 @@ ga('send', 'pageview');
         <!-- Begin Menu -->
 
             <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                <a class="nav-link" href="/"">Home</a>
+                </li>
 
                 {% if page.url == "/" %}
                 <li class="nav-item active">
@@ -69,6 +72,7 @@ ga('send', 'pageview');
                 <li class="nav-item">
                 {% endif %}
                 <a class="nav-link" href="{{ site.baseurl }}/index.html">Blog</a>
+
                 </li>
 
                 {% include search-lunr.html %}
