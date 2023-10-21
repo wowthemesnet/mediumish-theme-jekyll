@@ -7,7 +7,7 @@ tags: [처음 배우는 그래픽 레코딩, 크라우드펀딩, 텀블벅]
 image: 
 image-caption: 
 description: "트랜스젠더 나카가와 미유님의 인터뷰 번역"
-featured: true
+featured: false
 hidden: true
 toc: true
 comments: true

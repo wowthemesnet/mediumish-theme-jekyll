@@ -7,7 +7,7 @@ tags: [GitHub, 사이트구축]
 image: assets/images/moving-motivator/moving-motivator-card.jpg
 image-caption: 
 description: "출판사를 만든 동기를 moving motivator로 분석해본 썰"
-featured: true
+featured: false
 hidden: true
 toc: true
 comments: true
