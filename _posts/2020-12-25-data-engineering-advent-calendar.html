@@ -1,0 +1,2788 @@
+---
+layout: post
+title: Data Engineering Advent Calendar 2020
+categories: []
+tags:
+- data engineering
+- wisdom
+- advent calendar
+- '2020'
+- social media
+- sql
+- cli
+- big data
+- pipeline academy
+- coding bootcamp
+- data analytics
+- software engineering principles
+- data warehousing
+- data structures
+- code
+- dependecy
+- tips and tricks
+status: publish
+type: post
+published: true
+meta:
+  _thumbnail_id: '66'
+---
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN" "http://www.w3.org/TR/REC-html40/loose.dtd">
+<html><body>
+<div class="sqs-html-content">
+  <p class="sqsrte-large" style="white-space:pre-wrap;">Throughout December 2020 we’ve shared a daily dose of semi-esoteric data engineering wisdom on our social media channels (<a href="https://twitter.com/pipelinedataber">twitter</a>, <a href="https://www.instagram.com/dataengineering.academy/">instagram</a> and <a href="https://www.linkedin.com/school/pipeline-data-engineering-academy/">LinkedIn</a>). This post shall serve as a commemorative monolith you can always turn to when the data engineering gods are not picking up your call.</p>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+    
+  
+    <div class="
+          image-block-outer-wrapper
+          layout-caption-below
+          design-layout-inline
+          combination-animation-site-default
+          individual-animation-site-default
+          individual-text-animation-site-default
+        " data-test="image-block-inline-outer-wrapper">
+
+      
+
+      
+        <figure class="
+              sqs-block-image-figure
+              intrinsic
+            " style="max-width:908px;">
+          
+        
+        
+
+        
+          
+            
+          <div class="image-block-wrapper" data-animation-role="image">
+            <div class="sqs-image-shape-container-element
+              
+          
+        
+              has-aspect-ratio
+            " style="
+                position: relative;
+                
+                  padding-bottom:94.49339294433594%;
+                
+                overflow: hidden;-webkit-mask-image: -webkit-radial-gradient(white, black);
+              ">
+                
+                  
+                  
+                  
+                  
+                  
+                  
+                  <img data-stretch="false" src="https://images.squarespace-cdn.com/content/v1/5e8b134d99bce503301fb393/1607357487992-C9CI05OAIMOPZVLPNVMI/20201201.png" data-image="https://images.squarespace-cdn.com/content/v1/5e8b134d99bce503301fb393/1607357487992-C9CI05OAIMOPZVLPNVMI/20201201.png" data-image-dimensions="908x858" data-image-focal-point="0.5,0.5" alt="#1: Don’t write code, solve the problem." data-load="false" width="908" height="858" sizes="100vw" style="display:block;object-fit: cover; width: 100%; height: 100%; object-position: 50% 50%" srcset="https://images.squarespace-cdn.com/content/v1/5e8b134d99bce503301fb393/1607357487992-C9CI05OAIMOPZVLPNVMI/20201201.png?format=100w 100w, https://images.squarespace-cdn.com/content/v1/5e8b134d99bce503301fb393/1607357487992-C9CI05OAIMOPZVLPNVMI/20201201.png?format=300w 300w, https://images.squarespace-cdn.com/content/v1/5e8b134d99bce503301fb393/1607357487992-C9CI05OAIMOPZVLPNVMI/20201201.png?format=500w 500w, https://images.squarespace-cdn.com/content/v1/5e8b134d99bce503301fb393/1607357487992-C9CI05OAIMOPZVLPNVMI/20201201.png?format=750w 750w, https://images.squarespace-cdn.com/content/v1/5e8b134d99bce503301fb393/1607357487992-C9CI05OAIMOPZVLPNVMI/20201201.png?format=1000w 1000w, https://images.squarespace-cdn.com/content/v1/5e8b134d99bce503301fb393/1607357487992-C9CI05OAIMOPZVLPNVMI/20201201.png?format=1500w 1500w, https://images.squarespace-cdn.com/content/v1/5e8b134d99bce503301fb393/1607357487992-C9CI05OAIMOPZVLPNVMI/20201201.png?format=2500w 2500w" loading="lazy" decoding="async" data-loader="sqs">
+                
+            </div>
+          </div>
+        
+          
+        
+
+        
+          
+          <figcaption class="image-caption-wrapper">
+            <div class="image-caption"><p class="" style="white-space:pre-wrap;">#1: Don’t write code, solve the problem.</p></div>
+          </figcaption>
+        
+      
+        </figure>
+      
+
+    </div>
+  
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+    
+  
+    <div class="
+          image-block-outer-wrapper
+          layout-caption-below
+          design-layout-inline
+          combination-animation-site-default
+          individual-animation-site-default
+          individual-text-animation-site-default
+        " data-test="image-block-inline-outer-wrapper">
+
+      
+
+      
+        <figure class="
+              sqs-block-image-figure
+              intrinsic
+            " style="max-width:898px;">
+          
+        
+        
+
+        
+          
+            
+          <div class="image-block-wrapper" data-animation-role="image">
+            <div class="sqs-image-shape-container-element
+              
+          
+        
+              has-aspect-ratio
+            " style="
+                position: relative;
+                
+                  padding-bottom:94.54342651367188%;
+                
+                overflow: hidden;-webkit-mask-image: -webkit-radial-gradient(white, black);
+              ">
+                
+                  
+                  
+                  
+                  
+                  
+                  
+                  <img data-stretch="false" src="https://images.squarespace-cdn.com/content/v1/5e8b134d99bce503301fb393/1607357549157-PZ32IYZRYLZLAPMA1NKV/20201202.png" data-image="https://images.squarespace-cdn.com/content/v1/5e8b134d99bce503301fb393/1607357549157-PZ32IYZRYLZLAPMA1NKV/20201202.png" data-image-dimensions="898x849" data-image-focal-point="0.5,0.5" alt="#2: Python is always at hand to pretty print a JSON:$ python3 -m json.tool some.json" data-load="false" width="898" height="849" sizes="100vw" style="display:block;object-fit: cover; width: 100%; height: 100%; object-position: 50% 50%" srcset="https://images.squarespace-cdn.com/content/v1/5e8b134d99bce503301fb393/1607357549157-PZ32IYZRYLZLAPMA1NKV/20201202.png?format=100w 100w, https://images.squarespace-cdn.com/content/v1/5e8b134d99bce503301fb393/1607357549157-PZ32IYZRYLZLAPMA1NKV/20201202.png?format=300w 300w, https://images.squarespace-cdn.com/content/v1/5e8b134d99bce503301fb393/1607357549157-PZ32IYZRYLZLAPMA1NKV/20201202.png?format=500w 500w, https://images.squarespace-cdn.com/content/v1/5e8b134d99bce503301fb393/1607357549157-PZ32IYZRYLZLAPMA1NKV/20201202.png?format=750w 750w, https://images.squarespace-cdn.com/content/v1/5e8b134d99bce503301fb393/1607357549157-PZ32IYZRYLZLAPMA1NKV/20201202.png?format=1000w 1000w, https://images.squarespace-cdn.com/content/v1/5e8b134d99bce503301fb393/1607357549157-PZ32IYZRYLZLAPMA1NKV/20201202.png?format=1500w 1500w, https://images.squarespace-cdn.com/content/v1/5e8b134d99bce503301fb393/1607357549157-PZ32IYZRYLZLAPMA1NKV/20201202.png?format=2500w 2500w" loading="lazy" decoding="async" data-loader="sqs">
+                
+            </div>
+          </div>
+        
+          
+        
+
+        
+          
+          <figcaption class="image-caption-wrapper">
+            <div class="image-caption">
+<p class="" style="white-space:pre-wrap;">#2: Python is always at hand to pretty print a JSON:</p>
+<pre><code>$ python3 -m json.tool some.json</code></pre>
+</div>
+          </figcaption>
+        
+      
+        </figure>
+      
+
+    </div>
+  
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+    
+  
+    <div class="
+          image-block-outer-wrapper
+          layout-caption-below
+          design-layout-inline
+          combination-animation-site-default
+          individual-animation-site-default
+          individual-text-animation-site-default
+        " data-test="image-block-inline-outer-wrapper">
+
+      
+
+      
+        <figure class="
+              sqs-block-image-figure
+              intrinsic
+            " style="max-width:970px;">
+          
+        
+        
+
+        
+          
+            
+          <div class="image-block-wrapper" data-animation-role="image">
+            <div class="sqs-image-shape-container-element
+              
+          
+        
+              has-aspect-ratio
+            " style="
+                position: relative;
+                
+                  padding-bottom:94.53608703613281%;
+                
+                overflow: hidden;-webkit-mask-image: -webkit-radial-gradient(white, black);
+              ">
+                
+                  
+                  
+                  
+                  
+                  
+                  
+                  <img data-stretch="false" src="https://images.squarespace-cdn.com/content/v1/5e8b134d99bce503301fb393/1607357591208-TY039GUHCLDCRCGGBBMU/20201203.png" data-image="https://images.squarespace-cdn.com/content/v1/5e8b134d99bce503301fb393/1607357591208-TY039GUHCLDCRCGGBBMU/20201203.png" data-image-dimensions="970x917" data-image-focal-point="0.5,0.5" alt="#3: EXPLAIN is your friend." data-load="false" width="970" height="917" sizes="100vw" style="display:block;object-fit: cover; width: 100%; height: 100%; object-position: 50% 50%" srcset="https://images.squarespace-cdn.com/content/v1/5e8b134d99bce503301fb393/1607357591208-TY039GUHCLDCRCGGBBMU/20201203.png?format=100w 100w, https://images.squarespace-cdn.com/content/v1/5e8b134d99bce503301fb393/1607357591208-TY039GUHCLDCRCGGBBMU/20201203.png?format=300w 300w, https://images.squarespace-cdn.com/content/v1/5e8b134d99bce503301fb393/1607357591208-TY039GUHCLDCRCGGBBMU/20201203.png?format=500w 500w, https://images.squarespace-cdn.com/content/v1/5e8b134d99bce503301fb393/1607357591208-TY039GUHCLDCRCGGBBMU/20201203.png?format=750w 750w, https://images.squarespace-cdn.com/content/v1/5e8b134d99bce503301fb393/1607357591208-TY039GUHCLDCRCGGBBMU/20201203.png?format=1000w 1000w, https://images.squarespace-cdn.com/content/v1/5e8b134d99bce503301fb393/1607357591208-TY039GUHCLDCRCGGBBMU/20201203.png?format=1500w 1500w, https://images.squarespace-cdn.com/content/v1/5e8b134d99bce503301fb393/1607357591208-TY039GUHCLDCRCGGBBMU/20201203.png?format=2500w 2500w" loading="lazy" decoding="async" data-loader="sqs">
+                
+            </div>
+          </div>
+        
+          
+        
+
+        
+          
+          <figcaption class="image-caption-wrapper">
+            <div class="image-caption"><p class="" style="white-space:pre-wrap;">#3: <em>EXPLAIN</em> is your friend.</p></div>
+          </figcaption>
+        
+      
+        </figure>
+      
+
+    </div>
+  
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+    
+  
+    <div class="
+          image-block-outer-wrapper
+          layout-caption-below
+          design-layout-inline
+          combination-animation-site-default
+          individual-animation-site-default
+          individual-text-animation-site-default
+        " data-test="image-block-inline-outer-wrapper">
+
+      
+
+      
+        <figure class="
+              sqs-block-image-figure
+              intrinsic
+            " style="max-width:970px;">
+          
+        
+        
+
+        
+          
+            
+          <div class="image-block-wrapper" data-animation-role="image">
+            <div class="sqs-image-shape-container-element
+              
+          
+        
+              has-aspect-ratio
+            " style="
+                position: relative;
+                
+                  padding-bottom:94.32990264892578%;
+                
+                overflow: hidden;-webkit-mask-image: -webkit-radial-gradient(white, black);
+              ">
+                
+                  
+                  
+                  
+                  
+                  
+                  
+                  <img data-stretch="false" src="https://images.squarespace-cdn.com/content/v1/5e8b134d99bce503301fb393/1607357627362-W7GPIEA0JLHG2CMTTADU/20201204.png" data-image="https://images.squarespace-cdn.com/content/v1/5e8b134d99bce503301fb393/1607357627362-W7GPIEA0JLHG2CMTTADU/20201204.png" data-image-dimensions="970x915" data-image-focal-point="0.5,0.5" alt='#4: "Choose boring technology." Dan McKinley @mcfunley' data-load="false" width="970" height="915" sizes="100vw" style="display:block;object-fit: cover; width: 100%; height: 100%; object-position: 50% 50%" srcset="https://images.squarespace-cdn.com/content/v1/5e8b134d99bce503301fb393/1607357627362-W7GPIEA0JLHG2CMTTADU/20201204.png?format=100w 100w, https://images.squarespace-cdn.com/content/v1/5e8b134d99bce503301fb393/1607357627362-W7GPIEA0JLHG2CMTTADU/20201204.png?format=300w 300w, https://images.squarespace-cdn.com/content/v1/5e8b134d99bce503301fb393/1607357627362-W7GPIEA0JLHG2CMTTADU/20201204.png?format=500w 500w, https://images.squarespace-cdn.com/content/v1/5e8b134d99bce503301fb393/1607357627362-W7GPIEA0JLHG2CMTTADU/20201204.png?format=750w 750w, https://images.squarespace-cdn.com/content/v1/5e8b134d99bce503301fb393/1607357627362-W7GPIEA0JLHG2CMTTADU/20201204.png?format=1000w 1000w, https://images.squarespace-cdn.com/content/v1/5e8b134d99bce503301fb393/1607357627362-W7GPIEA0JLHG2CMTTADU/20201204.png?format=1500w 1500w, https://images.squarespace-cdn.com/content/v1/5e8b134d99bce503301fb393/1607357627362-W7GPIEA0JLHG2CMTTADU/20201204.png?format=2500w 2500w" loading="lazy" decoding="async" data-loader="sqs">
+                
+            </div>
+          </div>
+        
+          
+        
+
+        
+          
+          <figcaption class="image-caption-wrapper">
+            <div class="image-caption"><p class="" style="white-space:pre-wrap;">#4: "Choose boring technology." Dan McKinley @mcfunley</p></div>
+          </figcaption>
+        
+      
+        </figure>
+      
+
+    </div>
+  
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+    
+  
+    <div class="
+          image-block-outer-wrapper
+          layout-caption-below
+          design-layout-inline
+          combination-animation-site-default
+          individual-animation-site-default
+          individual-text-animation-site-default
+        " data-test="image-block-inline-outer-wrapper">
+
+      
+
+      
+        <figure class="
+              sqs-block-image-figure
+              intrinsic
+            " style="max-width:972px;">
+          
+        
+        
+
+        
+          
+            
+          <div class="image-block-wrapper" data-animation-role="image">
+            <div class="sqs-image-shape-container-element
+              
+          
+        
+              has-aspect-ratio
+            " style="
+                position: relative;
+                
+                  padding-bottom:94.13580322265625%;
+                
+                overflow: hidden;-webkit-mask-image: -webkit-radial-gradient(white, black);
+              ">
+                
+                  
+                  
+                  
+                  
+                  
+                  
+                  <img data-stretch="false" src="https://images.squarespace-cdn.com/content/v1/5e8b134d99bce503301fb393/1607357654726-BAJ27EGZPT6PACMC1GU6/20201205.png" data-image="https://images.squarespace-cdn.com/content/v1/5e8b134d99bce503301fb393/1607357654726-BAJ27EGZPT6PACMC1GU6/20201205.png" data-image-dimensions="972x915" data-image-focal-point="0.5,0.5" alt="#5: Complicated is better than complex." data-load="false" width="972" height="915" sizes="100vw" style="display:block;object-fit: cover; width: 100%; height: 100%; object-position: 50% 50%" srcset="https://images.squarespace-cdn.com/content/v1/5e8b134d99bce503301fb393/1607357654726-BAJ27EGZPT6PACMC1GU6/20201205.png?format=100w 100w, https://images.squarespace-cdn.com/content/v1/5e8b134d99bce503301fb393/1607357654726-BAJ27EGZPT6PACMC1GU6/20201205.png?format=300w 300w, https://images.squarespace-cdn.com/content/v1/5e8b134d99bce503301fb393/1607357654726-BAJ27EGZPT6PACMC1GU6/20201205.png?format=500w 500w, https://images.squarespace-cdn.com/content/v1/5e8b134d99bce503301fb393/1607357654726-BAJ27EGZPT6PACMC1GU6/20201205.png?format=750w 750w, https://images.squarespace-cdn.com/content/v1/5e8b134d99bce503301fb393/1607357654726-BAJ27EGZPT6PACMC1GU6/20201205.png?format=1000w 1000w, https://images.squarespace-cdn.com/content/v1/5e8b134d99bce503301fb393/1607357654726-BAJ27EGZPT6PACMC1GU6/20201205.png?format=1500w 1500w, https://images.squarespace-cdn.com/content/v1/5e8b134d99bce503301fb393/1607357654726-BAJ27EGZPT6PACMC1GU6/20201205.png?format=2500w 2500w" loading="lazy" decoding="async" data-loader="sqs">
+                
+            </div>
+          </div>
+        
+          
+        
+
+        
+          
+          <figcaption class="image-caption-wrapper">
+            <div class="image-caption"><p class="" style="white-space:pre-wrap;">#5: Complicated is better than complex.</p></div>
+          </figcaption>
+        
+      
+        </figure>
+      
+
+    </div>
+  
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+    
+  
+    <div class="
+          image-block-outer-wrapper
+          layout-caption-below
+          design-layout-inline
+          combination-animation-site-default
+          individual-animation-site-default
+          individual-text-animation-site-default
+        " data-test="image-block-inline-outer-wrapper">
+
+      
+
+      
+        <figure class="
+              sqs-block-image-figure
+              intrinsic
+            " style="max-width:971px;">
+          
+        
+        
+
+        
+          
+            
+          <div class="image-block-wrapper" data-animation-role="image">
+            <div class="sqs-image-shape-container-element
+              
+          
+        
+              has-aspect-ratio
+            " style="
+                position: relative;
+                
+                  padding-bottom:94.33573150634766%;
+                
+                overflow: hidden;-webkit-mask-image: -webkit-radial-gradient(white, black);
+              ">
+                
+                  
+                  
+                  
+                  
+                  
+                  
+                  <img data-stretch="false" src="https://images.squarespace-cdn.com/content/v1/5e8b134d99bce503301fb393/1607357688120-X7GUB0KX1B679WX95VNL/20201206.png" data-image="https://images.squarespace-cdn.com/content/v1/5e8b134d99bce503301fb393/1607357688120-X7GUB0KX1B679WX95VNL/20201206.png" data-image-dimensions="971x916" data-image-focal-point="0.5,0.5" alt="#6: What do you do on your CLI?$ &amp;lt; ~/.bash_history | sort | uniq -c | sort -n" data-load="false" width="971" height="916" sizes="100vw" style="display:block;object-fit: cover; width: 100%; height: 100%; object-position: 50% 50%" srcset="https://images.squarespace-cdn.com/content/v1/5e8b134d99bce503301fb393/1607357688120-X7GUB0KX1B679WX95VNL/20201206.png?format=100w 100w, https://images.squarespace-cdn.com/content/v1/5e8b134d99bce503301fb393/1607357688120-X7GUB0KX1B679WX95VNL/20201206.png?format=300w 300w, https://images.squarespace-cdn.com/content/v1/5e8b134d99bce503301fb393/1607357688120-X7GUB0KX1B679WX95VNL/20201206.png?format=500w 500w, https://images.squarespace-cdn.com/content/v1/5e8b134d99bce503301fb393/1607357688120-X7GUB0KX1B679WX95VNL/20201206.png?format=750w 750w, https://images.squarespace-cdn.com/content/v1/5e8b134d99bce503301fb393/1607357688120-X7GUB0KX1B679WX95VNL/20201206.png?format=1000w 1000w, https://images.squarespace-cdn.com/content/v1/5e8b134d99bce503301fb393/1607357688120-X7GUB0KX1B679WX95VNL/20201206.png?format=1500w 1500w, https://images.squarespace-cdn.com/content/v1/5e8b134d99bce503301fb393/1607357688120-X7GUB0KX1B679WX95VNL/20201206.png?format=2500w 2500w" loading="lazy" decoding="async" data-loader="sqs">
+                
+            </div>
+          </div>
+        
+          
+        
+
+        
+          
+          <figcaption class="image-caption-wrapper">
+            <div class="image-caption">
+<p class="" style="white-space:pre-wrap;">#6: What do you do on your CLI?</p>
+<pre><code>$ &lt; ~/.bash_history | sort | uniq -c | sort -n</code></pre>
+</div>
+          </figcaption>
+        
+      
+        </figure>
+      
+
+    </div>
+  
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+    
+  
+    <div class="
+          image-block-outer-wrapper
+          layout-caption-below
+          design-layout-inline
+          combination-animation-site-default
+          individual-animation-site-default
+          individual-text-animation-site-default
+        " data-test="image-block-inline-outer-wrapper">
+
+      
+
+      
+        <figure class="
+              sqs-block-image-figure
+              intrinsic
+            " style="max-width:970px;">
+          
+        
+        
+
+        
+          
+            
+          <div class="image-block-wrapper" data-animation-role="image">
+            <div class="sqs-image-shape-container-element
+              
+          
+        
+              has-aspect-ratio
+            " style="
+                position: relative;
+                
+                  padding-bottom:94.32990264892578%;
+                
+                overflow: hidden;-webkit-mask-image: -webkit-radial-gradient(white, black);
+              ">
+                
+                  
+                  
+                  
+                  
+                  
+                  
+                  <img data-stretch="false" src="https://images.squarespace-cdn.com/content/v1/5e8b134d99bce503301fb393/1607357717412-WOMSI7PL5ZMRQLT1ZZDF/20201207.png" data-image="https://images.squarespace-cdn.com/content/v1/5e8b134d99bce503301fb393/1607357717412-WOMSI7PL5ZMRQLT1ZZDF/20201207.png" data-image-dimensions="970x915" data-image-focal-point="0.5,0.5" alt="#7: SQLite (2000) has one trillion (1e12) active installs. It's a file with SQL API and window functions." data-load="false" width="970" height="915" sizes="100vw" style="display:block;object-fit: cover; width: 100%; height: 100%; object-position: 50% 50%" srcset="https://images.squarespace-cdn.com/content/v1/5e8b134d99bce503301fb393/1607357717412-WOMSI7PL5ZMRQLT1ZZDF/20201207.png?format=100w 100w, https://images.squarespace-cdn.com/content/v1/5e8b134d99bce503301fb393/1607357717412-WOMSI7PL5ZMRQLT1ZZDF/20201207.png?format=300w 300w, https://images.squarespace-cdn.com/content/v1/5e8b134d99bce503301fb393/1607357717412-WOMSI7PL5ZMRQLT1ZZDF/20201207.png?format=500w 500w, https://images.squarespace-cdn.com/content/v1/5e8b134d99bce503301fb393/1607357717412-WOMSI7PL5ZMRQLT1ZZDF/20201207.png?format=750w 750w, https://images.squarespace-cdn.com/content/v1/5e8b134d99bce503301fb393/1607357717412-WOMSI7PL5ZMRQLT1ZZDF/20201207.png?format=1000w 1000w, https://images.squarespace-cdn.com/content/v1/5e8b134d99bce503301fb393/1607357717412-WOMSI7PL5ZMRQLT1ZZDF/20201207.png?format=1500w 1500w, https://images.squarespace-cdn.com/content/v1/5e8b134d99bce503301fb393/1607357717412-WOMSI7PL5ZMRQLT1ZZDF/20201207.png?format=2500w 2500w" loading="lazy" decoding="async" data-loader="sqs">
+                
+            </div>
+          </div>
+        
+          
+        
+
+        
+          
+          <figcaption class="image-caption-wrapper">
+            <div class="image-caption"><p class="" style="white-space:pre-wrap;">#7: SQLite (2000) has one trillion (1e12) active installs. It's a file with SQL API and window functions.</p></div>
+          </figcaption>
+        
+      
+        </figure>
+      
+
+    </div>
+  
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+    
+  
+    <div class="
+          image-block-outer-wrapper
+          layout-caption-below
+          design-layout-inline
+          combination-animation-site-default
+          individual-animation-site-default
+          individual-text-animation-site-default
+        " data-test="image-block-inline-outer-wrapper">
+
+      
+
+      
+        <figure class="
+              sqs-block-image-figure
+              intrinsic
+            " style="max-width:970px;">
+          
+        
+        
+
+        
+          
+            
+          <div class="image-block-wrapper" data-animation-role="image">
+            <div class="sqs-image-shape-container-element
+              
+          
+        
+              has-aspect-ratio
+            " style="
+                position: relative;
+                
+                  padding-bottom:94.32990264892578%;
+                
+                overflow: hidden;-webkit-mask-image: -webkit-radial-gradient(white, black);
+              ">
+                
+                  
+                  
+                  
+                  
+                  
+                  
+                  <img data-stretch="false" src="https://images.squarespace-cdn.com/content/v1/5e8b134d99bce503301fb393/1607357742665-XCR5BD4B4XPFHMZGPSYN/20201208.png" data-image="https://images.squarespace-cdn.com/content/v1/5e8b134d99bce503301fb393/1607357742665-XCR5BD4B4XPFHMZGPSYN/20201208.png" data-image-dimensions="970x915" data-image-focal-point="0.5,0.5" alt='#8: "Premature optimization is the root of all evil." Tony Hoare (Quicksort)' data-load="false" width="970" height="915" sizes="100vw" style="display:block;object-fit: cover; width: 100%; height: 100%; object-position: 50% 50%" srcset="https://images.squarespace-cdn.com/content/v1/5e8b134d99bce503301fb393/1607357742665-XCR5BD4B4XPFHMZGPSYN/20201208.png?format=100w 100w, https://images.squarespace-cdn.com/content/v1/5e8b134d99bce503301fb393/1607357742665-XCR5BD4B4XPFHMZGPSYN/20201208.png?format=300w 300w, https://images.squarespace-cdn.com/content/v1/5e8b134d99bce503301fb393/1607357742665-XCR5BD4B4XPFHMZGPSYN/20201208.png?format=500w 500w, https://images.squarespace-cdn.com/content/v1/5e8b134d99bce503301fb393/1607357742665-XCR5BD4B4XPFHMZGPSYN/20201208.png?format=750w 750w, https://images.squarespace-cdn.com/content/v1/5e8b134d99bce503301fb393/1607357742665-XCR5BD4B4XPFHMZGPSYN/20201208.png?format=1000w 1000w, https://images.squarespace-cdn.com/content/v1/5e8b134d99bce503301fb393/1607357742665-XCR5BD4B4XPFHMZGPSYN/20201208.png?format=1500w 1500w, https://images.squarespace-cdn.com/content/v1/5e8b134d99bce503301fb393/1607357742665-XCR5BD4B4XPFHMZGPSYN/20201208.png?format=2500w 2500w" loading="lazy" decoding="async" data-loader="sqs">
+                
+            </div>
+          </div>
+        
+          
+        
+
+        
+          
+          <figcaption class="image-caption-wrapper">
+            <div class="image-caption"><p class="" style="white-space:pre-wrap;">#8: "Premature optimization is the root of all evil." Tony Hoare (Quicksort)</p></div>
+          </figcaption>
+        
+      
+        </figure>
+      
+
+    </div>
+  
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+    
+  
+    <div class="
+          image-block-outer-wrapper
+          layout-caption-below
+          design-layout-inline
+          combination-animation-site-default
+          individual-animation-site-default
+          individual-text-animation-site-default
+        " data-test="image-block-inline-outer-wrapper">
+
+      
+
+      
+        <figure class="
+              sqs-block-image-figure
+              intrinsic
+            " style="max-width:971px;">
+          
+        
+        
+
+        
+          
+            
+          <div class="image-block-wrapper" data-animation-role="image">
+            <div class="sqs-image-shape-container-element
+              
+          
+        
+              has-aspect-ratio
+            " style="
+                position: relative;
+                
+                  padding-bottom:94.33573150634766%;
+                
+                overflow: hidden;-webkit-mask-image: -webkit-radial-gradient(white, black);
+              ">
+                
+                  
+                  
+                  
+                  
+                  
+                  
+                  <img data-stretch="false" src="https://images.squarespace-cdn.com/content/v1/5e8b134d99bce503301fb393/1607357773911-6HRJJ92NUUPNI5FBEZIV/20201209.png" data-image="https://images.squarespace-cdn.com/content/v1/5e8b134d99bce503301fb393/1607357773911-6HRJJ92NUUPNI5FBEZIV/20201209.png" data-image-dimensions="971x916" data-image-focal-point="0.5,0.5" alt="#9: Keep It Simple (&amp;amp;) Stupid and remember separation of concerns." data-load="false" width="971" height="916" sizes="100vw" style="display:block;object-fit: cover; width: 100%; height: 100%; object-position: 50% 50%" srcset="https://images.squarespace-cdn.com/content/v1/5e8b134d99bce503301fb393/1607357773911-6HRJJ92NUUPNI5FBEZIV/20201209.png?format=100w 100w, https://images.squarespace-cdn.com/content/v1/5e8b134d99bce503301fb393/1607357773911-6HRJJ92NUUPNI5FBEZIV/20201209.png?format=300w 300w, https://images.squarespace-cdn.com/content/v1/5e8b134d99bce503301fb393/1607357773911-6HRJJ92NUUPNI5FBEZIV/20201209.png?format=500w 500w, https://images.squarespace-cdn.com/content/v1/5e8b134d99bce503301fb393/1607357773911-6HRJJ92NUUPNI5FBEZIV/20201209.png?format=750w 750w, https://images.squarespace-cdn.com/content/v1/5e8b134d99bce503301fb393/1607357773911-6HRJJ92NUUPNI5FBEZIV/20201209.png?format=1000w 1000w, https://images.squarespace-cdn.com/content/v1/5e8b134d99bce503301fb393/1607357773911-6HRJJ92NUUPNI5FBEZIV/20201209.png?format=1500w 1500w, https://images.squarespace-cdn.com/content/v1/5e8b134d99bce503301fb393/1607357773911-6HRJJ92NUUPNI5FBEZIV/20201209.png?format=2500w 2500w" loading="lazy" decoding="async" data-loader="sqs">
+                
+            </div>
+          </div>
+        
+          
+        
+
+        
+          
+          <figcaption class="image-caption-wrapper">
+            <div class="image-caption"><p class="" style="white-space:pre-wrap;">#9: Keep It Simple (&amp;) Stupid and remember separation of concerns.</p></div>
+          </figcaption>
+        
+      
+        </figure>
+      
+
+    </div>
+  
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+    
+  
+    <div class="
+          image-block-outer-wrapper
+          layout-caption-below
+          design-layout-inline
+          combination-animation-site-default
+          individual-animation-site-default
+          individual-text-animation-site-default
+        " data-test="image-block-inline-outer-wrapper">
+
+      
+
+      
+        <figure class="
+              sqs-block-image-figure
+              intrinsic
+            " style="max-width:970px;">
+          
+        
+        
+
+        
+          
+            
+          <div class="image-block-wrapper" data-animation-role="image">
+            <div class="sqs-image-shape-container-element
+              
+          
+        
+              has-aspect-ratio
+            " style="
+                position: relative;
+                
+                  padding-bottom:94.53608703613281%;
+                
+                overflow: hidden;-webkit-mask-image: -webkit-radial-gradient(white, black);
+              ">
+                
+                  
+                  
+                  
+                  
+                  
+                  
+                  <img data-stretch="false" src="https://images.squarespace-cdn.com/content/v1/5e8b134d99bce503301fb393/1607357849387-N8RDH5Y1KCWLDQQOF2RU/20201210.png" data-image="https://images.squarespace-cdn.com/content/v1/5e8b134d99bce503301fb393/1607357849387-N8RDH5Y1KCWLDQQOF2RU/20201210.png" data-image-dimensions="970x917" data-image-focal-point="0.5,0.5" alt="#10: Log in to a recently launched container (via @basmatitree)$ docker exec -it $(docker ps -q | tail -1) /bin/bash" data-load="false" width="970" height="917" sizes="100vw" style="display:block;object-fit: cover; width: 100%; height: 100%; object-position: 50% 50%" srcset="https://images.squarespace-cdn.com/content/v1/5e8b134d99bce503301fb393/1607357849387-N8RDH5Y1KCWLDQQOF2RU/20201210.png?format=100w 100w, https://images.squarespace-cdn.com/content/v1/5e8b134d99bce503301fb393/1607357849387-N8RDH5Y1KCWLDQQOF2RU/20201210.png?format=300w 300w, https://images.squarespace-cdn.com/content/v1/5e8b134d99bce503301fb393/1607357849387-N8RDH5Y1KCWLDQQOF2RU/20201210.png?format=500w 500w, https://images.squarespace-cdn.com/content/v1/5e8b134d99bce503301fb393/1607357849387-N8RDH5Y1KCWLDQQOF2RU/20201210.png?format=750w 750w, https://images.squarespace-cdn.com/content/v1/5e8b134d99bce503301fb393/1607357849387-N8RDH5Y1KCWLDQQOF2RU/20201210.png?format=1000w 1000w, https://images.squarespace-cdn.com/content/v1/5e8b134d99bce503301fb393/1607357849387-N8RDH5Y1KCWLDQQOF2RU/20201210.png?format=1500w 1500w, https://images.squarespace-cdn.com/content/v1/5e8b134d99bce503301fb393/1607357849387-N8RDH5Y1KCWLDQQOF2RU/20201210.png?format=2500w 2500w" loading="lazy" decoding="async" data-loader="sqs">
+                
+            </div>
+          </div>
+        
+          
+        
+
+        
+          
+          <figcaption class="image-caption-wrapper">
+            <div class="image-caption">
+<p class="" style="white-space:pre-wrap;">#10: Log in to a recently launched container (via @basmatitree)</p>
+<pre><code>$ docker exec -it $(docker ps -q | tail -1) /bin/bash</code></pre>
+</div>
+          </figcaption>
+        
+      
+        </figure>
+      
+
+    </div>
+  
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+    
+  
+    <div class="
+          image-block-outer-wrapper
+          layout-caption-below
+          design-layout-inline
+          combination-animation-site-default
+          individual-animation-site-default
+          individual-text-animation-site-default
+        " data-test="image-block-inline-outer-wrapper">
+
+      
+
+      
+        <figure class="
+              sqs-block-image-figure
+              intrinsic
+            " style="max-width:970px;">
+          
+        
+        
+
+        
+          
+            
+          <div class="image-block-wrapper" data-animation-role="image">
+            <div class="sqs-image-shape-container-element
+              
+          
+        
+              has-aspect-ratio
+            " style="
+                position: relative;
+                
+                  padding-bottom:94.32990264892578%;
+                
+                overflow: hidden;-webkit-mask-image: -webkit-radial-gradient(white, black);
+              ">
+                
+                  
+                  
+                  
+                  
+                  
+                  
+                  <img data-stretch="false" src="https://images.squarespace-cdn.com/content/v1/5e8b134d99bce503301fb393/1607357897240-JL6G6TEY2JYVA79RLRZ5/20201211.png" data-image="https://images.squarespace-cdn.com/content/v1/5e8b134d99bce503301fb393/1607357897240-JL6G6TEY2JYVA79RLRZ5/20201211.png" data-image-dimensions="970x915" data-image-focal-point="0.5,0.5" alt="#11: Get details of last failed Redshift load.SELECT * FROM stl_load_errors ORDER BY starttime DESC LIMIT 1;" data-load="false" width="970" height="915" sizes="100vw" style="display:block;object-fit: cover; width: 100%; height: 100%; object-position: 50% 50%" srcset="https://images.squarespace-cdn.com/content/v1/5e8b134d99bce503301fb393/1607357897240-JL6G6TEY2JYVA79RLRZ5/20201211.png?format=100w 100w, https://images.squarespace-cdn.com/content/v1/5e8b134d99bce503301fb393/1607357897240-JL6G6TEY2JYVA79RLRZ5/20201211.png?format=300w 300w, https://images.squarespace-cdn.com/content/v1/5e8b134d99bce503301fb393/1607357897240-JL6G6TEY2JYVA79RLRZ5/20201211.png?format=500w 500w, https://images.squarespace-cdn.com/content/v1/5e8b134d99bce503301fb393/1607357897240-JL6G6TEY2JYVA79RLRZ5/20201211.png?format=750w 750w, https://images.squarespace-cdn.com/content/v1/5e8b134d99bce503301fb393/1607357897240-JL6G6TEY2JYVA79RLRZ5/20201211.png?format=1000w 1000w, https://images.squarespace-cdn.com/content/v1/5e8b134d99bce503301fb393/1607357897240-JL6G6TEY2JYVA79RLRZ5/20201211.png?format=1500w 1500w, https://images.squarespace-cdn.com/content/v1/5e8b134d99bce503301fb393/1607357897240-JL6G6TEY2JYVA79RLRZ5/20201211.png?format=2500w 2500w" loading="lazy" decoding="async" data-loader="sqs">
+                
+            </div>
+          </div>
+        
+          
+        
+
+        
+          
+          <figcaption class="image-caption-wrapper">
+            <div class="image-caption">
+<p class="" style="white-space:pre-wrap;">#11: Get details of last failed Redshift load.</p>
+<pre><code>SELECT * FROM stl_load_errors ORDER BY starttime DESC LIMIT 1;</code></pre>
+</div>
+          </figcaption>
+        
+      
+        </figure>
+      
+
+    </div>
+  
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+    
+  
+    <div class="
+          image-block-outer-wrapper
+          layout-caption-below
+          design-layout-inline
+          combination-animation-site-default
+          individual-animation-site-default
+          individual-text-animation-site-default
+        " data-test="image-block-inline-outer-wrapper">
+
+      
+
+      
+        <figure class="
+              sqs-block-image-figure
+              intrinsic
+            " style="max-width:970px;">
+          
+        
+        
+
+        
+          
+            
+          <div class="image-block-wrapper" data-animation-role="image">
+            <div class="sqs-image-shape-container-element
+              
+          
+        
+              has-aspect-ratio
+            " style="
+                position: relative;
+                
+                  padding-bottom:94.53608703613281%;
+                
+                overflow: hidden;-webkit-mask-image: -webkit-radial-gradient(white, black);
+              ">
+                
+                  
+                  
+                  
+                  
+                  
+                  
+                  <img data-stretch="false" src="https://images.squarespace-cdn.com/content/v1/5e8b134d99bce503301fb393/1607357918990-3OPW53FLB2SL9OTT98FF/20201212.png" data-image="https://images.squarespace-cdn.com/content/v1/5e8b134d99bce503301fb393/1607357918990-3OPW53FLB2SL9OTT98FF/20201212.png" data-image-dimensions="970x917" data-image-focal-point="0.5,0.5" alt='#12: "When in doubt, use brute force." Ken Thompson (Go, UTF-8, Unix)' data-load="false" width="970" height="917" sizes="100vw" style="display:block;object-fit: cover; width: 100%; height: 100%; object-position: 50% 50%" srcset="https://images.squarespace-cdn.com/content/v1/5e8b134d99bce503301fb393/1607357918990-3OPW53FLB2SL9OTT98FF/20201212.png?format=100w 100w, https://images.squarespace-cdn.com/content/v1/5e8b134d99bce503301fb393/1607357918990-3OPW53FLB2SL9OTT98FF/20201212.png?format=300w 300w, https://images.squarespace-cdn.com/content/v1/5e8b134d99bce503301fb393/1607357918990-3OPW53FLB2SL9OTT98FF/20201212.png?format=500w 500w, https://images.squarespace-cdn.com/content/v1/5e8b134d99bce503301fb393/1607357918990-3OPW53FLB2SL9OTT98FF/20201212.png?format=750w 750w, https://images.squarespace-cdn.com/content/v1/5e8b134d99bce503301fb393/1607357918990-3OPW53FLB2SL9OTT98FF/20201212.png?format=1000w 1000w, https://images.squarespace-cdn.com/content/v1/5e8b134d99bce503301fb393/1607357918990-3OPW53FLB2SL9OTT98FF/20201212.png?format=1500w 1500w, https://images.squarespace-cdn.com/content/v1/5e8b134d99bce503301fb393/1607357918990-3OPW53FLB2SL9OTT98FF/20201212.png?format=2500w 2500w" loading="lazy" decoding="async" data-loader="sqs">
+                
+            </div>
+          </div>
+        
+          
+        
+
+        
+          
+          <figcaption class="image-caption-wrapper">
+            <div class="image-caption"><p class="" style="white-space:pre-wrap;">#12: "When in doubt, use brute force." Ken Thompson (Go, UTF-8, Unix)</p></div>
+          </figcaption>
+        
+      
+        </figure>
+      
+
+    </div>
+  
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+    
+  
+    <div class="
+          image-block-outer-wrapper
+          layout-caption-below
+          design-layout-inline
+          combination-animation-site-default
+          individual-animation-site-default
+          individual-text-animation-site-default
+        " data-test="image-block-inline-outer-wrapper">
+
+      
+
+      
+        <figure class="
+              sqs-block-image-figure
+              intrinsic
+            " style="max-width:969px;">
+          
+        
+        
+
+        
+          
+            
+          <div class="image-block-wrapper" data-animation-role="image">
+            <div class="sqs-image-shape-container-element
+              
+          
+        
+              has-aspect-ratio
+            " style="
+                position: relative;
+                
+                  padding-bottom:94.42724609375%;
+                
+                overflow: hidden;-webkit-mask-image: -webkit-radial-gradient(white, black);
+              ">
+                
+                  
+                  
+                  
+                  
+                  
+                  
+                  <img data-stretch="false" src="https://images.squarespace-cdn.com/content/v1/5e8b134d99bce503301fb393/1607357942293-EIDGKWZUJJSZAD9G8B89/20201213.png" data-image="https://images.squarespace-cdn.com/content/v1/5e8b134d99bce503301fb393/1607357942293-EIDGKWZUJJSZAD9G8B89/20201213.png" data-image-dimensions="969x915" data-image-focal-point="0.5,0.5" alt="#13: Maintainable is debuggable and testable, and has version control." data-load="false" width="969" height="915" sizes="100vw" style="display:block;object-fit: cover; width: 100%; height: 100%; object-position: 50% 50%" srcset="https://images.squarespace-cdn.com/content/v1/5e8b134d99bce503301fb393/1607357942293-EIDGKWZUJJSZAD9G8B89/20201213.png?format=100w 100w, https://images.squarespace-cdn.com/content/v1/5e8b134d99bce503301fb393/1607357942293-EIDGKWZUJJSZAD9G8B89/20201213.png?format=300w 300w, https://images.squarespace-cdn.com/content/v1/5e8b134d99bce503301fb393/1607357942293-EIDGKWZUJJSZAD9G8B89/20201213.png?format=500w 500w, https://images.squarespace-cdn.com/content/v1/5e8b134d99bce503301fb393/1607357942293-EIDGKWZUJJSZAD9G8B89/20201213.png?format=750w 750w, https://images.squarespace-cdn.com/content/v1/5e8b134d99bce503301fb393/1607357942293-EIDGKWZUJJSZAD9G8B89/20201213.png?format=1000w 1000w, https://images.squarespace-cdn.com/content/v1/5e8b134d99bce503301fb393/1607357942293-EIDGKWZUJJSZAD9G8B89/20201213.png?format=1500w 1500w, https://images.squarespace-cdn.com/content/v1/5e8b134d99bce503301fb393/1607357942293-EIDGKWZUJJSZAD9G8B89/20201213.png?format=2500w 2500w" loading="lazy" decoding="async" data-loader="sqs">
+                
+            </div>
+          </div>
+        
+          
+        
+
+        
+          
+          <figcaption class="image-caption-wrapper">
+            <div class="image-caption"><p class="" style="white-space:pre-wrap;">#13: Maintainable is debuggable and testable, and has version control.</p></div>
+          </figcaption>
+        
+      
+        </figure>
+      
+
+    </div>
+  
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+    
+  
+    <div class="
+          image-block-outer-wrapper
+          layout-caption-below
+          design-layout-inline
+          combination-animation-site-default
+          individual-animation-site-default
+          individual-text-animation-site-default
+        " data-test="image-block-inline-outer-wrapper">
+
+      
+
+      
+        <figure class="
+              sqs-block-image-figure
+              intrinsic
+            " style="max-width:969px;">
+          
+        
+        
+
+        
+          
+            
+          <div class="image-block-wrapper" data-animation-role="image">
+            <div class="sqs-image-shape-container-element
+              
+          
+        
+              has-aspect-ratio
+            " style="
+                position: relative;
+                
+                  padding-bottom:94.53044891357422%;
+                
+                overflow: hidden;-webkit-mask-image: -webkit-radial-gradient(white, black);
+              ">
+                
+                  
+                  
+                  
+                  
+                  
+                  
+                  <img data-stretch="false" src="https://images.squarespace-cdn.com/content/v1/5e8b134d99bce503301fb393/1607357970101-CJ9KJDV688D1AJGSUWDQ/20201214.png" data-image="https://images.squarespace-cdn.com/content/v1/5e8b134d99bce503301fb393/1607357970101-CJ9KJDV688D1AJGSUWDQ/20201214.png" data-image-dimensions="969x916" data-image-focal-point="0.5,0.5" alt="#14: Remove all local git branches other than master and the currently used one (via @advincze)$ git branch --no-color | grep -v 'master' | grep -v '*' | xargs git branch -D" data-load="false" width="969" height="916" sizes="100vw" style="display:block;object-fit: cover; width: 100%; height: 100%; object-position: 50% 50%" srcset="https://images.squarespace-cdn.com/content/v1/5e8b134d99bce503301fb393/1607357970101-CJ9KJDV688D1AJGSUWDQ/20201214.png?format=100w 100w, https://images.squarespace-cdn.com/content/v1/5e8b134d99bce503301fb393/1607357970101-CJ9KJDV688D1AJGSUWDQ/20201214.png?format=300w 300w, https://images.squarespace-cdn.com/content/v1/5e8b134d99bce503301fb393/1607357970101-CJ9KJDV688D1AJGSUWDQ/20201214.png?format=500w 500w, https://images.squarespace-cdn.com/content/v1/5e8b134d99bce503301fb393/1607357970101-CJ9KJDV688D1AJGSUWDQ/20201214.png?format=750w 750w, https://images.squarespace-cdn.com/content/v1/5e8b134d99bce503301fb393/1607357970101-CJ9KJDV688D1AJGSUWDQ/20201214.png?format=1000w 1000w, https://images.squarespace-cdn.com/content/v1/5e8b134d99bce503301fb393/1607357970101-CJ9KJDV688D1AJGSUWDQ/20201214.png?format=1500w 1500w, https://images.squarespace-cdn.com/content/v1/5e8b134d99bce503301fb393/1607357970101-CJ9KJDV688D1AJGSUWDQ/20201214.png?format=2500w 2500w" loading="lazy" decoding="async" data-loader="sqs">
+                
+            </div>
+          </div>
+        
+          
+        
+
+        
+          
+          <figcaption class="image-caption-wrapper">
+            <div class="image-caption">
+<p class="" style="white-space:pre-wrap;">#14: Remove all local git branches other than master and the currently used one (via @advincze)</p>
+<pre><code>$ git branch --no-color | grep -v 'master' | grep -v '*' | xargs git branch -D</code></pre>
+</div>
+          </figcaption>
+        
+      
+        </figure>
+      
+
+    </div>
+  
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+    
+  
+    <div class="
+          image-block-outer-wrapper
+          layout-caption-below
+          design-layout-inline
+          combination-animation-site-default
+          individual-animation-site-default
+          individual-text-animation-site-default
+        " data-test="image-block-inline-outer-wrapper">
+
+      
+
+      
+        <figure class="
+              sqs-block-image-figure
+              intrinsic
+            " style="max-width:970px;">
+          
+        
+        
+
+        
+          
+            
+          <div class="image-block-wrapper" data-animation-role="image">
+            <div class="sqs-image-shape-container-element
+              
+          
+        
+              has-aspect-ratio
+            " style="
+                position: relative;
+                
+                  padding-bottom:94.32990264892578%;
+                
+                overflow: hidden;-webkit-mask-image: -webkit-radial-gradient(white, black);
+              ">
+                
+                  
+                  
+                  
+                  
+                  
+                  
+                  <img data-stretch="false" src="https://images.squarespace-cdn.com/content/v1/5e8b134d99bce503301fb393/1607357997583-EIOLSOUMFBSW1X2X6IWQ/20201215.png" data-image="https://images.squarespace-cdn.com/content/v1/5e8b134d99bce503301fb393/1607357997583-EIOLSOUMFBSW1X2X6IWQ/20201215.png" data-image-dimensions="970x915" data-image-focal-point="0.5,0.5" alt="#15: Order of execution in SQL:FROM WHERE GROUP BY HAVING SELECT [DISTINCT] UNION ORDER BY" data-load="false" width="970" height="915" sizes="100vw" style="display:block;object-fit: cover; width: 100%; height: 100%; object-position: 50% 50%" srcset="https://images.squarespace-cdn.com/content/v1/5e8b134d99bce503301fb393/1607357997583-EIOLSOUMFBSW1X2X6IWQ/20201215.png?format=100w 100w, https://images.squarespace-cdn.com/content/v1/5e8b134d99bce503301fb393/1607357997583-EIOLSOUMFBSW1X2X6IWQ/20201215.png?format=300w 300w, https://images.squarespace-cdn.com/content/v1/5e8b134d99bce503301fb393/1607357997583-EIOLSOUMFBSW1X2X6IWQ/20201215.png?format=500w 500w, https://images.squarespace-cdn.com/content/v1/5e8b134d99bce503301fb393/1607357997583-EIOLSOUMFBSW1X2X6IWQ/20201215.png?format=750w 750w, https://images.squarespace-cdn.com/content/v1/5e8b134d99bce503301fb393/1607357997583-EIOLSOUMFBSW1X2X6IWQ/20201215.png?format=1000w 1000w, https://images.squarespace-cdn.com/content/v1/5e8b134d99bce503301fb393/1607357997583-EIOLSOUMFBSW1X2X6IWQ/20201215.png?format=1500w 1500w, https://images.squarespace-cdn.com/content/v1/5e8b134d99bce503301fb393/1607357997583-EIOLSOUMFBSW1X2X6IWQ/20201215.png?format=2500w 2500w" loading="lazy" decoding="async" data-loader="sqs">
+                
+            </div>
+          </div>
+        
+          
+        
+
+        
+          
+          <figcaption class="image-caption-wrapper">
+            <div class="image-caption">
+<p class="" style="white-space:pre-wrap;">#15: Order of execution in SQL:</p>
+<pre><code>FROM WHERE GROUP BY HAVING SELECT [DISTINCT] UNION ORDER BY</code></pre>
+</div>
+          </figcaption>
+        
+      
+        </figure>
+      
+
+    </div>
+  
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+    
+  
+    <div class="
+          image-block-outer-wrapper
+          layout-caption-below
+          design-layout-inline
+          combination-animation-site-default
+          individual-animation-site-default
+          individual-text-animation-site-default
+        " data-test="image-block-inline-outer-wrapper">
+
+      
+
+      
+        <figure class="
+              sqs-block-image-figure
+              intrinsic
+            " style="max-width:968px;">
+          
+        
+        
+
+        
+          
+            
+          <div class="image-block-wrapper" data-animation-role="image">
+            <div class="sqs-image-shape-container-element
+              
+          
+        
+              has-aspect-ratio
+            " style="
+                position: relative;
+                
+                  padding-bottom:94.4214859008789%;
+                
+                overflow: hidden;-webkit-mask-image: -webkit-radial-gradient(white, black);
+              ">
+                
+                  
+                  
+                  
+                  
+                  
+                  
+                  <img data-stretch="false" src="https://images.squarespace-cdn.com/content/v1/5e8b134d99bce503301fb393/1607358022929-DAVE6VI58XSY9LBNN500/20201216.png" data-image="https://images.squarespace-cdn.com/content/v1/5e8b134d99bce503301fb393/1607358022929-DAVE6VI58XSY9LBNN500/20201216.png" data-image-dimensions="968x914" data-image-focal-point="0.5,0.5" alt="#16: &quot;Don't reinvent the flat tire.&quot; Alan Kay (Squeak, Smalltalk, OOP, GUI)" data-load="false" width="968" height="914" sizes="100vw" style="display:block;object-fit: cover; width: 100%; height: 100%; object-position: 50% 50%" srcset="https://images.squarespace-cdn.com/content/v1/5e8b134d99bce503301fb393/1607358022929-DAVE6VI58XSY9LBNN500/20201216.png?format=100w 100w, https://images.squarespace-cdn.com/content/v1/5e8b134d99bce503301fb393/1607358022929-DAVE6VI58XSY9LBNN500/20201216.png?format=300w 300w, https://images.squarespace-cdn.com/content/v1/5e8b134d99bce503301fb393/1607358022929-DAVE6VI58XSY9LBNN500/20201216.png?format=500w 500w, https://images.squarespace-cdn.com/content/v1/5e8b134d99bce503301fb393/1607358022929-DAVE6VI58XSY9LBNN500/20201216.png?format=750w 750w, https://images.squarespace-cdn.com/content/v1/5e8b134d99bce503301fb393/1607358022929-DAVE6VI58XSY9LBNN500/20201216.png?format=1000w 1000w, https://images.squarespace-cdn.com/content/v1/5e8b134d99bce503301fb393/1607358022929-DAVE6VI58XSY9LBNN500/20201216.png?format=1500w 1500w, https://images.squarespace-cdn.com/content/v1/5e8b134d99bce503301fb393/1607358022929-DAVE6VI58XSY9LBNN500/20201216.png?format=2500w 2500w" loading="lazy" decoding="async" data-loader="sqs">
+                
+            </div>
+          </div>
+        
+          
+        
+
+        
+          
+          <figcaption class="image-caption-wrapper">
+            <div class="image-caption"><p class="" style="white-space:pre-wrap;">#16: "Don't reinvent the flat tire." Alan Kay (Squeak, Smalltalk, OOP, GUI)</p></div>
+          </figcaption>
+        
+      
+        </figure>
+      
+
+    </div>
+  
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+    
+  
+    <div class="
+          image-block-outer-wrapper
+          layout-caption-below
+          design-layout-inline
+          combination-animation-site-default
+          individual-animation-site-default
+          individual-text-animation-site-default
+        " data-test="image-block-inline-outer-wrapper">
+
+      
+
+      
+        <figure class="
+              sqs-block-image-figure
+              intrinsic
+            " style="max-width:969px;">
+          
+        
+        
+
+        
+          
+            
+          <div class="image-block-wrapper" data-animation-role="image">
+            <div class="sqs-image-shape-container-element
+              
+          
+        
+              has-aspect-ratio
+            " style="
+                position: relative;
+                
+                  padding-bottom:94.42724609375%;
+                
+                overflow: hidden;-webkit-mask-image: -webkit-radial-gradient(white, black);
+              ">
+                
+                  
+                  
+                  
+                  
+                  
+                  
+                  <img data-stretch="false" src="https://images.squarespace-cdn.com/content/v1/5e8b134d99bce503301fb393/1607358043317-6KACVWXIKIWNX2G9CFW3/20201217.png" data-image="https://images.squarespace-cdn.com/content/v1/5e8b134d99bce503301fb393/1607358043317-6KACVWXIKIWNX2G9CFW3/20201217.png" data-image-dimensions="969x915" data-image-focal-point="0.5,0.5" alt="#17: Code is dependency. Others' code is dependency squared. Delete, remove, retire." data-load="false" width="969" height="915" sizes="100vw" style="display:block;object-fit: cover; width: 100%; height: 100%; object-position: 50% 50%" srcset="https://images.squarespace-cdn.com/content/v1/5e8b134d99bce503301fb393/1607358043317-6KACVWXIKIWNX2G9CFW3/20201217.png?format=100w 100w, https://images.squarespace-cdn.com/content/v1/5e8b134d99bce503301fb393/1607358043317-6KACVWXIKIWNX2G9CFW3/20201217.png?format=300w 300w, https://images.squarespace-cdn.com/content/v1/5e8b134d99bce503301fb393/1607358043317-6KACVWXIKIWNX2G9CFW3/20201217.png?format=500w 500w, https://images.squarespace-cdn.com/content/v1/5e8b134d99bce503301fb393/1607358043317-6KACVWXIKIWNX2G9CFW3/20201217.png?format=750w 750w, https://images.squarespace-cdn.com/content/v1/5e8b134d99bce503301fb393/1607358043317-6KACVWXIKIWNX2G9CFW3/20201217.png?format=1000w 1000w, https://images.squarespace-cdn.com/content/v1/5e8b134d99bce503301fb393/1607358043317-6KACVWXIKIWNX2G9CFW3/20201217.png?format=1500w 1500w, https://images.squarespace-cdn.com/content/v1/5e8b134d99bce503301fb393/1607358043317-6KACVWXIKIWNX2G9CFW3/20201217.png?format=2500w 2500w" loading="lazy" decoding="async" data-loader="sqs">
+                
+            </div>
+          </div>
+        
+          
+        
+
+        
+          
+          <figcaption class="image-caption-wrapper">
+            <div class="image-caption"><p class="" style="white-space:pre-wrap;">#17: Code is dependency. Others' code is dependency squared. Delete, remove, retire.</p></div>
+          </figcaption>
+        
+      
+        </figure>
+      
+
+    </div>
+  
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+    
+  
+    <div class="
+          image-block-outer-wrapper
+          layout-caption-below
+          design-layout-inline
+          combination-animation-site-default
+          individual-animation-site-default
+          individual-text-animation-site-default
+        " data-test="image-block-inline-outer-wrapper">
+
+      
+
+      
+        <figure class="
+              sqs-block-image-figure
+              intrinsic
+            " style="max-width:970px;">
+          
+        
+        
+
+        
+          
+            
+          <div class="image-block-wrapper" data-animation-role="image">
+            <div class="sqs-image-shape-container-element
+              
+          
+        
+              has-aspect-ratio
+            " style="
+                position: relative;
+                
+                  padding-bottom:94.43299102783203%;
+                
+                overflow: hidden;-webkit-mask-image: -webkit-radial-gradient(white, black);
+              ">
+                
+                  
+                  
+                  
+                  
+                  
+                  
+                  <img data-stretch="false" src="https://images.squarespace-cdn.com/content/v1/5e8b134d99bce503301fb393/1607358072335-U56RR2BTZQDXSRN9OLE7/20201218.png" data-image="https://images.squarespace-cdn.com/content/v1/5e8b134d99bce503301fb393/1607358072335-U56RR2BTZQDXSRN9OLE7/20201218.png" data-image-dimensions="970x916" data-image-focal-point="0.5,0.5" alt="#18: You can run SQL directly on your CLI on CSV or TSV files with http://harelba.github.io/q/" data-load="false" width="970" height="916" sizes="100vw" style="display:block;object-fit: cover; width: 100%; height: 100%; object-position: 50% 50%" srcset="https://images.squarespace-cdn.com/content/v1/5e8b134d99bce503301fb393/1607358072335-U56RR2BTZQDXSRN9OLE7/20201218.png?format=100w 100w, https://images.squarespace-cdn.com/content/v1/5e8b134d99bce503301fb393/1607358072335-U56RR2BTZQDXSRN9OLE7/20201218.png?format=300w 300w, https://images.squarespace-cdn.com/content/v1/5e8b134d99bce503301fb393/1607358072335-U56RR2BTZQDXSRN9OLE7/20201218.png?format=500w 500w, https://images.squarespace-cdn.com/content/v1/5e8b134d99bce503301fb393/1607358072335-U56RR2BTZQDXSRN9OLE7/20201218.png?format=750w 750w, https://images.squarespace-cdn.com/content/v1/5e8b134d99bce503301fb393/1607358072335-U56RR2BTZQDXSRN9OLE7/20201218.png?format=1000w 1000w, https://images.squarespace-cdn.com/content/v1/5e8b134d99bce503301fb393/1607358072335-U56RR2BTZQDXSRN9OLE7/20201218.png?format=1500w 1500w, https://images.squarespace-cdn.com/content/v1/5e8b134d99bce503301fb393/1607358072335-U56RR2BTZQDXSRN9OLE7/20201218.png?format=2500w 2500w" loading="lazy" decoding="async" data-loader="sqs">
+                
+            </div>
+          </div>
+        
+          
+        
+
+        
+          
+          <figcaption class="image-caption-wrapper">
+            <div class="image-caption"><p class="" style="white-space:pre-wrap;">#18: You can run SQL directly on your CLI on CSV or TSV files with <a href="http://harelba.github.io/q/" target="_blank">http://harelba.github.io/q/</a></p></div>
+          </figcaption>
+        
+      
+        </figure>
+      
+
+    </div>
+  
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+    
+  
+    <div class="
+          image-block-outer-wrapper
+          layout-caption-below
+          design-layout-inline
+          combination-animation-site-default
+          individual-animation-site-default
+          individual-text-animation-site-default
+        " data-test="image-block-inline-outer-wrapper">
+
+      
+
+      
+        <figure class="
+              sqs-block-image-figure
+              intrinsic
+            " style="max-width:969px;">
+          
+        
+        
+
+        
+          
+            
+          <div class="image-block-wrapper" data-animation-role="image">
+            <div class="sqs-image-shape-container-element
+              
+          
+        
+              has-aspect-ratio
+            " style="
+                position: relative;
+                
+                  padding-bottom:94.42724609375%;
+                
+                overflow: hidden;-webkit-mask-image: -webkit-radial-gradient(white, black);
+              ">
+                
+                  
+                  
+                  
+                  
+                  
+                  
+                  <img data-stretch="false" src="https://images.squarespace-cdn.com/content/v1/5e8b134d99bce503301fb393/1607358097333-8H7VRURSL31MEQ5MJ6N3/20201219.png" data-image="https://images.squarespace-cdn.com/content/v1/5e8b134d99bce503301fb393/1607358097333-8H7VRURSL31MEQ5MJ6N3/20201219.png" data-image-dimensions="969x915" data-image-focal-point="0.5,0.5" alt="#19: Queries on MPPs? Use WITH/CTEs, filter with WHERE, SELECT explicitly, avoid JOIN, SORTKEYS are your friends. It's all about scanning less." data-load="false" width="969" height="915" sizes="100vw" style="display:block;object-fit: cover; width: 100%; height: 100%; object-position: 50% 50%" srcset="https://images.squarespace-cdn.com/content/v1/5e8b134d99bce503301fb393/1607358097333-8H7VRURSL31MEQ5MJ6N3/20201219.png?format=100w 100w, https://images.squarespace-cdn.com/content/v1/5e8b134d99bce503301fb393/1607358097333-8H7VRURSL31MEQ5MJ6N3/20201219.png?format=300w 300w, https://images.squarespace-cdn.com/content/v1/5e8b134d99bce503301fb393/1607358097333-8H7VRURSL31MEQ5MJ6N3/20201219.png?format=500w 500w, https://images.squarespace-cdn.com/content/v1/5e8b134d99bce503301fb393/1607358097333-8H7VRURSL31MEQ5MJ6N3/20201219.png?format=750w 750w, https://images.squarespace-cdn.com/content/v1/5e8b134d99bce503301fb393/1607358097333-8H7VRURSL31MEQ5MJ6N3/20201219.png?format=1000w 1000w, https://images.squarespace-cdn.com/content/v1/5e8b134d99bce503301fb393/1607358097333-8H7VRURSL31MEQ5MJ6N3/20201219.png?format=1500w 1500w, https://images.squarespace-cdn.com/content/v1/5e8b134d99bce503301fb393/1607358097333-8H7VRURSL31MEQ5MJ6N3/20201219.png?format=2500w 2500w" loading="lazy" decoding="async" data-loader="sqs">
+                
+            </div>
+          </div>
+        
+          
+        
+
+        
+          
+          <figcaption class="image-caption-wrapper">
+            <div class="image-caption"><p class="" style="white-space:pre-wrap;">#19: Queries on MPPs? Use WITH/CTEs, filter with WHERE, SELECT explicitly, avoid JOIN, SORTKEYS are your friends. It's all about scanning less.</p></div>
+          </figcaption>
+        
+      
+        </figure>
+      
+
+    </div>
+  
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+    
+  
+    <div class="
+          image-block-outer-wrapper
+          layout-caption-below
+          design-layout-inline
+          combination-animation-site-default
+          individual-animation-site-default
+          individual-text-animation-site-default
+        " data-test="image-block-inline-outer-wrapper">
+
+      
+
+      
+        <figure class="
+              sqs-block-image-figure
+              intrinsic
+            " style="max-width:968px;">
+          
+        
+        
+
+        
+          
+            
+          <div class="image-block-wrapper" data-animation-role="image">
+            <div class="sqs-image-shape-container-element
+              
+          
+        
+              has-aspect-ratio
+            " style="
+                position: relative;
+                
+                  padding-bottom:94.31818389892578%;
+                
+                overflow: hidden;-webkit-mask-image: -webkit-radial-gradient(white, black);
+              ">
+                
+                  
+                  
+                  
+                  
+                  
+                  
+                  <img data-stretch="false" src="https://images.squarespace-cdn.com/content/v1/5e8b134d99bce503301fb393/1607358122439-OK9YA1OBZQH3YS50MDCI/20201220.png" data-image="https://images.squarespace-cdn.com/content/v1/5e8b134d99bce503301fb393/1607358122439-OK9YA1OBZQH3YS50MDCI/20201220.png" data-image-dimensions="968x913" data-image-focal-point="0.5,0.5" alt="#20: “Bad programmers worry about the code. Good programmers worry about data structures and their relationships.” Linus Torvalds (Git, Linux)" data-load="false" width="968" height="913" sizes="100vw" style="display:block;object-fit: cover; width: 100%; height: 100%; object-position: 50% 50%" srcset="https://images.squarespace-cdn.com/content/v1/5e8b134d99bce503301fb393/1607358122439-OK9YA1OBZQH3YS50MDCI/20201220.png?format=100w 100w, https://images.squarespace-cdn.com/content/v1/5e8b134d99bce503301fb393/1607358122439-OK9YA1OBZQH3YS50MDCI/20201220.png?format=300w 300w, https://images.squarespace-cdn.com/content/v1/5e8b134d99bce503301fb393/1607358122439-OK9YA1OBZQH3YS50MDCI/20201220.png?format=500w 500w, https://images.squarespace-cdn.com/content/v1/5e8b134d99bce503301fb393/1607358122439-OK9YA1OBZQH3YS50MDCI/20201220.png?format=750w 750w, https://images.squarespace-cdn.com/content/v1/5e8b134d99bce503301fb393/1607358122439-OK9YA1OBZQH3YS50MDCI/20201220.png?format=1000w 1000w, https://images.squarespace-cdn.com/content/v1/5e8b134d99bce503301fb393/1607358122439-OK9YA1OBZQH3YS50MDCI/20201220.png?format=1500w 1500w, https://images.squarespace-cdn.com/content/v1/5e8b134d99bce503301fb393/1607358122439-OK9YA1OBZQH3YS50MDCI/20201220.png?format=2500w 2500w" loading="lazy" decoding="async" data-loader="sqs">
+                
+            </div>
+          </div>
+        
+          
+        
+
+        
+          
+          <figcaption class="image-caption-wrapper">
+            <div class="image-caption"><p class="" style="white-space:pre-wrap;">#20: “Bad programmers worry about the code. Good programmers worry about data structures and their relationships.” Linus Torvalds (Git, Linux)</p></div>
+          </figcaption>
+        
+      
+        </figure>
+      
+
+    </div>
+  
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+    
+  
+    <div class="
+          image-block-outer-wrapper
+          layout-caption-below
+          design-layout-inline
+          combination-animation-site-default
+          individual-animation-site-default
+          individual-text-animation-site-default
+        " data-test="image-block-inline-outer-wrapper">
+
+      
+
+      
+        <figure class="
+              sqs-block-image-figure
+              intrinsic
+            " style="max-width:970px;">
+          
+        
+        
+
+        
+          
+            
+          <div class="image-block-wrapper" data-animation-role="image">
+            <div class="sqs-image-shape-container-element
+              
+          
+        
+              has-aspect-ratio
+            " style="
+                position: relative;
+                
+                  padding-bottom:94.32990264892578%;
+                
+                overflow: hidden;-webkit-mask-image: -webkit-radial-gradient(white, black);
+              ">
+                
+                  
+                  
+                  
+                  
+                  
+                  
+                  <img data-stretch="false" src="https://images.squarespace-cdn.com/content/v1/5e8b134d99bce503301fb393/1607358147208-2ZIKPFFNN4DV7PEANRK6/20201221.png" data-image="https://images.squarespace-cdn.com/content/v1/5e8b134d99bce503301fb393/1607358147208-2ZIKPFFNN4DV7PEANRK6/20201221.png" data-image-dimensions="970x915" data-image-focal-point="0.5,0.5" alt="#21: The longer a technology lives, the longer it can be expected to live (Lindy effect)" data-load="false" width="970" height="915" sizes="100vw" style="display:block;object-fit: cover; width: 100%; height: 100%; object-position: 50% 50%" srcset="https://images.squarespace-cdn.com/content/v1/5e8b134d99bce503301fb393/1607358147208-2ZIKPFFNN4DV7PEANRK6/20201221.png?format=100w 100w, https://images.squarespace-cdn.com/content/v1/5e8b134d99bce503301fb393/1607358147208-2ZIKPFFNN4DV7PEANRK6/20201221.png?format=300w 300w, https://images.squarespace-cdn.com/content/v1/5e8b134d99bce503301fb393/1607358147208-2ZIKPFFNN4DV7PEANRK6/20201221.png?format=500w 500w, https://images.squarespace-cdn.com/content/v1/5e8b134d99bce503301fb393/1607358147208-2ZIKPFFNN4DV7PEANRK6/20201221.png?format=750w 750w, https://images.squarespace-cdn.com/content/v1/5e8b134d99bce503301fb393/1607358147208-2ZIKPFFNN4DV7PEANRK6/20201221.png?format=1000w 1000w, https://images.squarespace-cdn.com/content/v1/5e8b134d99bce503301fb393/1607358147208-2ZIKPFFNN4DV7PEANRK6/20201221.png?format=1500w 1500w, https://images.squarespace-cdn.com/content/v1/5e8b134d99bce503301fb393/1607358147208-2ZIKPFFNN4DV7PEANRK6/20201221.png?format=2500w 2500w" loading="lazy" decoding="async" data-loader="sqs">
+                
+            </div>
+          </div>
+        
+          
+        
+
+        
+          
+          <figcaption class="image-caption-wrapper">
+            <div class="image-caption"><p class="" style="white-space:pre-wrap;">#21: The longer a technology lives, the longer it can be expected to live (Lindy effect)</p></div>
+          </figcaption>
+        
+      
+        </figure>
+      
+
+    </div>
+  
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+    
+  
+    <div class="
+          image-block-outer-wrapper
+          layout-caption-below
+          design-layout-inline
+          combination-animation-site-default
+          individual-animation-site-default
+          individual-text-animation-site-default
+        " data-test="image-block-inline-outer-wrapper">
+
+      
+
+      
+        <figure class="
+              sqs-block-image-figure
+              intrinsic
+            " style="max-width:968px;">
+          
+        
+        
+
+        
+          
+            
+          <div class="image-block-wrapper" data-animation-role="image">
+            <div class="sqs-image-shape-container-element
+              
+          
+        
+              has-aspect-ratio
+            " style="
+                position: relative;
+                
+                  padding-bottom:94.62810516357422%;
+                
+                overflow: hidden;-webkit-mask-image: -webkit-radial-gradient(white, black);
+              ">
+                
+                  
+                  
+                  
+                  
+                  
+                  
+                  <img data-stretch="false" src="https://images.squarespace-cdn.com/content/v1/5e8b134d99bce503301fb393/1607358172095-JN4GOHVJ78WYIHG9GU7E/20201222.png" data-image="https://images.squarespace-cdn.com/content/v1/5e8b134d99bce503301fb393/1607358172095-JN4GOHVJ78WYIHG9GU7E/20201222.png" data-image-dimensions="968x916" data-image-focal-point="0.5,0.5" alt='#22: Delete files recursively:$ find . -name "*.pdf" -print0 | xargs -0 rm' data-load="false" width="968" height="916" sizes="100vw" style="display:block;object-fit: cover; width: 100%; height: 100%; object-position: 50% 50%" srcset="https://images.squarespace-cdn.com/content/v1/5e8b134d99bce503301fb393/1607358172095-JN4GOHVJ78WYIHG9GU7E/20201222.png?format=100w 100w, https://images.squarespace-cdn.com/content/v1/5e8b134d99bce503301fb393/1607358172095-JN4GOHVJ78WYIHG9GU7E/20201222.png?format=300w 300w, https://images.squarespace-cdn.com/content/v1/5e8b134d99bce503301fb393/1607358172095-JN4GOHVJ78WYIHG9GU7E/20201222.png?format=500w 500w, https://images.squarespace-cdn.com/content/v1/5e8b134d99bce503301fb393/1607358172095-JN4GOHVJ78WYIHG9GU7E/20201222.png?format=750w 750w, https://images.squarespace-cdn.com/content/v1/5e8b134d99bce503301fb393/1607358172095-JN4GOHVJ78WYIHG9GU7E/20201222.png?format=1000w 1000w, https://images.squarespace-cdn.com/content/v1/5e8b134d99bce503301fb393/1607358172095-JN4GOHVJ78WYIHG9GU7E/20201222.png?format=1500w 1500w, https://images.squarespace-cdn.com/content/v1/5e8b134d99bce503301fb393/1607358172095-JN4GOHVJ78WYIHG9GU7E/20201222.png?format=2500w 2500w" loading="lazy" decoding="async" data-loader="sqs">
+                
+            </div>
+          </div>
+        
+          
+        
+
+        
+          
+          <figcaption class="image-caption-wrapper">
+            <div class="image-caption">
+<p class="" style="white-space:pre-wrap;">#22: Delete files recursively:</p>
+<pre><code>$ find . -name "*.pdf" -print0 | xargs -0 rm</code></pre>
+</div>
+          </figcaption>
+        
+      
+        </figure>
+      
+
+    </div>
+  
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+    
+  
+    <div class="
+          image-block-outer-wrapper
+          layout-caption-below
+          design-layout-inline
+          combination-animation-site-default
+          individual-animation-site-default
+          individual-text-animation-site-default
+        " data-test="image-block-inline-outer-wrapper">
+
+      
+
+      
+        <figure class="
+              sqs-block-image-figure
+              intrinsic
+            " style="max-width:970px;">
+          
+        
+        
+
+        
+          
+            
+          <div class="image-block-wrapper" data-animation-role="image">
+            <div class="sqs-image-shape-container-element
+              
+          
+        
+              has-aspect-ratio
+            " style="
+                position: relative;
+                
+                  padding-bottom:94.12371063232422%;
+                
+                overflow: hidden;-webkit-mask-image: -webkit-radial-gradient(white, black);
+              ">
+                
+                  
+                  
+                  
+                  
+                  
+                  
+                  <img data-stretch="false" src="https://images.squarespace-cdn.com/content/v1/5e8b134d99bce503301fb393/1607358208497-5PBNPQ99Q92EKKTVPIHF/20201223.png" data-image="https://images.squarespace-cdn.com/content/v1/5e8b134d99bce503301fb393/1607358208497-5PBNPQ99Q92EKKTVPIHF/20201223.png" data-image-dimensions="970x913" data-image-focal-point="0.5,0.5" alt="#23: Why PostgreSQL (1996)? It is the open source RDBMS with columnar (cstore), geo (PostGIS), timeseries (TimescaleDB) and REST API (PostgREST)." data-load="false" width="970" height="913" sizes="100vw" style="display:block;object-fit: cover; width: 100%; height: 100%; object-position: 50% 50%" srcset="https://images.squarespace-cdn.com/content/v1/5e8b134d99bce503301fb393/1607358208497-5PBNPQ99Q92EKKTVPIHF/20201223.png?format=100w 100w, https://images.squarespace-cdn.com/content/v1/5e8b134d99bce503301fb393/1607358208497-5PBNPQ99Q92EKKTVPIHF/20201223.png?format=300w 300w, https://images.squarespace-cdn.com/content/v1/5e8b134d99bce503301fb393/1607358208497-5PBNPQ99Q92EKKTVPIHF/20201223.png?format=500w 500w, https://images.squarespace-cdn.com/content/v1/5e8b134d99bce503301fb393/1607358208497-5PBNPQ99Q92EKKTVPIHF/20201223.png?format=750w 750w, https://images.squarespace-cdn.com/content/v1/5e8b134d99bce503301fb393/1607358208497-5PBNPQ99Q92EKKTVPIHF/20201223.png?format=1000w 1000w, https://images.squarespace-cdn.com/content/v1/5e8b134d99bce503301fb393/1607358208497-5PBNPQ99Q92EKKTVPIHF/20201223.png?format=1500w 1500w, https://images.squarespace-cdn.com/content/v1/5e8b134d99bce503301fb393/1607358208497-5PBNPQ99Q92EKKTVPIHF/20201223.png?format=2500w 2500w" loading="lazy" decoding="async" data-loader="sqs">
+                
+            </div>
+          </div>
+        
+          
+        
+
+        
+          
+          <figcaption class="image-caption-wrapper">
+            <div class="image-caption"><p class="" style="white-space:pre-wrap;">#23: Why PostgreSQL (1996)? It is <em>the</em> open source RDBMS with columnar (cstore), geo (PostGIS), timeseries (TimescaleDB) and REST API (PostgREST).</p></div>
+          </figcaption>
+        
+      
+        </figure>
+      
+
+    </div>
+  
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+    
+  
+    <div class="
+          image-block-outer-wrapper
+          layout-caption-below
+          design-layout-inline
+          combination-animation-site-default
+          individual-animation-site-default
+          individual-text-animation-site-default
+        " data-test="image-block-inline-outer-wrapper">
+
+      
+
+      
+        <figure class="
+              sqs-block-image-figure
+              intrinsic
+            " style="max-width:971px;">
+          
+        
+        
+
+        
+          
+            
+          <div class="image-block-wrapper" data-animation-role="image">
+            <div class="sqs-image-shape-container-element
+              
+          
+        
+              has-aspect-ratio
+            " style="
+                position: relative;
+                
+                  padding-bottom:94.23274993896484%;
+                
+                overflow: hidden;-webkit-mask-image: -webkit-radial-gradient(white, black);
+              ">
+                
+                  
+                  
+                  
+                  
+                  
+                  
+                  <img data-stretch="false" src="https://images.squarespace-cdn.com/content/v1/5e8b134d99bce503301fb393/1607358242782-NMWWQSLE3RAV9TW52C81/20201224.png" data-image="https://images.squarespace-cdn.com/content/v1/5e8b134d99bce503301fb393/1607358242782-NMWWQSLE3RAV9TW52C81/20201224.png" data-image-dimensions="971x915" data-image-focal-point="0.5,0.5" alt='#24: "Use simple algorithms as well as simple data structures." Rob Pike (Go, UTF-8, Unix)' data-load="false" width="971" height="915" sizes="100vw" style="display:block;object-fit: cover; width: 100%; height: 100%; object-position: 50% 50%" srcset="https://images.squarespace-cdn.com/content/v1/5e8b134d99bce503301fb393/1607358242782-NMWWQSLE3RAV9TW52C81/20201224.png?format=100w 100w, https://images.squarespace-cdn.com/content/v1/5e8b134d99bce503301fb393/1607358242782-NMWWQSLE3RAV9TW52C81/20201224.png?format=300w 300w, https://images.squarespace-cdn.com/content/v1/5e8b134d99bce503301fb393/1607358242782-NMWWQSLE3RAV9TW52C81/20201224.png?format=500w 500w, https://images.squarespace-cdn.com/content/v1/5e8b134d99bce503301fb393/1607358242782-NMWWQSLE3RAV9TW52C81/20201224.png?format=750w 750w, https://images.squarespace-cdn.com/content/v1/5e8b134d99bce503301fb393/1607358242782-NMWWQSLE3RAV9TW52C81/20201224.png?format=1000w 1000w, https://images.squarespace-cdn.com/content/v1/5e8b134d99bce503301fb393/1607358242782-NMWWQSLE3RAV9TW52C81/20201224.png?format=1500w 1500w, https://images.squarespace-cdn.com/content/v1/5e8b134d99bce503301fb393/1607358242782-NMWWQSLE3RAV9TW52C81/20201224.png?format=2500w 2500w" loading="lazy" decoding="async" data-loader="sqs">
+                
+            </div>
+          </div>
+        
+          
+        
+
+        
+          
+          <figcaption class="image-caption-wrapper">
+            <div class="image-caption"><p class="" style="white-space:pre-wrap;">#24: "Use simple algorithms as well as simple data structures." Rob Pike (Go, UTF-8, Unix)</p></div>
+          </figcaption>
+        
+      
+        </figure>
+      
+
+    </div>
+</body></html>
