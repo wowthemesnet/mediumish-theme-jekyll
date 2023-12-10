@@ -1,8 +1,8 @@
 # Site
-name: "Mediumish"
-title: "Mediumish"
-description: "Jekyll template, Medium styled, free for bloggers."
-logo: 'assets/images/logo.png'
+name: "CHERVEPEDIA"
+title: "ЧЕРВЕПЕДИЯ "
+description: "Станислав Котляров (s3t_s3t) - украинский националист,  создатель русофобского сообщества Черветред и сайта Червепедия."
+logo: 'assets/images/119766701.png'
 favicon: 'assets/images/logo.png'
 baseurl: /mediumish-theme-jekyll
 google_analytics: 'UA-46278016-1'
@@ -14,22 +14,14 @@ permalink: /:title/
 # Authors
 authors:
   sal:
-    name: Sal
-    display_name: Sal
+    name: s3t_s3t
+    display_name: s3t_s3t
     gravatar: e56154546cf4be74e393c62d1ae9f9d4
     email: wowthemesnet@gmail.com
-    web: https://www.wowthemes.net
-    twitter: https://twitter.com/wowthemesnet
-    description: "Author of Mediumish, a Bootstrap Medium styled template available for WordPress, HTML, Ghost and Jekyll. You are currently previewing Jekyll template demo."
-  john:
-    name: John
-    display_name: John    
-    avatar: 'assets/images/avatar.png'
-    gravatar: b1cc14991db7a456fcd761680bbc8f81
-    email: wowthemesnet@gmail.com
-    web: https://www.wowthemes.net
-    twitter: https://twitter.com/wowthemesnet
-    description: "This is the author box. Write a short description of the author here. You are currently previewing Mediumish demo, a Jekyll template compatible with Github pages."
+    web: https://vk.com/s3t_s3t
+    twitter: https://twitter.com/s3t_s3t
+    description: "Станислав Котляров (s3t_s3t) - украинский националист,  создатель русофобского сообщества Черветред и сайта Червепедия."
+
 
 # Plugins
 plugins:
