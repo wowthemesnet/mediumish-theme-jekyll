@@ -1,7 +1,7 @@
 ---
 layout: post
-title:  "Let's test spoilers"
-author: sal
+title:  "Let's test Gaussian Mixture Classifiers"
+author: Kwabena
 categories: [ Jekyll, tutorial ]
 image: assets/images/12.jpg
 featured: true

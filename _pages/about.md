@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Mediumish Template for Jekyll
+title: Kwabena Appiah Isaac
 permalink: /about
 comments: true
 ---
