@@ -4,7 +4,7 @@ title: "Flink Deployment Patterns"
 author: ashwin
 categories: [Platform Engineering, Data, Infrastructure, Kafka, Apache Flink, Kubernetes]
 image: assets/blog-images/flink_deployment/flink-application.png
-featured: true
+featured: false
 hidden: true
 teaser: Overview of available deployment patterns for Flink Cluster
 toc: true
@@ -27,11 +27,11 @@ Apache Flink supports high throughput and low event latency at the same time, fa
     - Application mode
     - Session mode
 
-### Application mode
+## Application mode
 
 This mode creates one cluster per submitted application. A dedicated JobManager is started for submitting the job. The JobManager will only execute this job, then exit. The Flink application runs on the JobManager. With this architecture, the *Application Mode* provides the resource isolation and load balancing guarantees at the granularity of a whole application.
 
-### Session mode
+## Session mode
 
 *Session mode* assumes an already running cluster and uses the resources of that cluster to execute any submitted application. Applications executed in the same (session) cluster use, and consequently compete for, the same resources. This has the advantage that you do not pay the resource overhead of spinning up a full cluster for every submitted job.
 
@@ -119,31 +119,31 @@ Confluent Cloud for Apache Flink is a cloud-native service in a truest sense. Co
 
 Confluent Cloud for Apache Flink let you focus fully on your business logic, encapsulated in Flink SQL [statements](https://docs.confluent.io/cloud/current/flink/concepts/statements.html#flink-sql-statements), and Confluent Cloud takes care of what’s needed to run them in a secure, resource-efficient and fault-tolerant manner. 
 
-### Fully Managed
+## Fully Managed
 
 Confluent Cloud always uses the latest Flink version. Any security patches to Flink runtime are applied seamlessly and automatically
 
-### Auto-scaling
+## Auto-scaling
 
 Flink SQL statements on Confluent Cloud are monitored continuously and [auto-scaled](https://docs.confluent.io/cloud/current/flink/concepts/autopilot.html#flink-sql-autopilot) to keep up with the throughput rate of their input topics.
 
-### **Usage-based billing**
+## **Usage-based billing**
 
 You pay only for what you use, not what you provision. Flink compute in Confluent Cloud is elastic: once you stop using the compute resources, they are deallocated, and you no longer pay for them.
 
-### Metadata Sync
+## Metadata Sync
 
 Kafka topics and schemas are always in sync with Flink, simplifying how you can process your data. Any topic created in Kafka is visible directly as a table in Flink, and any table created in Flink is visible as a topic in Kafka
 
-### Observability
+## Observability
 
 Confluent Cloud provides you with a curated set of metrics, exposing them through Confluent’s existing [metrics API](https://docs.confluent.io/cloud/current/monitoring/metrics-api.html#metrics-api). Confluent Cloud provides first-class integrations with New Relic, Datadog, Grafana Cloud, and Dynatrace
 
-### Security
+## Security
 
 Confluent Cloud for Apache Flink has a deep integration with [Role-Based Access Control (RBAC)](https://docs.confluent.io/cloud/current/access-management/access-control/rbac/overview.html#cloud-rbac), ensuring that you can easily access and process the data that you have access to, and no other data.
 
-### Cloud Availability
+## Cloud Availability
 
 Confluent Cloud for Apache Flink is available on AWS, Azure, and GCP. Refer to this [link](https://docs.confluent.io/cloud/current/flink/index.html#af-long-is-everywhere) for the supported region wise list.
 
