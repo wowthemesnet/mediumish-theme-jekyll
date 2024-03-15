@@ -74,32 +74,9 @@ While there are several advantages to deploying Flink on Kubernetes such as high
 
 ## Cloud
 
-Fully-managed services are an alternative approach to getting started with Flink without worrying about the underlying infrastructure. If you seek a managed solution, then Apache Flink can be found as part of, 
+Fully managed services abstract away much of the complexity involved in deploying and managing Apache Flink clusters. Users don't need to worry about infrastructure provisioning, cluster configuration, or software updates, as these tasks are handled by the managed service provider. Deploy highly available and durable applications with Multi-AZ deployments and APIs for application lifecycle management.
 
-- [Amazon Managed Service for Apache Flink](https://aws.amazon.com/managed-service-apache-flink/)
-- [Google Cloud Dataproc](https://cloud.google.com/dataproc/docs/concepts/components/flink)
-- [Microsoft Azure HDInsight](https://learn.microsoft.com/en-us/azure/hdinsight-aks/flink/flink-create-cluster-portal)
-- [Confluent Cloud](https://www.confluent.io/product/flink/)
-
-Managed services offer the underlying infrastructure for Flink and support for provisioning compute resources, parallel computation, automatic scaling, and application backups. Deploy highly available and durable applications with Multi-AZ deployments and APIs for application lifecycle management
-
-### Amazon Managed Service for Apache Flink
-
-With Amazon Managed Service for Apache Flink, you pay only for what you use. There are no resources to provision and no upfront costs. You are charged an hourly rate based on the number of Kinesis Processing Units (KPUs) used to run your applications. A single KPU comprises 1 vCPU compute and 4 GB of memory. In streaming mode, Amazon Managed Service for Apache Flink automatically scales the number of KPUs required by your stream processing application as the demands of memory and compute fluctuate. 
-
-You are charged two additional KPUs per Studio application in interactive mode. One KPU is used for Apache Flink application orchestration and the other for the serverless interactive development environment. You will also be charged for running application storage used for stateful processing capabilities. Running application storage is charged per GB/month.
-
-### Google Cloud Dataproc
-
-Dataproc is a managed Spark and Hadoop service that lets you take advantage of open source data tools for batch processing, querying, streaming, and machine learning. It supports Flink deployments on YARN as an optional component. The Flink cluster needs to be setup by the User similar to the YARN deployment and it does not support flink high-availability mode.
-
-### Microsoft Azure HDInsight
-
-HDInsight on AKS is a modern, reliable, secure, and fully managed Platform as a Service (PaaS) that runs on Azure Kubernetes Service (AKS). Apache Flink is supported as a open-source analytics workload in HDInsight. The Flink cluster setup and management still need to be performed by the User. 
-
-### Confluent Cloud
-
-Confluent Cloud provides a cloud-native, serverless service for Flink that enables simple, scalable, and secure stream processing that integrates seamlessly with Apache Kafka. Your Kafka topics appear automatically as queryable Flink tables, with schemas and metadata attached by Confluent Cloud. Confluent Cloud for Apache Flink currently supports only Flink SQL
+Managed services provide built-in monitoring and logging capabilities, allowing users to easily track the performance and health of their Flink applications. It also offers enhanced security features, such as encryption, access controls, and compliance certifications. Finally, managed services integrate seamlessly with other cloud services and data processing tools, allowing users to build end-to-end data pipelines more easily.
 
 # Challenges in self-managed Flink cluster
 
@@ -107,7 +84,9 @@ While self managing a Flink cluster offers greater flexibility in terms of the A
 
 # How Confluent’s fully managed Flink service help developers?
 
-Kafka has become the de facto standard for messaging system and similarly Flink is the de facto industry standard for stream processing. The Confluent offering for Apache Kafka and Apache Flink goes hand-in-hand to facilitate a rich-environment for real-time stream processing.
+Kafka has become the de facto standard for messaging system and similarly Flink is the de facto industry standard for stream processing. The Confluent offering for Apache Kafka and Apache Flink goes hand-in-hand to facilitate a rich-environment for real-time stream processing. 
+
+Confluent Cloud provides a cloud-native, serverless service for Flink that enables simple, scalable, and secure stream processing that integrates seamlessly with Apache Kafka. Your Kafka topics appear automatically as queryable Flink tables, with schemas and metadata attached by Confluent Cloud.
 
 ![https://docs.confluent.io/cloud/current/_images/flink-kafka-ecosystem.png](https://docs.confluent.io/cloud/current/_images/flink-kafka-ecosystem.png)
 
@@ -127,7 +106,7 @@ Confluent Cloud always uses the latest Flink version. Any security patches to Fl
 
 Flink SQL statements on Confluent Cloud are monitored continuously and [auto-scaled](https://docs.confluent.io/cloud/current/flink/concepts/autopilot.html#flink-sql-autopilot) to keep up with the throughput rate of their input topics.
 
-## **Usage-based billing**
+## Usage-based billing
 
 You pay only for what you use, not what you provision. Flink compute in Confluent Cloud is elastic: once you stop using the compute resources, they are deallocated, and you no longer pay for them.
 
